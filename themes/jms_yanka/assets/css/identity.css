@@ -1,0 +1,7 @@
+#identity .btn-default.show-pass {
+  border-radius: 0;
+  height: 40px;
+}
+#customer-form .form-footer {
+	margin-top: 20px;
+}

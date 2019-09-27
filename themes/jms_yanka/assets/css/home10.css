@@ -1,0 +1,148 @@
+.jms-row.menu.fixed {
+  top: 0; }
+
+.menu {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+
+.jms-banner.banner-2 img {
+  -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+
+.jms-banner.banner-2:hover img {
+  -webkit-transform: scale3d(1.1, 1.1, 1) translate3d(-4%, 4%, 0);
+  transform: scale3d(1.1, 1.1, 1) translate3d(-4%, 4%, 0); }
+
+.jms-banner.banner-3 img {
+  -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+
+.jms-banner.banner-3:hover img {
+  -webkit-transform: scale3d(1.1, 1.1, 1) translate3d(4%, 4%, 0);
+  transform: scale3d(1.1, 1.1, 1) translate3d(4%, 4%, 0); }
+
+.jms-banner > a {
+  display: block;
+  overflow: hidden; }
+
+.jms-banner .banner-content {
+  position: unset;
+  text-align: center;
+  margin-top: 18px; }
+  .jms-banner .banner-content .banner-title {
+    font-size: 24px;
+    padding-bottom: 12px; }
+  .jms-banner .banner-content .banner-desc {
+    margin-top: -2px;
+    color: #858585;
+    padding-bottom: 19px; }
+
+.page-index #footer {
+  margin-top: 0; }
+
+#footer {
+  border-top: 0;
+  text-align: center;
+  background: #141414;
+  color: #fff; }
+  #footer .border-beside::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #3e3e3e; }
+  #footer .border-beside::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #3e3e3e; }
+  #footer .addon-title h3 {
+    text-align: center; }
+  #footer .addon-title span {
+    line-height: 1.3; }
+  #footer .footer-top .contact-info p a:hover {
+    color: #fff; }
+  #footer #newsletter_block_left .form-group {
+    display: block; }
+    #footer #newsletter_block_left .form-group button {
+      color: #fff;
+      border-color: #fff; }
+      #footer #newsletter_block_left .form-group button:hover {
+        background: #fff;
+        color: #141414 !important; }
+  #footer #newsletter_block_left #newsletter-input {
+    margin-right: 0;
+    margin-bottom: 20px;
+    background: transparent;
+    border-color: #3e3e3e; }
+    #footer #newsletter_block_left #newsletter-input:hover, #footer #newsletter_block_left #newsletter-input:focus {
+      border-color: #fff; }
+  #footer #newsletter_block_left .news_content {
+    margin-top: 20px; }
+  #footer .addon-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #footer .footer-social {
+    margin-top: 50px;
+    padding: 18px 0;
+    border-top: 1px solid #3e3e3e; }
+    #footer .footer-social .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    #footer .footer-social .addon-title {
+      padding: 0; }
+      #footer .footer-social .addon-title h3 {
+        padding: 0; }
+    #footer .footer-social .find-us {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin-bottom: 0; }
+      #footer .footer-social .find-us li {
+        padding: 0 10px; }
+        #footer .footer-social .find-us li a {
+          font-size: 14px; }
+  #footer svg {
+    fill: #bdbdbd; }
+  #footer ul li a:hover {
+    color: #fff; }
+  #footer .addon-desc a {
+    color: #subcolor; }
+    #footer .addon-desc a:hover {
+      color: #fff; }
+  #footer #social_block.type-2 ul li a {
+    color: #fff !important; }
+  #footer .footer-bottom {
+    padding: 18px 0 11px;
+    border-top-color: #3e3e3e; }
+    #footer .footer-bottom p {
+      font-size: 10px;
+      color: #858585;
+      margin-bottom: 0; }
+      #footer .footer-bottom p:first-child {
+        margin-bottom: 6px; }
+      #footer .footer-bottom p a {
+        text-decoration: underline;
+        color: #858585; }
+        #footer .footer-bottom p a:hover {
+          color: #fff; }
+
+@media (max-width: 767px) {
+  .jms-banner .banner-content .banner-title {
+    font-size: 16px; } }

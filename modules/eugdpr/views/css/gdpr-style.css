@@ -1,0 +1,25 @@
+/**
+* 2007-2017 PrestaShop
+*
+* Jms Blog
+*
+*  @author    Joommasters <joommasters@gmail.com>
+*  @copyright 2007-2017 Joommasters
+*  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+*  @Website: http://www.joommasters.com
+*/
+
+.address-block p{
+    margin: 0;
+}
+.address-block {
+    margin: 10px;
+    border:3px solid #2fb5d2;
+    padding: 5px 10px;
+}
+.remove-data{
+    clear: both;
+}
+.remove-data button{
+    float:right;
+}

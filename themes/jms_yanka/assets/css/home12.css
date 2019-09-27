@@ -1,0 +1,163 @@
+.header {
+  background: #141414; }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .menu .addon-box:first-child {
+      margin-right: 20px; }
+
+.jms-slider-wrapper .text-2 {
+  letter-spacing: 2.2px; }
+
+.jms-slider-wrapper .slide-2 .text-1 {
+  letter-spacing: 0.75px; }
+
+.jms-slider-wrapper .slide-2 .btn-default {
+  min-width: 220px;
+  color: #fff;
+  border-color: #fff;
+  letter-spacing: 0.7px; }
+  .jms-slider-wrapper .slide-2 .btn-default:hover {
+    background: #fff;
+    color: #141414 !important; }
+
+.jms-megamenu .nav > li > a {
+  line-height: 27px;
+  color: #fff; }
+  .jms-megamenu .nav > li > a:hover {
+    color: #858585; }
+    .jms-megamenu .nav > li > a:hover i {
+      fill: #858585; }
+  .jms-megamenu .nav > li > a i {
+    fill: #fff; }
+
+.right-icon-group svg {
+  fill: #fff; }
+
+.right-icon-group .cart-icon {
+  color: #fff; }
+
+.right-icon-group .languages-info .btn-xs,
+.right-icon-group .currency-info .btn-xs {
+  color: #fff; }
+
+.banner-content {
+  top: auto;
+  padding: 9px 10px;
+  bottom: 15px;
+  left: 20px;
+  width: calc(100% - 40px);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); }
+  .banner-content .text-1 {
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    padding-bottom: 4px; }
+  .banner-content .text-2 {
+    color: #858585; }
+
+.banner-bg {
+  padding: 159px 0 163px; }
+  .banner-bg p {
+    color: #141414; }
+    .banner-bg p.text-3 {
+      color: #858585; }
+  .banner-bg .btn-default {
+    color: #141414;
+    border-color: #141414 !important; }
+    .banner-bg .btn-default:hover {
+      background: #141414;
+      color: #fff !important; }
+
+.page-index #footer {
+  margin-top: 0; }
+
+#footer {
+  border-top: 0;
+  background: #141414; }
+  #footer .addon-title h3 {
+    color: #fff; }
+  #footer ul li a:hover {
+    color: #fff; }
+  #footer svg {
+    fill: #dbdbdb; }
+  #footer .addon-desc a:hover {
+    color: #fff; }
+  #footer .footer-top .contact-info p a:hover {
+    color: #fff; }
+  #footer .footer-top #social_block .fa {
+    color: #fff; }
+  #footer .footer-bottom {
+    border-top-color: #3e3e3e; }
+    #footer .footer-bottom .copyright p a:hover {
+      color: #fff; }
+  #footer #newsletter_block_left button {
+    color: #fff;
+    border-color: #fff; }
+    #footer #newsletter_block_left button:hover {
+      background: #fff;
+      color: #141414 !important; }
+  #footer #newsletter_block_left #newsletter-input {
+    background: transparent;
+    border-color: #3e3e3e; }
+    #footer #newsletter_block_left #newsletter-input:hover, #footer #newsletter_block_left #newsletter-input:focus {
+      border-color: #fff; }
+  #footer .footer-top .addon-social .addon-title h3 {
+    padding-bottom: 15px; }
+  #footer .footer-top #social_block ul .fa {
+    min-width: auto; }
+  #footer .footer-top #social_block ul li {
+    line-height: normal;
+    padding: 0;
+    margin-right: 17px; }
+  #footer .addon-social {
+    margin-top: 40px; }
+  #footer #social_block.type-2 ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+@media (max-width: 1366px) and (min-width: 1200px) {
+  .jms-slider-wrapper .text-1 {
+    font-size: 9px !important; }
+  .jms-slider-wrapper .text-2 {
+    font-size: 35px !important;
+    letter-spacing: 0; }
+  .jms-slider-wrapper .text-3 {
+    font-size: 14px !important; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 150px !important;
+    font-size: 10px !important; } }
+
+@media (max-width: 1199px) {
+  .jms-megamenu .nav > li {
+    padding: 0 3px; }
+  .right-icon-group .addon-box {
+    margin-left: 10px; }
+  .jms-slider-wrapper .text-2 {
+    letter-spacing: 0 !important; }
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 97px !important;
+    padding: 7px 9px; } }
+
+@media (max-width: 991px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 90px !important; } }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .jms-row.banner-category > .container,
+  .jms-row.banner > .container {
+    width: 540px; } }
+
+@media (max-width: 767px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 70px !important; } }
+
+@media (max-width: 481px) {
+  .jms-slider-wrapper .btn-shop .btn-default {
+    min-width: 50px !important;
+    padding: 5px 4px; } }

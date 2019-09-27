@@ -1,0 +1,50 @@
+.page-header {
+	border-bottom:0;
+}
+.page-header h1{
+	text-transform:uppercase;
+	color:rgba(17,17,17,0.9);
+	font-size:26px;
+	padding:0;
+}
+#my-account .wishlist_top.home_page{
+	display: none;
+}
+#my-account .links .link-item {
+	font-size:15px;
+	letter-spacing: 0.7px;
+}
+#my-account .links .link-item i {
+	font-size:26px;
+	position:relative;
+	top:3px;
+	display:block;
+	margin-bottom:10px;
+}
+.page-my-account #content .links a span.link-item {
+	background: white none repeat scroll 0 0;
+	border: 1px solid #e5e5e5;
+	display: block;
+	height: 100%;
+	padding: 1rem;
+}
+.page-my-account #content .links a {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 1.875rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+.page-my-account #content .links a:last-child {
+	margin-bottom:0;
+}
+#block-history table th {
+	border-bottom: 1px solid #e5e5e5;
+	border-left: 1px solid #e5e5e5;
+	padding: 7px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#block-history table.std td, #block-history table.table_block td {
+    text-align: center;
+}

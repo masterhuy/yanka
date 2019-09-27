@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Normal.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/NeueEinstellung-Normal.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("NeueEinstellung-Normal.otf") format("opentype"), /* Open Type Font */
+   /* Legacy iOS */
+    url("../fonts/NeueEinstellung-Normal.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/NeueEinstellung-Normal.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/NeueEinstellung-Normal.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/NeueEinstellung-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/NeueEinstellung-Bold.otf") format("opentype"), /* Open Type Font */
+    /* Legacy iOS */
+    url("../fonts/NeueEinstellung-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/NeueEinstellung-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/NeueEinstellung-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-SemiBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/NeueEinstellung-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/NeueEinstellung-SemiBold.otf") format("opentype"), /* Open Type Font */
+    /* Legacy iOS */
+    url("../fonts/NeueEinstellung-SemiBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/NeueEinstellung-SemiBold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/NeueEinstellung-SemiBold.woff2") format("woff2"); /* Modern Browsers */
+  font-family: "Neue Einstellung"; 
+    font-weight:600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/NeueEinstellung-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/NeueEinstellung-Light.otf") format("opentype"), /* Open Type Font */
+    /* Legacy iOS */
+    url("NeueEinstellung-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("NeueEinstellung-Light.woff") format("woff"), /* Modern Browsers */
+    url("NeueEinstellung-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Einstellung";
+  src: url("../fonts/NeueEinstellung-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/NeueEinstellung-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/NeueEinstellung-Medium.otf") format("opentype"), /* Open Type Font */
+   /* Legacy iOS */
+    url("../fonts/NeueEinstellung-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/NeueEinstellung-Medium.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/NeueEinstellung-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight:500;
+  font-style: normal;
+}

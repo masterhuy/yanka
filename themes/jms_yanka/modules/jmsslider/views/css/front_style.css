@@ -1,0 +1,66 @@
+.fs-pager-wrapper {
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	z-index: 998;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fs-pager-wrapper span {
+	width: 6px;
+	height: 6px;
+	background: #141414;
+	border-radius: 50%;
+	text-indent: -100px;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 12px;
+}
+.fs-pager-wrapper .active span {
+	background: #141414;
+	width: 10px;
+	height: 10px;
+}
+.fs-pager-wrapper a {
+	display: flex;
+	align-items: center;
+}
+.jms-slider-wrapper {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	margin:0px auto;
+}
+.jms-slider-wrapper .fs-pager-wrapper{
+	bottom: 65px;
+}
+.jms-slider-wrapper .slider{
+	position:relative;
+	width:100%; 
+	margin:0 auto;
+	background:#1b1b1b;
+}
+.jms-slider-wrapper .slide {
+	overflow: hidden;
+	position: absolute;
+	background-size: cover !important;
+}
+
+.shopnow span{
+	font-size: 1.4em;
+	vertical-align: middle;
+	padding-left: 1em;
+	line-height: 1;
+}
+.text-large {
+    font-family: "Neue Einstellung";
+    font-weight:600;
+}
+.text-small {
+    font-weight:300;
+}
+/*# sourceMappingURL=New%20Text%20Document.css.map */
+
+
