@@ -5,13 +5,14 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2017 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
 
 class SlideObject extends ObjectModel
 {
+    public $id_slider;
     public $title;
     public $class_suffix;
     public $bg_type;
@@ -26,6 +27,7 @@ class SlideObject extends ObjectModel
         'primary' => 'id_slide',
         'multi_lange' => true,
         'fields' => array(
+            'id_slider' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
             'title' =>array('type' => self::TYPE_STRING, 'validate' => 'isCleanHtml'),
             'class_suffix' =>array('type' => self::TYPE_STRING, 'validate' => 'isCleanHtml'),
             'bg_type' =>array('type' => self::TYPE_INT, 'validate' => 'isUnsignedInt'),
@@ -40,24 +42,42 @@ class SlideObject extends ObjectModel
     public function __construct($id_slide = null, $id_shop = null, $id_lang = null)
     {
         parent::__construct($id_slide, $id_shop, $id_lang);
-    }
-
-    public function add($autodate = true, $null_values = false)
-    {
-        $res=true;
-        $id_shop = Context::getContext()->shop->id;
-        $res&=parent::add($autodate, $null_values);
-        $sql = 'INSERT INTO `'._DB_PREFIX_.'jms_slides_shop`(`id_slide`, `id_shop`)
-            VALUES('.(int)$this->id.', '.$id_shop.');';
-        $res&= Db::getInstance()->execute($sql);
-        return $res;
+        Shop::addTableAssociation($this->def['table'], array('type' => 'shop'));
     }
 
     public function delete()
     {
         $res= true;
+        $layers = $this->getLayers();
+        foreach ($layers as $layer) {
+            $layer->delete();
+        }
         $res&= parent::delete();
-        $res&= Db::getInstance()->execute('DELETE FROM `'._DB_PREFIX_.'jms_slides_shop` WHERE `id_slide`='.(int)$this->id);
-        $res&= Db::getInstance()->execute('DELETE FROM `'._DB_PREFIX_.'jms_slides_layers` WHERE `id_slide`='.(int)$this->id);
+        return $res;
+    }
+    public function getLayers()
+    {
+        $layers = new PrestashopCollection('LayerObject');
+        $layers->where('id_slide', '=', $this->id);
+        return $layers->getResults();
+    }
+    public function duplicateSlide()
+    {
+        $dupSlide = parent::duplicateObject();
+        if ($this->bg_type) {
+            $bg_source = _PS_MODULE_DIR_.'jmsslider/views/img/slides/'.$this->bg_image;
+            $bg = explode('.', $this->bg_image);
+            $new_bg = Tools::encrypt($bg[0]).'.'.$bg[1];
+            $bg_dest = _PS_MODULE_DIR_.'jmsslider/views/img/slides/'.$new_bg;
+            copy($bg_source, $bg_dest);
+            $dupSlide->bg_image = $new_bg;
+        }
+        $layers = $this->getLayers();
+        foreach ($layers as $layer) {
+            $dupLayer = $layer->duplicateObject();
+            $dupLayer->id_slide = $dupSlide->id;
+            $dupLayer->update();
+        }
+        return $dupSlide;
     }
 }

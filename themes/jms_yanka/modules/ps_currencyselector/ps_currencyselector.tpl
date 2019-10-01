@@ -26,13 +26,19 @@
    	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		{$current_currency.iso_code} 
 		<i>
-            <svg aria-hidden="true" focusable="false" role="presentation"
-                class="icon icon-theme-229" viewBox="0 0 24 24">
-                <path d="M11.783 14.088l-3.75-3.75a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l3.301 3.32 3.301-3.32a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .841.841 0 0 1-.215-.127z"/>
-            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+				<g>
+					<polygon fill="currentColor" points="12.5,17.6 2.9,8.1 4.1,6.9 12.5,15.4 20.9,6.9 22.1,8.1 	"></polygon>
+				</g>
+			</svg>
         </i>
+		<span class="tooltip-wrap bottom">
+			<span class="tooltip-text">
+				{l s='Currency' d='Shop.Theme.Actions'}
+			</span>
+		</span>
 	</a>
-	<div id="currency-1" class="collapse dropdown-menu">
+	<div class="dropdown-menu">
 		<ul>
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>
@@ -49,7 +55,7 @@
    	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		{$current_currency.iso_code} <i class="fa fa-angle-down" aria-hidden="true"></i>
 	</a>
-	<div id="currency-2" class="collapse dropdown-menu">
+	<div class="dropdown-menu">
 		<ul>
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>

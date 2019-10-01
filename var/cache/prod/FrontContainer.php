@@ -1215,6 +1215,7 @@ class FrontContainer extends Container
                 71 => 'jmscustomhtmlleft',
                 72 => 'jmsfacebookconnect',
                 73 => 'jmspagebuilder',
+                74 => 'jmswishlist',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_yanka/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

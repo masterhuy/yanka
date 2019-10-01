@@ -5,14 +5,72 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2017 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
 
 $query = "DROP TABLE IF EXISTS `_DB_PREFIX_jms_slides`;
+CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_hook` (
+  `id_hook` INT NOT NULL ,
+  `name` VARCHAR(255) NOT NULL ,
+  PRIMARY KEY (`id_hook`)
+) ENGINE = _MYSQL_ENGINE_;
+
+INSERT INTO `_DB_PREFIX_jms_hook` (`id_hook`, `name`) VALUES
+('1', 'displayWrapperTop'),
+('2', 'displayWrapperBottom'),
+('3', 'displayLeftColumn'),
+('4', 'displayRightColumn'),
+('5', 'displayHome');
+
+CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slider_hook` (
+  `id_slider` INT NOT NULL ,
+  `id_hook` INT NOT NULL ,
+  PRIMARY KEY (`id_slider`, `id_hook`)
+) ENGINE = _MYSQL_ENGINE_;
+
+INSERT INTO `_DB_PREFIX_jms_slider_hook` (`id_slider`, `id_hook`) VALUES ('1', '5');
+
+CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slider` (
+  `id_slider` INT NOT NULL AUTO_INCREMENT ,
+  `title` VARCHAR(255) NOT NULL ,
+  `delay` INT NOT NULL,
+  `x` INT NOT NULL ,
+  `y` INT NOT NULL ,
+  `trans` VARCHAR(255) NOT NULL ,
+  `trans_in` VARCHAR(255) NOT NULL ,
+  `trans_out` VARCHAR(255) NOT NULL ,
+  `ease_in` VARCHAR(255) NOT NULL ,
+  `ease_out` VARCHAR(255) NOT NULL ,
+  `speed_in` INT NOT NULL ,
+  `speed_out` INT NOT NULL ,
+  `duration` INT NOT NULL ,
+  `bg_animation` BOOLEAN NOT NULL ,
+  `bg_ease` VARCHAR(255) NOT NULL ,
+  `end_animate` BOOLEAN NOT NULL ,
+  `full_width` BOOLEAN NOT NULL ,
+  `responsive` BOOLEAN NOT NULL ,
+  `max_width` INT NOT NULL ,
+  `max_height` INT NOT NULL ,
+  `mobile_height` INT NOT NULL ,
+  `tablet_height` INT NOT NULL DEFAULT 600,
+  `mobile2_height` INT NOT NULL DEFAULT 500,
+  `auto_change` BOOLEAN NOT NULL ,
+  `pause_hover` BOOLEAN NOT NULL ,
+  `show_pager` BOOLEAN NOT NULL ,
+  `show_control` BOOLEAN NOT NULL ,
+  `active` BOOLEAN DEFAULT '1',
+  `order` INT NOT NULL,
+  PRIMARY KEY (`id_slider`)
+) ENGINE = _MYSQL_ENGINE_;
+
+INSERT INTO `_DB_PREFIX_jms_slider` (`id_slider`, `delay`, `title`, `x`, `y`, `trans`, `trans_in`, `trans_out`, `ease_in`, `ease_out`, `speed_in`, `speed_out`, `duration`, `bg_animation`, `bg_ease`, `end_animate`, `full_width`, `responsive`, `max_width`, `max_height`, `mobile_height`, `auto_change`, `pause_hover`, `show_pager`, `show_control`, `active`, `order`) VALUES
+(NULL, 1000, 'slider 1', '0', '0', 'fade', 'left', 'left', 'easeInCubic', 'easeOutExpo', '300', '0', '7000', '1', 'easeOutCubic', '1', '1', '1', '1920', '875', '420', '1', '0', '1', '1', '1', '1');
+
 CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides` (
   `id_slide` int(10) NOT NULL AUTO_INCREMENT,
+  `id_slider` INT NOT NULL,
   `title` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `class_suffix` varchar(100) NOT NULL,
   `bg_type` int(10) NOT NULL DEFAULT '1',
@@ -24,44 +82,19 @@ CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides` (
   PRIMARY KEY (`id_slide`)
 ) ENGINE=_MYSQL_ENGINE_  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
 
-INSERT INTO `_DB_PREFIX_jms_slides` (`id_slide`, `title`, `class_suffix`, `bg_type`, `bg_image`, `bg_color`, `slide_link`, `order`, `status`) VALUES
-(7, 'Home 1 - Slider 1', '', 1, '0e822c064f436a476823126f81c2b89d.jpg', '', '', 0, 1),
-(8, 'Home1 - Slide 2', '', 1, '6a5a75bb8d4aedd8b76085cb40024054.jpg', '', '', 1, 1),
-(9, 'Home1 - Slider 3', '', 1, '76db74c84199f336b43c4c53ac0ada57.jpg', '', '', 2, 1),
-(10, 'Home2 - Slider 1', '', 1, '701cd83201aaeabac925761f357b3d89.jpg', '', '', 3, 1),
-(11, 'Home 2 - Slider 2', '', 1, '584b5aa5ac78d9e6fda0b33b67bb6b2e.jpg', '', '', 4, 1),
-(12, 'Home 2 - Slider 3', '', 1, 'c27c492f0f5742080469a2961add4921.jpg', '', '', 5, 1),
-(13, 'Home3 - Slider1', '', 1, 'a85b9c21c01e448e22e347553e8ca6ab.jpg', '', '', 0, 1),
-(14, 'Home3 - Slider2', '', 1, 'a7ebad85d1b67d220c934dd1f17ae362.jpg', '', '', 0, 1),
-(15, 'Home 3 - Slider 3', '', 1, 'f1ff9d0203257e9bf23de25bf6ec3253.jpg', '', '', 0, 1),
-(16, 'Home4 - Slider 1', '', 1, '6e69c94cf4c0a1c1890508b775a0fc20.jpg', '', '', 0, 1),
-(17, 'Home3 - Slider2- (Copy)', '', 1, 'a7ebad85d1b67d220c934dd1f17ae362.jpg', '', '', 0, 1),
-(18, 'Home 3 - Slider 3- (Copy)', '', 1, 'f1ff9d0203257e9bf23de25bf6ec3253.jpg', '', '', 0, 1),
-(19, 'Home6 - Slider 1', '', 1, 'ca901a107fa3561cfb7fff48bead47f3.jpg', '', '', 0, 1),
-(20, 'Home6 - Slider2', '', 1, '76076454e9a2ce7c270ca1e3060360a7.jpg', '', '', 0, 1);
+INSERT INTO `_DB_PREFIX_jms_slides` (`id_slide`, `id_slider`, `title`, `class_suffix`, `bg_type`, `bg_image`, `bg_color`, `slide_link`, `order`, `status`) VALUES
+(7, 1, 'Home 1 - Slider 1', '', 1, '0e822c064f436a476823126f81c2b89d.jpg', '', '', 0, 1),
+(8, 1, 'Home1 - Slide 2', '', 1, '6a5a75bb8d4aedd8b76085cb40024054.jpg', '', '', 1, 1);
 
-DROP TABLE IF EXISTS `_DB_PREFIX_jms_slides_lang`;
-CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides_lang` (
-  `id_slide` int(10) NOT NULL AUTO_INCREMENT,
+DROP TABLE IF EXISTS `_DB_PREFIX_jms_slider_lang`;
+CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slider_lang` (
+  `id_slider` int(10) NOT NULL ,
   `id_lang` int(10) NOT NULL,
-  PRIMARY KEY (`id_slide`,`id_lang`)
+  PRIMARY KEY (`id_slider`,`id_lang`)
 ) ENGINE=_MYSQL_ENGINE_  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
 
-INSERT INTO `_DB_PREFIX_jms_slides_lang` (`id_slide`, `id_lang`) VALUES
-(7, 0),
-(8, 0),
-(9, 0),
-(10, 0),
-(11, 0),
-(12, 0),
-(13, 0),
-(14, 0),
-(15, 0),
-(16, 0),
-(17, 0),
-(18, 0),
-(19, 0),
-(20, 0);
+INSERT INTO `_DB_PREFIX_jms_slider_lang` (`id_slider`, `id_lang`) VALUES
+(1, 0);
 
 DROP TABLE IF EXISTS `_DB_PREFIX_jms_slides_layers`;
 CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides_layers` (
@@ -72,14 +105,12 @@ CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides_layers` (
   `data_fixed` int(10) NOT NULL DEFAULT '0',
   `data_delay` int(10) NOT NULL DEFAULT '1000',
   `data_time` int(10) NOT NULL DEFAULT '1000',
-  `data_x` int(10) NOT NULL DEFAULT '0',
-  `data_y` int(10) NOT NULL DEFAULT '0',
   `data_in` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'left',
   `data_out` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'right',
   `data_ease_in` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'linear',
   `data_ease_out` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'linear',
-  `data_step` int(10) NOT NULL DEFAULT '0',
-  `data_special` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'cycle',
+  `data_transform_in` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'bounce',
+  `data_transform_out` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'bounce',
   `data_type` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `data_image` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `data_html` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
@@ -89,9 +120,6 @@ CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides_layers` (
   `data_video_autoplay` int(10) NOT NULL DEFAULT '1',
   `data_video_loop` int(10) NOT NULL DEFAULT '1',
   `data_video_bg` int(10) NOT NULL DEFAULT '0',
-  `data_font_size` int(10) NOT NULL DEFAULT '14',
-  `data_line_height` int(10) NOT NULL,
-  `data_style` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT 'normal',
   `data_color` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '#FFFFFF',
   `data_width` int(10) NOT NULL,
   `data_height` int(10) NOT NULL,
@@ -100,49 +128,14 @@ CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides_layers` (
   PRIMARY KEY (`id_layer`,`id_slide`)
 ) ENGINE=_MYSQL_ENGINE_  DEFAULT CHARSET=utf8 AUTO_INCREMENT=86 ;
 
-INSERT INTO `_DB_PREFIX_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data_class_suffix`, `data_fixed`, `data_delay`, `data_time`, `data_x`, `data_y`, `data_in`, `data_out`, `data_ease_in`, `data_ease_out`, `data_step`, `data_special`, `data_type`, `data_image`, `data_html`, `data_video`, `data_video_controls`, `data_video_muted`, `data_video_autoplay`, `data_video_loop`, `data_video_bg`, `data_font_size`, `data_line_height`, `data_style`, `data_color`, `data_width`, `data_height`, `data_order`, `data_status`) VALUES
-(22, 8, 'Modern. Simple. Minimalist.', '', 0, 700, 1400, 310, 278, 'top', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />\r\nMinimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 311, 278, 0, 1),
-(23, 8, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1000, 1500, 310, 414, 'bottom', 'top', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 564, 66, 0, 1),
-(24, 9, 'New Look', '', 0, 700, 1400, 1045, 276, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\"> New Look.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 200, 50, 0, 1),
-(25, 9, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1200, 1900, 1045, 416, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store </span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 350, 158, 0, 1),
-(27, 10, 'Shop Now', '', 0, 1500, 2000, 1077, 476, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 88, 21, 0, 1),
-(29, 11, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1000, 1500, 1074, 391, 'bottom', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#111111', 136, 31, 0, 1),
-(41, 8, 'Shopnow', '', 0, 1700, 2400, 310, 491, 'bottom', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(42, 9, 'Shop now', '', 0, 1500, 2000, 1045, 494, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(44, 10, 'New Look', '', 0, 700, 1400, 1071, 258, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\"> New Look.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 200, 50, 0, 1),
-(46, 11, 'Modern. Simple. Minimalist.', '', 0, 700, 1400, 1074, 252, 'top', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />\r\nMinimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 200, 50, 0, 1),
-(52, 11, 'shopnow', '', 0, 1700, 2400, 1074, 469, 'bottom', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(55, 12, 'Modern Chair Design 2017', '', 0, 1000, 1700, 374, 290, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 128, 19, 0, 1),
-(56, 12, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 376, 361, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(57, 12, 'shopnow', '', 0, 2200, 2700, 374, 440, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(58, 10, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1200, 1900, 1071, 398, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(59, 13, 'Modern Chair Design 2017', '', 0, 1000, 1700, 311, 356, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />Minimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(60, 13, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 311, 497, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(61, 13, 'shopnow', '', 0, 2200, 2700, 311, 600, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow  btn-effect1\">Shop Now\r\n\r\n</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(62, 7, 'Modern Chair Design 2017', '', 0, 1000, 1700, 305, 311, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 200, 50, 0, 1),
-(63, 7, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 305, 382, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(64, 7, 'shopnow', '', 0, 2200, 2700, 301, 473, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now\r\n</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 67, 19, 0, 1),
-(65, 14, 'Modern Chair Design 2017', '', 0, 1000, 1700, 1121, 356, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Newlook.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(66, 14, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 1121, 495, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(67, 14, 'shopnow', '', 0, 2200, 2700, 1121, 572, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 76, 20, 0, 1),
-(68, 15, 'Modern Chair Design 2017', '', 0, 1000, 1700, 408, 384, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 200, 50, 0, 1),
-(69, 15, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 407, 456, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(70, 15, 'shopnow', '', 0, 2200, 2700, 408, 530, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 67, 19, 0, 1),
-(71, 16, 'Modern Chair Design 2017', '', 0, 1000, 1700, 311, 356, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />Minimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(72, 16, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 311, 497, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(73, 16, 'shopnow', '', 0, 2200, 2700, 311, 595, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(74, 17, 'Modern Chair Design 2017', '', 0, 1000, 1700, 1121, 356, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Newlook.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(75, 17, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 1122, 493, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(76, 17, 'shopnow', '', 0, 2200, 2700, 1121, 572, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(77, 18, 'Modern Chair Design 2017', '', 0, 1000, 1700, 408, 384, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 200, 50, 0, 1),
-(78, 18, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 408, 456, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(79, 18, 'shopnow', '', 0, 2200, 2700, 408, 530, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 67, 19, 0, 1),
-(80, 19, 'Modern Chair Design 2017', '', 0, 1000, 1700, 151, 219, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />Minimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(81, 19, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 151, 357, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(82, 19, 'shopnow', '', 0, 2200, 2700, 153, 448, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(83, 20, 'Modern Chair Design 2017', '', 0, 1000, 1700, 739, 219, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Newlook.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(84, 20, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 739, 358, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(85, 20, 'shopnow', '', 0, 2200, 2700, 739, 433, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1);
+
+INSERT INTO `_DB_PREFIX_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data_class_suffix`, `data_fixed`, `data_delay`, `data_time`, `data_in`, `data_out`, `data_ease_in`, `data_ease_out`, `data_transform_in`, `data_transform_out`, `data_type`, `data_image`, `data_html`, `data_video`, `data_video_controls`, `data_video_muted`, `data_video_autoplay`, `data_video_loop`, `data_video_bg`, `data_color`, `data_width`, `data_height`, `data_order`, `data_status`) VALUES
+(22, 8, 'Modern. Simple. Minimalist.', '', 0, 700, 1400, 'top', 'bottom', 'linear', 'linear', 'bounce', 'bounce', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />\r\nMinimalist.</span>', NULL, 0, 0, 0, 0, 0, '#111111', 311, 278, 0, 1),
+(23, 8, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1000, 1500, 'bottom', 'top', 'linear', 'linear', 'bounce', 'bounce', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, '#303030', 564, 66, 0, 1),
+(41, 8, 'Shopnow', '', 0, 1700, 2400, 'bottom', 'bottom', 'linear', 'linear', 'bounce', 'bounce', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, '#111111', 200, 50, 0, 1),
+(62, 7, 'Modern Chair Design 2017', '', 0, 1000, 1700, 'right', 'right', 'linear', 'linear', 'bounce', 'bounce', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, '#111111', 200, 50, 0, 1),
+(63, 7, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 'right', 'right', 'linear', 'linear', 'bounce', 'bounce', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, '#303030', 200, 50, 0, 1),
+(64, 7, 'shopnow', '', 0, 2200, 2700, 'right', 'left', 'linear', 'linear', 'bounce', 'bounce', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now\r\n</a>', NULL, 0, 0, 0, 0, 0, '#111111', 67, 19, 0, 1);
 
 DROP TABLE IF EXISTS `_DB_PREFIX_jms_slides_shop`;
 CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides_shop` (
@@ -153,17 +146,50 @@ CREATE TABLE IF NOT EXISTS `_DB_PREFIX_jms_slides_shop` (
 
 INSERT INTO `_DB_PREFIX_jms_slides_shop` (`id_slide`, `id_shop`) VALUES
 (7, 1),
-(8, 1),
-(9, 1),
-(10, 1),
-(11, 1),
-(12, 1),
-(13, 1),
-(14, 1),
-(15, 1),
-(16, 1),
-(17, 1),
-(18, 1),
-(19, 1),
-(20, 1);
+(8, 1);
+
+CREATE TABLE `_DB_PREFIX_jms_layer_style` (
+  `id_style` INT NOT NULL AUTO_INCREMENT ,
+  `id_layer` INT NOT NULL ,
+  `type` VARCHAR(10) NOT NULL ,
+  `data_style` VARCHAR(10) NOT NULL ,
+  `data_font_weight` INT NOT NULL DEFAULT 400,
+  `data_font_size` INT NOT NULL ,
+  `data_line_height` INT NOT NULL ,
+  `data_x` INT(10) NOT NULL ,
+  `data_y` INT(10) NOT NULL ,
+  `data_width` INT(10) NOT NULL DEFAULT 100,
+  `data_height` INT(10) NOT NULL DEFAULT 50,
+  `data_show` BOOLEAN NOT NULL ,
+  PRIMARY KEY (`id_style`)
+) ENGINE = _MYSQL_ENGINE_;
+
+
+INSERT INTO `_DB_PREFIX_jms_layer_style` (`id_style`, `id_layer`, `type`, `data_style`,`data_font_weight`, `data_font_size`, `data_line_height`, `data_x`, `data_y`,`data_width`,`data_height`, `data_show`) VALUES
+(1,22,'desktop','normal',400,52,65,880,88,651,177,1),
+(2,23,'desktop','normal',400,18,56,885,289,570,61,1),
+(7,41,'desktop','normal',400,16,26,887,406,100,50,1),
+(19,62,'desktop','normal',400,48,56,586,72,641,69,1),
+(20,63,'desktop','normal',400,18,56,590,162,602,68,1),
+(21,64,'desktop','normal',400,16,26,593,255,100,50,1),
+(254,22,'mobile','normal',400,26,65,227,30,239,130,1),
+(255,23,'mobile','normal',400,9,56,225,174,251,48,1),
+(260,41,'mobile','normal',400,8,26,227,241,100,50,1),
+(272,62,'mobile','normal',400,24,56,106,126,348,67,1),
+(273,63,'mobile','normal',400,9,56,105,48,290,71,1),
+(274,64,'mobile','normal',400,8,26,177,212,81,36,1),
+(317,22,'tablet','normal',400,52,65,563,46,566,155,1),
+(318,23,'tablet','normal',400,18,56,570,213,476,76,1),
+(323,41,'tablet','normal',400,16,26,569,340,100,50,1),
+(335,62,'tablet','normal',400,48,56,404,67,655,59,1),
+(336,63,'tablet','normal',400,18,56,406,156,550,63,1),
+(337,64,'tablet','normal',400,16,26,408,255,100,50,1),
+(359,22,'mobile2','normal',400,26,65,365,40,290,123,1),
+(360,23,'mobile2','normal',400,9,56,364,180,288,51,1),
+(365,41,'mobile2','normal',400,8,26,367,257,85,48,1),
+(377,62,'mobile2','normal',400,40,40,206,59,516,56,1),
+(378,63,'mobile2','normal',400,9,56,261,126,331,70,1),
+(379,64,'mobile2','normal',400,8,26,294,221,100,50,1);
+
+
 ";

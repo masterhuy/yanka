@@ -18,12 +18,6 @@
     align-items: center;
     justify-content: flex-end;
 }
-#jms_ajax_search .btn-search:hover{
-    color: #858585;
-}
-#jms_ajax_search .btn-search:hover i{
-    fill: #858585;
-}
 #jms_ajax_search .btn-search > span{
     text-transform: uppercase;
     padding-right: 6px;
@@ -37,7 +31,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 2px;
 }
 #jms_ajax_search.open > #cover-background {
     background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
@@ -67,31 +60,38 @@
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid #141414;
+    border-bottom: 5px solid #333;
 }
 #jms_ajax_search .label-form {
     display: flex;
     align-items: center;
 }
-#jms_ajax_search .label-form p{
-    color: #858585;
+#jms_ajax_search .label-form p {
+    color: #777;
     margin-bottom: 0;
     width: 100%;
+    font-size: 16px;
 }
 #jms_ajax_search .label-form i svg{
-    fill: #dbdbdb !important;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
+    color: #d0d0d0;
+}
+#jms_ajax_search .label-form i svg:hover{
+    color: #48CAB2;
 }
 #jms_ajax_search .modal-dialog{
     width: 100%;
     background: #fff;
     margin-top: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
     z-index: 999;
 }
-#jms_ajax_search .modal-content{
+#jms_ajax_search .modal-content {
     box-shadow: unset;
     border: 0;
-    padding: 16px 0 35px;
+    padding: 28px 15px 30px;
 }
 #jms_ajax_search.open > .dropdown-menu > a {
     color: #999;
@@ -114,13 +114,13 @@
     border: 0;
     border-bottom: 1px solid #e5e5e5;
     font-size: 24px;
-    color: #141414;
     height: 50px;
     margin: 0;
-    padding: 0 0 15px;
+    padding: 0;
+    font-weight: 800;
 }
 #ajax_search::placeholder{
-    color: #141414;
+    color: #333;
 }
 #search_result {
 

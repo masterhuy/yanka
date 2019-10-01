@@ -24,42 +24,14 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <script type="text/javascript">
-jQuery(function ($) {
-    "use strict";
-	var contentCarousel = $(".content-carousel");		
-	var items = 3,
-	    itemsDesktop = {if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}5{/if},
-	    itemsDesktopSmall = {if $items_show_md}{$items_show_md|escape:'htmlall':'UTF-8'}{else}4{/if},
-	    itemsTablet = {if $items_show_sm}{$items_show_sm|escape:'htmlall':'UTF-8'}{else}3{/if},
-	    itemsMobile = {if $items_show_xs}{$items_show_xs|escape:'htmlall':'UTF-8'}{else}2{/if};
-	var rtl = false;
-	if ($("body").hasClass("rtl")) rtl = true;				
-	contentCarousel.owlCarousel({
-		responsiveClass:true,
-		responsive:{			
-			1199:{
-				items:itemsDesktop
-			},
-			991:{
-				items:itemsDesktopSmall
-			},
-			768:{
-				items:itemsTablet
-			},
-			318:{
-				items:itemsMobile
-			}
-		},
-		rtl: rtl,
-	    nav: {if $navigation == '1'}true{else}false{/if},
-	    dots: {if $pagination == '1'}true{else}false{/if},
-		autoplay:{if $autoplay == '1'}true{else}false{/if},
-	    rewindNav: {if $rewind == '1'}true{else}false{/if},
-	    navigationText: ["", ""],
-	    slideBy: {if $slidebypage == '1'}'page'{else}1{/if},
-	    slideSpeed: 200	
-	});
-});
+	var ct_items = {if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}4{/if};
+	var ct_itemsDesktop = {if $items_show}{$items_show|escape:'htmlall':'UTF-8'}{else}4{/if};
+	var ct_itemsDesktopSmall = {if $items_show_md}{$items_show_md|escape:'htmlall':'UTF-8'}{else}3{/if};
+	var ct_itemsTablet = {if $items_show_sm}{$items_show_sm|escape:'htmlall':'UTF-8'}{else}2{/if};
+	var ct_itemsMobile = {if $items_show_xs}{$items_show_xs|escape:'htmlall':'UTF-8'}{else}1{/if};
+	var ct_nav = {if $navigation == 1}true{else}false{/if};
+	var ct_pag = {if $pagination == 1}true{else}false{/if};
+	var ct_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 </script>
 {if $addon_title}
 <div class="addon-title">
@@ -67,15 +39,15 @@ jQuery(function ($) {
 </div>
 {/if}
 {if $addon_desc}
-<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
+<p class="addon-desc">{$addon_desc nofilter}</p>
 {/if}
 <div class="content-carousel{if isset($box_class) && $box_class} {$box_class}{/if}">
-{foreach from=$contents item=content}
-	{if $content.image || $content.content}
-	<div class="content-item">	
-		{if isset($content.image) && $content.image}<img src="{$root_url|escape:'htmlall':'UTF-8'}{$content.image}" alt="Joommasters.com" />{/if}
-		{if isset($content.content) && $content.content}{$content.content nofilter}{/if}		
-	</div>
-	{/if}
-{/foreach}
+	{foreach from=$contents item=content}
+		{if $content.image || $content.content}
+		<div class="content-item">	
+			{if isset($content.image) && $content.image}<img src="{$root_url|escape:'htmlall':'UTF-8'}{$content.image}" alt="Joommasters.com" />{/if}
+			{if isset($content.content) && $content.content}{$content.content nofilter}{/if}		
+		</div>
+		{/if}
+	{/foreach}
 </div>

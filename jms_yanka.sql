@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th9 27, 2019 lúc 11:03 AM
+-- Thời gian đã tạo: Th10 01, 2019 lúc 12:25 PM
 -- Phiên bản máy phục vụ: 10.1.31-MariaDB
 -- Phiên bản PHP: 7.0.29
 
@@ -1207,6 +1207,17 @@ CREATE TABLE `jms_advice` (
   `weight` int(11) DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Đang đổ dữ liệu cho bảng `jms_advice`
+--
+
+INSERT INTO `jms_advice` (`id_advice`, `id_ps_advice`, `id_tab`, `ids_tab`, `validated`, `hide`, `location`, `selector`, `start_day`, `stop_day`, `weight`) VALUES
+(6, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(7, 27, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(8, 674, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(9, 765, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(10, 828, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -1218,6 +1229,37 @@ CREATE TABLE `jms_advice_lang` (
   `id_lang` int(11) NOT NULL,
   `html` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_advice_lang`
+--
+
+INSERT INTO `jms_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
+(6, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(6, 2, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(6, 3, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(6, 5, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(6, 8, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(7, 1, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(7, 2, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(7, 3, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(7, 5, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(7, 8, '<div id=\"wrap_id_advice_27\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"27\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"paypal\" href=\"{link}AdminModules{/link}&install=paypal&module_name=paypal&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/paypal.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/27.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Complete more sales with PayPal. Download the free module now. </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_27 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=27&url=\'+link;\n                $(\'#wrap_id_advice_27 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(8, 1, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(8, 2, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(8, 3, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(8, 5, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(8, 8, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(9, 1, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(9, 2, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(9, 3, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(9, 5, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(9, 8, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(10, 1, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(10, 2, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(10, 3, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(10, 5, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(10, 8, ' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 
 -- --------------------------------------------------------
 
@@ -1697,14 +1739,18 @@ INSERT INTO `jms_authorization_role` (`id_authorization_role`, `slug`) VALUES
 (820, 'ROLE_MOD_MODULE_JMSPRODUCTVIDEO_DELETE'),
 (818, 'ROLE_MOD_MODULE_JMSPRODUCTVIDEO_READ'),
 (819, 'ROLE_MOD_MODULE_JMSPRODUCTVIDEO_UPDATE'),
-(813, 'ROLE_MOD_MODULE_JMSSLIDER_CREATE'),
-(816, 'ROLE_MOD_MODULE_JMSSLIDER_DELETE'),
-(814, 'ROLE_MOD_MODULE_JMSSLIDER_READ'),
-(815, 'ROLE_MOD_MODULE_JMSSLIDER_UPDATE'),
+(885, 'ROLE_MOD_MODULE_JMSSLIDER_CREATE'),
+(888, 'ROLE_MOD_MODULE_JMSSLIDER_DELETE'),
+(886, 'ROLE_MOD_MODULE_JMSSLIDER_READ'),
+(887, 'ROLE_MOD_MODULE_JMSSLIDER_UPDATE'),
 (781, 'ROLE_MOD_MODULE_JMSTESTIMONIALS_CREATE'),
 (784, 'ROLE_MOD_MODULE_JMSTESTIMONIALS_DELETE'),
 (782, 'ROLE_MOD_MODULE_JMSTESTIMONIALS_READ'),
 (783, 'ROLE_MOD_MODULE_JMSTESTIMONIALS_UPDATE'),
+(881, 'ROLE_MOD_MODULE_JMSWISHLIST_CREATE'),
+(884, 'ROLE_MOD_MODULE_JMSWISHLIST_DELETE'),
+(882, 'ROLE_MOD_MODULE_JMSWISHLIST_READ'),
+(883, 'ROLE_MOD_MODULE_JMSWISHLIST_UPDATE'),
 (621, 'ROLE_MOD_MODULE_PAGESNOTFOUND_CREATE'),
 (624, 'ROLE_MOD_MODULE_PAGESNOTFOUND_DELETE'),
 (622, 'ROLE_MOD_MODULE_PAGESNOTFOUND_READ'),
@@ -2499,6 +2545,246 @@ CREATE TABLE `jms_badge` (
   `validated` tinyint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Đang đổ dữ liệu cho bảng `jms_badge`
+--
+
+INSERT INTO `jms_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_position`, `scoring`, `awb`, `validated`) VALUES
+(1, 159, 'feature', 41, 1, 5, 1, 0),
+(2, 160, 'feature', 41, 2, 10, 1, 0),
+(3, 161, 'feature', 41, 3, 15, 1, 0),
+(4, 162, 'feature', 41, 4, 20, 1, 0),
+(5, 163, 'feature', 41, 1, 5, 1, 0),
+(6, 164, 'feature', 41, 2, 10, 1, 0),
+(7, 165, 'feature', 41, 3, 15, 1, 0),
+(8, 166, 'feature', 41, 4, 20, 1, 0),
+(9, 195, 'feature', 41, 1, 5, 1, 0),
+(10, 196, 'feature', 41, 2, 10, 1, 0),
+(11, 229, 'feature', 41, 1, 5, 1, 0),
+(12, 230, 'feature', 41, 2, 10, 1, 0),
+(13, 231, 'feature', 41, 3, 15, 1, 0),
+(14, 232, 'feature', 41, 4, 20, 1, 0),
+(15, 233, 'feature', 41, 1, 5, 1, 0),
+(16, 234, 'feature', 41, 2, 10, 1, 0),
+(17, 235, 'feature', 41, 3, 15, 1, 0),
+(18, 236, 'feature', 41, 4, 20, 1, 0),
+(19, 241, 'feature', 41, 1, 5, 1, 0),
+(20, 242, 'feature', 41, 2, 10, 1, 0),
+(21, 243, 'feature', 41, 3, 15, 1, 0),
+(22, 244, 'feature', 41, 4, 20, 1, 0),
+(23, 249, 'feature', 41, 1, 5, 1, 0),
+(24, 250, 'feature', 41, 2, 10, 1, 0),
+(25, 251, 'feature', 41, 3, 15, 1, 0),
+(26, 252, 'feature', 41, 4, 20, 1, 0),
+(27, 253, 'feature', 41, 1, 5, 1, 0),
+(28, 254, 'feature', 41, 2, 10, 1, 0),
+(29, 255, 'feature', 41, 3, 15, 1, 0),
+(30, 256, 'feature', 41, 4, 20, 1, 0),
+(31, 261, 'feature', 41, 1, 5, 1, 0),
+(32, 262, 'feature', 41, 2, 10, 1, 0),
+(33, 269, 'feature', 41, 1, 5, 1, 0),
+(34, 270, 'feature', 41, 2, 10, 1, 0),
+(35, 271, 'feature', 41, 3, 15, 1, 0),
+(36, 272, 'feature', 41, 4, 20, 1, 0),
+(37, 273, 'feature', 41, 1, 5, 1, 0),
+(38, 274, 'feature', 41, 2, 10, 1, 0),
+(39, 275, 'feature', 41, 3, 15, 1, 0),
+(40, 276, 'feature', 41, 4, 20, 1, 0),
+(41, 277, 'feature', 41, 1, 5, 1, 0),
+(42, 278, 'feature', 41, 2, 10, 1, 0),
+(43, 279, 'feature', 41, 3, 15, 1, 0),
+(44, 280, 'feature', 41, 4, 20, 1, 0),
+(45, 281, 'feature', 41, 1, 5, 1, 0),
+(46, 282, 'feature', 41, 2, 10, 1, 0),
+(47, 283, 'feature', 41, 3, 15, 1, 0),
+(48, 284, 'feature', 41, 4, 20, 1, 0),
+(49, 285, 'feature', 41, 1, 5, 1, 0),
+(50, 286, 'feature', 41, 2, 10, 1, 0),
+(51, 287, 'feature', 41, 3, 15, 1, 0),
+(52, 288, 'feature', 41, 4, 20, 1, 0),
+(53, 289, 'feature', 41, 1, 5, 1, 0),
+(54, 290, 'feature', 41, 2, 10, 1, 0),
+(55, 291, 'feature', 41, 3, 15, 1, 0),
+(56, 292, 'feature', 41, 4, 20, 1, 0),
+(57, 293, 'feature', 41, 1, 5, 1, 0),
+(58, 294, 'feature', 41, 2, 10, 1, 0),
+(59, 295, 'feature', 41, 3, 15, 1, 0),
+(60, 296, 'feature', 41, 4, 20, 1, 0),
+(61, 297, 'feature', 41, 1, 5, 1, 0),
+(62, 298, 'feature', 41, 2, 10, 1, 0),
+(63, 299, 'feature', 41, 3, 15, 1, 0),
+(64, 300, 'feature', 41, 4, 20, 1, 0),
+(65, 301, 'feature', 41, 1, 5, 1, 0),
+(66, 302, 'feature', 41, 2, 10, 1, 0),
+(67, 303, 'feature', 41, 3, 15, 1, 0),
+(68, 304, 'feature', 41, 4, 20, 1, 0),
+(69, 305, 'feature', 41, 1, 5, 1, 0),
+(70, 306, 'feature', 41, 2, 10, 1, 0),
+(71, 307, 'feature', 41, 3, 15, 1, 0),
+(72, 308, 'feature', 41, 4, 20, 1, 0),
+(73, 309, 'feature', 41, 1, 5, 1, 0),
+(74, 310, 'feature', 41, 2, 10, 1, 0),
+(75, 311, 'feature', 41, 3, 15, 1, 0),
+(76, 312, 'feature', 41, 4, 20, 1, 0),
+(77, 313, 'feature', 41, 1, 5, 1, 0),
+(78, 314, 'feature', 41, 2, 10, 1, 0),
+(79, 315, 'feature', 41, 3, 15, 1, 0),
+(80, 316, 'feature', 41, 4, 20, 1, 0),
+(81, 317, 'feature', 41, 1, 5, 1, 0),
+(82, 318, 'feature', 41, 2, 10, 1, 0),
+(83, 319, 'feature', 41, 3, 15, 1, 0),
+(84, 320, 'feature', 41, 4, 20, 1, 0),
+(85, 321, 'feature', 41, 1, 5, 1, 0),
+(86, 322, 'feature', 41, 2, 10, 1, 0),
+(87, 323, 'feature', 41, 3, 15, 1, 0),
+(88, 324, 'feature', 41, 4, 20, 1, 0),
+(89, 325, 'feature', 41, 1, 5, 1, 0),
+(90, 326, 'feature', 41, 2, 10, 1, 0),
+(91, 327, 'feature', 41, 3, 15, 1, 0),
+(92, 328, 'feature', 41, 4, 20, 1, 0),
+(93, 329, 'feature', 41, 1, 5, 1, 0),
+(94, 330, 'feature', 41, 2, 10, 1, 0),
+(95, 331, 'feature', 41, 3, 15, 1, 0),
+(96, 332, 'feature', 41, 4, 20, 1, 0),
+(97, 333, 'feature', 41, 1, 5, 1, 0),
+(98, 334, 'feature', 41, 2, 10, 1, 0),
+(99, 335, 'feature', 41, 3, 15, 1, 0),
+(100, 336, 'feature', 41, 4, 20, 1, 0),
+(101, 337, 'feature', 41, 1, 5, 1, 0),
+(102, 338, 'feature', 41, 2, 10, 1, 0),
+(103, 339, 'feature', 41, 3, 15, 1, 0),
+(104, 340, 'feature', 41, 4, 20, 1, 0),
+(105, 341, 'feature', 41, 1, 5, 1, 0),
+(106, 342, 'feature', 41, 2, 10, 1, 0),
+(107, 343, 'feature', 41, 3, 15, 1, 0),
+(108, 344, 'feature', 41, 4, 20, 1, 0),
+(109, 345, 'feature', 41, 1, 5, 1, 0),
+(110, 346, 'feature', 41, 2, 10, 1, 0),
+(111, 347, 'feature', 41, 3, 15, 1, 0),
+(112, 348, 'feature', 41, 4, 20, 1, 0),
+(113, 349, 'feature', 41, 1, 5, 1, 0),
+(114, 350, 'feature', 41, 2, 10, 1, 0),
+(115, 351, 'feature', 41, 3, 15, 1, 0),
+(116, 352, 'feature', 41, 4, 20, 1, 0),
+(117, 353, 'feature', 41, 1, 5, 1, 0),
+(118, 354, 'feature', 41, 2, 10, 1, 0),
+(119, 355, 'feature', 41, 3, 15, 1, 0),
+(120, 356, 'feature', 41, 4, 20, 1, 0),
+(121, 357, 'feature', 41, 1, 5, 1, 0),
+(122, 358, 'feature', 41, 2, 10, 1, 0),
+(123, 359, 'feature', 41, 3, 15, 1, 0),
+(124, 360, 'feature', 41, 4, 20, 1, 0),
+(125, 1, 'feature', 1, 1, 10, 0, 0),
+(126, 2, 'feature', 2, 1, 10, 0, 0),
+(127, 3, 'feature', 2, 2, 15, 0, 0),
+(128, 4, 'feature', 3, 1, 15, 0, 0),
+(129, 5, 'feature', 3, 2, 15, 0, 0),
+(130, 6, 'feature', 4, 1, 15, 0, 0),
+(131, 7, 'feature', 4, 2, 15, 0, 0),
+(132, 8, 'feature', 5, 1, 5, 0, 0),
+(133, 9, 'feature', 5, 2, 10, 0, 0),
+(134, 10, 'feature', 6, 1, 15, 0, 0),
+(135, 11, 'feature', 6, 2, 10, 0, 0),
+(136, 12, 'feature', 6, 3, 10, 0, 0),
+(137, 13, 'feature', 5, 3, 10, 0, 0),
+(138, 14, 'feature', 5, 4, 15, 0, 0),
+(139, 15, 'feature', 5, 5, 20, 0, 0),
+(140, 16, 'feature', 5, 6, 20, 0, 0),
+(141, 17, 'achievement', 7, 1, 5, 0, 1),
+(142, 18, 'achievement', 7, 2, 10, 0, 0),
+(143, 19, 'feature', 8, 1, 15, 0, 0),
+(144, 20, 'feature', 8, 2, 15, 0, 0),
+(145, 21, 'feature', 9, 1, 15, 0, 0),
+(146, 22, 'feature', 10, 1, 10, 0, 0),
+(147, 23, 'feature', 10, 2, 10, 0, 0),
+(148, 24, 'feature', 10, 3, 10, 0, 0),
+(149, 25, 'feature', 10, 4, 10, 0, 0),
+(150, 26, 'feature', 10, 5, 10, 0, 0),
+(151, 27, 'feature', 4, 3, 10, 0, 0),
+(152, 28, 'feature', 3, 3, 10, 0, 0),
+(153, 29, 'achievement', 11, 1, 5, 0, 0),
+(154, 30, 'achievement', 11, 2, 10, 0, 0),
+(155, 31, 'achievement', 11, 3, 15, 0, 0),
+(156, 32, 'achievement', 11, 4, 20, 0, 0),
+(157, 33, 'achievement', 11, 5, 25, 0, 0),
+(158, 34, 'achievement', 11, 6, 30, 0, 0),
+(159, 35, 'achievement', 7, 3, 15, 0, 0),
+(160, 36, 'achievement', 7, 4, 20, 0, 0),
+(161, 37, 'achievement', 7, 5, 25, 0, 0),
+(162, 38, 'achievement', 7, 6, 30, 0, 0),
+(163, 39, 'achievement', 12, 1, 5, 0, 0),
+(164, 40, 'achievement', 12, 2, 10, 0, 0),
+(165, 41, 'achievement', 12, 3, 15, 0, 0),
+(166, 42, 'achievement', 12, 4, 20, 0, 0),
+(167, 43, 'achievement', 12, 5, 25, 0, 0),
+(168, 44, 'achievement', 12, 6, 30, 0, 0),
+(169, 45, 'achievement', 13, 1, 5, 0, 0),
+(170, 46, 'achievement', 13, 2, 10, 0, 0),
+(171, 47, 'achievement', 13, 3, 15, 0, 0),
+(172, 48, 'achievement', 13, 4, 20, 0, 0),
+(173, 49, 'achievement', 13, 5, 25, 0, 0),
+(174, 50, 'achievement', 13, 6, 30, 0, 0),
+(175, 51, 'achievement', 14, 1, 5, 0, 0),
+(176, 52, 'achievement', 14, 2, 10, 0, 0),
+(177, 53, 'achievement', 14, 3, 15, 0, 0),
+(178, 54, 'achievement', 14, 4, 20, 0, 0),
+(179, 55, 'achievement', 14, 5, 25, 0, 0),
+(180, 56, 'achievement', 14, 6, 30, 0, 0),
+(181, 57, 'achievement', 15, 1, 5, 0, 0),
+(182, 58, 'achievement', 15, 2, 10, 0, 0),
+(183, 59, 'achievement', 15, 3, 15, 0, 0),
+(184, 60, 'achievement', 15, 4, 20, 0, 0),
+(185, 61, 'achievement', 15, 5, 25, 0, 0),
+(186, 62, 'achievement', 15, 6, 30, 0, 0),
+(187, 63, 'achievement', 16, 1, 5, 0, 0),
+(188, 64, 'achievement', 16, 2, 10, 0, 0),
+(189, 65, 'achievement', 16, 3, 15, 0, 0),
+(190, 66, 'achievement', 16, 4, 20, 0, 0),
+(191, 67, 'achievement', 16, 5, 25, 0, 0),
+(192, 68, 'achievement', 16, 6, 30, 0, 0),
+(193, 74, 'international', 22, 1, 10, 0, 0),
+(194, 75, 'international', 23, 1, 10, 0, 0),
+(195, 83, 'international', 31, 1, 10, 0, 0),
+(196, 84, 'international', 25, 1, 10, 0, 0),
+(197, 85, 'international', 32, 1, 10, 0, 0),
+(198, 86, 'international', 33, 1, 10, 0, 0),
+(199, 87, 'international', 34, 1, 10, 0, 0),
+(200, 88, 'feature', 35, 1, 5, 0, 0),
+(201, 89, 'feature', 35, 2, 10, 0, 0),
+(202, 90, 'feature', 35, 3, 10, 0, 0),
+(203, 91, 'feature', 35, 4, 10, 0, 0),
+(204, 92, 'feature', 35, 5, 10, 0, 0),
+(205, 93, 'feature', 35, 6, 10, 0, 0),
+(206, 94, 'feature', 36, 1, 5, 0, 0),
+(207, 95, 'feature', 36, 2, 5, 0, 0),
+(208, 96, 'feature', 36, 3, 10, 0, 0),
+(209, 97, 'feature', 36, 4, 10, 0, 0),
+(210, 98, 'feature', 36, 5, 20, 0, 0),
+(211, 99, 'feature', 36, 6, 20, 0, 0),
+(212, 100, 'feature', 8, 3, 15, 0, 0),
+(213, 101, 'achievement', 37, 1, 5, 0, 0),
+(214, 102, 'achievement', 37, 2, 5, 0, 0),
+(215, 103, 'achievement', 37, 3, 10, 0, 0),
+(216, 104, 'achievement', 37, 4, 10, 0, 0),
+(217, 105, 'achievement', 37, 5, 15, 0, 0),
+(218, 106, 'achievement', 37, 6, 15, 0, 0),
+(219, 107, 'achievement', 38, 1, 10, 0, 0),
+(220, 108, 'achievement', 38, 2, 10, 0, 0),
+(221, 109, 'achievement', 38, 3, 15, 0, 0),
+(222, 110, 'achievement', 38, 4, 20, 0, 0),
+(223, 111, 'achievement', 38, 5, 25, 0, 0),
+(224, 112, 'achievement', 38, 6, 30, 0, 0),
+(225, 113, 'achievement', 39, 1, 10, 0, 0),
+(226, 114, 'achievement', 39, 2, 20, 0, 0),
+(227, 115, 'achievement', 39, 3, 30, 0, 0),
+(228, 116, 'achievement', 39, 4, 40, 0, 0),
+(229, 117, 'achievement', 39, 5, 50, 0, 0),
+(230, 118, 'achievement', 39, 6, 50, 0, 0),
+(231, 119, 'feature', 40, 1, 10, 0, 0),
+(232, 120, 'feature', 40, 2, 15, 0, 0),
+(233, 121, 'feature', 40, 3, 20, 0, 0),
+(234, 122, 'feature', 40, 4, 25, 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -2512,6 +2798,1183 @@ CREATE TABLE `jms_badge_lang` (
   `description` varchar(255) DEFAULT NULL,
   `group_name` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_badge_lang`
+--
+
+INSERT INTO `jms_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `group_name`) VALUES
+(1, 1, 'Shopgate installed', 'You have installed the Shopgate module', 'Partners'),
+(1, 2, 'Shopgate installed', '', ''),
+(1, 3, 'Shopgate installed', '', ''),
+(1, 5, 'Shopgate installed', '', ''),
+(1, 8, 'Shopgate installed', '', ''),
+(2, 1, 'Shopgate configured', 'You have configured the Shopgate module', 'Partners'),
+(2, 2, 'Shopgate configured', '', ''),
+(2, 3, 'Shopgate configured', '', ''),
+(2, 5, 'Shopgate configured', '', ''),
+(2, 8, 'Shopgate configured', '', ''),
+(3, 1, 'Shopgate active', 'Your Shopgate module is active', 'Partners'),
+(3, 2, 'Shopgate active', '', ''),
+(3, 3, 'Shopgate active', '', ''),
+(3, 5, 'Shopgate active', '', ''),
+(3, 8, 'Shopgate active', '', ''),
+(4, 1, 'Shopgate very active', 'Your Shopgate module is very active', 'Partners'),
+(4, 2, 'Shopgate very active', '', ''),
+(4, 3, 'Shopgate very active', '', ''),
+(4, 5, 'Shopgate very active', '', ''),
+(4, 8, 'Shopgate very active', '', ''),
+(5, 1, 'Skrill installed', 'You have installed the Skrill module', 'Partners'),
+(5, 2, 'Skrill installed', '', ''),
+(5, 3, 'Skrill installed', '', ''),
+(5, 5, 'Skrill installed', '', ''),
+(5, 8, 'Skrill installed', '', ''),
+(6, 1, 'Skrill configured', 'You have configured the Skrill module', 'Partners'),
+(6, 2, 'Skrill configured', '', ''),
+(6, 3, 'Skrill configured', '', ''),
+(6, 5, 'Skrill configured', '', ''),
+(6, 8, 'Skrill configured', '', ''),
+(7, 1, 'Skrill active', 'Your Skrill module is active', 'Partners'),
+(7, 2, 'Skrill active', '', ''),
+(7, 3, 'Skrill active', '', ''),
+(7, 5, 'Skrill active', '', ''),
+(7, 8, 'Skrill active', '', ''),
+(8, 1, 'Skrill very active', 'Your Skrill module is very active', 'Partners'),
+(8, 2, 'Skrill very active', '', ''),
+(8, 3, 'Skrill very active', '', ''),
+(8, 5, 'Skrill very active', '', ''),
+(8, 8, 'Skrill very active', '', ''),
+(9, 1, 'Shopping Feed installed', 'You have installed the Shopping Feed module', 'Partners'),
+(9, 2, 'Shopping Feed installed', '', ''),
+(9, 3, 'Shopping Feed installed', '', ''),
+(9, 5, 'Shopping Feed installed', '', ''),
+(9, 8, 'Shopping Feed installed', '', ''),
+(10, 1, 'Shopping Feed configured', 'You have configured the Shopping Feed module', 'Partners'),
+(10, 2, 'Shopping Feed configured', '', ''),
+(10, 3, 'Shopping Feed configured', '', ''),
+(10, 5, 'Shopping Feed configured', '', ''),
+(10, 8, 'Shopping Feed configured', '', ''),
+(11, 1, 'Alliance Payment installed', 'You have installed the Alliance Payment module', 'Partners'),
+(11, 2, 'Alliance Payment installed', '', ''),
+(11, 3, 'Alliance Payment installed', '', ''),
+(11, 5, 'Alliance Payment installed', '', ''),
+(11, 8, 'Alliance Payment installed', '', ''),
+(12, 1, 'Alliance Payment configured', 'You have configured the Alliance Payment module', 'Partners'),
+(12, 2, 'Alliance Payment configured', '', ''),
+(12, 3, 'Alliance Payment configured', '', ''),
+(12, 5, 'Alliance Payment configured', '', ''),
+(12, 8, 'Alliance Payment configured', '', ''),
+(13, 1, 'Alliance Payment active', 'Your Alliance Payment module is active', 'Partners'),
+(13, 2, 'Alliance Payment active', '', ''),
+(13, 3, 'Alliance Payment active', '', ''),
+(13, 5, 'Alliance Payment active', '', ''),
+(13, 8, 'Alliance Payment active', '', ''),
+(14, 1, 'Alliance Payment very active', 'Your Alliance Payment module is very active', 'Partners'),
+(14, 2, 'Alliance Payment very active', '', ''),
+(14, 3, 'Alliance Payment very active', '', ''),
+(14, 5, 'Alliance Payment very active', '', ''),
+(14, 8, 'Alliance Payment very active', '', ''),
+(15, 1, 'Authorize Aim installed', 'You have installed the Authorize Aim module', 'Partners'),
+(15, 2, 'Authorize Aim installed', '', ''),
+(15, 3, 'Authorize Aim installed', '', ''),
+(15, 5, 'Authorize Aim installed', '', ''),
+(15, 8, 'Authorize Aim installed', '', ''),
+(16, 1, 'Authorize Aim configured', 'You have configured the Authorize Aim module', 'Partners'),
+(16, 2, 'Authorize Aim configured', '', ''),
+(16, 3, 'Authorize Aim configured', '', ''),
+(16, 5, 'Authorize Aim configured', '', ''),
+(16, 8, 'Authorize Aim configured', '', ''),
+(17, 1, 'Authorize Aim active', 'Your Authorize Aim module is active', 'Partners'),
+(17, 2, 'Authorize Aim active', '', ''),
+(17, 3, 'Authorize Aim active', '', ''),
+(17, 5, 'Authorize Aim active', '', ''),
+(17, 8, 'Authorize Aim active', '', ''),
+(18, 1, 'Authorize Aim very active', 'Your Authorize Aim module is very active', 'Partners'),
+(18, 2, 'Authorize Aim very active', '', ''),
+(18, 3, 'Authorize Aim very active', '', ''),
+(18, 5, 'Authorize Aim very active', '', ''),
+(18, 8, 'Authorize Aim very active', '', ''),
+(19, 1, 'Blue Pay installed', 'You have installed the Blue Pay module', 'Partners'),
+(19, 2, 'Blue Pay installed', '', ''),
+(19, 3, 'Blue Pay installed', '', ''),
+(19, 5, 'Blue Pay installed', '', ''),
+(19, 8, 'Blue Pay installed', '', ''),
+(20, 1, 'Blue Pay configured', 'You have configured the Blue Pay module', 'Partners'),
+(20, 2, 'Blue Pay configured', '', ''),
+(20, 3, 'Blue Pay configured', '', ''),
+(20, 5, 'Blue Pay configured', '', ''),
+(20, 8, 'Blue Pay configured', '', ''),
+(21, 1, 'Blue Pay active', 'Your Blue Pay module is active', 'Partners'),
+(21, 2, 'Blue Pay active', '', ''),
+(21, 3, 'Blue Pay active', '', ''),
+(21, 5, 'Blue Pay active', '', ''),
+(21, 8, 'Blue Pay active', '', ''),
+(22, 1, 'Blue Pay very active', 'Your Blue Pay module is very active', 'Partners'),
+(22, 2, 'Blue Pay very active', '', ''),
+(22, 3, 'Blue Pay very active', '', ''),
+(22, 5, 'Blue Pay very active', '', ''),
+(22, 8, 'Blue Pay very active', '', ''),
+(23, 1, 'Ebay installed', 'You have installed the Ebay module', 'Partners'),
+(23, 2, 'Ebay installed', '', ''),
+(23, 3, 'Ebay installed', '', ''),
+(23, 5, 'Ebay installed', '', ''),
+(23, 8, 'Ebay installed', '', ''),
+(24, 1, 'Ebay configured', 'You have configured the Ebay module', 'Partners'),
+(24, 2, 'Ebay configured', '', ''),
+(24, 3, 'Ebay configured', '', ''),
+(24, 5, 'Ebay configured', '', ''),
+(24, 8, 'Ebay configured', '', ''),
+(25, 1, 'Ebay active', 'Your Ebay module is active', 'Partners'),
+(25, 2, 'Ebay active', '', ''),
+(25, 3, 'Ebay active', '', ''),
+(25, 5, 'Ebay active', '', ''),
+(25, 8, 'Ebay active', '', ''),
+(26, 1, 'Ebay very active', 'Your Ebay module is very active', 'Partners'),
+(26, 2, 'Ebay very active', '', ''),
+(26, 3, 'Ebay very active', '', ''),
+(26, 5, 'Ebay very active', '', ''),
+(26, 8, 'Ebay very active', '', ''),
+(27, 1, 'PayPlug installed', 'You have installed the PayPlug module', 'Partners'),
+(27, 2, 'PayPlug installed', '', ''),
+(27, 3, 'PayPlug installed', '', ''),
+(27, 5, 'PayPlug installed', '', ''),
+(27, 8, 'PayPlug installed', '', ''),
+(28, 1, 'PayPlug configured', 'You have configured the PayPlug module', 'Partners'),
+(28, 2, 'PayPlug configured', '', ''),
+(28, 3, 'PayPlug configured', '', ''),
+(28, 5, 'PayPlug configured', '', ''),
+(28, 8, 'PayPlug configured', '', ''),
+(29, 1, 'PayPlug active', 'Your PayPlug module is active', 'Partners'),
+(29, 2, 'PayPlug active', '', ''),
+(29, 3, 'PayPlug active', '', ''),
+(29, 5, 'PayPlug active', '', ''),
+(29, 8, 'PayPlug active', '', ''),
+(30, 1, 'PayPlug very active', 'Your PayPlug module is very active', 'Partners'),
+(30, 2, 'PayPlug very active', '', ''),
+(30, 3, 'PayPlug very active', '', ''),
+(30, 5, 'PayPlug very active', '', ''),
+(30, 8, 'PayPlug very active', '', ''),
+(31, 1, 'Affinity Items installed', 'You have installed the Affinity Items module', 'Partners'),
+(31, 2, 'Affinity Items installed', '', ''),
+(31, 3, 'Affinity Items installed', '', ''),
+(31, 5, 'Affinity Items installed', '', ''),
+(31, 8, 'Affinity Items installed', '', ''),
+(32, 1, 'Affinity Items configured', 'You have configured the Affinity Items module', 'Partners'),
+(32, 2, 'Affinity Items configured', '', ''),
+(32, 3, 'Affinity Items configured', '', ''),
+(32, 5, 'Affinity Items configured', '', ''),
+(32, 8, 'Affinity Items configured', '', ''),
+(33, 1, 'DPD Poland installed', 'You have installed the DPD Poland module', 'Partners'),
+(33, 2, 'DPD Poland installed', '', ''),
+(33, 3, 'DPD Poland installed', '', ''),
+(33, 5, 'DPD Poland installed', '', ''),
+(33, 8, 'DPD Poland installed', '', ''),
+(34, 1, 'DPD Poland configured', 'You have configured the DPD Poland module', 'Partners'),
+(34, 2, 'DPD Poland configured', '', ''),
+(34, 3, 'DPD Poland configured', '', ''),
+(34, 5, 'DPD Poland configured', '', ''),
+(34, 8, 'DPD Poland configured', '', ''),
+(35, 1, 'DPD Poland active', 'Your DPD Poland module is active', 'Partners'),
+(35, 2, 'DPD Poland active', '', ''),
+(35, 3, 'DPD Poland active', '', ''),
+(35, 5, 'DPD Poland active', '', ''),
+(35, 8, 'DPD Poland active', '', ''),
+(36, 1, 'DPD Poland very active', 'Your DPD Poland module is very active', 'Partners'),
+(36, 2, 'DPD Poland very active', '', ''),
+(36, 3, 'DPD Poland very active', '', ''),
+(36, 5, 'DPD Poland very active', '', ''),
+(36, 8, 'DPD Poland very active', '', ''),
+(37, 1, 'Envoimoinscher installed', 'You have installed the Envoimoinscher module', 'Partners'),
+(37, 2, 'Envoimoinscher installed', '', ''),
+(37, 3, 'Envoimoinscher installed', '', ''),
+(37, 5, 'Envoimoinscher installed', '', ''),
+(37, 8, 'Envoimoinscher installed', '', ''),
+(38, 1, 'Envoimoinscher configured', 'You have configured the Envoimoinscher module', 'Partners'),
+(38, 2, 'Envoimoinscher configured', '', ''),
+(38, 3, 'Envoimoinscher configured', '', ''),
+(38, 5, 'Envoimoinscher configured', '', ''),
+(38, 8, 'Envoimoinscher configured', '', ''),
+(39, 1, 'Envoimoinscher active', 'Your Envoimoinscher module is active', 'Partners'),
+(39, 2, 'Envoimoinscher active', '', ''),
+(39, 3, 'Envoimoinscher active', '', ''),
+(39, 5, 'Envoimoinscher active', '', ''),
+(39, 8, 'Envoimoinscher active', '', ''),
+(40, 1, 'Envoimoinscher very active', 'Your Envoimoinscher module is very active', 'Partners'),
+(40, 2, 'Envoimoinscher very active', '', ''),
+(40, 3, 'Envoimoinscher very active', '', ''),
+(40, 5, 'Envoimoinscher very active', '', ''),
+(40, 8, 'Envoimoinscher very active', '', ''),
+(41, 1, 'Klik&Pay installed', 'You have installed the Klik&Pay module', 'Partners'),
+(41, 2, 'Klik&Pay installed', '', ''),
+(41, 3, 'Klik&Pay installed', '', ''),
+(41, 5, 'Klik&Pay installed', '', ''),
+(41, 8, 'Klik&Pay installed', '', ''),
+(42, 1, 'Klik&Pay configured', 'You have configured the Klik&Pay module', 'Partners'),
+(42, 2, 'Klik&Pay configured', '', ''),
+(42, 3, 'Klik&Pay configured', '', ''),
+(42, 5, 'Klik&Pay configured', '', ''),
+(42, 8, 'Klik&Pay configured', '', ''),
+(43, 1, 'Klik&Pay active', 'Your Klik&Pay module is active', 'Partners'),
+(43, 2, 'Klik&Pay active', '', ''),
+(43, 3, 'Klik&Pay active', '', ''),
+(43, 5, 'Klik&Pay active', '', ''),
+(43, 8, 'Klik&Pay active', '', ''),
+(44, 1, 'Klik&Pay very active', 'Your Klik&Pay module is very active', 'Partners'),
+(44, 2, 'Klik&Pay very active', '', ''),
+(44, 3, 'Klik&Pay very active', '', ''),
+(44, 5, 'Klik&Pay very active', '', ''),
+(44, 8, 'Klik&Pay very active', '', ''),
+(45, 1, 'Clickline installed', 'You have installed the Clickline module', 'Partners'),
+(45, 2, 'Clickline installed', '', ''),
+(45, 3, 'Clickline installed', '', ''),
+(45, 5, 'Clickline installed', '', ''),
+(45, 8, 'Clickline installed', '', ''),
+(46, 1, 'Clickline configured', 'You have configured the Clickline module', 'Partners'),
+(46, 2, 'Clickline configured', '', ''),
+(46, 3, 'Clickline configured', '', ''),
+(46, 5, 'Clickline configured', '', ''),
+(46, 8, 'Clickline configured', '', ''),
+(47, 1, 'Clickline active', 'Your Clickline module is active', 'Partners'),
+(47, 2, 'Clickline active', '', ''),
+(47, 3, 'Clickline active', '', ''),
+(47, 5, 'Clickline active', '', ''),
+(47, 8, 'Clickline active', '', ''),
+(48, 1, 'Clickline very active', 'Your Clickline module is very active', 'Partners'),
+(48, 2, 'Clickline very active', '', ''),
+(48, 3, 'Clickline very active', '', ''),
+(48, 5, 'Clickline very active', '', ''),
+(48, 8, 'Clickline very active', '', ''),
+(49, 1, 'CDiscount installed', 'You have installed the CDiscount module', 'Partners'),
+(49, 2, 'CDiscount installed', '', ''),
+(49, 3, 'CDiscount installed', '', ''),
+(49, 5, 'CDiscount installed', '', ''),
+(49, 8, 'CDiscount installed', '', ''),
+(50, 1, 'CDiscount configured', 'You have configured the CDiscount module', 'Partners'),
+(50, 2, 'CDiscount configured', '', ''),
+(50, 3, 'CDiscount configured', '', ''),
+(50, 5, 'CDiscount configured', '', ''),
+(50, 8, 'CDiscount configured', '', ''),
+(51, 1, 'CDiscount active', 'Your CDiscount module is active', 'Partners'),
+(51, 2, 'CDiscount active', '', ''),
+(51, 3, 'CDiscount active', '', ''),
+(51, 5, 'CDiscount active', '', ''),
+(51, 8, 'CDiscount active', '', ''),
+(52, 1, 'CDiscount very active', 'Your CDiscount module is very active', 'Partners'),
+(52, 2, 'CDiscount very active', '', ''),
+(52, 3, 'CDiscount very active', '', ''),
+(52, 5, 'CDiscount very active', '', ''),
+(52, 8, 'CDiscount very active', '', ''),
+(53, 1, 'illicoPresta installed', 'You have installed the illicoPresta module', 'Partners'),
+(53, 2, 'illicoPresta installed', '', ''),
+(53, 3, 'illicoPresta installed', '', ''),
+(53, 5, 'illicoPresta installed', '', ''),
+(53, 8, 'illicoPresta installed', '', ''),
+(54, 1, 'illicoPresta configured', 'You have configured the illicoPresta module', 'Partners'),
+(54, 2, 'illicoPresta configured', '', ''),
+(54, 3, 'illicoPresta configured', '', ''),
+(54, 5, 'illicoPresta configured', '', ''),
+(54, 8, 'illicoPresta configured', '', ''),
+(55, 1, 'illicoPresta active', 'Your illicoPresta module is active', 'Partners'),
+(55, 2, 'illicoPresta active', '', ''),
+(55, 3, 'illicoPresta active', '', ''),
+(55, 5, 'illicoPresta active', '', ''),
+(55, 8, 'illicoPresta active', '', ''),
+(56, 1, 'illicoPresta very active', 'Your illicoPresta module is very active', 'Partners'),
+(56, 2, 'illicoPresta very active', '', ''),
+(56, 3, 'illicoPresta very active', '', ''),
+(56, 5, 'illicoPresta very active', '', ''),
+(56, 8, 'illicoPresta very active', '', ''),
+(57, 1, 'NetReviews installed', 'You have installed the NetReviews module', 'Partners'),
+(57, 2, 'NetReviews installed', '', ''),
+(57, 3, 'NetReviews installed', '', ''),
+(57, 5, 'NetReviews installed', '', ''),
+(57, 8, 'NetReviews installed', '', ''),
+(58, 1, 'NetReviews configured', 'You have configured the NetReviews module', 'Partners'),
+(58, 2, 'NetReviews configured', '', ''),
+(58, 3, 'NetReviews configured', '', ''),
+(58, 5, 'NetReviews configured', '', ''),
+(58, 8, 'NetReviews configured', '', ''),
+(59, 1, 'NetReviews active', 'Your NetReviews module is active', 'Partners'),
+(59, 2, 'NetReviews active', '', ''),
+(59, 3, 'NetReviews active', '', ''),
+(59, 5, 'NetReviews active', '', ''),
+(59, 8, 'NetReviews active', '', ''),
+(60, 1, 'NetReviews very active', 'Your NetReviews module is very active', 'Partners'),
+(60, 2, 'NetReviews very active', '', ''),
+(60, 3, 'NetReviews very active', '', ''),
+(60, 5, 'NetReviews very active', '', ''),
+(60, 8, 'NetReviews very active', '', ''),
+(61, 1, 'Bluesnap installed', 'You have installed the Bluesnap module', 'Partners'),
+(61, 2, 'Bluesnap installed', '', ''),
+(61, 3, 'Bluesnap installed', '', ''),
+(61, 5, 'Bluesnap installed', '', ''),
+(61, 8, 'Bluesnap installed', '', ''),
+(62, 1, 'Bluesnap configured', 'You have configured the Bluesnap module', 'Partners'),
+(62, 2, 'Bluesnap configured', '', ''),
+(62, 3, 'Bluesnap configured', '', ''),
+(62, 5, 'Bluesnap configured', '', ''),
+(62, 8, 'Bluesnap configured', '', ''),
+(63, 1, 'Bluesnap active', 'Your Bluesnap module is active', 'Partners'),
+(63, 2, 'Bluesnap active', '', ''),
+(63, 3, 'Bluesnap active', '', ''),
+(63, 5, 'Bluesnap active', '', ''),
+(63, 8, 'Bluesnap active', '', ''),
+(64, 1, 'Bluesnap very active', 'Your Bluesnap module is very active', 'Partners'),
+(64, 2, 'Bluesnap very active', '', ''),
+(64, 3, 'Bluesnap very active', '', ''),
+(64, 5, 'Bluesnap very active', '', ''),
+(64, 8, 'Bluesnap very active', '', ''),
+(65, 1, 'Desjardins installed', 'You have installed the Desjardins module', 'Partners'),
+(65, 2, 'Desjardins installed', '', ''),
+(65, 3, 'Desjardins installed', '', ''),
+(65, 5, 'Desjardins installed', '', ''),
+(65, 8, 'Desjardins installed', '', ''),
+(66, 1, 'Desjardins configured', 'You have configured the Desjardins module', 'Partners'),
+(66, 2, 'Desjardins configured', '', ''),
+(66, 3, 'Desjardins configured', '', ''),
+(66, 5, 'Desjardins configured', '', ''),
+(66, 8, 'Desjardins configured', '', ''),
+(67, 1, 'Desjardins active', 'Your Desjardins module is active', 'Partners'),
+(67, 2, 'Desjardins active', '', ''),
+(67, 3, 'Desjardins active', '', ''),
+(67, 5, 'Desjardins active', '', ''),
+(67, 8, 'Desjardins active', '', ''),
+(68, 1, 'Desjardins very active', 'Your Desjardins module is very active', 'Partners'),
+(68, 2, 'Desjardins very active', '', ''),
+(68, 3, 'Desjardins very active', '', ''),
+(68, 5, 'Desjardins very active', '', ''),
+(68, 8, 'Desjardins very active', '', ''),
+(69, 1, 'First Data installed', 'You have installed the First Data module', 'Partners'),
+(69, 2, 'First Data installed', '', ''),
+(69, 3, 'First Data installed', '', ''),
+(69, 5, 'First Data installed', '', ''),
+(69, 8, 'First Data installed', '', ''),
+(70, 1, 'First Data configured', 'You have configured the First Data module', 'Partners'),
+(70, 2, 'First Data configured', '', ''),
+(70, 3, 'First Data configured', '', ''),
+(70, 5, 'First Data configured', '', ''),
+(70, 8, 'First Data configured', '', ''),
+(71, 1, 'First Data active', 'Your First Data module is active', 'Partners'),
+(71, 2, 'First Data active', '', ''),
+(71, 3, 'First Data active', '', ''),
+(71, 5, 'First Data active', '', ''),
+(71, 8, 'First Data active', '', ''),
+(72, 1, 'First Data very active', 'Your First Data module is very active', 'Partners'),
+(72, 2, 'First Data very active', '', ''),
+(72, 3, 'First Data very active', '', ''),
+(72, 5, 'First Data very active', '', ''),
+(72, 8, 'First Data very active', '', ''),
+(73, 1, 'Give.it installed', 'You have installed the Give.it module', 'Partners'),
+(73, 2, 'Give.it installed', '', ''),
+(73, 3, 'Give.it installed', '', ''),
+(73, 5, 'Give.it installed', '', ''),
+(73, 8, 'Give.it installed', '', ''),
+(74, 1, 'Give.it configured', 'You have configured the Give.it module', 'Partners'),
+(74, 2, 'Give.it configured', '', ''),
+(74, 3, 'Give.it configured', '', ''),
+(74, 5, 'Give.it configured', '', ''),
+(74, 8, 'Give.it configured', '', ''),
+(75, 1, 'Give.it active', 'Your Give.it module is active', 'Partners'),
+(75, 2, 'Give.it active', '', ''),
+(75, 3, 'Give.it active', '', ''),
+(75, 5, 'Give.it active', '', ''),
+(75, 8, 'Give.it active', '', ''),
+(76, 1, 'Give.it very active', 'Your Give.it module is very active', 'Partners'),
+(76, 2, 'Give.it very active', '', ''),
+(76, 3, 'Give.it very active', '', ''),
+(76, 5, 'Give.it very active', '', ''),
+(76, 8, 'Give.it very active', '', ''),
+(77, 1, 'Google Analytics installed', 'You have installed the Google Analytics module', 'Partners'),
+(77, 2, 'Google Analytics installed', '', ''),
+(77, 3, 'Google Analytics installed', '', ''),
+(77, 5, 'Google Analytics installed', '', ''),
+(77, 8, 'Google Analytics installed', '', ''),
+(78, 1, 'Google Analytics configured', 'You have configured the Google Analytics module', 'Partners'),
+(78, 2, 'Google Analytics configured', '', ''),
+(78, 3, 'Google Analytics configured', '', ''),
+(78, 5, 'Google Analytics configured', '', ''),
+(78, 8, 'Google Analytics configured', '', ''),
+(79, 1, 'Google Analytics active', 'Your Google Analytics module is active', 'Partners'),
+(79, 2, 'Google Analytics active', '', ''),
+(79, 3, 'Google Analytics active', '', ''),
+(79, 5, 'Google Analytics active', '', ''),
+(79, 8, 'Google Analytics active', '', ''),
+(80, 1, 'Google Analytics very active', 'Your Google Analytics module is very active', 'Partners'),
+(80, 2, 'Google Analytics very active', '', ''),
+(80, 3, 'Google Analytics very active', '', ''),
+(80, 5, 'Google Analytics very active', '', ''),
+(80, 8, 'Google Analytics very active', '', ''),
+(81, 1, 'PagSeguro installed', 'You have installed the PagSeguro module', 'Partners'),
+(81, 2, 'PagSeguro installed', '', ''),
+(81, 3, 'PagSeguro installed', '', ''),
+(81, 5, 'PagSeguro installed', '', ''),
+(81, 8, 'PagSeguro installed', '', ''),
+(82, 1, 'PagSeguro configured', 'You have configured the PagSeguro module', 'Partners'),
+(82, 2, 'PagSeguro configured', '', ''),
+(82, 3, 'PagSeguro configured', '', ''),
+(82, 5, 'PagSeguro configured', '', ''),
+(82, 8, 'PagSeguro configured', '', ''),
+(83, 1, 'PagSeguro active', 'Your PagSeguro module is active', 'Partners'),
+(83, 2, 'PagSeguro active', '', ''),
+(83, 3, 'PagSeguro active', '', ''),
+(83, 5, 'PagSeguro active', '', ''),
+(83, 8, 'PagSeguro active', '', ''),
+(84, 1, 'PagSeguro very active', 'Your PagSeguro module is very active', 'Partners'),
+(84, 2, 'PagSeguro very active', '', ''),
+(84, 3, 'PagSeguro very active', '', ''),
+(84, 5, 'PagSeguro very active', '', ''),
+(84, 8, 'PagSeguro very active', '', ''),
+(85, 1, 'Paypal MX installed', 'You have installed the Paypal MX module', 'Partners'),
+(85, 2, 'Paypal MX installed', '', ''),
+(85, 3, 'Paypal MX installed', '', ''),
+(85, 5, 'Paypal MX installed', '', ''),
+(85, 8, 'Paypal MX installed', '', ''),
+(86, 1, 'Paypal MX configured', 'You have configured the Paypal MX module', 'Partners'),
+(86, 2, 'Paypal MX configured', '', ''),
+(86, 3, 'Paypal MX configured', '', ''),
+(86, 5, 'Paypal MX configured', '', ''),
+(86, 8, 'Paypal MX configured', '', ''),
+(87, 1, 'Paypal MX active', 'Your Paypal MX module is active', 'Partners'),
+(87, 2, 'Paypal MX active', '', ''),
+(87, 3, 'Paypal MX active', '', ''),
+(87, 5, 'Paypal MX active', '', ''),
+(87, 8, 'Paypal MX active', '', ''),
+(88, 1, 'Paypal MX very active', 'Your Paypal MX module is very active', 'Partners'),
+(88, 2, 'Paypal MX very active', '', ''),
+(88, 3, 'Paypal MX very active', '', ''),
+(88, 5, 'Paypal MX very active', '', ''),
+(88, 8, 'Paypal MX very active', '', ''),
+(89, 1, 'Paypal USA installed', 'You have installed the Paypal USA module', 'Partners'),
+(89, 2, 'Paypal USA installed', '', ''),
+(89, 3, 'Paypal USA installed', '', ''),
+(89, 5, 'Paypal USA installed', '', ''),
+(89, 8, 'Paypal USA installed', '', ''),
+(90, 1, 'Paypal USA configured', 'You have configured the Paypal USA module', 'Partners'),
+(90, 2, 'Paypal USA configured', '', ''),
+(90, 3, 'Paypal USA configured', '', ''),
+(90, 5, 'Paypal USA configured', '', ''),
+(90, 8, 'Paypal USA configured', '', ''),
+(91, 1, 'Paypal USA active', 'Your Paypal USA module is active', 'Partners'),
+(91, 2, 'Paypal USA active', '', ''),
+(91, 3, 'Paypal USA active', '', ''),
+(91, 5, 'Paypal USA active', '', ''),
+(91, 8, 'Paypal USA active', '', ''),
+(92, 1, 'Paypal USA very active', 'Your Paypal USA module is very active', 'Partners'),
+(92, 2, 'Paypal USA very active', '', ''),
+(92, 3, 'Paypal USA very active', '', ''),
+(92, 5, 'Paypal USA very active', '', ''),
+(92, 8, 'Paypal USA very active', '', ''),
+(93, 1, 'PayULatam installed', 'You have installed the PayULatam module', 'Partners'),
+(93, 2, 'PayULatam installed', '', ''),
+(93, 3, 'PayULatam installed', '', ''),
+(93, 5, 'PayULatam installed', '', ''),
+(93, 8, 'PayULatam installed', '', ''),
+(94, 1, 'PayULatam configured', 'You have configured the PayULatam module', 'Partners'),
+(94, 2, 'PayULatam configured', '', ''),
+(94, 3, 'PayULatam configured', '', ''),
+(94, 5, 'PayULatam configured', '', ''),
+(94, 8, 'PayULatam configured', '', ''),
+(95, 1, 'PayULatam active', 'Your PayULatam module is active', 'Partners'),
+(95, 2, 'PayULatam active', '', ''),
+(95, 3, 'PayULatam active', '', ''),
+(95, 5, 'PayULatam active', '', ''),
+(95, 8, 'PayULatam active', '', ''),
+(96, 1, 'PayULatam very active', 'Your PayULatam module is very active', 'Partners'),
+(96, 2, 'PayULatam very active', '', ''),
+(96, 3, 'PayULatam very active', '', ''),
+(96, 5, 'PayULatam very active', '', ''),
+(96, 8, 'PayULatam very active', '', ''),
+(97, 1, 'PrestaStats installed', 'You have installed the PrestaStats module', 'Partners'),
+(97, 2, 'PrestaStats installed', '', ''),
+(97, 3, 'PrestaStats installed', '', ''),
+(97, 5, 'PrestaStats installed', '', ''),
+(97, 8, 'PrestaStats installed', '', ''),
+(98, 1, 'PrestaStats configured', 'You have configured the PrestaStats module', 'Partners'),
+(98, 2, 'PrestaStats configured', '', ''),
+(98, 3, 'PrestaStats configured', '', ''),
+(98, 5, 'PrestaStats configured', '', ''),
+(98, 8, 'PrestaStats configured', '', ''),
+(99, 1, 'PrestaStats active', 'Your PrestaStats module is active', 'Partners'),
+(99, 2, 'PrestaStats active', '', ''),
+(99, 3, 'PrestaStats active', '', ''),
+(99, 5, 'PrestaStats active', '', ''),
+(99, 8, 'PrestaStats active', '', ''),
+(100, 1, 'PrestaStats very active', 'Your PrestaStats module is very active', 'Partners'),
+(100, 2, 'PrestaStats very active', '', ''),
+(100, 3, 'PrestaStats very active', '', ''),
+(100, 5, 'PrestaStats very active', '', ''),
+(100, 8, 'PrestaStats very active', '', ''),
+(101, 1, 'Riskified installed', 'You have installed the Riskified module', 'Partners'),
+(101, 2, 'Riskified installed', '', ''),
+(101, 3, 'Riskified installed', '', ''),
+(101, 5, 'Riskified installed', '', ''),
+(101, 8, 'Riskified installed', '', ''),
+(102, 1, 'Riskified configured', 'You have configured the Riskified module', 'Partners'),
+(102, 2, 'Riskified configured', '', ''),
+(102, 3, 'Riskified configured', '', ''),
+(102, 5, 'Riskified configured', '', ''),
+(102, 8, 'Riskified configured', '', ''),
+(103, 1, 'Riskified active', 'Your Riskified module is active', 'Partners'),
+(103, 2, 'Riskified active', '', ''),
+(103, 3, 'Riskified active', '', ''),
+(103, 5, 'Riskified active', '', ''),
+(103, 8, 'Riskified active', '', ''),
+(104, 1, 'Riskified very active', 'Your Riskified module is very active', 'Partners'),
+(104, 2, 'Riskified very active', '', ''),
+(104, 3, 'Riskified very active', '', ''),
+(104, 5, 'Riskified very active', '', ''),
+(104, 8, 'Riskified very active', '', ''),
+(105, 1, 'Simplify installed', 'You have installed the Simplify module', 'Partners'),
+(105, 2, 'Simplify installed', '', ''),
+(105, 3, 'Simplify installed', '', ''),
+(105, 5, 'Simplify installed', '', ''),
+(105, 8, 'Simplify installed', '', ''),
+(106, 1, 'Simplify configured', 'You have configured the Simplify module', 'Partners'),
+(106, 2, 'Simplify configured', '', ''),
+(106, 3, 'Simplify configured', '', ''),
+(106, 5, 'Simplify configured', '', ''),
+(106, 8, 'Simplify configured', '', ''),
+(107, 1, 'Simplify active', 'Your Simplify module is active', 'Partners'),
+(107, 2, 'Simplify active', '', ''),
+(107, 3, 'Simplify active', '', ''),
+(107, 5, 'Simplify active', '', ''),
+(107, 8, 'Simplify active', '', ''),
+(108, 1, 'Simplify very active', 'Your Simplify module is very active', 'Partners'),
+(108, 2, 'Simplify very active', '', ''),
+(108, 3, 'Simplify very active', '', ''),
+(108, 5, 'Simplify very active', '', ''),
+(108, 8, 'Simplify very active', '', ''),
+(109, 1, 'VTPayment installed', 'You have installed the VTPayment module', 'Partners'),
+(109, 2, 'VTPayment installed', '', ''),
+(109, 3, 'VTPayment installed', '', ''),
+(109, 5, 'VTPayment installed', '', ''),
+(109, 8, 'VTPayment installed', '', ''),
+(110, 1, 'VTPayment configured', 'You have configured the VTPayment module', 'Partners'),
+(110, 2, 'VTPayment configured', '', ''),
+(110, 3, 'VTPayment configured', '', ''),
+(110, 5, 'VTPayment configured', '', ''),
+(110, 8, 'VTPayment configured', '', ''),
+(111, 1, 'VTPayment active', 'Your VTPayment module is active', 'Partners'),
+(111, 2, 'VTPayment active', '', ''),
+(111, 3, 'VTPayment active', '', ''),
+(111, 5, 'VTPayment active', '', ''),
+(111, 8, 'VTPayment active', '', ''),
+(112, 1, 'VTPayment very active', 'Your VTPayment module is very active', 'Partners'),
+(112, 2, 'VTPayment very active', '', ''),
+(112, 3, 'VTPayment very active', '', ''),
+(112, 5, 'VTPayment very active', '', ''),
+(112, 8, 'VTPayment very active', '', ''),
+(113, 1, 'Yotpo installed', 'You have installed the Yotpo module', 'Partners'),
+(113, 2, 'Yotpo installed', '', ''),
+(113, 3, 'Yotpo installed', '', ''),
+(113, 5, 'Yotpo installed', '', ''),
+(113, 8, 'Yotpo installed', '', ''),
+(114, 1, 'Yotpo configured', 'You have configured the Yotpo module', 'Partners'),
+(114, 2, 'Yotpo configured', '', ''),
+(114, 3, 'Yotpo configured', '', ''),
+(114, 5, 'Yotpo configured', '', ''),
+(114, 8, 'Yotpo configured', '', ''),
+(115, 1, 'Yotpo active', 'Your Yotpo module is active', 'Partners'),
+(115, 2, 'Yotpo active', '', ''),
+(115, 3, 'Yotpo active', '', ''),
+(115, 5, 'Yotpo active', '', ''),
+(115, 8, 'Yotpo active', '', ''),
+(116, 1, 'Yotpo very active', 'Your Yotpo module is very active', 'Partners'),
+(116, 2, 'Yotpo very active', '', ''),
+(116, 3, 'Yotpo very active', '', ''),
+(116, 5, 'Yotpo very active', '', ''),
+(116, 8, 'Yotpo very active', '', ''),
+(117, 1, 'Youstice installed', 'You have installed the Youstice module', 'Partners'),
+(117, 2, 'Youstice installed', '', ''),
+(117, 3, 'Youstice installed', '', ''),
+(117, 5, 'Youstice installed', '', ''),
+(117, 8, 'Youstice installed', '', ''),
+(118, 1, 'Youstice configured', 'You have configured the Youstice module', 'Partners'),
+(118, 2, 'Youstice configured', '', ''),
+(118, 3, 'Youstice configured', '', ''),
+(118, 5, 'Youstice configured', '', ''),
+(118, 8, 'Youstice configured', '', ''),
+(119, 1, 'Youstice active', 'Your Youstice module is active', 'Partners'),
+(119, 2, 'Youstice active', '', ''),
+(119, 3, 'Youstice active', '', ''),
+(119, 5, 'Youstice active', '', ''),
+(119, 8, 'Youstice active', '', ''),
+(120, 1, 'Youstice very active', 'Your Youstice module is very active', 'Partners'),
+(120, 2, 'Youstice very active', '', ''),
+(120, 3, 'Youstice very active', '', ''),
+(120, 5, 'Youstice very active', '', ''),
+(120, 8, 'Youstice very active', '', ''),
+(121, 1, 'Loyalty Lion installed', 'You have installed the Loyalty Lion module', 'Partners'),
+(121, 2, 'Loyalty Lion installed', '', ''),
+(121, 3, 'Loyalty Lion installed', '', ''),
+(121, 5, 'Loyalty Lion installed', '', ''),
+(121, 8, 'Loyalty Lion installed', '', ''),
+(122, 1, 'Loyalty Lion configured', 'You have configured the Loyalty Lion module', 'Partners'),
+(122, 2, 'Loyalty Lion configured', '', ''),
+(122, 3, 'Loyalty Lion configured', '', ''),
+(122, 5, 'Loyalty Lion configured', '', ''),
+(122, 8, 'Loyalty Lion configured', '', ''),
+(123, 1, 'Loyalty Lion active', 'Your Loyalty Lion module is active', 'Partners'),
+(123, 2, 'Loyalty Lion active', '', ''),
+(123, 3, 'Loyalty Lion active', '', ''),
+(123, 5, 'Loyalty Lion active', '', ''),
+(123, 8, 'Loyalty Lion active', '', ''),
+(124, 1, 'Loyalty Lion very active', 'Your Loyalty Lion module is very active', 'Partners'),
+(124, 2, 'Loyalty Lion very active', '', ''),
+(124, 3, 'Loyalty Lion very active', '', ''),
+(124, 5, 'Loyalty Lion very active', '', ''),
+(124, 8, 'Loyalty Lion very active', '', ''),
+(125, 1, 'SEO', 'You enabled the URL rewriting through the tab \"Preferences > SEO and URLs\".', 'SEO'),
+(125, 2, 'SEO', '', ''),
+(125, 3, 'SEO', '', ''),
+(125, 5, 'SEO', '', ''),
+(125, 8, 'SEO', '', ''),
+(126, 1, 'Site Performance', 'You enabled CCC (Combine, Compress and Cache), Rijndael and Smarty through the tab \r\nAdvanced Parameters > Performance.', 'Site Performance'),
+(126, 2, 'Site Performance', '', ''),
+(126, 3, 'Site Performance', '', ''),
+(126, 5, 'Site Performance', '', ''),
+(126, 8, 'Site Performance', '', ''),
+(127, 1, 'Site Performance', 'You enabled media servers through the tab \"Advanced parameters > Performance\".', 'Site Performance'),
+(127, 2, 'Site Performance', '', ''),
+(127, 3, 'Site Performance', '', ''),
+(127, 5, 'Site Performance', '', ''),
+(127, 8, 'Site Performance', '', ''),
+(128, 1, 'Payment', 'You configured a payment solution on your shop.', 'Payment'),
+(128, 2, 'Payment', '', ''),
+(128, 3, 'Payment', '', ''),
+(128, 5, 'Payment', '', ''),
+(128, 8, 'Payment', '', ''),
+(129, 1, 'Payment', 'You offer two different payment methods to your customers.', 'Payment'),
+(129, 2, 'Payment', '', ''),
+(129, 3, 'Payment', '', ''),
+(129, 5, 'Payment', '', ''),
+(129, 8, 'Payment', '', ''),
+(130, 1, 'Shipping', 'You configured a carrier on your shop.', 'Shipping'),
+(130, 2, 'Shipping', '', ''),
+(130, 3, 'Shipping', '', ''),
+(130, 5, 'Shipping', '', ''),
+(130, 8, 'Shipping', '', ''),
+(131, 1, 'Shipping', 'You offer two shipping solutions (carriers) to your customers.', 'Shipping'),
+(131, 2, 'Shipping', '', ''),
+(131, 3, 'Shipping', '', ''),
+(131, 5, 'Shipping', '', ''),
+(131, 8, 'Shipping', '', ''),
+(132, 1, 'Catalog Size', 'You added your first product to your catalog!', 'Catalog Size'),
+(132, 2, 'Catalog Size', '', ''),
+(132, 3, 'Catalog Size', '', ''),
+(132, 5, 'Catalog Size', '', ''),
+(132, 8, 'Catalog Size', '', ''),
+(133, 1, 'Catalog Size', 'You have 10 products within your catalog.', 'Catalog Size'),
+(133, 2, 'Catalog Size', '', ''),
+(133, 3, 'Catalog Size', '', ''),
+(133, 5, 'Catalog Size', '', ''),
+(133, 8, 'Catalog Size', '', ''),
+(134, 1, 'Contact information', 'You configured your phone number so your customers can reach you!', 'Contact information'),
+(134, 2, 'Contact information', '', ''),
+(134, 3, 'Contact information', '', ''),
+(134, 5, 'Contact information', '', ''),
+(134, 8, 'Contact information', '', ''),
+(135, 1, 'Contact information', 'You added a third email address to your contact form.', 'Contact information'),
+(135, 2, 'Contact information', '', ''),
+(135, 3, 'Contact information', '', ''),
+(135, 5, 'Contact information', '', ''),
+(135, 8, 'Contact information', '', ''),
+(136, 1, 'Contact information', 'You suggest a total of 5 departments to be reached by your customers via your contact form.', 'Contact information'),
+(136, 2, 'Contact information', '', ''),
+(136, 3, 'Contact information', '', ''),
+(136, 5, 'Contact information', '', ''),
+(136, 8, 'Contact information', '', ''),
+(137, 1, 'Catalog Size', 'You have 100 products within your catalog.', 'Catalog Size'),
+(137, 2, 'Catalog Size', '', ''),
+(137, 3, 'Catalog Size', '', ''),
+(137, 5, 'Catalog Size', '', ''),
+(137, 8, 'Catalog Size', '', ''),
+(138, 1, 'Catalog Size', 'You have 1,000 products within your catalog.', 'Catalog Size'),
+(138, 2, 'Catalog Size', '', ''),
+(138, 3, 'Catalog Size', '', ''),
+(138, 5, 'Catalog Size', '', ''),
+(138, 8, 'Catalog Size', '', ''),
+(139, 1, 'Catalog Size', 'You have 10,000 products within your catalog.', 'Catalog Size'),
+(139, 2, 'Catalog Size', '', ''),
+(139, 3, 'Catalog Size', '', ''),
+(139, 5, 'Catalog Size', '', ''),
+(139, 8, 'Catalog Size', '', ''),
+(140, 1, 'Catalog Size', 'You have 100,000 products within your catalog.', 'Catalog Size'),
+(140, 2, 'Catalog Size', '', ''),
+(140, 3, 'Catalog Size', '', ''),
+(140, 5, 'Catalog Size', '', ''),
+(140, 8, 'Catalog Size', '', ''),
+(141, 1, 'Days of Experience', 'You just installed PrestaShop!', 'Days of Experience'),
+(141, 2, 'Days of Experience', '', ''),
+(141, 3, 'Days of Experience', '', ''),
+(141, 5, 'Days of Experience', '', ''),
+(141, 8, 'Days of Experience', '', ''),
+(142, 1, 'Days of Experience', 'You installed PrestaShop a week ago!', 'Days of Experience'),
+(142, 2, 'Days of Experience', '', ''),
+(142, 3, 'Days of Experience', '', ''),
+(142, 5, 'Days of Experience', '', ''),
+(142, 8, 'Days of Experience', '', ''),
+(143, 1, 'Customization', 'You uploaded your own logo.', 'Customization'),
+(143, 2, 'Customization', '', ''),
+(143, 3, 'Customization', '', ''),
+(143, 5, 'Customization', '', ''),
+(143, 8, 'Customization', '', ''),
+(144, 1, 'Customization', 'You installed a new template.', 'Customization'),
+(144, 2, 'Customization', '', ''),
+(144, 3, 'Customization', '', ''),
+(144, 5, 'Customization', '', ''),
+(144, 8, 'Customization', '', ''),
+(145, 1, 'Addons', 'You connected your back-office to the Addons platform using your PrestaShop Addons account.', 'Addons'),
+(145, 2, 'Addons', '', ''),
+(145, 3, 'Addons', '', ''),
+(145, 5, 'Addons', '', ''),
+(145, 8, 'Addons', '', ''),
+(146, 1, 'Multistores', 'You enabled the Multistores feature.', 'Multistores'),
+(146, 2, 'Multistores', '', ''),
+(146, 3, 'Multistores', '', ''),
+(146, 5, 'Multistores', '', ''),
+(146, 8, 'Multistores', '', ''),
+(147, 1, 'Multistores', 'You manage two shops with the Multistores feature.', 'Multistores'),
+(147, 2, 'Multistores', '', ''),
+(147, 3, 'Multistores', '', ''),
+(147, 5, 'Multistores', '', ''),
+(147, 8, 'Multistores', '', ''),
+(148, 1, 'Multistores', 'You manage two different groups of shops using the Multistores feature.', 'Multistores'),
+(148, 2, 'Multistores', '', ''),
+(148, 3, 'Multistores', '', ''),
+(148, 5, 'Multistores', '', ''),
+(148, 8, 'Multistores', '', ''),
+(149, 1, 'Multistores', 'You manage five shops with the Multistores feature.', 'Multistores'),
+(149, 2, 'Multistores', '', ''),
+(149, 3, 'Multistores', '', ''),
+(149, 5, 'Multistores', '', ''),
+(149, 8, 'Multistores', '', ''),
+(150, 1, 'Multistores', 'You manage five different groups of shops using the Multistores feature.', 'Multistores'),
+(150, 2, 'Multistores', '', ''),
+(150, 3, 'Multistores', '', ''),
+(150, 5, 'Multistores', '', ''),
+(150, 8, 'Multistores', '', ''),
+(151, 1, 'Shipping', 'You offer three different shipping solutions (carriers) to your customers.', 'Shipping'),
+(151, 2, 'Shipping', '', ''),
+(151, 3, 'Shipping', '', ''),
+(151, 5, 'Shipping', '', ''),
+(151, 8, 'Shipping', '', ''),
+(152, 1, 'Payment', 'You offer three different payment methods to your customers.', 'Payment'),
+(152, 2, 'Payment', '', ''),
+(152, 3, 'Payment', '', ''),
+(152, 5, 'Payment', '', ''),
+(152, 8, 'Payment', '', ''),
+(153, 1, 'Revenue', 'You get this badge when you reach 200 USD in sales.', 'Revenue'),
+(153, 2, 'Revenue', '', ''),
+(153, 3, 'Revenue', '', ''),
+(153, 5, 'Revenue', '', ''),
+(153, 8, 'Revenue', '', ''),
+(154, 1, 'Revenue', 'You get this badge when you reach 1000 USD in sales.', 'Revenue'),
+(154, 2, 'Revenue', '', ''),
+(154, 3, 'Revenue', '', ''),
+(154, 5, 'Revenue', '', ''),
+(154, 8, 'Revenue', '', ''),
+(155, 1, 'Revenue', 'You get this badge when you reach 1000 USD in sales.', 'Revenue'),
+(155, 2, 'Revenue', '', ''),
+(155, 3, 'Revenue', '', ''),
+(155, 5, 'Revenue', '', ''),
+(155, 8, 'Revenue', '', ''),
+(156, 1, 'Revenue', 'You get this badge when you reach 200 USD in sales.', 'Revenue'),
+(156, 2, 'Revenue', '', ''),
+(156, 3, 'Revenue', '', ''),
+(156, 5, 'Revenue', '', ''),
+(156, 8, 'Revenue', '', ''),
+(157, 1, 'Revenue', 'You get this badge when you reach 1000 USD in sales.', 'Revenue'),
+(157, 2, 'Revenue', '', ''),
+(157, 3, 'Revenue', '', ''),
+(157, 5, 'Revenue', '', ''),
+(157, 8, 'Revenue', '', ''),
+(158, 1, 'Revenue', 'You get this badge when you reach 1000 USD in sales.', 'Revenue'),
+(158, 2, 'Revenue', '', ''),
+(158, 3, 'Revenue', '', ''),
+(158, 5, 'Revenue', '', ''),
+(158, 8, 'Revenue', '', ''),
+(159, 1, 'Days of Experience', 'You installed PrestaShop a month ago!', 'Days of Experience'),
+(159, 2, 'Days of Experience', '', ''),
+(159, 3, 'Days of Experience', '', ''),
+(159, 5, 'Days of Experience', '', ''),
+(159, 8, 'Days of Experience', '', ''),
+(160, 1, 'Days of Experience', 'You installed PrestaShop six months ago!', 'Days of Experience'),
+(160, 2, 'Days of Experience', '', ''),
+(160, 3, 'Days of Experience', '', ''),
+(160, 5, 'Days of Experience', '', ''),
+(160, 8, 'Days of Experience', '', ''),
+(161, 1, 'Days of Experience', 'You installed PrestaShop a year ago!', 'Days of Experience'),
+(161, 2, 'Days of Experience', '', ''),
+(161, 3, 'Days of Experience', '', ''),
+(161, 5, 'Days of Experience', '', ''),
+(161, 8, 'Days of Experience', '', ''),
+(162, 1, 'Days of Experience', 'You installed PrestaShop two years ago!', 'Days of Experience'),
+(162, 2, 'Days of Experience', '', ''),
+(162, 3, 'Days of Experience', '', ''),
+(162, 5, 'Days of Experience', '', ''),
+(162, 8, 'Days of Experience', '', ''),
+(163, 1, 'Visitors', 'You reached 10 visitors!', 'Visitors'),
+(163, 2, 'Visitors', '', ''),
+(163, 3, 'Visitors', '', ''),
+(163, 5, 'Visitors', '', ''),
+(163, 8, 'Visitors', '', ''),
+(164, 1, 'Visitors', 'You reached 100 visitors!', 'Visitors'),
+(164, 2, 'Visitors', '', ''),
+(164, 3, 'Visitors', '', ''),
+(164, 5, 'Visitors', '', ''),
+(164, 8, 'Visitors', '', ''),
+(165, 1, 'Visitors', 'You reached 1,000 visitors!', 'Visitors'),
+(165, 2, 'Visitors', '', ''),
+(165, 3, 'Visitors', '', ''),
+(165, 5, 'Visitors', '', ''),
+(165, 8, 'Visitors', '', ''),
+(166, 1, 'Visitors', 'You reached 10,000 visitors!', 'Visitors'),
+(166, 2, 'Visitors', '', ''),
+(166, 3, 'Visitors', '', ''),
+(166, 5, 'Visitors', '', ''),
+(166, 8, 'Visitors', '', ''),
+(167, 1, 'Visitors', 'You reached 100,000 visitors!', 'Visitors'),
+(167, 2, 'Visitors', '', ''),
+(167, 3, 'Visitors', '', ''),
+(167, 5, 'Visitors', '', ''),
+(167, 8, 'Visitors', '', ''),
+(168, 1, 'Visitors', 'You reached 1,000,000 visitors!', 'Visitors'),
+(168, 2, 'Visitors', '', ''),
+(168, 3, 'Visitors', '', ''),
+(168, 5, 'Visitors', '', ''),
+(168, 8, 'Visitors', '', ''),
+(169, 1, 'Customer Carts', 'Two carts have been created by visitors', 'Customer Carts'),
+(169, 2, 'Customer Carts', '', ''),
+(169, 3, 'Customer Carts', '', ''),
+(169, 5, 'Customer Carts', '', ''),
+(169, 8, 'Customer Carts', '', ''),
+(170, 1, 'Customer Carts', 'Ten carts have been created by visitors.', 'Customer Carts'),
+(170, 2, 'Customer Carts', '', ''),
+(170, 3, 'Customer Carts', '', ''),
+(170, 5, 'Customer Carts', '', ''),
+(170, 8, 'Customer Carts', '', ''),
+(171, 1, 'Customer Carts', 'A hundred carts have been created by visitors on your shop.', 'Customer Carts'),
+(171, 2, 'Customer Carts', '', ''),
+(171, 3, 'Customer Carts', '', ''),
+(171, 5, 'Customer Carts', '', ''),
+(171, 8, 'Customer Carts', '', ''),
+(172, 1, 'Customer Carts', 'A thousand carts have been created by visitors on your shop.', 'Customer Carts'),
+(172, 2, 'Customer Carts', '', ''),
+(172, 3, 'Customer Carts', '', ''),
+(172, 5, 'Customer Carts', '', ''),
+(172, 8, 'Customer Carts', '', ''),
+(173, 1, 'Customer Carts', '10,000 carts have been created by visitors.', 'Customer Carts'),
+(173, 2, 'Customer Carts', '', ''),
+(173, 3, 'Customer Carts', '', ''),
+(173, 5, 'Customer Carts', '', ''),
+(173, 8, 'Customer Carts', '', ''),
+(174, 1, 'Customer Carts', '100,000 carts have been created by visitors.', 'Customer Carts'),
+(174, 2, 'Customer Carts', '', ''),
+(174, 3, 'Customer Carts', '', ''),
+(174, 5, 'Customer Carts', '', ''),
+(174, 8, 'Customer Carts', '', ''),
+(175, 1, 'Orders', 'You received your first order.', 'Orders'),
+(175, 2, 'Orders', '', ''),
+(175, 3, 'Orders', '', ''),
+(175, 5, 'Orders', '', ''),
+(175, 8, 'Orders', '', ''),
+(176, 1, 'Orders', '10 orders have been placed through your online shop.', 'Orders'),
+(176, 2, 'Orders', '', ''),
+(176, 3, 'Orders', '', ''),
+(176, 5, 'Orders', '', ''),
+(176, 8, 'Orders', '', ''),
+(177, 1, 'Orders', 'You received 100 orders through your online shop!', 'Orders'),
+(177, 2, 'Orders', '', ''),
+(177, 3, 'Orders', '', ''),
+(177, 5, 'Orders', '', ''),
+(177, 8, 'Orders', '', ''),
+(178, 1, 'Orders', 'You received 1,000 orders through your online shop, congrats!', 'Orders'),
+(178, 2, 'Orders', '', ''),
+(178, 3, 'Orders', '', ''),
+(178, 5, 'Orders', '', ''),
+(178, 8, 'Orders', '', ''),
+(179, 1, 'Orders', 'You received 10,000 orders through your online shop, cheers!', 'Orders'),
+(179, 2, 'Orders', '', ''),
+(179, 3, 'Orders', '', ''),
+(179, 5, 'Orders', '', ''),
+(179, 8, 'Orders', '', ''),
+(180, 1, 'Orders', 'You received 100,000 orders through your online shop!', 'Orders'),
+(180, 2, 'Orders', '', ''),
+(180, 3, 'Orders', '', ''),
+(180, 5, 'Orders', '', ''),
+(180, 8, 'Orders', '', ''),
+(181, 1, 'Customer Service Threads', 'You received  your first customer\'s message.', 'Customer Service Threads'),
+(181, 2, 'Customer Service Threads', '', ''),
+(181, 3, 'Customer Service Threads', '', ''),
+(181, 5, 'Customer Service Threads', '', ''),
+(181, 8, 'Customer Service Threads', '', ''),
+(182, 1, 'Customer Service Threads', 'You received 10 messages from your customers.', 'Customer Service Threads'),
+(182, 2, 'Customer Service Threads', '', ''),
+(182, 3, 'Customer Service Threads', '', ''),
+(182, 5, 'Customer Service Threads', '', ''),
+(182, 8, 'Customer Service Threads', '', ''),
+(183, 1, 'Customer Service Threads', 'You received 100 messages from your customers.', 'Customer Service Threads'),
+(183, 2, 'Customer Service Threads', '', ''),
+(183, 3, 'Customer Service Threads', '', ''),
+(183, 5, 'Customer Service Threads', '', ''),
+(183, 8, 'Customer Service Threads', '', ''),
+(184, 1, 'Customer Service Threads', 'You received 1,000 messages from your customers.', 'Customer Service Threads'),
+(184, 2, 'Customer Service Threads', '', ''),
+(184, 3, 'Customer Service Threads', '', ''),
+(184, 5, 'Customer Service Threads', '', ''),
+(184, 8, 'Customer Service Threads', '', ''),
+(185, 1, 'Customer Service Threads', 'You received 10,000 messages from your customers.', 'Customer Service Threads'),
+(185, 2, 'Customer Service Threads', '', ''),
+(185, 3, 'Customer Service Threads', '', ''),
+(185, 5, 'Customer Service Threads', '', ''),
+(185, 8, 'Customer Service Threads', '', ''),
+(186, 1, 'Customer Service Threads', 'You received 100,000 messages from your customers.', 'Customer Service Threads'),
+(186, 2, 'Customer Service Threads', '', ''),
+(186, 3, 'Customer Service Threads', '', ''),
+(186, 5, 'Customer Service Threads', '', ''),
+(186, 8, 'Customer Service Threads', '', ''),
+(187, 1, 'Customers', 'You got the first customer registered on your shop!', 'Customers'),
+(187, 2, 'Customers', '', ''),
+(187, 3, 'Customers', '', ''),
+(187, 5, 'Customers', '', ''),
+(187, 8, 'Customers', '', ''),
+(188, 1, 'Customers', 'You have over 10 customers registered on your shop.', 'Customers'),
+(188, 2, 'Customers', '', ''),
+(188, 3, 'Customers', '', ''),
+(188, 5, 'Customers', '', ''),
+(188, 8, 'Customers', '', ''),
+(189, 1, 'Customers', 'You have over 100 customers registered on your shop.', 'Customers'),
+(189, 2, 'Customers', '', ''),
+(189, 3, 'Customers', '', ''),
+(189, 5, 'Customers', '', ''),
+(189, 8, 'Customers', '', ''),
+(190, 1, 'Customers', 'You have over 1,000 customers registered on your shop.', 'Customers'),
+(190, 2, 'Customers', '', ''),
+(190, 3, 'Customers', '', ''),
+(190, 5, 'Customers', '', ''),
+(190, 8, 'Customers', '', ''),
+(191, 1, 'Customers', 'You have over 10,000 customers registered on your shop.', 'Customers'),
+(191, 2, 'Customers', '', ''),
+(191, 3, 'Customers', '', ''),
+(191, 5, 'Customers', '', ''),
+(191, 8, 'Customers', '', ''),
+(192, 1, 'Customers', 'You have over 100,000 customers registered on your shop.', 'Customers'),
+(192, 2, 'Customers', '', ''),
+(192, 3, 'Customers', '', ''),
+(192, 5, 'Customers', '', ''),
+(192, 8, 'Customers', '', ''),
+(193, 1, 'North America', 'You got your first sale in North America', 'North America'),
+(193, 2, 'North America', '', ''),
+(193, 3, 'North America', '', ''),
+(193, 5, 'North America', '', ''),
+(193, 8, 'North America', '', ''),
+(194, 1, 'Oceania', 'You got your first sale in Oceania', 'Oceania'),
+(194, 2, 'Oceania', '', ''),
+(194, 3, 'Oceania', '', ''),
+(194, 5, 'Oceania', '', ''),
+(194, 8, 'Oceania', '', ''),
+(195, 1, 'Asia', 'You got your first sale in Asia', 'Asia'),
+(195, 2, 'Asia', '', ''),
+(195, 3, 'Asia', '', ''),
+(195, 5, 'Asia', '', ''),
+(195, 8, 'Asia', '', ''),
+(196, 1, 'South America', 'You got your first sale in South America', 'South America'),
+(196, 2, 'South America', '', ''),
+(196, 3, 'South America', '', ''),
+(196, 5, 'South America', '', ''),
+(196, 8, 'South America', '', ''),
+(197, 1, 'Europe', 'You got your first sale in  Europe!', 'Europe'),
+(197, 2, 'Europe', '', ''),
+(197, 3, 'Europe', '', ''),
+(197, 5, 'Europe', '', ''),
+(197, 8, 'Europe', '', ''),
+(198, 1, 'Africa', 'You got your first sale in Africa', 'Africa'),
+(198, 2, 'Africa', '', ''),
+(198, 3, 'Africa', '', ''),
+(198, 5, 'Africa', '', ''),
+(198, 8, 'Africa', '', ''),
+(199, 1, 'Maghreb', 'You got your first sale in Maghreb', 'Maghreb'),
+(199, 2, 'Maghreb', '', ''),
+(199, 3, 'Maghreb', '', ''),
+(199, 5, 'Maghreb', '', ''),
+(199, 8, 'Maghreb', '', ''),
+(200, 1, 'Your Team\'s Employees', 'First employee account added to your shop', 'Your Team\'s Employees'),
+(200, 2, 'Your Team\'s Employees', '', ''),
+(200, 3, 'Your Team\'s Employees', '', ''),
+(200, 5, 'Your Team\'s Employees', '', ''),
+(200, 8, 'Your Team\'s Employees', '', ''),
+(201, 1, 'Your Team\'s Employees', '3 employee accounts added to your shop', 'Your Team\'s Employees'),
+(201, 2, 'Your Team\'s Employees', '', ''),
+(201, 3, 'Your Team\'s Employees', '', ''),
+(201, 5, 'Your Team\'s Employees', '', ''),
+(201, 8, 'Your Team\'s Employees', '', ''),
+(202, 1, 'Your Team\'s Employees', '5 employee accounts added to your shop', 'Your Team\'s Employees'),
+(202, 2, 'Your Team\'s Employees', '', ''),
+(202, 3, 'Your Team\'s Employees', '', ''),
+(202, 5, 'Your Team\'s Employees', '', ''),
+(202, 8, 'Your Team\'s Employees', '', ''),
+(203, 1, 'Your Team\'s Employees', '10 employee accounts added to your shop', 'Your Team\'s Employees'),
+(203, 2, 'Your Team\'s Employees', '', ''),
+(203, 3, 'Your Team\'s Employees', '', ''),
+(203, 5, 'Your Team\'s Employees', '', ''),
+(203, 8, 'Your Team\'s Employees', '', ''),
+(204, 1, 'Your Team\'s Employees', '20 employee accounts added to your shop', 'Your Team\'s Employees'),
+(204, 2, 'Your Team\'s Employees', '', ''),
+(204, 3, 'Your Team\'s Employees', '', ''),
+(204, 5, 'Your Team\'s Employees', '', ''),
+(204, 8, 'Your Team\'s Employees', '', ''),
+(205, 1, 'Your Team\'s Employees', '40 employee accounts added to your shop', 'Your Team\'s Employees'),
+(205, 2, 'Your Team\'s Employees', '', ''),
+(205, 3, 'Your Team\'s Employees', '', ''),
+(205, 5, 'Your Team\'s Employees', '', ''),
+(205, 8, 'Your Team\'s Employees', '', ''),
+(206, 1, 'Product Pictures', 'First photo added to your catalog', 'Product Pictures'),
+(206, 2, 'Product Pictures', '', ''),
+(206, 3, 'Product Pictures', '', ''),
+(206, 5, 'Product Pictures', '', ''),
+(206, 8, 'Product Pictures', '', ''),
+(207, 1, 'Product Pictures', '50 photos added to your catalog', 'Product Pictures'),
+(207, 2, 'Product Pictures', '', ''),
+(207, 3, 'Product Pictures', '', ''),
+(207, 5, 'Product Pictures', '', ''),
+(207, 8, 'Product Pictures', '', ''),
+(208, 1, 'Product Pictures', '100 photos added to your catalog', 'Product Pictures'),
+(208, 2, 'Product Pictures', '', ''),
+(208, 3, 'Product Pictures', '', ''),
+(208, 5, 'Product Pictures', '', ''),
+(208, 8, 'Product Pictures', '', ''),
+(209, 1, 'Product Pictures', '1,000 photos added to your catalog', 'Product Pictures'),
+(209, 2, 'Product Pictures', '', ''),
+(209, 3, 'Product Pictures', '', ''),
+(209, 5, 'Product Pictures', '', ''),
+(209, 8, 'Product Pictures', '', ''),
+(210, 1, 'Product Pictures', '10,000 photos added to your catalog', 'Product Pictures'),
+(210, 2, 'Product Pictures', '', ''),
+(210, 3, 'Product Pictures', '', ''),
+(210, 5, 'Product Pictures', '', ''),
+(210, 8, 'Product Pictures', '', ''),
+(211, 1, 'Product Pictures', '50,000 photos added to your catalog', 'Product Pictures'),
+(211, 2, 'Product Pictures', '', ''),
+(211, 3, 'Product Pictures', '', ''),
+(211, 5, 'Product Pictures', '', ''),
+(211, 8, 'Product Pictures', '', ''),
+(212, 1, 'Customization', 'First CMS page added to your catalog', 'Customization'),
+(212, 2, 'Customization', '', ''),
+(212, 3, 'Customization', '', ''),
+(212, 5, 'Customization', '', ''),
+(212, 8, 'Customization', '', ''),
+(213, 1, 'Cart Rules', 'First cart rules configured on your shop', 'Cart Rules'),
+(213, 2, 'Cart Rules', '', ''),
+(213, 3, 'Cart Rules', '', ''),
+(213, 5, 'Cart Rules', '', ''),
+(213, 8, 'Cart Rules', '', ''),
+(214, 1, 'Cart Rules', 'You have 10 cart rules configured on your shop', 'Cart Rules'),
+(214, 2, 'Cart Rules', '', ''),
+(214, 3, 'Cart Rules', '', ''),
+(214, 5, 'Cart Rules', '', ''),
+(214, 8, 'Cart Rules', '', ''),
+(215, 1, 'Cart Rules', 'You have 100 cart rules configured on your shop', 'Cart Rules'),
+(215, 2, 'Cart Rules', '', ''),
+(215, 3, 'Cart Rules', '', ''),
+(215, 5, 'Cart Rules', '', ''),
+(215, 8, 'Cart Rules', '', ''),
+(216, 1, 'Cart Rules', 'You have 500 cart rules configured on your shop', 'Cart Rules');
+INSERT INTO `jms_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `group_name`) VALUES
+(216, 2, 'Cart Rules', '', ''),
+(216, 3, 'Cart Rules', '', ''),
+(216, 5, 'Cart Rules', '', ''),
+(216, 8, 'Cart Rules', '', ''),
+(217, 1, 'Cart Rules', 'You have 1,000 cart rules configured on your shop', 'Cart Rules'),
+(217, 2, 'Cart Rules', '', ''),
+(217, 3, 'Cart Rules', '', ''),
+(217, 5, 'Cart Rules', '', ''),
+(217, 8, 'Cart Rules', '', ''),
+(218, 1, 'Cart Rules', 'You have 5,000 cart rules configured on your shop', 'Cart Rules'),
+(218, 2, 'Cart Rules', '', ''),
+(218, 3, 'Cart Rules', '', ''),
+(218, 5, 'Cart Rules', '', ''),
+(218, 8, 'Cart Rules', '', ''),
+(219, 1, 'International Orders', 'First international order placed on your shop.', 'International Orders'),
+(219, 2, 'International Orders', '', ''),
+(219, 3, 'International Orders', '', ''),
+(219, 5, 'International Orders', '', ''),
+(219, 8, 'International Orders', '', ''),
+(220, 1, 'International Orders', '10 international orders placed on your shop.', 'International Orders'),
+(220, 2, 'International Orders', '', ''),
+(220, 3, 'International Orders', '', ''),
+(220, 5, 'International Orders', '', ''),
+(220, 8, 'International Orders', '', ''),
+(221, 1, 'International Orders', '100 international orders placed on your shop!', 'International Orders'),
+(221, 2, 'International Orders', '', ''),
+(221, 3, 'International Orders', '', ''),
+(221, 5, 'International Orders', '', ''),
+(221, 8, 'International Orders', '', ''),
+(222, 1, 'International Orders', '1,000 international orders placed on your shop!', 'International Orders'),
+(222, 2, 'International Orders', '', ''),
+(222, 3, 'International Orders', '', ''),
+(222, 5, 'International Orders', '', ''),
+(222, 8, 'International Orders', '', ''),
+(223, 1, 'International Orders', '5,000 international orders placed on your shop!', 'International Orders'),
+(223, 2, 'International Orders', '', ''),
+(223, 3, 'International Orders', '', ''),
+(223, 5, 'International Orders', '', ''),
+(223, 8, 'International Orders', '', ''),
+(224, 1, 'International Orders', '10,000 international orders placed on your shop!', 'International Orders'),
+(224, 2, 'International Orders', '', ''),
+(224, 3, 'International Orders', '', ''),
+(224, 5, 'International Orders', '', ''),
+(224, 8, 'International Orders', '', ''),
+(225, 1, 'Store', 'First store configured on your shop!', 'Store'),
+(225, 2, 'Store', '', ''),
+(225, 3, 'Store', '', ''),
+(225, 5, 'Store', '', ''),
+(225, 8, 'Store', '', ''),
+(226, 1, 'Store', 'You have 2 stores configured on your shop', 'Store'),
+(226, 2, 'Store', '', ''),
+(226, 3, 'Store', '', ''),
+(226, 5, 'Store', '', ''),
+(226, 8, 'Store', '', ''),
+(227, 1, 'Store', 'You have 5 stores configured on your shop', 'Store'),
+(227, 2, 'Store', '', ''),
+(227, 3, 'Store', '', ''),
+(227, 5, 'Store', '', ''),
+(227, 8, 'Store', '', ''),
+(228, 1, 'Store', 'You have 10 stores configured on your shop', 'Store'),
+(228, 2, 'Store', '', ''),
+(228, 3, 'Store', '', ''),
+(228, 5, 'Store', '', ''),
+(228, 8, 'Store', '', ''),
+(229, 1, 'Store', 'You have 20 stores configured on your shop', 'Store'),
+(229, 2, 'Store', '', ''),
+(229, 3, 'Store', '', ''),
+(229, 5, 'Store', '', ''),
+(229, 8, 'Store', '', ''),
+(230, 1, 'Store', 'You have 50 stores configured on your shop', 'Store'),
+(230, 2, 'Store', '', ''),
+(230, 3, 'Store', '', ''),
+(230, 5, 'Store', '', ''),
+(230, 8, 'Store', '', ''),
+(231, 1, 'Webservice x1', 'First webservice account added to your shop', 'WebService'),
+(231, 2, 'Webservice x1', '', ''),
+(231, 3, 'Webservice x1', '', ''),
+(231, 5, 'Webservice x1', '', ''),
+(231, 8, 'Webservice x1', '', ''),
+(232, 1, 'Webservice x2', '2 webservice accounts added to your shop', 'WebService'),
+(232, 2, 'Webservice x2', '', ''),
+(232, 3, 'Webservice x2', '', ''),
+(232, 5, 'Webservice x2', '', ''),
+(232, 8, 'Webservice x2', '', ''),
+(233, 1, 'Webservice x3', '3 webservice accounts added to your shop', 'WebService'),
+(233, 2, 'Webservice x3', '', ''),
+(233, 3, 'Webservice x3', '', ''),
+(233, 5, 'Webservice x3', '', ''),
+(233, 8, 'Webservice x3', '', ''),
+(234, 1, 'Webservice x4', '4 webservice accounts added to your shop', 'WebService'),
+(234, 2, 'Webservice x4', '', ''),
+(234, 3, 'Webservice x4', '', ''),
+(234, 5, 'Webservice x4', '', ''),
+(234, 8, 'Webservice x4', '', '');
 
 -- --------------------------------------------------------
 
@@ -3350,6 +4813,257 @@ CREATE TABLE `jms_condition` (
   `date_upd` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Đang đổ dữ liệu cho bảng `jms_condition`
+--
+
+INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
+(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '', 'hook', 'actionObjectContactAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '', 'hook', 'actionObjectContactAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(20, 20, 'install', '', '>=', '7', '', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '', 'hook', 'actionObjectShopAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '', 'hook', 'actionObjectShopGroupAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '', 'hook', 'actionObjectCarrierAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '3', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '3', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '3', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '3', 'time', '2', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '3', 'time', '3', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '3', 'time', '4', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '', 'hook', 'actionObjectCartAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '0', 'time', '1', 0, '2019-09-30 21:53:42', '2019-10-01 03:22:53'),
+(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '0', 'time', '4', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '0', 'time', '8', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(53, 53, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(54, 54, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(55, 55, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '', 'hook', 'actionObjectOrderAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(56, 56, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '0', 'time', '2', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(57, 57, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '0', 'time', '4', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(58, 58, 'sql', 'SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '0', 'time', '8', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-09-30 21:53:42', '2019-09-30 21:53:42'),
+(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '', 'hook', 'actionObjectCustomerAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '1', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:53'),
+(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '1', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '1', 'time', '4', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(81, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(82, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '', 'hook', 'actionObjectEmployeeAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '', 'hook', 'actionObjectImageAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '23', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '23', 'time', '4', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '23', 'time', '8', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '', 'hook', 'actionObjectCMSAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(92, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(93, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '', 'hook', 'newOrder', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '', 'hook', 'actionOrderStatusUpdate', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(106, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(107, 158, 'install', '', '>=', '90', '', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(108, 159, 'install', '', '<=', '90', '', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(109, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(110, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(111, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(112, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(113, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(114, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(115, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:35:20'),
+(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:35:20'),
+(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43');
+INSERT INTO `jms_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
+(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-10-01 03:22:54'),
+(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43'),
+(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2019-09-30 21:53:43', '2019-09-30 21:53:43');
+
 -- --------------------------------------------------------
 
 --
@@ -3362,6 +5076,24 @@ CREATE TABLE `jms_condition_advice` (
   `display` tinyint(1) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Đang đổ dữ liệu cho bảng `jms_condition_advice`
+--
+
+INSERT INTO `jms_condition_advice` (`id_condition`, `id_advice`, `display`) VALUES
+(19, 1, 1),
+(19, 2, 1),
+(19, 3, 1),
+(19, 4, 1),
+(19, 5, 1),
+(19, 6, 1),
+(19, 7, 1),
+(19, 8, 1),
+(19, 9, 1),
+(19, 10, 1),
+(106, 2, 0),
+(106, 7, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -3372,6 +5104,248 @@ CREATE TABLE `jms_condition_badge` (
   `id_condition` int(11) NOT NULL,
   `id_badge` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_condition_badge`
+--
+
+INSERT INTO `jms_condition_badge` (`id_condition`, `id_badge`) VALUES
+(1, 125),
+(2, 126),
+(3, 126),
+(4, 126),
+(5, 127),
+(6, 128),
+(7, 129),
+(8, 130),
+(9, 131),
+(10, 132),
+(11, 133),
+(12, 137),
+(13, 138),
+(14, 139),
+(15, 140),
+(16, 134),
+(17, 135),
+(18, 136),
+(19, 141),
+(20, 142),
+(21, 143),
+(22, 144),
+(23, 145),
+(24, 146),
+(25, 147),
+(26, 149),
+(27, 150),
+(28, 148),
+(29, 152),
+(30, 151),
+(31, 153),
+(32, 154),
+(33, 155),
+(34, 156),
+(35, 157),
+(36, 158),
+(37, 159),
+(38, 160),
+(39, 161),
+(40, 162),
+(41, 163),
+(42, 164),
+(43, 165),
+(44, 166),
+(45, 167),
+(46, 168),
+(47, 169),
+(48, 170),
+(49, 171),
+(50, 172),
+(51, 173),
+(52, 174),
+(53, 175),
+(54, 176),
+(55, 177),
+(56, 178),
+(57, 179),
+(58, 180),
+(59, 187),
+(60, 188),
+(61, 189),
+(62, 190),
+(63, 191),
+(64, 192),
+(65, 181),
+(66, 182),
+(67, 183),
+(68, 184),
+(69, 185),
+(70, 186),
+(71, 193),
+(72, 194),
+(73, 195),
+(74, 196),
+(75, 197),
+(76, 198),
+(77, 199),
+(78, 200),
+(79, 201),
+(80, 202),
+(81, 203),
+(82, 204),
+(83, 205),
+(84, 206),
+(85, 207),
+(86, 208),
+(87, 209),
+(88, 210),
+(89, 211),
+(90, 212),
+(91, 213),
+(92, 214),
+(93, 215),
+(94, 217),
+(95, 216),
+(96, 218),
+(97, 219),
+(98, 220),
+(99, 221),
+(100, 224),
+(101, 222),
+(102, 223),
+(104, 23),
+(105, 5),
+(109, 225),
+(110, 226),
+(111, 227),
+(112, 228),
+(113, 229),
+(114, 230),
+(115, 231),
+(116, 232),
+(117, 233),
+(118, 234),
+(120, 24),
+(121, 1),
+(122, 2),
+(123, 9),
+(125, 10),
+(126, 6),
+(127, 25),
+(128, 26),
+(129, 3),
+(130, 4),
+(131, 7),
+(132, 8),
+(134, 11),
+(135, 12),
+(136, 13),
+(137, 14),
+(138, 15),
+(139, 16),
+(140, 17),
+(141, 18),
+(142, 19),
+(143, 20),
+(144, 21),
+(145, 22),
+(146, 27),
+(147, 28),
+(148, 29),
+(149, 30),
+(150, 31),
+(151, 32),
+(152, 33),
+(153, 34),
+(154, 35),
+(155, 36),
+(156, 37),
+(157, 38),
+(158, 39),
+(159, 40),
+(160, 41),
+(161, 42),
+(162, 43),
+(163, 44),
+(164, 45),
+(165, 46),
+(166, 47),
+(167, 48),
+(168, 49),
+(169, 50),
+(170, 51),
+(171, 52),
+(172, 53),
+(173, 54),
+(174, 55),
+(175, 56),
+(176, 57),
+(177, 58),
+(178, 59),
+(179, 60),
+(180, 61),
+(181, 62),
+(182, 63),
+(183, 64),
+(184, 65),
+(185, 66),
+(186, 67),
+(187, 68),
+(188, 69),
+(189, 70),
+(190, 71),
+(191, 72),
+(192, 73),
+(193, 74),
+(194, 75),
+(195, 76),
+(196, 77),
+(197, 78),
+(198, 79),
+(199, 80),
+(200, 81),
+(201, 82),
+(202, 83),
+(203, 84),
+(204, 85),
+(205, 86),
+(206, 87),
+(207, 88),
+(208, 89),
+(209, 90),
+(210, 91),
+(211, 92),
+(212, 93),
+(213, 94),
+(214, 95),
+(215, 96),
+(216, 97),
+(217, 98),
+(218, 99),
+(219, 100),
+(220, 101),
+(221, 102),
+(222, 103),
+(223, 104),
+(224, 105),
+(225, 106),
+(226, 107),
+(227, 108),
+(228, 109),
+(229, 110),
+(230, 111),
+(231, 112),
+(232, 113),
+(233, 114),
+(234, 115),
+(235, 116),
+(236, 117),
+(237, 118),
+(238, 119),
+(239, 120),
+(240, 121),
+(241, 122),
+(242, 123),
+(243, 124);
 
 -- --------------------------------------------------------
 
@@ -3727,8 +5701,8 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (337, NULL, NULL, 'CONF_PS_WIREPAYMENT_VAR_FOREIGN', '2', '2019-09-27 08:45:57', '2019-09-27 08:45:57'),
 (338, NULL, NULL, 'GF_INSTALL_CALC', '1', '2019-09-27 08:47:28', '2019-09-27 02:49:35'),
 (339, NULL, NULL, 'GF_CURRENT_LEVEL', '1', '2019-09-27 08:47:28', '2019-09-27 08:47:28'),
-(340, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '0', '2019-09-27 08:47:28', '2019-09-27 08:47:28'),
-(341, NULL, NULL, 'GF_NOTIFICATION', '0', '2019-09-27 08:47:28', '2019-09-27 08:47:28'),
+(340, NULL, NULL, 'GF_CURRENT_LEVEL_PERCENT', '5', '2019-09-27 08:47:28', '2019-09-29 21:40:38'),
+(341, NULL, NULL, 'GF_NOTIFICATION', '0', '2019-09-27 08:47:28', '2019-09-30 00:35:50'),
 (342, NULL, NULL, 'PSGDPR_CREATION_FORM_SWITCH', '1', '2019-09-27 08:47:28', '2019-09-27 08:47:28'),
 (343, NULL, NULL, 'PSGDPR_CREATION_FORM', NULL, '2019-09-27 08:47:28', '2019-09-27 08:47:28'),
 (344, NULL, NULL, 'PSGDPR_CUSTOMER_FORM_SWITCH', '1', '2019-09-27 08:47:28', '2019-09-27 08:47:28'),
@@ -3742,7 +5716,7 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (352, NULL, NULL, 'PS_LAYERED_FILTER_CATEGORY_DEPTH', '1', '2019-09-27 08:48:23', '2019-09-27 08:48:23'),
 (353, NULL, NULL, 'PS_LAYERED_FILTER_PRICE_ROUNDING', '1', '2019-09-27 08:48:23', '2019-09-27 08:48:23'),
 (354, NULL, NULL, 'PS_LAYERED_INDEXED', '1', '2019-09-27 02:48:24', '2019-09-27 02:48:24'),
-(355, NULL, NULL, 'GF_NOT_VIEWED_BADGE', NULL, '2019-09-27 02:49:35', '2019-09-27 02:49:35'),
+(355, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '141', '2019-09-27 02:49:35', '2019-09-29 21:40:38'),
 (356, NULL, NULL, 'ONBOARDINGV2_SHUT_DOWN', '1', '2019-09-27 02:49:37', '2019-09-27 02:49:37'),
 (357, NULL, NULL, 'ONBOARDINGV2_CURRENT_STEP', '14', '2019-09-27 02:49:38', '2019-09-27 02:49:38'),
 (358, NULL, NULL, 'HOTDEAL_PRODUCT_SHOW', '2', '2019-09-27 02:55:22', '2019-09-27 02:55:22'),
@@ -3770,31 +5744,9 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (380, NULL, NULL, 'JMS_AJAXSEARCH_DESC_COUNT', '100', '2019-09-27 02:55:23', '2019-09-27 02:55:23'),
 (381, NULL, NULL, 'JMS_AJAXSEARCH_SHOW_PRICE', '1', '2019-09-27 02:55:23', '2019-09-27 02:55:23'),
 (382, NULL, NULL, 'JMS_AJAXSEARCH_SHOW_IMAGE', '1', '2019-09-27 02:55:23', '2019-09-27 02:55:23'),
-(383, NULL, NULL, 'JMSMM_MOUSEEVENT', 'hover', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
+(383, NULL, NULL, 'JMSMM_MOUSEEVENT', 'click', '2019-09-27 02:55:24', '2019-09-30 00:53:51'),
 (384, NULL, NULL, 'JMSMM_DURATION', '200', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
 (385, NULL, NULL, 'JMSMM_LOADBOOTSTRAPCSS', '0', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(386, NULL, NULL, 'JMS_SLIDER_DELAY', '1000', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(387, NULL, NULL, 'JMS_SLIDER_END_ANIMATE', '1', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(388, NULL, NULL, 'JMS_SLIDER_X', '0', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(389, NULL, NULL, 'JMS_SLIDER_Y', '0', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(390, NULL, NULL, 'JMS_SLIDER_TRANS', 'fade', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(391, NULL, NULL, 'JMS_SLIDER_TRANS_IN', 'left', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(392, NULL, NULL, 'JMS_SLIDER_TRANS_OUT', 'left', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(393, NULL, NULL, 'JMS_SLIDER_EASE_IN', 'easeInCubic', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(394, NULL, NULL, 'JMS_SLIDER_EASE_OUT', 'easeOutExpo', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(395, NULL, NULL, 'JMS_SLIDER_SPEED_IN', '300', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(396, NULL, NULL, 'JMS_SLIDER_SPEED_OUT', '0', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(397, NULL, NULL, 'JMS_SLIDER_DURATION', '7000', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(398, NULL, NULL, 'JMS_SLIDER_BG_ANIMATE', '1', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(399, NULL, NULL, 'JMS_SLIDER_BG_EASE', 'easeOutCubic', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(400, NULL, NULL, 'JMS_SLIDER_FULL_WIDTH', '1', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(401, NULL, NULL, 'JMS_SLIDER_RESPONSIVE', '1', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(402, NULL, NULL, 'JMS_SLIDER_WIDTH', '1920', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(403, NULL, NULL, 'JMS_SLIDER_HEIGHT', '875', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(404, NULL, NULL, 'JMS_SLIDER_AUTO_CHANGE', '1', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(405, NULL, NULL, 'JMS_SLIDER_PAUSE_HOVER', '0', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(406, NULL, NULL, 'JMS_SLIDER_SHOW_PAGES', '1', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
-(407, NULL, NULL, 'JMS_SLIDER_SHOW_CONTROLS', '1', '2019-09-27 02:55:24', '2019-09-27 02:55:24'),
 (408, NULL, NULL, 'PRVD_WIDTH', '700', '2019-09-27 02:55:25', '2019-09-27 02:55:25'),
 (409, NULL, NULL, 'PRVD_HEIGHT', '500', '2019-09-27 02:55:25', '2019-09-27 02:55:25'),
 (410, NULL, NULL, 'PRVD_VIDEO_POSITION', 'displayProductAdditionalInfo', '2019-09-27 02:55:25', '2019-09-27 02:55:25'),
@@ -3879,8 +5831,7 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (489, NULL, NULL, 'JPB_FOOTERBG', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27'),
 (490, NULL, NULL, 'JPB_BODYCOLOR', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27'),
 (491, NULL, NULL, 'JPB_HEADERCOLOR', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27'),
-(492, NULL, NULL, 'JPB_TOPBARCOLOR', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27');
-INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
+(492, NULL, NULL, 'JPB_TOPBARCOLOR', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27'),
 (493, NULL, NULL, 'JPB_FOOTERCOLOR', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27'),
 (494, NULL, NULL, 'JPB_HEADINGCOLOR', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27'),
 (495, NULL, NULL, 'JPB_PRODUCTNAMECOLOR', NULL, '2019-09-27 02:55:27', '2019-09-27 02:55:27'),
@@ -3900,7 +5851,8 @@ INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`,
 (509, NULL, NULL, 'PS_ROUTE_cms_category_rule', 'content/category/{id}-{rewrite}', '2019-09-27 03:51:36', '2019-09-27 03:51:36'),
 (510, NULL, NULL, 'PS_ROUTE_module', 'module/{module}{/:controller}', '2019-09-27 03:51:36', '2019-09-27 03:51:36'),
 (511, NULL, NULL, 'PS_ROUTE_product_rule', '{category:/}{id}{-:id_product_attribute}-{rewrite}{-:ean13}.html', '2019-09-27 03:51:36', '2019-09-27 03:51:36'),
-(512, NULL, NULL, 'PS_ROUTE_layered_rule', '{id}-{rewrite}{/:selected_filters}', '2019-09-27 03:51:36', '2019-09-27 03:51:36'),
+(512, NULL, NULL, 'PS_ROUTE_layered_rule', '{id}-{rewrite}{/:selected_filters}', '2019-09-27 03:51:36', '2019-09-27 03:51:36');
+INSERT INTO `jms_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, `name`, `value`, `date_add`, `date_upd`) VALUES
 (513, NULL, NULL, 'PS_ROUTE_jmsblog-categories', '/categories.html', '2019-09-27 03:51:36', '2019-09-27 03:51:36'),
 (514, NULL, NULL, 'PS_ROUTE_jmsblog-post', '/{category_slug}/{post_id}_{slug}.html', '2019-09-27 03:51:36', '2019-09-27 03:51:36'),
 (515, NULL, NULL, 'PS_ROUTE_jmsblog-category', '/{category_id}_{slug}.html', '2019-09-27 03:51:36', '2019-09-27 03:51:36'),
@@ -4098,7 +6050,19 @@ INSERT INTO `jms_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id
 (2, 1, 1, 3, 1, 2130706433, '2019-09-27 02:49:44', ''),
 (3, 1, 1, 3, 1, 2130706433, '2019-09-27 03:52:08', ''),
 (4, 1, 1, 3, 1, 2130706433, '2019-09-27 04:24:50', ''),
-(5, 1, 1, 3, 1, 2130706433, '2019-09-27 04:55:41', '');
+(5, 1, 1, 3, 1, 2130706433, '2019-09-27 04:55:41', ''),
+(6, 1, 1, 3, 2, 2130706433, '2019-09-29 21:40:42', ''),
+(7, 1, 1, 3, 1, 2130706433, '2019-09-29 23:39:55', ''),
+(8, 1, 1, 3, 1, 2130706433, '2019-09-30 00:10:24', ''),
+(9, 1, 1, 3, 1, 2130706433, '2019-09-30 00:42:09', ''),
+(10, 1, 1, 3, 1, 2130706433, '2019-09-30 03:22:42', ''),
+(11, 1, 1, 3, 1, 2130706433, '2019-09-30 03:57:46', ''),
+(12, 1, 1, 3, 2, 2130706433, '2019-09-30 04:28:06', ''),
+(13, 1, 1, 3, 1, 2130706433, '2019-09-30 05:06:02', ''),
+(14, 1, 1, 3, 1, 2130706433, '2019-09-30 05:48:22', ''),
+(15, 1, 1, 3, 2, 2130706433, '2019-09-30 21:36:59', ''),
+(16, 1, 1, 3, 2, 2130706433, '2019-09-30 22:32:03', ''),
+(17, 1, 1, 3, 2, 2130706433, '2019-10-01 05:36:39', '');
 
 -- --------------------------------------------------------
 
@@ -6338,7 +8302,7 @@ CREATE TABLE `jms_employee` (
 --
 
 INSERT INTO `jms_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`) VALUES
-(1, 1, 1, 'Huy', 'Mr', 'admin@admin.com', '$2y$10$55NMnAkWPwOgbLmxuRrLbeJWXIqafbwsEa89GpH2vdfHHyEpeFAh6', '2019-09-26 19:45:46', '2019-08-27', '2019-09-27', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, 1, 5, 0, 2, '2019-09-27', NULL, '0000-00-00 00:00:00');
+(1, 1, 1, 'Huy', 'Mr', 'admin@admin.com', '$2y$10$55NMnAkWPwOgbLmxuRrLbeJWXIqafbwsEa89GpH2vdfHHyEpeFAh6', '2019-09-26 19:45:46', '2019-08-27', '2019-09-27', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, 1, 5, 0, 2, '2019-10-01', NULL, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -7286,7 +9250,22 @@ INSERT INTO `jms_hook` (`id_hook`, `name`, `title`, `description`, `position`) V
 (443, 'displayAdminProductsExtra', 'displayAdminProductsExtra', '', 1),
 (444, 'displayProductPriceBlock', 'displayProductPriceBlock', '', 1),
 (445, 'moduleRoutes', 'moduleRoutes', '', 1),
-(446, 'displayLeft', 'displayLeft', '', 1);
+(446, 'displayLeft', 'displayLeft', '', 1),
+(447, 'actionAdminMetaControllerUpdate_optionsAfter', 'actionAdminMetaControllerUpdate_optionsAfter', '', 1),
+(448, 'actionAdminPerformanceControllerSaveAfter', 'actionAdminPerformanceControllerSaveAfter', '', 1),
+(449, 'actionObjectCarrierAddAfter', 'actionObjectCarrierAddAfter', '', 1),
+(450, 'actionObjectContactAddAfter', 'actionObjectContactAddAfter', '', 1),
+(451, 'actionAdminThemesControllerUpdate_optionsAfter', 'actionAdminThemesControllerUpdate_optionsAfter', '', 1),
+(452, 'actionObjectShopUpdateAfter', 'actionObjectShopUpdateAfter', '', 1),
+(453, 'actionAdminPreferencesControllerUpdate_optionsAfter', 'actionAdminPreferencesControllerUpdate_optionsAfter', '', 1),
+(454, 'actionObjectShopAddAfter', 'actionObjectShopAddAfter', '', 1),
+(455, 'actionObjectShopGroupAddAfter', 'actionObjectShopGroupAddAfter', '', 1),
+(456, 'actionObjectCartAddAfter', 'actionObjectCartAddAfter', '', 1),
+(457, 'actionObjectEmployeeAddAfter', 'actionObjectEmployeeAddAfter', '', 1),
+(458, 'actionObjectImageAddAfter', 'actionObjectImageAddAfter', '', 1),
+(459, 'actionObjectCartRuleAddAfter', 'actionObjectCartRuleAddAfter', '', 1),
+(460, 'actionAdminStoresControllerSaveAfter', 'actionAdminStoresControllerSaveAfter', '', 1),
+(461, 'actionAdminWebserviceControllerSaveAfter', 'actionAdminWebserviceControllerSaveAfter', '', 1);
 
 -- --------------------------------------------------------
 
@@ -7468,6 +9447,24 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (41, 1, 20, 1),
 (54, 1, 438, 1),
 (54, 1, 439, 1),
+(55, 1, 1, 1),
+(55, 1, 29, 1),
+(55, 1, 101, 1),
+(55, 1, 447, 1),
+(55, 1, 448, 1),
+(55, 1, 449, 1),
+(55, 1, 450, 1),
+(55, 1, 451, 1),
+(55, 1, 452, 1),
+(55, 1, 453, 1),
+(55, 1, 454, 1),
+(55, 1, 455, 1),
+(55, 1, 456, 1),
+(55, 1, 457, 1),
+(55, 1, 458, 1),
+(55, 1, 459, 1),
+(55, 1, 460, 1),
+(55, 1, 461, 1),
 (56, 1, 395, 1),
 (57, 1, 43, 1),
 (57, 1, 440, 1),
@@ -7496,6 +9493,13 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (75, 1, 13, 1),
 (75, 1, 21, 1),
 (75, 1, 35, 1),
+(76, 1, 7, 1),
+(76, 1, 15, 1),
+(76, 1, 38, 1),
+(76, 1, 99, 1),
+(76, 1, 104, 1),
+(77, 1, 8, 1),
+(77, 1, 9, 1),
 (2, 1, 395, 2),
 (3, 1, 396, 2),
 (3, 1, 402, 2),
@@ -7513,6 +9517,11 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (41, 1, 41, 2),
 (51, 1, 404, 2),
 (54, 1, 65, 2),
+(55, 1, 398, 2),
+(55, 1, 400, 2),
+(55, 1, 409, 2),
+(55, 1, 427, 2),
+(55, 1, 436, 2),
 (57, 1, 114, 2),
 (57, 1, 416, 2),
 (58, 1, 438, 2),
@@ -7523,6 +9532,11 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (69, 1, 442, 2),
 (70, 1, 124, 2),
 (70, 1, 443, 2),
+(76, 1, 21, 2),
+(76, 1, 43, 2),
+(77, 1, 7, 2),
+(77, 1, 13, 2),
+(77, 1, 20, 2),
 (4, 1, 396, 3),
 (4, 1, 402, 3),
 (5, 1, 403, 3),
@@ -7531,11 +9545,13 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (27, 1, 14, 3),
 (33, 1, 49, 3),
 (55, 1, 65, 3),
+(55, 1, 397, 3),
 (57, 1, 41, 3),
 (57, 1, 394, 3),
 (61, 1, 76, 3),
 (70, 1, 87, 3),
 (73, 1, 12, 3),
+(76, 1, 52, 3),
 (5, 1, 396, 4),
 (6, 1, 402, 4),
 (27, 1, 441, 4),
@@ -7543,6 +9559,7 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (58, 1, 65, 4),
 (62, 1, 14, 4),
 (62, 1, 413, 4),
+(77, 1, 12, 4),
 (35, 1, 49, 5),
 (55, 1, 402, 5),
 (63, 1, 413, 5),
@@ -7553,20 +9570,21 @@ INSERT INTO `jms_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VA
 (65, 1, 413, 6),
 (37, 1, 49, 7),
 (66, 1, 14, 7),
-(68, 1, 413, 7),
+(77, 1, 413, 7),
 (38, 1, 49, 8),
 (67, 1, 14, 8),
 (39, 1, 49, 9),
-(68, 1, 14, 9),
+(69, 1, 14, 9),
 (40, 1, 49, 10),
-(69, 1, 14, 10),
+(72, 1, 14, 10),
 (42, 1, 49, 11),
-(72, 1, 14, 11),
+(74, 1, 14, 11),
 (43, 1, 49, 12),
-(74, 1, 14, 12),
+(75, 1, 14, 12),
 (44, 1, 49, 13),
-(75, 1, 14, 13),
+(76, 1, 14, 13),
 (45, 1, 49, 14),
+(77, 1, 14, 14),
 (46, 1, 49, 15),
 (47, 1, 49, 16),
 (48, 1, 49, 17),
@@ -7881,11 +9899,11 @@ CREATE TABLE `jms_image_type` (
 --
 
 INSERT INTO `jms_image_type` (`id_image_type`, `name`, `width`, `height`, `products`, `categories`, `manufacturers`, `suppliers`, `stores`) VALUES
-(1, 'cart_default', 85, 102, 1, 0, 0, 0, 0),
-(2, 'small_default', 100, 120, 1, 1, 1, 1, 0),
-(3, 'medium_default', 234, 280, 1, 0, 1, 1, 0),
-(4, 'home_default', 380, 455, 1, 0, 0, 0, 0),
-(5, 'large_default', 669, 801, 1, 0, 1, 1, 0),
+(1, 'cart_default', 80, 103, 1, 0, 0, 0, 0),
+(2, 'small_default', 100, 128, 1, 1, 1, 1, 0),
+(3, 'medium_default', 230, 295, 1, 0, 1, 1, 0),
+(4, 'home_default', 480, 616, 1, 0, 0, 0, 0),
+(5, 'large_default', 700, 898, 1, 0, 1, 1, 0),
 (6, 'category_default', 870, 230, 0, 1, 0, 0, 0),
 (7, 'stores_default', 170, 115, 0, 0, 0, 0, 1);
 
@@ -8333,12 +10351,11 @@ CREATE TABLE `jms_jmsmegamenu` (
 
 INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `value`, `html_content`, `active`, `target`, `params`, `ordering`) VALUES
 (1, 1, 0, 'link', '#', '', 1, '_self', '{\"align\":\"left\",\"sub\":{\"width\":\"232\",\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"232\"},{\"item\":\"233\"},{\"item\":\"234\"},{\"item\":\"235\"},{\"item\":\"236\"},{\"item\":\"237\"},{\"item\":\"238\"},{\"item\":\"239\"}]}]]}}', 0),
-(2, 1, 0, 'category', '3', '', 1, '_self', '{\"class\":\"must-see\",\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"308\"},{\"item\":\"314\"},{\"item\":\"315\"},{\"item\":\"316\"},{\"item\":\"340\"},{\"item\":\"350\"}]}],[{\"width\":\"12\",\"items\":[]}]]}}', 1),
+(2, 1, 0, 'category', '3', '', 1, '_self', '{\"class\":\"\",\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"308\"},{\"item\":\"314\"},{\"item\":\"315\"},{\"item\":\"316\"},{\"item\":\"340\"},{\"item\":\"350\"}]}]]}}', 1),
 (3, 1, 0, 'category', '3', '', 1, '_self', '{\"class\":\"\",\"align\":\"center\",\"sub\":{\"fullwidth\":\"1\",\"width\":\"1300\",\"row\":[[{\"width\":\"12\",\"class\":\"img-first wrapper-banner banner-style1\",\"items\":[{\"item\":\"259\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"260\"},{\"item\":\"261\"},{\"item\":\"262\"},{\"item\":\"263\"},{\"item\":\"264\"},{\"item\":\"265\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"266\"},{\"item\":\"267\"},{\"item\":\"268\"},{\"item\":\"269\"},{\"item\":\"270\"},{\"item\":\"271\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"272\"},{\"item\":\"273\"},{\"item\":\"274\"},{\"item\":\"275\"},{\"item\":\"276\"},{\"item\":\"277\"}]},{\"width\":\"3\",\"items\":[{\"item\":\"278\"},{\"item\":\"279\"},{\"item\":\"280\"},{\"item\":\"281\"},{\"item\":\"282\"},{\"item\":\"283\"}]}],[{\"width\":\"4\",\"class\":\"img-bottom img-left  banner-style1 wrapper-banner\",\"items\":[{\"item\":\"284\"}]},{\"width\":\"4\",\"class\":\"img-bottom img-center banner-style1 wrapper-banner\",\"items\":[{\"item\":\"285\"}]},{\"width\":\"4\",\"class\":\"img-bottom img-right banner-style1 wrapper-banner\",\"items\":[{\"item\":\"286\"}]}]]}}', 2),
-(5, 1, 0, 'link', 'index.php?fc=module&module=jmsblog&controller=post&post_id=21&sidebar=left', '', 1, '_self', '{\"class\":\"new\",\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"287\"},{\"item\":\"294\"},{\"item\":\"298\"},{\"item\":\"305\"},{\"item\":\"306\"}]}]]}}', 4),
+(5, 1, 0, 'link', 'index.php?fc=module&module=jmsblog&controller=post&post_id=21&sidebar=left', '', 1, '_self', '{\"class\":\"\",\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"287\"},{\"item\":\"294\"},{\"item\":\"298\"},{\"item\":\"305\"},{\"item\":\"306\"}]}]]}}', 4),
 (6, 1, 0, 'category', '3', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"249\"},{\"item\":\"250\"},{\"item\":\"253\"},{\"item\":\"254\"},{\"item\":\"256\"},{\"item\":\"255\"},{\"item\":\"307\"},{\"item\":\"257\"},{\"item\":\"258\"}]}]]}}', 5),
 (7, 1, 0, 'link', 'index.php?controller=contact', '', 1, '_self', '{}', 6),
-(173, 1, 0, 'cms', '4', '', 1, '_self', '{\"sub\":{\"row\":[[{\"width\":\"12\",\"items\":[{\"item\":\"240\"},{\"item\":\"241\"},{\"item\":\"242\"},{\"item\":\"243\"},{\"item\":\"244\"},{\"item\":\"245\"},{\"item\":\"246\"},{\"item\":\"247\"},{\"item\":\"248\"}]}]]}}', 7),
 (232, 1, 1, 'link', 'index.php?settingpanel=1&jpb_homepage=1', '', 1, '_self', '{\"title\":\"1\"}', 1),
 (233, 1, 1, 'link', 'index.php?settingpanel=1&jpb_homepage=2', '', 1, '_self', '{\"title\":\"1\"}', 2),
 (234, 1, 1, 'link', 'index.php?settingpanel=1&jpb_homepage=3', '', 1, '_self', '{\"title\":\"1\"}', 3),
@@ -8347,15 +10364,6 @@ INSERT INTO `jms_jmsmegamenu` (`mitem_id`, `id_shop`, `parent_id`, `type`, `valu
 (237, 1, 1, 'link', 'index.php?settingpanel=1&jpb_homepage=6', '', 1, '_self', '{\"title\":\"1\"}', 6),
 (238, 1, 1, 'link', 'index.php?settingpanel=1&jpb_homepage=7', '', 1, '_self', '{\"title\":\"1\"}', 7),
 (239, 1, 1, 'link', 'index.php?settingpanel=1&jpb_homepage=8', '', 1, '_self', '{\"title\":\"1\"}', 8),
-(240, 1, 173, 'cms', '7', '', 1, '_self', '{\"title\":\"1\"}', 1),
-(241, 1, 173, 'cms', '8', '', 1, '_self', '{\"title\":\"1\"}', 2),
-(242, 1, 173, 'cms', '11', '', 1, '_self', '{\"title\":\"1\"}', 3),
-(243, 1, 173, 'cms', '14', '', 1, '_self', '{\"title\":\"1\"}', 4),
-(244, 1, 173, 'cms', '10', '', 1, '_self', '{\"title\":\"1\"}', 5),
-(245, 1, 173, 'cms', '9', '', 1, '_self', '{\"title\":\"1\"}', 6),
-(246, 1, 173, 'cms', '12', '', 1, '_self', '{\"title\":\"1\"}', 7),
-(247, 1, 173, 'cms', '13', '', 1, '_self', '{\"title\":\"1\"}', 8),
-(248, 1, 173, 'cms', '15', '', 1, '_self', '{\"title\":\"1\"}', 9),
 (249, 1, 6, 'cms', '6', '', 1, '_self', '{\"title\":\"1\"}', 1),
 (250, 1, 6, 'link', 'index.php?id_product=19&id_product_attribute=211&rewrite=dapibus-mollis-risus&controller=product&id_lang=1#/1-size-s/5-color-red&sidebar=left', '', 1, '_self', '{\"title\":\"1\"}', 2),
 (251, 1, 250, 'category', '3', '', 1, '_self', '', 1),
@@ -8472,14 +10480,14 @@ CREATE TABLE `jms_jmsmegamenu_lang` (
   `mitem_id` int(11) NOT NULL,
   `id_lang` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `description` text NOT NULL
+  `menulink` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `jms_jmsmegamenu_lang`
 --
 
-INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `description`) VALUES
+INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `menulink`) VALUES
 (1, 1, 'Home', ''),
 (1, 5, 'Home', ''),
 (2, 1, 'Shop', ''),
@@ -8516,11 +10524,6 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `description`
 (5, 10, 'Blog', ''),
 (6, 10, 'Pages', ''),
 (7, 10, 'Contact', ''),
-(173, 1, 'Elements', ''),
-(173, 2, 'Elements', ''),
-(173, 3, 'Elements', ''),
-(173, 8, 'Elements', ''),
-(173, 10, 'Elements', ''),
 (232, 1, 'Home 1 - Default', ''),
 (232, 2, 'Home 1 - Default', ''),
 (232, 3, 'Home 1 - Default', ''),
@@ -8553,42 +10556,6 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `description`
 (239, 2, 'Home 8 - Parallax', ''),
 (239, 3, 'Home 8 - Parallax', ''),
 (239, 5, 'Home 8 - Parallax', ''),
-(240, 1, 'Icon With Text', ''),
-(240, 2, 'Icon With Text', ''),
-(240, 3, 'Icon With Text', ''),
-(240, 5, 'Icon With Text', ''),
-(241, 1, 'Tabs', ''),
-(241, 2, 'Tabs', ''),
-(241, 3, 'Tabs', ''),
-(241, 5, 'Tabs', ''),
-(242, 1, 'Accordions', ''),
-(242, 2, 'Accordions', ''),
-(242, 3, 'Accordions', ''),
-(242, 5, 'Accordions', ''),
-(243, 1, 'Teams', ''),
-(243, 2, 'Teams', ''),
-(243, 3, 'Teams', ''),
-(243, 5, 'Teams', ''),
-(244, 1, 'Text with image', ''),
-(244, 2, 'Text with image', ''),
-(244, 3, 'Text with image', ''),
-(244, 5, 'Text with image', ''),
-(245, 1, 'Lists and Icons', ''),
-(245, 2, 'Lists and Icons', ''),
-(245, 3, 'Lists and Icons', ''),
-(245, 5, 'Lists and Icons', ''),
-(246, 1, 'Responsive Grid System', ''),
-(246, 2, 'Responsive Grid System', ''),
-(246, 3, 'Responsive Grid System', ''),
-(246, 5, 'Responsive Grid System', ''),
-(247, 1, 'Separators/Dividers', ''),
-(247, 2, 'Separators/Dividers', ''),
-(247, 3, 'Separators/Dividers', ''),
-(247, 5, 'Separators/Dividers', ''),
-(248, 1, 'Google Maps', ''),
-(248, 2, 'Google Maps', ''),
-(248, 3, 'Google Maps', ''),
-(248, 5, 'Google Maps', ''),
 (249, 1, 'Typography', ''),
 (249, 2, 'Typography', ''),
 (249, 3, 'Typography', ''),
@@ -9008,8 +10975,7 @@ INSERT INTO `jms_jmsmegamenu_lang` (`mitem_id`, `id_lang`, `name`, `description`
 (354, 1, 'Ajax + Cart at Bottom', ''),
 (354, 2, 'Ajax + Cart at Bottom', ''),
 (354, 3, 'Ajax + Cart at Bottom', ''),
-(354, 5, 'Ajax + Cart at Bottom', ''),
-(173, 5, 'Elements', '');
+(354, 5, 'Ajax + Cart at Bottom', '');
 
 -- --------------------------------------------------------
 
@@ -9059,7 +11025,7 @@ CREATE TABLE `jms_jmspagebuilder_homepages` (
 --
 
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
-(1, 'Home — Demo 1', 'home1.css', 'home1.js', 'home_1', '[{\"type\":\"row\",\"name\":\"Alert Box\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"alert-box\",\"name\":\"Alert Box\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"alert\",\"settings\":{\"active\":1,\"addon\":\"alert\"},\"fields\":[{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Alert Type\",\"name\":\"alert_type\",\"multilang\":0,\"value\":\"customs\"},{\"type\":\"editor\",\"label\":\"Alert Message\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><strong>ENJOY AN EXTRA 40% OFF</strong> select sales styles <strong><span class=_JMSQUOTE_more-details_JMSQUOTE_>More details</span></strong></p>_JMSLB_<div class=_JMSQUOTE_details-content_JMSQUOTE_>This offer is valid from 3:15 a.m. PT on January 23, 2019, to 11:59 p.m. PT on February 19, 2019, on select sale styles. Discount will <a href=_JMSQUOTE_#_JMSQUOTE_ target=_JMSQUOTE__blank_JMSQUOTE_>be automatically</a> reflected in cart. This offer is not valid on previously purchased merchandise. This offer has no cash value. This offer cannot be combined with any other offer, except for a for free shipping.</div>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"switch\",\"label\":\"Show Close Button\",\"name\":\"show_close_btn\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"5000\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]}]', 1, 0);
+(1, 'Home — Demo 1', 'home1.css', 'home1.js', 'home_1', '[{\"type\":\"row\",\"name\":\"Alert Box\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"alert-box\",\"name\":\"Alert Box\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"alert\",\"settings\":{\"active\":1,\"addon\":\"alert\"},\"fields\":[{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Alert Type\",\"name\":\"alert_type\",\"multilang\":0,\"value\":\"customs\"},{\"type\":\"editor\",\"label\":\"Alert Message\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><strong>ENJOY AN EXTRA 40% OFF</strong> select sales styles</p>_JMSLB_<div class=_JMSQUOTE_more-details_JMSQUOTE_><strong>More details</strong> <br />_JMSLB_<div class=_JMSQUOTE_details-content_JMSQUOTE_>This offer is valid from 3:15 a.m. PT on January 23, 2019, to 11:59 p.m. PT on February 19, 2019, on select sale styles. Discount will <a href=_JMSQUOTE_#_JMSQUOTE_ target=_JMSQUOTE__blank_JMSQUOTE_>be automatically</a> reflected in cart. This offer is not valid on previously purchased merchandise. This offer has no cash value. This offer cannot be combined with any other offer, except for a for free shipping.</div>_JMSLB_</div>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"switch\",\"label\":\"Show Close Button\",\"name\":\"show_close_btn\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"TopPanel\",\"layout\":\"3,6,3\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"top-panel\",\"name\":\"TopPanel\",\"layout\":\"3,6,3\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-3\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"call-us\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"5\":\"Html Demo\",\"8\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"5\":\"This is block html\",\"8\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>Call Us: <strong>1–234–5678901</strong></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"content\"},\"addons\":[{\"type\":\"contentcarousel\",\"settings\":{\"active\":1,\"addon\":\"contentcarousel\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Content Carousel\",\"3\":\"Content Carousel\",\"5\":\"Content Carousel\",\"8\":\"Content Carousel\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"image\",\"label\":\"Content Image 1\",\"name\":\"content_img1\",\"multilang\":0,\"value\":\"\"},{\"type\":\"editor\",\"label\":\"Content 1\",\"name\":\"html_content1\",\"multilang\":1,\"value\":{\"1\":\"<p><strong>FREE 2-DAYS</strong> standard shipping on orders $255+</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ target=_JMSQUOTE__blank_JMSQUOTE_ class=_JMSQUOTE_pt-link-underline_JMSQUOTE_>More details</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"image\",\"label\":\"Content Image 2\",\"name\":\"content_img2\",\"multilang\":0,\"value\":\"\"},{\"type\":\"editor\",\"label\":\"Content 2\",\"name\":\"html_content2\",\"multilang\":1,\"value\":{\"1\":\"<p><strong>TAKE 30% OFF</strong> when you spend $99 or more with code: “Yanka”</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ target=_JMSQUOTE__blank_JMSQUOTE_ class=_JMSQUOTE_pt-link-underline_JMSQUOTE_>More details</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"image\",\"label\":\"Content Image 3\",\"name\":\"content_img3\",\"multilang\":0,\"value\":\"\"},{\"type\":\"editor\",\"label\":\"Content 3\",\"name\":\"html_content3\",\"multilang\":1,\"value\":{\"1\":\"<p><strong>50% OFF</strong> all new collection!</p>_JMSLB_<p><a href=_JMSQUOTE_#_JMSQUOTE_ target=_JMSQUOTE__blank_JMSQUOTE_ class=_JMSQUOTE_pt-link-underline_JMSQUOTE_>Discover now!</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"image\",\"label\":\"Content Image 4\",\"name\":\"content_img4\",\"multilang\":0,\"value\":\"\"},{\"type\":\"editor\",\"label\":\"Content 4\",\"name\":\"html_content4\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"image\",\"label\":\"Content Image 5\",\"name\":\"content_img5\",\"multilang\":0,\"value\":\"\"},{\"type\":\"editor\",\"label\":\"Content 5\",\"name\":\"html_content5\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"text\",\"label\":\"Items Show\",\"name\":\"items_show\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Items Show On Medium Device\",\"name\":\"items_show_md\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Items Show On Tablet\",\"name\":\"items_show_sm\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Items Show On Mobile\",\"name\":\"items_show_xs\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"social\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"Html Demo\",\"3\":\"Html Demo\",\"5\":\"Html Demo\",\"8\":\"Html Demo\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"This is block html\",\"3\":\"This is block html\",\"5\":\"This is block html\",\"8\":\"This is block html\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<ul>_JMSLB_<li><a target=_JMSQUOTE__blank_JMSQUOTE_ href=_JMSQUOTE_https://www.facebook.com/_JMSQUOTE_><span class=_JMSQUOTE_text_JMSQUOTE_>Facebook</span></a></li>_JMSLB_<li><a target=_JMSQUOTE__blank_JMSQUOTE_ href=_JMSQUOTE_https://twitter.com_JMSQUOTE_><span class=_JMSQUOTE_text_JMSQUOTE_>Twitter</span> </a></li>_JMSLB_<li><a target=_JMSQUOTE__blank_JMSQUOTE_ href=_JMSQUOTE_https://www.instagram.com_JMSQUOTE_><span class=_JMSQUOTE_text_JMSQUOTE_>Instagram</span></a></li>_JMSLB_</ul>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}}]}]}]},{\"type\":\"row\",\"name\":\"Header\",\"layout\":\"9,3\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"header\",\"name\":\"Header\",\"layout\":\"9,3\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-9\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"megamenu\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"text\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Yanka\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsmegamenu\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"right-module-header\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsajaxsearch\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_customersignin\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayMyAccountBlock\",\"modulename\":\"jmswishlist\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_shoppingcart\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_languageselector\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_currencyselector\",\"addon\":\"module\"},\"fields\":[]}]}]},{\"type\":\"row\",\"name\":\"Slider\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"\",\"name\":\"Slider\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"sliderlayer\",\"settings\":{\"active\":1,\"addon\":\"sliderlayer\"},\"fields\":[{\"type\":\"text\",\"label\":\"Slider IDs\",\"name\":\"slide_ids\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner carousel\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"banner-type-1\",\"name\":\"Banner carousel\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"\",\"sm_col\":\"\",\"md_col\":\"\",\"custom_class\":\"banner-carousel owl-carousel\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_yanka/assets/img/index-promo-01.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><a href=_JMSQUOTE_#_JMSQUOTE_> <span class=_JMSQUOTE_text-1_JMSQUOTE_>NEW COLLETION</span> <span class=_JMSQUOTE_text-2_JMSQUOTE_>What to Buy Now</span> </a></p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>Here to bring your life style to the next.</p>_JMSLB_<p class=_JMSQUOTE_button_JMSQUOTE_><a class=_JMSQUOTE_btn-default_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>DISCOVER NOW!</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_yanka/assets/img/index-promo-02.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><a href=_JMSQUOTE_#_JMSQUOTE_> <span class=_JMSQUOTE_text-1_JMSQUOTE_>FIND YOUR NEW FAVORITE CLOTHING</span> <span class=_JMSQUOTE_text-2_JMSQUOTE_>Premium</span> </a></p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>Contemporary, minimal and beautifully iconic.</p>_JMSLB_<p class=_JMSQUOTE_button_JMSQUOTE_><a class=_JMSQUOTE_btn-default_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>DISCOVER NOW!</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_yanka/assets/img/index-promo-03.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><a href=_JMSQUOTE_#_JMSQUOTE_> <span class=_JMSQUOTE_text-1_JMSQUOTE_>COMPLETE YOUR LOOK</span> <span class=_JMSQUOTE_text-2_JMSQUOTE_>Must-Haves</span> </a></p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>Here to bring your life style to the next level.</p>_JMSLB_<p class=_JMSQUOTE_button_JMSQUOTE_><a class=_JMSQUOTE_btn-default_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>DISCOVER NOW!</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_yanka/assets/img/index-promo-04.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><a href=_JMSQUOTE_#_JMSQUOTE_> <span class=_JMSQUOTE_text-1_JMSQUOTE_>Collections 2019/20</span> <span class=_JMSQUOTE_text-2_JMSQUOTE_>Complete Your Look</span> </a></p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>The world_JMSQUOTE2_s most stylish women are buying right now</p>_JMSLB_<p class=_JMSQUOTE_button_JMSQUOTE_><a class=_JMSQUOTE_btn-default_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>DISCOVER NOW!</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_yanka/assets/img/index-promo-05.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><a href=_JMSQUOTE_#_JMSQUOTE_> <span class=_JMSQUOTE_text-1_JMSQUOTE_>NEW PERSONALIZABLE COLLECTION</span> <span class=_JMSQUOTE_text-2_JMSQUOTE_>Need-it-Now</span> </a></p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>Contemporary. Sophisticated. Versatile. Captivating.</p>_JMSLB_<p class=_JMSQUOTE_button_JMSQUOTE_><a class=_JMSQUOTE_btn-default_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>DISCOVER NOW!</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes/jms_yanka/assets/img/index-promo-06.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p><a href=_JMSQUOTE_#_JMSQUOTE_> <span class=_JMSQUOTE_text-1_JMSQUOTE_>Don_JMSQUOTE2_t Miss Today_JMSQUOTE2_s Featured Deals</span> <span class=_JMSQUOTE_text-2_JMSQUOTE_>50% Off</span> </a></p>_JMSLB_<p class=_JMSQUOTE_text-3_JMSQUOTE_>The world_JMSQUOTE2_s most stylish women are buying right now.</p>_JMSLB_<p class=_JMSQUOTE_button_JMSQUOTE_><a class=_JMSQUOTE_btn-default_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>DISCOVER NOW!</a></p>\",\"2\":\"\",\"3\":\"\",\"5\":\"\",\"8\":\"\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"5000\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]}]', 1, 0);
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
 (2, 'Jms Fluent - Home 2', 'home2.css', 'home2.js', 'home_2', '[{\"type\":\"row\",\"name\":\"TopHeader\",\"layout\":\"3,6,3\",\"settings\":{\"active\":1,\"hook\":\"top\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"topheader\",\"name\":\"TopHeader\",\"layout\":\"3,6,3\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-3 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-3\",\"custom_class\":\"logo_h2\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"default\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Fluent.\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-4 col-xs-4\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-4\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-6\",\"custom_class\":\"megamenu_h2\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsmegamenu\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-3 col-sm-4 col-xs-4\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-4\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-3\",\"custom_class\":\"module_group_h2\"},\"addons\":[{\"type\":\"modulegroup\",\"settings\":{\"active\":1,\"addon\":\"modulegroup\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"icongroup\"},{\"type\":\"select\",\"label\":\"Module Name 1\",\"name\":\"modulename\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Module Hook 1\",\"name\":\"modulehook1\",\"multilang\":0,\"value\":\"widget\"},{\"type\":\"select\",\"label\":\"Module Name 2\",\"name\":\"modulename\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Module Hook 2\",\"name\":\"modulehook\",\"multilang\":0,\"value\":\"widget\"},{\"type\":\"select\",\"label\":\"Module Name 3\",\"name\":\"modulename\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Module Hook 3\",\"name\":\"modulehook\",\"multilang\":0,\"value\":\"widget\"},{\"type\":\"select\",\"label\":\"Module Name 4\",\"name\":\"modulename\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Module Hook 4\",\"name\":\"modulehook\",\"multilang\":0,\"value\":\"displayTop\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_shoppingcart\",\"addon\":\"module\"},\"fields\":[]},{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"displayTop\",\"modulename\":\"jmsajaxsearch\",\"addon\":\"module\"},\"fields\":[]}]}]},{\"type\":\"row\",\"name\":\"Slider\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":1,\"custom_class\":\"slider_home2\",\"name\":\"Slider\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"sliderlayer\",\"settings\":{\"active\":1,\"addon\":\"sliderlayer\"},\"fields\":[{\"type\":\"text\",\"label\":\"Slide IDs\",\"name\":\"slide_ids\",\"multilang\":0,\"value\":\"10,11,12\"},{\"type\":\"text\",\"label\":\"Slide Width\",\"name\":\"max_width\",\"multilang\":0,\"value\":\"1920\"},{\"type\":\"text\",\"label\":\"Slide Height\",\"name\":\"max_height\",\"multilang\":0,\"value\":\"776\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Pause Hover\",\"name\":\"pausehover\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"90\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Banner\",\"layout\":\"4,4,4\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"banner_home\",\"name\":\"Banner\",\"layout\":\"4,4,4\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style1 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes\\/jms_fluent\\/assets\\/img\\/demo\\/banner1h2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http:\\/\\/www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Arrivals<\\/span>_JMSLB_<h4>ALARM CONCEPT<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Arrivals<\\/span>_JMSLB_<h4>ALARM CONCEPT<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Arrivals<\\/span>_JMSLB_<h4>ALARM CONCEPT<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Arrivals<\\/span>_JMSLB_<h4>ALARM CONCEPT<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style1 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes\\/jms_fluent\\/assets\\/img\\/demo\\/banner2h2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http:\\/\\/www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Technology<\\/span><br \\/>_JMSLB_<h4>PRO SPEAKER DESIGN<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Technology<\\/span><br \\/>_JMSLB_<h4>PRO SPEAKER DESIGN<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Technology<\\/span><br \\/>_JMSLB_<h4>PRO SPEAKER DESIGN<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>New Technology<\\/span><br \\/>_JMSLB_<h4>PRO SPEAKER DESIGN<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-4 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"banner\",\"settings\":{\"active\":1,\"addon\":\"banner\"},\"fields\":[{\"type\":\"text\",\"label\":\"Banner Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"banner-style1 wrapper-banner\"},{\"type\":\"image\",\"label\":\"Banner Image\",\"name\":\"banner\",\"multilang\":0,\"value\":\"themes\\/jms_fluent\\/assets\\/img\\/demo\\/banner3h2.jpg\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"text\",\"label\":\"Banner Link\",\"name\":\"banner_link\",\"multilang\":0,\"value\":\"http:\\/\\/www.joommasters.com\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>Best Selling<\\/span><br \\/>_JMSLB_<h4>BEST MODERN CHAIR<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"2\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>Best Selling<\\/span><br \\/>_JMSLB_<h4>BEST MODERN CHAIR<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"3\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>Best Selling<\\/span><br \\/>_JMSLB_<h4>BEST MODERN CHAIR<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\",\"5\":\"<div class=_JMSQUOTE_banner-content_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_banner-box_JMSQUOTE_>_JMSLB_<div class=_JMSQUOTE_box-content_JMSQUOTE_><span>Best Selling<\\/span><br \\/>_JMSLB_<h4>BEST MODERN CHAIR<\\/h4>_JMSLB_<\\/div>_JMSLB_<\\/div>_JMSLB_<\\/div>\"}},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Featured Product\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"featured_product\",\"name\":\"Featured Product\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"productcarousel\",\"settings\":{\"active\":1,\"addon\":\"productcarousel\"},\"fields\":[{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"FEATURED PRODUCTS \",\"2\":\"FEATURED PRODUCTS \",\"3\":\"FEATURED PRODUCTS \",\"5\":\"FEATURED PRODUCTS \"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"select\",\"label\":\"Product Type\",\"name\":\"producttype\",\"multilang\":0,\"value\":\"featured\"},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Number of Rows\",\"name\":\"rows\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"text\",\"label\":\"Number of Columns\",\"name\":\"cols\",\"multilang\":0,\"value\":\"4\"},{\"type\":\"text\",\"label\":\"Number of Columns On Medium Device\",\"name\":\"cols_md\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Number of Columns On Tablet\",\"name\":\"cols_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Number of Columns On Mobile\",\"name\":\"cols_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"categories\",\"label\":\"Category\",\"name\":\"pccategories\",\"multilang\":0,\"value\":\"\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"FlashDeal\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"50% 50%\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"themes\\/jms_fluent\\/assets\\/img\\/demo\\/bgflash.jpg\",\"fluid\":0,\"custom_class\":\"flashdeal\",\"name\":\"FlashDeal\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"flash_countdown\"},\"addons\":[{\"type\":\"countdown\",\"settings\":{\"active\":1,\"addon\":\"countdown\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"FLASH DEAL\",\"2\":\"FLASH DEAL\",\"3\":\"FLASH DEAL\",\"5\":\"FLASH DEAL\"}},{\"type\":\"text\",\"label\":\"Expire Time\",\"name\":\"expire_time\",\"multilang\":0,\"value\":\"2017-12-12 09:34:34\"},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"image\",\"label\":\"Image\",\"name\":\"image\",\"multilang\":0,\"value\":\"\"},{\"type\":\"editor\",\"label\":\"Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Button Text\",\"name\":\"button_text\",\"multilang\":1,\"value\":{\"1\":\"Shop now\",\"2\":\"Shop now\",\"3\":\"Shop now\",\"5\":\"Shop now\"}},{\"type\":\"text\",\"label\":\"Button Link\",\"name\":\"button_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Service\",\"layout\":\"3,6,3\",\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Service\",\"layout\":\"3,6,3\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"service_content_h2 next\"},\"addons\":[{\"type\":\"feature\",\"settings\":{\"active\":1,\"addon\":\"feature\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Free Shipping\",\"2\":\"Free Shipping\",\"3\":\"Free Shipping\",\"5\":\"Free Shipping\"}},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Image Type\",\"name\":\"image_type\",\"multilang\":0,\"value\":\"icon\"},{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"pe pe-7s-gleam\"},{\"type\":\"image\",\"label\":\"Image\",\"name\":\"image\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"editor\",\"label\":\"Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>Apply free for all order over $199.00<\\/p>\",\"2\":\"<p>Apply free for all order over $199.00<\\/p>\",\"3\":\"<p>Apply free for all order over $199.00<\\/p>\",\"5\":\"<p>Apply free for all order over $199.00<\\/p>\"}},{\"type\":\"text\",\"label\":\"Button Text\",\"name\":\"button_text\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Button Link\",\"name\":\"button_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"select\",\"label\":\"Text Align\",\"name\":\"text_align\",\"multilang\":0,\"value\":\"center\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"service_content_h2 center\"},\"addons\":[{\"type\":\"feature\",\"settings\":{\"active\":1,\"addon\":\"feature\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Money Back\",\"2\":\"Money Back\",\"3\":\"Money Back\",\"5\":\"Money Back\"}},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Image Type\",\"name\":\"image_type\",\"multilang\":0,\"value\":\"icon\"},{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"pe pe-7s-diamond\"},{\"type\":\"image\",\"label\":\"Image\",\"name\":\"image\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"editor\",\"label\":\"Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>Free using trial and return in 30 days<\\/p>\",\"2\":\"<p>Free using trial and return in 30 days<\\/p>\",\"3\":\"<p>Free using trial and return in 30 days<\\/p>\",\"5\":\"<p>Free using trial and return in 30 days<\\/p>\"}},{\"type\":\"text\",\"label\":\"Button Text\",\"name\":\"button_text\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Button Link\",\"name\":\"button_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"select\",\"label\":\"Text Align\",\"name\":\"text_align\",\"multilang\":0,\"value\":\"center\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-4 col-sm-4 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-4\",\"md_col\":\"col-md-4\",\"custom_class\":\"service_content_h2 next\"},\"addons\":[{\"type\":\"feature\",\"settings\":{\"active\":1,\"addon\":\"feature\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Quality Support\",\"2\":\"Quality Support\",\"3\":\"Quality Support\",\"5\":\"Quality Support\"}},{\"type\":\"text\",\"label\":\"Box Class\",\"name\":\"box_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"select\",\"label\":\"Image Type\",\"name\":\"image_type\",\"multilang\":0,\"value\":\"icon\"},{\"type\":\"text\",\"label\":\"Icon Class\",\"name\":\"icon_class\",\"multilang\":0,\"value\":\"pe pe-7s-headphones\"},{\"type\":\"image\",\"label\":\"Image\",\"name\":\"image\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Alt Text\",\"name\":\"alt_text\",\"multilang\":0,\"value\":\"Joommasters.com\"},{\"type\":\"editor\",\"label\":\"Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<p>Alway online feedback customer 24\\/7<\\/p>\",\"2\":\"<p>Alway online feedback customer 24\\/7<\\/p>\",\"3\":\"<p>Alway online feedback customer 24\\/7<\\/p>\",\"5\":\"<p>Alway online feedback customer 24\\/7<\\/p>\"}},{\"type\":\"text\",\"label\":\"Button Text\",\"name\":\"button_text\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Button Link\",\"name\":\"button_link\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"select\",\"label\":\"Target for Link\",\"name\":\"target\",\"multilang\":0,\"value\":\"new window\"},{\"type\":\"select\",\"label\":\"Text Align\",\"name\":\"text_align\",\"multilang\":0,\"value\":\"center\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Blog\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Blog\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"blog\",\"settings\":{\"active\":1,\"addon\":\"blog\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"Latest Blog\",\"2\":\"Latest Blog\",\"3\":\"Latest Blog\",\"5\":\"Latest Blog\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Items Show\",\"name\":\"items_show\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Items Show On Medium Device\",\"name\":\"items_show_md\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Tablet\",\"name\":\"items_show_sm\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"text\",\"label\":\"Items Show On Mobile\",\"name\":\"items_show_xs\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Category\",\"name\":\"show_category\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Introtext\",\"name\":\"show_introtext\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Introtext Character Limit\",\"name\":\"introtext_limit\",\"multilang\":0,\"value\":\"120\"},{\"type\":\"switch\",\"label\":\"Show Readmore\",\"name\":\"show_readmore\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Time\",\"name\":\"show_time\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Comment Number\",\"name\":\"show_ncomments\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show View Number\",\"name\":\"show_nviews\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Media\",\"name\":\"show_media\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"50\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Brand\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Brand\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"brand\",\"settings\":{\"active\":1,\"addon\":\"brand\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Total Items\",\"name\":\"items_total\",\"multilang\":0,\"value\":\"10\"},{\"type\":\"text\",\"label\":\"Items Show\",\"name\":\"items_show\",\"multilang\":0,\"value\":\"6\"},{\"type\":\"text\",\"label\":\"Items Show On Medium Device\",\"name\":\"items_show_md\",\"multilang\":0,\"value\":\"4\"},{\"type\":\"text\",\"label\":\"Items Show On Tablet\",\"name\":\"items_show_sm\",\"multilang\":0,\"value\":\"3\"},{\"type\":\"text\",\"label\":\"Items Show On Mobile\",\"name\":\"items_show_xs\",\"multilang\":0,\"value\":\"2\"},{\"type\":\"switch\",\"label\":\"Link Enable\",\"name\":\"link_enable\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Navigation\",\"name\":\"navigation\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Show Pagination\",\"name\":\"pagination\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"switch\",\"label\":\"Auto Play\",\"name\":\"autoplay\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"ReWind Navigation\",\"name\":\"rewind\",\"multilang\":0,\"value\":\"1\"},{\"type\":\"switch\",\"label\":\"slide By Page\",\"name\":\"slidebypage\",\"multilang\":0,\"value\":\"0\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Empty Space\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"body\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"\",\"name\":\"Empty Space\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"50\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Footer\",\"layout\":\"12,3,6,3,12,12\",\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer_h2\",\"name\":\"Footer\",\"layout\":\"12,3,6,3,12,12\"},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"100\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-3 col-sm-3 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-3\",\"md_col\":\"col-md-3\",\"custom_class\":\"logo_footer\"},\"addons\":[{\"type\":\"logo\",\"settings\":{\"active\":1,\"addon\":\"logo\"},\"fields\":[{\"type\":\"select\",\"label\":\"Use Default Logo of current theme\",\"name\":\"logo_type\",\"multilang\":0,\"value\":\"default\"},{\"type\":\"image\",\"label\":\"Custom Logo Image\",\"name\":\"custom_logo\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Logo Text\",\"name\":\"logo_text\",\"multilang\":0,\"value\":\"Fluent.\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-6 col-md-6 col-sm-6 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-6\",\"md_col\":\"col-md-6\",\"custom_class\":\"newletter_center\"},\"addons\":[{\"type\":\"module\",\"settings\":{\"active\":1,\"hook\":\"widget\",\"modulename\":\"ps_emailsubscription\",\"addon\":\"module\"},\"fields\":[]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-3 col-md-3 col-sm-3 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-3\",\"md_col\":\"col-md-3\",\"custom_class\":\"list_footer_top\"},\"addons\":[{\"type\":\"social\",\"settings\":{\"active\":1,\"addon\":\"social\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"FaceBook URL\",\"name\":\"facebook_url\",\"multilang\":0,\"value\":\"https:\\/\\/www.facebook.com\\/joommasters2015\"},{\"type\":\"text\",\"label\":\"Twitter Url\",\"name\":\"twitter_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"LinkedIn Url\",\"name\":\"linkedin_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"YouTube Url\",\"name\":\"youtube_url\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Google Plus Url\",\"name\":\"google_plus_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Pinterest Url\",\"name\":\"pinterest_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Instagram Url\",\"name\":\"instagram_url\",\"multilang\":0,\"value\":\"#\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"80\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]},{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"html_footer\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<ul>_JMSLB_<li><a title=_JMSQUOTE_About Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Site Map_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Site Map<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Search Term_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_> Search Term<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Affiliate_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Affiliate<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Order & Returns_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Order & Returns<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Contact Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_FAQ\\u2019s_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\",\"2\":\"<ul>_JMSLB_<li><a title=_JMSQUOTE_About Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Site Map_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Site Map<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Search Term_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_> Search Term<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Affiliate_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Affiliate<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Order & Returns_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Order & Returns<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Contact Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_FAQ\\u2019s_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\",\"3\":\"<ul>_JMSLB_<li><a title=_JMSQUOTE_About Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Site Map_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Site Map<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Search Term_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_> Search Term<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Affiliate_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Affiliate<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Order & Returns_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Order & Returns<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Contact Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_FAQ\\u2019s_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\",\"5\":\"<ul>_JMSLB_<li><a title=_JMSQUOTE_About Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>About Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Site Map_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Site Map<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Search Term_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_> Search Term<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Affiliate_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Affiliate<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Order & Returns_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Order & Returns<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_Contact Us_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Contact Us<\\/a><\\/li>_JMSLB_<li><a title=_JMSQUOTE_FAQ\\u2019s_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>FAQ\\u2019s<\\/a><\\/li>_JMSLB_<\\/ul>\"}}]},{\"type\":\"space\",\"settings\":{\"active\":1,\"addon\":\"space\"},\"fields\":[{\"type\":\"number\",\"label\":\"Space Gap\",\"name\":\"spacegap\",\"multilang\":0,\"value\":\"70\"},{\"type\":\"text\",\"label\":\"Space Class\",\"name\":\"space_class\",\"multilang\":0,\"value\":\"\"},{\"type\":\"text\",\"label\":\"Overwrite Tpl File\",\"name\":\"overwrite_tpl\",\"multilang\":0,\"value\":\"\"}]}]}]},{\"type\":\"row\",\"name\":\"Footer_Bottom\",\"layout\":12,\"settings\":{\"active\":1,\"hook\":\"footer\",\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"fluid\":0,\"custom_class\":\"footer_bottom\",\"name\":\"Footer_Bottom\",\"layout\":12},\"cols\":[{\"type\":\"column\",\"className\":\"layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12\",\"settings\":{\"background_attachment\":\"\",\"background_position\":\"\",\"background_repeat\":\"\",\"background_size\":\"\",\"background_img\":\"\",\"xs_col\":\"col-xs-12\",\"sm_col\":\"col-sm-12\",\"md_col\":\"col-md-12\",\"custom_class\":\"\"},\"addons\":[{\"type\":\"html\",\"settings\":{\"active\":1,\"addon\":\"html\"},\"fields\":[{\"type\":\"text\",\"label\":\"Title\",\"name\":\"title\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"text\",\"label\":\"Description\",\"name\":\"desc\",\"multilang\":1,\"value\":{\"1\":\"\",\"2\":\"\",\"3\":\"\",\"5\":\"\"}},{\"type\":\"editor\",\"label\":\"Html Content\",\"name\":\"html_content\",\"multilang\":1,\"value\":{\"1\":\"<div class=_JMSQUOTE_list_footer_bottom_JMSQUOTE_>_JMSLB_<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_><\\/i> 2017 All rights reserved. Design by <a title=_JMSQUOTE_Joommasters.com._JMSQUOTE_ href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_>Joommasters.com. <\\/a> Power by <a title=_JMSQUOTE_prestashop_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Prestashop.<\\/a><\\/p>_JMSLB_<\\/div>\",\"2\":\"<div class=_JMSQUOTE_list_footer_bottom_JMSQUOTE_>_JMSLB_<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_><\\/i> 2017 All rights reserved. Design by <a title=_JMSQUOTE_Joommasters.com._JMSQUOTE_ href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_>Joommasters.com. <\\/a> Power by <a title=_JMSQUOTE_prestashop_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Prestashop.<\\/a><\\/p>_JMSLB_<\\/div>\",\"3\":\"<div class=_JMSQUOTE_list_footer_bottom_JMSQUOTE_>_JMSLB_<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_><\\/i> 2017 All rights reserved. Design by <a title=_JMSQUOTE_Joommasters.com._JMSQUOTE_ href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_>Joommasters.com. <\\/a> Power by <a title=_JMSQUOTE_prestashop_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Prestashop.<\\/a><\\/p>_JMSLB_<\\/div>\",\"5\":\"<div class=_JMSQUOTE_list_footer_bottom_JMSQUOTE_>_JMSLB_<p><i class=_JMSQUOTE_fa fa-copyright_JMSQUOTE_ aria-hidden=_JMSQUOTE_true_JMSQUOTE_><\\/i> 2017 All rights reserved. Design by <a title=_JMSQUOTE_Joommasters.com._JMSQUOTE_ href=_JMSQUOTE_www.joommasters.com_JMSQUOTE_>Joommasters.com. <\\/a> Power by <a title=_JMSQUOTE_prestashop_JMSQUOTE_ href=_JMSQUOTE_#_JMSQUOTE_>Prestashop.<\\/a><\\/p>_JMSLB_<\\/div>\"}}]}]}]}]', 1, 1);
 INSERT INTO `jms_jmspagebuilder_homepages` (`id_homepage`, `title`, `css_file`, `js_file`, `home_class`, `params`, `active`, `ordering`) VALUES
@@ -9127,6 +11093,75 @@ INSERT INTO `jms_jmstestimonials_lang` (`id_testimonial`, `id_lang`, `office`, `
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `jms_jms_hook`
+--
+
+CREATE TABLE `jms_jms_hook` (
+  `id_hook` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_jms_hook`
+--
+
+INSERT INTO `jms_jms_hook` (`id_hook`, `name`) VALUES
+(1, 'displayWrapperTop'),
+(2, 'displayWrapperBottom'),
+(3, 'displayLeftColumn'),
+(4, 'displayRightColumn'),
+(5, 'displayHome');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `jms_jms_layer_style`
+--
+
+CREATE TABLE `jms_jms_layer_style` (
+  `id_style` int(11) NOT NULL,
+  `id_layer` int(11) NOT NULL,
+  `type` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `data_style` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `data_font_weight` int(11) NOT NULL DEFAULT '400',
+  `data_font_size` int(11) NOT NULL,
+  `data_line_height` int(11) NOT NULL,
+  `data_x` int(10) NOT NULL,
+  `data_y` int(10) NOT NULL,
+  `data_width` int(10) NOT NULL DEFAULT '100',
+  `data_height` int(10) NOT NULL DEFAULT '50',
+  `data_show` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_jms_layer_style`
+--
+
+INSERT INTO `jms_jms_layer_style` (`id_style`, `id_layer`, `type`, `data_style`, `data_font_weight`, `data_font_size`, `data_line_height`, `data_x`, `data_y`, `data_width`, `data_height`, `data_show`) VALUES
+(19, 62, 'desktop', 'normal', 800, 64, 77, 312, 202, 559, 52, 1),
+(20, 63, 'desktop', 'normal', 400, 18, 28, 312, 361, 646, 22, 1),
+(21, 64, 'desktop', 'normal', 400, 13, 44, 312, 423, 218, 30, 1),
+(272, 62, 'mobile', 'normal', 400, 24, 56, 106, 126, 348, 67, 1),
+(273, 63, 'mobile', 'normal', 400, 9, 56, 105, 48, 290, 71, 1),
+(274, 64, 'mobile', 'normal', 400, 8, 26, 177, 212, 81, 36, 1),
+(335, 62, 'tablet', 'normal', 400, 48, 56, 404, 67, 655, 59, 1),
+(336, 63, 'tablet', 'normal', 400, 18, 56, 406, 156, 550, 63, 1),
+(337, 64, 'tablet', 'normal', 400, 16, 26, 408, 255, 100, 50, 1),
+(377, 62, 'mobile2', 'normal', 400, 40, 40, 206, 59, 516, 56, 1),
+(378, 63, 'mobile2', 'normal', 400, 9, 56, 261, 126, 331, 70, 1),
+(379, 64, 'mobile2', 'normal', 400, 8, 26, 294, 221, 100, 50, 1),
+(404, 92, 'desktop', 'normal', 800, 18, 26, 312, 172, 198, 27, 1),
+(405, 92, 'mobile', 'normal', 400, 14, 14, 0, 0, 0, 0, 1),
+(406, 92, 'tablet', 'normal', 400, 14, 14, 0, 0, 0, 0, 1),
+(407, 92, 'mobile2', 'normal', 400, 14, 14, 0, 0, 0, 0, 1),
+(408, 93, 'desktop', 'normal', 800, 64, 77, 313, 282, 592, 60, 1),
+(409, 93, 'mobile', 'normal', 400, 24, 56, 126, 146, 348, 67, 1),
+(410, 93, 'tablet', 'normal', 400, 48, 56, 424, 87, 655, 59, 1),
+(411, 93, 'mobile2', 'normal', 400, 40, 40, 226, 79, 516, 56, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `jms_jms_producttab`
 --
 
@@ -9176,11 +11211,93 @@ CREATE TABLE `jms_jms_product_video` (
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `jms_jms_slider`
+--
+
+CREATE TABLE `jms_jms_slider` (
+  `id_slider` int(11) NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `delay` int(11) NOT NULL,
+  `x` int(11) NOT NULL,
+  `y` int(11) NOT NULL,
+  `trans` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `trans_in` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `trans_out` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `ease_in` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `ease_out` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `speed_in` int(11) NOT NULL,
+  `speed_out` int(11) NOT NULL,
+  `duration` int(11) NOT NULL,
+  `bg_animation` tinyint(1) NOT NULL,
+  `bg_ease` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `end_animate` tinyint(1) NOT NULL,
+  `full_width` tinyint(1) NOT NULL,
+  `responsive` tinyint(1) NOT NULL,
+  `max_width` int(11) NOT NULL,
+  `max_height` int(11) NOT NULL,
+  `mobile_height` int(11) NOT NULL,
+  `tablet_height` int(11) NOT NULL DEFAULT '600',
+  `mobile2_height` int(11) NOT NULL DEFAULT '500',
+  `auto_change` tinyint(1) NOT NULL,
+  `pause_hover` tinyint(1) NOT NULL,
+  `show_pager` tinyint(1) NOT NULL,
+  `show_control` tinyint(1) NOT NULL,
+  `active` tinyint(1) DEFAULT '1',
+  `order` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_jms_slider`
+--
+
+INSERT INTO `jms_jms_slider` (`id_slider`, `title`, `delay`, `x`, `y`, `trans`, `trans_in`, `trans_out`, `ease_in`, `ease_out`, `speed_in`, `speed_out`, `duration`, `bg_animation`, `bg_ease`, `end_animate`, `full_width`, `responsive`, `max_width`, `max_height`, `mobile_height`, `tablet_height`, `mobile2_height`, `auto_change`, `pause_hover`, `show_pager`, `show_control`, `active`, `order`) VALUES
+(1, 'slider 1', 1000, 0, 0, 'fade', 'left', 'left', 'easeInCubic', 'easeOutExpo', 300, 0, 7000, 1, 'easeOutCubic', 1, 1, 1, 1903, 644, 350, 550, 450, 1, 0, 1, 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `jms_jms_slider_hook`
+--
+
+CREATE TABLE `jms_jms_slider_hook` (
+  `id_slider` int(11) NOT NULL,
+  `id_hook` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_jms_slider_hook`
+--
+
+INSERT INTO `jms_jms_slider_hook` (`id_slider`, `id_hook`) VALUES
+(1, 5);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `jms_jms_slider_lang`
+--
+
+CREATE TABLE `jms_jms_slider_lang` (
+  `id_slider` int(10) NOT NULL,
+  `id_lang` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_jms_slider_lang`
+--
+
+INSERT INTO `jms_jms_slider_lang` (`id_slider`, `id_lang`) VALUES
+(1, 0);
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `jms_jms_slides`
 --
 
 CREATE TABLE `jms_jms_slides` (
   `id_slide` int(10) NOT NULL,
+  `id_slider` int(11) NOT NULL,
   `title` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `class_suffix` varchar(100) NOT NULL,
   `bg_type` int(10) NOT NULL DEFAULT '1',
@@ -9195,52 +11312,8 @@ CREATE TABLE `jms_jms_slides` (
 -- Đang đổ dữ liệu cho bảng `jms_jms_slides`
 --
 
-INSERT INTO `jms_jms_slides` (`id_slide`, `title`, `class_suffix`, `bg_type`, `bg_image`, `bg_color`, `slide_link`, `order`, `status`) VALUES
-(7, 'Home 1 - Slider 1', '', 1, '0e822c064f436a476823126f81c2b89d.jpg', '', '', 0, 1),
-(8, 'Home1 - Slide 2', '', 1, '6a5a75bb8d4aedd8b76085cb40024054.jpg', '', '', 1, 1),
-(9, 'Home1 - Slider 3', '', 1, '76db74c84199f336b43c4c53ac0ada57.jpg', '', '', 2, 1),
-(10, 'Home2 - Slider 1', '', 1, '701cd83201aaeabac925761f357b3d89.jpg', '', '', 3, 1),
-(11, 'Home 2 - Slider 2', '', 1, '584b5aa5ac78d9e6fda0b33b67bb6b2e.jpg', '', '', 4, 1),
-(12, 'Home 2 - Slider 3', '', 1, 'c27c492f0f5742080469a2961add4921.jpg', '', '', 5, 1),
-(13, 'Home3 - Slider1', '', 1, 'a85b9c21c01e448e22e347553e8ca6ab.jpg', '', '', 0, 1),
-(14, 'Home3 - Slider2', '', 1, 'a7ebad85d1b67d220c934dd1f17ae362.jpg', '', '', 0, 1),
-(15, 'Home 3 - Slider 3', '', 1, 'f1ff9d0203257e9bf23de25bf6ec3253.jpg', '', '', 0, 1),
-(16, 'Home4 - Slider 1', '', 1, '6e69c94cf4c0a1c1890508b775a0fc20.jpg', '', '', 0, 1),
-(17, 'Home3 - Slider2- (Copy)', '', 1, 'a7ebad85d1b67d220c934dd1f17ae362.jpg', '', '', 0, 1),
-(18, 'Home 3 - Slider 3- (Copy)', '', 1, 'f1ff9d0203257e9bf23de25bf6ec3253.jpg', '', '', 0, 1),
-(19, 'Home6 - Slider 1', '', 1, 'ca901a107fa3561cfb7fff48bead47f3.jpg', '', '', 0, 1),
-(20, 'Home6 - Slider2', '', 1, '76076454e9a2ce7c270ca1e3060360a7.jpg', '', '', 0, 1);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `jms_jms_slides_lang`
---
-
-CREATE TABLE `jms_jms_slides_lang` (
-  `id_slide` int(10) NOT NULL,
-  `id_lang` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Đang đổ dữ liệu cho bảng `jms_jms_slides_lang`
---
-
-INSERT INTO `jms_jms_slides_lang` (`id_slide`, `id_lang`) VALUES
-(7, 0),
-(8, 0),
-(9, 0),
-(10, 0),
-(11, 0),
-(12, 0),
-(13, 0),
-(14, 0),
-(15, 0),
-(16, 0),
-(17, 0),
-(18, 0),
-(19, 0),
-(20, 0);
+INSERT INTO `jms_jms_slides` (`id_slide`, `id_slider`, `title`, `class_suffix`, `bg_type`, `bg_image`, `bg_color`, `slide_link`, `order`, `status`) VALUES
+(7, 1, 'Home 1 - Slider 1', '', 1, 'e4c33fbda5b5dc6880741190110353d4.jpg', '', '', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -9256,14 +11329,12 @@ CREATE TABLE `jms_jms_slides_layers` (
   `data_fixed` int(10) NOT NULL DEFAULT '0',
   `data_delay` int(10) NOT NULL DEFAULT '1000',
   `data_time` int(10) NOT NULL DEFAULT '1000',
-  `data_x` int(10) NOT NULL DEFAULT '0',
-  `data_y` int(10) NOT NULL DEFAULT '0',
   `data_in` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'left',
   `data_out` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'right',
   `data_ease_in` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'linear',
   `data_ease_out` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'linear',
-  `data_step` int(10) NOT NULL DEFAULT '0',
-  `data_special` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'cycle',
+  `data_transform_in` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'bounce',
+  `data_transform_out` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT 'bounce',
   `data_type` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `data_image` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `data_html` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
@@ -9273,9 +11344,6 @@ CREATE TABLE `jms_jms_slides_layers` (
   `data_video_autoplay` int(10) NOT NULL DEFAULT '1',
   `data_video_loop` int(10) NOT NULL DEFAULT '1',
   `data_video_bg` int(10) NOT NULL DEFAULT '0',
-  `data_font_size` int(10) NOT NULL DEFAULT '14',
-  `data_line_height` int(10) NOT NULL,
-  `data_style` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT 'normal',
   `data_color` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '#FFFFFF',
   `data_width` int(10) NOT NULL,
   `data_height` int(10) NOT NULL,
@@ -9287,49 +11355,12 @@ CREATE TABLE `jms_jms_slides_layers` (
 -- Đang đổ dữ liệu cho bảng `jms_jms_slides_layers`
 --
 
-INSERT INTO `jms_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data_class_suffix`, `data_fixed`, `data_delay`, `data_time`, `data_x`, `data_y`, `data_in`, `data_out`, `data_ease_in`, `data_ease_out`, `data_step`, `data_special`, `data_type`, `data_image`, `data_html`, `data_video`, `data_video_controls`, `data_video_muted`, `data_video_autoplay`, `data_video_loop`, `data_video_bg`, `data_font_size`, `data_line_height`, `data_style`, `data_color`, `data_width`, `data_height`, `data_order`, `data_status`) VALUES
-(22, 8, 'Modern. Simple. Minimalist.', '', 0, 700, 1400, 310, 278, 'top', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />\r\nMinimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 311, 278, 0, 1),
-(23, 8, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1000, 1500, 310, 414, 'bottom', 'top', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 564, 66, 0, 1),
-(24, 9, 'New Look', '', 0, 700, 1400, 1045, 276, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\"> New Look.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 200, 50, 0, 1),
-(25, 9, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1200, 1900, 1045, 416, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store </span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 350, 158, 0, 1),
-(27, 10, 'Shop Now', '', 0, 1500, 2000, 1077, 476, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 88, 21, 0, 1),
-(29, 11, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1000, 1500, 1074, 391, 'bottom', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#111111', 136, 31, 0, 1),
-(41, 8, 'Shopnow', '', 0, 1700, 2400, 310, 491, 'bottom', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(42, 9, 'Shop now', '', 0, 1500, 2000, 1045, 494, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(44, 10, 'New Look', '', 0, 700, 1400, 1071, 258, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\"> New Look.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 200, 50, 0, 1),
-(46, 11, 'Modern. Simple. Minimalist.', '', 0, 700, 1400, 1074, 252, 'top', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />\r\nMinimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 200, 50, 0, 1),
-(52, 11, 'shopnow', '', 0, 1700, 2400, 1074, 469, 'bottom', 'bottom', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(55, 12, 'Modern Chair Design 2017', '', 0, 1000, 1700, 374, 290, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 128, 19, 0, 1),
-(56, 12, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 376, 361, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(57, 12, 'shopnow', '', 0, 2200, 2700, 374, 440, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(58, 10, 'Creative Design Everyone Wants From Fluent Store', '', 0, 1200, 1900, 1071, 398, 'left', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(59, 13, 'Modern Chair Design 2017', '', 0, 1000, 1700, 311, 356, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />Minimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(60, 13, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 311, 497, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(61, 13, 'shopnow', '', 0, 2200, 2700, 311, 600, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow  btn-effect1\">Shop Now\r\n\r\n</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(62, 7, 'Modern Chair Design 2017', '', 0, 1000, 1700, 305, 311, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 200, 50, 0, 1),
-(63, 7, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 305, 382, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(64, 7, 'shopnow', '', 0, 2200, 2700, 301, 473, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now\r\n</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 67, 19, 0, 1),
-(65, 14, 'Modern Chair Design 2017', '', 0, 1000, 1700, 1121, 356, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Newlook.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(66, 14, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 1121, 495, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(67, 14, 'shopnow', '', 0, 2200, 2700, 1121, 572, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 76, 20, 0, 1),
-(68, 15, 'Modern Chair Design 2017', '', 0, 1000, 1700, 408, 384, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 200, 50, 0, 1),
-(69, 15, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 407, 456, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(70, 15, 'shopnow', '', 0, 2200, 2700, 408, 530, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 67, 19, 0, 1),
-(71, 16, 'Modern Chair Design 2017', '', 0, 1000, 1700, 311, 356, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />Minimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(72, 16, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 311, 497, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(73, 16, 'shopnow', '', 0, 2200, 2700, 311, 595, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(74, 17, 'Modern Chair Design 2017', '', 0, 1000, 1700, 1121, 356, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Newlook.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(75, 17, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 1122, 493, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(76, 17, 'shopnow', '', 0, 2200, 2700, 1121, 572, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(77, 18, 'Modern Chair Design 2017', '', 0, 1000, 1700, 408, 384, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern Chair Design 2017</span>', NULL, 0, 0, 0, 0, 0, 48, 56, 'normal', '#111111', 200, 50, 0, 1),
-(78, 18, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 408, 456, 'right', 'right', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Interface Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(79, 18, 'shopnow', '', 0, 2200, 2700, 408, 530, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 67, 19, 0, 1),
-(80, 19, 'Modern Chair Design 2017', '', 0, 1000, 1700, 151, 219, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Modern. Simple.<br />Minimalist.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(81, 19, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 151, 357, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(82, 19, 'shopnow', '', 0, 2200, 2700, 153, 448, 'right', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1),
-(83, 20, 'Modern Chair Design 2017', '', 0, 1000, 1700, 739, 219, 'left', 'left', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-large\">Newlook.<br />Think Different.</span>', NULL, 0, 0, 0, 0, 0, 52, 65, 'normal', '#111111', 128, 19, 0, 1),
-(84, 20, 'Interface Creative Design Everyone Wants From Fluent Store', '', 0, 1500, 2200, 739, 358, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<span class=\"text-small\">Creative Design Everyone Wants From Fluent Store</span>', NULL, 0, 0, 0, 0, 0, 18, 56, 'normal', '#303030', 200, 50, 0, 1),
-(85, 20, 'shopnow', '', 0, 2200, 2700, 739, 433, 'fade', 'fade', 'linear', 'linear', 0, '', 'text', NULL, '<a href=\"#\" title=\"Shop now\" class=\"btn-shopnow btn-effect1\">Shop Now</a>', NULL, 0, 0, 0, 0, 0, 16, 26, 'normal', '#111111', 200, 50, 0, 1);
+INSERT INTO `jms_jms_slides_layers` (`id_layer`, `id_slide`, `data_title`, `data_class_suffix`, `data_fixed`, `data_delay`, `data_time`, `data_in`, `data_out`, `data_ease_in`, `data_ease_out`, `data_transform_in`, `data_transform_out`, `data_type`, `data_image`, `data_html`, `data_video`, `data_video_controls`, `data_video_muted`, `data_video_autoplay`, `data_video_loop`, `data_video_bg`, `data_color`, `data_width`, `data_height`, `data_order`, `data_status`) VALUES
+(62, 7, 'Find Your New', '', 0, 500, 1000, 'none', 'none', 'linear', 'linear', 'fadeInLeft', 'fadeInLeft', 'text', '', 'Find Your New', '', 0, 0, 0, 0, 0, '#111111', 559, 52, 0, 1),
+(63, 7, 'Keep perfect time with the contemporary, expertly-crafted designs.', '', 0, 1000, 1500, 'none', 'none', 'linear', 'linear', 'fadeInLeft', 'fadeInLeft', 'text', '', 'Keep perfect time with the contemporary, expertly-crafted designs.', '', 0, 0, 0, 0, 0, '#777', 646, 22, 0, 1),
+(64, 7, 'DISCOVER NOW!', '', 0, 1500, 2000, 'none', 'none', 'linear', 'linear', 'fadeInLeft', 'fadeInLeft', 'text', '', '<a href=\"#\" class=\"btn-default\">DISCOVER NOW!\r\n</a>', '', 0, 0, 0, 0, 0, '#111111', 218, 30, 0, 1),
+(92, 7, 'NEW COLLETION', '', 0, 0, 500, 'none', 'none', 'linear', 'linear', 'fadeInLeft', 'fadeInLeft', 'text', '', 'NEW COLLETION', '', 0, 0, 0, 0, 0, '#333', 198, 27, 0, 1),
+(93, 7, 'Favorite Clothing', '', 0, 500, 1000, 'none', 'none', 'linear', 'linear', 'fadeInLeft', 'fadeInLeft', 'text', '', 'Favorite Clothing', '', 0, 0, 0, 0, 0, '#111111', 592, 60, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -9347,20 +11378,7 @@ CREATE TABLE `jms_jms_slides_shop` (
 --
 
 INSERT INTO `jms_jms_slides_shop` (`id_slide`, `id_shop`) VALUES
-(7, 1),
-(8, 1),
-(9, 1),
-(10, 1),
-(11, 1),
-(12, 1),
-(13, 1),
-(14, 1),
-(15, 1),
-(16, 1),
-(17, 1),
-(18, 1),
-(19, 1),
-(20, 1);
+(7, 1);
 
 -- --------------------------------------------------------
 
@@ -10713,7 +12731,16 @@ INSERT INTO `jms_log` (`id_log`, `severity`, `error_code`, `message`, `object_ty
 (828, 1, 0, 'Generate html template referralprogram-invitation at D:\\\\xamppp\\\\htdocs\\\\jms_yanka/modules/\\\\referralprogram\\\\mails\\\\it\\\\referralprogram-invitation.html', '', 0, 1, '2019-09-27 03:48:49', '2019-09-27 03:48:49'),
 (829, 1, 0, 'Generate txt template referralprogram-invitation at D:\\\\xamppp\\\\htdocs\\\\jms_yanka/modules/\\\\referralprogram\\\\mails\\\\it\\\\referralprogram-invitation.txt', '', 0, 1, '2019-09-27 03:48:49', '2019-09-27 03:48:49'),
 (830, 1, 0, 'Generate html template referralprogram-voucher at D:\\\\xamppp\\\\htdocs\\\\jms_yanka/modules/\\\\referralprogram\\\\mails\\\\it\\\\referralprogram-voucher.html', '', 0, 1, '2019-09-27 03:48:49', '2019-09-27 03:48:49'),
-(831, 1, 0, 'Generate txt template referralprogram-voucher at D:\\\\xamppp\\\\htdocs\\\\jms_yanka/modules/\\\\referralprogram\\\\mails\\\\it\\\\referralprogram-voucher.txt', '', 0, 1, '2019-09-27 03:48:49', '2019-09-27 03:48:49');
+(831, 1, 0, 'Generate txt template referralprogram-voucher at D:\\\\xamppp\\\\htdocs\\\\jms_yanka/modules/\\\\referralprogram\\\\mails\\\\it\\\\referralprogram-voucher.txt', '', 0, 1, '2019-09-27 03:48:49', '2019-09-27 03:48:49'),
+(832, 3, 0, 'Exception thrown by module jmsslider on uninstall. You are not allowed to uninstall the module jmsslider.', '', 0, 1, '2019-09-30 03:52:16', '2019-09-30 03:52:16'),
+(833, 1, 0, 'Back office connection from ::1', '', 0, 1, '2019-09-30 04:37:16', '2019-09-30 04:37:16'),
+(834, 1, 0, 'Back office connection from 127.0.0.1', '', 0, 1, '2019-09-30 21:37:10', '2019-09-30 21:37:10'),
+(835, 1, 0, 'ImageType modification', 'ImageType', 5, 1, '2019-10-01 05:53:41', '2019-10-01 05:53:41'),
+(836, 1, 0, 'Back office connection from ::1', '', 0, 1, '2019-10-01 05:55:05', '2019-10-01 05:55:05'),
+(837, 1, 0, 'ImageType modification', 'ImageType', 4, 1, '2019-10-01 05:55:16', '2019-10-01 05:55:16'),
+(838, 1, 0, 'ImageType modification', 'ImageType', 3, 1, '2019-10-01 05:55:46', '2019-10-01 05:55:46'),
+(839, 1, 0, 'ImageType modification', 'ImageType', 2, 1, '2019-10-01 05:56:27', '2019-10-01 05:56:27'),
+(840, 1, 0, 'ImageType modification', 'ImageType', 1, 1, '2019-10-01 05:56:45', '2019-10-01 05:56:45');
 
 -- --------------------------------------------------------
 
@@ -11193,14 +13220,15 @@ INSERT INTO `jms_module` (`id_module`, `name`, `active`, `version`) VALUES
 (65, 'jmsbrands', 1, '1.1.0'),
 (66, 'jmsajaxsearch', 1, '1.1.1'),
 (67, 'jmsmegamenu', 1, '1.1.0'),
-(68, 'jmsslider', 1, '1.6.0'),
 (69, 'jmsproductvideo', 1, '1.0.0'),
 (70, 'jmsproducttab', 1, '1.0.0'),
 (71, 'jmsblog', 1, '2.5.5'),
 (72, 'jmsblogwidget', 1, '2.5.5'),
 (73, 'jmscustomhtmlleft', 1, '1.1.0'),
 (74, 'jmsfacebookconnect', 1, '1.1.0'),
-(75, 'jmspagebuilder', 1, '3.1.1');
+(75, 'jmspagebuilder', 1, '3.1.1'),
+(76, 'jmswishlist', 1, '1.1.0'),
+(77, 'jmsslider', 1, '1.6.0');
 
 -- --------------------------------------------------------
 
@@ -11482,10 +13510,6 @@ INSERT INTO `jms_module_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 794),
 (1, 795),
 (1, 796),
-(1, 813),
-(1, 814),
-(1, 815),
-(1, 816),
 (1, 817),
 (1, 818),
 (1, 819),
@@ -11513,7 +13537,15 @@ INSERT INTO `jms_module_access` (`id_profile`, `id_authorization_role`) VALUES
 (1, 861),
 (1, 862),
 (1, 863),
-(1, 864);
+(1, 864),
+(1, 881),
+(1, 882),
+(1, 883),
+(1, 884),
+(1, 885),
+(1, 886),
+(1, 887),
+(1, 888);
 
 -- --------------------------------------------------------
 
@@ -11794,9 +13826,6 @@ INSERT INTO `jms_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (67, 1, 1),
 (67, 1, 2),
 (67, 1, 3),
-(68, 1, 1),
-(68, 1, 2),
-(68, 1, 3),
 (69, 1, 1),
 (69, 1, 2),
 (69, 1, 3),
@@ -11817,7 +13846,13 @@ INSERT INTO `jms_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (74, 1, 3),
 (75, 1, 1),
 (75, 1, 2),
-(75, 1, 3);
+(75, 1, 3),
+(76, 1, 1),
+(76, 1, 2),
+(76, 1, 3),
+(77, 1, 1),
+(77, 1, 2),
+(77, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -11832,6 +13867,14 @@ CREATE TABLE `jms_module_history` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `jms_module_history`
+--
+
+INSERT INTO `jms_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
+(1, 1, 68, '2019-09-30 03:50:46', '2019-09-30 03:50:46'),
+(2, 1, 77, '2019-09-30 03:53:43', '2019-09-30 22:11:27');
 
 -- --------------------------------------------------------
 
@@ -11930,14 +13973,15 @@ INSERT INTO `jms_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (65, 1, 7),
 (66, 1, 7),
 (67, 1, 7),
-(68, 1, 7),
 (69, 1, 7),
 (70, 1, 7),
 (71, 1, 7),
 (72, 1, 7),
 (73, 1, 7),
 (74, 1, 7),
-(75, 1, 7);
+(75, 1, 7),
+(76, 1, 7),
+(77, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -12614,7 +14658,8 @@ CREATE TABLE `jms_page` (
 --
 
 INSERT INTO `jms_page` (`id_page`, `id_page_type`, `id_object`) VALUES
-(1, 1, NULL);
+(1, 1, NULL),
+(2, 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -12647,7 +14692,8 @@ CREATE TABLE `jms_page_type` (
 --
 
 INSERT INTO `jms_page_type` (`id_page_type`, `name`) VALUES
-(1, 'index');
+(1, 'index'),
+(2, 'pagenotfound');
 
 -- --------------------------------------------------------
 
@@ -16053,6 +18099,22 @@ CREATE TABLE `jms_tab_advice` (
   `id_advice` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Đang đổ dữ liệu cho bảng `jms_tab_advice`
+--
+
+INSERT INTO `jms_tab_advice` (`id_tab`, `id_advice`) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(1, 4),
+(1, 5),
+(1, 6),
+(1, 7),
+(1, 8),
+(1, 9),
+(1, 10);
+
 -- --------------------------------------------------------
 
 --
@@ -18875,6 +20937,65 @@ INSERT INTO `jms_web_browser` (`id_web_browser`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `jms_wishlist`
+--
+
+CREATE TABLE `jms_wishlist` (
+  `id_wishlist` int(10) UNSIGNED NOT NULL,
+  `id_customer` int(10) UNSIGNED NOT NULL,
+  `token` varchar(64) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `counter` int(10) UNSIGNED DEFAULT NULL,
+  `id_shop` int(10) UNSIGNED DEFAULT '1',
+  `id_shop_group` int(10) UNSIGNED DEFAULT '1',
+  `date_add` datetime NOT NULL,
+  `date_upd` datetime NOT NULL,
+  `default` int(10) UNSIGNED DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `jms_wishlist_email`
+--
+
+CREATE TABLE `jms_wishlist_email` (
+  `id_wishlist` int(10) UNSIGNED NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `date_add` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `jms_wishlist_product`
+--
+
+CREATE TABLE `jms_wishlist_product` (
+  `id_wishlist_product` int(10) NOT NULL,
+  `id_wishlist` int(10) UNSIGNED NOT NULL,
+  `id_product` int(10) UNSIGNED NOT NULL,
+  `id_product_attribute` int(10) UNSIGNED NOT NULL,
+  `quantity` int(10) UNSIGNED NOT NULL,
+  `priority` int(10) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `jms_wishlist_product_cart`
+--
+
+CREATE TABLE `jms_wishlist_product_cart` (
+  `id_wishlist_product` int(10) UNSIGNED NOT NULL,
+  `id_cart` int(10) UNSIGNED NOT NULL,
+  `quantity` int(10) UNSIGNED NOT NULL,
+  `date_add` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `jms_zone`
 --
 
@@ -19863,6 +21984,18 @@ ALTER TABLE `jms_jmstestimonials_lang`
   ADD PRIMARY KEY (`id_testimonial`,`id_lang`);
 
 --
+-- Chỉ mục cho bảng `jms_jms_hook`
+--
+ALTER TABLE `jms_jms_hook`
+  ADD PRIMARY KEY (`id_hook`);
+
+--
+-- Chỉ mục cho bảng `jms_jms_layer_style`
+--
+ALTER TABLE `jms_jms_layer_style`
+  ADD PRIMARY KEY (`id_style`);
+
+--
 -- Chỉ mục cho bảng `jms_jms_producttab`
 --
 ALTER TABLE `jms_jms_producttab`
@@ -19887,16 +22020,28 @@ ALTER TABLE `jms_jms_product_video`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `jms_jms_slider`
+--
+ALTER TABLE `jms_jms_slider`
+  ADD PRIMARY KEY (`id_slider`);
+
+--
+-- Chỉ mục cho bảng `jms_jms_slider_hook`
+--
+ALTER TABLE `jms_jms_slider_hook`
+  ADD PRIMARY KEY (`id_slider`,`id_hook`);
+
+--
+-- Chỉ mục cho bảng `jms_jms_slider_lang`
+--
+ALTER TABLE `jms_jms_slider_lang`
+  ADD PRIMARY KEY (`id_slider`,`id_lang`);
+
+--
 -- Chỉ mục cho bảng `jms_jms_slides`
 --
 ALTER TABLE `jms_jms_slides`
   ADD PRIMARY KEY (`id_slide`);
-
---
--- Chỉ mục cho bảng `jms_jms_slides_lang`
---
-ALTER TABLE `jms_jms_slides_lang`
-  ADD PRIMARY KEY (`id_slide`,`id_lang`);
 
 --
 -- Chỉ mục cho bảng `jms_jms_slides_layers`
@@ -20994,6 +23139,18 @@ ALTER TABLE `jms_web_browser`
   ADD PRIMARY KEY (`id_web_browser`);
 
 --
+-- Chỉ mục cho bảng `jms_wishlist`
+--
+ALTER TABLE `jms_wishlist`
+  ADD PRIMARY KEY (`id_wishlist`);
+
+--
+-- Chỉ mục cho bảng `jms_wishlist_product`
+--
+ALTER TABLE `jms_wishlist_product`
+  ADD PRIMARY KEY (`id_wishlist_product`);
+
+--
 -- Chỉ mục cho bảng `jms_zone`
 --
 ALTER TABLE `jms_zone`
@@ -21026,7 +23183,7 @@ ALTER TABLE `jms_admin_filter`
 -- AUTO_INCREMENT cho bảng `jms_advice`
 --
 ALTER TABLE `jms_advice`
-  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_alias`
@@ -21068,13 +23225,13 @@ ALTER TABLE `jms_attribute_impact`
 -- AUTO_INCREMENT cho bảng `jms_authorization_role`
 --
 ALTER TABLE `jms_authorization_role`
-  MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=881;
+  MODIFY `id_authorization_role` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=889;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_badge`
 --
 ALTER TABLE `jms_badge`
-  MODIFY `id_badge` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_badge` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=235;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_carrier`
@@ -21140,7 +23297,7 @@ ALTER TABLE `jms_cms_role`
 -- AUTO_INCREMENT cho bảng `jms_condition`
 --
 ALTER TABLE `jms_condition`
-  MODIFY `id_condition` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_condition` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_configuration`
@@ -21158,7 +23315,7 @@ ALTER TABLE `jms_configuration_kpi`
 -- AUTO_INCREMENT cho bảng `jms_connections`
 --
 ALTER TABLE `jms_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_connections_source`
@@ -21290,7 +23447,7 @@ ALTER TABLE `jms_homeslider_slides`
 -- AUTO_INCREMENT cho bảng `jms_hook`
 --
 ALTER TABLE `jms_hook`
-  MODIFY `id_hook` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=447;
+  MODIFY `id_hook` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=462;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_hook_alias`
@@ -21455,6 +23612,12 @@ ALTER TABLE `jms_jmstestimonials_lang`
   MODIFY `id_testimonial` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT cho bảng `jms_jms_layer_style`
+--
+ALTER TABLE `jms_jms_layer_style`
+  MODIFY `id_style` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=412;
+
+--
 -- AUTO_INCREMENT cho bảng `jms_jms_producttab`
 --
 ALTER TABLE `jms_jms_producttab`
@@ -21479,28 +23642,28 @@ ALTER TABLE `jms_jms_product_video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT cho bảng `jms_jms_slider`
+--
+ALTER TABLE `jms_jms_slider`
+  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT cho bảng `jms_jms_slides`
 --
 ALTER TABLE `jms_jms_slides`
-  MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-
---
--- AUTO_INCREMENT cho bảng `jms_jms_slides_lang`
---
-ALTER TABLE `jms_jms_slides_lang`
-  MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_jms_slides_layers`
 --
 ALTER TABLE `jms_jms_slides_layers`
-  MODIFY `id_layer` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `id_layer` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_jms_slides_shop`
 --
 ALTER TABLE `jms_jms_slides_shop`
-  MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_slide` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_lang`
@@ -21542,7 +23705,7 @@ ALTER TABLE `jms_link_block_shop`
 -- AUTO_INCREMENT cho bảng `jms_log`
 --
 ALTER TABLE `jms_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=832;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=841;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_mail`
@@ -21578,13 +23741,13 @@ ALTER TABLE `jms_meta`
 -- AUTO_INCREMENT cho bảng `jms_module`
 --
 ALTER TABLE `jms_module`
-  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_module_history`
 --
 ALTER TABLE `jms_module_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_module_preference`
@@ -21674,7 +23837,7 @@ ALTER TABLE `jms_order_state`
 -- AUTO_INCREMENT cho bảng `jms_page`
 --
 ALTER TABLE `jms_page`
-  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_page` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_pagenotfound`
@@ -21686,7 +23849,7 @@ ALTER TABLE `jms_pagenotfound`
 -- AUTO_INCREMENT cho bảng `jms_page_type`
 --
 ALTER TABLE `jms_page_type`
-  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_page_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_product`
@@ -21806,7 +23969,7 @@ ALTER TABLE `jms_search_engine`
 -- AUTO_INCREMENT cho bảng `jms_search_word`
 --
 ALTER TABLE `jms_search_word`
-  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=666;
+  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=656;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_sekeyword`
@@ -22017,6 +24180,18 @@ ALTER TABLE `jms_webservice_permission`
 --
 ALTER TABLE `jms_web_browser`
   MODIFY `id_web_browser` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT cho bảng `jms_wishlist`
+--
+ALTER TABLE `jms_wishlist`
+  MODIFY `id_wishlist` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT cho bảng `jms_wishlist_product`
+--
+ALTER TABLE `jms_wishlist_product`
+  MODIFY `id_wishlist_product` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT cho bảng `jms_zone`

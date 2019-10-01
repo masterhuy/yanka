@@ -4,401 +4,97 @@
 * Slider Layer module for prestashop
 *
 *  @author    Joommasters <joommasters@gmail.com>
-*  @copyright 2007-2017 Joommasters
+*  @copyright 2007-2019 Joommasters
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 *}
 
 <form id="layer_form" action="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider&layer=1" method="post">
-<script>
-$(function() {
-                var $myLayers = $("#layers");
-                $myLayers.sortable({
-                    opacity: 0.6,
-                    cursor: "move",
-                    update: function() {
-                        var order = $(this).sortable("serialize") + "&action=updateLayersOrdering";
-                        $.post("{$root_url nofilter}modules/jmsslider/ajax_jmsslider.php?" + order + '&secure_key=' + '{$secure_key nofilter}');
-                        var temp = $(this).sortable("serialize").substring(9,200);
-                        var layerids = temp.split("&layers[]=");
-                        var i = 1;
-                        jQuery.each(layerids, function(index, value) {
-                            $("#caption_" + value).css("z-index",i);
-                            i++;
-                        });
-                    }
-                });
-                $myLayers.hover(function() {
-                    $(this).css("cursor","move");
-                    },
-                    function() {
-                    $(this).css("cursor","auto");
-                });
-            });
-</script>
 <div class="panel area-display">
 	<h3>
 	<span title="" data-toggle="tooltip" class="label-tooltip toogle" data-original-title="Click to Toggle" data-html="true">
 		<i class="icon-list-ul"></i> {l s='Layers list of' d='Modules.JmsSlider'}
 	</span>
-	<div class="list-title-slides">
-	{foreach from=$all_slides item=eve_slide}
-		<a {if $eve_slide.id_slide==$slides.id_slide}class="btn-info"{else}title="{l s='Click here go to ' d='Modules.JmsSlider'}{$eve_slide.title nofilter}"{/if} href="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider&layers=1&id_slide={$eve_slide.id_slide nofilter}">{$eve_slide.title nofilter}</a>&nbsp;&nbsp;
-	{/foreach}</div>
 	</h3>
+	<div class="list-title-slides">
+    {foreach $slider->slides as $slide}
+        <a {if $slide->id==$currentSlide->id}class="btn-info"{else}title="{l s='Click here go to ' d='Modules.JmsSlider'}{$slide->title}"{/if} href="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider&editSlide&id_slide={$slide->id}">{$slide->title}</a>&nbsp;&nbsp;
+    {/foreach}
+    </div>
+	{include './layer-tool.tpl'}
+	{foreach $currentSlide->layers as $layer}
+		{include './layerconfig.tpl' layer=$layer}
+	{/foreach}
 	<div class="panel-body ">
 		<div class="wrap-slider">
-			<div  class="slider" style="width:{$configs.JMS_SLIDER_WIDTH nofilter}px;height:{$configs.JMS_SLIDER_HEIGHT nofilter}px">
-				<div id="frame_layer" class="slide" style="{if $slides.bg_type==1}background-image:url({$root_url nofilter}modules/jmsslider/views/img/slides/{$slides.bg_image nofilter});{else}background-color:{$slides.bg_color nofilter}{/if};background-size:100% 100%;position:relative;width:100%;height:100%">
-					{foreach from=$layers item=layer}
-						{math assign="data_x" equation='(x/y)*100' x=$layer.data_x y=$configs.JMS_SLIDER_WIDTH}
-						{math assign="data_y" equation='(w/z)*100' w=$layer.data_y z=$configs.JMS_SLIDER_HEIGHT}
-						<div id="caption_{$layer.id_layer nofilter}" class="tp-caption layer {$layer.data_class_suffix nofilter}" style="position:absolute; {if $layer.data_video_bg}top:0; left:0;width:100%;height:100%;{else}top:{$data_y nofilter}%; left:{$data_x nofilter}%;{/if}font-size:{$layer.data_font_size nofilter}px; color: {$layer.data_color nofilter}; font-style:{$layer.data_style nofilter};{if $layer.data_line_height}line-height:{$layer.data_line_height nofilter}px;{/if}">
-						{if $layer.data_type=="text"}
-							<span>{$layer.data_html nofilter}</span>
-						{elseif $layer.data_type=="image"}
-							<img width="100%" height="100%" id="image_layer_{$layer.id_layer nofilter}" src="{$root_url nofilter}/modules/jmsslider/views/img/layers/{$layer.data_image nofilter}">
-						{else}
-							<i class="icon-arrows move-toolbar" title="Keep mouse to move" ></i>
-							{if $layer.videotype == 'youtube'}
-							<iframe width="{$layer.data_width nofilter}px;" height="{$layer.data_height nofilter}px;" src="http://www.youtube.com/embed/{$layer.data_video|substr:($layer.data_video|strpos:'?v='+3)}?autoplay={$layer.data_video_autoplay nofilter}&controls={$layer.data_video_controls nofilter}&loop={$layer.data_video_loop nofilter}" allowfullscreen frameborder="0">
-							 </iframe>
-							 {elseif $layer.videotype == 'vimeo'}
-							 {assign var=vimeo_link value = ("/"|explode:$layer.data_video)}
-							 <iframe width="{$layer.data_width nofilter}px;" height="{$layer.data_height nofilter}px;" src="https://player.vimeo.com/video/{$vimeo_link[$vimeo_link|count-1]}?autoplay={$layer.data_video_autoplay nofilter}&loop={$layer.data_video_loop nofilter}" allowfullscreen frameborder="0">
-							 </iframe>
-							 {/if}
-						{/if}
-						</div>
-					{/foreach}
-				</div>
-			</div> <!-- END SLIDE -->
-		</div>
-		<div id="layer-tools" class="btn-group-action clearfix" style="margin-bottom:30px;">
-			<a class="btn btn-default" id="add-text"><i class="icon-file-text-o"></i> {l s='Add Text Layer' d='Modules.JmsSlider'}</a>
-			<a class="btn btn-default"  id="add-image"><i class="icon-file-image-o"></i> {l s='Add Image Layer' d='Modules.JmsSlider'}</a>
-			<a class="btn btn-default"  id="add-video"><i class="icon-file-movie-o"></i> {l s='Add Video' d='Modules.JmsSlider'}</a>
-			<a class="btn btn-success pull-right"  id="tips"><i class="icon-check-square"></i> {l s='Tips' d='Modules.JmsSlider'}</a>
-		</div> <!-- END ACTIONS  -->
-		<div class="row content area-display" style="margin-bottom:30px;">
-			<div id="layerConfig" class="col-xs-12 col-sm-7 col-md-7 col-cmd-12 form-horizontal">
-				<div class="panel panel-default panel-layers">
-					<div class="panel-heading">
-						{l s='Layer Config' d='Modules.JmsSlider'}
-					</div>
-					{if $layers|@count > 0}
-					{foreach from=$layers item=layer}
-					<input type="hidden" name="layer_ids[]" value="{$layer.id_layer nofilter}" />
-					<div id="form_layer_{$layer.id_layer nofilter}" class="form-layer panel-bodyclearfix" style="display:none">
-						<div class="form-group">
-							<label class="control-label col-lg-2">
-								<span title="" data-html="true" data-toggle="tooltip" class="label-tooltip" data-original-title="Title of slide not show front end">{l s='Title' d='Modules.JmsSlider'}</span>
-							</label>
-							<div class="col-lg-4">
-								<input type="text"  name="data_title_{$layer.id_layer nofilter}" value="{$layer.data_title nofilter}">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Class suffix' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<input type="text" name="data_class_suffix_{$layer.id_layer nofilter}" value="{$layer.data_class_suffix nofilter}">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Layer fixed' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<span class="switch prestashop-switch fixed-width-lg">
-									<input type="radio" {if $layer.data_fixed == 1}checked="checked"{/if} value="1" id="data_fixed_{$layer.id_layer nofilter}_on" name="data_fixed_{$layer.id_layer nofilter}">
-									<label for="data_fixed_{$layer.id_layer nofilter}_on">Yes</label>
-									<input type="radio" {if $layer.data_fixed == 0}checked="checked"{/if} value="0" id="data_fixed_{$layer.id_layer nofilter}_off" name="data_fixed_{$layer.id_layer nofilter}">
-									<label for="data_fixed_{$layer.id_layer nofilter}_off">No</label>
-									<a class="slide-button btn"></a>
-								</span>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Start Moving In' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<div class="input-group">
-								<input type="text" id="data_delay" value="{$layer.data_delay nofilter}" name="data_delay_{$layer.id_layer nofilter}">
-									<span class="input-group-addon">ms</span>
-								</div>
-							</div>
-							<label class="control-label col-lg-2">{l s='Stop Moving In' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<div class="input-group">
-								<input type="text" id="data_time" value="{$layer.data_time nofilter}" name="data_time_{$layer.id_layer nofilter}">
-									<span class="input-group-addon">ms</span>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-
-							<label class="control-label col-lg-2">
-							<span data-original-title="Typing 'center' to center" class="label-tooltip" data-toggle="tooltip" data-html="true" title="">{l s='Data X' d='Modules.JmsSlider'}</span>
-							</label>
-							<div class="col-lg-4">
-								<div class="input-group">
-									<input type="text" id="data_x_{$layer.id_layer nofilter}" class="data-x" name="data_x_{$layer.id_layer nofilter}" value="{$layer.data_x nofilter}" title="Typing 'center' to center">
-									<span class="input-group-addon">pixel</span>
-								</div>
-							</div>
-							<label class="control-label col-lg-2">
-							<span data-original-title="Typing 'center' to center" class="label-tooltip" data-toggle="tooltip" data-html="true" title="">{l s='Data Y' d='Modules.JmsSlider'}</span>
-							</label>
-							<div class="col-lg-4">
-								<div class="input-group">
-									<input type="text" id="data_y_{$layer.id_layer nofilter}" class="data-y" name="data_y_{$layer.id_layer nofilter}" value="{$layer.data_y nofilter}" title="Typing 'center' to center">
-									<span class="input-group-addon">pixel</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="control-label col-lg-2">
-								<span data-original-title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width" class="label-tooltip" data-toggle="tooltip" data-html="true" >{l s='Width' d='Modules.JmsSlider'}</span>
-							</label>
-							<div class="col-lg-4">
-								<div class="input-group">
-									<input type="text" id="data_width_{$layer.id_layer nofilter}" class="data-width" name="data_width_{$layer.id_layer nofilter}" value="{$layer.data_width nofilter}"
-									title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width ">
-									<span class="input-group-addon">pixel</span>
-								</div>
-							</div>
-							<label class="control-label col-lg-2">
-								<span data-original-title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height" class="label-tooltip" data-toggle="tooltip" data-html="true" >{l s='Height' d='Modules.JmsSlider'}</span>
-							</label>
-							<div class="col-lg-4">
-								<div class="input-group">
-									<input type="text" id="data_height_{$layer.id_layer nofilter}" class="data-height" name="data_height_{$layer.id_layer nofilter}" value="{$layer.data_height nofilter}" title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height">
-									<span class="input-group-addon">pixel</span>
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Transiton In' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<select name="data_in_{$layer.id_layer nofilter}" id="data_in">
-									{foreach from=$transitions item=trans}
-										<option {if $layer.data_in==$trans.id}selected{/if} value="{$trans.id nofilter}">{$trans.name nofilter}</option>
-									{/foreach}
-								</select>
-							</div>
-							<label class="control-label col-lg-2">{l s='Transition Out' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<select name="data_out_{$layer.id_layer nofilter}" id="data_out">
-									{foreach from=$transitions item=trans}
-										<option {if $layer.data_out==$trans.id}selected{/if} value="{$trans.id nofilter}">
-											{$trans.name nofilter}
-										</option>
-									{/foreach}
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Ease In' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<select name="data_ease_in_{$layer.id_layer nofilter}" id="data_ease_in">
-									{foreach from=$eases item=ease}
-										<option {if $layer.data_ease_in==$ease.id}selected{/if} value="{$ease.id nofilter}">{$ease.name nofilter}</option>
-									{/foreach}
-								</select>
-							</div>
-							<label class="control-label col-lg-2">{l s='Ease Out' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<select name="data_ease_out_{$layer.id_layer nofilter}" id="data_ease_out">
-									{foreach from=$eases item=ease}
-										<option {if $layer.data_ease_out==$ease.id}selected{/if} value="{$ease.id nofilter}">{$ease.name nofilter}</option>
-									{/foreach}
-								</select>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Step' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4" >
-								<input type="text" value="{$layer.data_step nofilter}" name="data_step_{$layer.id_layer nofilter}">
-							</div>
-
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Data special' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4" >
-								<select name="data_special_{$layer.id_layer nofilter}" id="data_special">
-									{foreach from=$data_specials item=data_special}
-										<option {if $layer.data_special==$data_special.id}selected{/if} value="{$data_special.id nofilter}">{$data_special.name nofilter}</option>
-									{/foreach}
-								</select>
-							</div>
-						</div>
-						{if $layer.data_type=='text'}
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Font Size' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-2">
-								<div class="input-group">
-									<input type="text" id="data_font_size_{$layer.id_layer nofilter}" name="data_font_size_{$layer.id_layer nofilter}" value="{$layer.data_font_size nofilter}" class="data-font-size">
-									<span class="input-group-addon">pixel</span>
-								</div>
-							</div>
-							<label class="control-label col-lg-2">{l s='Line Height' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-2">
-								<div class="input-group">
-									<input type="text" id="data_line_height_{$layer.id_layer nofilter}" name="data_line_height_{$layer.id_layer nofilter}" value="{$layer.data_line_height nofilter}" class="data-line-height">
-									<span class="input-group-addon">pixel</span>
-								</div>
-							</div>
-							<label class="control-label col-lg-1">{l s='Style' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-1">
-								<div class="input-group">
-									<select   class="data-style" name="data_style_{$layer.id_layer nofilter}" id="data_style_{$layer.id_layer nofilter}">
-										<option {if $layer.data_style=='normal'}selected{/if} value="normal">Normal</option>
-										<option {if $layer.data_style=='bold'}selected{/if} value="bold">Bold</option>
-										<option {if $layer.data_style=='italic'}selected{/if} value="italic">Italic</option>
-									</select>
-								</div>
-							</div>
-							<label class="control-label col-lg-1">{l s='Color' d='Modules.JmsSlider'}</label>
-								<div class="col-lg-1">
-									<div class="row">
-										<div class="input-group">
-											 <input type="color"  class="data-color btn color mColorPickerInput" name="data_color_{$layer.id_layer nofilter}" id="data_color_{$layer.id_layer nofilter}" value="{$layer.data_color nofilter}">
-										</div>
-									</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Html or Text' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-10">
-								<textarea name="data_html_{$layer.id_layer nofilter}" id="data_html_{$layer.id_layer nofilter}" class="data-html" cols="30" rows="10">{$layer.data_html nofilter}</textarea>
-							</div>
-						</div>
-
-						{/if}
-						{if $layer.data_type == 'image'}
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Image' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4" >
-			            		<select name="data_image_{$layer.id_layer nofilter}" id="data_image_{$layer.id_layer nofilter}" class="data-image">
-			            			{foreach from=$images item=image}
-			            				<option {if $layer.data_image=={$image.id nofilter}}selected{/if}  value="{$image.id nofilter}">{$image.id nofilter}</option>
-			            			{/foreach}
-			            		</select>
-			            	</div>
-		            	</div>
-
-						{/if}
-						{if $layer.data_type == 'video'}
-						<div class="form-group">
-							<label class="control-label col-lg-2">
-							<span data-original-title="Video Url" class="label-tooltip" data-toggle="tooltip" data-html="true" title="">{l s='Video Url' d='Modules.JmsSlider'}</span>
-							</label>
-							<div class="col-lg-10">
-								<textarea name="data_video_{$layer.id_layer nofilter}" id="data_video_{$layer.id_layer nofilter}" class="data-video" cols="30" rows="3">{$layer.data_video nofilter}</textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Autoplay' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<span class="switch prestashop-switch">
-									<input type="radio" {if $layer.data_video_autoplay==1}checked="checked"{/if} value="1" id="data_video_autoplay_{$layer.id_layer nofilter}_on" name="data_video_autoplay_{$layer.id_layer nofilter}">
-									<label for="data_video_autoplay_{$layer.id_layer nofilter}_on">Yes</label>
-									<input type="radio" {if $layer.data_video_autoplay==0}checked="checked"{/if} value="0" id="data_video_autoplay_{$layer.id_layer nofilter}_off" name="data_video_autoplay_{$layer.id_layer nofilter}">
-									<label for="data_video_autoplay_{$layer.id_layer nofilter}_off">No</label>
-									<a class="slide-button btn"></a>
-								</span>
-							</div>
-							<label class="control-label col-lg-2">{l s='Controls' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<span class="switch prestashop-switch">
-									<input type="radio" {if $layer.data_video_controls==1}checked="checked"{/if} value="1" id="data_video_controls_{$layer.id_layer nofilter}_on" name="data_video_controls_{$layer.id_layer nofilter}">
-									<label for="data_video_controls_{$layer.id_layer nofilter}_on">Yes</label>
-									<input type="radio" {if $layer.data_video_controls==0}checked="checked"{/if} value="0" id="data_video_controls_{$layer.id_layer nofilter}_off" name="data_video_controls_{$layer.id_layer nofilter}">
-									<label for="data_video_controls_{$layer.id_layer nofilter}_off">No</label>
-									<a class="slide-button btn"></a>
-								</span>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Loop' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<span class="switch prestashop-switch">
-									<input type="radio" {if $layer.data_video_loop==1}checked="checked"{/if} value="1" id="data_video_loop_{$layer.id_layer nofilter}_on" name="data_video_loop_{$layer.id_layer nofilter}">
-									<label for="data_video_loop_{$layer.id_layer nofilter}_on">Yes</label>
-									<input type="radio" {if $layer.data_video_loop==0}checked="checked"{/if} value="0" id="data_video_loop_{$layer.id_layer nofilter}_off" name="data_video_loop_{$layer.id_layer nofilter}">
-									<label for="data_video_loop_{$layer.id_layer nofilter}_off">No</label>
-									<a class="slide-button btn"></a>
-								</span>
-							</div>
-
-						</div>
-						<div class="form-group">
-							<div class="col-lg-2">
-							</div>
-							<div class="col-lg-10">
-								<input type="checkbox" {if $layer.data_video_bg==1}checked{/if} value="1" id="data_video_bg_{$layer.id_layer nofilter}" class="data_video_bg" name="data_video_bg_{$layer.id_layer nofilter}">
-								<label for="data_video_bg_{$layer.id_layer nofilter}">{l s='Set this video for slide background' d='Modules.JmsSlider'}</label>
-							</div>
-						</div>
-						{/if}
-						<div class="form-group">
-							<label class="control-label col-lg-2">{l s='Active' d='Modules.JmsSlider'}</label>
-							<div class="col-lg-4">
-								<span class="switch prestashop-switch fixed-width-lg">
-									<input type="radio" {if $layer.data_status==1}checked="checked"{/if} value="1" id="data_status_{$layer.id_layer nofilter}_on" name="data_status_{$layer.id_layer nofilter}">
-									<label for="data_status_{$layer.id_layer nofilter}_on">Yes</label>
-									<input type="radio" {if $layer.data_status==0}checked="checked"{/if} value="0" id="data_status_{$layer.id_layer nofilter}_off" name="data_status_{$layer.id_layer nofilter}">
-									<label for="data_status_{$layer.id_layer nofilter}_off">No</label>
-									<a class="slide-button btn"></a>
-								</span>
-							</div>
-						</div>
-
-					</div>
-
-					{/foreach}
-
-					{/if}
-				</div>
-			</div>
-			<div id="layerContent" class="col-xs-12 col-sm-5 col-md-5 col-cmd-12 form-horizontal">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						{l s='List layer' d='Modules.JmsSlider'}
-					</div>
-					<div class="panel-body clearfix">
-						<div id="layers">
-							{if $layers|@count gt 0}
-								{foreach from=$layers item=layer}
-								<div id="layers_{$layer.id_layer nofilter}" class="panel layer layers-{$layer.id_layer nofilter}">
-									<div class="row">
-										<div class="col-lg-1">
-											<span><i class="icon-arrows "></i></span>
-										</div>
-										<div class="col-md-6">
-											{$layer.data_title nofilter}
-										</div>
-										<div class="col-md-5">
-											<div class="btn-group-action pull-right">
-												<div class="btn btn-default show-hide-layer" title="Click to display/hide layer"><i class="icon-eye"></i><i class="icon-eye-slash" style="display:none"></i></div>
-												<div class="btn btn-default disabled" title="format"><i {if $layer.data_type=="text"}class="icon-file-text-o" {elseif $layer.data_type=="image"} class="icon-file-image-o" {else}class="icon-file-movie-o"{/if}></i></div>
-
-												<a title="Delete" id='delete_{$layer.id_layer nofilter}' class="delete_layer btn btn-danger"
-												>
-													<i class="icon-trash"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								{/foreach}
+			<div id="horlinie"><div id="horlinetext">0</div></div>
+			<div id="verlinie"><div id="verlinetext">0</div></div>
+			<div id="hor-css-linear"><ul class="linear-texts"></ul></div>
+			<div id="ver-css-linear"><ul class="linear-texts"></ul></div>
+			<div class="layer-wrapper">
+				<div  class="slider" style="width:{$slider->max_width}px;height:{$slider->max_height}px">
+					<div id="frame_layer" class="slide" style="{if $currentSlide->bg_type==1}background-image:url({$root_url nofilter}modules/jmsslider/views/img/slides/{$currentSlide->bg_image nofilter});{else}background-color:{$currentSlide->bg_color nofilter}{/if};background-size:100% 100%;position:relative;width:100%;height:100%">
+						{foreach from=$currentSlide->layers item=layer}
+							{math assign="data_x" equation='(x/y)*100' x=$layer->desktop->data_x y=$slider->max_width}
+							{math assign="data_y" equation='(w/z)*100' w=$layer->desktop->data_y z=$slider->max_height}
+							<div id="caption_{$layer->id nofilter}" class="tp-caption layer {$layer->data_class_suffix nofilter}" style="position:absolute; {if $layer->data_video_bg}top:0; left:0;{else}top:{$data_y nofilter}%; left:{$data_x nofilter}%;{/if} font-weight:{$layer->desktop->data_font_weight nofilter};width:{$layer->data_width}px;height:{$layer->data_height}px;font-size:{$layer->desktop->data_font_size nofilter}px; color: {$layer->data_color nofilter}; font-style:{$layer->desktop->data_style nofilter};{if $layer->desktop->data_line_height}line-height:{$layer->desktop->data_line_height nofilter}px;{/if}{if !$layer->desktop->data_show}display:none{/if}">
+							{if $layer->data_type=="text"}
+								<span>{$layer->data_html nofilter}</span>
+							{elseif $layer->data_type=="image"}
+								<img width="100%" height="100%" id="image_layer_{$layer->id nofilter}" src="{$root_url nofilter}/modules/jmsslider/views/img/layers/{$layer->data_image nofilter}">
 							{else}
-								{l s='There is no layer' d='Modules.JmsSlider'}
+								<i class="icon-arrows move-toolbar" title="Keep mouse to move" ></i>
+								{if $layer->videotype == 'youtube'}
+								<iframe width="{$layer->data_width nofilter}px;" height="{$layer->data_height nofilter}px;" src="http://www.youtube.com/embed/{$layer->data_video|substr:($layer->data_video|strpos:'?v='+3)}?autoplay={$layer->data_video_autoplay nofilter}&controls={$layer->data_video_controls nofilter}&loop={$layer->data_video_loop nofilter}" allowfullscreen frameborder="0">
+								 </iframe>
+								 {elseif $layer->videotype == 'vimeo'}
+								 {assign var=vimeo_link value = ("/"|explode:$layer->data_video)}
+								 <iframe width="{$layer->data_width nofilter}px;" height="{$layer->data_height nofilter}px;" src="https://player.vimeo.com/video/{$vimeo_link[$vimeo_link|count-1]}?autoplay={$layer->data_video_autoplay nofilter}&loop={$layer->data_video_loop nofilter}" allowfullscreen frameborder="0">
+								 </iframe>
+								 {/if}
 							{/if}
-						</div>
+							</div>
+						{/foreach}
 					</div>
+				</div> <!-- END SLIDE -->
+			</div>
+		</div>
+		<div class="mastertimer-wrapper">
+			<div class="mastertimer-left">
+				<ul id="timeline-title">
+					<li class="fulltime-title">{l s='Slide Time' d='Modules.JmsSlider'}</li>
+						{foreach $currentSlide->layers as $layer}
+						<li id="fulltime_title_{$layer->id}" class="fulltime-title"><i class="material-icons">{if $layer->data_type=='text'}assignment{elseif $layer->data_type=='image'}collections{else}video_librarys{/if}</i>{$layer->data_title}</li>
+						{/foreach}
+				</ul>
+			</div>
+			<div class="mastertimer-right">
+				<div id="mastertimer-curtime"><span id="mastertimer-curtimeinner"></span></div>
+				<div class="mastertimer">
+					<div id="mastertimer-linear">
+						<ul class="linear-texts">
+						</ul>
+					</div>
+				</div>
+				<input type="hidden" id="layer_active" value="{if $currentSlide->layers|@count > 0}_{$currentSlide->layers[0]->id}{/if}" />
+				<div id="time-line">
+					<ul>
+						<li id="fulltime" class="mastertimer-slide">
+							<div class="fulltime" style="width:{$slider->duration/10}px;"></div>
+						</li>
+						{foreach $currentSlide->layers as $layer}
+						<li id="mastertimer_{$layer->id}" class="mastertimer-layer layer" data-index="0">
+							<div class="layer-time ui-widget-content" style="width:{$layer->data_time/10}px">
+								<div class="delay-time ui-widget-content" style="width:{$layer->data_delay/10}px">
+								</div>
+							</div>
+						</li>
+						{/foreach}
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
+
 	<div class="panel-footer">
 		<button class="btn btn-default pull-right btn-success" name="submitLayer" id="module_form_submit_btn" value="1" type="submit">
 			<i class="process-icon-save"></i> {l s='Save' d='Modules.JmsSlider'}
@@ -406,11 +102,16 @@ $(function() {
 		<a class="btn btn-default btn-warning" href="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider" title="{l s='Back to Slides List' d='Modules.JmsSlider'}"><i class="process-icon-back"></i>{l s='Back' d='Modules.JmsSlider'}</a>
 	</div>
 
-	<input type="hidden" name="slide_id" id="id_slide" value="{$slides.id_slide nofilter}" />
-	<input type="hidden" name="layer_id" id="id_layer" value="{if $layers|@count>0}{$layers[0].id_layer nofilter}{/if}" />
+	<input type="hidden" name="slide_id" id="id_slide" value="{$currentSlide->id nofilter}" />
+	<input type="hidden" name="layer_id" id="id_layer" value="{if $currentSlide->layers|@count>0}{$currentSlide->layers[0]->id nofilter}{else}0{/if}" />
+	<input type="hidden" name="layer_type" id="type_layer" />
 	<input type="hidden" name="site_url" id="site_url" value="{$root_url nofilter}" />
-	<input type="hidden" name="id_slide" value="{$slides.id_slide nofilter}">
-  <input type="hidden" name="secure_key" id="secure_key" value="{$secure_key nofilter}">
+	<input type="hidden" name="id_slide" value="{$currentSlide->id nofilter}">
+	<input type="hidden" id="slider_width" value="{$slider->max_width}">
+	<input type="hidden" id="slider_height" value="{$slider->max_height}">
+	<input type="hidden" id="mobile_height" value="{$slider->mobile_height}">
+	<input type="hidden" id="mobile2_height" value="{$slider->mobile2_height}">
+	<input type="hidden" id="tablet_height" value="{$slider->tablet_height}">
 <div id="modal_add_text" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -537,3 +238,5 @@ $(function() {
     </div>
 </div> <!-- end modal add image -->
 </form>
+
+

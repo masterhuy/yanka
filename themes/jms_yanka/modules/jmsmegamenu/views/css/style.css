@@ -76,7 +76,7 @@
     display: inline-block;
     float: inherit;
     margin: 0;
-    padding: 0 5px;
+    padding: 0 12px;
     vertical-align: top;
 }
 .jms-megamenu .nav > .menu-item.mega.new{
@@ -86,13 +86,15 @@
     padding-left: 0;
 }
 .jms-megamenu .nav > li > a {
-    line-height: 38px;
+    line-height: 80px;
     padding: 0;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     display: flex;
     align-items: center;
+    font-size: 13px;
+    font-weight: 800;
 }
 .jms-megamenu .nav > li.open > a,
 .jms-megamenu .nav > li > a:hover{

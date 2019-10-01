@@ -8,7 +8,7 @@
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
- jQuery(document).ready(function($) {
+ $(document).ready(function($) {
 	$('.jms-megamenu').jmsMegaMenu({    			
 		event: jmmm_event,
 		duration: jmmm_duration
@@ -402,6 +402,74 @@ jQuery(function ($) {
 			autoplay: p2_c3_auto_play_carousel,
 			loop: true,
 			slideSpeed: 800,
+		});
+	}
+
+	if($(".content-carousel").length) {
+		var contentCarousel = $(".content-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		contentCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:ct_itemsDesktop
+				},
+				991:{
+					items:ct_itemsDesktopSmall
+				},
+				768:{
+					items:ct_itemsTablet
+				},
+				481:{
+					items:ct_itemsMobile
+				},
+				0: {
+					items:2
+				}
+			},
+			rtl: rtl,
+				margin: 30,
+			    nav: ct_nav,
+		        dots: ct_pag,
+				autoplay: ct_auto_play_carousel,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
+	if($(".banner-carousel").length) {
+		var bannerCarousel = $(".banner-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		bannerCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:3
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 10,
+			    nav: true,
+		        dots: false,
+				autoplay: false,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
 		});
 	}
 
@@ -991,18 +1059,6 @@ $(document).ready(function() {
 	var header = $(".jms-row.header");
 	var menu = $(".jms-row.menu");
 
-	$(window).resize(function(){
-	  	var windowH = window.innerHeight;
-	  	var footerH = $("#footer").innerHeight();
-	  	var headerH = $("#header").innerHeight();
-		if(windowH < (footerH + headerH)){
-			$('#footer').css('z-index', -1);
-		}else{
-			$('#footer').css('z-index', 1);
-		}
-	});
-	
-
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 180){
 			header.addClass("fixed");
@@ -1013,14 +1069,16 @@ $(document).ready(function() {
     	}
     });
 
-    
-
 	if(initialLoad){
 		setTimeout(function() {
 			jQuery('.preloader').fadeOut();
 		}, 3000);		
 		initialLoad = false;
 	}
+
+	$(".addon-alertbox .close").click(function(){
+		$(".jms-row.alert-box").addClass("closed");
+	});
 
 	$('#cart_block .cart-icon').click(function(event) {
 		$('body').addClass('fixed');

@@ -1,5 +1,5 @@
 {*
-* 2007-2017 PrestaShop
+* 2007-2019 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,15 +18,15 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2017 PrestaShop SA
+*  @copyright  2007-2019 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
 {extends file="helpers/form/form.tpl"}
 {block name="field"}
-	{if $input.type == 'img'}	
-		<div class="col-sm-9">				
+	{if $input.type == 'img'}
+		<div class="col-sm-9">
 			<input id="{$input.name|escape:'html':'UTF-8'}" type="file" name="{$input.name|escape:'html':'UTF-8'}" class="hide" />
 			<div class="dummyfile input-group">
 				<span class="input-group-addon"><i class="icon-file"></i></span>
@@ -36,18 +36,18 @@
 						<i class="icon-folder-open"></i> {l s='Choose a file' d='Modules.JmsSlider'}
 					</button>
 				</span>
-			</div>		
+			</div>
+			<p class="help-block">{$input.pdesc|escape:'html':'UTF-8'}</p>
 			<div id="slide-preview">
 			{if $input.name=='bg_image' && isset($fields[0]['form']['old_image']) && $fields[0]['form']['old_image']|@strlen > 0}
-			<p class="help-block">{$input.pdesc|escape:'html':'UTF-8'}</p>			
 			<img src="{$image_baseurl|escape:'html':'UTF-8'}{$fields[0]['form']['old_image']|escape:'html':'UTF-8'}" class="img-thumbnail" />
 			<input type="hidden" name="old_image" value="{$fields[0]['form']['old_image']|escape:'html':'UTF-8'}" />
-			{/if}			
+			{/if}
 			</div>
 		</div>
 		<script>
 			$(document).ready(function(){
-				$('#{$input.name|escape:'html':'UTF-8'}-selectbutton').click(function(e){					
+				$('#{$input.name|escape:'html':'UTF-8'}-selectbutton').click(function(e){
 					$('#{$input.name|escape:'html':'UTF-8'}').trigger('click');
 				});
 				$('#{$input.name|escape:'html':'UTF-8'}').change(function(e){
@@ -56,9 +56,9 @@
 					$('#{$input.name|escape:'html':'UTF-8'}-name').val(file[file.length-1]);
 				});
 				$('.mColorPickerInput').change(function(e){
-					var val = $(this).val();					
-					$('#slide-preview').css("background-color", val);				
-	
+					var val = $(this).val();
+					$('#slide-preview').css("background-color", val);
+
 				});
 			});
 		</script>
@@ -75,5 +75,19 @@
 		</div>
 
 	{/if}
+    {if $input.type == 'multiple_select'}
+    <div class="col-lg-9">
+        <select data-placeholder="{$input.placeholder}" multiple class="chosen-select" name="{$input.name}[]" id="{$input.name}">
+            {foreach $input.options as $option}
+                <option value="{$option->$input.optionvalue}">{$option->$input.optionname}</option>
+            {/foreach}
+        </select>
+        <p class="help-block">{$input.idesc}</p>
+        <script type="text/javascript">
+    		{literal}$(".chosen-select").chosen({width : "100%"});{/literal}
+            $('#{$input.name}').val([{$fields_value[$input.name]}]).trigger('chosen:updated');
+        </script>
+    </div>
+    {/if}
 	{$smarty.block.parent}
 {/block}
