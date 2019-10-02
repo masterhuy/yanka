@@ -465,7 +465,7 @@ jQuery(function ($) {
 			rtl: rtl,
 				margin: 10,
 			    nav: true,
-		        dots: false,
+		        dots: true,
 				autoplay: false,
 				loop:true,
 			    navigationText: ["", ""],

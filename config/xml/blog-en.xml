@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>5 key elements for managing your after-sales service</title>
+    <link>https://www.prestashop.com/en/blog/5-keys-to-manage-your-after-sales-service</link>
+    <description>The service you provide to your customers reflects on your company.</description>
+     <pubDate>Mon, 30 Sep 2019 11:08:38 +0200</pubDate>
+ <dc:creator>Yateo EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/5-keys-to-manage-your-after-sales-service</guid>
+  </item>
+  <item>
     <title>Trends and key figures in European e-commerce</title>
     <link>https://www.prestashop.com/en/blog/2019-european-e-commerce-report</link>
     <description>The findings of the 2019 European E-commerce Report published in late August were very positive, with growth in online sales of more than 13% and estimated total sales of 621 billion euros.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 16 Aug 2019 15:07:43 +0200</pubDate>
  <dc:creator>PaymentCloud</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/business-flagged-as-high-risk</guid>
-  </item>
-  <item>
-    <title>PSD 2: next deadline on September 14, 2019</title>
-    <link>https://www.prestashop.com/en/blog/european-payment-services-directive</link>
-    <description>This fall, new strong authentication rules will come into force.</description>
-     <pubDate>Mon, 05 Aug 2019 14:36:25 +0200</pubDate>
- <dc:creator>Camille Silhol</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/european-payment-services-directive</guid>
   </item>
   </channel>
 </rss>

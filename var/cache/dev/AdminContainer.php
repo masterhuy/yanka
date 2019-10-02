@@ -1205,6 +1205,7 @@ class AdminContainer extends Container
                 72 => 'jmspagebuilder',
                 73 => 'jmswishlist',
                 74 => 'jmsslider',
+                75 => 'ps_categoryproducts',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_yanka/var/cache/dev\\',
             'mail_themes_uri' => '/mails/themes',

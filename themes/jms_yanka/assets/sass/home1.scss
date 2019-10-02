@@ -178,6 +178,22 @@
 
 .banner-type-1{
 	margin-top: 10px;
+	margin-bottom: 93px;
+	.owl-theme .owl-controls div{
+		background: #fff;
+		opacity: 1;
+		visibility: visible;
+		&:hover{
+			background: #333;
+			color: #fff;
+		}
+		&.owl-prev{
+			left: 23px !important;
+		}
+		&.owl-next{
+			right: 23px !important;
+		}
+	}
 	.jms-banner{
 		top: 0;
 		overflow: visible;
