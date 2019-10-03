@@ -143,6 +143,49 @@
 }
 //
 
+//hotdeal carousel
+.hotdeal-carousel{
+  	padding-top: 22px;
+  	.countdown-box{
+  		position: absolute;
+		bottom: 10px;
+		width: calc(100% - 20px);
+		background: rgba(255,255,255,0.9);
+		left: 10px;
+		text-align: center;
+		padding: 10px;
+		.title-countdown {
+			display: inline-block;
+			font-size: 14px;
+			line-height: 17px;
+			color: #333;
+			padding-bottom: 5px;
+			text-transform: capitalize;
+		}
+  	}
+  	.countdown-section {
+		display: inline-flex;
+		flex-direction: column;
+		color: #333;
+		padding: 0 12px;
+		min-width: 50px;
+	}
+  	.countdown-amount{
+  		font-size: 22px;
+        line-height: 15px;
+        display: block;
+        font-weight: 700;
+  	}
+  	.countdown-period{
+  		display: block;
+        padding-top: 4px;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+  	}
+}
+//
+
 //jms tab
 .jms-tab{
 	padding-top: 21px;

@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>What are the differences between migration, updating and upgrading?</title>
+    <link>https://www.prestashop.com/en/blog/differences-migration-updating-upgrading</link>
+    <description>When managing software as comprehensive as PrestaShop, knowing the differences between migration, update and upgrade concepts is essential.</description>
+     <pubDate>Wed, 02 Oct 2019 11:06:33 +0200</pubDate>
+ <dc:creator>Méguy Solvet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/differences-migration-updating-upgrading</guid>
+  </item>
+  <item>
     <title>5 key elements for managing your after-sales service</title>
     <link>https://www.prestashop.com/en/blog/5-keys-to-manage-your-after-sales-service</link>
     <description>The service you provide to your customers reflects on your company.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 19 Aug 2019 11:44:30 +0200</pubDate>
  <dc:creator>WebDesk</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/set-retail-price-of-a-product</guid>
-  </item>
-  <item>
-    <title>4 Reasons Your Business is Being Flagged as High-Risk</title>
-    <link>https://www.prestashop.com/en/blog/business-flagged-as-high-risk</link>
-    <description>When starting your business, the last thing you want to worry about are complications with your credit card processing.</description>
-     <pubDate>Fri, 16 Aug 2019 15:07:43 +0200</pubDate>
- <dc:creator>PaymentCloud</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/business-flagged-as-high-risk</guid>
   </item>
   </channel>
 </rss>

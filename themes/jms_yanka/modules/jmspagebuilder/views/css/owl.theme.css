@@ -47,38 +47,22 @@
 	cursor: pointer;
 	z-index: 2;
 }
-
 .owl-theme .owl-controls div{
 	position: absolute;
-	opacity: 0;
-	visibility: hidden;
-	transition: .4s all;
-	top: calc(35% + 2px); 
+	transition: opacity .2s;
+	top: 35%; 
 }
 .owl-theme .owl-controls div:hover{
-	opacity: 1;
+	background: #333;
 }
-.jms-row:hover .owl-theme .owl-controls div{
-	opacity: 1;
-	visibility: visible;
+.owl-theme .owl-controls div:hover::before{
+	color: #fff;
 }
 .owl-theme .owl-controls  div.owl-prev {
-	left: -55px;
+	left: -35px;
 }
 .owl-theme .owl-controls div.owl-next {
-	right: -55px;
-}
-.jms-row:hover .owl-theme .owl-controls div.owl-prev {
-    left: -45px;
-}
-.owl-theme .owl-controls div.owl-prev:hover {
-    opacity: 1;
-}
-.jms-row:hover .owl-theme .owl-controls div.owl-next {
-    right: -45px;
-}
-.owl-theme .owl-controls div.owl-next:hover {
-    opacity: 1;
+	right: -35px;
 }
 .owl-dot > span {
 	background: #e0e0e0;

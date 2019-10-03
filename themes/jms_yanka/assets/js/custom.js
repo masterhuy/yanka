@@ -737,7 +737,7 @@ jQuery(function ($) {
 				}
 			},
 			rtl: rtl,
-			margin: 0,
+			margin: 30,
 			nav: h_nav,
 			dots: h_pag,
 			loop:true,

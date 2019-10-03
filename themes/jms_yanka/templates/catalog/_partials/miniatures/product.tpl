@@ -95,6 +95,10 @@
 	</div>
 						
 	<div class="product-info">
+		{block name='product_reviews'}
+          {hook h='displayProductListReviews' product=$product}
+        {/block}
+		
         {if isset($jpb_categoryname) && $jpb_categoryname}
 		    <div class="categoryname">
 				<a class="hover-underline" href="{url entity='category' id=$product.id_category_default}">
@@ -105,8 +109,6 @@
 			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link hover-underline" itemprop="name">{$product.name|truncate:50:'...'|escape:'html':'UTF-8'}</a>
 		{/block}
 			  
-		
-
 		{block name='product_variants'}
 			{if $product.main_variants}
 				{if isset($jpb_pcolor) && $jpb_pcolor == 1}
