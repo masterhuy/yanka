@@ -35,43 +35,43 @@
        	{if $facebook_url != ''}
        		<li class="divider">
 		       	<a href="{$facebook_url|escape:'html':'UTF-8'}" class="social-icon facebook" title="Facebook">
-		       		<span class="fa fa-facebook"></span>Facebook
+		       		<span class="fa fa-facebook"></span>
 		       	</a>
        	{/if}
         {if $twitter_url != ''}
         	<li class="divider">
         		<a href="{$twitter_url|escape:'html':'UTF-8'}" class="social-icon twitter" title="Twitter">
-        			<span class="fa fa-twitter"></span>Twitter
+        			<span class="fa fa-twitter"></span>
         		</a>
         {/if}
         {if $google_plus_url != ''}
             <li class="divider">
                 <a href="{$google_plus_url|escape:'html':'UTF-8'}" class="social-icon gplus" title="Gplus">
-                    <span class="fa fa-google"></span>Google
+                    <span class="fa fa-google"></span>
                 </a>
         {/if}
         {if $instagram_url != ''}
             <li class="divider">
                 <a href="{$instagram_url|escape:'html':'UTF-8'}" class="social-icon instagram" title="Instagram">
-                    <span class="fa fa-instagram"></span>Instagram
+                    <span class="fa fa-instagram"></span>
                 </a>
         {/if}
         {if $pinterest_url != ''}
             <li class="divider">
                 <a href="{$pinterest_url|escape:'html':'UTF-8'}" class="social-icon pinterest" title="Pinterest">
-                    <span class="fa fa-pinterest"></span>Pinterest
+                    <span class="fa fa-pinterest"></span>
                 </a>
         {/if}  
         {if $youtube_url != ''}
             <li class="divider">
                 <a href="{$youtube_url|escape:'html':'UTF-8'}" class="social-icon youtube" title="Youtube">
-                    <span class="fa fa-youtube"></span>Youtube
+                    <span class="fa fa-youtube"></span>
                 </a>
         {/if}
         {if $linkedin_url != ''}
         	<li class="divider">
         		<a href="{$linkedin_url|escape:'html':'UTF-8'}" class="social-icon linkedin" title="Linkedin">
-        			<span class="fa fa-linkedin"></span>Linkedin
+        			<span class="fa fa-linkedin"></span>
         		</a>
         {/if}        
   </ul>

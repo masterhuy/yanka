@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-27 04:15:56
+/* Smarty version 3.1.33, created on 2019-10-04 06:30:21
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d8dc53cba6661_92609762',
+  'unifunc' => 'content_5d971f3d94f157_01505879',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1569568109,
+      1 => 1570161823,
       2 => 'module',
     ),
   ),
@@ -20,15 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d8dc53cba6661_92609762 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d971f3d94f157_01505879 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
 		<div class="addon-title">
-			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Newsletter subscription','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe to Our Newsletter! ','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </h3>
-			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign up for Shella updates to receive information about new arrivals, future events and specials.','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
-</span>
 		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
@@ -37,15 +35,14 @@ function content_5d8dc53cba6661_92609762 (Smarty_Internal_Template $_smarty_tpl)
 					<div class="form-group<?php if (isset($_smarty_tpl->tpl_vars['msg']->value) && $_smarty_tpl->tpl_vars['msg']->value) {?> <?php if ($_smarty_tpl->tpl_vars['nw_error']->value) {?>form-error<?php } else { ?>form-ok<?php }
 }?>" >
 						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value, ENT_QUOTES, 'UTF-8');?>
-" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Enter Your Email Address','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
+" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your email address','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 " />
-						<button type="submit" name="submitNewsletter" class="btn-default">
-							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'SUBSCRIBE!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
-
-						</button>
-						<button type="submit" name="submitNewsletter" class="btn-default active">
-							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'SUBSCRIBE!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
-
+						<button type="submit" name="submitNewsletter">
+							<span class="pt-icon">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+									<path fill="currentColor" d="M0,4v16h24V4H0z M21,5.6L12,12L3,5.6H21z M1.6,18.4V6.6L12,14l10.4-7.4v11.8H1.6z"></path>
+								</svg>
+							</span>
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>
@@ -58,6 +55,8 @@ function content_5d8dc53cba6661_92609762 (Smarty_Internal_Template $_smarty_tpl)
 				</form>
 			</div>
       	</div>
+		<p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'By entering your email, you agree to our Terms of Service and Privacy Policy.','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</p>
 	</div>
 </div>
 

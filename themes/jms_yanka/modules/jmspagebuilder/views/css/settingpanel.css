@@ -17,6 +17,7 @@
 	visibility: visible;
 }
 #jmstools {
+	font-size: 14px;
 	position:fixed;
 	left:-270px;
 	top:140px;
@@ -24,9 +25,6 @@
 	width:300px;	
 	z-index:999991; 
 	text-align: left;
-}
-#jmstools label{
-	color: #141414;
 }
 #jmstools-arrow {
 	display:block;
@@ -38,17 +36,17 @@
 #jmstools-arrow i {
 	font-size: 18px;
 	line-height: 30px;
-	fill: #FFF;
+	color: #FFF;
 	height: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-#jmstools-arrow .close-cog,
-.jmsopen #jmstools-arrow .cog{
+#jmstools-arrow .conf-close,
+.jmsopen #jmstools-arrow .conf{
 	display: none;
 }
-.jmsopen #jmstools-arrow .close-cog{
+.jmsopen #jmstools-arrow .conf-close{
 	display: flex;
 }
 #jmstools-content {
@@ -67,7 +65,6 @@ select#jmsskin {
 #jmstools-content select {
 	border: 1px solid #e2e2e2;
 	font-weight: 400;
-	color: #858585;
 }
 #jmstools label {
 	display: block;
@@ -231,7 +228,6 @@ select#jmsskin {
 }
 #jmstools .btn-action .btn-default {
 	float: left;
-	font-weight: 400;
 	margin-right: 10px;
 }
 .form-content label {

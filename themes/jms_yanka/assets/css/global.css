@@ -96,6 +96,17 @@
     width: 24px;
     height: 24px; }
 
+.jms-banner {
+  position: relative;
+  overflow: hidden; }
+  .jms-banner:hover > a > img {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1); }
+  .jms-banner > a > img {
+    transition: transform 1s, -webkit-transform 1s; }
+  .jms-banner .banner-content p {
+    margin-bottom: 0; }
+
 .hotdeal-carousel {
   padding-top: 22px; }
   .hotdeal-carousel .countdown-box {
@@ -266,6 +277,65 @@
     opacity: 0;
     visibility: hidden; }
 
+#footer .newsletter .addon-box:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 19px; }
+  #footer .newsletter .addon-box:nth-child(2) .addon-title h3 {
+    padding-bottom: 0;
+    margin-right: 18px;
+    text-transform: capitalize; }
+
+#footer .newsletter #newsletter_block_left .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ebebeb;
+  margin-bottom: 13px;
+  margin-top: 6px; }
+  #footer .newsletter #newsletter_block_left .form-group #newsletter-input {
+    height: 42px;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 0 18px; }
+  #footer .newsletter #newsletter_block_left .form-group button {
+    border: 0;
+    background: #fff;
+    height: 42px;
+    width: 100%; }
+    #footer .newsletter #newsletter_block_left .form-group button svg {
+      width: 24px;
+      height: 24px;
+      color: #333;
+      position: relative;
+      top: 3px;
+      -webkit-transition: .4s all;
+      -o-transition: .4s all;
+      transition: .4s all; }
+      #footer .newsletter #newsletter_block_left .form-group button svg:hover {
+        color: #48CAB2; }
+
+#footer .newsletter #newsletter_block_left p {
+  font-size: 14px;
+  line-height: 20px; }
+
+#social_block ul {
+  margin-bottom: 0; }
+  #social_block ul li {
+    display: inline-block;
+    margin-right: 20px; }
+    #social_block ul li a {
+      color: #d0d0d0 !important;
+      font-size: 20px !important; }
+      #social_block ul li a:hover {
+        color: #333 !important; }
+
 .module-group {
   width: 304px;
   padding: 30px; }
@@ -319,33 +389,6 @@
     display: block; }
   .module-group #_desktop_user_info .type-1 {
     display: none; }
-
-.logo-center .addon-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-#social_block.type-2 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 0; }
-  #social_block.type-2 ul li {
-    padding: 0 9px;
-    position: relative; }
-    #social_block.type-2 ul li a {
-      color: #141414; }
-      #social_block.type-2 ul li a:hover .tooltip-wrap {
-        opacity: 1;
-        -webkit-transform: translate(-50%, -50%) scale(1);
-        -ms-transform: translate(-50%, -50%) scale(1);
-        transform: translate(-50%, -50%) scale(1); }
 
 .top_menu_second .container {
   position: unset; }
@@ -445,6 +488,19 @@
   .jms-popup-content #newsletter_block_left button.btn-default.active {
     display: block; }
 
+.product-miniature .cart-button.checking .icon-cart {
+  display: none; }
+
+.product-miniature .cart-button:hover {
+  padding-left: 21px;
+  padding-right: 21px;
+  background: #333; }
+  .product-miniature .cart-button:hover .text-addcart, .product-miniature .cart-button:hover .text-outofstock, .product-miniature .cart-button:hover .text-added {
+    width: 100%;
+    font-size: 13px;
+    line-height: normal;
+    margin-left: 11px; }
+
 .owl-theme .owl-controls div::before {
   font-family: 'yanka';
   font-size: 23px;
@@ -521,9 +577,6 @@
 
 #product-modal .modal-dialog {
   width: 800px; }
-
-#thumbnails ul li {
-  margin-bottom: 10px; }
 
 #search_widget h3 {
   display: none; }
@@ -1388,12 +1441,6 @@ a.wishlist_top {
 .modal-dialog .product-cover .layer {
   display: none !important; }
 
-.product-preview button.cart-button:focus {
-  outline: none; }
-
-.jms-banner .banner-content p {
-  margin-bottom: 0; }
-
 .jmsflashsales-tab {
   border-top: 1px solid #ebebeb;
   padding-top: 36px;
@@ -1786,6 +1833,67 @@ a.wishlist_top {
 
 .google_plusone_iframe_widget {
   width: auto !important; }
+
+.page-index #footer {
+  margin-top: 10px; }
+
+#footer {
+  background: #f8f8f8; }
+  #footer .footer-top {
+    padding: 97px 0 70px; }
+  #footer .addon-title h3 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    padding: 0 0 18px 0;
+    position: relative;
+    text-align: left; }
+  #footer #tt-store p:first-child {
+    margin-bottom: 25px; }
+  #footer p {
+    font-size: 16px;
+    line-height: 23px; }
+  #footer ul li {
+    line-height: 20px; }
+    #footer ul li:first-child a {
+      padding-top: 0; }
+    #footer ul li a {
+      display: inline-block;
+      padding: 5px 0;
+      font-size: 16px;
+      line-height: 1.35;
+      color: #777; }
+      #footer ul li a:hover {
+        color: #48CAB2; }
+  #footer .footer-bottom {
+    padding-bottom: 70px; }
+    #footer .footer-bottom .copyright {
+      font-size: 14px;
+      margin-bottom: 16px; }
+      #footer .footer-bottom .copyright a {
+        position: relative;
+        color: #333 !important; }
+        #footer .footer-bottom .copyright a:hover::before {
+          width: 100%; }
+        #footer .footer-bottom .copyright a::before {
+          position: absolute;
+          bottom: 2px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '';
+          color: transparent;
+          background-color: #333;
+          height: 1px;
+          -webkit-transition: width 0.25s;
+          -o-transition: width 0.25s;
+          transition: width 0.25s; }
+    #footer .footer-bottom ul li {
+      display: inline-block;
+      margin-right: 9.5px; }
+      #footer .footer-bottom ul li a {
+        padding: 0; }
 
 @media (min-width: 992px) {
   .blog-item {

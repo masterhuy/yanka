@@ -143,6 +143,24 @@
 }
 //
 
+//jms banner
+.jms-banner{
+	position: relative;
+	overflow: hidden;
+	&:hover > a > img{
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	> a > img{
+		transition: transform 1s, -webkit-transform 1s;
+	}
+	.banner-content{
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
+//
+
 //hotdeal carousel
 .hotdeal-carousel{
   	padding-top: 22px;
@@ -337,6 +355,78 @@
 }
 //
 
+//newlletter
+#footer .newsletter{
+	.addon-box:nth-child(2){
+		display: flex;
+		align-items: center;
+		margin-top: 19px;
+		.addon-title h3{
+			padding-bottom: 0;
+			margin-right: 18px;
+			text-transform: capitalize;
+		}
+	}
+	#newsletter_block_left{
+		.form-group{
+			display: flex;
+			border: 1px solid #ebebeb;
+			margin-bottom: 13px;
+			margin-top: 6px;
+			#newsletter-input{
+				height: 42px;
+				border: 0;
+				margin: 0;
+				font-size: 16px;
+				font-weight: 800;
+				padding: 0 18px;
+			}
+			button{
+				border: 0;
+				background: #fff;
+				height: 42px;
+				width: 100%;
+				svg{
+					width: 24px;
+					height: 24px;
+					color: #333;
+					position: relative;
+					top: 3px;
+					transition: .4s all;
+					&:hover{
+						color: $active;
+					}
+				}
+			}
+		}
+		p{
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+
+//
+
+//social block footer
+#social_block{
+	ul{
+		margin-bottom: 0;
+		li{
+			display: inline-block;
+			margin-right: 20px;
+			a{
+				color: #d0d0d0 !important;
+				font-size: 20px !important;
+				&:hover{
+					color: #333 !important;
+				}
+			}
+		}
+	}
+}
+//
+
 //module group
 .module-group{
 	width: 304px;
@@ -413,36 +503,6 @@
 		}
 		.type-1{
 			display: none;
-		}
-	}
-}
-//
-
-//logo center
-.logo-center{
-	.addon-box{
-		display: flex;
-		justify-content: center;
-	}
-}
-//
-
-//social block inline
-#social_block.type-2{
-	ul{
-		display: flex;
-		justify-content: center;
-		margin-bottom: 0;
-		li{
-			padding: 0 9px;
-			position: relative;
-			a{
-				color: #141414;
-				&:hover .tooltip-wrap{
-					opacity: 1;
-					transform: translate(-50%, -50%) scale(1);
-				}
-			}
 		}
 	}
 }
@@ -562,6 +622,25 @@
 }
 //
 
+//product box
+.product-miniature .cart-button{
+	&.checking .icon-cart{
+		display: none;
+	}
+	&:hover{
+		padding-left: 21px;
+		padding-right: 21px;
+		background: #333;
+		.text-addcart, .text-outofstock, .text-added{
+			width: 100%;
+			font-size: 13px;
+			line-height: normal;
+			margin-left: 11px;
+		}
+	}
+}
+//
+
 //owl control
 .owl-theme .owl-controls div{
 	&::before{
@@ -660,10 +739,6 @@
 }
 //
 
-#thumbnails ul li{
-	margin-bottom: 10px;
-}
-
 //sidebar
 #search_widget h3{
 	display: none;
@@ -716,11 +791,13 @@
 }
 //
 
+//share button
 .addthis_inline_share_toolbox_ld1s::after {
 	content: "";
 	display: table;
 	clear: both;
 }
+//
 
 //product layout sticky
 .product-detail.sticky{
@@ -1630,16 +1707,6 @@ a.wishlist_top{
 		display: none !important;
 	}
 }
-.product-preview button.cart-button:focus{
-    outline: none;
-}
-.jms-banner{
-	.banner-content{
-		p{
-			margin-bottom: 0;
-		}
-	}
-}
 
 //flashsale tab
 .jmsflashsales-tab{
@@ -2126,6 +2193,77 @@ a.wishlist_top{
 .google_plusone_iframe_widget {
 	width: auto !important;
 }
+
+//footer
+.page-index #footer{
+	margin-top: 10px;
+}
+#footer{
+	background: #f8f8f8;
+	.footer-top{
+		padding: 97px 0 70px;
+	}
+	.addon-title h3{
+		font-size: 18px;
+		line-height: 26px;
+		color: #333333;
+		padding: 0 0 18px 0;
+		position: relative;
+		text-align: left;
+	}
+	#tt-store{
+		p:first-child{
+			margin-bottom: 25px;
+		}
+	}
+	p{
+		font-size: 16px;
+		line-height: 23px;
+	}
+	ul{
+		li{
+			line-height: 20px;
+			&:first-child a{
+				padding-top: 0;
+			}
+			a{
+				display: inline-block;
+				padding: 5px 0;
+				font-size: 16px;
+				line-height: 1.35;
+				color: #777;
+				&:hover{
+					color: $active;
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		padding-bottom: 70px;
+		.copyright{
+			font-size: 14px;
+			margin-bottom: 16px;
+			a{
+				position: relative;
+				color: #333 !important;
+				&:hover::before{
+					width: 100%;
+				}
+				@include underline(2, #333, 1)
+			}
+		}
+		ul{
+			li{
+				display: inline-block;
+				margin-right: 9.5px;
+				a{
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+//
 
 @media (min-width: 992px){
 	.blog-item{
