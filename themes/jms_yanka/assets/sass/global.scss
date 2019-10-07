@@ -28,6 +28,55 @@
 	}
 }
 //
+
+//popup adv
+.jms-popup{
+	.row{
+		margin: 0;
+	}
+	#newsletter_block_left{
+		.addon-title{
+			display: none;
+			&.popup{
+				display: block;
+			}
+		}
+		.form-group{
+			display: block !important;
+		}
+		button{
+			display: none;
+			&.btn-default{
+				display: block;
+				margin: auto;
+				font-size: 14px;
+			}
+		}
+	}
+	.dontshow label a{
+		position: relative;
+		@include underline(1, #333, 1);
+		&::before{
+			width: 100%;
+		}
+		&:hover{
+			color: #333;
+			&::before{
+				width: 0;
+			}
+		}
+	}
+	.content{
+		background: #ffffff url("../img/modal-discount-bg-01.jpg") 0 0 no-repeat;
+		background-size: 49% auto;
+		height: 100%;
+	}
+	.news_content + p{
+		display: none;
+	}
+}
+//
+
 //header
 .header{
 	.container-fluid > .row{
@@ -356,6 +405,11 @@
 //
 
 //newlletter
+#newsletter_block_left .form-group button{
+	&.btn-default{
+		display: none;
+	}
+}
 #footer .newsletter{
 	.addon-box:nth-child(2){
 		display: flex;
@@ -368,6 +422,9 @@
 		}
 	}
 	#newsletter_block_left{
+		.addon-title.popup{
+			display: none;
+		}
 		.form-group{
 			display: flex;
 			border: 1px solid #ebebeb;
@@ -598,39 +655,21 @@
 	}
 }
 
-//jms popup
-.jms-popup-content{
-	.icon-theme-153{
-		width: 30px;
-		height: 30px;
-	}
-	#newsletter_block_left{
-		.addon-title{
-			h3{
-				text-transform: uppercase;
-			}
-		}
-		button{
-			&.btn-default{
-				display: none;
-				&.active{
-					display: block;
-				}
-			}
-		}
-	}
-}
-//
-
 //product box
 .product-miniature .cart-button{
 	&.checking .icon-cart{
+		display: none;
+	}
+	&.checked .icon-cart{
 		display: none;
 	}
 	&:hover{
 		padding-left: 21px;
 		padding-right: 21px;
 		background: #333;
+		+ .content_price{
+			display: none;
+		}
 		.text-addcart, .text-outofstock, .text-added{
 			width: 100%;
 			font-size: 13px;
@@ -1118,19 +1157,49 @@
 }
 //
 
+//modal addtocart
 #blockcart-modal{
-	.modal-dialog{
-		margin: 0 auto;
+	#myModalLabel{
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 800;
+		color: #333333;
+		padding-bottom: 20px;
 	}
-	&.modal{
-		&.fade .modal-dialog{
-			transform: translate(0,20%);
+	.modal-body{
+		text-align: center;
+	}
+	.product-name{
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 400;
+		color: #333333;
+		margin: 17px 0 0 0;
+	}
+	.product-image{
+		width: 98px;
+	}
+	.cart-content{
+		p{
+			font-size: 18px;
+			color: $active;
+			font-weight: 800;
 		}
-		&.in .modal-dialog{
-			transform: translate(0,50%);
+		&.cart-products-count {
+			font-size: 16px;
+			color: #333;
 		}
+	}
+	button{
+		margin-bottom: 10px;
+	}
+	.btn-default{
+		display: block;
+		width: 100%;
 	}
 }
+///
+
 #product-modal{
 	.modal-dialog{
 		margin: 0 auto;
@@ -1974,53 +2043,48 @@ a.wishlist_top{
 }
 #cart_block{
 	display: flow-root;
-	&.open{
-		.bg-overlay{
-			opacity: 1;
-			visibility: visible;
-		}
-		.dropdown-menu{
-			right: 0;
-			left: auto;
-		}
-	}
-	.dropdown-menu{
-		position: fixed;
-		right: -270px;
-		top: 0;
-		width: 270px;
-		height: 100%;
-		left: auto;
-		padding: 0;
-	}
 	.btn-default{
 		text-align: center;
 		width: 100%;
 		margin-bottom: 20px;
 		white-space: nowrap;
 	}
-	.close-cart {
-	  position: absolute;
-	  right: 20px;
-	  top: 25px;
-	  cursor: pointer;
+	.cart-button{
+		text-align: center;
 	}
-	.quantity{
-		text-transform: uppercase;
-		letter-spacing: 0.8px;
-		font-size: 15px;
+	.view-cart {
+		display: inline-block;
+		text-align: center;
+		font-size: 14px;
+		color: #333;
+		font-weight: 800;
+		text-transform: capitalize;
+		margin-top: 2px;
+		position: relative;
+		line-height: normal;
+		@include underline(0, #333, 2)
+		&:hover::before{
+			width: 100%;
+		}
+	}
+	.title{
+		font-size: 18px;
+		color: #333;
+		font-weight: 800;
+	}
+	.remove_link {
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 	.cart_block_list {
 		padding-top: 17px;
+		padding-bottom: 3px;
 		.property-value{
-			color: $subcolor;
-			margin: 2px 0 10px;
+			margin: 2px 0 8px;
 			span{
-				position: relative;
-				&:not(:last-child)::after{
-					content: "/";
-					padding: 0 5px;
-				}
+				display: block;
+				line-height: 17px;
 			}
 		}
 	}

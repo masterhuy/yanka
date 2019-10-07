@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The significance of your webdesign for your SEO</title>
+    <link>https://www.prestashop.com/en/blog/significance-of-webdesign-SEO</link>
+    <description>Many have the misconception that SEO is just about having the right search words in the texts on your website.</description>
+     <pubDate>Fri, 04 Oct 2019 17:00:59 +0200</pubDate>
+ <dc:creator>bulldesign</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/significance-of-webdesign-SEO</guid>
+  </item>
+  <item>
     <title>What are the differences between migration, updating and upgrading?</title>
     <link>https://www.prestashop.com/en/blog/differences-migration-updating-upgrading</link>
     <description>When managing software as comprehensive as PrestaShop, knowing the differences between migration, update and upgrade concepts is essential.</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 21 Aug 2019 10:59:48 +0200</pubDate>
  <dc:creator>Méguy Solvet</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-1.7-migration-tips</guid>
-  </item>
-  <item>
-    <title>How to Set the Retail Price of a Product</title>
-    <link>https://www.prestashop.com/en/blog/set-retail-price-of-a-product</link>
-    <description>Do you know that setting the price of a product goes a long way in making your product a success? Most especially if you’re an eCommerce business owner.</description>
-     <pubDate>Mon, 19 Aug 2019 11:44:30 +0200</pubDate>
- <dc:creator>WebDesk</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/set-retail-price-of-a-product</guid>
   </item>
   </channel>
 </rss>

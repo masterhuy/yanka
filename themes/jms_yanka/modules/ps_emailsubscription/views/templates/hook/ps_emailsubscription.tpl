@@ -26,7 +26,11 @@
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
 		<div class="addon-title">
-			<h3>{l s='Subscribe to Our Newsletter! ' d='Shop.Theme.Global'}</h3>
+			<h3>{l s='Subscribe to Our Newsletter!' d='Shop.Theme.Global'}</h3>
+		</div>
+		<div class="addon-title popup">
+			<h3>{l s='Sign Up for Our Newsletter' d='Shop.Theme.Global'}</h3>
+			<span class="desc">{l s='Be the first to learn about our latest trends and get exclusive offers.' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
@@ -39,6 +43,9 @@
 									<path fill="currentColor" d="M0,4v16h24V4H0z M21,5.6L12,12L3,5.6H21z M1.6,18.4V6.6L12,14l10.4-7.4v11.8H1.6z"></path>
 								</svg>
 							</span>
+						</button>
+						<button class="btn-default" type="submit" name="submitNewsletter">
+							{l s='Subscribe!' d='Shop.Theme.Global'}
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>
