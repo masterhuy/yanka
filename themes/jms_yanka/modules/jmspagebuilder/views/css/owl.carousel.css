@@ -62,9 +62,8 @@
 .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
-  
-
 }
+
 .owl-carousel .owl-stage:after {
   content: ".";
   display: block;
@@ -90,9 +89,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-.owl-carousel.owl-loaded {
-  display: block;
 }
 .owl-carousel.owl-loaded {
   display: block;

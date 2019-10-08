@@ -1076,28 +1076,14 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
+
+
 	$(".addon-alertbox .close").click(function(){
 		$(".jms-row.alert-box").addClass("closed");
 	});
 
-	$('#cart_block .cart-icon').click(function(event) {
-		$('body').addClass('fixed');
-	});
-	$('.bg-overlay').click(function(event) {
-		$('body').removeClass('fixed');
-	});
-	$('.shoppingcart-box').click(function(event) {
-		$('body').removeClass('fixed');
-	});
-	
-
-
 	$("#jms_ajax_search .btn-search").click(function(event) {
 		$("body").addClass("open-search");
-	});
-
-	$("#product .thumbslist .product-cover .layer").click(function(event) {
-		$("body").removeClass("open-search");
 	});
 
 	$('.jms-addon.jms-video').click(function() {

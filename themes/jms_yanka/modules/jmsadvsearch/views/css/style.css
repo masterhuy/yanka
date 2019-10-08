@@ -109,6 +109,9 @@
     border: 2px solid #ebebeb;
     border-radius: 30px;
 }
+.jms-advsearch .input-group.keyword-group {
+    width: 100%;
+}
 .jms-advsearch .input-group-addon.icon-drop-down {
     border: 0;
     padding: 0;

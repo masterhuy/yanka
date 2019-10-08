@@ -80,7 +80,7 @@
 }
 .owl-dots .owl-dot {
 	display: inline-flex;
-	margin: 0 6px;
+	margin: 0 8px;
 }
 .owl-dot.active span {
 	background: #333 none repeat scroll 0 0;

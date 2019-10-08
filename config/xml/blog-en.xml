@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>End of the year special edition: The 2019 online shopping Calendar</title>
+    <link>https://www.prestashop.com/en/blog/2019-online-shopping-Calendar</link>
+    <description>The last 4 months of the year are very important, and are marked by important moments that cannot be ignored.</description>
+     <pubDate>Mon, 07 Oct 2019 16:04:53 +0200</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/2019-online-shopping-Calendar</guid>
+  </item>
+  <item>
     <title>The significance of your webdesign for your SEO</title>
     <link>https://www.prestashop.com/en/blog/significance-of-webdesign-SEO</link>
     <description>Many have the misconception that SEO is just about having the right search words in the texts on your website.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 23 Aug 2019 10:13:55 +0200</pubDate>
  <dc:creator>Invertus</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/better-creative-content-on-facebook-ads</guid>
-  </item>
-  <item>
-    <title>Six tips for successful migration to PrestaShop 1.7</title>
-    <link>https://www.prestashop.com/en/blog/prestashop-1.7-migration-tips</link>
-    <description>Migrating your e-commerce shop is an important step – but can sometimes be a tricky process. </description>
-     <pubDate>Wed, 21 Aug 2019 10:59:48 +0200</pubDate>
- <dc:creator>Méguy Solvet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-1.7-migration-tips</guid>
   </item>
   </channel>
 </rss>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-07 06:26:36
+/* Smarty version 3.1.33, created on 2019-10-08 05:36:56
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d9b12dcc4e881_20767014',
+  'unifunc' => 'content_5d9c58b82c2f10_57191797',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4cdfb4ec01c7f108b4781d3aa4b0a15e221a8ad0' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1570436602,
+      1 => 1570519467,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9b12dcc4e881_20767014 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9c58b82c2f10_57191797 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="cart-wrap clearfix">
 	<a class="preview-image" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -78,5 +78,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			</a>
 		</span>
 	</div>
-</div><?php }
+</div>
+
+<?php }
 }

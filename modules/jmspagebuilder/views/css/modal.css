@@ -264,6 +264,7 @@
 .jms-modal .media-preview {
 	display:block;
 	margin-bottom:20px;
+  height: auto;
 }
 .jms-modal .remove-media {
 	margin-left:10px;

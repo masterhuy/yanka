@@ -85,55 +85,6 @@
     .jms-row.alert-box .close:hover {
       color: #333; }
 
-#header .container-fluid {
-  padding-left: 50px;
-  padding-right: 50px; }
-
-.top-panel {
-  font-size: 14px;
-  border-bottom: 1px solid #ebebeb;
-  padding: 6px 0; }
-  .top-panel p {
-    margin-bottom: 0; }
-  .top-panel .call-us strong {
-    color: #333; }
-  .top-panel .content .content-item {
-    text-align: center; }
-    .top-panel .content .content-item p {
-      display: inline-block; }
-      .top-panel .content .content-item p strong {
-        color: #333; }
-    .top-panel .content .content-item .pt-link-underline {
-      color: #48CAB2;
-      font-weight: 800;
-      position: relative; }
-      .top-panel .content .content-item .pt-link-underline:hover::before {
-        width: 0; }
-      .top-panel .content .content-item .pt-link-underline::before {
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        content: '';
-        color: transparent;
-        background: #48CAB2;
-        height: 1px;
-        -webkit-transition: width 0.2s;
-        -o-transition: width 0.2s;
-        transition: width 0.2s; }
-  .top-panel .social ul {
-    margin-bottom: 0;
-    text-align: right; }
-    .top-panel .social ul li {
-      display: inline-block;
-      padding-left: 12px; }
-      .top-panel .social ul li a {
-        color: #777; }
-        .top-panel .social ul li a:hover {
-          color: #333; }
-
 .header .megamenu {
   display: -webkit-box;
   display: -ms-flexbox;
