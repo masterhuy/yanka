@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-01 03:23:04
+/* Smarty version 3.1.33, created on 2019-10-10 06:22:40
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d92fed8b1e628_42418037',
+  'unifunc' => 'content_5d9f06709a9eb4_06538465',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fc68b8321c84c01c2298177b834a3e3bdcf4494a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1569830262,
+      1 => 1570174957,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d92fed8b1e628_42418037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9f06709a9eb4_06538465 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -82,24 +82,24 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <?php
 }
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
-if ($_smarty_tpl->tpl_vars['settingpanel']->value) {?>
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+<div class="back-to-top" id="back-to-top" title="Back to top">
+	<i class="d-flex flex-center">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+			<g>
+				<polygon fill="currentColor" points="20.9,17.1 12.5,8.6 4.1,17.1 2.9,15.9 12.5,6.4 22.1,15.9"></polygon>
+			</g>
+		</svg>
+	</i>
+</div>
+<?php if ($_smarty_tpl->tpl_vars['settingpanel']->value) {?>
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
 	<a id="jmstools-arrow" class="pull-right">
-		<i class="d-flex cog">
-			<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-301"
-					viewBox="0 0 24 18">
-				<path d="M13.065 5.949L12.27 5.8c-.868-.183-1.23-1.181-.669-1.839l.526-.587c.435-.497.37-1.183-.132-1.546l-.874-.71C10.6.7 9.884.761 9.503 1.241l-.525.587c-.562.657-1.688.442-1.975-.346L6.735.747C6.525.17 5.858-.139 5.254.061l-1.1.365c-.605.201-.928.838-.717 1.416l.248.683c.287.788-.456 1.624-1.324 1.44l-.774-.095c-.665-.133-1.248.296-1.351.86L.01 5.806c-.084.617.31 1.192.92 1.343l.794.15c.849.13 1.23 1.18.65 1.786l-.526.587c-.435.497-.37 1.183.131 1.546l.875.71c.521.417 1.238.355 1.619-.124l.545-.534c.561-.658 1.687-.443 1.974.346l.268.735c.21.578.877.887 1.482.686l1.1-.365c.604-.2.927-.838.716-1.416l-.248-.683c-.287-.788.457-1.624 1.324-1.44l.794.148c.664.133 1.248-.296 1.35-.86l.225-1.076c.065-.67-.33-1.245-.94-1.396zM7.763 8.651c-1.21.401-2.543-.216-2.964-1.372-.42-1.156.225-2.43 1.434-2.832 1.21-.401 2.544.216 2.964 1.372.42 1.156-.225 2.43-1.434 2.832z"
-						fill="#fff"/>
-				<path d="M23.184 11.825l-.681-.132c-.746-.16-1.06-1.026-.58-1.593l.45-.507c.371-.43.313-1.023-.118-1.339l-.753-.618c-.449-.361-1.064-.31-1.389.104l-.45.506c-.48.568-1.446.378-1.695-.305l-.232-.637c-.182-.501-.755-.77-1.274-.598l-.942.313a.95.95 0 0 0-.611 1.223l.215.592c.249.683-.386 1.405-1.132 1.244l-.665-.086c-.57-.117-1.07.253-1.156.741l-.19.93a1.06 1.06 0 0 0 .794 1.166l.682.131c.728.116 1.06 1.027.563 1.549l-.45.506c-.371.43-.314 1.023.118 1.34l.753.617c.449.361 1.064.31 1.388-.104l.467-.46c.48-.568 1.446-.379 1.695.304l.232.638c.182.501.756.77 1.274.598l.942-.313a.95.95 0 0 0 .611-1.223l-.215-.592c-.248-.684.387-1.405 1.132-1.244l.682.131c.57.117 1.07-.253 1.156-.74l.19-.931c.053-.58-.287-1.08-.81-1.211zm-4.542 2.324c-1.036.344-2.183-.195-2.547-1.196-.365-1.002.185-2.104 1.222-2.448 1.037-.344 2.183.194 2.548 1.196.364 1.002-.186 2.103-1.223 2.447z"
-						fill="#fff"/>
-			</svg>
+		<i class="conf">
+			<svg width="16" height="16" viewBox="0 0 16 16" fill="none"> <path d="M13.1719 4.95312L14.7188 3.40625L12.5938 1.28125L11.0469 2.82813C10.8073 2.69271 10.5573 2.57292 10.2969 2.46875C10.0365 2.35417 9.77083 2.26562 9.5 2.20312V0H6.5V2.20312C6.22917 2.26562 5.96354 2.35417 5.70313 2.46875C5.44271 2.57292 5.19271 2.69271 4.95312 2.82813L3.40625 1.28125L1.28125 3.40625L2.82813 4.95312C2.69271 5.19271 2.56771 5.44271 2.45312 5.70313C2.34896 5.96354 2.26562 6.22917 2.20312 6.5H0V9.5H2.20312C2.26562 9.77083 2.34896 10.0365 2.45312 10.2969C2.56771 10.5573 2.69271 10.8073 2.82813 11.0469L1.28125 12.5938L3.40625 14.7188L4.95312 13.1719C5.19271 13.3073 5.44271 13.4323 5.70313 13.5469C5.96354 13.651 6.22917 13.7344 6.5 13.7969V16H9.5V13.7969C9.77083 13.7344 10.0365 13.651 10.2969 13.5469C10.5573 13.4323 10.8073 13.3073 11.0469 13.1719L12.5938 14.7188L14.7188 12.5938L13.1719 11.0469C13.3073 10.8073 13.4271 10.5573 13.5313 10.2969C13.6458 10.0365 13.7344 9.77083 13.7969 9.5H16V6.5H13.7969C13.7344 6.22917 13.6458 5.96354 13.5313 5.70313C13.4271 5.44271 13.3073 5.19271 13.1719 4.95312ZM8 10.5C7.3125 10.5 6.72396 10.2552 6.23438 9.76562C5.74479 9.27604 5.5 8.6875 5.5 8C5.5 7.3125 5.74479 6.72396 6.23438 6.23438C6.72396 5.74479 7.3125 5.5 8 5.5C8.6875 5.5 9.27604 5.74479 9.76562 6.23438C10.2552 6.72396 10.5 7.3125 10.5 8C10.5 8.6875 10.2552 9.27604 9.76562 9.76562C9.27604 10.2552 8.6875 10.5 8 10.5Z" fill="white"></path> </svg>
 		</i>
-		<i class="d-flex close-cog">
-			<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-164"
-					viewBox="0 0 24 24">
-				<path d="M19.583 4.965a.65.65 0 0 1-.176.449l-6.445 6.426 6.445 6.426c.117.131.176.28.176.449a.65.65 0 0 1-.176.449.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127l-6.426-6.445-6.426 6.445a.846.846 0 0 1-.215.127.596.596 0 0 1-.468 0 .846.846 0 0 1-.215-.127.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449l6.445-6.426-6.445-6.426a.65.65 0 0 1-.176-.449c0-.169.059-.318.176-.449a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176l6.426 6.445 6.426-6.445a.652.652 0 0 1 .449-.176c.169 0 .319.059.449.176.117.13.176.28.176.449z"/>
-			</svg>
+		<i class="conf-close">
+			<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.4343 0.434315L0.434315 14.4343L1.56569 15.5657L15.5657 1.56569L14.4343 0.434315ZM0.434315 1.56569L14.4343 15.5657L15.5657 14.4343L1.56569 0.434315L0.434315 1.56569Z" fill="currentColor"></path> </svg>
 		</i>
 	</a>
 	<div id="setting-overlay"></div>
@@ -196,13 +196,15 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " />
 			
 			<div class="form-group btn-action">
-				<button type="submit" class="btn-default active" name="apply" value="1">Apply</button>
-				<a class="btn-default active" href="index.php?settingreset=1">Reset</a>
+				<button type="submit" class="btn-default" name="apply" value="1">Apply</button>
+				<a class="btn-default" href="index.php?settingreset=1">Reset</a>
 			</div>
 			<input type="hidden" name="settingpanel" value="1" />
 		</form>	
 	</div>
 </div>
+<?php }?>
+
+
 <?php }
-}
 }

@@ -35,91 +35,90 @@
 </script>
 <div class="addon-blog">
 	
-{if $addon_title}
-<div class="addon-title">
-	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
-</div>
-{/if}
-{if $addon_desc}
-<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
-{/if}
-{if $posts|@count gt 0}
-<div class="blog-carousel">	
-	{foreach from=$posts item=post}				
-		{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
-		{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}	
-		<div class="blog-item">
-			{if $post.link_video && ($show_media == '1')}
-				<div class="post-thumb">
-					{$post.link_video|escape:'htmlall':'UTF-8'}
+	{if $addon_title}
+	<div class="addon-title">
+		<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+	</div>
+	{/if}
+	{if $addon_desc}
+		<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
+	{/if}
+	{if $posts|@count gt 0}
+	<div class="blog-carousel">	
+		{foreach from=$posts item=post}				
+			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}
+			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}	
+			<div class="blog-item">
+				{if $post.link_video && ($show_media == '1')}
+					<div class="post-thumb">
+						{$post.link_video|escape:'htmlall':'UTF-8'}
+					</div>
+				{elseif $post.image && ($show_media == '1')}
+					<div class="post-thumb">
+						<a href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
+							<img src="{$image_url|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{$post.title|escape:'htmlall':'UTF-8'}" class="img-responsive" />
+						</a>
+					</div>
+				{/if}	
+				<div class="post-info">
+					<h4 class="post-title">
+						<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:60:'...'|escape:'htmlall':'UTF-8'}</a>
+					</h4>
+					<ul class="post-meta">
+						{if $show_category == '1'}
+							<li>
+								{l s='In' d='Modules.JmsPagebuilder'}
+								<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
+									{$post.category_name|escape:'html':'UTF-8'}
+								</a>
+							</li>
+						{/if}
+						{if $show_time == '1'}
+							<li class="time">
+								<span class="post-created">
+									{$post.created|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
+								</span>
+							</li>
+						{/if}
+						{if $show_nviews == '1'}
+							<li>
+								<span>
+									{$post.views|escape:'html':'UTF-8'}
+									{if $post.views > 0}
+										{l s='Views' d='Modules.JmsPagebuilder'}
+									{else}
+										{l s='View' d='Modules.JmsPagebuilder'}
+									{/if}
+								</span>
+							</li>
+						{/if}
+						{if $show_ncomments == '1'}		
+							<li>
+								<span>
+									{$post.comment_count|escape:'html':'UTF-8'} 
+									{if $post.comment_count > 0}
+										{l s='Comments' d='Modules.JmsPagebuilder'}
+									{else}
+										{l s='Comment' d='Modules.JmsPagebuilder'}
+									{/if}
+								</span>
+							</li>
+						{/if}
+					</ul>
+					
+					{if $show_introtext == '1'}	
+						<div class="post-intro">{$post.introtext nofilter}</div>	
+					{/if}
+					{if $show_readmore == '1'}	
+						<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
+							{l s='Read more' d='Modules.JmsPagebuilder'}
+						</a>	
+					{/if}
 				</div>
-			{elseif $post.image && ($show_media == '1')}
-				<div class="post-thumb">
-					<a href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
-						<img src="{$image_url|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{$post.title|escape:'htmlall':'UTF-8'}" class="img-responsive" />
-					</a>
-				</div>
-			{/if}	
-			<div class="post-info">
-				<h4 class="post-title">
-					<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:60:'...'|escape:'htmlall':'UTF-8'}</a>
-				</h4>
-				<ul class="post-meta">
-					{if $show_category == '1'}
-						<li>
-							{l s='In' d='Modules.JmsPagebuilder'}
-							<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
-								{$post.category_name|escape:'html':'UTF-8'}
-							</a>
-						</li>
-					{/if}
-					{if $show_time == '1'}
-						<li class="time">
-							<span class="post-created">
-								<span class="posted">{l s='on' d='Modules.JmsPagebuilder'}</span> 
-								{$post.created|escape:'html':'UTF-8'|date_format:'%b %e, %Y'}
-							</span>
-						</li>
-					{/if}
-					{if $show_nviews == '1'}
-						<li>
-							<span>
-								{$post.views|escape:'html':'UTF-8'}
-								{if $post.views > 0}
-									{l s='Views' d='Modules.JmsPagebuilder'}
-								{else}
-									{l s='View' d='Modules.JmsPagebuilder'}
-								{/if}
-							</span>
-						</li>
-					{/if}
-					{if $show_ncomments == '1'}		
-						<li>
-							<span>
-								{$post.comment_count|escape:'html':'UTF-8'} 
-								{if $post.comment_count > 0}
-									{l s='Comments' d='Modules.JmsPagebuilder'}
-								{else}
-									{l s='Comment' d='Modules.JmsPagebuilder'}
-								{/if}
-							</span>
-						</li>
-					{/if}
-				</ul>
-				
-				{if $show_introtext == '1'}	
-					<div class="post-intro">{$post.introtext nofilter}</div>	
-				{/if}
-				{if $show_readmore == '1'}	
-					<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
-						{l s='Read more' d='Modules.JmsPagebuilder'}
-					</a>	
-				{/if}
-			</div>
-		</div>		
-	{/foreach}	
-</div>	
-{/if}	
+			</div>		
+		{/foreach}	
+	</div>	
+	{/if}	
 
 </div>
 

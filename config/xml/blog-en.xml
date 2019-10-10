@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>What payment solutions should I offer on my online store?</title>
+    <link>https://www.prestashop.com/en/blog/choosing-a-online-payment-solution</link>
+    <description>Have you ever considered the importance of choosing the right payment method for your business, which is also convenient for your customers?</description>
+     <pubDate>Wed, 09 Oct 2019 16:34:07 +0200</pubDate>
+ <dc:creator>Méguy Solvet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/choosing-a-online-payment-solution</guid>
+  </item>
+  <item>
     <title>End of the year special edition: The 2019 online shopping Calendar</title>
     <link>https://www.prestashop.com/en/blog/2019-online-shopping-Calendar</link>
     <description>The last 4 months of the year are very important, and are marked by important moments that cannot be ignored.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 30 Aug 2019 12:11:01 +0200</pubDate>
  <dc:creator>shipstation</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/improve-customer-experience-retain-customers</guid>
-  </item>
-  <item>
-    <title>4 Tips for Better Creative Content on Facebook Ads</title>
-    <link>https://www.prestashop.com/en/blog/better-creative-content-on-facebook-ads</link>
-    <description>Facebook has more than 2.41 billion monthly active users who create, share and like different content each and every day. It’s one of the most used marketing tools for eCommerce industry.</description>
-     <pubDate>Fri, 23 Aug 2019 10:13:55 +0200</pubDate>
- <dc:creator>Invertus</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/better-creative-content-on-facebook-ads</guid>
   </item>
   </channel>
 </rss>
