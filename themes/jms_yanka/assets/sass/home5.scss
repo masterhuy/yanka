@@ -1,2 +1,108 @@
 @import "mixin";
 @import "varians";
+
+.search-no-popup{
+	display: flex;
+	.addon-box{
+		margin-right: 40px;
+		&:first-child{
+			padding-top: 4px;
+		}
+	}
+}
+
+.banner{
+	margin-top: 10px;
+	.container-fluid{
+		padding: 0 10px;
+	}
+	.row{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.layout-column{
+		padding: 0 5px;
+	}
+	&.type-1{
+		.jms-banner{
+			&:hover .banner-content p{
+				color: #fff;
+				background: $active;
+			}
+			.banner-content {
+				width: 100%;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				display: flex;
+				justify-content: center;
+				p{
+					background: #fff;
+					padding: 8px 33px;
+					font-weight: 800;
+					color: #333;
+					display: inline-block;
+					transition: all 0.2s;
+				}
+			}
+		}
+	}
+	&.type-2{
+		margin-top: 100px;
+		.jms-banner:hover .banner-content .pt-title-large::before{
+			width: 100%;
+		}
+		.banner-content{
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+			padding: 0 50px;
+			.pt-description-wrapper{
+				background: rgba(255,255,255,0.8);
+				padding: 50px 61px 57px;
+				text-align: center;
+				display: inline-block;
+			}
+			.pt-title-small{
+				font-size: 18px;
+				line-height: 26px;
+				font-weight: 800;
+				color: #333;
+			}
+			.pt-title-large{
+				font-size: 36px;
+				line-height: 43px;
+				font-weight: 800;
+				margin: 8px 0 0 0;
+				padding: 0;
+				position: relative;
+				display: inline-block;
+				color: #333;
+				@include underline(3, #333, 2)
+			}
+			p{
+				color: #777 !important;
+			}
+		}
+	}
+}
+.women, .men{
+	margin-top: 93px;
+	.owl-dots{
+		margin-top: -6px;
+	}
+}
+.jms-row.instagram{
+	.container-fluid{
+		padding: 0 10px;
+	}
+	.instagram-block{
+		margin: 0 -5px;
+		> div{
+			padding: 0 5px;
+		}
+	}
+}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-10 06:28:01
+/* Smarty version 3.1.33, created on 2019-10-11 04:47:09
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addontestimonial.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d9f07b1b90169_99323283',
+  'unifunc' => 'content_5da0418d4b2b23_63120559',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '45e9f9aed697b5ce589c595b18c9ed37cb44b893' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmspagebuilder\\views\\templates\\hook\\addontestimonial.tpl',
-      1 => 1570703249,
+      1 => 1570766668,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9f07b1b90169_99323283 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_yanka\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
-?>
-
-<?php echo '<script'; ?>
+function content_5da0418d4b2b23_63120559 (Smarty_Internal_Template $_smarty_tpl) {
+echo '<script'; ?>
  type="text/javascript">
 	var testi_items = 3,
 	    testi_itemsDesktop = <?php if ($_smarty_tpl->tpl_vars['items_show']->value) {
@@ -60,58 +57,36 @@ if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
 	<div class="testimonial_box">
 		<div class="testimonial-carousel">
 			<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['testimonials_slides']->value, 'testimonials_slide');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['testimonials_slide']->value) {
-?>
-				<div class="item">
-					<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['testimonials_slide']->value, 'testimonial');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['testimonials']->value, 'testimonial');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['testimonial']->value) {
-?>
-						<div class="testimonial-box">
-						<div class="testimonial-info">
-							<div class="testimonial-comment" >
-								<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['comment'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+?>	
+				<div class="testimonial-box">
+					<div class="box-content">
+						<div class="testimonial-comment" >
+							<?php echo $_smarty_tpl->tpl_vars['testimonial']->value['comment'];?>
 
-							</div>
-							<?php if ($_smarty_tpl->tpl_vars['show_time']->value) {?>
-								<div class="testimonial-date">
-									<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( smarty_modifier_date_format($_smarty_tpl->tpl_vars['testimonial']->value['posttime'],"%b %e, %Y"),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-
-								</div>
-							<?php }?>
 						</div>
-						<div class="testimonial-img">
-							<?php if ($_smarty_tpl->tpl_vars['show_image']->value) {?>
+						<?php if ($_smarty_tpl->tpl_vars['show_time']->value) {?>
+							<div class="testimonial-date">			
+								<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['posttime'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+			
+							</div>
+						<?php }?>
+					</div>
+					<div class="testimonial-author">
+						<?php if ($_smarty_tpl->tpl_vars['show_image']->value) {?>
+							<div class="testimonial-img">						
 								<img class="img-responsive" src="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['image_url']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 resized_<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['image'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['author'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-" />
-							<?php }?>
-							<div class="info_people">
-								<div class="testimonial-author">
-									<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['author'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-
-								</div>
-								<?php if ($_smarty_tpl->tpl_vars['show_office']->value) {?>
-									<span class="show_office">
-										<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['office'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-
-									</span>
-								<?php }?>
+" />					
 							</div>
-							<div class="id_testimonial">#<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['id_testimonial'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-</div>
-							
-						</div>
+						<?php }?>
+						<span><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['author'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+</span><?php if ($_smarty_tpl->tpl_vars['show_office']->value) {?> — <?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['office'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+ <?php }?>
 					</div>
-					<?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-				</div>
+				</div>	
 			<?php
 }
 }

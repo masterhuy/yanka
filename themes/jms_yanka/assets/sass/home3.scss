@@ -8,6 +8,10 @@
 	}
 	.jms-banner{
 		margin-bottom: 30px;
+		&:hover .banner-content p{
+			color: #fff;
+			background: $active;
+		}
 		.banner-content {
 			width: 100%;
 			left: 0;
@@ -15,16 +19,13 @@
 			bottom: 20px;
 			display: flex;
 			justify-content: center;
-			a{
+			p{
 				background: #fff;
 				padding: 8px 33px;
 				font-weight: 800;
 				color: #333;
 				display: inline-block;
-				&:hover{
-					color: #fff;
-					background: $active;
-				}
+				transition: all .2s;
 			}
 		}
 	}

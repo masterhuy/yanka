@@ -1661,6 +1661,7 @@ table td[class*="col-"], table table th[class*="col-"] {
   line-height: 44px;
   background: #48CAB2;
   font-weight: 800;
+  transition: all .2s;
 }
 .btn-default.disabled,
 .btn-default[disabled] {
@@ -3946,6 +3947,9 @@ footer .post-title {
 .hotdeal-carousel{
   padding-top: 22px;
 }
+.testimonial-carousel{
+  padding-top: 32px;
+}
 .producttab-carousel .owl-dots,
 .hotdeal-carousel .owl-dots{
   margin-top: -4px;
@@ -4070,75 +4074,6 @@ footer .blog-carousel {
 .banner-style3 .banner-box {
   text-align: center; }
 
-/*Testimonial*/
-.testimonial{
-  padding: 132px 0 147px;
-}
-.id_testimonial {
-  font-size: 70px;
-  font-weight: 700;
-  color: rgba(34,34,34,0.12);
-  margin-left: 27px;
-  line-height: normal;
-  position: absolute;
-  right: 0;
-  top: -14px;
-}
-#testimonial {
-  margin-top: 4px;
-}
-.testimonial-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 5px;
-}
-.testimonial-carousel {
-  text-align: left;
-}
-.testimonial-comment {
-  font-size: 16px;
-  line-height: 1.85;
-  position: relative;
-  padding-left: 19px;
-}
-.testimonial-comment::before {
-  content: " “ ";
-  font-size: 30px;
-  font-weight: 900;
-  position: absolute;
-  top: -9px;
-  left: -2px;
-  color: #7cbb2c;
-}
-.testimonial-author {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.2px; }
-
-.show_office {
-  font-size: 14px;
-  color: #888;
-  letter-spacing: 0.3px;
-}
-.testimonial-box .img-responsive {
-  width: 54px !important;
-  height: 54px;
-}
-
-.tesimonial_other .testimonial-carousel {
-  background: #f3f4f5; }
-
-.testimonial_other .testimonial-carousel {
-  background: #f3f4f5 none repeat scroll 0 0;
-  padding: 50px 0;
-  text-align: center; }
-
-.testimonial-img {
-  display: inline-flex;
-  margin-top: 22px;
-  position: relative;
-  width: 100%;
-}
 
 /*back to top*/
 .back-to-top {

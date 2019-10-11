@@ -23,21 +23,27 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="addon-instagram">
-	<div class="addon-title">
-		<h3>
-			<a href="https://www.instagram.com/shellatemplate" target="_blank">
-				<span class="text-underline">{l s='@Shella' d='Modules.JmsPagebuilder'}</span>
-				{l s='Follow Us On Instagram' d='Modules.JmsPagebuilder'}
-			</a>
-		</h3>
-	</div>
-	<div class="instagram-carousel">
-		{foreach from=$insta_images item=img}
-			<a class="grouped_elements" data-fancybox-group="gallery" target="_blank" href="{$img.link nofilter}">
-				<img src="{$img.url nofilter}" alt="{l s='Instagram Image' d='Modules.JmsPagebuilder'}"/>
-			</a>
-		{/foreach}
-	</div>
+{if $addon_title}
+<div class="addon-title title-blog">
+    <h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
 </div>
+{/if}
+{if $addon_desc}
+<p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
+{/if}
+<div class="instagram_block">
+    <div class="instagram-block" data-index="{$index}">
+
+    </div>
+</div>
+<script type="text/javascript">
+    if (window.blockInstaSettings === undefined)
+        window.blockInstaSettings = [];
+    	window.blockInstaSettings[{$index}] = {
+        clientId      : '{$clientid}',
+        accessToken   : '{$token}',
+        userId        : '{$username}',
+        count         : {$count},
+    };
+</script>
 

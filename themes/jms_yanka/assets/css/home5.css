@@ -1,0 +1,105 @@
+.search-no-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-no-popup .addon-box {
+    margin-right: 40px; }
+    .search-no-popup .addon-box:first-child {
+      padding-top: 4px; }
+
+.banner {
+  margin-top: 10px; }
+  .banner .container-fluid {
+    padding: 0 10px; }
+  .banner .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .banner .layout-column {
+    padding: 0 5px; }
+  .banner.type-1 .jms-banner:hover .banner-content p {
+    color: #fff;
+    background: #48CAB2; }
+  .banner.type-1 .jms-banner .banner-content {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .banner.type-1 .jms-banner .banner-content p {
+      background: #fff;
+      padding: 8px 33px;
+      font-weight: 800;
+      color: #333;
+      display: inline-block;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+  .banner.type-2 {
+    margin-top: 100px; }
+    .banner.type-2 .jms-banner:hover .banner-content .pt-title-large::before {
+      width: 100%; }
+    .banner.type-2 .banner-content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      padding: 0 50px; }
+      .banner.type-2 .banner-content .pt-description-wrapper {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 50px 61px 57px;
+        text-align: center;
+        display: inline-block; }
+      .banner.type-2 .banner-content .pt-title-small {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 800;
+        color: #333; }
+      .banner.type-2 .banner-content .pt-title-large {
+        font-size: 36px;
+        line-height: 43px;
+        font-weight: 800;
+        margin: 8px 0 0 0;
+        padding: 0;
+        position: relative;
+        display: inline-block;
+        color: #333; }
+        .banner.type-2 .banner-content .pt-title-large::before {
+          position: absolute;
+          bottom: 3px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '';
+          color: transparent;
+          background-color: #333;
+          height: 2px;
+          -webkit-transition: width 0.25s;
+          -o-transition: width 0.25s;
+          transition: width 0.25s; }
+      .banner.type-2 .banner-content p {
+        color: #777 !important; }
+
+.women, .men {
+  margin-top: 93px; }
+  .women .owl-dots, .men .owl-dots {
+    margin-top: -6px; }
+
+.jms-row.instagram .container-fluid {
+  padding: 0 10px; }
+
+.jms-row.instagram .instagram-block {
+  margin: 0 -5px; }
+  .jms-row.instagram .instagram-block > div {
+    padding: 0 5px; }

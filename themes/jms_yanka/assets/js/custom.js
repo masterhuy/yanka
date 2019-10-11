@@ -701,7 +701,7 @@ jQuery(function ($) {
 				}
 			},
 				rtl: rtl,
-				margin: 0,
+				margin: 30,
 				nav: p_nav_testi,
 		        dots: p_pag_testi,
 				autoplay:auto_play_testi,
@@ -710,7 +710,7 @@ jQuery(function ($) {
 		});
 	}
 
-    if($(".hotdeal-carousel").length) {		
+    if($(".hotdeal-carousel").length) {
 		var hotdealCarousel = $(".hotdeal-carousel");			
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;				

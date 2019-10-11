@@ -230,7 +230,8 @@
         transition: width 0.25s; }
     .banner-type-2 .banner-content .text-2 {
       font-size: 18px;
-      line-height: 28px; }
+      line-height: 28px;
+      color: #777; }
 
 .special-offer {
   margin-top: 93px; }
@@ -292,4 +293,5 @@
         -o-transition: width 0.25s;
         transition: width 0.25s; }
     .banner-type-3 .banner-content .text-3 {
-      margin-bottom: 36px; }
+      margin-bottom: 36px;
+      color: #777; }

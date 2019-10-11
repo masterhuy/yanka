@@ -1,44 +1,42 @@
 
-    $(document).ready(function() {
-    /* Apply fancybox to multiple items */
-        let blockInstaSettings = window.blockInstaSettings;
-        insta_container = $(".instagram_block .instagram-carousel");
-        insta_container.each((key, e) => {
-            let index = $(e).data('index');
-            $(e).instagram({
-                accessToken: blockInstaSettings[index].accessToken
-                , clientId: blockInstaSettings[index].clientId
-                // , hash: hash
-                , userId: blockInstaSettings[index].userId
-                // , next_url: insta_next_url
-                , show: blockInstaSettings[index].count
-                // , image_size: image_size
-                , onComplete: function (photos, data) {
-                    // $(e).fancybox();
-                    console.log(e, index);
-                    $(e).owlCarousel({
-                        responsiveClass:true,
-                        responsive:{
-                            1199:{
-                                items:blockInstaSettings[index].count//{$count|escape:'htmlall':'UTF-8'}
-                            },
-                            991:{
-                                items:5
-                            },
-                            768:{
-                                items:3
-                            },
-                            318:{
-                                items:2
-                            }
+$(document).ready(function() {
+/* Apply fancybox to multiple items */
+    let blockInstaSettings = window.blockInstaSettings;
+    insta_container = $(".instagram_block .instagram-carousel");
+    insta_container.each((key, e) => {
+        let index = $(e).data('index');
+        $(e).instagram({
+            accessToken: blockInstaSettings[index].accessToken
+            , clientId: blockInstaSettings[index].clientId
+            // , hash: hash
+            , userId: blockInstaSettings[index].userId
+            // , next_url: insta_next_url
+            , show: blockInstaSettings[index].count
+            // , image_size: image_size
+            , onComplete: function (photos, data) {
+                // $(e).fancybox();
+                console.log(e, index);
+                $(e).owlCarousel({
+                    responsiveClass:true,
+                    responsive:{
+                        1199:{
+                            items:blockInstaSettings[index].count//{$count|escape:'htmlall':'UTF-8'}
                         },
-                    });
-                }
-            });
-        })
-    });
-
-
+                        991:{
+                            items:5
+                        },
+                        768:{
+                            items:3
+                        },
+                        318:{
+                            items:2
+                        }
+                    },
+                });
+            }
+        });
+    })
+});
 
 (function ($) {
     $.fn.instagram = function (options) {

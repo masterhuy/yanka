@@ -560,7 +560,7 @@ class JmsTestimonials extends Module implements WidgetInterface
 
             foreach ($languages as $language) {
                 $tes->office[$language['id_lang']] = Tools::getValue('office_'.$language['id_lang']);
-                $tes->comment[$language['id_lang']] = strip_tags(Tools::getValue('comment_'.$language['id_lang']));
+                $tes->comment[$language['id_lang']] = Tools::getValue('comment_'.$language['id_lang']);
             }
 
             /* Processes if no errors  */
