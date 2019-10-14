@@ -907,7 +907,7 @@ jQuery(function ($) {
 				}
 			},
 				rtl: rtl,
-				margin: 0,
+				margin: 30,
 				nav: p_nav_brand,
 		        dots: p_pag_brand,
 				autoplay:auto_play_brand,

@@ -181,14 +181,14 @@
 .jms-popup-content  .block_c_right .newsletter-input , .jms-popup-content .newsletter-btn.buttonh1{
     width: 100%;
 }
-.jms-popup-content .block_c_right #newsletter-input {
+.jms-popup-content #newsletter_block_left .form-group #newsletter-input {
   font-size: 14px;
   height: 44px;
   width: 100%;
   padding: 0 18px;
   margin-bottom: 78px;
   font-weight: 800;
-  border-color: #ebebeb;
+  border: 1px solid #ebebeb;
 }
 .input_popup::-webkit-input-placeholder {
   color: #777 !important;

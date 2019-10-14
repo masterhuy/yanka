@@ -1,0 +1,92 @@
+.header {
+  padding: 17px 0 0; }
+  .header .logo > span {
+    padding-bottom: 0; }
+
+.left-module-header {
+  top: 3px; }
+  .left-module-header .addon-box {
+    margin-right: 7px; }
+
+.right-module-header {
+  top: 5px; }
+  .right-module-header .addon-box:last-child {
+    margin-left: 17px;
+    margin-right: 0; }
+
+.ajax_cart_quantity {
+  right: -4px; }
+
+.jms-megamenu .nav > li > a {
+  line-height: 64px; }
+
+.banner {
+  margin-top: 10px; }
+  .banner .container-fluid {
+    padding: 0 10px; }
+  .banner .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .banner .layout-column {
+    padding: 0 5px; }
+  .banner .jms-banner:hover .banner-content p {
+    color: #fff;
+    background: #48CAB2; }
+  .banner .jms-banner .banner-content {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .banner .jms-banner .banner-content p {
+      background: #fff;
+      padding: 8px 33px;
+      font-weight: 800;
+      color: #333;
+      display: inline-block;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+
+.top-product {
+  margin-top: 93px; }
+  .top-product .product-carousel {
+    padding-top: 32px; }
+
+.brand-carousel {
+  padding-bottom: 108px; }
+
+.page-index #footer {
+  margin-top: 0; }
+
+#footer {
+  padding-top: 97px;
+  text-align: center; }
+  #footer .addon-title h3 {
+    text-align: center; }
+  #footer #newsletter_block_left .form-group {
+    width: 570px;
+    margin: auto; }
+  #footer .news_content {
+    margin: 6px 0 12px; }
+    #footer .news_content + p {
+      font-size: 14px; }
+  #footer #social_block {
+    margin-top: 17px; }
+    #footer #social_block ul li {
+      margin: 0;
+      margin: 0 10px; }
+  #footer .footer-bottom {
+    margin-top: 44px; }
+    #footer .footer-bottom .copyright {
+      margin-bottom: 29px; }
+    #footer .footer-bottom ul li {
+      margin: 0;
+      margin: 0 4.75px; }

@@ -25,3 +25,10 @@ e93048,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common
 bcae92,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=b0wUuWJUHFZvvy3euOAy-XizfR_tC7dfkR3fG9ikv0Q&rand=1570789449889,1570789451,,200
 6a1f9c,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=b0wUuWJUHFZvvy3euOAy-XizfR_tC7dfkR3fG9ikv0Q&rand=1570789571304,1570789572,,200
 ccae61,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=b0wUuWJUHFZvvy3euOAy-XizfR_tC7dfkR3fG9ikv0Q&rand=1570789692262,1570789693,,200
+7bf91d,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=b0wUuWJUHFZvvy3euOAy-XizfR_tC7dfkR3fG9ikv0Q&rand=1570789813242,1570789814,,200
+86b355,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=b0wUuWJUHFZvvy3euOAy-XizfR_tC7dfkR3fG9ikv0Q&rand=1570789934115,1570789934,,200
+46f1c1,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=b0wUuWJUHFZvvy3euOAy-XizfR_tC7dfkR3fG9ikv0Q&rand=1570790054960,1570790055,,200
+9ed7a6,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=b0wUuWJUHFZvvy3euOAy-XizfR_tC7dfkR3fG9ikv0Q&rand=1570790175771,1570790176,,200
+dc3603,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/common/notifications?_token=G1y_a6Iq3DzWC5I97v-5JHt4OVQMSDS7Ct8SVbO4MTQ&rand=1571017728621,1571017734,,200
+0d76e5,127.0.0.1,GET,http://localhost/jms_yanka/admin35718dncn/index.php/?controller=AdminAjaxFaviconBO&token=ecee7a0b901133f4260cd85f76037947,1571017744,,200
+bba2a8,127.0.0.1,POST,http://localhost/jms_yanka/admin35718dncn/index.php/?controller=AdminAjaxFaviconBO&token=ecee7a0b901133f4260cd85f76037947,1571017744,,500

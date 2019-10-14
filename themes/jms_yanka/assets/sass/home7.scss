@@ -1,2 +1,124 @@
 @import "mixin";
 @import "varians";
+
+.header{
+	padding: 18px 0;
+}
+.search-no-popup #jms_ajax_search{
+	#ajax_search{
+		width: 441px;
+	}
+	.modal-content{
+		display: flex;
+		justify-content: center;
+	}
+}
+.menu{
+	background: #333;
+	.buy-theme{
+		p{
+			line-height: 40px;
+			margin-bottom: 0;
+			text-align: right;
+			a{
+				text-transform: uppercase;
+				color: $active;
+				font-size: 13px;
+				font-weight: 800;
+				position: relative;
+				letter-spacing: 0.7px;
+				@include underline(-5, $active, 2)
+				&:hover::before{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.jms-megamenu .nav > li{
+	&.sub-home{
+		padding-left: 0;
+	}
+	> a{
+		line-height: 40px;
+		color: #fff;
+	}
+}
+.jms-row.banner{
+	margin-top: 10px;
+	.container-fluid{
+		padding: 0 10px;
+	}
+	.row{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.layout-column{
+		padding: 0 5px;
+	}
+	.jms-banner{
+		&:hover .banner-content p::before{
+			width: 100%;
+		}
+	}
+	.banner-content{
+		top: 32px;
+		left: 38px;
+		p{
+			font-size: 24px;
+			line-height: 35px;
+			font-weight: 800;
+			color: #333;
+			position: relative;
+			display: inline-block;
+			&.color-white{
+				@include underline(5, #fff, 2)
+			}
+			@include underline(5, #333, 2)
+		}
+	}
+}
+.brand-carousel {
+	padding: 100px 0;
+}
+.page-index #footer{
+	margin-top: 8px;
+}
+#footer{
+	.footer-top{
+		padding-bottom: 81px;
+		.logo > span{
+			padding-top: 5px;
+			padding-bottom: 14px;
+		}
+		.social{
+			.addon-box:nth-child(3){
+				display: flex;
+				align-items: center;
+				margin-top: 18px;
+				.addon-title h3{
+					text-transform: capitalize;
+					padding: 0;
+				}
+				#social_block{
+					margin-left: 18px;
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		p{
+			float: left;
+			margin: 0;
+		}
+		ul{
+			float: right;
+			margin-bottom: 0;
+			padding-top: 4px;
+			li{
+				margin-right: 0;
+				margin-left: 9.5px;
+			}
+		}
+	}
+}

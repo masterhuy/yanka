@@ -60,11 +60,13 @@ $(document).ready(function() {
 
             if (blockInstaSettings.embedSite) {
                 innerHtml
+                    .attr('target', '_blank')
                     .attr('href', photo.link + 'embed')
                     .attr('data-fancybox-type', 'iframe');
             } else {
                 innerHtml
-                    .attr('href', photo.images.standard_resolution.url)
+                    .attr('target', '_blank')
+                    .attr('href', photo.link)
                     .attr('title', caption);
             };
 
@@ -75,8 +77,8 @@ $(document).ready(function() {
                     .attr('src', url));
                 
             innerHtml
-                .append($('<span>').addClass('number-likes fa fa-heart-o').html(photo.likes.count))
-                .append('<span class="number-comments fa fa-comments-o"><i class="insta_heart"></i> ' + photo.comments.count +'</span>');
+                //.append($('<span>').addClass('number-likes fa fa-heart-o').html(photo.likes.count))
+                .append('<div class="info-block">' + '<span class="number-likes fa fa-heart-o">' + photo.likes.count +'</span>' + '<span class="number-comments fa fa-comments-o"><i class="insta_heart"></i> ' + photo.comments.count +'</span>' + '</div>');
 
             var MAX_CAPTION_LEN = 70;
             var title = caption.substring(0, MAX_CAPTION_LEN)

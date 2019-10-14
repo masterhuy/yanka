@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Why the search engine in your web shop is important</title>
+    <link>https://www.prestashop.com/en/blog/search-engine-on-your-site-important</link>
+    <description>Most web shops have an internal search engine. A search engine is useful for your visitors, so they have the option of quickly finding the products they are looking for.</description>
+     <pubDate>Fri, 11 Oct 2019 14:32:12 +0200</pubDate>
+ <dc:creator>bulldesign</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/search-engine-on-your-site-important</guid>
+  </item>
+  <item>
     <title>What payment solutions should I offer on my online store?</title>
     <link>https://www.prestashop.com/en/blog/choosing-a-online-payment-solution</link>
     <description>Have you ever considered the importance of choosing the right payment method for your business, which is also convenient for your customers?</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 02 Sep 2019 12:05:40 +0200</pubDate>
  <dc:creator>iPresta</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/content-tips-to-increase-conversion-rate</guid>
-  </item>
-  <item>
-    <title>5 Ways to Improve Customer Experience and Retain Customers</title>
-    <link>https://www.prestashop.com/en/blog/improve-customer-experience-retain-customers</link>
-    <description>In the world of ecommerce, everything accelerates quickly and nothing stays the same for very long.</description>
-     <pubDate>Fri, 30 Aug 2019 12:11:01 +0200</pubDate>
- <dc:creator>shipstation</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/improve-customer-experience-retain-customers</guid>
   </item>
   </channel>
 </rss>

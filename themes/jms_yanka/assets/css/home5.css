@@ -96,10 +96,68 @@
   .women .owl-dots, .men .owl-dots {
     margin-top: -6px; }
 
-.jms-row.instagram .container-fluid {
-  padding: 0 10px; }
+.jms-row.instagram {
+  margin-top: 93px; }
+  .jms-row.instagram .container-fluid {
+    padding: 0 10px; }
+  .jms-row.instagram .instagram-block {
+    margin: 0 -5px; }
+    .jms-row.instagram .instagram-block > div {
+      padding: 0 5px; }
+  .jms-row.instagram .addon-title {
+    padding-bottom: 22px; }
+    .jms-row.instagram .addon-title a {
+      position: relative;
+      color: #48CAB2; }
+      .jms-row.instagram .addon-title a::before {
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background-color: #48CAB2;
+        height: 2px;
+        -webkit-transition: width 0.25s;
+        -o-transition: width 0.25s;
+        transition: width 0.25s; }
+      .jms-row.instagram .addon-title a::before {
+        width: 100%; }
+      .jms-row.instagram .addon-title a:hover::before {
+        width: 0; }
 
-.jms-row.instagram .instagram-block {
-  margin: 0 -5px; }
-  .jms-row.instagram .instagram-block > div {
-    padding: 0 5px; }
+#footer {
+  padding-top: 100px; }
+  #footer .footer-top {
+    padding: 54px 0 65px; }
+  #footer .newsletter .addon-title {
+    margin-right: 44px; }
+    #footer .newsletter .addon-title h3 {
+      padding-bottom: 0; }
+  #footer .newsletter #newsletter_block_left p {
+    display: none; }
+  #footer .newsletter #newsletter_block_left .form-group {
+    margin: 0;
+    width: 469px; }
+  #footer .newsletter .block_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #footer .newsletter .social {
+    line-height: 44px; }
+    #footer .newsletter .social .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    #footer .newsletter .social .addon-title {
+      margin-right: 18px; }
+      #footer .newsletter .social .addon-title h3 {
+        text-transform: capitalize; }
