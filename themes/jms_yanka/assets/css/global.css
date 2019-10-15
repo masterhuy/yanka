@@ -1951,22 +1951,29 @@ a.wishlist_top {
     transition: transform 1s, -webkit-transform 1s; }
 
 .ver_menu {
-  background: #fff;
-  color: #010101;
-  line-height: 50px;
+  background: #48CAB2;
+  color: #fff;
+  line-height: 40px;
   margin-bottom: 0;
   padding: 0 17px;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.2px;
+  font-weight: 800;
   cursor: pointer;
-  border-radius: 3px;
   position: relative; }
-  .ver_menu img {
-    position: absolute;
-    right: 20px;
-    top: 16px; }
+  .ver_menu .pt-icon i {
+    display: none; }
+    .ver_menu .pt-icon i.open-icon svg {
+      width: 24px;
+      height: 24px; }
+    .ver_menu .pt-icon i.close-icon {
+      display: inline-block; }
+      .ver_menu .pt-icon i.close-icon svg {
+        width: 24px; }
+  .ver_menu.collapsed i {
+    display: inline-block; }
+    .ver_menu.collapsed i.close-icon {
+      display: none; }
 
 .banner-product .container-fluid > .row {
   margin: 0 -10px; }

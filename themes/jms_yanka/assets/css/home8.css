@@ -1,0 +1,107 @@
+.header {
+  padding: 18px 0; }
+
+.search-no-popup #jms_ajax_search #ajax_search {
+  width: 441px; }
+
+.search-no-popup #jms_ajax_search .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.menu {
+  background: #333; }
+  .menu .buy-theme p {
+    line-height: 40px;
+    margin-bottom: 0;
+    text-align: right;
+    height: 40px; }
+    .menu .buy-theme p a {
+      text-transform: uppercase;
+      color: #48CAB2;
+      font-size: 13px;
+      font-weight: 800;
+      position: relative;
+      letter-spacing: 0.7px; }
+      .menu .buy-theme p a::before {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background-color: #48CAB2;
+        height: 2px;
+        -webkit-transition: width 0.25s;
+        -o-transition: width 0.25s;
+        transition: width 0.25s; }
+      .menu .buy-theme p a:hover::before {
+        width: 100%; }
+
+.jms-megamenu .nav > li.sub-home {
+  padding-left: 0; }
+
+.jms-megamenu .nav > li > a {
+  line-height: 40px;
+  color: #fff; }
+
+.banner {
+  margin-top: 10px; }
+  .banner .container-fluid {
+    padding: 0 10px; }
+  .banner .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .banner .layout-column {
+    padding: 0 5px; }
+  .banner .jms-banner {
+    margin-bottom: 10px; }
+    .banner .jms-banner:hover .banner-content .text-1::before {
+      width: 100%; }
+  .banner .banner-content {
+    top: 32px;
+    left: 38px; }
+    .banner .banner-content .text-1 {
+      font-size: 24px;
+      line-height: 35px;
+      font-weight: 800;
+      color: #333;
+      position: relative;
+      display: inline-block; }
+      .banner .banner-content .text-1.color-white::before {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background-color: #fff;
+        height: 2px;
+        -webkit-transition: width 0.25s;
+        -o-transition: width 0.25s;
+        transition: width 0.25s; }
+      .banner .banner-content .text-1::before {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background-color: #333;
+        height: 2px;
+        -webkit-transition: width 0.25s;
+        -o-transition: width 0.25s;
+        transition: width 0.25s; }
+    .banner .banner-content .text-2 {
+      font-size: 18px;
+      line-height: 28px;
+      color: #777; }

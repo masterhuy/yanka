@@ -1076,7 +1076,7 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
-
+	$(".home_8 #jms-vermegamenu-container").addClass('collapse');
 
 	$(".addon-alertbox .close").click(function(){
 		$(".jms-row.alert-box").addClass("closed");

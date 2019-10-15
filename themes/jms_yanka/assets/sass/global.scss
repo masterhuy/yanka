@@ -2316,26 +2316,44 @@ a.wishlist_top{
 }
 //
 
-
+//ver menu
 .ver_menu {
-	background: #fff;
-	color: #010101;
-	line-height: 50px;
+	background: $active;
+	color: #fff;
+	line-height: 40px;
 	margin-bottom: 0;
 	padding: 0 17px;
-	font-size: 15px;
+	font-size: 13px;
 	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 0.2px;
+	font-weight: 800;
 	cursor: pointer;
-	border-radius: 3px;
 	position: relative;
-	img{
-		position: absolute;
-		right: 20px;
-		top: 16px;
+	.pt-icon{
+		i{
+			display: none;
+			&.open-icon svg{
+				width: 24px;
+				height: 24px;
+			}
+			&.close-icon{
+				display: inline-block;
+				svg{
+					width: 24px;
+				}
+			}
+		}
+	}
+	&.collapsed{
+		i{
+			display: inline-block;
+			&.close-icon{
+				display: none;
+			}
+		}
 	}
 }
+//
+
 //banner product
 .banner-product{
 	.container-fluid > .row{
