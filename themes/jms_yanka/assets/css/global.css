@@ -1955,21 +1955,29 @@ a.wishlist_top {
   color: #fff;
   line-height: 40px;
   margin-bottom: 0;
-  padding: 0 17px;
+  padding: 0 15px;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 800;
   cursor: pointer;
-  position: relative; }
-  .ver_menu .pt-icon i {
-    display: none; }
-    .ver_menu .pt-icon i.open-icon svg {
-      width: 24px;
-      height: 24px; }
-    .ver_menu .pt-icon i.close-icon {
-      display: inline-block; }
-      .ver_menu .pt-icon i.close-icon svg {
-        width: 24px; }
+  position: relative;
+  letter-spacing: 1px;
+  width: 100%; }
+  .ver_menu .pt-icon {
+    margin-right: 5px; }
+    .ver_menu .pt-icon i {
+      display: none; }
+      .ver_menu .pt-icon i.open-icon svg {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 7px; }
+      .ver_menu .pt-icon i.close-icon {
+        display: inline-block; }
+        .ver_menu .pt-icon i.close-icon svg {
+          width: 24px;
+          position: relative;
+          top: 3px; }
   .ver_menu.collapsed i {
     display: inline-block; }
     .ver_menu.collapsed i.close-icon {
@@ -2184,6 +2192,9 @@ a.wishlist_top {
   background: #f8f8f8; }
   #footer .footer-top {
     padding: 97px 0 70px; }
+    #footer .footer-top .newsletter #newsletter_block_left p {
+      font-size: 14px;
+      line-height: 20px; }
   #footer .addon-title h3 {
     font-size: 18px;
     line-height: 26px;

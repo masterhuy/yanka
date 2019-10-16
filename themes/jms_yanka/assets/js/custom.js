@@ -1076,6 +1076,11 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
+	$(".ver_menu").click(function(){
+		$(this).toggleClass("collapsed");
+		$("#jms-vermegamenu-container").toggleClass("in");
+	});
+
 	$(".home_8 #jms-vermegamenu-container").addClass('collapse');
 
 	$(".addon-alertbox .close").click(function(){

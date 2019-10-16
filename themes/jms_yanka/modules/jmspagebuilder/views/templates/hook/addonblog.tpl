@@ -64,6 +64,9 @@
 					<h4 class="post-title">
 						<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:60:'...'|escape:'htmlall':'UTF-8'}</a>
 					</h4>
+					{if $show_introtext == '1'}	
+						<div class="post-intro">{$post.introtext nofilter}</div>	
+					{/if}
 					<ul class="post-meta">
 						{if $show_category == '1'}
 							<li>
@@ -106,9 +109,7 @@
 						{/if}
 					</ul>
 					
-					{if $show_introtext == '1'}	
-						<div class="post-intro">{$post.introtext nofilter}</div>	
-					{/if}
+					
 					{if $show_readmore == '1'}	
 						<a class="blog-readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
 							{l s='Read more' d='Modules.JmsPagebuilder'}

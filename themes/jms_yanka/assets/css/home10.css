@@ -1,0 +1,15 @@
+.header {
+  padding: 17px 0 0; }
+  .header .logo > span {
+    padding-bottom: 0; }
+
+.left-module-header {
+  top: 3px; }
+  .left-module-header .addon-box {
+    margin-right: 7px; }
+
+.right-module-header {
+  top: 5px; }
+  .right-module-header .addon-box:last-child {
+    margin-left: 17px;
+    margin-right: 0; }

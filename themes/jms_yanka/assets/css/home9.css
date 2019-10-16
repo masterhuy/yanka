@@ -1,0 +1,64 @@
+.header .container > .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header .megamenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header .megamenu .addon-box:first-child {
+    margin-right: 27px; }
+
+.header .right-module-header .addon-box:last-child {
+  margin-right: 0;
+  margin-left: 17px; }
+
+.ajax_cart_quantity {
+  right: 4px; }
+
+.banner {
+  margin-top: 10px; }
+  .banner .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .banner .layout-column {
+    padding: 0 5px; }
+  .banner .jms-banner:hover .banner-content p {
+    color: #fff;
+    background: #48CAB2; }
+  .banner .jms-banner .banner-content {
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .banner .jms-banner .banner-content p {
+      background: #fff;
+      padding: 8px 33px;
+      font-weight: 800;
+      color: #333;
+      display: inline-block;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+
+.special-offer {
+  margin-top: 93px;
+  margin-bottom: 60px; }
+
+#footer .footer-top {
+  padding-bottom: 65px; }

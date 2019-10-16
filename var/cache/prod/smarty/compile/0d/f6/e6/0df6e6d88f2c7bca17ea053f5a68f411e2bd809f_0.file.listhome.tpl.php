@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-14 03:46:08
+/* Smarty version 3.1.33, created on 2019-10-16 05:13:52
   from 'D:\xamppp\htdocs\jms_yanka\modules\jmspagebuilder\views\templates\admin\jmspagebuilder_homepages\listhome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5da427c0a29f81_56443730',
+  'unifunc' => 'content_5da6df50a6a836_96806824',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5da427c0a29f81_56443730 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5da6df50a6a836_96806824 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel"><h3><i class="icon-list-ul"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'HomePages List','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
 
 	<span class="panel-heading-action">

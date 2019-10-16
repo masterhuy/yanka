@@ -105,3 +105,25 @@
       font-size: 18px;
       line-height: 28px;
       color: #777; }
+
+.top-product, .special-offer {
+  margin-top: 83px;
+  margin-bottom: 100px; }
+  .top-product .product-carousel, .special-offer .product-carousel {
+    padding-top: 32px; }
+
+.blog {
+  background: #f8f8f8;
+  padding: 100px 0 81px; }
+
+.service {
+  padding: 68px 0 86px; }
+
+.page-index #footer {
+  margin-top: 0; }
+
+@media (min-width: 1200px) {
+  .vermegamenu {
+    width: 13.1%; }
+  .megamenu {
+    width: 70.2333333%; } }

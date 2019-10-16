@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Trends that drive conversion rate optimization</title>
+    <link>https://www.prestashop.com/en/blog/trends-conversion-rate-optimization</link>
+    <description>Do you know that most of the companies even with heavy traffic fail to increase their conversion rate &amp;amp; not able to create a ROI to be in the game?</description>
+     <pubDate>Mon, 14 Oct 2019 11:50:12 +0200</pubDate>
+ <dc:creator>Webkul</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/trends-conversion-rate-optimization</guid>
+  </item>
+  <item>
     <title>Why the search engine in your web shop is important</title>
     <link>https://www.prestashop.com/en/blog/search-engine-on-your-site-important</link>
     <description>Most web shops have an internal search engine. A search engine is useful for your visitors, so they have the option of quickly finding the products they are looking for.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 09 Sep 2019 17:44:23 +0200</pubDate>
  <dc:creator>MLNielsen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/back-to-school-special</guid>
-  </item>
-  <item>
-    <title>5 content tips to increase conversion rate</title>
-    <link>https://www.prestashop.com/en/blog/content-tips-to-increase-conversion-rate</link>
-    <description>Optimize your product content easily to increase your conversion rate using these easy steps</description>
-     <pubDate>Mon, 02 Sep 2019 12:05:40 +0200</pubDate>
- <dc:creator>iPresta</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/content-tips-to-increase-conversion-rate</guid>
   </item>
   </channel>
 </rss>

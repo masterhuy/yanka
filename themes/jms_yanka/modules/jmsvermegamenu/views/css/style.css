@@ -8,12 +8,21 @@
 #jms-vermegamenu-container {
     position: absolute;
     width: 100%;
-    max-width: 270px;
+    max-width: 210px;
     margin-bottom: 0px;
     box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 5px 5px;
     z-index: 9991;
     background: #fff;
+    border-radius: 0;
+    padding: 11px 0;
+    transition: .4s all;
+}
+#jms-vermegamenu-container.collapse{
+    display: block;
+    opacity: 0;
+}
+#jms-vermegamenu-container.collapse.in{
+    opacity: 1;
 }
 .jms-vermegamenu {
     padding: 0;
@@ -43,16 +52,15 @@
     padding-right: 9px;
 }
 .jms-vermegamenu .nav > li > a {
-    font-family: "PT Sans",serif;
-    font-size: 15px;
-    line-height: 30px;
-    padding: 6px 20px;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 6px 14px;
     position: relative;
-    text-transform: capitalize;
+    text-transform: uppercase;
     white-space: nowrap;
     text-overflow: ellipsis;
     letter-spacing: 0.2px;
-    font-weight: 400;
+    font-weight: 800;
     overflow: hidden;
 }
 .jms-vermegamenu .nav > li.no-icon > a {
@@ -60,26 +68,19 @@
     font-weight: 700;
     letter-spacing: 0.1px;
 }
-.jms-vermegamenu .nav > li:not(:last-child) > a::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 40px);
-    height: 1px;
-    background: #ebebeb;
-}
 .jms-vermegamenu .nav > li > a i{
     width: 38.3px;
     text-align: center;
 }
 .jms-vermegamenu .nav > li > a > .caret::after {
-    content: "\f105";
-    font-family: FontAwesome;
+    content: "\f112";
+    font-family: LineAwesome;
     float: right;
-    font-size: 16px;
-    color: #444;
+    font-size: 15px;
+    color: #d0d0d0;
+}
+.jms-vermegamenu .nav > li.open > a > .caret::after{
+    color: #48cab2;
 }
 .jms-vermegamenu .nav > li > a > .caret {
     border: 0;
