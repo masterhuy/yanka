@@ -8,15 +8,137 @@
 	}
 }
 .left-module-header{
-	top: 3px;
 	.addon-box{
-		margin-right: 7px;
+		margin-right: 2px;
 	}
 }
 .right-module-header{
-	top: 5px;
 	.addon-box:last-child{
 		margin-left: 17px;
 		margin-right: 0;
+	}
+}
+.jms-megamenu .nav > li > a {
+	line-height: 53px;
+}
+.page-index .menu{
+	margin-bottom: 5px;
+}
+.parallax-list{
+	margin-top: 100px;
+}
+
+.pt-parallax-01 {
+	display: flex;
+	align-items: center;
+	&:nth-child(2){
+		margin-top: 100px;
+		.pt-description{
+			padding-left: 0;
+			padding-right: 28px;
+		}
+	}
+	.pt-img {
+		position: relative;
+		width: 58.33333%;
+	}
+	.pt-description {
+	    width: 41.66667%;
+	    padding-left: 44px;
+	    .pt-title-01 {
+		    font-size: 18px;
+		    line-height: 26px;
+		    color: #333333;
+		    font-weight: 800;
+		}
+		.pt-title-02 {
+		    font-size: 36px;
+		    line-height: 43px;
+		    color: #333333;
+		    font-weight: 800;
+		    margin-top: 8px;
+		}
+		p {
+		    margin-top: 21px;
+		}
+		.btn-default{
+			margin-top: 24px;
+		}
+	}
+	.pt-img-sub {
+		position: absolute;
+		right: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.top-product{
+	margin-top: 83px;
+	margin-bottom: 100px;
+	.product-carousel{
+		padding-top: 32px;
+	}
+}
+
+.pt-parallax-02 {
+	display: flex;
+	align-items: center;
+	position: relative;
+	.pt-img {
+		display: flex;
+		.pt-item{
+			width: 50%;
+			img{
+				width: 100%;
+			}
+			&:first-child{
+				padding-right: 15px;
+			}
+			&:last-child{
+				padding-left: 15px;
+			}
+		}
+	}
+	.pt-description{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		.pt-title-01 {
+			color: #333;
+		    font-size: 18px;
+		    line-height: 26px;
+		    font-weight: 800;
+		}
+		.pt-title-02 {
+			color: #333;
+		    font-size: 36px;
+		    line-height: 43px;
+		    font-weight: 800;
+		}
+		.btn-default{
+			margin-top: 25px;
+		}
+	}
+}
+#footer{
+	padding-top: 84px;
+	padding-bottom: 36px;
+	background: transparent;
+	.footer-bottom{
+		padding-bottom: 11px;
+		ul li{
+			margin: 0;
+			margin: 0 4.75px;
+		}
+		.copyright{
+			margin-bottom: 29px;
+		}
+	}
+	#social_block ul li{
+		margin: 0;
+		margin: 0 10px;
 	}
 }

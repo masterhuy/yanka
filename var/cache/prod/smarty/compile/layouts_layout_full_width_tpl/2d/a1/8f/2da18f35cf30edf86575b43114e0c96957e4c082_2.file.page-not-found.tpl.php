@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-16 06:18:59
+/* Smarty version 3.1.33, created on 2019-10-17 06:29:12
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\errors\page-not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5da6ee938f93a8_19224045',
+  'unifunc' => 'content_5da84278b36075_59260601',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5da6ee938f93a8_19224045 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5da84278b36075_59260601 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -38,7 +38,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 </a>
         
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9800297075da6ee938f93a3_18344639', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4129324455da84278b36075_63524852', 'hook_not_found');
 ?>
 
         </div>
@@ -46,12 +46,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9800297075da6ee938
 </section>
 <?php }
 /* {block 'hook_not_found'} */
-class Block_9800297075da6ee938f93a3_18344639 extends Smarty_Internal_Block
+class Block_4129324455da84278b36075_63524852 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_9800297075da6ee938f93a3_18344639',
+    0 => 'Block_4129324455da84278b36075_63524852',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
