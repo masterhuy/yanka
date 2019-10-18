@@ -1,2 +1,82 @@
 @import "mixin";
 @import "varians";
+
+.header{
+	padding: 18px 0;
+	.col-logo{
+		padding-top: 3px;
+	}
+	.right-module-header{
+		padding-top: 9px;
+	}
+}
+.search-no-popup #jms_ajax_search{
+	.modal-content{
+		display: flex;
+		justify-content: center;
+	}
+	#ajax_search{
+		width: 441px;
+	}
+}
+.page-index .menu{
+	margin-bottom: 10px;
+}
+.menu{
+	background: #333;
+	.buy-theme{
+		p{
+			line-height: 40px;
+			margin-bottom: 0;
+			text-align: right;
+			height: 40px;
+			a{
+				text-transform: uppercase;
+				color: $active;
+				font-size: 13px;
+				font-weight: 800;
+				position: relative;
+				letter-spacing: 0.7px;
+				@include underline(-5, $active, 2)
+				&:hover::before{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.jms-megamenu .nav > li{
+	&.sub-home{
+		padding-left: 0;
+	}
+	> a{
+		line-height: 40px;
+		color: #fff;
+	}
+}
+.banner{
+	margin-top: 60px;
+}
+.jms-banner{
+	> a{
+		display: block;
+		overflow: hidden;
+	}
+	.banner-content{
+		position: static;
+		text-align: center;
+		margin-top: 12px;
+		.pt-title{
+			font-size: 24px;
+			font-weight: 800;
+			line-height: 35px;
+			margin-bottom: 11px;
+		}
+	}
+}
+.page-index #footer{
+	margin-top: 100px;
+}
+#footer .footer-top{
+	padding-bottom: 65px;
+}

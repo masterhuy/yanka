@@ -271,6 +271,22 @@
     width: 24px;
     height: 24px; }
 
+.line-break {
+  width: 100%;
+  height: 1px;
+  background: #ebebeb; }
+
+.product-layout-vertical .addon-title h3 {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left; }
+
+.product-layout-vertical .content_price .price.new {
+  margin-left: 6px; }
+
+.product-layout-vertical .special .content_price .price.new {
+  color: #f8353e; }
+
 .jms-banner {
   position: relative;
   overflow: hidden; }
@@ -2184,9 +2200,6 @@ a.wishlist_top {
 
 .google_plusone_iframe_widget {
   width: auto !important; }
-
-.page-index #footer {
-  margin-top: 10px; }
 
 #footer {
   background: #f8f8f8; }

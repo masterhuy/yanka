@@ -1,0 +1,81 @@
+.header {
+  padding: 18px 0; }
+  .header .col-logo {
+    padding-top: 3px; }
+  .header .right-module-header {
+    padding-top: 9px; }
+
+.search-no-popup #jms_ajax_search .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.search-no-popup #jms_ajax_search #ajax_search {
+  width: 441px; }
+
+.page-index .menu {
+  margin-bottom: 10px; }
+
+.menu {
+  background: #333; }
+  .menu .buy-theme p {
+    line-height: 40px;
+    margin-bottom: 0;
+    text-align: right;
+    height: 40px; }
+    .menu .buy-theme p a {
+      text-transform: uppercase;
+      color: #48CAB2;
+      font-size: 13px;
+      font-weight: 800;
+      position: relative;
+      letter-spacing: 0.7px; }
+      .menu .buy-theme p a::before {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background-color: #48CAB2;
+        height: 2px;
+        -webkit-transition: width 0.25s;
+        -o-transition: width 0.25s;
+        transition: width 0.25s; }
+      .menu .buy-theme p a:hover::before {
+        width: 100%; }
+
+.jms-megamenu .nav > li.sub-home {
+  padding-left: 0; }
+
+.jms-megamenu .nav > li > a {
+  line-height: 40px;
+  color: #fff; }
+
+.banner {
+  margin-top: 60px; }
+
+.jms-banner > a {
+  display: block;
+  overflow: hidden; }
+
+.jms-banner .banner-content {
+  position: static;
+  text-align: center;
+  margin-top: 12px; }
+  .jms-banner .banner-content .pt-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 35px;
+    margin-bottom: 11px; }
+
+.page-index #footer {
+  margin-top: 100px; }
+
+#footer .footer-top {
+  padding-bottom: 65px; }

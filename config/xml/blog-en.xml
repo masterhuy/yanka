@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Top 3 Strategies to Boost Your E-commerce</title>
+    <link>https://www.prestashop.com/en/blog/strategies-boost-e-commerce</link>
+    <description>Your ecommerce store is critical to broadening your brand and increasing your reach.</description>
+     <pubDate>Thu, 17 Oct 2019 18:56:35 +0200</pubDate>
+ <dc:creator>rajbarman</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/strategies-boost-e-commerce</guid>
+  </item>
+  <item>
+    <title>Four tips to selling cross-border into Brazil</title>
+    <link>https://www.prestashop.com/en/blog/tips-selling-cross-border-brazil</link>
+    <description>Brazil is the largest ecommerce market in Latin America, with 34% market share according to eMarketer.</description>
+     <pubDate>Wed, 16 Oct 2019 14:13:11 +0200</pubDate>
+ <dc:creator>paulamartins</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/tips-selling-cross-border-brazil</guid>
+  </item>
+  <item>
     <title>Trends that drive conversion rate optimization</title>
     <link>https://www.prestashop.com/en/blog/trends-conversion-rate-optimization</link>
     <description>Do you know that most of the companies even with heavy traffic fail to increase their conversion rate &amp;amp; not able to create a ROI to be in the game?</description>
@@ -68,22 +84,6 @@
      <pubDate>Fri, 27 Sep 2019 15:37:23 +0200</pubDate>
  <dc:creator>MLNielsen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/2019-european-e-commerce-report</guid>
-  </item>
-  <item>
-    <title>5 Tips to Reduce Checkout Friction</title>
-    <link>https://www.prestashop.com/en/blog/5-tips-to-reduce-checkout-friction</link>
-    <description>You’ve put in the legwork: developed an optimal storefront, perfected the product, established a price that fits into market demand and set up online payment.</description>
-     <pubDate>Mon, 16 Sep 2019 11:47:46 +0200</pubDate>
- <dc:creator>bluesnap</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/5-tips-to-reduce-checkout-friction</guid>
-  </item>
-  <item>
-    <title>E-commerce: a back-to-school special?</title>
-    <link>https://www.prestashop.com/en/blog/back-to-school-special</link>
-    <description>The back-to-school season is now the second biggest e-commerce event with an increase of more than 20% in the number of searches on Google.</description>
-     <pubDate>Mon, 09 Sep 2019 17:44:23 +0200</pubDate>
- <dc:creator>MLNielsen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/back-to-school-special</guid>
   </item>
   </channel>
 </rss>

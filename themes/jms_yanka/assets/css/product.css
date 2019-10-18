@@ -795,7 +795,10 @@
 	bottom: 10px;
 }
 .flex-box.product-box{
-    margin-bottom: 20px;
+    margin-bottom: 29px;
+}
+.flex-box.product-miniature .product-link{
+    padding-bottom: 11px;
 }
 .product-cover .zoomWrapper img + img{
     display: none;
@@ -920,6 +923,10 @@
 }
 .preview.flexbox + .product-info .content_price{
     text-align: left;
+    margin-left: 0;
+}
+.preview.flexbox + .product-info .content_price .price{
+    display: inline-block;
 }
 .product-box .flexbox {
     width: 27%;
@@ -928,7 +935,7 @@
     width: 73%;
     padding: 0 20px;
     text-align: left;
-    margin-top: 0;
+    margin-top: -5px;
 }
 .product-preview .flexbox + .product-info .label.label-discount {
     display: inline-block;
