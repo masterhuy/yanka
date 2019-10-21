@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-13 23:20:45
+/* Smarty version 3.1.33, created on 2019-10-21 05:13:58
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addoninstagram.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5da3e98da4b660_98737446',
+  'unifunc' => 'content_5dad76d6100744_38866403',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f40e8168e3cfc718a6215eee0fe9cf3cb3335db' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmspagebuilder\\views\\templates\\hook\\addoninstagram.tpl',
-      1 => 1570788455,
+      1 => 1571644084,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5da3e98da4b660_98737446 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dad76d6100744_38866403 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="addon-title title-blog">
     <h3><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['addon_title']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -32,7 +32,7 @@ if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
 </p>
 <?php }?>
 <div class="instagram_block">
-    <div class="instagram-block" data-index="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['index']->value, ENT_QUOTES, 'UTF-8');?>
+    <div class="instagram-cs" data-index="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['index']->value, ENT_QUOTES, 'UTF-8');?>
 ">
 
     </div>

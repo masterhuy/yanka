@@ -372,6 +372,39 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".product-carousel-cs").length) {		
+		var productCarouselCs = $(".product-carouselcs");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarouselCs.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:pcs_itemsDesktop
+				},
+				991:{
+					items:pcs_itemsDesktopSmall
+				},
+				768:{
+					items:pcs_itemsTablet
+				},
+				481:{
+					items:pcs_itemsMobile
+				},
+				0:{
+					items:2
+				}
+			},
+			rtl: rtl,
+			margin: 30,
+			nav: pcs_nav,
+			dots: pcs_pag,
+			autoplay: pcs_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
 	if($(".product-carousel2-col3").length) {		
 		var productCarousel2c3 = $(".product-carousel2-col3");			
 		var rtl = false;

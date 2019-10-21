@@ -58,6 +58,9 @@
 	margin-top: 60px;
 }
 .jms-banner{
+	&:hover .btn-border::before{
+		border-width: 2px;
+	}
 	> a{
 		display: block;
 		overflow: hidden;

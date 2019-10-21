@@ -60,6 +60,9 @@
 .banner {
   margin-top: 60px; }
 
+.jms-banner:hover .btn-border::before {
+  border-width: 2px; }
+
 .jms-banner > a {
   display: block;
   overflow: hidden; }

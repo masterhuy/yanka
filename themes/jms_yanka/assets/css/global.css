@@ -2008,50 +2008,54 @@ a.wishlist_top {
 .banner-product .jms-banner {
   margin-bottom: 20px; }
 
+.instagram_block .instagram-cs.owl-carousel img {
+  width: 100%; }
+
+.instagram_block a.instagram_elements {
+  display: block;
+  position: relative; }
+  .instagram_block a.instagram_elements:hover::before, .instagram_block a.instagram_elements:hover::after {
+    opacity: 1; }
+  .instagram_block a.instagram_elements::before {
+    font-family: 'yanka';
+    font-size: 29px;
+    line-height: 1;
+    content: "\e907";
+    position: absolute;
+    color: #ffffff;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s; }
+  .instagram_block a.instagram_elements::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s; }
+
 .instagram_block .instagram-block > div {
   width: 12.5%;
   display: inline-block;
   position: relative;
   margin-top: 10px; }
-  .instagram_block .instagram-block > div a {
-    display: block;
-    position: relative; }
-    .instagram_block .instagram-block > div a:hover::before, .instagram_block .instagram-block > div a:hover::after {
-      opacity: 1; }
-    .instagram_block .instagram-block > div a::before {
-      font-family: 'yanka';
-      font-size: 29px;
-      line-height: 1;
-      content: "\e907";
-      position: absolute;
-      color: #ffffff;
-      z-index: 7;
-      top: 50%;
-      left: 50%;
-      margin-left: -15px;
-      margin-top: -15px;
-      width: 30px;
-      height: 30px;
-      display: block;
-      text-align: center;
-      opacity: 0;
-      -webkit-transition: opacity .3s;
-      -o-transition: opacity .3s;
-      transition: opacity .3s; }
-    .instagram_block .instagram-block > div a::after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      background-color: rgba(0, 0, 0, 0.65);
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      -webkit-transition: opacity .2s;
-      -o-transition: opacity .2s;
-      transition: opacity .2s; }
   .instagram_block .instagram-block > div img {
     width: 100%; }
 

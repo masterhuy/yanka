@@ -24,7 +24,9 @@
 *}
 <div class="feature-box{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if}" {if $text_align}style="text-align:{$text_align|escape:'htmlall':'UTF-8'};"{/if}>
 	{if $image_type == 'image' && $image}	
-		<div class="image"><img class="img-responsive" src="{$root_url|escape:'htmlall':'UTF-8'}{$image|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" />	</div>
+		<div class="image">
+			<img class="img-responsive" src="{$root_url|escape:'htmlall':'UTF-8'}{$image|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" />	
+		</div>
 	{elseif $icon_class}
 		<div class="feature-img">
 			<i class="{$icon_class|escape:'htmlall':'UTF-8'}"></i>
@@ -39,7 +41,7 @@
 		{/if}
 	</div>
 	{if $button_text}
-		<a class="btn-effect1"  href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"
+		<a class="btn-default"  href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"
 		{/if}>{$button_text|escape:'htmlall':'UTF-8'}</a>
 	{/if}
 </div>	

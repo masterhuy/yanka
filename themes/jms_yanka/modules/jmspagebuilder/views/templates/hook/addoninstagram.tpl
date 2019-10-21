@@ -32,7 +32,7 @@
 <p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
 {/if}
 <div class="instagram_block">
-    <div class="instagram-block" data-index="{$index}">
+    <div class="instagram-cs" data-index="{$index}">
 
     </div>
 </div>

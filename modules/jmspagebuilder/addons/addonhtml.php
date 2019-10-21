@@ -60,8 +60,8 @@ class JmsAddonHtml extends JmsAddonBase
     {
         $id_lang = $this->context->language->id;
         $addon_title = empty($addon->fields[0]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang);
-        $html_content = empty($addon->fields[2]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[2]->value->$id_lang);
         $addon_desc = empty($addon->fields[1]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[1]->value->$id_lang);
+        $html_content = empty($addon->fields[2]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[2]->value->$id_lang);
         $this->context->smarty->assign(
             array(
                 'link' => $this->context->link,

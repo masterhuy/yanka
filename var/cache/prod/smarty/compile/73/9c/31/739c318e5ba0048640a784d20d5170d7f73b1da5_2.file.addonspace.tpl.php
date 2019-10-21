@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-17 22:58:03
+/* Smarty version 3.1.33, created on 2019-10-21 04:52:37
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonspace.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5da92a3b3cb390_92882771',
+  'unifunc' => 'content_5dad71d5d38887_51885008',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5da92a3b3cb390_92882771 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dad71d5d38887_51885008 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-empty-space clearfix<?php if (isset($_smarty_tpl->tpl_vars['space_class']->value) && $_smarty_tpl->tpl_vars['space_class']->value) {?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['space_class']->value, ENT_QUOTES, 'UTF-8');
 }?>" style="margin-bottom:<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['spacegap']->value, ENT_QUOTES, 'UTF-8');?>
 px;"></div>
