@@ -1066,26 +1066,62 @@ jQuery(function ($) {
 			$("#back-to-top").removeClass('show');
 		}
     });
-
-    $(window).scroll(function () {
-		if ($(document).scrollTop() >= 1200) {
-			$(".product-detail.sticky").addClass('fixed-right-column');			
-		} else if ($(document).scrollTop() < 1200) {
-			$(".product-detail.sticky").removeClass('fixed-right-column');
-		}
-    });
-
-    if ($(".product-detail").hasClass("sticky")){
-		$("#footer").addClass('mb-80');
-    } else{
-    	$("#footer").removeClass('mb-80');
-    }
-
 });
 
 $(window).load(function () {     
     back_to_top(); 
 });
+
+// add fn
+function openVideo(){
+	$('.jms-addon.jms-video').click(function() {
+		$('.jms-row.video').addClass('show-video');
+	});
+
+	$('.jms-row.video .btn-close').click(function() {
+    	$('.jms-row.video').removeClass('show-video');
+    });
+}
+
+function closeAlertBox(){
+	$(".addon-alertbox .close").click(function(){
+		$(".jms-row.alert-box").addClass("closed");
+	});
+}
+
+function toggleVermegamenu(){
+	$(".ver_menu").click(function(){
+		$(this).toggleClass("collapsed");
+		$("#jms-vermegamenu-container").toggleClass("in");
+	});
+}
+
+function collapseVermegamenu(){
+	$(".home_8 #jms-vermegamenu-container").addClass('collapse');
+	$(".home_11 #jms-vermegamenu-container").addClass('collapse');
+}
+
+function openAjaxSearch(){
+	$("#jms_ajax_search .btn-search").click(function(event) {
+		$("body").addClass("open-search");
+	});
+}
+
+function hoverLookbook(){
+	$(".lookbook-type-1 .pt-hotspot").hover(function(){
+		$(".lookbook-type-1 .pt-hotspot").removeClass('active');
+		$(this).addClass("active");
+		}, function(){
+		
+	});
+}
+
+function closeLookbook(){
+	$(".lookbook-type-1 .pt-hotspot-content .pt-btn-close").click(function(){
+		$(".lookbook-type-1 .pt-hotspot").removeClass('active');
+	});
+}
+//
 
 var initialLoad = true;
 $(document).ready(function() {
@@ -1109,30 +1145,19 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
-	$(".ver_menu").click(function(){
-		$(this).toggleClass("collapsed");
-		$("#jms-vermegamenu-container").toggleClass("in");
-	});
+	hoverLookbook();
 
-	$(".home_8 #jms-vermegamenu-container").addClass('collapse');
+	closeLookbook();
+	
+	collapseVermegamenu();
 
-	$(".home_11 #jms-vermegamenu-container").addClass('collapse');
+	openAjaxSearch();
+	
+	toggleVermegamenu();
 
-	$(".addon-alertbox .close").click(function(){
-		$(".jms-row.alert-box").addClass("closed");
-	});
+	closeAlertBox();
 
-	$("#jms_ajax_search .btn-search").click(function(event) {
-		$("body").addClass("open-search");
-	});
-
-	$('.jms-addon.jms-video').click(function() {
-		$('.jms-row.video').addClass('show-video');
-	});
-
-	$('.jms-row.video .btn-close').click(function() {
-    	$('.jms-row.video').removeClass('show-video');
-    });
+	openVideo();
 });
 
 //popup custommer service

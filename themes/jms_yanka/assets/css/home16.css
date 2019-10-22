@@ -1,0 +1,155 @@
+.header {
+  padding: 17px 0 0; }
+  .header .logo > span {
+    padding-bottom: 0; }
+
+.left-module-header .addon-box {
+  margin-right: 2px; }
+
+.right-module-header .addon-box:last-child {
+  margin-left: 17px;
+  margin-right: 0; }
+
+.ajax_cart_quantity {
+  right: -4px; }
+
+.jms-megamenu .nav > li > a {
+  line-height: 53px; }
+
+.page-index .menu {
+  margin-bottom: 5px; }
+
+.lookbook {
+  margin-top: 93px; }
+  .lookbook .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+  .lookbook .layout-column {
+    padding: 0 5px;
+    margin-bottom: 10px; }
+  .lookbook .addon-title h3 {
+    padding-bottom: 22px; }
+  .lookbook .feature-box {
+    padding: 0; }
+    .lookbook .feature-box .image {
+      margin-right: 0; }
+    .lookbook .feature-box.content-left .pt-hotspot.active .pt-hotspot-content {
+      right: 15px;
+      left: auto; }
+    .lookbook .feature-box.content-left .pt-hotspot .pt-hotspot-content {
+      left: auto;
+      right: 35px; }
+  .lookbook .pt-hotspot {
+    position: absolute;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    width: 30px;
+    height: 30px; }
+    .lookbook .pt-hotspot.active .pt-btn {
+      padding: 10px; }
+      .lookbook .pt-hotspot.active .pt-btn::after {
+        background: #333; }
+    .lookbook .pt-hotspot.active .pt-hotspot-content {
+      opacity: 1;
+      visibility: visible;
+      left: 15px; }
+    .lookbook .pt-hotspot .pt-btn {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      -webkit-transition: padding 0.2s;
+      -o-transition: padding 0.2s;
+      transition: padding 0.2s; }
+      .lookbook .pt-hotspot .pt-btn::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #48CAB2;
+        border-radius: 50%;
+        -webkit-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s; }
+    .lookbook .pt-hotspot .pt-hotspot-content {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 15px;
+      left: 35px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 320px;
+      padding: 20px;
+      -webkit-box-shadow: 0px 4px 6px rgba(51, 51, 51, 0.06);
+      box-shadow: 0px 4px 6px rgba(51, 51, 51, 0.06);
+      background: #fff;
+      -webkit-transition: .4s all;
+      -o-transition: .4s all;
+      transition: .4s all;
+      z-index: 9; }
+      .lookbook .pt-hotspot .pt-hotspot-content .pt-btn-close {
+        line-height: 1;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 16px;
+        -webkit-transition: color 0.2s;
+        -o-transition: color 0.2s;
+        transition: color 0.2s;
+        color: #D0D0D0; }
+        .lookbook .pt-hotspot .pt-hotspot-content .pt-btn-close::before {
+          content: "\e909";
+          font-family: 'yanka'; }
+        .lookbook .pt-hotspot .pt-hotspot-content .pt-btn-close:hover {
+          color: #333; }
+      .lookbook .pt-hotspot .pt-hotspot-content .pt-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: #333333;
+        margin-top: -2px;
+        padding-right: 12px;
+        padding-bottom: 0; }
+      .lookbook .pt-hotspot .pt-hotspot-content .pt-price {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 800;
+        color: #48CAB2;
+        padding-right: 12px;
+        margin-top: 3px; }
+        .lookbook .pt-hotspot .pt-hotspot-content .pt-price .old-price {
+          color: #777777;
+          text-decoration: line-through;
+          font-weight: 400; }
+        .lookbook .pt-hotspot .pt-hotspot-content .pt-price .new-price {
+          color: #f8353e; }
+      .lookbook .pt-hotspot .pt-hotspot-content .pt-img {
+        width: 80px;
+        margin-right: 13px; }
+
+.page-index #footer {
+  margin-top: 6px; }
+
+#footer {
+  padding-top: 84px;
+  padding-bottom: 36px;
+  background: transparent; }
+  #footer .footer-bottom {
+    padding-bottom: 11px; }
+    #footer .footer-bottom ul li {
+      margin: 0;
+      margin: 0 4.75px; }
+    #footer .footer-bottom .copyright {
+      margin-bottom: 29px; }
+  #footer #social_block ul li {
+    margin: 0;
+    margin: 0 10px; }

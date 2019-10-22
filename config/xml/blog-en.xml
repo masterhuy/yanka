@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>How to create a welcome email series for new contacts</title>
+    <link>https://www.prestashop.com/en/blog/create-welcome-email-series-contacts</link>
+    <description>When done right, welcome email series can bring impressive results. This article explains why you should create one for your business and shows a few tips and examples on how to do it right.</description>
+     <pubDate>Mon, 21 Oct 2019 14:20:40 +0200</pubDate>
+ <dc:creator>Klimczak</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/create-welcome-email-series-contacts</guid>
+  </item>
+  <item>
     <title>Top 3 Strategies to Boost Your E-commerce</title>
     <link>https://www.prestashop.com/en/blog/strategies-boost-e-commerce</link>
     <description>Your ecommerce store is critical to broadening your brand and increasing your reach.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 30 Sep 2019 11:08:38 +0200</pubDate>
  <dc:creator>Yateo EN</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/5-keys-to-manage-your-after-sales-service</guid>
-  </item>
-  <item>
-    <title>Trends and key figures in European e-commerce</title>
-    <link>https://www.prestashop.com/en/blog/2019-european-e-commerce-report</link>
-    <description>The findings of the 2019 European E-commerce Report published in late August were very positive, with growth in online sales of more than 13% and estimated total sales of 621 billion euros.</description>
-     <pubDate>Fri, 27 Sep 2019 15:37:23 +0200</pubDate>
- <dc:creator>MLNielsen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/2019-european-e-commerce-report</guid>
   </item>
   </channel>
 </rss>

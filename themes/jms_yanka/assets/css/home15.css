@@ -1,0 +1,96 @@
+.header .container > .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.right-module-header .addon-box:last-child {
+  margin-left: 17px;
+  margin-right: 0; }
+
+.lookbook {
+  margin-top: 93px; }
+  .lookbook .addon-title h3 {
+    padding-bottom: 32px; }
+  .lookbook .jms-banner > a {
+    display: block;
+    overflow: hidden; }
+  .lookbook .banner-content {
+    position: static;
+    min-height: 69px;
+    margin-top: 17px;
+    margin-bottom: 36px; }
+    .lookbook .banner-content ul {
+      font-size: 16px;
+      line-height: 23px;
+      color: #333;
+      margin-bottom: 0; }
+      .lookbook .banner-content ul li a {
+        position: relative;
+        color: #333; }
+        .lookbook .banner-content ul li a::before {
+          position: absolute;
+          bottom: 1px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '';
+          color: transparent;
+          background-color: #333;
+          height: 1px;
+          -webkit-transition: width 0.25s;
+          -o-transition: width 0.25s;
+          transition: width 0.25s; }
+        .lookbook .banner-content ul li a::before {
+          width: 100%; }
+        .lookbook .banner-content ul li a:hover::before {
+          width: 0; }
+    .lookbook .banner-content .pt-price {
+      font-weight: 800;
+      color: #48CAB2; }
+    .lookbook .banner-content .old-price {
+      color: #777777;
+      font-weight: normal;
+      text-decoration: line-through; }
+    .lookbook .banner-content .new-price {
+      color: #e12c43; }
+
+#footer {
+  padding-top: 100px; }
+  #footer .footer-top {
+    padding: 54px 0 65px; }
+  #footer .newsletter .addon-title {
+    margin-right: 44px; }
+    #footer .newsletter .addon-title h3 {
+      padding-bottom: 0; }
+  #footer .newsletter #newsletter_block_left p {
+    display: none; }
+  #footer .newsletter #newsletter_block_left .form-group {
+    margin: 0;
+    width: 469px; }
+  #footer .newsletter .block_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #footer .newsletter .social {
+    line-height: 44px; }
+    #footer .newsletter .social .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    #footer .newsletter .social .addon-title {
+      margin-right: 18px; }
+      #footer .newsletter .social .addon-title h3 {
+        text-transform: capitalize; }
+
+.page-index #footer {
+  margin-top: 64px; }

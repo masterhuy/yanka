@@ -14,7 +14,6 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 include_once(_PS_MODULE_DIR_.'jmspagebuilder/addons/addonbase.php');
-include_once(_PS_MODULE_DIR_.'jmspagebuilder/classes/productHelper.php');
 
 class JmsAddonContentCarousel extends JmsAddonBase
 {
@@ -132,23 +131,6 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'desc' => 'Enter texts for the content.'
             ),
             array(
-                'type' => 'image',
-                'name' => 'content_img6',
-                'label' => $this->l('Content Image 6'),
-                'lang' => '0',
-                'desc' => 'Content Image 6',
-                'default' => ''
-            ),
-            array(
-                'type' => 'editor',
-                'name' => 'html_content6',
-                'rows' => '20',
-                'cols' => '60',
-                'lang' => '1',
-                'label' => $this->l('Content 6'),
-                'desc' => 'Enter texts for the content.'
-            ),
-            array(
                 'type' => 'text',
                 'name' => 'items_show',
                 'label' => $this->l('Items Show'),
@@ -185,7 +167,7 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'name' => 'navigation',
                 'label' => $this->l('Show Navigation'),
                 'lang' => '0',
-                'desc' => 'Enable/Disable Navigation',
+                'desc' => 'Enanble/Disable Navigation',
                 'default' => '1'
             ),
             array(
@@ -193,7 +175,7 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'name' => 'pagination',
                 'label' => $this->l('Show Pagination'),
                 'lang' => '0',
-                'desc' => 'Enable/Disable Pagination',
+                'desc' => 'Enanble/Disable Pagination',
                 'default' => '0'
             ),
             array(
@@ -201,7 +183,7 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'name' => 'autoplay',
                 'label' => $this->l('Auto Play'),
                 'lang' => '0',
-                'desc' => 'Enable/Disable Auto Play',
+                'desc' => 'Enanble/Disable Auto Play',
                 'default' => '0'
             ),
             array(
@@ -209,7 +191,7 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'name' => 'rewind',
                 'label' => $this->l('ReWind Navigation'),
                 'lang' => '0',
-                'desc' => 'Enable/Disable ReWind Navigation',
+                'desc' => 'Enanble/Disable ReWind Navigation',
                 'default' => '1'
             ),
             array(
@@ -217,7 +199,7 @@ class JmsAddonContentCarousel extends JmsAddonBase
                 'name' => 'slidebypage',
                 'label' => $this->l('slide By Page'),
                 'lang' => '0',
-                'desc' => 'Enable/Disable Slide By Page',
+                'desc' => 'Enanble/Disable Slide By Page',
                 'default' => '0'
             ),
             array(
@@ -244,30 +226,28 @@ class JmsAddonContentCarousel extends JmsAddonBase
         $this->context = Context::getContext();
         $id_lang = $this->context->language->id;
         $contents = array();
-        for ($i = 0; $i < 6; $i++) {
+        for ($i = 0; $i < 5; $i++) {
             $contents[$i]['image'] = (string)$addon->fields[2*$i + 2]->value;
             $contents[$i]['content'] = JmsPageBuilderHelper::decodeHTML($addon->fields[2*$i + 3]->value->$id_lang);
         }
-        $addon_title = empty($addon->fields[0]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang);
-        $addon_desc = empty($addon->fields[1]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[1]->value->$id_lang);
         $addon_tpl_dir = $this->loadTplDir();
         $this->context->smarty->assign(
             array(
                 'link' => $this->context->link,
                 'contents' => $contents,
-                'addon_title' => $addon_title,
-                'addon_desc' => $addon_desc,
-                'items_show' => $addon->fields[14]->value,
-                'items_show_md' => $addon->fields[15]->value,
-                'items_show_sm' => $addon->fields[16]->value,
-                'items_show_xs' => $addon->fields[17]->value,
-                // 'link_enable' => $addon->fields[16]->value,
-                'navigation' => $addon->fields[18]->value,
-                'pagination' => $addon->fields[19]->value,
-                'autoplay' => $addon->fields[20]->value,
-                'rewind' => $addon->fields[21]->value,
-                'slidebypage' => $addon->fields[22]->value,
-                'box_class' => $addon->fields[23]->value,
+                'addon_title' => JmsPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang),
+                'addon_desc' => JmsPageBuilderHelper::decodeHTML($addon->fields[1]->value->$id_lang),
+                'items_show' => $addon->fields[12]->value,
+                'items_show_md' => $addon->fields[13]->value,
+                'items_show_sm' => $addon->fields[14]->value,
+                'items_show_xs' => $addon->fields[15]->value,
+                'link_enable' => $addon->fields[16]->value,
+                'navigation' => $addon->fields[17]->value,
+                'pagination' => $addon->fields[18]->value,
+                'autoplay' => $addon->fields[19]->value,
+                'rewind' => $addon->fields[20]->value,
+                'slidebypage' => $addon->fields[21]->value,
+                'box_class' => $addon->fields[22]->value,
                 'root_url' => $this->root_url,
                 'addon_tpl_dir' => $addon_tpl_dir
             )
