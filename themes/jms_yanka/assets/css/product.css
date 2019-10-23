@@ -1,25 +1,34 @@
-.block-categories {
-    margin-bottom: 9px;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #e5e5e5;
-}
 .title-block h3 {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 800;
+    line-height: 26px;
+}
+.block-categories {
+    margin-bottom: 37px;
+}
+.block-categories svg,
+.category-sub-menu svg{
+    width: 12px;
+    height: 7px;
 }
 .block-categories .title-block h3 {
-    padding-bottom: 7px;
+    padding-bottom: 11px;
     position: relative;
     display: flex;
     align-items: center;
+    line-height: 24px;
+}
+.block-categories .title-block h3.collapsed{
+    padding-bottom: 0;
 }
 .block-categories li a {
     display: inline-block;
-    line-height: 29px;
     padding-right: 0;
-    color: #858585;
+    color: #777;
+    font-size: 16px;
 }
 .block-categories li a:hover{
     color: #141414;
@@ -31,21 +40,19 @@
 .category-sub-link{
     color: #8f8f8f;
 }
-.facet.size .facet-label.active a{
-    color: #fff !important;
-    background: #141414 !important;
-}
 .facet-label .magnitude {
     float: right;
+    display: none;
 }
 .block-categories > .category-sub-menu > .cat-item .navbar-toggler {
     display: inline-flex;
-    width: 20px;
+    width: 12px;
     cursor: pointer;
-    height: 29px;
+    height: 31.5px;
     align-items: center;
     position: absolute;
     transform: rotate(180deg);
+    margin-left: 10px;
 }
 .block-categories > .category-sub-menu > .cat-item .navbar-toggler.collapsed{
     transform: unset;
@@ -911,11 +918,6 @@
     font-size: 13px;
     padding-bottom: 5px;
     padding-right: 15px;
-}
-.filter-block .js-search-link i {
-    font-size: 15px;
-    line-height: 29px;
-    margin-left: 5px;
 }
 .preview.flexbox .product-image{
     display: block;

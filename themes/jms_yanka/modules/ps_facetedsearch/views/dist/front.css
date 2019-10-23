@@ -100,12 +100,12 @@
   border-radius: 0;
   border: 0;
   background: #ebebeb;
-  margin-top: 37px;
+  margin-top: 13px;
   width: calc(100% - 15px);
 }
-.ranger{
-  margin-top: 29px;
-  letter-spacing: 0.3px;
+.ranger {
+  margin-top: 20px;
+  font-size: 16px;
 }
 .ranger::before {
   content: "Ranger";

@@ -30,27 +30,35 @@
       {if $activeFilters|count}
         {block name='facets_title'}
         <div class="facet filter-by">
-          <p class="facet-title hidden-sm-down">
+          <p class="facet-title hidden-sm-down" data-target="#facet_filter" data-toggle="collapse" aria-expanded="true">
             {l s='Filter By' d='Shop.Theme.Actions'}
+            <i class="d-i-flex">
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 0.992188L6 5.98947L11 0.992187" stroke="#D0D0D0" stroke-width="1.1"></path>
+                </svg>
+            </i>
           </p>
           {if $activeFilters|count}
-            <ul>
-              {foreach from=$activeFilters item="filter"}
-                {block name='active_filters_item'}
-                  <li class="filter-block">
-                    {l s='%1$s: ' d='Shop.Theme.Catalog' sprintf=[$filter.facetLabel]}
-                    {$filter.label}
-                    <a class="js-search-link" href="{$filter.nextEncodedFacetsURL}"><i class="material-icons close">&#xE5CD;</i></a>
-                  </li>
-                {/block}
-              {/foreach}
-            </ul>
+            <div id="facet_filter" class="flex-box collapse in">
+              <ul>
+                {foreach from=$activeFilters item="filter"}
+                  {block name='active_filters_item'}
+                    <li class="filter-block">
+                      {l s='%1$s: ' d='Shop.Theme.Catalog' sprintf=[$filter.facetLabel]}
+                      {$filter.label}
+                      <a class="js-search-link" href="{$filter.nextEncodedFacetsURL}"></a>
+                    </li>
+                  {/block}
+                {/foreach}
+              </ul>
+              <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
+                <button data-search-url="{$clear_all_link}" class="btn-clear js-search-filters-clear-all">
+                  {l s='Clear all' d='Shop.Theme.Actions'}
+                </button>
+              </div>
+            </div>
           {/if}
-          <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
-          <button data-search-url="{$clear_all_link}" class="btn-default active js-search-filters-clear-all">
-            {l s='Clear all' d='Shop.Theme.Actions'}
-          </button>
-        </div>
+          
         </div>
         {/block}
         
@@ -67,9 +75,8 @@
           <h4 class="facet-title" data-target="#facet_{$_expand_id}" data-toggle="collapse"{if !$_collapse} aria-expanded="true"{/if}>
             {$facet.label}
             <i class="d-i-flex">
-                <svg aria-hidden="true" focusable="false" role="presentation"
-                        class="icon icon-theme-229" viewBox="0 0 24 24">
-                    <path d="M11.783 14.088l-3.75-3.75a.652.652 0 0 1-.176-.449c0-.169.059-.319.176-.449a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176l3.301 3.32 3.301-3.32a.65.65 0 0 1 .449-.176c.169 0 .318.059.449.176.117.13.176.28.176.449a.652.652 0 0 1-.176.449l-3.75 3.75a.877.877 0 0 1-.215.127.596.596 0 0 1-.468 0 .841.841 0 0 1-.215-.127z"/>
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 0.992188L6 5.98947L11 0.992187" stroke="#D0D0D0" stroke-width="1.1"></path>
                 </svg>
             </i>
           </h4>
@@ -188,25 +195,27 @@
         {elseif $facet.widgetType == 'slider'}
           {block name='facet_item_slider'}
             {foreach from=$facet.filters item="filter"}
-              <ul id="facet_{$_expand_id}"
-                class="faceted-slider"
-                data-slider-min="{$facet.properties.min}"
-                data-slider-max="{$facet.properties.max}"
-                data-slider-id="{$_expand_id}"
-                data-slider-values="{$filter.value|@json_encode}"
-                data-slider-unit="{$facet.properties.unit}"
-                data-slider-label="{$facet.label}"
-                data-slider-specifications="{$facet.properties.specifications|@json_encode}"
-                data-slider-encoded-url="{$filter.nextEncodedFacetsURL}"
-              >
-                <li>
+              <div id="facet_{$_expand_id}" class="flex-box collapse in">
+                <ul 
+                  class="faceted-slider"
+                  data-slider-min="{$facet.properties.min}"
+                  data-slider-max="{$facet.properties.max}"
+                  data-slider-id="{$_expand_id}"
+                  data-slider-values="{$filter.value|@json_encode}"
+                  data-slider-unit="{$facet.properties.unit}"
+                  data-slider-label="{$facet.label}"
+                  data-slider-specifications="{$facet.properties.specifications|@json_encode}"
+                  data-slider-encoded-url="{$filter.nextEncodedFacetsURL}"
+                >
+                  <li>
 
-                  <div id="slider-range_{$_expand_id}"></div>
-                  <p id="facet_label_{$_expand_id}" class="ranger">
-                    {$filter.label}
-                  </p>
-                </li>
-              </ul>
+                    <div id="slider-range_{$_expand_id}"></div>
+                    <p id="facet_label_{$_expand_id}" class="ranger">
+                      {$filter.label}
+                    </p>
+                  </li>
+                </ul>
+              </div>
             {/foreach}
           {/block}
         {/if}

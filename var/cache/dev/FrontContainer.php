@@ -1260,6 +1260,7 @@ class FrontContainer extends Container
                 75 => 'ps_categoryproducts',
                 76 => 'jmsvermegamenu',
                 77 => 'productcomments',
+                78 => 'ps_specials',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_yanka/var/cache/dev\\',
             'mail_themes_uri' => '/mails/themes',

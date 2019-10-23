@@ -78,7 +78,8 @@
     		{/if}
             <div id="wrapper" {if $page.page_name != 'index'}{/if}> 
                 {if $page.page_name != 'index'}
-                    <div class="row">
+                    <div class="container">
+                        <div class="row">
                 {/if}
                     {block name="left_column"}
                         <div id="left-column" class="page-column col-sm-12 col-md-3 col-lg-3 col-xs-12 col-sm-12">
@@ -109,7 +110,8 @@
                     {/block}
             
                 {if $page.page_name != 'index'}
-                </div>
+                        </div>
+                    </div>
                 {/if}
     		</div>
 

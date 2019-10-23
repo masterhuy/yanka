@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-22 05:10:03
+/* Smarty version 3.1.33, created on 2019-10-23 05:41:15
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5daec76b0f2a14_27739523',
+  'unifunc' => 'content_5db0203beb5816_57644625',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5daec76b0f2a14_27739523 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5db0203beb5816_57644625 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl --><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
