@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-23 05:32:08
+/* Smarty version 3.1.33, created on 2019-10-23 23:49:02
   from 'module:psspecialsviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db01e1899f451_65028310',
+  'unifunc' => 'content_5db11f2e5f0df2_34800058',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product2.tpl' => 1,
   ),
 ),false)) {
-function content_5db01e1899f451_65028310 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5db11f2e5f0df2_34800058 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/ps_specials/views/templates/hook/ps_specials.tpl -->
 <section id="special-products">
 	<div class="title-block">

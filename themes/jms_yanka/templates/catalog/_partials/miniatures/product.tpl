@@ -96,7 +96,7 @@
 						
 	<div class="product-info">
 		{block name='product_reviews'}
-          {hook h='displayProductListReviews' product=$product}
+          	{hook h='displayProductListReviews' product=$product}
         {/block}
 		
         {if isset($jpb_categoryname) && $jpb_categoryname}

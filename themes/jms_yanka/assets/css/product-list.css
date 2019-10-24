@@ -292,8 +292,30 @@
 	flex-wrap: wrap;
 	margin-bottom: 0;
 }
+#category #footer{
+    margin-top: 95px;
+}
+#category .breadcrumb{
+    margin-bottom: 94px;
+}
+#category #content-wrapper{
+    position: static;
+}
+#category .category-title {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	padding: 0;
+}
+#category #content-wrapper, 
+#category #left-column, 
+#category #right-column {
+	padding-top: 85px;
+}
 #category #wrapper > .container{
 	padding: 0 20px;
+	position: relative;
 }
 #category #content-wrapper.col-lg-12 .products-list-in-column .js-product-miniature{
 	width: calc(100% / 4);

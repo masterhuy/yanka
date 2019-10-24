@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-10 06:16:36
+/* Smarty version 3.1.33, created on 2019-10-24 05:33:06
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d9f0504518f67_41325937',
+  'unifunc' => 'content_5db16fd26f5dd4_84688510',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9e4d0b935584380ea8beb3f467908e1cd2486f5' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1570008365,
+      1 => 1571900568,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9f0504518f67_41325937 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5db16fd26f5dd4_84688510 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
   document.addEventListener("DOMContentLoaded", function() {
@@ -52,11 +52,13 @@ echo '<script'; ?>
 <?php echo '</script'; ?>
 >
 
+<?php if ($_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
 <div id="product-list-reviews-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
 " class="product-list-reviews">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
+<?php }?>
 
 <?php if ($_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
 <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>

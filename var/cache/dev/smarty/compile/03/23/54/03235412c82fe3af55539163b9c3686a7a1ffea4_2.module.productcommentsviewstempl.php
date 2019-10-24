@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-23 04:55:54
+/* Smarty version 3.1.33, created on 2019-10-23 23:48:43
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db0159a3d0104_91623694',
+  'unifunc' => 'content_5db11f1bc15006_02298724',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db0159a3d0104_91623694 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- begin D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/average-grade-stars.tpl -->
+function content_5db11f1bc15006_02298724 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- begin D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/average-grade-stars.tpl -->
 <?php if ($_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
   <div class="comments-note">
     <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Grade','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
@@ -30,5 +30,5 @@ function content_5db0159a3d0104_91623694 (Smarty_Internal_Template $_smarty_tpl)
 "></div>
   </div>
 <?php }?>
-<!-- end D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/average-grade-stars.tpl --><?php }
+<!-- end D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/average-grade-stars.tpl --><?php }
 }

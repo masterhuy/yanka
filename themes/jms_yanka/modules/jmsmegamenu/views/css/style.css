@@ -5,23 +5,6 @@
     padding: 0;
 	position:static;
 }
-.mod-content .product-info{
-    margin-top: 17px;
-}
-.mod-content .content_price{
-    margin-top: 10px;
-}
-.sub-brand > .mod-content a {
-    width: calc(50% - 5px) !important;
-    float: left;
-    display: inline-block !important;
-    transition: unset !important;
-    border: 1px solid transparent;
-    margin-bottom: 10px;
-}
-.sub-brand > .mod-content a:nth-child(odd){
-    margin-right: 10px;
-}
 .mega-col-nav > .mega-inner > ul > li.sub-brand .mod-content a img {
     transform: unset !important; 
 }
@@ -69,9 +52,6 @@
 	-ms-transition: all 400ms ease 0s;
 	-o-transition: all 400ms ease 0s;
 }
-.jms-megamenu .img-first img {
-    padding: 0;
-}
 .jms-megamenu .nav > li {
     display: inline-block;
     float: inherit;
@@ -81,9 +61,6 @@
 }
 .jms-megamenu .nav > .menu-item.mega.new{
 	top:0 !important;
-}
-.menu.left .jms-megamenu .nav > li.sub-layouts{
-    padding-left: 0;
 }
 .jms-megamenu .nav > li > a {
     line-height: 80px;
@@ -98,10 +75,7 @@
 }
 .jms-megamenu .nav > li.open > a,
 .jms-megamenu .nav > li > a:hover{
-    color: #858585;
-}
-.jms-megamenu .nav > li.open > a i{
-    fill: #858585;
+    color: #48CAB2;
 }
 .jms-megamenu .nav > li > a i{
     display: flex;
@@ -174,17 +148,33 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .item-fullwidth .mega-col-nav {
     padding: 0 15px;
 }
-.jms-megamenu .mega-col-nav {
-    padding: 0;
+.jms-megamenu .sub-home .mega-col-nav {
+    margin-left: -2px;
+}
+.jms-megamenu .sub-home .mega-col-nav .mod-content .image{
+    width: auto;
+    position: absolute;
+    right: -34px;
+    top: -5px;
+    visibility: hidden;
+    z-index: 3;
+    max-width: 141px;
+    -webkit-box-shadow: 0 0 10px rgba(51, 51, 51, 0.06);
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.06);
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.jms-megamenu .sub-home .mega-col-nav li:hover .mod-content .image{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
 }
 .jms-megamenu .mega-col-nav.img .menu-item > a{
     display: none;
 }
 .jms-megamenu .mega-col-nav p{
     margin-bottom: 0;
-}
-.jms-megamenu .mega-nav li.group > a {
-    text-transform: uppercase;
 }
 .jms-megamenu .mega-nav .mega > a::after {
     font-family: "FontAwesome";
@@ -208,9 +198,6 @@ div.jms-megamenu .dropdown-menu::before{
     margin: 0;
     top: 0;
 }
-.jms-megamenu .megamenu-custom.first .menu-item.group {
-    margin-bottom: 7px;
-}
 .jms-megamenu .dropdown-menu .dropdown-menu {
     margin-left: 0;
 }
@@ -222,7 +209,7 @@ div.jms-megamenu .dropdown-menu::before{
     margin-left: 0;
 }
 .jms-megamenu .dropdown-menu {
-    left: -30px;
+    left: -27px;
 }
 .jms-megamenu .nav > li.menu-align-center.open > .dropdown-menu {
     -webkit-transform: translateX(-50%);
@@ -232,8 +219,9 @@ div.jms-megamenu .dropdown-menu::before{
 .menu-item.mega.item-fullwidth {
     position: static;
 }
-.jms-megamenu .menu-item > .dropdown-menu{
+.jms-megamenu .menu-item > .dropdown-menu {
     top: calc(100% + 1px);
+    border-top: 1px solid #ebebeb;
 }
 .jms-megamenu .menu-align-center > .dropdown-menu {
     left: 50%;
@@ -261,11 +249,11 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .dropdown-menu {
     background: #fff;
-    padding: 22px 0px;
+    padding: 30px 0px;
     box-shadow: 0 5px 8px rgba(0,0,0,0.1);
 }
 .jms-megamenu .dropdown-menu > .mega-dropdown-inner{
-    padding: 0 20px;
+    padding: 0 26px;
 }
 .jms-megamenu .dropdown-menu > .mega-dropdown-inner > .row{
     margin: 0;
@@ -294,32 +282,26 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > .item-fullwidth .mega-nav li.banner-2 {
     margin-bottom: 37px;
 }
-.jms-megamenu .nav > .menu-item .mega-nav li > a {
+.jms-megamenu .nav > .menu-item .mega-nav li > a,
+.jms-megamenu .nav > .menu-item .mega-nav li .mod-content .title {
     border-bottom: medium none;
-    line-height: 24px;
+    line-height: 31px;
     padding: 0;
     letter-spacing: 0;
-    color: #858585;
+    color: #333;
     display: block;
     position: relative;
+    font-size: 16px;
 }
-.jms-megamenu .nav > .menu-item .mega-nav li > a:hover{
-    color: #141414;
+.jms-megamenu .nav > .menu-item .mega-nav li > a:hover,
+.jms-megamenu .nav > .menu-item .mega-nav li .mod-content .title:hover{
+    color: #48cab2;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li{
     position: relative;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li.new{
     top: 0 !important;
-}
-.jms-megamenu .nav > .menu-item .mega-nav li:not(.group):hover::before{
-    content: "";
-    width: calc(100% + 10px);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -5px;
-    background: #f2f2f2;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li.img:hover::before{
     display: none;
@@ -328,11 +310,11 @@ div.jms-megamenu .dropdown-menu::before{
     max-width: 130px;
 }
 .jms-megamenu .nav .mega-nav li.group > a {
-    color: #141414;
-    letter-spacing: 0.5px;
-    font-size: 15px;
+    color: #333;
+    font-size: 18px;
     display: block;
-    padding-bottom: 8px;
+    padding-bottom: 11px;
+    font-weight: 800;
 }
 .jms-megamenu .mega-col-nav .mod-content{
     position: relative;
@@ -390,9 +372,9 @@ div.jms-megamenu .dropdown-menu::before{
     left: 25%;
     transform: translate(0%);
 	-webkit-transform:translate(0%);
- -moz-transform: translate(0%);
- -ms-transform: translate(0%);
- -o-transform: translate(0%);
+    -moz-transform: translate(0%);
+    -ms-transform: translate(0%);
+    -o-transform: translate(0%);
 }
 .menu-item.group.col-img{
 	margin-bottom:0 !important;
@@ -405,25 +387,12 @@ div.jms-megamenu .dropdown-menu::before{
 .mega-col-nav .banner-box{
 	display:table;
 }
-.img-first.wrapper-banner .box-content {
-    text-align: center;
-    vertical-align: middle;
-	padding:0;
-}
-.mega-col-nav.col1{
-    width: 12.55%;
-}
-.mega-col-nav.col2{
-    margin-top: 32px;
-    width: 20.78333334%;
-}
 .mega-col-nav > .mega-inner > ul > li .mod-content img{
     width: 100%;
     transition: .4s all;
 }
 .mega-col-nav > .mega-inner > ul > li .mod-content p,
 #off-canvas-menu .mod-content p{
-    text-align: center;
     margin-bottom: 0;
 }
 .mega-col-nav > .mega-inner > ul > li .mod-content .title,
@@ -454,10 +423,6 @@ div.jms-megamenu .dropdown-menu::before{
 .mega-col-nav > .mega-inner > ul > li .mod-content a{
     display: block;
     overflow: hidden;
-}
-.mega-col-nav > .mega-inner > ul > li .mod-content a:hover img{
-    transform: scale(1.15);
-    opacity: 0.4;
 }
 .sub-banner {
     position: relative;

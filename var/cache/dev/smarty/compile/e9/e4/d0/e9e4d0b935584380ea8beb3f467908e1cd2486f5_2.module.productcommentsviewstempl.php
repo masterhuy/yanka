@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-23 05:32:08
+/* Smarty version 3.1.33, created on 2019-10-24 00:58:53
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db01e18a62952_19309104',
+  'unifunc' => 'content_5db12f8d0d1995_35043242',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9e4d0b935584380ea8beb3f467908e1cd2486f5' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1570008365,
+      1 => 1571885841,
       2 => 'module',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db01e18a62952_19309104 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- begin D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+function content_5db12f8d0d1995_35043242 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- begin D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 <?php echo '<script'; ?>
  type="text/javascript">
   document.addEventListener("DOMContentLoaded", function() {
@@ -53,11 +53,13 @@ function content_5db01e18a62952_19309104 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '</script'; ?>
 >
 
+<?php if ($_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
 <div id="product-list-reviews-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id'], ENT_QUOTES, 'UTF-8');?>
 " class="product-list-reviews">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
+<?php }?>
 
 <?php if ($_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
 <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
@@ -67,5 +69,5 @@ function content_5db01e18a62952_19309104 (Smarty_Internal_Template $_smarty_tpl)
 " />
 </div>
 <?php }?>
-<!-- end D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/product-list-reviews.tpl --><?php }
+<!-- end D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/product-list-reviews.tpl --><?php }
 }

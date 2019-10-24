@@ -114,6 +114,24 @@
   -ms-flex-align: center;
   align-items: center; }
 
+.jms-megamenu .nav > li > a::before {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: transparent;
+  background-color: #48CAB2;
+  height: 2px;
+  -webkit-transition: width 0.25s;
+  -o-transition: width 0.25s;
+  transition: width 0.25s; }
+
+.jms-megamenu .nav > li.open > a::before {
+  width: 100%; }
+
 .megamenu.center .jms-megamenu > ul {
   text-align: center; }
 
@@ -737,20 +755,30 @@
   #js-product-list-top > .row .right {
     width: auto; }
 
-.products-sort-order .select-title span {
-  cursor: pointer;
-  display: block;
-  line-height: 34px;
-  overflow: hidden;
-  padding-right: 60px;
-  white-space: nowrap;
-  color: #333;
-  font-size: 14px;
-  font-weight: 800; }
+.inlude_sort_by .sort-by {
+  display: none; }
 
-.products-sort-order.dropdown i {
-  font-size: 14px;
-  cursor: pointer; }
+.products-sort-order .select-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .products-sort-order .select-title span {
+    cursor: pointer;
+    line-height: 25px;
+    overflow: hidden;
+    padding-right: 26px;
+    white-space: nowrap;
+    color: #333;
+    font-size: 14px;
+    font-weight: 800; }
+
+.products-sort-order.dropdown svg {
+  width: 14px;
+  cursor: pointer;
+  color: #d0d0d0; }
 
 .products-sort-order .dropdown-menu {
   left: auto;
@@ -760,7 +788,9 @@
   right: -7px;
   display: block;
   background: #fff;
-  top: calc(100% + 10px); }
+  top: calc(100% + 10px);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
   .products-sort-order .dropdown-menu a {
     display: block;
     line-height: 23px;
@@ -1215,9 +1245,7 @@ a.wishlist_top {
   display: none; }
 
 .view-mode .button {
-  display: inline-block;
-  position: relative;
-  left: 2px; }
+  display: inline-block; }
   .view-mode .button .view-grid.active span {
     border-color: #333; }
   .view-mode .button .view-grid span {

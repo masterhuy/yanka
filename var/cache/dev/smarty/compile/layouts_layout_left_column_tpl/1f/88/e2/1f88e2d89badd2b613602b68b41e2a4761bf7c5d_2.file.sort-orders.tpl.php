@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-23 05:32:08
+/* Smarty version 3.1.33, created on 2019-10-23 23:49:02
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db01e18ab0b59_25321567',
+  'unifunc' => 'content_5db11f2e7024f8_86325038',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1f88e2d89badd2b613602b68b41e2a4761bf7c5d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\sort-orders.tpl',
-      1 => 1569568109,
+      1 => 1571881764,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db01e18ab0b59_25321567 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5db11f2e7024f8_86325038 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="inlude_sort_by">
 	<span class="hidden-sm-down sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sort','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 :</span>
@@ -33,7 +33,11 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['listing']->value['sort_selected'],
 } else {
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Select','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );
 }?></span>
-			<i class="fa fa-angle-down"></i>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+				<g>
+					<polygon fill="currentColor" points="12.5,17.6 2.9,8.1 4.1,6.9 12.5,15.4 20.9,6.9 22.1,8.1 	"></polygon>
+				</g>
+			</svg>
 		</a>
 		<div class="dropdown-menu">
 			<?php

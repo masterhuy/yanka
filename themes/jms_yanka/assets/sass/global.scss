@@ -162,6 +162,14 @@
 //
 
 //megamenu
+.jms-megamenu .nav > li{
+	> a{
+		@include underline(28, $active, 2);
+	}
+	&.open > a::before{
+		width: 100%;
+	}
+}
 .megamenu{
 	&.center{
 		.jms-megamenu > ul{
@@ -926,21 +934,28 @@
 //
 
 //product sort order
+.inlude_sort_by .sort-by{
+	display: none;
+}
 .products-sort-order{
-	.select-title span {
-		cursor: pointer;
-		display: block;
-		line-height: 34px;
-		overflow: hidden;
-		padding-right: 60px;
-		white-space: nowrap;
-		color: #333;
-		font-size: 14px;
-		font-weight: 800;
+	.select-title{
+		display: inline-flex;
+		align-items: center;
+		span {
+			cursor: pointer;
+			line-height: 25px;
+			overflow: hidden;
+			padding-right: 26px;
+			white-space: nowrap;
+			color: #333;
+			font-size: 14px;
+			font-weight: 800;
+		}
 	}
-	&.dropdown i {
-	  	font-size: 14px;
+	&.dropdown svg {
+	  	width: 14px;
 	  	cursor: pointer;
+	  	color: #d0d0d0;
 	}
 	.dropdown-menu {
 	  	left: auto;
@@ -951,6 +966,7 @@
 		display: block;
 		background: #fff;
 		top: calc(100% + 10px);
+		box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	  	a{
 		    display: block;
 		    line-height: 23px;
@@ -1471,14 +1487,14 @@ a.wishlist_top{
 .ps-shown-by-js button {
 	cursor: pointer;
 }
+
+//view mode
 .view-mode{
 	&.right .sort-by{
 		display: none;
 	}
 	.button {
 		display: inline-block;
-		position: relative;
-		left: 2px;
 		.view-grid{
 			&.active span{
 				border-color: #333;
@@ -1525,6 +1541,8 @@ a.wishlist_top{
 		}
 	}
 }
+//
+
 //products list
 .products-list-in-row{
 	.label-sale {

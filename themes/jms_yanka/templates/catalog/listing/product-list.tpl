@@ -26,13 +26,13 @@
 {block name='content'}
     <section id="main">
         <section id="products">
-            <div class="cat_desc">
+            <div class="category-title">
                 <div class="addon-title">
                     <h3>{$page.meta.title}</h3>
                 </div>
             </div>
             {if $listing.products|count}
-                <div id="">
+                <div id="product-list-top">
                     {block name='product_list_top'}
                         {include file='catalog/_partials/products-top.tpl' listing=$listing}
                     {/block}
@@ -41,8 +41,9 @@
                 <div id="product_list" class="{if $activeFilters|count}active_filters{else}hide_filters{/if} product_list item-gutter-{$jpb_gutterwidth} {if $jpb_grid == 1}products-list-in-column{else}products-list-in-row{/if} products-list-{$jpb_productperrow}">
                     {block name='product_list'}
                         {include file='catalog/_partials/products.tpl' listing=$listing}
-                    {/block}     
+                    {/block}
                 </div>
+
                 <div id="js-product-list-bottom">
                     {block name='product_list_bottom'}
                         {include file='catalog/_partials/products-bottom.tpl' listing=$listing}

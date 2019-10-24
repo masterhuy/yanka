@@ -847,6 +847,7 @@
 .flex-box .cart-button:hover .text-outofstock span {
     display: block;
 }
+
 #product{
     letter-spacing: 0;
 }
@@ -935,9 +936,10 @@
 }
 .product-preview .flexbox + .product-info {
     width: 73%;
-    padding: 0 20px;
+    padding-left: 20px;
     text-align: left;
     margin-top: -5px;
+    padding-bottom: 0;
 }
 .product-preview .flexbox + .product-info .label.label-discount {
     display: inline-block;

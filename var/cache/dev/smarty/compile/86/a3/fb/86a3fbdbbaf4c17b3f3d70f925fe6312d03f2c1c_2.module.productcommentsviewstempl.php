@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-23 04:55:54
+/* Smarty version 3.1.33, created on 2019-10-23 23:48:44
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db0159a3dbc84_75601372',
+  'unifunc' => 'content_5db11f1c0a3503_94612040',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db0159a3dbc84_75601372 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- begin D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/product-comment-item-prototype.tpl -->
+function content_5db11f1c0a3503_94612040 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- begin D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/product-comment-item-prototype.tpl -->
 <div class="product-comment-list-item row" data-product-comment-id="@COMMENT_ID@" data-product-id="@PRODUCT_ID@">
   <div class="col-md-3 col-sm-3 comment-infos">
     <div class="grade-stars"></div>
@@ -55,5 +55,5 @@ function content_5db0159a3dbc84_75601372 (Smarty_Internal_Template $_smarty_tpl)
     </div>
   </div>
 </div>
-<!-- end D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/product-comment-item-prototype.tpl --><?php }
+<!-- end D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/product-comment-item-prototype.tpl --><?php }
 }

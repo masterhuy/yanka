@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-23 04:55:54
+/* Smarty version 3.1.33, created on 2019-10-23 23:48:44
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db0159a3e7809_70042186',
+  'unifunc' => 'content_5db11f1c0ca609_32381409',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db0159a3e7809_70042186 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- begin D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/empty-product-comment.tpl -->
+function content_5db11f1c0ca609_32381409 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- begin D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/empty-product-comment.tpl -->
 <div id="empty-product-comment" class="product-comment-list-item">
   <?php if ($_smarty_tpl->tpl_vars['post_allowed']->value) {?>
     <button class="btn btn-comment btn-comment-big post-product-comment">
@@ -34,5 +34,5 @@ function content_5db0159a3e7809_70042186 (Smarty_Internal_Template $_smarty_tpl)
 
   <?php }?>
 </div>
-<!-- end D:\xamppp\htdocs\jms_yanka/modules/productcomments/views/templates/hook/empty-product-comment.tpl --><?php }
+<!-- end D:\xamppp\htdocs\jms_yanka/themes/jms_yanka/modules/productcomments/views/templates/hook/empty-product-comment.tpl --><?php }
 }
