@@ -25,7 +25,16 @@
  <div class="product-variants">
     {foreach from=$groups key=id_attribute_group item=group}
         <div class="clearfix product-variants-item {$group.name|lower|replace:' ':''}">
-            <span class="control-label">{$group.name}:</span>
+            <div class="control-label">
+                {$group.name}:
+                <ul>
+                    {foreach from=$group.attributes key=id_attribute item=group_attribute}
+                        <li class="collapse{if $group_attribute.selected} in{/if}">
+                            <span class="radio-label">{$group_attribute.name}</span>
+                        </li>
+                    {/foreach}
+                </ul>
+            </div>
             {if $group.group_type == 'select'}
                 <select
                     id="group_{$id_attribute_group}"

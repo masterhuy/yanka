@@ -2117,7 +2117,7 @@ ul.cart_block_list li:not(:last-child){
   position: relative;
   overflow: hidden;
 }
-.product-miniature .preview .product-flag {
+.product-flag {
   color: #fff;
   font-size: 12px;
   font-weight: 800;
@@ -2126,17 +2126,17 @@ ul.cart_block_list li:not(:last-child){
   line-height: 1;
   margin-bottom: 5px;
 }
-.product-miniature .preview .on-sale {
+.product-flag.on-sale {
   background: #fc427b;
 }
-.product-miniature .preview .new {
+.product-flag.new {
   background: #327FD9;
   display: inline-block;
 }
-.product-miniature .preview .discount {
+.product-flag.discount {
   background: #E12C43;
 }
-.product-miniature .preview .label-outstock {
+.product-flag.label-outstock {
   background: #777;
   text-transform: capitalize;
 }
@@ -5503,10 +5503,9 @@ button,
 .cart-icon i,
 .jms-banner,
 .promobox__border,
-.arrows.js-arrows i, 
+.arrows.js-arrows i, #FFFFFF
 .scroll-box-arrows i,
 .popup-customer-services,
-.bg-overlay,
 #jms_ajax_search .btn-search i,
 .right-icon-group .addon-box a svg,
 .images-container .product-images > li.thumb-container > .thumb{

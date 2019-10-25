@@ -148,6 +148,11 @@
 
 //header
 #header{
+	background: #fff;
+	&.change-position{
+		position: relative;
+		z-index: 1000;
+	}
 	.container-fluid{
 		padding-left: 50px;
 		padding-right: 50px;
@@ -157,6 +162,15 @@
 	.container-fluid > .row{
 		display: flex;
 		align-items: center;
+	}
+}
+//
+
+//bgoverlay
+.bg-overlay{
+	&.change-status{
+		opacity: 1;
+		visibility: visible;
 	}
 }
 //
@@ -1623,23 +1637,7 @@ a.wishlist_top{
 }
 //
 
-.mega_menu{
-	cursor: pointer;
-	margin-bottom: 0;
-	.close_menu{
-		display: none;
-	}
-}
-.open-sidebar1{
-	.mega_menu{
-		.open_menu{
-			display: none;
-		}
-		.close_menu{
-			display: block;
-		}
-	}
-}
+//off canvas menu
 #off-canvas-menu{
 	ul li .mod-content{
 		padding: 0 20px;
@@ -1717,6 +1715,7 @@ a.wishlist_top{
 		}
 	}
 }
+//
 
 //quick view
 .quickview{
@@ -1798,6 +1797,42 @@ a.wishlist_top{
 }
 //
 
+//product detail
+.product-detail{
+	.product-flags{
+		position: static;
+		margin-top: -2px;
+		margin-bottom: 16px;
+		.product-flag{
+			display: inline-block;
+		}
+	}
+	.content_price{
+		margin-left: 0;
+		.price.old{
+			font-size: 24px;
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+	.product-additional-info{
+		.post-product-comment {
+			display: none;
+		}
+		.link-comment{
+			color: $active;
+			font-weight: 800;
+			position: relative;
+			@include underline(0, $active, 2)
+			&:hover::before{
+				width: 100%;
+			}
+		}
+	}
+	.product-comments-additional-info .comments-note span{
+		display: none;
+	}
+}
 #product{
 	.product-cover{
 		.layer {
@@ -1972,6 +2007,7 @@ a.wishlist_top{
 		}
 	}
 }
+//
 
 #module-jmsblog-categories{
 	.category-info {

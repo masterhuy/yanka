@@ -69,9 +69,6 @@
 .best-sellers_block_right .categoryname{
     display: none;
 }
-#product .breadcrumb {
-    padding-bottom: 30px;
-}
 #product .products .preview img {
 	width:100%;
 	max-width:none;
@@ -210,6 +207,12 @@
 }
 
 /**/
+.product-comments-additional-info {
+    display: none;
+}
+.product-additional-info .product-comments-additional-info {
+    display: flex;
+}
 #product-availability {
     display: block;
     margin-bottom: 20px;
@@ -219,13 +222,17 @@
     padding: 5px 6px;
 }
 .pd-name {
-    font-size: 24px;
+    font-size: 36px;
     line-height: normal;
-    padding-bottom: 9px;
+    padding-bottom: 1px;
+    margin-top: -6px;
     letter-spacing: 0;
+    color: #333;
+    font-weight: 800;
+    text-transform: capitalize;
 }
 .product-prices.content_price .price.new {
-    font-size: 24px;
+    font-size: 36px;
     margin-top: 9px;
     display: inline-block;
 }
@@ -241,6 +248,7 @@
     color: #858585;
     border-bottom: 1px dashed #e5e5e5;
     padding-bottom: 10px;
+    display: none;
 }
 .product-variants .control-label{
     margin-bottom: 10px;
@@ -312,15 +320,9 @@
     flex-wrap: wrap;
 }
 .product-variants-item ul li {
-    cursor: pointer;
-    display: inline-block;
     float: left;
     margin-right: 10px;
     position: relative;
-}
-.product-variants-item.size ul li,
-.product-variants-item.taille ul li{
-    display: inline-flex;
 }
 .product-variants-item.size input,
 .product-variants-item.taille input {
@@ -339,15 +341,19 @@
 .product-variants .product-variants-item:not(:last-child){
     margin-bottom: 10px;
 }
-.product-variants-item .control-label{
+.product-variants-item .control-label {
     margin-bottom: 7px;
-    display: block;
-    text-transform: uppercase;
-    color: #858585;
+    display: flex;
+    font-style: 16px;
+}
+.product-variants-item .control-label ul{
+    font-weight: 800;
+    color: #333;
 }
 .product-add-to-cart .title{
     text-transform: uppercase;
     padding-bottom: 4px;
+    display: none;
 }
 #product-availability i {
     color: red;
@@ -375,7 +381,7 @@
     font-size: 18px;
 }
 .product-quantity .product-btn.cart-button{
-    height: 35px;
+    height: 54px;
     padding: 0;
     align-items: center;
     transition: unset;
@@ -386,6 +392,12 @@
     text-align: center;
     margin: 0;
     display: flex;
+}
+.product-quantity .text-addcart{
+    width: auto;
+    line-height: normal;
+    font-size: 13px;
+    margin-left: 7px;
 }
 .product-quantity .add .row{
     margin: 0 -5px;
@@ -415,15 +427,16 @@
 .product-quantity button.btn-touchspin {
     border-radius: 0;
     padding: 0;
-    margin-left: 10px;
-    width: 35px;
-    height: 35px;
+    width: 54px;
+    height: 54px;
     display: inline-block;
-    border: 1px solid #e5e5e5;
+    position: absolute;
+    top: 0;
+    z-index: 9;
 }
-.product-quantity button.btn-touchspin:hover{
+.product-quantity button.btn-touchspin:hover {
     background-color: transparent;
-    border-color: #141414;
+    border-color: transparent;
 }
 .product-minimal-quantity {
 	margin-bottom:0;
@@ -436,12 +449,15 @@
     justify-content: center;
     align-items: center;
     z-index: 0;
+    background: #f8f8f8;
+    width: 138px;
 }
 .product-quantity input#quantity_wanted {
     width: 100%;
-    height: 35px;
-    border: 1px solid #e5e5e5;
-    text-align: left;
+    height: 54px;
+    border: 0;
+    text-align: center;
+    background: transparent;
 }
 .product-quantity input#quantity_wanted:hover,
 .product-quantity input#quantity_wanted:focus{
@@ -454,7 +470,7 @@
     width: 100%;
 }
 .product-quantity .bootstrap-touchspin-up {
-    order: 2;
+    right: 0;
     background: url("../img/icon/plus.png") no-repeat center;
 }
 .product-quantity .btn-touchspin:hover::before{
@@ -462,6 +478,7 @@
 }
 .product-quantity .bootstrap-touchspin-down {
     background: url("../img/icon/minus.png") no-repeat center;
+    left: 0;
 }
 .input-group-btn-vertical {
     display: flex;
@@ -471,6 +488,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 12px;
 }
 .product-price.h5.has-discount {
     display: none;
@@ -572,31 +590,20 @@
     padding-bottom: 1px;
 }
 .other-info {
-    display: none;
-    padding: 20px 0 29px;
-    border-bottom: 1px solid #ebebeb;
     margin-bottom: 25px;
+    line-height: 25px;
+    margin-top: 22px;
 }
 .other-info > li label,
 .other-info > li span {
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 0;
-    padding-left: 13px;
     position: relative;
 }
-.other-info > li {
-    padding: 5px 0;
-}
-.other-info > li label::before {
-    border-radius: 50%;
-    content: " ";
-    font-size: 48px;
-    left: 0;
-    position: absolute;
-    top: 5px;
-    width: 5px;
-    height: 5px;
-    background: #141414;
+.other-info > li .editable {
+    font-weight: 800;
+    color: #333;
+    text-transform: capitalize;
 }
 .other-info > li span {
     padding-left: 0;

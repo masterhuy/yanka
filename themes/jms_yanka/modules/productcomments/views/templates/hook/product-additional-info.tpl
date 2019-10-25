@@ -35,8 +35,7 @@
     {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
     <div class="additional-links">
       <a class="link-comment" href="#product-comments-list-header">
-        <i class="material-icons shopping-cart">chat</i>
-        {l s='Read user reviews' d='Modules.Productcomments.Shop'} ({$nb_comments})
+        {$nb_comments} {l s='reviews' d='Modules.Productcomments.Shop'} 
       </a>
       {if $post_allowed}
         <a class="link-comment post-product-comment" href="#product-comments-list-header">

@@ -220,7 +220,7 @@ div.jms-megamenu .dropdown-menu::before{
     position: static;
 }
 .jms-megamenu .menu-item > .dropdown-menu {
-    top: calc(100% + 1px);
+    top: 100%;
     border-top: 1px solid #ebebeb;
 }
 .jms-megamenu .menu-align-center > .dropdown-menu {

@@ -72,22 +72,13 @@
   color: #232323;
 }
 
-.link-comment:hover, .link-comment:active {
-  text-decoration: underline;
-  color: #232323;
-}
-
 /**
  * Additional product infos
  */
 
 .product-comments-additional-info {
-  margin: 20px 0;
-  font-weight: 300;
+  margin: 6px 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   font-size: 14px;
 }
 
@@ -98,8 +89,7 @@
 }
 
 .product-comments-additional-info .comments-note {
-  margin-right: 30px;
-  margin-bottom: 20px;
+  margin-right: 2px;
 }
 
 /**
@@ -214,15 +204,15 @@
 .star-content div.star-on,
 .star-content div.star-hover {
   display: block;
-  width: 20px;
-  height: 20px;
-  background: url(../img/stars.png) no-repeat 0 0 transparent;
+  width: 16px;
+  height: 16px;
+  background: url(../img/small_stars.png) no-repeat 0 0 transparent;
   flex: auto;
-  margin-left: 3px;
+  margin-right: 6px;
 }
 .star-content div.star-on,
 .star-content div.star-hover {
-  background-position: -24px 0;
+  background-position: -18px 0;
 }
 
 .small-stars .star-content div.star,

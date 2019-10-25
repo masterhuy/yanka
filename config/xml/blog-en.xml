@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>E-commerce Shipping: Trends and Future</title>
+    <link>https://www.prestashop.com/en/blog/e-commerce-shipping-trends-future</link>
+    <description>Nothing provides more satisfaction to online shoppers than a quick delivery.</description>
+     <pubDate>Wed, 23 Oct 2019 14:36:33 +0200</pubDate>
+ <dc:creator>NitinSrivastavaen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-shipping-trends-future</guid>
+  </item>
+  <item>
     <title>How to create a welcome email series for new contacts</title>
     <link>https://www.prestashop.com/en/blog/create-welcome-email-series-contacts</link>
     <description>When done right, welcome email series can bring impressive results. This article explains why you should create one for your business and shows a few tips and examples on how to do it right.</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 02 Oct 2019 11:06:33 +0200</pubDate>
  <dc:creator>Méguy Solvet</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/differences-migration-updating-upgrading</guid>
-  </item>
-  <item>
-    <title>5 key elements for managing your after-sales service</title>
-    <link>https://www.prestashop.com/en/blog/5-keys-to-manage-your-after-sales-service</link>
-    <description>The service you provide to your customers reflects on your company.</description>
-     <pubDate>Mon, 30 Sep 2019 11:08:38 +0200</pubDate>
- <dc:creator>Yateo EN</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/5-keys-to-manage-your-after-sales-service</guid>
   </item>
   </channel>
 </rss>

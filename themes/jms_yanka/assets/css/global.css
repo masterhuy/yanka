@@ -102,9 +102,14 @@
         .top-panel .social ul li a:hover {
           color: #333; }
 
-#header .container-fluid {
-  padding-left: 50px;
-  padding-right: 50px; }
+#header {
+  background: #fff; }
+  #header.change-position {
+    position: relative;
+    z-index: 1000; }
+  #header .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px; }
 
 .header .container-fluid > .row {
   display: -webkit-box;
@@ -113,6 +118,10 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.bg-overlay.change-status {
+  opacity: 1;
+  visibility: visible; }
 
 .jms-megamenu .nav > li > a::before {
   position: absolute;
@@ -1362,18 +1371,6 @@ a.wishlist_top {
   position: relative;
   bottom: 3px; }
 
-.mega_menu {
-  cursor: pointer;
-  margin-bottom: 0; }
-  .mega_menu .close_menu {
-    display: none; }
-
-.open-sidebar1 .mega_menu .open_menu {
-  display: none; }
-
-.open-sidebar1 .mega_menu .close_menu {
-  display: block; }
-
 #off-canvas-menu ul li .mod-content {
   padding: 0 20px; }
   #off-canvas-menu ul li .mod-content a {
@@ -1503,6 +1500,47 @@ a.wishlist_top {
   color: #48CAB2; }
 
 .quickview #jmsproductvideo {
+  display: none; }
+
+.product-detail .product-flags {
+  position: static;
+  margin-top: -2px;
+  margin-bottom: 16px; }
+  .product-detail .product-flags .product-flag {
+    display: inline-block; }
+
+.product-detail .content_price {
+  margin-left: 0; }
+  .product-detail .content_price .price.old {
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 5px; }
+
+.product-detail .product-additional-info .post-product-comment {
+  display: none; }
+
+.product-detail .product-additional-info .link-comment {
+  color: #48CAB2;
+  font-weight: 800;
+  position: relative; }
+  .product-detail .product-additional-info .link-comment::before {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background-color: #48CAB2;
+    height: 2px;
+    -webkit-transition: width 0.25s;
+    -o-transition: width 0.25s;
+    transition: width 0.25s; }
+  .product-detail .product-additional-info .link-comment:hover::before {
+    width: 100%; }
+
+.product-detail .product-comments-additional-info .comments-note span {
   display: none; }
 
 #product .product-cover .layer {

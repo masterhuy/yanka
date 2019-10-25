@@ -56,10 +56,11 @@
     				{hook h='displayTopColumn'}
     			</nav>				
     		</div>
-            <div class="bg-overlay"></div>
+            
     	{/if}
 
         <div class="main-site">
+            <div class="bg-overlay"></div>
             {block name='product_activation'}
                 {include file='catalog/_partials/product-activation.tpl'}
             {/block}

@@ -53,14 +53,6 @@
                     {block name='page_content_container'}
                         <section class="page-content" id="content">
                             {block name='page_content'}
-                                {block name='product_flags'}
-                                    <ul class="product-flags">
-                                        {foreach from=$product.flags item=flag}
-                                            <li class="product-flag {$flag.type}">{$flag.label}</li>
-                                        {/foreach}
-                                    </ul>
-                                {/block}
-
                                 {block name='product_cover_tumbnails'}
                                     {include file='catalog/_partials/product-cover-thumbnails.tpl'}
                                 {/block}
@@ -74,6 +66,14 @@
                 </div>
             </div>
             <div class="pb-right-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                {block name='product_flags'}
+                    <ul class="product-flags">
+                        {foreach from=$product.flags item=flag}
+                            <li class="product-flag {$flag.type}">{$flag.label}</li>
+                        {/foreach}
+                    </ul>
+                {/block}
+
                 {block name='product_availability'}
                     {if $product.show_availability && $product.availability_message}
                     <span id="product-availability">
@@ -87,16 +87,41 @@
                     </span>
                     {/if}
                 {/block}
+
                 {block name='page_header_container'}
                     {block name='page_header'}
                         <h2 itemprop="name" class="pd-name">{block name='page_title'}{$product.name}{/block}</h2>
                     {/block}
                 {/block}
+
                 {block name='product_prices'}
                     {include file='catalog/_partials/product-prices.tpl'}
                 {/block}
+
+                {block name='product_additional_info'}
+                    {include file='catalog/_partials/product-additional-info.tpl'}
+                {/block}
         
                 <div class="product-information">
+                    <ul class="other-info">
+                        {if $product.reference}
+                            <li id="product_reference">
+                                <label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
+                                <span class="editable">{$product.reference}</span>
+                            </li>
+                        {/if}
+                        <li id="product_vendor">
+                            <label>{l s='Vendor:' d='Shop.Theme.Catalog'}</label>
+                            <span class="editable">{Manufacturer::getnamebyid($product.id_manufacturer)}</span>
+                        </li>
+                        <li>
+                            <label>{l s='Product Type: '}</label>
+                            <a class="hover-underline editable" href="{url entity='category' id=$product.id_category_default}">
+                                {$product.category|escape:'html':'UTF-8'}
+                            </a
+                        </li>
+                    </ul>
+
                     {block name='product_description_short'}
                         <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:350:"..." nofilter}</div>
                     {/block}
@@ -163,10 +188,6 @@
                                     {include file='catalog/_partials/product-add-to-cart.tpl'}
                                 {/block}
 
-                                {block name='product_additional_info'}
-                                    {include file='catalog/_partials/product-additional-info.tpl'}
-                                {/block}
-
                                 {hook h='displayProductButtons' product=$product}
 
                                 {block name='product_refresh'}
@@ -176,43 +197,12 @@
                         {/block}
                     </div>
                     {hook h='displayReassurance'}
-                    <ul class="other-info">
-                        {if $product.reference}
-                            <!-- number of item in stock -->
-                            <li id="product_reference">
-                                <label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
-                                <span class="editable">{$product.reference}</span>
-                            </li>
-                        {/if}
-                        <!-- availability or doesntExist -->
-                        <li id="availability_statut">
-                            <label id="availability_label">
-                                {l s='Availability:' d='Shop.Theme.Catalog'}
-                            </label>
-                            <span id="availability_value" class="label-availability">
-                                {if $product.quantity|intval <= 0}
-                                    {l s='Out stock' d='Shop.Theme.Catalog'}
-                                {else}
-                                    {l s='In stock' d='Shop.Theme.Catalog'}
-                                {/if}
-                            </span>
-                        </li>
-                        <li>
-                            {if $product.additional_shipping_cost > 0}
-                                <label>{l s='Shipping tax: '}</label>
-                                <span class="shipping_cost">{$product.additional_shipping_cost}</span>
-                            {else}
-                                <label>{l s='Shipping tax:'}</label>
-                                <span class="shipping_cost">{l s=' Free'}</span>
-                            {/if}
-                        </li>
-                    </ul>
                 </div>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_ld1s"></div>
                 <div class="guaranteed text-center p-relative mt-30">
                     <span>{l s='Guaranteed safe checkout' d='Shop.Theme.Catalog'}</span>
-                    <img class="img-responsive mg-auto px-15" src="themes/jms_shella/assets/img/guaranteed.png" alt="">
+                    <img class="img-responsive mg-auto px-15" src="themes/jms_yanka/assets/img/payments.png" alt="">
                 </div>
             </div>
         </div>

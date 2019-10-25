@@ -1112,7 +1112,6 @@ function hoverLookbook(){
 		$(".lookbook-type-1 .pt-hotspot").removeClass('active');
 		$(this).addClass("active");
 		}, function(){
-		
 	});
 }
 
@@ -1121,7 +1120,6 @@ function closeLookbook(){
 		$(".lookbook-type-1 .pt-hotspot").removeClass('active');
 	});
 }
-//
 
 var initialLoad = true;
 $(document).ready(function() {
