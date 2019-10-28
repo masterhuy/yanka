@@ -23,33 +23,33 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if $nb_comments != 0 || $post_allowed}
-<div class="product-comments-additional-info">
-  {if $nb_comments == 0}
-    {if $post_allowed}
-      <button class="btn btn-comment post-product-comment">
-        <i class="material-icons shopping-cart">edit</i>
-        {l s='Write your review' d='Modules.Productcomments.Shop'}
-      </button>
-    {/if}
-  {else}
-    {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
-    <div class="additional-links">
-      <a class="link-comment" href="#product-comments-list-header">
-        {$nb_comments} {l s='reviews' d='Modules.Productcomments.Shop'} 
-      </a>
-      {if $post_allowed}
-        <a class="link-comment post-product-comment" href="#product-comments-list-header">
-          <i class="material-icons shopping-cart">edit</i>
-          {l s='Write your review' d='Modules.Productcomments.Shop'}
-        </a>
-      {/if}
-    </div>
+    <div class="product-comments-additional-info">
+        {if $nb_comments == 0}
+            {if $post_allowed}
+                <button class="btn btn-comment post-product-comment">
+                    <i class="material-icons shopping-cart">edit</i>
+                    {l s='Write your review' d='Modules.Productcomments.Shop'}
+                </button>
+            {/if}
+        {else}
+            {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
+            <div class="additional-links">
+                <a class="link-comment" href="#product-comments-list-header">
+                    {$nb_comments} {l s='reviews' d='Modules.Productcomments.Shop'} 
+                </a>
+                {if $post_allowed}
+                    <a class="link-comment post-product-comment" href="#product-comments-list-header">
+                        <i class="material-icons shopping-cart">edit</i>
+                        {l s='Write your review' d='Modules.Productcomments.Shop'}
+                    </a>
+                {/if}
+            </div>
 
-    {* Rich snippet rating*}
-    <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
-      <meta itemprop="reviewCount" content="{$nb_comments}" />
-      <meta itemprop="ratingValue" content="{$average_grade}" />
+            {* Rich snippet rating*}
+            <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                <meta itemprop="reviewCount" content="{$nb_comments}" />
+                <meta itemprop="ratingValue" content="{$average_grade}" />
+            </div>
+        {/if}
     </div>
-  {/if}
-</div>
 {/if}

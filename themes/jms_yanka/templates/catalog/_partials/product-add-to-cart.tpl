@@ -23,67 +23,54 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-add-to-cart">
-    {if isset($configuration.is_catalog) && !$configuration.is_catalog}
+    {if !$configuration.is_catalog}
         {block name='product_quantity'}
             <div class="title">
                 {l s='Quantity' d='Shop.Theme.Actions'}
             </div>
             <div class="product-quantity">
-                
-      		    
-                <div class="add">
-
-                        <div class="d-flex">
-                            <div class="customs">
-                                <div class="qty">
-                                <input
-                                    type="text"
-                                    name="qty"
-                                    id="quantity_wanted"
-                                    value="{$product.quantity_wanted}"
-                                    class="input-group"
-                                    min="{$product.minimal_quantity}"
-                                />
-                                </div>
-                            </div>
-                            <button title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="btn-default add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
-                                <span class="fa fa-spin fa-spinner"></span>
-                                <span class="fa fa-check"></span>
-                                <i class="icon-cart">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-                                        <path fill="currentColor" d="M22,8c0-1.1-0.9-2-2-2h-2.7c-0.9-3.4-2.9-5.8-5.3-5.8C9.6,0.2,7.6,2.6,6.7,6H4C2.9,6,2,6.9,2,8L0,22l0,0.1
-                                        C0,23.2,0.9,24,2,24h20c1.1,0,2-0.8,2-1.9l0-0.1L22,8z M12,1.8c1.5,0,2.9,1.7,3.6,4.2H8.4C9.1,3.5,10.5,1.8,12,1.8z M22,22.4H2
-                                        c-0.2,0-0.4-0.1-0.4-0.3l2-13.8l0-0.2c0-0.2,0.2-0.4,0.4-0.4h2.4C6.3,8.4,6.2,9.2,6.2,10h1.6c0-0.8,0.1-1.6,0.2-2.4h8
-                                        c0.1,0.8,0.2,1.6,0.2,2.4h1.6c0-0.8-0.1-1.6-0.2-2.4H20c0.2,0,0.4,0.2,0.4,0.5l2,14C22.4,22.3,22.2,22.4,22,22.4z"></path>
-                                    </svg>
-                                </i>
-                                <span class="text-addcart">
-                                    {l s='Add to cart' d='Shop.Theme.Actions'}
-                                </span>
-                                <span class="text-added">
-                                    {l s='Added' d='Shop.Theme.Actions'}
-                                </span>
-                                <span class="text-outofstock">
-                                    {l s='SOLD OUT' d='Shop.Theme.Actions'}
-                                </span>                                
-                            </button>
-                        </div>
-
-                        {if isset($jpb_wishlist) && $jpb_wishlist}                          
-                            <a href="javascript:void()" class="btn-border w-100 text-center addToWishlist" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+                <div class="customs d-flex">
+                    <div class="qty">
+                        <input type="text" name="qty" id="quantity_wanted" value="{$product.quantity_wanted}" class="input-group" min="{$product.minimal_quantity}"/>
+                    </div>
+                     <div class="add">
+                        <button title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="btn-default add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
+                            <span class="fa fa-spin fa-spinner"></span>
+                            <span class="fa fa-check"></span>
+                            <i class="icon-cart">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-                                    <path fill="currentColor" d="M6.9,2.6c1.4,0,2.7,0.6,3.8,1.6l0.2,0.2L12,5.6l1.1-1.1l0.2-0.2c1-1,2.3-1.6,3.8-1.6s2.8,0.6,3.8,1.6
-                                        c2.1,2.1,2.1,5.6,0,7.7L12,20.7l-8.9-8.9C1,9.7,1,6.2,3.1,4.1C4.2,3.2,5.5,2.6,6.9,2.6z M6.9,1C5.1,1,3.3,1.7,2,3.1
-                                        c-2.7,2.7-2.7,7.2,0,9.9l10,10l10-9.9c2.7-2.8,2.7-7.3,0-10c-1.4-1.4-3.1-2-4.9-2c-1.8,0-3.6,0.7-4.9,2L12,3.3l-0.2-0.2
-                                        C10.4,1.7,8.7,1,6.9,1z">
-                                    </path>
+                                    <path fill="currentColor" d="M22,8c0-1.1-0.9-2-2-2h-2.7c-0.9-3.4-2.9-5.8-5.3-5.8C9.6,0.2,7.6,2.6,6.7,6H4C2.9,6,2,6.9,2,8L0,22l0,0.1
+                                    C0,23.2,0.9,24,2,24h20c1.1,0,2-0.8,2-1.9l0-0.1L22,8z M12,1.8c1.5,0,2.9,1.7,3.6,4.2H8.4C9.1,3.5,10.5,1.8,12,1.8z M22,22.4H2
+                                    c-0.2,0-0.4-0.1-0.4-0.3l2-13.8l0-0.2c0-0.2,0.2-0.4,0.4-0.4h2.4C6.3,8.4,6.2,9.2,6.2,10h1.6c0-0.8,0.1-1.6,0.2-2.4h8
+                                    c0.1,0.8,0.2,1.6,0.2,2.4h1.6c0-0.8-0.1-1.6-0.2-2.4H20c0.2,0,0.4,0.2,0.4,0.5l2,14C22.4,22.3,22.2,22.4,22,22.4z"></path>
                                 </svg>
-                                {l s='Add to wishlist' d='Shop.Theme.Actions'}
-                            </a>
-                        {/if}
-
-
+                            </i>
+                            <span class="text-addcart">
+                                {l s='Add to cart' d='Shop.Theme.Actions'}
+                            </span>
+                            <span class="text-added">
+                                {l s='Added' d='Shop.Theme.Actions'}
+                            </span>
+                            <span class="text-outofstock">
+                                {l s='SOLD OUT' d='Shop.Theme.Actions'}
+                            </span>                                
+                        </button>
+                    </div>
                 </div>
+               
+
+                {if isset($jpb_wishlist) && $jpb_wishlist}                          
+                    <a href="javascript:void()" class="btn-border w-100 text-center addToWishlist" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                            <path fill="currentColor" d="M6.9,2.6c1.4,0,2.7,0.6,3.8,1.6l0.2,0.2L12,5.6l1.1-1.1l0.2-0.2c1-1,2.3-1.6,3.8-1.6s2.8,0.6,3.8,1.6
+                                c2.1,2.1,2.1,5.6,0,7.7L12,20.7l-8.9-8.9C1,9.7,1,6.2,3.1,4.1C4.2,3.2,5.5,2.6,6.9,2.6z M6.9,1C5.1,1,3.3,1.7,2,3.1
+                                c-2.7,2.7-2.7,7.2,0,9.9l10,10l10-9.9c2.7-2.8,2.7-7.3,0-10c-1.4-1.4-3.1-2-4.9-2c-1.8,0-3.6,0.7-4.9,2L12,3.3l-0.2-0.2
+                                C10.4,1.7,8.7,1,6.9,1z">
+                            </path>
+                        </svg>
+                        {l s='Add to wishlist' d='Shop.Theme.Actions'}
+                    </a>
+                {/if}
             </div>
             <div class="clearfix"></div>
         {/block}

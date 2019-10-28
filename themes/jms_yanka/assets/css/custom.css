@@ -2485,6 +2485,10 @@ ul.cart_block_list li:not(:last-child){
   border-radius: 50%;
   background-size: cover;
 }
+.product-preview .color_to_pick_list a.texture{
+  width: 44px;
+  height: 44px;
+}
 
 .product-preview .action-btn {
   position: absolute;

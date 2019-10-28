@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Five tips to expand internationally</title>
+    <link>https://www.prestashop.com/en/blog/tips-to-expand-internationally</link>
+    <description>A decision to expand business is never easy, especially when you want to conquer new, international markets. There are several things which should consider before making such a decision.</description>
+     <pubDate>Thu, 24 Oct 2019 18:12:16 +0200</pubDate>
+ <dc:creator>Code Sphere Network</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/tips-to-expand-internationally</guid>
+  </item>
+  <item>
     <title>E-commerce Shipping: Trends and Future</title>
     <link>https://www.prestashop.com/en/blog/e-commerce-shipping-trends-future</link>
     <description>Nothing provides more satisfaction to online shoppers than a quick delivery.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 04 Oct 2019 17:00:59 +0200</pubDate>
  <dc:creator>bulldesign</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/significance-of-webdesign-SEO</guid>
-  </item>
-  <item>
-    <title>What are the differences between migration, updating and upgrading?</title>
-    <link>https://www.prestashop.com/en/blog/differences-migration-updating-upgrading</link>
-    <description>When managing software as comprehensive as PrestaShop, knowing the differences between migration, update and upgrade concepts is essential.</description>
-     <pubDate>Wed, 02 Oct 2019 11:06:33 +0200</pubDate>
- <dc:creator>Méguy Solvet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/differences-migration-updating-upgrading</guid>
   </item>
   </channel>
 </rss>
