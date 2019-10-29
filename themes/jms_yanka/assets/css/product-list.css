@@ -6,7 +6,7 @@
 }
 #search_filters .filter-box {
 	margin-bottom: 12px;
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ebebeb;
 }
 #search_filters svg{
 	width: 12px;
@@ -261,7 +261,7 @@
 	left: 0;
 	height: 18px;
 	width: 18px;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 }
 #category .facet-label input:checked ~ .checkmark {
   border-color: #333;

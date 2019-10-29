@@ -131,7 +131,7 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .mega-nav li > a:hover{
     padding-left: 35px;
-    color: #141414;
+    color: #333;
 }
 .jms-megamenu .mega-nav li:last-child > a:hover {
     border: medium none;

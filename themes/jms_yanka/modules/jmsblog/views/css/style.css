@@ -100,7 +100,7 @@
 	margin-bottom:15px;
 }
 .blog-widget {
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ebebeb;
 	padding-bottom: 16px;
 	margin-bottom: 19px;
 }
@@ -137,7 +137,7 @@
 .blog-widget .item-post:not(:last-child){
 	padding-bottom: 22px;
 	margin-bottom: 19px;
-	border-bottom: 1px dashed #e5e5e5;
+	border-bottom: 1px dashed #ebebeb;
 }
 .blog-widget .comment-item img{
 	width:80px;
@@ -202,7 +202,7 @@
 	color: #858585;
 }
 .widget-categories li a:hover{
-	color: #141414;
+	color: #333;
 }
 .blog-widget .post-list li:last-child {
 	margin-bottom:0;
@@ -239,7 +239,7 @@
 }
 .cat-post-list .item {
 	margin-bottom: 38px;
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ebebeb;
 	padding-bottom: 40px;
 }
 .cat-post-list.more-columns.tag,
@@ -329,7 +329,7 @@
 	margin-bottom: 17px;
 }
 .cat-post-list .post-meta a:hover{
-	color: #141414;
+	color: #333;
 }
 .cat-post-list .post-meta li span {
 	font-size: 13px;
@@ -392,7 +392,7 @@
 	position: relative;
 }
 .single-blog .post-meta a:hover{
-	color: #141414;
+	color: #333;
 }
 .single-blog .post-meta li:last-child {
 	margin-right:0;
@@ -407,7 +407,7 @@
 	margin-top: 40px;
 	margin-bottom: 20px;
 	padding-top: 40px;
-	border-top: 1px solid #e5e5e5;
+	border-top: 1px solid #ebebeb;
 }
 .post-comment {
 	padding: 15px 0;
@@ -434,7 +434,7 @@
 	left: 0;
 	position: absolute;
 	width: 35px;
-	background: #141414;
+	background: #333;
 }
 /* Categories Page */
 .categories-list .blog-category {

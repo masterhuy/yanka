@@ -23,7 +23,7 @@
 }
 .page-my-account #content .links a span.link-item {
 	background: white none repeat scroll 0 0;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 	display: block;
 	height: 100%;
 	padding: 1rem;
@@ -39,8 +39,8 @@
 	margin-bottom:0;
 }
 #block-history table th {
-	border-bottom: 1px solid #e5e5e5;
-	border-left: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
 	padding: 7px;
 	text-align: center;
 	text-transform: uppercase;

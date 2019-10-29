@@ -131,7 +131,7 @@ jQuery(function ($) {
 			margin: 30,
 			nav: false,
 			dots: true,
-			autoplay: true,
+			autoplay: false,
 			slideSpeed: 200,
 			loop: true
 		});

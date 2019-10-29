@@ -52,11 +52,6 @@
   color: #363A41;
   border: 1px solid #979797;
 }
-.btn-comment-inverse:hover {
-  background-color: #6B868F;
-  border: 1px solid #6B868F;
-  color: #FFFFFF;
-}
 
 .btn-comment-big {
   padding: 13px 16px;
@@ -97,16 +92,31 @@
  */
 .product-comment-modal .modal-header {
   border: none;
-  padding: 30px 30px 15px;
+  padding: 20px 30px;
 }
-
+.product-comment-modal .modal-header .close{
+  right: 27px;
+  top: 28px;
+  tran
+}
+.product-comment-modal .modal-header svg{
+    color: #d0d0d0;
+    transition: .2s all;
+}
+.product-comment-modal .modal-header svg:hover{
+  color: #333;
+}
 .product-comment-modal .modal-body {
-  padding: 15px 30px 30px;
+  padding: 0 30px 30px;
 }
 
 .product-comment-modal .modal-header h2 {
-  float: left;
-  font-size: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 800;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 
 .product-comment-modal .modal-dialog {
@@ -115,22 +125,19 @@
 }
 
 .product-comment-modal .modal-dialog h3 {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-top: -8px;
 }
 
 .product-comment-modal .modal-dialog .product-flag {
   display: none;
 }
 
-.product-comment-modal .modal-dialog .product-cover,
-.product-comment-modal .modal-dialog .product-cover img {
-  width: 99px;
-  height: 99px;
-}
-
 .product-comment-modal label.form-label {
   font-size: 16px;
-  margin: 10px 0;
+  margin-bottom: 1px;
 }
 
 .product-comment-modal input {
@@ -143,21 +150,22 @@
 .product-comment-modal textarea {
   width: 100%;
   min-height: 80px;
-  border: 1px solid #BFBFBF;
   margin-bottom: 10px;
-  padding: 10px 10px;
+  padding-top: 6px;
+  padding-bottom: 11px;
 }
 
 .product-comment-modal .btn-comment,
 .product-comment-modal .btn-comment-inverse {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: bold;
+  border-radius: 0;
+  box-shadow: unset;
 }
 
 .product-comment-modal .required {
-  font-size: 12px;
+  font-size: 20px;
   margin-left: 5px;
+  position: relative;
+  top: 6px;
 }
 
 .product-comment-modal .post-comment-buttons {
@@ -166,7 +174,7 @@
   justify-content: flex-end;
 }
 
-.product-comment-modal .post-comment-buttons .btn-comment {
+.product-comment-modal .post-comment-buttons .btn-default {
   margin-left: 15px;
 }
 
@@ -261,17 +269,35 @@
   text-indent: -5000px;
 }
 #post-product-comment-modal .criterion-rating {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
 #post-product-comment-modal .criterion-rating label {
-  color: #363A41;
-  font-size: 14px;
-  font-weight: bold;
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-right: 6px;
 }
-
+#post-product-comment-form #criterions_list {
+  margin-bottom: 15px;
+}
+#post-product-comment-form input,
+#post-product-comment-form textarea{
+  font-size: 16px;
+  font-weight: 800;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 22px;
+}
+#post-product-comment-form input:focus,
+#post-product-comment-form textarea:focus{
+  border-color: transparent;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 12px rgba(51, 51, 51, 0.08);
+  box-shadow: 0px 2px 12px rgba(51, 51, 51, 0.08);
+}
 #post-product-comment-form input.error,
 #post-product-comment-form textarea.error {
   background-color: #f2dede;
@@ -288,7 +314,7 @@
  */
 
 #product-comments-list-header {
-  padding: 20px 15px;
+  padding: 0;
   color: #232323;
   display: flex;
   flex-direction: row;
@@ -298,7 +324,7 @@
 
 #product-comments-list-header .comments-nb {
   padding-left: 0;
-  padding-top: 3px;
+  margin-bottom: 8px;
 }
 
 #product-comments-list-header .comments-nb  .material-icons {
@@ -311,8 +337,7 @@
 }
 
 .product-comment-list-item {
-  padding: 26px 0;
-  margin: 0 0 20px;
+  margin: 17px 0 20px;
   background-color: #FFFFFF;
   text-align: left;
 }
@@ -326,21 +351,17 @@
 }
 
 .product-comment-list-item .comment-infos {
-  height: 19px;
-  color: #6B868F;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  line-height: 19px;
-  min-height: 100px;
+  font-size: 18px;
+  background: #f8f8f8;
+  padding: 17px 20px 14px;
 }
 
 .product-comment-list-item .comment-infos .grade-stars {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 
 .product-comment-list-item .comment-content h4 {
   height: 22px;
-  color: #363A41;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: -0.32px;
@@ -348,18 +369,13 @@
 }
 
 .product-comment-list-item .comment-content p {
-  color: #363A42;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 28px;
   word-break: break-word;
 }
 
 .product-comment-list-item .comment-content .comment-buttons a {
-  color: #6B868F;
   font-size: 14px;
-  letter-spacing: -0.28px;
-  line-height: 19px;
   margin-right: 8px;
 }
 

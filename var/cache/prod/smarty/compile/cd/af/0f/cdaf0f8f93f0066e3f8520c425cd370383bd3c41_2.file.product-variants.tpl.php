@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-28 04:48:31
+/* Smarty version 3.1.33, created on 2019-10-29 06:16:15
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db6ab5f590711_45370668',
+  'unifunc' => 'content_5db8116f364982_96636579',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdaf0f8f93f0066e3f8520c425cd370383bd3c41' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\product-variants.tpl',
-      1 => 1571978985,
+      1 => 1572337820,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db6ab5f590711_45370668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5db8116f364982_96636579 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_yanka\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
  <div class="product-variants">
@@ -87,7 +87,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute']->value => $_smarty_tpl
 "<?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['selected']) {?> checked="checked"<?php }?>>
                         <span
                             <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code']) {?>class="color" style="background-color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code'], ENT_QUOTES, 'UTF-8');?>
-; <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code'] == '#ffffff') {?>border:1px solid #e5e5e5<?php }?>" <?php }?>
+; <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['html_color_code'] == '#ffffff') {?>border:1px solid #ebebeb<?php }?>" <?php }?>
                             <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['texture']) {?>class="color texture" style="background-image: url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['texture'], ENT_QUOTES, 'UTF-8');?>
 )" <?php }?>
                         >

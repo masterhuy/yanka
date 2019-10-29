@@ -11,7 +11,7 @@
       margin-bottom: 0.625rem; }
 
 #order-items {
-  border-right: #e5e5e5 1px solid; }
+  border-right: #ebebeb 1px solid; }
   #order-items hr {
     border-top-color: #414141; }
   #order-items table {
@@ -44,7 +44,7 @@
 	font-weight:500;
 }
 #order-confirmation .title-block{
-	background-color: #141414;
+	background-color: #333;
 	color: #fff;
 	padding:10px 15px;
 }
@@ -61,10 +61,10 @@
   font-size: 15px;
   padding: 0;
   margin: 0;
-  color: #141414;
+  color: #333;
 }
 #order-confirmation #content-hook_order_confirmation .title-block, #order-confirmation .page-order-confirmation, #order-confirmation .definition-list {
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 }
 #order-confirmation #content-hook_order_confirmation, #order-confirmation .page-order-confirmation {
 	margin-bottom:50px;
@@ -88,7 +88,7 @@
   text-decoration: underline !important;
 }
 .payment_return a:hover{
-  color: #141414;
+  color: #333;
 }
   .definition-list dl {
   display: -webkit-box;
@@ -117,7 +117,7 @@
     -moz-flex: 0 0 45%;
     -ms-flex: 0 0 45%;
     flex: 0 0 45%;
-    background: #e5e5e5;
+    background: #ebebeb;
     padding: 0.625rem;
     margin: 0.125rem; 
 	line-height:28px;

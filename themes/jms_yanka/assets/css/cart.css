@@ -35,8 +35,8 @@
 .cart-box .btn-shopping:active,
 .cart-box .btn-shopping:focus {
 	color: #fff;
-	background: #141414;
-	border-color: #141414 !important;
+	background: #333;
+	border-color: #333 !important;
 }
 .text-xs-center{
 	text-align:center;
@@ -53,7 +53,7 @@
 }
 .product-price .value {
 	font-size: 17px;
-	color: #141414;
+	color: #333;
 }
 .cart-line-product-actions {
 	text-align: center;
@@ -68,10 +68,10 @@
 	display: flex;
 	width: 95px;
 	height: 35px;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 }
 .product-qty .input-group-btn-vertical button:hover i{
-	color: #141414;
+	color: #333;
 }
 .product-qty .js-cart-line-product-quantity {
 	background: transparent;
@@ -173,7 +173,7 @@
 	color: #666;
 }
 .cart-line-product-actions .remove-from-cart:hover{
-	color: #141414;
+	color: #333;
 }
 .alert.alert-danger.js-error {
 	position: relative;
@@ -222,7 +222,7 @@
 }
 .label-title {
 	padding: 11px 0;
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid #ebebeb;
 	color: #858585;
 }
 .label-title > div {
@@ -255,13 +255,13 @@
 	margin-top: 9px;
 }
 .cart-grid-right .right-box {
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 }
 .cart-box .btn-continue-shopping.active {
 	position: relative;
 	background: transparent;
 	border: 0;
-	color: #141414 !important;
+	color: #333 !important;
 	padding-left: 25px;
 }
 .cart-box .btn-continue-shopping i {
@@ -363,7 +363,7 @@
 		margin-bottom: 20px;
 	}
 	.product-line-grid {
-		border-bottom: 1px solid #e5e5e5;
+		border-bottom: 1px solid #ebebeb;
 	}
 	.product-qty .bootstrap-touchspin {
 		justify-content: center;

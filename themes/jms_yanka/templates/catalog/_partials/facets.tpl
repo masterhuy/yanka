@@ -85,7 +85,7 @@
                                     >
                                     <span class="checkmark"></span>
                                     {if isset($filter.properties.color)}
-                                        <span class="color" style="background-color:{$filter.properties.color};{if $filter.properties.color == '#ffffff'}border: 1px solid #e5e5e5{/if}"></span>
+                                        <span class="color" style="background-color:{$filter.properties.color};{if $filter.properties.color == '#ffffff'}border: 1px solid #ebebeb{/if}"></span>
                                         {elseif isset($filter.properties.texture)}
                                         <span class="color texture" style="background-image:url({$filter.properties.texture});background-size:cover;"></span>
                                         {else}

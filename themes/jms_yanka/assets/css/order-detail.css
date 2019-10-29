@@ -6,7 +6,7 @@
 #order-history, #order-infos, #order-detail .addresses .box, .box.hidden-sm-down, .order-items.hidden-md-up.box, #order-detail .box-last, .order-totals.box, #order-detail .order-message-form.box {
 	padding: 25px 15px;
 	margin-bottom: 30px;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 }
 #order-detail .addresses .box {
 	padding:30px 25px; 

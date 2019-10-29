@@ -70,7 +70,7 @@
 	margin-bottom:15px;
 }
 #checkout #checkout-personal-information-step, #checkout #checkout-addresses-step, #checkout #checkout-delivery-step, #checkout #checkout-payment-step {
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 	width: 100%;
 }
 #checkout-addresses-step .address-item label{
@@ -114,7 +114,7 @@
 	font-weight: 400;
 	padding: 0;
 	text-transform: uppercase;
-	color: #141414;
+	color: #333;
 }
 #checkout section#content #js-checkout-summary .card-block .label {
 	font-size: 13px;
@@ -191,7 +191,7 @@
 }
 #checkout .right-box {
 	background: #f2f2f2;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 }
 #checkout .right-box .card.js-cart, #checkout .right-box #block-reassurance {
 	padding: 20px;
@@ -201,7 +201,7 @@ body#checkout section.checkout-step.-complete .step-title {
 	color: #fff;
 }
 body#checkout section.checkout-step.-complete .step-title {
-	background-color: #141414;
+	background-color: #333;
 	color: #fff;
 	line-height: 1;
 }

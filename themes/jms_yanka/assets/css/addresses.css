@@ -11,7 +11,7 @@
 }
 #addresses .card.card-block {
 	padding:30px 20px;
-	border:1px solid #e5e5e5;
+	border:1px solid #ebebeb;
 }
 #addresses .address {
 	background: white none repeat scroll 0 0;
@@ -22,7 +22,7 @@
 }
 #addresses .address .address-body {
 	padding: 20px;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ebebeb;
 }
 #addresses .address .address-body h4 {
 	font-size: 15px;

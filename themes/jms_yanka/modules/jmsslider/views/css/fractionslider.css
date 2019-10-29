@@ -81,7 +81,7 @@
 }
 .fraction-slider .prev:hover i,
 .fraction-slider .next:hover i{
-	color: #141414;
+	color: #333;
 }
 
 /** PAGER **/

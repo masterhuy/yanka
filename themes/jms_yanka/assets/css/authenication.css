@@ -37,11 +37,11 @@
 	z-index: 11;
 }
 #authentication .show-pass button:hover{
-	color: #141414 !important;
+	color: #333 !important;
 }
 #authentication .show-pass:hover,
 #authentication .forgot-password a:hover{
-	color: #141414;
+	color: #333;
 }
 #authentication .forgot-password > a {
 	margin-bottom: 10px;
@@ -88,7 +88,7 @@
 }
 #authentication .no-account {
 	margin-top: 26px;
-	border-top: 1px solid #e5e5e5;
+	border-top: 1px solid #ebebeb;
 	padding-top: 19px;
 }
 #authentication .no-account ul{
@@ -108,7 +108,7 @@
 	border-radius: 50%;
 	width: 4px;
 	height: 4px;
-	background-color: #141414;
+	background-color: #333;
 }
 @media (max-width: 1199px){
 	#authentication{

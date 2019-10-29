@@ -28,13 +28,19 @@
     var productCommentAbuseReportErrorMessage = '{l s='Sorry, your abuse report cannot be sent.' d='Modules.Productcomments.Shop' js=1}';
 </script>
 <div id="product-comments">
-    <div class="row">
-        <div class="col-md-12 col-sm-12" id="product-comments-list-header">
+    <div class="row" id="product-comments-list-header">
+        <div class="col-md-8 col-sm-12" >
             <div class="comments-nb">
-                <i class="material-icons shopping-cart">chat</i>
-                {l s='Comments' d='Modules.Productcomments.Shop'} ({$nb_comments})
+                {l s='Customer Reviews' d='Modules.Productcomments.Shop'} 
             </div>
             {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
+        </div>
+        <div class="col-md-4 col-sm-12">
+            {if $post_allowed && $nb_comments != 0}
+                <button class="btn-border post-product-comment">
+                    {l s='Write a review' d='Modules.Productcomments.Shop'}
+                </button>
+            {/if}
         </div>
     </div>
 
@@ -47,17 +53,6 @@
             data-update-comment-usefulness-url="{$update_comment_usefulness_url nofilter}"
             data-report-comment-url="{$report_comment_url nofilter}"
             data-comment-item-prototype="{$comment_prototype|escape:'html_attr'}">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12" id="product-comments-list-footer">
-            <div id="product-comments-list-pagination"></div>
-            {if $post_allowed && $nb_comments != 0}
-                <button class="btn btn-comment btn-comment-big post-product-comment">
-                    <i class="material-icons shopping-cart">edit</i>
-                    {l s='Write your review' d='Modules.Productcomments.Shop'}
-                </button>
-            {/if}
         </div>
     </div>
 </div>

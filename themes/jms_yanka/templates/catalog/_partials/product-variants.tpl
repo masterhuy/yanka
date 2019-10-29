@@ -50,7 +50,7 @@
                         <li class="pull-xs-left input-container">
                             <input class="input-color" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
                         <span
-                            {if $group_attribute.html_color_code}class="color" style="background-color: {$group_attribute.html_color_code}; {if $group_attribute.html_color_code == '#ffffff'}border:1px solid #e5e5e5{/if}" {/if}
+                            {if $group_attribute.html_color_code}class="color" style="background-color: {$group_attribute.html_color_code}; {if $group_attribute.html_color_code == '#ffffff'}border:1px solid #ebebeb{/if}" {/if}
                             {if $group_attribute.texture}class="color texture" style="background-image: url({$group_attribute.texture})" {/if}
                         >
                             <span class="sr-only">{$group_attribute.name}</span>
