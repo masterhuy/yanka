@@ -8,6 +8,13 @@
 #sitemap .sitemap ul.tree li a {
 	font-size:15px;
 }
+#sitemap ul.nested > li {
+	margin: 0 0 0 21px;
+	padding: 5px 0 0 33px;
+	border-left: 1px solid #ebebeb;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAIAAABR8BlyAAAADklEQVQI12O4duUK2QgA8Owx2QWUkx4AAAAASUVORK5CYII=) no-repeat left 15px transparent;
+}
+
 @media (max-width: 991px){
 	#sitemap .sitemap > div{
 		margin-bottom: 30px;

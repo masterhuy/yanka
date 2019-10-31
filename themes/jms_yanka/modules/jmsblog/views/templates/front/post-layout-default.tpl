@@ -37,29 +37,17 @@
 		<h1 class="title">{$post.title|escape:'html':'UTF-8'}</h1>
 		{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}	
 		<ul class="post-meta">
-			{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
-				<li>
-					<span>
-						{l s='In' d='Modules.JmsBlog'} 
-						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
-							{$post.category_name|escape:'html':'UTF-8'}
-						</a>
-					</span>
-				</li>
-			{/if}
 			<li class="created">
 				<span>
 					<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}</span>
 				</span>
 			</li>
-			{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
+			{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
 				<li>
-					<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'}</span>
-				</li>
-			{/if}
-			{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
-				<li>
-					<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
+					{l s='In' d='Modules.JmsBlog'} 
+					<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
+						{$post.category_name|escape:'html':'UTF-8'}
+					</a>
 				</li>
 			{/if}
 		</ul>
@@ -72,39 +60,37 @@
 				<img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{l s='Image Blog' d='Modules.JmsBlog'}" />
 			</div>
 		{/if}
-		
-		
 		<div class="post-fulltext">
 			{$post.fulltext nofilter}	
 		</div>
 	</div>
 {if $jmsblog_setting.JMSBLOG_SHOW_SOCIAL_SHARING}
-<div class="social-sharing">
-{literal}
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "a6f949b3-864b-44c5-b0ec-4140186ad958", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-{/literal}
-<span class='st_sharethis_large' displayText='ShareThis'></span>
-{if $jmsblog_setting.JMSBLOG_SHOW_FACEBOOK}
-<span class='st_facebook_large' displayText='Facebook'></span>
-{/if}
-{if $jmsblog_setting.JMSBLOG_SHOW_TWITTER}
-<span class='st_twitter_large' displayText='Tweet'></span>
-{/if}
-{if $jmsblog_setting.JMSBLOG_SHOW_GOOGLEPLUS}
-<span class='st_googleplus_large' displayText='Google +'></span>
-{/if}
-{if $jmsblog_setting.JMSBLOG_SHOW_LINKEDIN}
-<span class='st_linkedin_large' displayText='LinkedIn'></span>
-{/if}
-{if $jmsblog_setting.JMSBLOG_SHOW_PINTEREST}
-<span class='st_pinterest_large' displayText='Pinterest'></span>
-{/if}
-{if $jmsblog_setting.JMSBLOG_SHOW_EMAIL}
-<span class='st_email_large' displayText='Email'></span>
-{/if}
-</div>
+	<div class="social-sharing">
+		{literal}
+			<script type="text/javascript">var switchTo5x=true;</script>
+			<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+			<script type="text/javascript">stLight.options({publisher: "a6f949b3-864b-44c5-b0ec-4140186ad958", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+		{/literal}
+		<span class='st_sharethis_large' displayText='ShareThis'></span>
+		{if $jmsblog_setting.JMSBLOG_SHOW_FACEBOOK}
+			<span class='st_facebook_large' displayText='Facebook'></span>
+		{/if}
+		{if $jmsblog_setting.JMSBLOG_SHOW_TWITTER}
+			<span class='st_twitter_large' displayText='Tweet'></span>
+		{/if}
+		{if $jmsblog_setting.JMSBLOG_SHOW_GOOGLEPLUS}
+			<span class='st_googleplus_large' displayText='Google +'></span>
+		{/if}
+		{if $jmsblog_setting.JMSBLOG_SHOW_LINKEDIN}
+			<span class='st_linkedin_large' displayText='LinkedIn'></span>
+		{/if}
+		{if $jmsblog_setting.JMSBLOG_SHOW_PINTEREST}
+			<span class='st_pinterest_large' displayText='Pinterest'></span>
+		{/if}
+		{if $jmsblog_setting.JMSBLOG_SHOW_EMAIL}
+			<span class='st_email_large' displayText='Email'></span>
+		{/if}
+	</div>
 {/if}
 </div>
 	{if $jmsblog_setting.JMSBLOG_COMMENT_ENABLE}	
@@ -124,54 +110,55 @@
 				{/if}
 				<div id="accordion" class="panel-group">
 					<div class="panels">	
-					{if $comments}	
-						<div id="post-comments">
-						
-							{foreach from=$comments item=comment key = k}
-								<div class="post-comment clearfix">
-									<div class="post-comment-info">
-										<div class="user-image">
-											<img class="attachment-widget wp-post-image img-responsive" src="{$image_baseurl|escape:'html':'UTF-8'}user.png" />
-										</div>
-										<div class="left">
-											<div class="title">
-												<h6>
-													<span>{$comment.customer_name|escape:'html':'UTF-8'}</span>
-												</h6>
-												<p>
-													<i class="fa fa-calendar"></i>
-													{l s='POSTED ON' d='Modules.JmsBlog'}
-													{$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
-												</p>
+						{if $comments}	
+							<div id="post-comments">		
+								{foreach from=$comments item=comment key = k}
+									<div class="post-comment clearfix">
+										<div class="post-comment-info">
+											<div class="user-image">
+												<img class="attachment-widget wp-post-image img-responsive" src="{$image_baseurl|escape:'html':'UTF-8'}user.png" />
 											</div>
-											<p class="post-comment-content">{$comment.comment|truncate:200:'...'|escape:'html':'UTF-8'}</p>
+											<div class="left">
+												<div class="title">
+													<h6>
+														<span>{$comment.customer_name|escape:'html':'UTF-8'}</span>
+													</h6>
+													<p>
+														<i class="fa fa-calendar"></i>
+														{l s='POSTED ON' d='Modules.JmsBlog'}
+														{$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
+													</p>
+												</div>
+												<p class="post-comment-content">{$comment.comment|truncate:200:'...'|escape:'html':'UTF-8'}</p>
+											</div>
 										</div>
 									</div>
-								</div>
-							{/foreach}	
-						
-						</div>
-					{/if}
+								{/foreach}	
+							</div>
+						{/if}
 					</div>
 				</div>
 				{if $jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT || (!$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && $logged)}	
 				<div class="commentForm">
 					<div class="addon-title">
-						<h3>{l s='Leave a reply' d='Modules.JmsBlog'}</h3>
+						<h3>{l s='Leave a Comment' d='Modules.JmsBlog'}</h3>
 					</div>
 					<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=jmsblog&controller=post&post_id={$post.post_id|escape:'html':'UTF-8'}&action=submitComment">	
 						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-12">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<label>{l s='Name' d='Modules.JmsBlog'}</label>
 								<div class="form-group">
-									<input id="customer_name" placeholder="Full name" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
+									<input id="customer_name" placeholder="Enter your name" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
 								</div>	
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<label>{l s='Email address' d='Modules.JmsBlog'}</label>
 								<div class="form-group">
-									<input id="comment_title" placeholder="Email address" class="form-control" name="email" type="text" value="{$customer.email}" required />
+									<input id="comment_title" placeholder="john.smith@example.com" class="form-control" name="email" type="text" value="{$customer.email}" required />
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<label>{l s='Website' d='Modules.JmsBlog'}</label>
 								<div class="form-group">
 									<input id="customer_site" placeholder="Website" class="form-control" name="customer_site" type="text" value=""/>
 								</div>
@@ -179,26 +166,27 @@
 						</div>
 						
 						<div class="form-group">
-							<textarea id="comment" placeholder="Comment" class="form-control" name="comment" rows="2" required></textarea>
+							<label>{l s='Body of comment' d='Modules.JmsBlog'}</label>
+							<textarea id="comment" placeholder="Write your comments here" class="form-control" name="comment" rows="5" required></textarea>
 						</div>
 						<div id="new_comment_form_footer">
 							<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 							<p class="">
-								<button id="submitComment" class="btn-default" name="submitComment" type="submit">{l s='Submit review' d='Modules.JmsBlog'}</button>
+								<button id="submitComment" class="btn-default active" name="submitComment" type="submit">{l s='Post comment' d='Modules.JmsBlog'}</button>
 							</p>
 						</div>
 					</form>
 					<script>
-					$("#commentForm").validate({
-					  	rules: {		
-							customer_name: "required",		
-							email: {
-						  		required: true,
-						  		email: true
+						$("#commentForm").validate({
+							rules: {		
+								customer_name: "required",		
+								email: {
+									required: true,
+									email: true
+								}
 							}
-					  	}
-					});
+						});
 					</script>
 				</div>
 				{/if}

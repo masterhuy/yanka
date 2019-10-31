@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-29 05:46:44
+/* Smarty version 3.1.33, created on 2019-10-31 06:21:18
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db80a84a145e8_84458808',
+  'unifunc' => 'content_5dbab59ed7c272_84048771',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db80a84a145e8_84458808 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dbab59ed7c272_84048771 (Smarty_Internal_Template $_smarty_tpl) {
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayFooter'),$_smarty_tpl ) );?>
 
 

@@ -97,7 +97,7 @@
 .product-comment-modal .modal-header .close{
   right: 27px;
   top: 28px;
-  tran
+  transition: .2s all;
 }
 .product-comment-modal .modal-header svg{
     color: #d0d0d0;

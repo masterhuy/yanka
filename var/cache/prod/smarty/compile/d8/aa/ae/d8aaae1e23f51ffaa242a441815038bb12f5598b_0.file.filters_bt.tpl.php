@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-09 00:20:58
+/* Smarty version 3.1.33, created on 2019-10-29 23:14:18
   from 'D:\xamppp\htdocs\jms_yanka\modules\gamification\views\templates\admin\gamification\helpers\view\filters_bt.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d9d602af21012_40056167',
+  'unifunc' => 'content_5db9000a2d21c0_84340770',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9d602af21012_40056167 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5db9000a2d21c0_84340770 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['type']->value)) {?>
 <form class="form-horizontal well" role="form">
     <?php if ($_smarty_tpl->tpl_vars['type']->value == 'badges_feature' || $_smarty_tpl->tpl_vars['type']->value == 'badges_achievement') {?>

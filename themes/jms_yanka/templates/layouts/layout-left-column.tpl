@@ -27,9 +27,9 @@
 {block name='right_column'}{/block}
 
 {block name='content_wrapper'}
-  <div id="content-wrapper" class="left-column col-sm-12 col-md-9 col-lg-9 col-xs-12">
-    {block name='content'}
-      <p>Hello world! This is HTML5 Boilerplate.</p>
-    {/block}
-  </div>
+    <div id="content-wrapper" class="left-column col-sm-12 col-md-9 col-lg-9 col-xs-12">
+        {block name='content'}
+            <p>Hello world! This is HTML5 Boilerplate.</p>
+        {/block}
+    </div>
 {/block}

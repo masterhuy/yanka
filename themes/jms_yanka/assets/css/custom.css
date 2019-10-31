@@ -231,6 +231,7 @@ th {
   text-align: inherit; }
 
 label {
+  font-size: 16px;
   display: inline-block; }
 
 button {
@@ -432,6 +433,9 @@ template {
 }
 .mt-20{
   margin-top: 20px;
+}
+.mt-26{
+  margin-top: 26px;
 }
 .mr-30{
   margin-right: 30px;
@@ -746,12 +750,8 @@ abbr.initialism {
   text-transform: uppercase; }
 
 blockquote {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  margin-left: 20px;
+  padding-left: 60px;
   border-left: solid 2px transparent;
-  font-style: italic;
 }
   blockquote p {
     font-size: 1.25em;
@@ -1071,8 +1071,10 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   width: 100%;
   border: 1px solid #ebebeb;
   height: 44px;
-  padding: 0 15px;
+  padding: 0 18px;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .inputbox, .form-control {
@@ -1105,7 +1107,8 @@ input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, 
   opacity: 1; }
 
 .inputbox::-moz-placeholder, .form-control::-moz-placeholder {
-  opacity: 1; }
+  opacity: 1;
+  color: #777; }
 
 select:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: rgba(40, 33, 31, 0.5); }
@@ -1267,13 +1270,16 @@ select:focus{
 }
 
 textarea.form-control {
+  font-size: 16px;
+  font-weight: 800;
   padding: 5px 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
   line-height: 25px; }
-  textarea.form-control:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+textarea.form-control:focus {
+  border-color: transparent;
+  box-shadow: 0px 2px 12px rgba(51, 51, 51, 0.08);
+}
 
 /********* TABLES ********/
 table.std, table.table_block {
@@ -1807,12 +1813,19 @@ input[type="color"]:active {
   border-color: transparent; }
 
   input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
-  border-color: #333; }
+  border-color: transparent;
+  box-shadow: 0px 2px 12px rgba(51, 51, 51, 0.08); }
 
-.inputbox:focus, .form-control:focus {
-  border-color: #333;
-  box-shadow: unset;
-}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;

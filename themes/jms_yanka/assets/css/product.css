@@ -767,6 +767,9 @@
 #product-modal .modal-body .left img{
 	width: 100%;
 }
+.product-images.js-modal-product-images {
+    margin-bottom: 0;
+}
 .thumbnails.js-thumbnails{
 	height: 100%;
 	left: calc(100% + 10px);
@@ -783,11 +786,13 @@
 	height: 100%;
 	overflow: hidden;
 }
+.thumbnails.js-thumbnails li:not(:last-child){
+    margin-bottom: 8px;
+}
 .thumbnails.js-thumbnails .arrows.js-modal-arrows .material-icons{
 	position:absolute;
 	width:100%;
 	font-size:25px;
-	color:#858585;
 	display:block;
 	text-align:center;
 	cursor:pointer;
