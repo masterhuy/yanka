@@ -384,9 +384,6 @@
 .right-column .single-blog + #comments {
 	max-width: 100%;
 }
-.single-blog #myCarousel{
-	margin-bottom: 22px;
-}
 .single-blog .carousel-caption {
 	position: unset;
 	text-shadow: unset;
@@ -394,9 +391,6 @@
 }
 .single-blog .carousel-caption p{
 	font-size: 15px;
-}
-.single-blog .carousel-indicators {
-	bottom: -5px;
 }
 .single-blog .title {
 	font-size: 36px;
@@ -447,13 +441,14 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-.post-comment {
-	padding: 15px 0;
-	letter-spacing: 0;
+#post-comments .post-comment {
+	margin-bottom: 25px;
 }
-#post-comments {
-	padding-bottom: 10px;
-	border-bottom: 1px solid #ededed;
+#comments #accordion {
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 66px;
+	margin-bottom: 88px;
+	margin-top: 50px;
 }
 .commentForm {
 	margin-top: 15px;
@@ -522,15 +517,41 @@
 .comment-heading {
 	padding:15px;
 }
-.post-comment-info .left{
-	width: 90%;
+.post-comment-info {
+	display: flex;
 }
 .user-image {
-	margin-right: 15px;
-	display: inline-block;
+	margin-right: 32px;
+	margin-top: 7px;
+	display: inline-flex;
+	justify-content: center;
+	min-width: 80px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #f8f8f8;
+	align-items: center;
+}
+.user-image svg{
+	width: 24px;
+	height: 24px;
 }
 .user-image img{
 	border-radius: 50%;
+}
+.post-comment-info .title{
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.post-comment-info .title div{
+	margin-right: 5px;
+}
+.post-comment-info .title span{
+	font-weight: 800;
+	color: #333;
 }
 .left-column .single-blog .title,
 .right-column .single-blog .title{

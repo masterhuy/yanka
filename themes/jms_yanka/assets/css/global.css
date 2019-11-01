@@ -1739,6 +1739,13 @@ a.wishlist_top {
 #commentForm {
   padding-top: 43px;
   margin-top: 0; }
+  #commentForm .heading {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 800;
+    padding-bottom: 49px;
+    text-transform: initial;
+    color: #333; }
   #commentForm #submitComment {
     text-transform: initial;
     letter-spacing: 1.2px;
@@ -1758,15 +1765,100 @@ a.wishlist_top {
       text-transform: uppercase;
       margin-top: 26px; }
   #commentForm #new_comment_form_footer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start; }
+    margin-top: 30px; }
     #commentForm #new_comment_form_footer p {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  #commentForm .btn-change {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px; }
+    #commentForm .btn-change svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff; }
+
+.single-blog .post-fulltext #myCarousel {
+  margin-bottom: 42px;
+  margin-top: 42px; }
+
+.single-blog .post-fulltext .carousel-indicators {
+  position: static;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  margin-top: 16px; }
+  .single-blog .post-fulltext .carousel-indicators li {
+    display: none;
+    text-indent: initial;
+    width: auto;
+    height: auto;
+    background: transparent;
+    text-align: left;
+    margin: 0; }
+    .single-blog .post-fulltext .carousel-indicators li span {
+      font-size: 24px;
+      color: #333;
+      font-weight: 800; }
+    .single-blog .post-fulltext .carousel-indicators li.active {
+      display: block; }
+
+.single-blog .post-fulltext .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: -1px;
+  bottom: 2px; }
+
+.single-blog .post-fulltext .carousel-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: static;
+  background: transparent;
+  text-shadow: unset;
+  width: 25px;
+  height: 25px;
+  margin-left: 9px;
+  opacity: 1; }
+  .single-blog .post-fulltext .carousel-control:hover {
+    background: #333; }
+    .single-blog .post-fulltext .carousel-control:hover::before {
+      color: #fff; }
+  .single-blog .post-fulltext .carousel-control span {
+    display: none; }
+  .single-blog .post-fulltext .carousel-control::before {
+    font-family: 'yanka';
+    font-size: 23px;
+    z-index: 2;
+    color: #D0D0D0;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+  .single-blog .post-fulltext .carousel-control.left::before {
+    content: "\e904"; }
+  .single-blog .post-fulltext .carousel-control.right::before {
+    content: "\e905"; }
 
 .single-blog .post-fulltext .blog-grid-small-padding {
   margin: 42px -5px; }
