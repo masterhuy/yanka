@@ -467,6 +467,9 @@
 	padding-top: 21px;
 	ul{
 		li{
+			&.active a{
+				color: $active;
+			}
 			a{
 				color: #333;
 				font-size: 13px;
@@ -2103,6 +2106,212 @@ a.wishlist_top{
 }
 //
 
+//page about us
+.pt-about{
+	display: flex;
+	align-items: center;
+	margin-bottom: 85px;
+	.pt-img{
+		padding-right: 0;
+	}
+	.pt-img-content {
+		position: relative;
+	}
+	.pt-img-sub {
+		position: absolute;
+		right: 0;
+		bottom: -84px;
+	}
+	.pt-description{
+		padding-left: 130px;
+		.pt-title {
+		    font-size: 36px;
+		    line-height: 43px;
+		    color: #333;
+		    font-weight: 800;
+		    padding-bottom: 31px;
+		}
+	}
+}
+//
+
+//page shipping return
+.shipping-return{
+	max-width: 770px;
+	margin: auto;
+	p{
+		margin: 16px 0 0 0px;
+		+ [class^="pt-list"] {
+			margin-top: 22px;
+		}
+	}
+	.jms-tab{
+		padding-top: 0;
+		padding-bottom: 37px;
+		ul li{
+			&:not(:last-child)::after{
+				content: '/';
+				font-size: 36px;
+				font-weight: 800;
+				display: inline-block;
+				color: #ebebeb;
+			}
+			a{
+				font-size: 36px;
+				text-transform: capitalize;
+			}
+		}
+	}
+	dl.pt-type-01{
+		dd > :nth-child(1) {
+		    margin-top: 0;
+		}
+		dt {
+			font-size: 24px;
+			line-height: 35px;
+			color: #333;
+			font-weight: 800;
+			padding-bottom: 20px;
+			&:not(:first-child) {
+				margin-top: 38px;
+			}
+		}
+	}
+
+}
+.pt-list-number{
+	counter-reset: li;
+	margin-bottom: 0;
+	&:not(.indent-left-none) {
+		margin-left: 43px;
+	}
+	li{
+		&::before{
+			counter-increment: li;
+			content: counters(li, ".") ". ";
+			color: #777;
+		}
+	}
+}
+.pt-list-dot{
+	margin-top: 22px;
+	&:not(.indent-left-none) {
+		margin-left: 43px;
+	}
+	> li {
+		font-size: 18px;
+		line-height: 28px;
+		position: relative;
+		padding: 0 0 0 11px;
+		color: #777;
+		&::before{
+			content: '';
+			width: 4px;
+			height: 4px;
+			background: #777;
+			display: inline-block;
+			position: absolute;
+			top: 12px;
+			left: 0;
+			border-radius: 50%;
+		}
+	}
+}
+//
+
+//page size guide
+.size-guide{
+	max-width: 770px;
+	margin: auto;
+	margin-top: -6px;
+	margin-bottom: -11px;
+	.addon-title h3{
+		padding-bottom: 37px;
+	}
+	.panel-body{
+		padding: 0;
+	}
+	.panel-title{
+		font-size: 24px;
+		font-weight: 800;
+		line-height: 35px;
+		padding: 0;
+		padding-bottom: 32px;
+		a{
+			display: block;
+			width: 100%;
+			position: relative;
+			color: $active;
+			&.collapsed{
+				color: #333;
+				&::after{
+					transform: rotate(45deg);
+				}
+			}
+			&::after{
+				font-family: 'yanka';
+				font-size: 15px;
+				line-height: 1;
+				position: absolute;
+				top: 9px;
+				right: 0;
+				transition-duration: 0.4s;
+				content: "\e908";
+				color: #D0D0D0;
+				transform: rotate(0);
+				transition-property: transform;
+				will-change: transform;
+				font-weight: normal;
+			}
+		}
+	}
+	.pt-info-list{
+		margin-top: 43px;
+		li {
+			font-size: 16px;
+			line-height: 25px;
+			strong{
+				color: #333;
+			}
+		}
+	}
+	.pt-table-size{
+		margin-bottom: 37px;
+		table {
+			width: 100%;
+			font-size: 16px;
+			line-height: 21px;
+			th:first-child, td:first-child{
+				padding-left: 20px;
+				padding-right: 5px;
+				font-weight: 800;
+				width: 180px;
+			}
+			th, td{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align: center;
+				&:first-child{
+					text-align: left;
+				}
+			}
+			td:first-child{
+				color: #333333;
+			}
+			tr:nth-child(2n) {
+			    background-color: #f8f8f8;
+			}
+		}
+		thead {
+			background-color: #333333;
+			tr th{
+				color: #fff;
+			}
+		}
+	}
+}
+//
+
 //blog
 .single-blog{
 	.post-fulltext{
@@ -3321,9 +3530,12 @@ a.wishlist_top{
 	background: #f8f8f8;
 	.footer-top{
 		padding: 97px 0 70px;
-		.newsletter #newsletter_block_left p{
-			font-size: 14px;
-			line-height: 20px;
+		.newsletter #newsletter_block_left{
+			margin-top: 0;
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
 		}
 	}
 	.addon-title h3{
@@ -3333,6 +3545,7 @@ a.wishlist_top{
 		padding: 0 0 18px 0;
 		position: relative;
 		text-align: left;
+		margin-bottom: 0;
 	}
 	#tt-store{
 		p:first-child{

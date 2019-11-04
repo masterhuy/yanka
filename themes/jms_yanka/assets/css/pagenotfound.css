@@ -1,72 +1,42 @@
 .page-not-found {
-	text-align: center;
-	padding: 184px 0 200px;
-}
-.page-not-found .small-text{
-	margin-bottom: 50px;
-}
-#pagenotfound #wrapper > .container{
-	max-width: 450px;
-	margin: auto;
-}
-.page-not-found #search_widget{
-	max-width: 370px;
-}
-.page-not-found h1{
-	letter-spacing: 2px;
-	padding-bottom: 23px;
-}
-.page-not-found h3 {
-	text-transform: capitalize;
-	font-weight: 900;
-	font-size: 220px;
-	padding-bottom: 0;
-	color: #000;
-	letter-spacing: 11px;
-	margin-top: 13px;
-}
-.page-not-found p.text-1 {
-	font-size: 24px;
-	margin-bottom: 28px;
-}
-.page-not-found p.text-2 {
-	margin-bottom: 29px;
-	color: #858585;
-	line-height: 1.3;
-}
-.page-not-found .search-box {
-	display:flex;
-	justify-content:center;
-}
-#pagenotfound #main h4, #search #main h4 {
-	font-size: 25px;
-	font-weight: 700;
-	padding: 0;
-	line-height: 1;
-	margin-bottom: 20px;
-}
-#search .h2 {
-	font-size:26px;
-	text-transform:uppercase;
-}
-#pagenotfound .large-text, #search .large-text {
-	color:#454545;
-	font-size: 45px;
-	font-weight: 500;
-	line-height: 1.1;
-	text-transform: uppercase;
-	font-weight:700;
-}
-#pagenotfound .small-text, #search .small-text {
-	font-size: 16px;
-	font-weight: 400;
-	margin-bottom: 50px;
-}
-#pagenotfound #footer {
-	margin-top: 0;
-}
-@media (max-width: 767px){
-	.page-not-found{
-		padding: 100px 0;
-	}
-}
+  padding: 33px 0 82px; }
+  .page-not-found .pt-title-02 {
+    color: #EBEBEB;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0; }
+  .page-not-found .pt-title.pt-size-large {
+    font-size: 64px;
+    line-height: 77px;
+    margin-top: 16px;
+    color: #333;
+    font-weight: 800;
+    padding-bottom: 0; }
+    .page-not-found .pt-title.pt-size-large + p {
+      margin-top: 25px;
+      max-width: 664px;
+      margin-left: auto;
+      margin-right: auto; }
+      .page-not-found .pt-title.pt-size-large + p .pt-link {
+        position: relative;
+        color: #48CAB2; }
+        .page-not-found .pt-title.pt-size-large + p .pt-link::before {
+          position: absolute;
+          bottom: 2px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '';
+          color: transparent;
+          background-color: #48CAB2;
+          height: 1px;
+          -webkit-transition: width 0.25s;
+          -o-transition: width 0.25s;
+          transition: width 0.25s; }
+        .page-not-found .pt-title.pt-size-large + p .pt-link::before {
+          width: 100%; }
+        .page-not-found .pt-title.pt-size-large + p .pt-link:hover::before {
+          width: 0; }

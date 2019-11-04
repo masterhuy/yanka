@@ -1,0 +1,39 @@
+@import "mixin";
+@import "varians";
+
+.page-not-found{
+	padding: 33px 0 82px;
+	.pt-title-02 {
+		color: #EBEBEB;
+		font-size: 36px;
+		line-height: 43px;
+		font-weight: 800;
+		padding: 0;
+		margin: 0;
+	}
+	.pt-title.pt-size-large {
+		font-size: 64px;
+		line-height: 77px;
+		margin-top: 16px;
+		color: #333;
+		font-weight: 800;
+		padding-bottom: 0;
+		+ p{
+			margin-top: 25px;
+			max-width: 664px;
+			margin-left: auto;
+			margin-right: auto;
+			.pt-link{
+				position: relative;
+				color: $active;
+				@include underline(2, $active, 1)
+				&::before{
+					width: 100%;
+				}
+				&:hover::before{
+					width: 0;
+				}
+			}
+		}
+	}
+}

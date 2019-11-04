@@ -29,10 +29,6 @@ meta:
 assets:
   js:
     all:
-     - id: jquery
-       path: assets/js/jquery331.min.js
-       priority: 1
-       position: bottom
      - id: bootstrap
        path: assets/js/bootstrap.min.js
        priority: 2

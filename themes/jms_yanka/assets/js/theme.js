@@ -3753,7 +3753,8 @@
                 }), t.fn[e] = m._jQueryInterface, t.fn[e].Constructor = m, t.fn[e].noConflict = function() {
                     return t.fn[e] = l, m._jQueryInterface
                 }
-            }(jQuery), function(t) {
+            }
+            (jQuery), function(t) {
                 var e = "tab",
                     i = "bs.tab",
                     a = "." + i,
@@ -3854,7 +3855,8 @@
                 }), t.fn[e] = f._jQueryInterface, t.fn[e].Constructor = f, t.fn[e].noConflict = function() {
                     return t.fn[e] = s, f._jQueryInterface
                 }
-            }(jQuery), function(t) {
+            }
+            (jQuery), function(t) {
                 if (void 0 === window.Tether) throw new Error("Bootstrap tooltips require Tether (http://tether.io/)");
                 var e = "tooltip",
                     a = "bs.tooltip",
