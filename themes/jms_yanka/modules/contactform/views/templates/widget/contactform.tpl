@@ -15,8 +15,7 @@
 
       <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
           <div class="addon-title">
-            <h3>{l s='Drop Us A Line' d='Shop.Theme.Global'}</h3>
-            <span>{l s='We’re happy to answer any questions you have or provide you with an estimate. Just send us a message in the form below with any questions you may have.' d='Shop.Theme.Global'}</span>
+            <h3>{l s='Drop Us a Line' d='Shop.Theme.Global'}</h3>
           </div>
       </div>
 
@@ -30,14 +29,14 @@
       </div>
 
       <div class="form-group col-md-12 col-sx-12">
-          <label>{l s='Email' d='Shop.Theme.Global'} <span>(required)*</span></label>
+          <label>{l s='Email address' d='Shop.Theme.Global'}</label>
           <input
             class="form-control"
             name="from"
             type="email"
             value="{$contact.email}"
-            placeholder="{l s='Enter Your Email Address' d='Shop.Forms.Help'}"
-          >
+            placeholder="john.smith@example.com"
+          />
       </div>
 
       {if $contact.orders}
@@ -53,18 +52,18 @@
       {/if}
 
       {if $contact.allow_file_upload}
-        <div class="form-group col-md-12 col-sx-12">
+        <div class="form-group file-upload col-md-12 col-sx-12">
             <label>{l s='Choose File' d='Shop.Theme.Global'}</label>
-            <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
+            <input placeholder="{l s='Choose file' d='Shop.Forms.Help'}" type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
         </div>
       {/if}
 
       <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <label>{l s='Your Message' d='Shop.Theme.Global'}</label>
+          <label>{l s='Your message' d='Shop.Theme.Global'}</label>
           <textarea
             class="form-control"
             name="message"
-            placeholder="{l s='Enter Your Message' d='Shop.Forms.Help'}"
+            placeholder="{l s='Write your message here' d='Shop.Forms.Help'}"
             rows="6"
           >{if $contact.message}{$contact.message}{/if}</textarea>
       </div>

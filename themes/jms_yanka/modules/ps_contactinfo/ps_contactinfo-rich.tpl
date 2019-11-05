@@ -24,41 +24,45 @@
 *}
 
 <div class="contact-rich">
-  <div class="addon-title">
-    <h3>{l s='Here to Help' d='Shop.Theme.Global'}</h3>
-    <span>{l s='Have a question? You may find an answer in our FAQs. But you can also contact us:' d='Shop.Theme.Global'}</span>
-  </div>
-  <div class="block">
-    <div class="address section">
-        {if $contact_infos.phone}
-          <div class="data">
-            {l s='Call us:' d='Shop.Theme.Global'}
-            <a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a>
-          </div>
-        {/if}
-        <p class="info-address">{$contact_infos.address.address1 nofilter}</p>
-    </div>
-  </div>
-  {if $contact_infos.fax}
+    <h1>{l s='Contact Us' d='Shop.Theme.Global'}</h1>
     <div class="block">
-      <div class="icon"><i class="material-icons">&#xE0DF;</i></div>
-      <div class="data">
-        {l s='Fax:' d='Shop.Theme.Global'}<br/>
-        {$contact_infos.fax}
-      </div>
+        <h4>{l s='Store' d='Shop.Theme.Global'}</h4>
+        <div class="address section">
+            <p class="info-address">{$contact_infos.address.address1 nofilter}</p>
+            <p class="info-address">{$contact_infos.address.address2 nofilter}</p>
+            {if $contact_infos.phone}
+                <div class="data">
+                    {l s='Call us:' d='Shop.Theme.Global'}
+                    <a href="tel:{$contact_infos.phone}">{$contact_infos.phone}</a>
+                </div>
+            {/if}
+        </div>
     </div>
-  {/if}
-  {if $contact_infos.email}
-    <div class="block">
-      <div class="data email">
-        {l s='Email us:' d='Shop.Theme.Global'}
-       <a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a>
-      </div>
-    </div>
-  {/if}
-  <div class="block contact-map">
-    <iframe width="100%" height="240" style="border:0"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBwY_0PWuwH_A5y4iwNAqpaUbUjRPySkFc%0A%20%20%20%20&q=7563%20St.%20Vicent%20Place,%20Glasgow"
-      allowfullscreen=""></iframe>
+    {if $contact_infos.fax}
+        <div class="block">
+            <div class="icon">
+                <i class="material-icons">&#xE0DF;</i>
+            </div>
+            <div class="data">
+                {l s='Fax:' d='Shop.Theme.Global'}<br/>
+                {$contact_infos.fax}
+            </div>
+        </div>
+    {/if}
+    {if $contact_infos.email}
+        <div class="block">
+            <div class="data email">
+                <a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a>
+            </div>
+        </div>
+    {/if}
+    <div class="block contact-map">
+        <iframe 
+            width="100%" 
+            height="240" 
+            style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBwY_0PWuwH_A5y4iwNAqpaUbUjRPySkFc%0A%20%20%20%20&q=7563%20St.%20Vicent%20Place,%20Glasgow"
+            allowfullscreen="">
+        </iframe>
     </div>
 </div>

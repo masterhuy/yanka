@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-04 05:30:19
+/* Smarty version 3.1.33, created on 2019-11-05 04:20:29
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\errors\page-not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dbffdbbdabef1_48504645',
+  'unifunc' => 'content_5dc13eddeebfc2_05127049',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2da18f35cf30edf86575b43114e0c96957e4c082' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\errors\\page-not-found.tpl',
-      1 => 1572863383,
+      1 => 1572922382,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dbffdbbdabef1_48504645 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc13eddeebfc2_05127049 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -39,7 +39,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 				</p>
 			</div>
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7563690015dbffdbbdabef7_18096568', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12794035835dc13eddeebfc6_52803886', 'hook_not_found');
 ?>
 
         </div>
@@ -48,12 +48,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7563690015dbffdbbd
 
 <?php }
 /* {block 'hook_not_found'} */
-class Block_7563690015dbffdbbdabef7_18096568 extends Smarty_Internal_Block
+class Block_12794035835dc13eddeebfc6_52803886 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_7563690015dbffdbbdabef7_18096568',
+    0 => 'Block_12794035835dc13eddeebfc6_52803886',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

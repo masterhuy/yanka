@@ -131,6 +131,8 @@ hr {
   overflow: visible; }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-weight: 800;
   margin-top: 0; }
 
 p {
@@ -1264,9 +1266,9 @@ select:focus{
   border-color: #669900; }
 
 .form-control {
-  font-size: 13px;
-  height: 35px;
-  border: 1px solid #eee;
+  font-size: 16px;
+  height: 44px;
+  border: 1px solid #ebebeb;
   padding: 0 15px;
 }
 
