@@ -799,6 +799,26 @@ address {
 code, kbd, pre, samp {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
 
+  .btn {
+  background: #48CAB2;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  padding: 5px 20px 4px;
+  line-height: 1;
+  font-weight: 800;
+  height: 44px;
+  border: none;
+  outline: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
 .page-header {
   margin-top: 0px; }
 
@@ -1663,6 +1683,7 @@ fieldset[disabled] .btn-default {
     background: #9b9b9b; }
 
 .btn.active, .btn:active, .btn:hover {
+  color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #333; }

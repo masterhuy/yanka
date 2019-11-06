@@ -111,9 +111,6 @@ div.jms-megamenu .dropdown-menu::before{
     top: 100%;
     visibility: visible;
 }
-.jms-megamenu .nav .open .mega-nav .dropdown-menu {
-    top: -14px;
-}
 .jms-megamenu .dropdown-menu {
     width: 100%;
 }
@@ -179,8 +176,9 @@ div.jms-megamenu .dropdown-menu::before{
     font-family: "FontAwesome";
     position: absolute;
     right: 0;
-    top: calc(50% - 12px);
-	content: '\f105';
+    top: calc(50% - 17px);
+    content: '\f105';
+    font-size: 20px;
 }
 .jms-megamenu .item-fullwidth .mega-nav > li > ul > li.group, .jms-megamenu .item-fullwidth .mega-nav > li.group {
     position: relative;
@@ -193,9 +191,16 @@ div.jms-megamenu .dropdown-menu::before{
     margin-right: 5px;
 }
 .jms-megamenu .mega-nav > .mega > .dropdown-menu {
-    left: calc(100% + 5px);
+    left: calc(100% + 21px);
     margin: 0;
-    top: 0;
+    top: -9px;
+    min-width: 260px;
+    padding-top: 32px;
+    padding-bottom: 29px;
+}
+.jms-megamenu .mega-nav > .mega .mega > .dropdown-menu{
+    left: auto;
+    right: 100%;
 }
 .jms-megamenu .dropdown-menu .dropdown-menu {
     margin-left: 0;
@@ -220,6 +225,8 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .menu-item > .dropdown-menu {
     top: 100%;
+}
+.jms-megamenu .level0 > .menu-item > .dropdown-menu {
     border-top: 1px solid #ebebeb;
 }
 .jms-megamenu .menu-align-center > .dropdown-menu {
@@ -227,7 +234,7 @@ div.jms-megamenu .dropdown-menu::before{
     right: 0;
     margin: auto;
     transform: translateX(-50%);
-    padding: 40px 0 75px;
+    padding: 22px 0 37px;
 }
 .jms-megamenu .mega-nav > .mega.menu-align-left > .dropdown-menu {
     left: 100%;
@@ -243,12 +250,12 @@ div.jms-megamenu .dropdown-menu::before{
     left: 0;
     margin-left: 0;
 }
-.jms-megamenu .open .mega.open .dropdown-menu {
-    top: -14px;
-}
 .jms-megamenu .dropdown-menu {
     background: #fff;
     padding: 12px 0 30px;
+    box-shadow: 0 0px 8px rgba(0,0,0,0.1);
+}
+.jms-megamenu > .nav > .menu-item > .dropdown-menu {
     box-shadow: 0 5px 8px rgba(0,0,0,0.1);
 }
 .jms-megamenu .dropdown-menu > .mega-dropdown-inner{
@@ -281,13 +288,18 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > .item-fullwidth .mega-nav li.banner-2 {
     margin-bottom: 37px;
 }
+.jms-megamenu .nav > .menu-item .mega-nav li > a{
+    color: #333;
+}
+.jms-megamenu .nav > .menu-item .menu-item .mega-nav li > a{
+    color: #777;
+}
 .jms-megamenu .nav > .menu-item .mega-nav li > a,
 .jms-megamenu .nav > .menu-item .mega-nav li .mod-content .title {
     border-bottom: medium none;
     line-height: 31px;
     padding: 0;
     letter-spacing: 0;
-    color: #333;
     display: block;
     position: relative;
     font-size: 16px;
@@ -342,6 +354,11 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > .item-fullwidth .sub-menu-col {
     padding-bottom: 20px;
 }
+.jms-megamenu .dropdown-menu.fullwidth > .mega-dropdown-inner {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0;
+}
 .item-fullwidth .img-menu .banner-text {
     bottom: 5%;
     left: 11%;
@@ -365,17 +382,6 @@ div.jms-megamenu .dropdown-menu::before{
 .logo-menu {
     display: none !important;
 }
-.jms-megamenu .layout-dropdown .mod-content:hover img {
-    transform: none;
-}
-.first .dropdown-menu.mega-dropdown-menu.fullwidth {
-    left: 25%;
-    transform: translate(0%);
-	-webkit-transform:translate(0%);
-    -moz-transform: translate(0%);
-    -ms-transform: translate(0%);
-    -o-transform: translate(0%);
-}
 .menu-item.group.col-img{
 	margin-bottom:0 !important;
 }
@@ -389,7 +395,6 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .mega-col-nav > .mega-inner > ul > li .mod-content img{
     width: 100%;
-    transition: .4s all;
 }
 .mega-col-nav > .mega-inner > ul > li .mod-content p,
 #off-canvas-menu .mod-content p{
@@ -403,15 +408,6 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .mega-col-nav.image > .mega-inner > ul > li .mod-content .title{
     margin-top: 18px;
-}
-.mega-col-nav > .mega-inner > ul > li .mod-content .banner-content,
-#off-canvas-menu .mod-content .banner-content {
-    top: auto;
-    left: 20px;
-    bottom: 13px;
-    width: calc(100% - 40px);
-    padding: 10px 10px;
-    background: rgba(255,255,255,0.9);
 }
 #off-canvas-menu .mod-content .banner-content{
     bottom: 23px;
