@@ -125,8 +125,38 @@
   opacity: 1;
   visibility: visible; }
 
+.sub-women .sub-product-carousel .owl-theme .owl-controls {
+  position: absolute;
+  top: -41px;
+  right: -6px; }
+  .sub-women .sub-product-carousel .owl-theme .owl-controls div {
+    position: static;
+    background: transparent !important; }
+    .sub-women .sub-product-carousel .owl-theme .owl-controls div::before {
+      -webkit-transition: .2s all;
+      -o-transition: .2s all;
+      transition: .2s all; }
+    .sub-women .sub-product-carousel .owl-theme .owl-controls div:hover::before {
+      color: #333; }
+
+.sub-women .sub-product-carousel .mod-content {
+  margin-top: 5px; }
+
+.sub-women .sub-product-carousel .content_price {
+  margin-left: 0; }
+
+.sub-women .sub-product-carousel .product-link {
+  font-size: 16px;
+  display: block;
+  line-height: 1.45;
+  margin-top: 8px;
+  margin-bottom: 4px; }
+
+.sub-women .sub-product-carousel .price {
+  font-size: 18px; }
+
 .sub-women .mod-content {
-  margin-top: 54px; }
+  margin-top: 30px; }
   .sub-women .mod-content .jms-banner > a > img {
     transition: transform 1s, -webkit-transform 1s; }
   .sub-women .mod-content .jms-banner:hover .banner-content .text-1::before {
@@ -166,6 +196,33 @@
       max-width: 275px;
       color: #333;
       line-height: 1.2; }
+
+.jms-megamenu .banner-men:hover .info .text-1::before {
+  width: 100%; }
+
+.jms-megamenu .banner-men .info {
+  text-align: center; }
+  .jms-megamenu .banner-men .info .text-1 {
+    font-size: 24px;
+    font-weight: 800;
+    position: relative;
+    display: inline-block; }
+    .jms-megamenu .banner-men .info .text-1::before {
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '';
+      color: transparent;
+      background-color: #333;
+      height: 2px;
+      -webkit-transition: width 0.25s;
+      -o-transition: width 0.25s;
+      transition: width 0.25s; }
+  .jms-megamenu .banner-men .info .text-2 {
+    font-size: 16px; }
 
 .jms-megamenu .nav > li > a::before {
   position: absolute;

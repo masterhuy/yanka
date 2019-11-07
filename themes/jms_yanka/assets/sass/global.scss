@@ -179,44 +179,98 @@
 //
 
 //megamenu
-.sub-women .mod-content{
-	margin-top: 54px;
-	.jms-banner{
-		> a > img{
-			transition: transform 1s, -webkit-transform 1s;
-		}
-		&:hover .banner-content .text-1::before{
-			width: 100%;
-		}
-	}
-	.right .banner-content{
-		.text-1{
-			color: #fff;
-			&::before{
-				background: #fff;
+.sub-women{
+	.sub-product-carousel{
+		.owl-theme .owl-controls{
+			position: absolute;
+			top: -41px;
+			right: -6px;
+			div{
+				position: static;
+				background: transparent !important;
+				&::before{
+					transition: .2s all;
+				}
+				&:hover::before{
+					color: #333;
+				}
 			}
 		}
-		.text-2{
-			color: #fff;
+		.mod-content{
+			margin-top: 5px;
+		}
+		.content_price{
+			margin-left: 0;
+		}
+		.product-link{
+			font-size: 16px;
+			display: block;
+			line-height: 1.45;
+			margin-top: 8px;
+			margin-bottom: 4px;
+		}
+		.price{
+			font-size: 18px;
 		}
 	}
-	.banner-content{
-		top: 18px;
-		left: 25px;
+	.mod-content{
+		margin-top: 30px;
+		.jms-banner{
+			> a > img{
+				transition: transform 1s, -webkit-transform 1s;
+			}
+			&:hover .banner-content .text-1::before{
+				width: 100%;
+			}
+		}
+		.right .banner-content{
+			.text-1{
+				color: #fff;
+				&::before{
+					background: #fff;
+				}
+			}
+			.text-2{
+				color: #fff;
+			}
+		}
+		.banner-content{
+			top: 18px;
+			left: 25px;
+			.text-1{
+			    font-size: 24px;
+			    font-weight: 800;
+			    position: relative;
+			    display: inline-block;
+			    color: #333;
+			    margin-bottom: 6px;
+			    @include underline(1, #333, 2)
+			}
+			.text-2{
+			    font-size: 16px;
+			    max-width: 275px;
+			    color: #333;
+			    line-height: 1.2;
+			}
+		}
+	}
+}
+.jms-megamenu .banner-men{
+	&:hover .info .text-1::before{
+		width: 100%;
+	}
+	.info{
+		text-align: center;
 		.text-1{
-		    font-size: 24px;
-		    font-weight: 800;
-		    position: relative;
-		    display: inline-block;
-		    color: #333;
-		    margin-bottom: 6px;
-		    @include underline(1, #333, 2)
+			font-size: 24px;
+			font-weight: 800;
+			position: relative;
+			display: inline-block;
+			@include underline(1, #333, 2)
+
 		}
 		.text-2{
-		    font-size: 16px;
-		    max-width: 275px;
-		    color: #333;
-		    line-height: 1.2;
+			font-size: 16px;
 		}
 	}
 }

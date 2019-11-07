@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-06 04:46:25
+/* Smarty version 3.1.33, created on 2019-11-07 04:21:27
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dc29671ab65d4_34386403',
+  'unifunc' => 'content_5dc3e217118a89_40999723',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fc68b8321c84c01c2298177b834a3e3bdcf4494a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1570174957,
+      1 => 1573091756,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc29671ab65d4_34386403 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc3e217118a89_40999723 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -40,13 +40,13 @@ if (isset($_smarty_tpl->tpl_vars['row']->value->settings->background_position) &
 		<?php } else { ?>
 			<div class="container-fluid">
 		<?php }?>
-		<div class="row">
-		<?php
+			<div class="row">
+				<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['row']->value->cols, 'column', false, 'cindex');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['cindex']->value => $_smarty_tpl->tpl_vars['column']->value) {
 ?>
-			<div class="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['column']->value->className,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
+					<div class="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['column']->value->className,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
 if (isset($_smarty_tpl->tpl_vars['column']->value->settings->custom_class) && $_smarty_tpl->tpl_vars['column']->value->settings->custom_class) {?> <?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['column']->value->settings->custom_class,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
 }?>" style="<?php if (isset($_smarty_tpl->tpl_vars['column']->value->settings->background_img) && $_smarty_tpl->tpl_vars['column']->value->settings->background_img) {?>background-image:url('<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['root_url']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['column']->value->settings->background_img,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -57,26 +57,26 @@ if (isset($_smarty_tpl->tpl_vars['column']->value->settings->background_attachme
 ;<?php }
 if (isset($_smarty_tpl->tpl_vars['column']->value->settings->background_position) && $_smarty_tpl->tpl_vars['column']->value->settings->background_position) {?>background-position:<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['column']->value->settings->background_position,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 ;<?php }?>">
-				<?php
+						<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['column']->value->addons, 'addon', false, 'aindex');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['aindex']->value => $_smarty_tpl->tpl_vars['addon']->value) {
 ?>
-					<div class="addon-box">
-						<?php if (isset($_smarty_tpl->tpl_vars['addon']->value->return_value) && $_smarty_tpl->tpl_vars['addon']->value->return_value) {
+							<div class="addon-box">
+								<?php if (isset($_smarty_tpl->tpl_vars['addon']->value->return_value) && $_smarty_tpl->tpl_vars['addon']->value->return_value) {
 echo $_smarty_tpl->tpl_vars['addon']->value->return_value;
 }?>
+							</div>
+						<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 					</div>
 				<?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			</div>
-		<?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-		</div>
 		</div>
 	</div>
 <?php
@@ -119,8 +119,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['sk']->value) {
 ?>
 					<a class="skin-box <?php ob_start();
 echo htmlspecialchars($_smarty_tpl->tpl_vars['sk']->value, ENT_QUOTES, 'UTF-8');
-$_prefixVariable11 = ob_get_clean();
-if ($_smarty_tpl->tpl_vars['jpb_skin']->value == $_prefixVariable11) {?>active<?php }?>" title="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['sk']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+$_prefixVariable1 = ob_get_clean();
+if ($_smarty_tpl->tpl_vars['jpb_skin']->value == $_prefixVariable1) {?>active<?php }?>" title="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['sk']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " data-color="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['sk']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 ">
 					<img src="themes/<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['themename']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -146,8 +146,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['hp']->value) {
 						<option value="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['hp']->value['id_homepage'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " <?php ob_start();
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['hp']->value['id_homepage'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-$_prefixVariable12 = ob_get_clean();
-if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == $_prefixVariable12) {?>selected="selected"<?php }?>><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['hp']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+$_prefixVariable2 = ob_get_clean();
+if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == $_prefixVariable2) {?>selected="selected"<?php }?>><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['hp']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </option>					
 					<?php
 }
@@ -168,8 +168,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['phkey']->value => $_smarty_tpl->tpl_v
 						<option value="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['phkey']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 " <?php ob_start();
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['phkey']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');
-$_prefixVariable13 = ob_get_clean();
-if ($_smarty_tpl->tpl_vars['jpb_phover']->value == $_prefixVariable13) {?>selected="selected"<?php }?>><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['ph']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+$_prefixVariable3 = ob_get_clean();
+if ($_smarty_tpl->tpl_vars['jpb_phover']->value == $_prefixVariable3) {?>selected="selected"<?php }?>><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['ph']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </option>					
 					<?php
 }

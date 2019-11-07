@@ -30,17 +30,17 @@
 		{else}
 			<div class="container-fluid">
 		{/if}
-		<div class="row">
-		{foreach from=$row->cols key=cindex item=column}
-			<div class="{$column->className|escape:'htmlall':'UTF-8'}{if isset($column->settings->custom_class) && $column->settings->custom_class} {$column->settings->custom_class|escape:'htmlall':'UTF-8'}{/if}" style="{if isset($column->settings->background_img) && $column->settings->background_img}background-image:url('{$root_url|escape:'htmlall':'UTF-8'}{$column->settings->background_img|escape:'htmlall':'UTF-8'}');{/if}{if isset($column->settings->background_size) && $column->settings->background_size}background-size:{$column->settings->background_size|escape:'htmlall':'UTF-8'};{/if}{if isset($column->settings->background_attachment) && $column->settings->background_attachment}background-attachment:{$column->settings->background_attachment|escape:'htmlall':'UTF-8'};{/if}{if isset($column->settings->background_position) && $column->settings->background_position}background-position:{$column->settings->background_position|escape:'htmlall':'UTF-8'};{/if}">
-				{foreach from=$column->addons key=aindex item=addon}
-					<div class="addon-box">
-						{if isset($addon->return_value) && $addon->return_value}{$addon->return_value nofilter}{/if}
+			<div class="row">
+				{foreach from=$row->cols key=cindex item=column}
+					<div class="{$column->className|escape:'htmlall':'UTF-8'}{if isset($column->settings->custom_class) && $column->settings->custom_class} {$column->settings->custom_class|escape:'htmlall':'UTF-8'}{/if}" style="{if isset($column->settings->background_img) && $column->settings->background_img}background-image:url('{$root_url|escape:'htmlall':'UTF-8'}{$column->settings->background_img|escape:'htmlall':'UTF-8'}');{/if}{if isset($column->settings->background_size) && $column->settings->background_size}background-size:{$column->settings->background_size|escape:'htmlall':'UTF-8'};{/if}{if isset($column->settings->background_attachment) && $column->settings->background_attachment}background-attachment:{$column->settings->background_attachment|escape:'htmlall':'UTF-8'};{/if}{if isset($column->settings->background_position) && $column->settings->background_position}background-position:{$column->settings->background_position|escape:'htmlall':'UTF-8'};{/if}">
+						{foreach from=$column->addons key=aindex item=addon}
+							<div class="addon-box">
+								{if isset($addon->return_value) && $addon->return_value}{$addon->return_value nofilter}{/if}
+							</div>
+						{/foreach}
 					</div>
 				{/foreach}
 			</div>
-		{/foreach}
-		</div>
 		</div>
 	</div>
 {/foreach}

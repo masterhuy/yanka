@@ -103,9 +103,42 @@ $(document).ready(function () {
 });
 
 jQuery(function ($) {
-    "use strict";
+	"use strict";
+	if($(".sub-product-carousel .mega-nav").length) {
+		var subProductCarousel = $(".sub-product-carousel .mega-nav");
+	  	var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;
+		subProductCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{            
+				1199:{
+						items:3
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				0:{
+					items:2
+				}
+			},
+			rtl: rtl,
+			margin: 30,
+			nav: true,
+			dots: false,
+			autoplay: false,
+			slideSpeed: 200,
+			loop: true
+		});
+	}
+
     if($(".customs-carousel-product").length) {
-		  var customsCarouselProduct = $(".customs-carousel-product");
+		var customsCarouselProduct = $(".customs-carousel-product");
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;
 		customsCarouselProduct.owlCarousel({
