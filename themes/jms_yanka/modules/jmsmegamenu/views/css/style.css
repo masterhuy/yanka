@@ -180,16 +180,20 @@ div.jms-megamenu .dropdown-menu::before{
     content: '\f105';
     font-size: 20px;
 }
-.jms-megamenu .sub-women.item-fullwidth .mega-nav .mega > a::after{
+.jms-megamenu .sub-women.item-fullwidth .mega-nav .mega > a::after,
+.jms-megamenu .sub-men.item-fullwidth .mega-nav .mega > a::after{
     right: 35px;
 }
-.jms-megamenu .sub-women.item-fullwidth .mega-nav .mega .mega > a::after{
+.jms-megamenu .sub-women.item-fullwidth .mega-nav .mega .mega > a::after,
+.jms-megamenu .sub-men.item-fullwidth .mega-nav .mega .mega > a::after{
     right: 0;
 }
-.jms-megamenu .sub-women .mega-nav > .mega > .dropdown-menu {
+.jms-megamenu .sub-women .mega-nav > .mega > .dropdown-menu,
+.jms-megamenu .sub-men .mega-nav > .mega > .dropdown-menu {
     left: calc(100% - 15px);
 }
-.jms-megamenu .menu-item.sub-women.item-fullwidth .mega-nav > .mega .mega > .dropdown-menu {
+.jms-megamenu .menu-item.sub-women.item-fullwidth .mega-nav > .mega .mega > .dropdown-menu,
+.jms-megamenu .menu-item.sub-men.item-fullwidth .mega-nav > .mega .mega > .dropdown-menu {
     left: calc(100% + 21px);
 }
 .jms-megamenu .item-fullwidth .mega-nav > li > ul > li.group, .jms-megamenu .item-fullwidth .mega-nav > li.group {
@@ -307,8 +311,14 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > .menu-item .mega-nav li > a{
     color: #333;
 }
+.jms-megamenu .nav .menu-item .mega-nav li.open > a{
+    color: #48CAB2;
+}
 .jms-megamenu .nav > .menu-item .menu-item .mega-nav li > a{
     color: #777;
+}
+.jms-megamenu .nav .menu-item .menu-item .mega-nav li.open > a{
+    color: #48CAB2;
 }
 .jms-megamenu .nav > .menu-item .mega-nav li > a,
 .jms-megamenu .nav > .menu-item .mega-nav li .mod-content .title {
@@ -484,37 +494,33 @@ div.jms-megamenu .dropdown-menu::before{
     position: relative;
     z-index: 1;
 }
-.jms-megamenu .nav li.must-see > a > span,
+.jms-megamenu .nav li.featured > a > span,
 .jms-megamenu .nav li.new > a > span,
-.jms-megamenu .nav li.hot > a > span,
-.jms-megamenu .nav li.s-slider > a > span,
+.jms-megamenu .nav li.ost > a > span,
 .jms-megamenu .nav li.sale > a > span {
 	position:relative;
 }
-.jms-megamenu .nav li.must-see > a > span::after, 
-.jms-megamenu .nav li.hot > a > span::after, 
+.jms-megamenu .nav li.featured > a > span::after, 
 .jms-megamenu .nav li.new > a > span::after,
-.jms-megamenu .nav li.s-slider > a > span::after,
+.jms-megamenu .nav li.ost > a > span::after,
 .jms-megamenu .nav li.sale > a > span::after,
-#off-canvas-menu ul li.must-see a::after,
-#off-canvas-menu ul li.hot a::after,
+#off-canvas-menu ul li.featured a::after,
 #off-canvas-menu ul li.new a::after,
-#off-canvas-menu ul li.s-slider a::after,
+#off-canvas-menu ul li.ost a::after,
 #off-canvas-menu ul li.sale a::after{
     color: #ffffff;
     display: inline-block;
     font-size: 12px;
     line-height: 15px;
     padding: 0 4px;
-    position: absolute;
-    top: -17px;
     font-weight: 400;
-    min-width: 56px;
+    margin-left: 4px;
+    position: relative;
+    top: -2px;
 }
-#off-canvas-menu ul li.must-see a::after,
-#off-canvas-menu ul li.hot a::after,
+#off-canvas-menu ul li.featured a::after,
 #off-canvas-menu ul li.new a::after,
-#off-canvas-menu ul li.s-slider a::after,
+#off-canvas-menu ul li.ost a::after,
 #off-canvas-menu ul li.sale a::after{
     position: unset;
     margin-left: 3px;
@@ -522,35 +528,20 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav li.new > a > span::after,
 #off-canvas-menu ul li.new a::after {
     background: #42A5F6 none repeat scroll 0 0;    
-    content: "NEW";    
-    right: -30px;    
-	min-width:25px;
+    content: "New";    
 }
-.jms-megamenu .nav li.hot > a > span::after,
-#off-canvas-menu ul li.hot a::after {
-    background: #FF7143 none repeat scroll 0 0;
-    content: "HOT";
-    right: -30px;
-    min-width: 25px;
+.jms-megamenu .nav li.featured > a > span::after,
+#off-canvas-menu ul li.featured a::after {
+    background: #ffba0a none repeat scroll 0 0;
+    content: "Featured";
 }
-.jms-megamenu .nav li.s-slider > a > span::after {
-    background: #42A5F6 none repeat scroll 0 0;
-    content: "SLIDER";
-    right: -43px;
-    min-width: 25px;
+.jms-megamenu .nav li.ost > a > span::after {
+    background: #333 none repeat scroll 0 0;
+    content: "Out Of Stock";
 }
 .jms-megamenu .nav li.sale > a > span::after {
     background: #E12C43 none repeat scroll 0 0;
     content: "Sale 27%";
-    right: -64px;
-    min-width: 25px;
-}
-.jms-megamenu .nav li li.must-see > a > span::after, 
-.jms-megamenu .nav li li.new > a > span::after, 
-.jms-megamenu .nav li li.hot > a > span::after,
-.jms-megamenu .nav li li.s-slider > a > span::after,
-.jms-megamenu .nav li li.sale > a > span::after {
-    top: 2px;
 }
 .mega-dropdown-inner .dropdown-menu{
     min-width: 228px;

@@ -256,30 +256,44 @@
 	}
 }
 .jms-megamenu .banner-men{
-	&:hover .info .text-1::before{
+	margin-top: 11px;
+	&:hover a .text-1::before{
 		width: 100%;
 	}
-	.info{
+	a{
 		text-align: center;
+		img{
+			margin-bottom: 16px;
+		}
 		.text-1{
 			font-size: 24px;
 			font-weight: 800;
 			position: relative;
 			display: inline-block;
+			color: #333;
+			margin-bottom: 8px;
 			@include underline(1, #333, 2)
 
 		}
 		.text-2{
 			font-size: 16px;
+			display: block;
+			color: #333;
+			line-height: 19px;
 		}
 	}
 }
-.jms-megamenu .nav > li{
-	> a{
-		@include underline(28, $active, 2);
+.jms-megamenu .nav{
+	> .menu-item.mega.open > a{
+		color: $active;
 	}
-	&.open > a::before{
-		width: 100%;
+	> li{
+		> a{
+			@include underline(28, $active, 2);
+		}
+		&.open > a::before{
+			width: 100%;
+		}
 	}
 }
 .megamenu{
@@ -1654,9 +1668,14 @@ a.wishlist_top{
 	.label-sale {
 		display: none;
 	}
+	.preview .btn-group{
+		display: none;
+	}
 	.product-preview{
 		display: flex;
 		margin-bottom: 40px;
+		padding-bottom: 28px;
+		border-bottom: 1px solid #ebebeb;
 		&:hover{
 			box-shadow: unset;
 		}
@@ -1668,24 +1687,59 @@ a.wishlist_top{
 				align-items: center;
 			}
 		}
+		.product-link{
+			text-align: left;
+			padding: 0 0 10px;
+			font-size: 18px;
+		}
+	}
+	.product_action{
+		width: 165.5px;
+		min-width: 165.5px;
+		flex-direction: column;
+		align-items: flex-start;
+		.cart-button{
+			order: 2;
+			padding-left: 21px;
+			padding-right: 21px;
+			white-space: nowrap;
+			.text-addcart, .text-outofstock, .text-added{
+				font-size: 13px;
+				width: 100%;
+				margin-left: 8px;
+			}
+		}
+		.content_price{
+			order: 1;
+			margin-left: 0;
+			display: flex !important;
+		}
+	}
+	.product-preview .product_action .btn-group{
+		order: 3;
+		display: block;
+		margin-top: 16px;
+		a{
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		span{
+			font-size: 14px;
+			font-weight: 700;
+			margin-left: 9px;
+		}
 	}
 	.product-quantities{
 		margin-bottom: 21px;
-	}
-	.product-link{
-		text-align: left;
-		padding: 0 0 14px;
-		font-size: 18px;
-	}
-	.content_price{
-		text-align: left;
 	}
 	.product-info .color_to_pick_list{
 		display: block;
 	}
 	.product-preview .color_to_pick_list{
 		display: inline-flex;
-		padding-bottom: 18px;
+		padding-bottom: 16px;
+		margin-top: 0;
 		.js-count.count {
 			display: none;
 		}
@@ -1693,9 +1747,6 @@ a.wishlist_top{
 			display: inline-flex;
 			padding: 0;
 		}
-	}
-	.product_action{
-		display: none !important;
 	}
 }
 .products-list-in-column{

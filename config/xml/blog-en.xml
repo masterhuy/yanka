@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Five Good Reasons to Set up Live Chat on Your Ecommerce Site</title>
+    <link>https://www.prestashop.com/en/blog/five-good-reasons-live-chat</link>
+    <description>Do you remember the last time you tried to call a company but got a busy signal? Or maybe you were trying to solve your problems via email, but it was taking ages.</description>
+     <pubDate>Wed, 06 Nov 2019 14:13:13 +0100</pubDate>
+ <dc:creator>Daniel Zieliński</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-good-reasons-live-chat</guid>
+  </item>
+  <item>
     <title>Five common questions about ad fraud</title>
     <link>https://www.prestashop.com/en/blog/five-common-questions-about-ad-fraud</link>
     <description>At NS8, we help companies make the most out of their digital advertising campaigns and reduce the impact of ad fraud.</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 11 Oct 2019 14:32:12 +0200</pubDate>
  <dc:creator>bulldesign</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/search-engine-on-your-site-important</guid>
-  </item>
-  <item>
-    <title>What payment solutions should I offer on my online store?</title>
-    <link>https://www.prestashop.com/en/blog/choosing-a-online-payment-solution</link>
-    <description>Have you ever considered the importance of choosing the right payment method for your business, which is also convenient for your customers?</description>
-     <pubDate>Wed, 09 Oct 2019 16:34:07 +0200</pubDate>
- <dc:creator>Méguy Solvet</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/choosing-a-online-payment-solution</guid>
   </item>
   </channel>
 </rss>
