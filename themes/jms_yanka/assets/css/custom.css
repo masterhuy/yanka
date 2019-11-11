@@ -738,6 +738,7 @@ dt, dd {
   line-height: 28px; }
 
 dt {
+  color: #333;
   font-weight: bold; }
 
 dd {
@@ -3110,7 +3111,6 @@ ul.cart_block_list li:not(:last-child){
 
 .cat_desc .addon-title h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 /* ------ */

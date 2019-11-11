@@ -67,11 +67,13 @@
             </div>
             <div class="pb-right-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 {block name='product_flags'}
-                    <ul class="product-flags">
-                        {foreach from=$product.flags item=flag}
-                            <li class="product-flag {$flag.type}">{$flag.label}</li>
-                        {/foreach}
-                    </ul>
+                    {if $product.flags}
+                        <ul class="product-flags">
+                            {foreach from=$product.flags item=flag}
+                                <li class="product-flag {$flag.type}">{$flag.label}</li>
+                            {/foreach}
+                        </ul>
+                    {/if}
                 {/block}
 
                 {block name='product_availability'}
@@ -316,9 +318,32 @@
                                 </div>
                             </div>
                         {/foreach}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#review">
+                                        {l s='Reviews' d='Shop.Theme.Catalog'}
+                                        <span class="pt-icon">
+                                            <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 0.992188L6 5.98947L11 0.992187" stroke="#D0D0D0" stroke-width="1.1"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="review" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    {block name='product_footer'}
+                                        {hook h='displayFooterProduct' product=$product category=$category}
+                                    {/block}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     {/block}
                 </div>
+
+                
             </div>
         </div>
         

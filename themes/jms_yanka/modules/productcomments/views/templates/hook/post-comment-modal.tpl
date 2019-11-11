@@ -43,14 +43,6 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-12">
                             {if isset($product) && $product}
-                                {block name='product_flags'}
-                                    <ul class="product-flags">
-                                        {foreach from=$product.flags item=flag}
-                                        <li class="product-flag {$flag.type}">{$flag.label}</li>
-                                        {/foreach}
-                                    </ul>
-                                {/block}
-
                                 {block name='product_cover'}
                                     <div class="product-cover">
                                         {if $product.cover}

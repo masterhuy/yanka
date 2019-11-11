@@ -674,7 +674,7 @@
 #more_info_block .tabs li {
     float: none;
     display: inline-block;
-    margin-right: 0;
+    margin-right: 28px;
 }
 #more_info_block .nav.nav-tabs {
     text-align: left;
@@ -682,17 +682,15 @@
 }
 #more_info_block .tabs li a {
     padding: 0 20px;
-    color: #858585;
-    position: relative;
-    letter-spacing: 0.7px;
-    border: 1px solid transparent;
-    line-height: 33px;
-}
-#more_info_block .tabs li a.active {
-    border: 1px solid #ebebeb;
-    border-bottom-color: #fff;
-    border-radius: 0;
     color: #333;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0;
+    position: relative;
+    line-height: 52px;
+    border: 0;
+    border-bottom: 2px solid transparent;
 }
 #more_info_block .tabs .tab-content {
     border-top: 1px solid #ebebeb;
@@ -953,7 +951,7 @@
     margin-bottom: 15px;
 }
 .same-category{
-    margin-top: 161px;
+    margin-top: 167px;
     float: left;
     width: 100%;
     position: relative;

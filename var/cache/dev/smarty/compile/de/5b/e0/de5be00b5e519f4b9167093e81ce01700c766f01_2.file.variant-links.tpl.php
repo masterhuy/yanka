@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-28 23:31:54
+/* Smarty version 3.1.33, created on 2019-11-11 03:08:19
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\variant-links.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db7b2aa192f73_27311313',
+  'unifunc' => 'content_5dc916f32d5c29_30932687',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de5be00b5e519f4b9167093e81ce01700c766f01' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\variant-links.tpl',
-      1 => 1572244651,
+      1 => 1573438316,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db7b2aa192f73_27311313 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc916f32d5c29_30932687 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="variant-links">
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['variants']->value, 'variant');
@@ -32,7 +32,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['variant']->value) {
  <?php if ($_smarty_tpl->tpl_vars['variant']->value['texture']) {?>texture<?php }?>" title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['variant']->value['name'], ENT_QUOTES, 'UTF-8');?>
 "
                 <?php if ($_smarty_tpl->tpl_vars['variant']->value['html_color_code']) {?> style="background-color: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['variant']->value['html_color_code'], ENT_QUOTES, 'UTF-8');?>
-; <?php if ($_smarty_tpl->tpl_vars['variant']->value['html_color_code'] == "#ffffff") {?>border: 1px solid #e5e5e5<?php }?>" <?php }?>
+; <?php if ($_smarty_tpl->tpl_vars['variant']->value['html_color_code'] == "#ffffff") {?>border: 1px solid #ebebeb<?php }?>" <?php }?>
         <?php if ($_smarty_tpl->tpl_vars['variant']->value['texture']) {?> style="background-image: url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['variant']->value['texture'], ENT_QUOTES, 'UTF-8');?>
 )" <?php }?>
         >
@@ -45,5 +45,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['variant']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <span class="js-count count"></span>
 </div>
+
 <?php }
 }

@@ -56,7 +56,6 @@
     				{hook h='displayTopColumn'}
     			</nav>				
     		</div>
-            
     	{/if}
 
         <div class="main-site">
@@ -69,9 +68,11 @@
                     {include file='_partials/header.tpl'}
                 {/block}
             </header>
+
             {block name='notifications'}
-         
+                {include file='_partials/notifications.tpl'}
             {/block}
+
     		{if $page.page_name != 'index'}
     			{block name='breadcrumb'}
     			   {include file='_partials/breadcrumb.tpl'}
@@ -79,7 +80,7 @@
     		{/if}
             <div id="wrapper" {if $page.page_name != 'index'}{/if}> 
                 {if $page.page_name != 'index'}
-                    <div class="container">
+                    <div class="container{if $page.page_name == 'product'}-fluid{/if}">
                         <div class="row">
                 {/if}
                     {block name="left_column"}

@@ -1275,4 +1275,3 @@ jQuery(function ($) {
 	init();
 
 });
-

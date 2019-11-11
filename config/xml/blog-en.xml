@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>How to Improve the UX of Your Shop</title>
+    <link>https://www.prestashop.com/en/blog/how-to-improve-UX-shop</link>
+    <description>User experience (UX) design has a direct relation to the future of retail.</description>
+     <pubDate>Fri, 08 Nov 2019 14:01:52 +0100</pubDate>
+ <dc:creator>John Ahya</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/how-to-improve-UX-shop</guid>
+  </item>
+  <item>
     <title>Five Good Reasons to Set up Live Chat on Your Ecommerce Site</title>
     <link>https://www.prestashop.com/en/blog/five-good-reasons-live-chat</link>
     <description>Do you remember the last time you tried to call a company but got a busy signal? Or maybe you were trying to solve your problems via email, but it was taking ages.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 14 Oct 2019 11:50:12 +0200</pubDate>
  <dc:creator>Webkul</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/trends-conversion-rate-optimization</guid>
-  </item>
-  <item>
-    <title>Why the search engine in your web shop is important</title>
-    <link>https://www.prestashop.com/en/blog/search-engine-on-your-site-important</link>
-    <description>Most web shops have an internal search engine. A search engine is useful for your visitors, so they have the option of quickly finding the products they are looking for.</description>
-     <pubDate>Fri, 11 Oct 2019 14:32:12 +0200</pubDate>
- <dc:creator>bulldesign</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/search-engine-on-your-site-important</guid>
   </item>
   </channel>
 </rss>

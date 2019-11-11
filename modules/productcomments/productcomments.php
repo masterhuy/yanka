@@ -862,6 +862,16 @@ class ProductComments extends Module
         return $this->renderProductCommentsList($params['product']) . $this->renderProductCommentModal($params['product']);
     }
 
+    public function hookDisplayAdminProductsExtra($params)
+	{	
+		if (Validate::isLoadedObject($product = new Product($params['id_product'])))
+		{
+			$this->prepareNewTab($params);
+			$this->html = $this->display(__FILE__, 'jmsproductvideo.tpl');			
+			return $this->html;
+		}
+	}  	
+
     /**
      * Used to render the product comments list
      *
