@@ -2574,7 +2574,18 @@
                 (0, o.default)("#main .js-qv-mask").trigger("backward")
             }), (0, o.default)(".scroll-box-arrows .right").click(function() {
                 (0, o.default)("#main .js-qv-mask").trigger("forward")
-            })) : ((0, o.default)("#main .js-qv-mask").removeClass("scroll"), (0, o.default)(".scroll-box-arrows").removeClass("scroll"))
+            })) : ((0, o.default)("#main .js-qv-mask").removeClass("scroll"), (0, o.default)(".scroll-box-arrows").removeClass("scroll")),
+
+            (0, o.default)("#main .thumb-horizontal .js-qv-product-images li").length > 2 ? ((0, o.default)("#main .thumb-horizontal .js-qv-mask").addClass("scroll"), (0, o.default)(".thumb-horizontal .scroll-box-arrows").addClass("scroll"), (0, o.default)("#main .thumb-horizontal .js-qv-mask").scrollbox({
+                direction: "h",
+                distance: 85,
+                autoPlay: !1
+            }), (0, o.default)(".thumb-horizontal .scroll-box-arrows .left").click(function() {
+                (0, o.default)("#main .thumb-horizontal .js-qv-mask").trigger("backward")
+            }), (0, o.default)(".thumb-horizontal .scroll-box-arrows .right").click(function() {
+                (0, o.default)("#main .thumb-horizontal .js-qv-mask").trigger("forward")
+            })) : ((0, o.default)("#main .thumb-horizontal .js-qv-mask").removeClass("scroll"), (0, o.default)(".thumb-horizontal .scroll-box-arrows").removeClass("scroll"))
+            
         }
 
         function n() {

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-29 06:16:15
+/* Smarty version 3.1.33, created on 2019-11-12 03:21:10
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-cover-thumbnails.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db8116f2d40e8_54727518',
+  'unifunc' => 'content_5dca6b769b2837_67524111',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2cdb7bfe0282f0ed13e60950ebb0b2cdde610ad5' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\product-cover-thumbnails.tpl',
-      1 => 1572238029,
+      1 => 1573448306,
       2 => 'file',
     ),
   ),
@@ -20,17 +20,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db8116f2d40e8_54727518 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dca6b769b2837_67524111 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6753559695db8116f2bc9d5_88367174', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7012489395dca6b7698b738_09653468', 'product_images');
 ?>
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20348827975db8116f2d0262_12293537', 'product_cover');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1820694435dca6b769b2835_95378842', 'product_cover');
 ?>
 
 </div>
@@ -38,12 +38,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20348827975db8116f
 
 <?php }
 /* {block 'product_images'} */
-class Block_6753559695db8116f2bc9d5_88367174 extends Smarty_Internal_Block
+class Block_7012489395dca6b7698b738_09653468 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_6753559695db8116f2bc9d5_88367174',
+    0 => 'Block_7012489395dca6b7698b738_09653468',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -85,12 +85,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'product_images'} */
 /* {block 'product_cover'} */
-class Block_20348827975db8116f2d0262_12293537 extends Smarty_Internal_Block
+class Block_1820694435dca6b769b2835_95378842 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_cover' => 
   array (
-    0 => 'Block_20348827975db8116f2d0262_12293537',
+    0 => 'Block_1820694435dca6b769b2835_95378842',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -103,10 +103,15 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 " style="width:100%;" itemprop="image">
             <div class="layer hidden-xs" data-toggle="modal" data-target="#product-modal">
                 <i class="d-i-flex">
-                    <svg aria-hidden="true" focusable="false"
-                        role="presentation" class="icon icon-theme-166"
-                        viewBox="0 0 24 24">
-                        <path d="M13.316 2.475a8.177 8.177 0 0 1 2.588 1.738 8.172 8.172 0 0 1 1.738 2.588 7.97 7.97 0 0 1 .635 3.164 7.836 7.836 0 0 1-.527 2.861 8.355 8.355 0 0 1-1.426 2.412l4.902 4.902c.117.131.176.28.176.449s-.059.319-.176.449c-.065.052-.137.095-.215.127s-.156.049-.234.049-.156-.017-.234-.049-.149-.075-.215-.127l-4.902-4.902c-.703.6-1.507 1.074-2.412 1.426s-1.858.527-2.861.527a7.945 7.945 0 0 1-3.164-.635 8.144 8.144 0 0 1-2.588-1.738 8.15 8.15 0 0 1-1.738-2.588 7.962 7.962 0 0 1-.635-3.164A7.97 7.97 0 0 1 2.663 6.8 8.16 8.16 0 0 1 4.4 4.213a8.177 8.177 0 0 1 2.588-1.738c.99-.423 2.044-.635 3.164-.635s2.175.212 3.164.635zM3.814 12.641c.358.834.85 1.563 1.475 2.188s1.354 1.117 2.188 1.475c.833.358 1.726.537 2.676.537s1.843-.179 2.676-.537c.833-.357 1.563-.85 2.188-1.475s1.116-1.354 1.475-2.188a6.705 6.705 0 0 0 .537-2.676c0-.95-.179-1.842-.537-2.676-.358-.833-.85-1.563-1.475-2.188s-1.354-1.116-2.188-1.475c-.834-.356-1.726-.536-2.677-.536s-1.842.18-2.675.537c-.833.358-1.563.85-2.188 1.475S4.173 6.456 3.814 7.289a6.712 6.712 0 0 0-.537 2.676c0 .951.179 1.843.537 2.676zm9.278-3.116a.601.601 0 0 1 .186.439c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186h-1.875v1.875c0 .17-.062.316-.186.439-.124.124-.271.186-.439.186s-.315-.062-.439-.186a.598.598 0 0 1-.186-.439V10.59H7.652a.6.6 0 0 1-.439-.186.598.598 0 0 1-.186-.439.6.6 0 0 1 .186-.439.6.6 0 0 1 .439-.186h1.875V7.465a.6.6 0 0 1 .186-.439c.124-.124.27-.186.439-.186s.315.063.439.186a.601.601 0 0 1 .186.439V9.34h1.875c.169 0 .316.062.44.185z"/>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+                        <g>
+                            <polygon fill="currentColor" points="11.8,7 10.2,7 10.2,10.2 7,10.2 7,11.8 10.2,11.8 10.2,15 11.8,15 11.8,11.8 15,11.8 15,10.2
+                                11.8,10.2">
+                            </polygon>
+                            <path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
+                                l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z">
+                            </path>
+                        </g>
                     </svg>
                 </i>
             </div>

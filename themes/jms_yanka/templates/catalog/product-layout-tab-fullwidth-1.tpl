@@ -75,20 +75,6 @@
                         </ul>
                     {/if}
                 {/block}
-            
-                {block name='product_availability'}
-                    {if $product.show_availability && $product.availability_message}
-                    <span id="product-availability">
-                        {if $product.availability == 'available'}
-                            <span style="color:#fff; background:#25A799">{$product.availability_message}</span>
-                        {elseif $product.availability == 'last_remaining_items'}
-                            <i class="material-icons product-last-items">&#xE002;</i>
-                        {else}
-                            <span style="color:#fff; background:#858585;">{$product.availability_message}</span>
-                        {/if}
-                    </span>
-                    {/if}
-                {/block}
 
                 {block name='page_header_container'}
                     {block name='page_header'}
@@ -112,6 +98,22 @@
                                 <span class="editable">{$product.reference}</span>
                             </li>
                         {/if}
+                        {block name='product_availability'}
+                            {if $product.show_availability && $product.availability_message}
+                                <li>
+                                    <label>{l s='Availability:' d='Shop.Theme.Catalog'}</label>
+                                    <span class="editable">
+                                        {if $product.availability == 'available'}
+                                            {$product.availability_message}
+                                        {elseif $product.availability == 'last_remaining_items'}
+                                            <i class="material-icons product-last-items">&#xE002;</i>
+                                        {else}
+                                            {$product.availability_message}
+                                        {/if}
+                                    </span>
+                                </li>
+                            {/if}
+                        {/block}
                         <li id="product_vendor">
                             <label>{l s='Vendor:' d='Shop.Theme.Catalog'}</label>
                             <span class="editable">{Manufacturer::getnamebyid($product.id_manufacturer)}</span>
@@ -234,7 +236,7 @@
                                 role="tab"
                                 aria-controls="product-details"
                             >
-                                {l s='Details' d='Shop.Theme.Catalog'}
+                                {l s='Additional information' d='Shop.Theme.Catalog'}
                             </a>
                         </li>
                         <li class="nav-item">
@@ -303,9 +305,12 @@
                         {/block}
 
                         <div class="tab-pane fade" id="product-reviews" role="tabpanel">
-                            {block name='product_footer'}
-                                {hook h='displayFooterProduct' product=$product category=$category}
-                            {/block}
+                            <div class="container">
+                                <h3>{l s='Reviews' d='Shop.Theme.Actions'}</h3>
+                                {block name='product_footer'}
+                                    {hook h='displayFooterProduct' product=$product category=$category}
+                                {/block}
+                            </div>
                         </div>
 
                         {foreach from=$product.extraContent item=extra key=extraKey}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-29 06:16:15
+/* Smarty version 3.1.33, created on 2019-11-12 03:21:10
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-details.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5db8116f32de72_89571924',
+  'unifunc' => 'content_5dca6b76a00a39_25994320',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72a33e2f31f21c41de4b5c6bea1e46f7885f9655' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\product-details.tpl',
-      1 => 1569568109,
+      1 => 1573533105,
       2 => 'file',
     ),
   ),
@@ -20,214 +20,220 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5db8116f32de72_89571924 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dca6b76a00a39_25994320 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="tab-pane<?php if (!$_smarty_tpl->tpl_vars['product']->value['description']) {?> in active<?php }?>" id="product-details" data-product="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'json_encode' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['embedded_attributes'] )), ENT_QUOTES, 'UTF-8');?>
 " role="tabpanel">
-    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14736596285db8116f30abe5_89613616', 'product_reference');
-?>
-
-
-    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8667570875db8116f3128e4_06269492', 'product_quantities');
-?>
-
-
-    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8123682875db8116f316779_15376359', 'product_availability_date');
-?>
-
-
-    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20897072065db8116f31a5f9_66605292', 'product_out_of_stock');
-?>
-
-
-    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1059650405db8116f31e472_37731486', 'product_features');
+    <div class="container">
+        <h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Additional information','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+</h3>
+        <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15854706365dca6b769d9935_70387953', 'product_reference');
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10661473915db8116f3222f2_67890003', 'product_specific_references');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16303989395dca6b76a00a37_82878227', 'product_quantities');
 ?>
 
 
-    <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16082590645db8116f329ff8_23153343', 'product_condition');
+        <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14167479035dca6b76a00a31_55189840', 'product_availability_date');
 ?>
 
+
+        <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16586263285dca6b76a00a38_43029039', 'product_out_of_stock');
+?>
+
+
+        <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6492836465dca6b76a00a32_71663860', 'product_features');
+?>
+
+
+                <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11229937755dca6b76a00a38_76412101', 'product_specific_references');
+?>
+
+
+        <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4123811805dca6b76a00a31_49610415', 'product_condition');
+?>
+
+    </div>
 </div>
 <?php }
 /* {block 'product_reference'} */
-class Block_14736596285db8116f30abe5_89613616 extends Smarty_Internal_Block
+class Block_15854706365dca6b769d9935_70387953 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_reference' => 
   array (
-    0 => 'Block_14736596285db8116f30abe5_89613616',
+    0 => 'Block_15854706365dca6b769d9935_70387953',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-        <?php if (isset($_smarty_tpl->tpl_vars['product_manufacturer']->value->id)) {?>
-            <div class="product-manufacturer">
-                <?php if (isset($_smarty_tpl->tpl_vars['manufacturer_image_url']->value)) {?>
+            <?php if (isset($_smarty_tpl->tpl_vars['product_manufacturer']->value->id)) {?>
+                <div class="product-manufacturer">
+                    <?php if (isset($_smarty_tpl->tpl_vars['manufacturer_image_url']->value)) {?>
                     <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product_brand_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">
                         <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['manufacturer_image_url']->value, ENT_QUOTES, 'UTF-8');?>
 " class="img img-thumbnail manufacturer-logo" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product_manufacturer']->value->name, ENT_QUOTES, 'UTF-8');?>
 ">
                     </a>
-                <?php } else { ?>
-                    <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Brand :','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
-</label>
+                    <?php } else { ?>
+                    <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Brand','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+:</label>
                     <span>
                         <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product_brand_url']->value, ENT_QUOTES, 'UTF-8');?>
 "><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product_manufacturer']->value->name, ENT_QUOTES, 'UTF-8');?>
 </a>
                     </span>
-                <?php }?>
-            </div>
-        <?php }?>
-        <?php if (isset($_smarty_tpl->tpl_vars['product']->value['reference_to_display'])) {?>
-            <div class="product-reference">
-                <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Reference :','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
- </label>
-                <span itemprop="sku"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['reference_to_display'], ENT_QUOTES, 'UTF-8');?>
+                    <?php }?>
+                </div>
+            <?php }?>
+            <?php if (isset($_smarty_tpl->tpl_vars['product']->value['reference_to_display']) && $_smarty_tpl->tpl_vars['product']->value['reference_to_display'] != '') {?>
+                <div class="product-reference">
+                    <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Reference','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+:</label>
+                    <span itemprop="sku"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['reference_to_display'], ENT_QUOTES, 'UTF-8');?>
 </span>
-            </div>
-        <?php }?>
-    <?php
+                </div>
+            <?php }?>
+        <?php
 }
 }
 /* {/block 'product_reference'} */
 /* {block 'product_quantities'} */
-class Block_8667570875db8116f3128e4_06269492 extends Smarty_Internal_Block
+class Block_16303989395dca6b76a00a37_82878227 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_quantities' => 
   array (
-    0 => 'Block_8667570875db8116f3128e4_06269492',
+    0 => 'Block_16303989395dca6b76a00a37_82878227',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-        <?php if ($_smarty_tpl->tpl_vars['product']->value['show_quantities']) {?>
-            <div class="product-quantities">
-                <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'In stock :','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+            <?php if ($_smarty_tpl->tpl_vars['product']->value['show_quantities']) {?>
+                <div class="product-quantities">
+                    <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'In stock','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
 </label>
-                <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
+                    <span data-stock="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
+" data-allow-oosp="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['allow_oosp'], ENT_QUOTES, 'UTF-8');?>
+"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
  <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity_label'], ENT_QUOTES, 'UTF-8');?>
 </span>
-            </div>
-        <?php }?>
-    <?php
+                </div>
+            <?php }?>
+        <?php
 }
 }
 /* {/block 'product_quantities'} */
 /* {block 'product_availability_date'} */
-class Block_8123682875db8116f316779_15376359 extends Smarty_Internal_Block
+class Block_14167479035dca6b76a00a31_55189840 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_availability_date' => 
   array (
-    0 => 'Block_8123682875db8116f316779_15376359',
+    0 => 'Block_14167479035dca6b76a00a31_55189840',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-        <?php if ($_smarty_tpl->tpl_vars['product']->value['availability_date']) {?>
-            <div class="product-availability-date">
-                <label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Availability date:','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
- </label>
-                <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['availability_date'], ENT_QUOTES, 'UTF-8');?>
+            <?php if ($_smarty_tpl->tpl_vars['product']->value['availability_date']) {?>
+                <div class="product-availability-date">
+                    <label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Availability date','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+: </label>
+                    <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['availability_date'], ENT_QUOTES, 'UTF-8');?>
 </span>
-            </div>
-        <?php }?>
-    <?php
+                </div>
+            <?php }?>
+        <?php
 }
 }
 /* {/block 'product_availability_date'} */
 /* {block 'product_out_of_stock'} */
-class Block_20897072065db8116f31a5f9_66605292 extends Smarty_Internal_Block
+class Block_16586263285dca6b76a00a38_43029039 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_out_of_stock' => 
   array (
-    0 => 'Block_20897072065db8116f31a5f9_66605292',
+    0 => 'Block_16586263285dca6b76a00a38_43029039',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-        <div class="product-out-of-stock">
-            <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'actionProductOutOfStock','product'=>$_smarty_tpl->tpl_vars['product']->value),$_smarty_tpl ) );?>
+            <div class="product-out-of-stock">
+                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'actionProductOutOfStock','product'=>$_smarty_tpl->tpl_vars['product']->value),$_smarty_tpl ) );?>
 
-        </div>
-    <?php
+            </div>
+        <?php
 }
 }
 /* {/block 'product_out_of_stock'} */
 /* {block 'product_features'} */
-class Block_1059650405db8116f31e472_37731486 extends Smarty_Internal_Block
+class Block_6492836465dca6b76a00a32_71663860 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_features' => 
   array (
-    0 => 'Block_1059650405db8116f31e472_37731486',
+    0 => 'Block_6492836465dca6b76a00a32_71663860',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-        <?php if ($_smarty_tpl->tpl_vars['product']->value['features']) {?>
-            <div class="product-features">
-                <h3 class="h6"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Data sheet','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
-</h3>
-                <dl class="data-sheet">
+            <?php if ($_smarty_tpl->tpl_vars['product']->value['grouped_features']) {?>
+                <section class="product-features">
+                    <p class="h6"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Data sheet','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+:</p>
+                    <dl class="data-sheet">
                     <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['features'], 'feature');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['grouped_features'], 'feature');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['feature']->value) {
 ?>
                         <dt class="name"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['feature']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </dt>
-                        <dd class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['feature']->value['value'], ENT_QUOTES, 'UTF-8');?>
+                        <dd class="value"><?php echo nl2br(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['feature']->value['value'],'htmlall' )));?>
 </dd>
                     <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                </dl>
-            </div>
-        <?php }?>
-    <?php
+                    </dl>
+                </section>
+            <?php }?>
+        <?php
 }
 }
 /* {/block 'product_features'} */
 /* {block 'product_specific_references'} */
-class Block_10661473915db8116f3222f2_67890003 extends Smarty_Internal_Block
+class Block_11229937755dca6b76a00a38_76412101 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_specific_references' => 
   array (
-    0 => 'Block_10661473915db8116f3222f2_67890003',
+    0 => 'Block_11229937755dca6b76a00a38_76412101',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-        <?php if (isset($_smarty_tpl->tpl_vars['product']->value['specific_references'])) {?>
-            <div class="product-features">
-                <h3 class="h6"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Specific References','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
-</h3>
+            <?php if (!empty($_smarty_tpl->tpl_vars['product']->value['specific_references'])) {?>
+            <section class="product-features">
+                <p class="h6"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Specific References','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+:</p>
                 <dl class="data-sheet">
                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['specific_references'], 'reference', false, 'key');
@@ -243,35 +249,35 @@ foreach ($_from as $_smarty_tpl->tpl_vars['key']->value => $_smarty_tpl->tpl_var
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </dl>
-            </div>
-        <?php }?>
-    <?php
+            </section>
+            <?php }?>
+        <?php
 }
 }
 /* {/block 'product_specific_references'} */
 /* {block 'product_condition'} */
-class Block_16082590645db8116f329ff8_23153343 extends Smarty_Internal_Block
+class Block_4123811805dca6b76a00a31_49610415 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_condition' => 
   array (
-    0 => 'Block_16082590645db8116f329ff8_23153343',
+    0 => 'Block_4123811805dca6b76a00a31_49610415',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-        <?php if ($_smarty_tpl->tpl_vars['product']->value['condition']) {?>
-            <div class="product-condition">
-                <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Condition','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
- </label>
-                <link itemprop="itemCondition" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['condition']['schema_url'], ENT_QUOTES, 'UTF-8');?>
+            <?php if ($_smarty_tpl->tpl_vars['product']->value['condition']) {?>
+                <div class="product-condition">
+                    <label class="label"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Condition','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+: </label>
+                    <link itemprop="itemCondition" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['condition']['schema_url'], ENT_QUOTES, 'UTF-8');?>
 "/>
-                <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['condition']['label'], ENT_QUOTES, 'UTF-8');?>
+                    <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['condition']['label'], ENT_QUOTES, 'UTF-8');?>
 </span>
-            </div>
-        <?php }?>
-    <?php
+                </div>
+            <?php }?>
+        <?php
 }
 }
 /* {/block 'product_condition'} */
