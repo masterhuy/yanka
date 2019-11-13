@@ -1206,6 +1206,39 @@
 }
 //
 
+//product layout vertical
+.product-detail.vertical{
+	~ .same-category{
+		margin-top: 135px;
+	}
+	.images-container .js-qv-mask{
+		width: 100%;
+		margin-right: 0;
+		max-height: initial;
+		.product-cover{
+			width: 100%;
+			float: left;
+			margin-bottom: 20px;
+		}
+		.layer{
+			top: 10px;
+			right: 10px;
+			position: absolute;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			z-index: 9;
+			svg{
+				width: 24px;
+				height: 24px;
+				color: #333;
+				transition: .2s all;
+			}
+		}
+	}
+}
+//
+
 //product thumb horizontal
 .product-detail.thumb-horizontal{
 	#gal1{
@@ -1360,6 +1393,316 @@
 }
 //
 
+//product thumb tab fullwidth 2
+.product-detail.tab-fullwidth-2{
+	#gal1{
+		display: flex;
+	}
+	.pd-left-content {
+		margin-right: 0;
+	}
+	.scroll-box-arrows{
+		bottom: -45px;
+		left: -6px;
+		.fa-angle-left.left::before {
+			content: "\e904";
+		}
+		.fa-angle-right.right::before {
+			content: "\e905";
+		}
+	}
+	.images-container{
+		flex-direction: column;
+		.js-qv-mask{
+			width: 100%;
+			margin-top: 20px;
+			margin-right: 0;
+			white-space: nowrap;
+		}
+		.product-images > li.thumb-container{
+			display: inline;
+			margin-bottom: 0;
+			margin-right: 11px;
+			img{
+				width: 72px;
+			}
+		}
+	}
+	~ .same-category{
+		margin-top: 91px;
+		&::before{
+			display: none;
+		}
+		.container{
+			padding-top: 0 !important;
+		}
+	}
+	~ #more_info_block{
+		margin-top: 88px;
+		#product-details .container h3{
+			display: block;
+		}
+		.panel.panel-default{
+			padding: 18px 0;
+			border-bottom: 1px solid #ebebeb;
+			.panel-heading{
+				padding: 0 15px;
+			}
+			.panel-collapse{
+				.panel-body{
+					border-top: 1px solid #ebebeb;
+					margin-top: 17px;
+					padding-top: 30px;
+					margin-bottom: 26px;
+				}
+			}
+			.extra .panel-body{
+				margin-bottom: -18px;
+			}
+		}
+		.pt-box-layout-01{
+			.pt-item {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+			}
+			.col-img{
+				order: 2;
+				width: 50%;
+			}
+			.col-description{
+				order: 1;
+				width: 50%;
+				padding: 0% 10% 0% 10.5%;
+				align-self: center;
+				.text-xl{
+					font-size: 24px;
+					color: #333;
+					line-height: 35px;
+				}
+			}
+		}
+		.pt-tabs-top01 {
+		  	margin-top: 32px;
+		  	svg{
+		  		width: 153px;
+		  		height: 24px;
+		  		color: #d0d0d0;
+		  	}
+		}
+		.pt-title{
+			font-size: 24px;
+			padding-bottom: 25px;
+		}
+		.pt-list-dot, .pt-list-number{
+			li{
+				margin: 0;
+				a{
+					font-weight: 400;
+					line-height: 28px;
+					color: #777;
+					text-transform: initial;
+					&:hover{
+						color: $active;
+					}
+				}
+			}
+		}
+		.tabs-content-noindent {
+			margin-top: -30px;
+			margin-bottom: 0;
+		}
+		.container-indent-tab {
+			margin: 142px 0 0;
+			.no-gutters{
+				.row{
+					margin: 0;
+				}
+				.col-sm-6{
+					padding: 0;
+				}
+			}
+			+ .container-indent-tab{
+				margin-top: 126px;
+			}
+		}
+		.product-description{
+			dl dt {
+				font-size: 24px;
+				line-height: 35px;
+				color: #333333;
+				font-weight: 800;
+				padding: 0 0 20px 0;
+				&:not(:first-child){
+					margin-top: 39px;
+				}
+			}
+			.pt-list-number{
+				margin-top: 23px;
+			}
+			.row.pt-col-smallindent {
+				margin: 0 -5px;
+				.col-md-12{
+					margin-bottom: 10px;
+				}
+				> div{
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+}
+//
+
+//three column
+#product.sidebar #wrapper{
+	> .container-fluid{
+		width: 1200px;
+		padding: 0 15px;
+	}
+	#main{
+		&::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -15px;
+			width: 1px;
+			height: 100%;
+			background: #ebebeb;
+		}
+	}
+	#right-column{
+		padding-left: 30px;
+		#special-products{
+			margin-top: 36px;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+.product-detail.three-column{
+	.images-container .product-images > li.thumb-container img {
+	    width: 74.5px;
+	}
+	.pd-name{
+		font-size: 24px;
+		margin-top: -5px;
+	}
+	.product-prices.content_price{
+		margin-bottom: 15px;
+		.price.new{
+			font-size: 24px;
+			margin-top: 7px;
+		}
+	}
+	.guaranteed {
+		display: none;
+	}
+	.product-quantity .addToWishlist{
+		display: inline-flex;
+		padding: 0;
+		width: auto !important;
+		&::before{
+			display: none;
+		}
+		&:hover span::before{
+			width: 100%;
+		}
+		span{
+			position:relative;
+			@include underline(13, #333, 2)
+		}
+	}
+	~ .same-category{
+		min-width: 1200px;
+		.container{
+			width: 100% !important;
+		}
+	}
+	~ #more_info_block{
+		margin-top: 59px;
+		padding: 0 15px;
+		.nav.nav-tabs{
+			margin: 0;
+		}
+		.container{
+			padding: 0;
+		}
+		.pt-box-layout-01{
+			.pt-item {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+			}
+			.col-img{
+				order: 2;
+				width: 50%;
+			}
+			.col-description{
+				order: 1;
+				width: 50%;
+				padding: 0% 10% 0% 10.5%;
+				align-self: center;
+				.text-xl{
+					font-size: 24px;
+					color: #333;
+					line-height: 35px;
+				}
+			}
+		}
+		.pt-tabs-top01 {
+		  	margin-top: 32px;
+		  	svg{
+		  		width: 153px;
+		  		height: 24px;
+		  		color: #d0d0d0;
+		  	}
+		}
+		.pt-title{
+			font-size: 24px;
+			padding-bottom: 25px;
+		}
+		.pt-list-dot, .pt-list-number{
+			li{
+				margin: 0;
+				a{
+					font-weight: 400;
+					line-height: 28px;
+					color: #777;
+					text-transform: initial;
+					&:hover{
+						color: $active;
+					}
+				}
+			}
+		}
+		.product-description{
+			dl dt {
+				font-size: 24px;
+				line-height: 35px;
+				color: #333333;
+				font-weight: 800;
+				padding: 0 0 20px 0;
+				&:not(:first-child){
+					margin-top: 39px;
+				}
+			}
+			.pt-list-number{
+				margin-top: 23px;
+			}
+			.row.pt-col-smallindent {
+				margin: 0 -5px;
+				.col-md-12{
+					margin-bottom: 10px;
+				}
+				> div{
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+}
+//
 
 
 //share button
@@ -3594,7 +3937,7 @@ a.wishlist_top{
 		-webkit-transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
 		transform: translateX(-50%);
-		min-width: 215px;
+		min-width: 280px;
 		font-weight: 800;
 		color: #333;
 		text-transform: capitalize;

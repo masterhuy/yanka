@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-11 23:57:24
+/* Smarty version 3.1.33, created on 2019-11-13 02:30:05
   from 'D:\xamppp\htdocs\jms_yanka\modules\productcomments\views\templates\admin\list_action_approve.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dca3bb42676d6_00115585',
+  'unifunc' => 'content_5dcbb0fd8685e0_61137491',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dca3bb42676d6_00115585 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcbb0fd8685e0_61137491 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a href="<?php echo $_smarty_tpl->tpl_vars['href']->value;?>
 " class="btn btn-success" title="<?php echo $_smarty_tpl->tpl_vars['action']->value;?>

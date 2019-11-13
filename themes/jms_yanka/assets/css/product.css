@@ -76,7 +76,7 @@
 #product .block-categories {
     margin-bottom: 12px;
     padding-bottom: 0;
-    margin-top: -10px;
+    margin-top: -3px;
     border-bottom: 0;
 }
 /* product detail -Fix in here */
@@ -187,9 +187,6 @@
     min-width: 70px;
     margin-right: 30px;
 }
-.images-container .product-cover{
-    width: calc(100% - 80px);
-}
 .product-images > li.thumb-container .thumb {
     cursor: pointer;
     width: 100%;
@@ -236,6 +233,9 @@
     font-size: 36px;
     margin-top: 9px;
     display: inline-block;
+}
+.product-prices.content_price .price.old + .price.new{
+    color: #e12c43;
 }
 #product .pb-right-column .content_prices .shipping_cost {
 	line-height: 32px; 

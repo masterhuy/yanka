@@ -114,10 +114,12 @@
                                 </li>
                             {/if}
                         {/block}
-                        <li id="product_vendor">
-                            <label>{l s='Vendor:' d='Shop.Theme.Catalog'}</label>
-                            <span class="editable">{Manufacturer::getnamebyid($product.id_manufacturer)}</span>
-                        </li>
+                        {if $product.id_manufacturer}
+                            <li id="product_vendor">
+                                <label>{l s='Vendor:' d='Shop.Theme.Catalog'}</label>
+                                <span class="editable">{Manufacturer::getnamebyid($product.id_manufacturer)}</span>
+                            </li>
+                        {/if}
                         <li>
                             <label>{l s='Product Type: '}</label>
                             <a class="hover-underline editable" href="{url entity='category' id=$product.id_category_default}">

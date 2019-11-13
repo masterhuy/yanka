@@ -31,7 +31,6 @@
 				    {$product.category|escape:'html':'UTF-8'}
                 </a>
             </p>
-            
         </div>
 
         {block name='product_discount'}

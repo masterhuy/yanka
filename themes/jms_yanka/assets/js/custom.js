@@ -1176,6 +1176,10 @@ $(document).ready(function() {
 		initialLoad = false;
 	}
 
+	if ($("#product #content-wrapper").hasClass("col-md-9")){
+		$("#product").addClass("sidebar");
+	}
+
 	hoverLookbook();
 
 	closeLookbook();

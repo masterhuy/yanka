@@ -68,7 +68,7 @@
                                 C10.4,1.7,8.7,1,6.9,1z">
                             </path>
                         </svg>
-                        {l s='Add to wishlist' d='Shop.Theme.Actions'}
+                        <span>{l s='Add to wishlist' d='Shop.Theme.Actions'}</span>
                     </a>
                 {/if}
             </div>

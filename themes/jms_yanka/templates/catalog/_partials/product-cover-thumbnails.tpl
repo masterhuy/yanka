@@ -41,6 +41,7 @@
                 {/foreach}
             </ul>
         </div>
+        {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
     {/block}
     {block name='product_cover'}
         <div class="product-cover">
