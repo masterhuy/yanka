@@ -237,6 +237,9 @@
 .product-prices.content_price .price.old + .price.new{
     color: #e12c43;
 }
+/*.product-prices #jmsproductvideo{
+    display: none;
+}*/
 #product .pb-right-column .content_prices .shipping_cost {
 	line-height: 32px; 
 	margin-left:15px;

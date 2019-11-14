@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 05:27:59
+/* Smarty version 3.1.33, created on 2019-11-13 23:49:35
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsproductvideo\views\templates\hook\videocontent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcbdaaf1ebf81_11036500',
+  'unifunc' => 'content_5dccdcdf328da7_84712812',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aed4b016b4c14f17673673228f240c39db5846df' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmsproductvideo\\views\\templates\\hook\\videocontent.tpl',
-      1 => 1573640870,
+      1 => 1573697227,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcbdaaf1ebf81_11036500 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dccdcdf328da7_84712812 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
+<style>
+	.jms-popup-wrap {
+		width : <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['video_width']->value, ENT_QUOTES, 'UTF-8');?>
+px;
+		height : <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['video_height']->value, ENT_QUOTES, 'UTF-8');?>
+px;				
+	}
+</style>
 
 <?php if ($_smarty_tpl->tpl_vars['product_videos']->value) {?>
 <div class="jms-videos" id="jmsproductvideo">

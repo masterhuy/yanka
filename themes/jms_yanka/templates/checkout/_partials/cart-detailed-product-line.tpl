@@ -24,7 +24,7 @@
  *}
 <div class="product-line-grid">
     <!--  products -->
-    <div class="row_cs product-info col-lg-7 col-md-7 col-sm-7 col-xs-12">
+    <div class="row_cs product-info col-lg-6 col-md-7 col-sm-7 col-xs-12">
         <span class="product-image media-middle">
             <div class="cart-line-product-actions ">
                 <a
@@ -38,9 +38,12 @@
                 >
                 {if !isset($product.is_gift) || !$product.is_gift}
                     <i>
-                        <svg aria-hidden="true" focusable="false" role="presentation"
-                                class="icon icon-theme-165" viewBox="0 0 24 24">
-                            <path d="M4.741 21.654a.601.601 0 0 1-.186-.439v-15h-1.25a.598.598 0 0 1-.439-.186.597.597 0 0 1-.186-.439.6.6 0 0 1 .186-.439.604.604 0 0 1 .439-.186h5v-2.5a.6.6 0 0 1 .186-.439.598.598 0 0 1 .439-.186h6.25c.169 0 .315.063.439.186a.601.601 0 0 1 .186.439v2.5h5c.169 0 .315.063.439.186a.601.601 0 0 1 .186.439c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186h-1.25v15a.6.6 0 0 1-.186.439.601.601 0 0 1-.439.186H5.18a.598.598 0 0 1-.439-.186zM18.305 6.215h-12.5V20.59h12.5V6.215zM9.37 9.525a.601.601 0 0 1 .186.439v6.875c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186.598.598 0 0 1-.439-.186.598.598 0 0 1-.186-.439V9.965a.6.6 0 0 1 .186-.439.594.594 0 0 1 .438-.186c.169 0 .316.062.44.185zm.185-4.56h5V3.09h-5v1.875zm2.94 4.56a.601.601 0 0 1 .186.439v6.875c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186.598.598 0 0 1-.439-.186.598.598 0 0 1-.186-.439V9.965a.6.6 0 0 1 .186-.439.604.604 0 0 1 .439-.186c.168 0 .315.062.439.185zm2.246 0a.604.604 0 0 1 .439-.186c.169 0 .315.063.439.186a.601.601 0 0 1 .186.439v6.875c0 .17-.062.316-.186.439a.601.601 0 0 1-.439.186.598.598 0 0 1-.439-.186.598.598 0 0 1-.186-.439V9.965c0-.169.062-.316.186-.44z"/>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                            <g>
+                                <path fill="currentColor" d="M5,24h14l1-17H4L5,24z M18.3,8.6l-0.8,13.8h-11L5.7,8.6H18.3z"></path>
+                                <rect x="2" y="3.2" fill="currentColor" width="20" height="1.6"></rect>
+                                <rect x="10" y="0.2" fill="currentColor" width="4" height="1.6"></rect>
+                            </g>
                         </svg>
                     </i>
                 {/if}
@@ -98,7 +101,7 @@
         </span>
     </div>
 
-    <div class="row_cs product-right col-lg-5 col-md-5 col-sm-5 col-xs-12">
+    <div class="row_cs product-right col-lg-6 col-md-5 col-sm-5 col-xs-12">
         <!--  price -->
         <div class="row_cs product-price col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="product-line-info">
@@ -110,7 +113,7 @@
         </div>
 
         <!--  qty -->
-        <div class="row_cs product-qty col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row_cs product-qty product-quantity col-lg-4 col-md-4 col-sm-4 col-xs-12">
             {if isset($product.is_gift) && $product.is_gift}
                 <span class="gift-quantity">{$product.quantity}</span>
             {else}

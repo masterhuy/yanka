@@ -1,5 +1,5 @@
 /* Backup for localhost/jms_yanka/
- *  at 1573640969
+ *  at 1573727418
  */
 
 SET NAMES 'utf8';
@@ -1185,13 +1185,13 @@ CREATE TABLE `jms_advice` (
   `stop_day` int(11) NOT NULL DEFAULT '0',
   `weight` int(11) DEFAULT '1',
   PRIMARY KEY (`id_advice`)
-) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=utf8;
 
 INSERT INTO `jms_advice` VALUES
-('111','853','1',NULL,'1','0','after','#dashtrends','0','0','1'),
-('112','674','1',NULL,'1','0','after','#dashtrends','0','0','1'),
-('113','765','1',NULL,'1','0','after','#dashtrends','0','0','1'),
-('114','828','1',NULL,'1','0','after','.dash_news','0','0','1');
+('115','853','1',NULL,'1','0','after','#dashtrends','0','0','1'),
+('116','674','1',NULL,'1','0','after','#dashtrends','0','0','1'),
+('117','765','1',NULL,'1','0','after','#dashtrends','0','0','1'),
+('118','828','1',NULL,'1','0','after','.dash_news','0','0','1');
 /* Scheme for table jms_advice_lang */
 DROP TABLE IF EXISTS `jms_advice_lang`;
 CREATE TABLE `jms_advice_lang` (
@@ -1202,26 +1202,26 @@ CREATE TABLE `jms_advice_lang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `jms_advice_lang` VALUES
-('111','1','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('111','2','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('111','3','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('111','5','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('111','8','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('112','1','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('112','2','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('112','3','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('112','5','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('112','8','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('113','1','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('113','2','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('113','3','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('113','5','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('113','8','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-('114','1',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-('114','2',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-('114','3',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-('114','5',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-('114','8',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
+('115','1','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('115','2','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('115','3','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('115','5','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('115','8','<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('116','1','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('116','2','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('116','3','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('116','5','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('116','8','<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('117','1','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('117','2','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('117','3','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('117','5','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('117','8','<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill2.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Skrill Checkout - sell globally and grow<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+('118','1',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+('118','2',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+('118','3',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+('118','5',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+('118','8',' <div id=\"wrap_id_advice_828\"> <section id=\"0_adroll\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/adroll.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/828.png\"/> <p> <b>Did you know that over 40% of people begin their holiday shopping by October?</b> </p> <p> Use AdRoll to retarget visitors across the web, mobile and Facebook and solve for shopping cart abandonment. Start targeting your customers today with 1 click! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=828&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/26551-adroll-product-recommendations-cart-abandonment.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3Dadroll\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_adroll\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 /* Scheme for table jms_alias */
 DROP TABLE IF EXISTS `jms_alias`;
 CREATE TABLE `jms_alias` (
@@ -3980,7 +3980,7 @@ CREATE TABLE `jms_cart` (
   KEY `id_shop_group` (`id_shop_group`),
   KEY `id_shop_2` (`id_shop`,`date_upd`),
   KEY `id_shop` (`id_shop`,`date_add`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_cart` VALUES
 ('1','1','1','2','{\"3\":\"2,\"}','1','5','5','1','2','1','b44a6d9efd7a0076a0fbce6b15eaf3b1','0','0',NULL,'0','0','2019-09-27 08:48:13','2019-09-27 08:48:13',NULL),
@@ -3997,7 +3997,8 @@ INSERT INTO `jms_cart` VALUES
 ('12','1','1','0','','1','0','0','1','5','32','fed37bd35179d68f5c5edf1434ef86cc','0','0',NULL,'0','0','2019-11-08 04:57:05','2019-11-10 23:24:14',NULL),
 ('13','1','1','0','','1','0','0','1','3','37','e1c92f00daab778eb29fe6679aa10ac2','0','0',NULL,'0','0','2019-11-10 23:24:38','2019-11-11 01:49:59',NULL),
 ('14','1','1','0','','1','0','0','1','5','38','fed37bd35179d68f5c5edf1434ef86cc','0','0',NULL,'0','0','2019-11-11 23:54:27','2019-11-12 02:53:28',NULL),
-('15','1','1','0','','1','0','0','1','4','39','1f2b2bb08e69e0bf62de0a925288c89b','0','0',NULL,'0','0','2019-11-12 23:53:32','2019-11-13 05:28:08',NULL);
+('15','1','1','0','','1','0','0','1','4','39','1f2b2bb08e69e0bf62de0a925288c89b','0','0',NULL,'0','0','2019-11-12 23:53:32','2019-11-14 01:46:03',NULL),
+('16','1','1','0','','1','0','0','1','0','38','','0','0',NULL,'0','0','2019-11-14 02:07:16','2019-11-14 04:18:13',NULL);
 /* Scheme for table jms_cart_cart_rule */
 DROP TABLE IF EXISTS `jms_cart_cart_rule`;
 CREATE TABLE `jms_cart_cart_rule` (
@@ -4027,7 +4028,10 @@ INSERT INTO `jms_cart_product` VALUES
 ('6','20','0','1','0','0','1','2019-10-07 23:38:06'),
 ('6','42','0','1','0','0','1','2019-10-21 00:15:25'),
 ('12','22','0','1','0','0','1','2019-11-08 04:57:05'),
-('12','23','0','1','0','0','1','2019-11-08 04:57:23');
+('12','23','0','1','0','0','1','2019-11-08 04:57:23'),
+('15','20','0','1','26','0','1','2019-11-14 00:00:56'),
+('16','20','0','1','26','0','1','2019-11-14 02:07:16'),
+('16','21','0','1','1','0','1','2019-11-14 02:07:23');
 /* Scheme for table jms_cart_rule */
 DROP TABLE IF EXISTS `jms_cart_rule`;
 CREATE TABLE `jms_cart_rule` (
@@ -4071,8 +4075,10 @@ CREATE TABLE `jms_cart_rule` (
   KEY `group_restriction_2` (`group_restriction`,`active`,`highlight`,`date_to`),
   KEY `date_from` (`date_from`),
   KEY `date_to` (`date_to`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+INSERT INTO `jms_cart_rule` VALUES
+('1','0','2019-11-14 03:00:00','2019-12-14 03:00:00',NULL,'1','1','1','1','57D2VZMZ','0.00','0','1','0','0','0','0','0','0','0','0','20.00','0.00','0','1','0','0','0','0','0','1','2019-11-14 03:52:47','2019-11-14 03:52:47');
 /* Scheme for table jms_cart_rule_carrier */
 DROP TABLE IF EXISTS `jms_cart_rule_carrier`;
 CREATE TABLE `jms_cart_rule_carrier` (
@@ -4116,6 +4122,12 @@ CREATE TABLE `jms_cart_rule_lang` (
   PRIMARY KEY (`id_cart_rule`,`id_lang`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+INSERT INTO `jms_cart_rule_lang` VALUES
+('1','1','20%'),
+('1','2','20%'),
+('1','3','20%'),
+('1','5','20%'),
+('1','8','20%');
 /* Scheme for table jms_cart_rule_product_rule */
 DROP TABLE IF EXISTS `jms_cart_rule_product_rule`;
 CREATE TABLE `jms_cart_rule_product_rule` (
@@ -4620,251 +4632,251 @@ CREATE TABLE `jms_condition` (
 ) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8;
 
 INSERT INTO `jms_condition` VALUES
-('1','1','configuration','PS_REWRITING_SETTINGS','==','1',NULL,'hook','actionAdminMetaControllerUpdate_optionsAfter','0','2019-11-12 20:45:54','2019-11-12 20:45:54'),
-('2','2','configuration','PS_SMARTY_FORCE_COMPILE','!=','2',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-12 20:45:54','2019-11-12 20:45:54'),
-('3','3','configuration','PS_CSS_THEME_CACHE','==','1',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-12 20:45:54','2019-11-12 20:45:54'),
-('4','4','configuration','PS_CIPHER_ALGORITHM','==','1',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('5','5','configuration','PS_MEDIA_SERVERS','==','1',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('6','6','sql','SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")','>','0','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('7','7','sql','SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")','>','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('8','8','sql','SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")','>','0',NULL,'hook','actionObjectCarrierAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('9','9','sql','SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")','>','1',NULL,'hook','actionObjectCarrierAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('10','10','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','0','1','hook','actionObjectProductAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('11','11','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','9','10','hook','actionObjectProductAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('12','12','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','99','22','hook','actionObjectProductAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('13','13','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','999','22','hook','actionObjectProductAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('14','14','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','9999','22','hook','actionObjectProductAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('15','15','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','99999','22','hook','actionObjectProductAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('16','16','configuration','PS_SHOP_PHONE','!=','0','1','hook','actionAdminStoresControllerUpdate_optionsAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('17','17','sql','SELECT COUNT(*) FROM PREFIX_contact','>','2','2','hook','actionObjectContactAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('18','18','sql','SELECT COUNT(*) FROM PREFIX_contact','>','4','2','hook','actionObjectContactAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('19','19','install',NULL,'>','0','1','time','1','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('20','20','install',NULL,'>=','7','1','time','1','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('21','21','configuration','PS_LOGO','!=','logo.jpg','1','hook','actionAdminThemesControllerUpdate_optionsAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('22','22','sql','SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"','>','0','0','hook','actionObjectShopUpdateAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('23','23','configuration','PS_LOGGED_ON_ADDONS','==','1',NULL,'time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('24','24','configuration','PS_MULTISHOP_FEATURE_ACTIVE','==','1',NULL,'hook','actionAdminPreferencesControllerUpdate_optionsAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('25','25','sql','SELECT COUNT(*) FROM PREFIX_shop','>','1',NULL,'hook','actionObjectShopAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('26','26','sql','SELECT COUNT(*) FROM PREFIX_shop','>','4',NULL,'hook','actionObjectShopAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('27','27','sql','SELECT COUNT(*) FROM PREFIX_shop_group','>','5',NULL,'hook','actionObjectShopGroupAddAfter 	','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('28','28','sql','SELECT COUNT(*) FROM PREFIX_shop_group','>','1',NULL,'hook','actionObjectShopGroupAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('29','29','sql','SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")','>','2','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('30','30','sql','SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")','>','2',NULL,'hook','actionObjectCarrierAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('31','31','sql','SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','200',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('32','32','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','2000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('33','33','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','20000','0','time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('34','34','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','200000','0','time','7','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('35','35','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','2000000','0','time','7','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('36','36','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','20000000','0','time','7','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('37','37','install',NULL,'>=','30','1','time','1','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('38','38','install',NULL,'>=','182',NULL,'time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('39','39','install',NULL,'>=','365',NULL,'time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('40','40','install',NULL,'>=','730',NULL,'time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('41','41','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','10','10','time','1','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('42','42','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100','34','time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('43','43','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000','34','time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('44','44','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','10000','34','time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('45','45','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100000','12','time','3','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('46','46','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000000','10','time','4','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('47','47','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','2','2','hook','actionObjectCartAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('48','48','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','10','10','hook','actionObjectCartAddAfter','1','2019-11-12 20:45:55','2019-11-12 23:53:32'),
-('49','49','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','100','10','hook','actionObjectCartAddAfter','0','2019-11-12 20:45:55','2019-11-12 23:55:26'),
-('50','50','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','1000','10','time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('51','51','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','10000','10','time','4','0','2019-11-12 20:45:55','2019-11-12 23:55:26'),
-('52','52','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','100000','10','time','8','0','2019-11-12 20:45:55','2019-11-12 23:55:26'),
-('53','53','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','1',NULL,'hook','actionObjectOrderAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('54','54','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','10',NULL,'hook','actionObjectOrderAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('55','55','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','100',NULL,'hook','actionObjectOrderAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('56','56','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','1000','0','time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('57','57','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','10000','0','time','4','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('58','58','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','100000','0','time','8','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('59','59','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','1','2','hook','actionObjectCustomerAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('60','60','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','10','4','hook','actionObjectCustomerAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('61','61','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','100','4','hook','actionObjectCustomerAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('62','62','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','1000','4','time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('63','63','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','10000','4','time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('64','64','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','100000','2','time','4','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('65','65','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','1',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('66','66','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','10',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('67','67','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','100',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('68','68','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','1000','0','time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('69','69','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','10000','0','time','4','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('70','70','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','100000','0','time','8','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('71','76','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('72','79','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('73','85','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('74','86','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('75','87','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('76','88','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('77','89','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('78','90','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','2',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('79','91','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','3',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('80','92','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','5',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('81','93','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','10',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('82','94','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','20',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('83','95','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','40',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('84','96','sql','SELECT id_image FROM PREFIX_image WHERE id_image > 26','>','0','27','hook','actionObjectImageAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('85','97','sql','SELECT COUNT(*) FROM PREFIX_image','>=','50','50','hook','actionObjectImageAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('86','98','sql','SELECT COUNT(*) FROM PREFIX_image','>=','100','100','hook','actionObjectImageAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('87','99','sql','SELECT COUNT(*) FROM PREFIX_image','>=','1000','113','time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('88','100','sql','SELECT COUNT(*) FROM PREFIX_image','>=','10000','113','time','4','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('89','101','sql','SELECT COUNT(*) FROM PREFIX_image','>=','50000','102','time','8','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('90','102','sql','SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5','>','0','6','hook','actionObjectCMSAddAfter','1','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('91','103','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','1',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('92','104','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','10',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('93','105','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','100',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('94','106','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','1000',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('95','107','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','500',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('96','108','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','5000',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('97','109','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','1',NULL,'hook','newOrder','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('98','110','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','10',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('99','111','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','100',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('100','112','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','10000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('101','113','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','1000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('102','114','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','5000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('103','132','sql','SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )','==','1',NULL,'time','1','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('104','136','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('105','140','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('106','142','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('107','158','install',NULL,'>=','90',NULL,'time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('108','159','install',NULL,'<=','90',NULL,'time','2','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('109','165','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','0',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('110','166','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','1',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('111','167','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','4',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('112','168','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','9',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('113','169','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','19',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('114','170','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','49',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('115','171','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','1',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('116','172','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','2',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('117','173','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','3',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('118','174','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','4',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('119','175','sql','SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'','==','0',NULL,'time','1','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('120','209','configuration','EBAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('121','320','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('122','322','configuration','SHOPGATE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:55','2019-11-13 01:45:37'),
-('123','323','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('124','324','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ','==','0',NULL,'time','1','0','2019-11-12 20:45:55','2019-11-12 20:45:55'),
-('125','325','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'','>=','1','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('126','326','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('127','358','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1','>=','1','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('128','359','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('129','375','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('130','376','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('131','377','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('132','394','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('133','399','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','499',NULL,'hook','actionObjectProductAddAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('134','424','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('135','425','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:37'),
-('136','426','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('137','427','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('138','428','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('139','429','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))','==','2',NULL,'time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('140','430','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('141','431','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('142','434','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('143','435','configuration','BLUEPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('144','436','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('145','437','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('146','438','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('147','439','configuration','PAYPLUG_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('148','440','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('149','441','sql','SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','10000','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('150','442','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('151','443','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'','==','1','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('152','446','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('153','447','configuration','DPDPOLAND_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('154','448','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('155','449','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('156','450','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('157','451','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('158','452','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('159','453','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('160','454','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('161','455','configuration','KLIKANDPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('162','456','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('163','457','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('164','458','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('165','459','configuration','CLICKLINE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('166','460','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('167','461','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('168','462','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('169','463','sql','SELECT 1','!=','1','1','time','100','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('170','464','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('171','465','sql','SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)','>=','500','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('172','467','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('173','468','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))','==','3',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('174','469','sql','SELECT 1','!=','1','1','time','100','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('175','470','sql','SELECT 1','!=','1','1','time','100','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('176','471','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('177','472','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('178','473','sql','SELECT 1','!=','1','1','time','100','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('179','474','sql','SELECT 1','!=','1','1','time','100','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('180','475','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('181','476','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('182','477','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('183','478','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('184','479','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('185','480','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('186','481','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('187','482','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('188','483','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('189','484','configuration','FIRSTDATA_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('190','485','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('191','486','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('192','487','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('193','488','sql','GIVEIT_CONFIGURATION_OK','>=','1','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('194','489','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('195','490','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('196','491','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('197','492','configuration','GANALYTICS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('198','493','sql','SELECT 1','!=','1','1','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('199','494','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('200','496','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56');
+('1','1','configuration','PS_REWRITING_SETTINGS','==','1',NULL,'hook','actionAdminMetaControllerUpdate_optionsAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('2','2','configuration','PS_SMARTY_FORCE_COMPILE','!=','2',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('3','3','configuration','PS_CSS_THEME_CACHE','==','1',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('4','4','configuration','PS_CIPHER_ALGORITHM','==','1',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('5','5','configuration','PS_MEDIA_SERVERS','==','1',NULL,'hook','actionAdminPerformanceControllerSaveAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('6','6','sql','SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")','>','0','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('7','7','sql','SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")','>','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('8','8','sql','SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")','>','0',NULL,'hook','actionObjectCarrierAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('9','9','sql','SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")','>','1',NULL,'hook','actionObjectCarrierAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('10','10','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','0','1','hook','actionObjectProductAddAfter','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('11','11','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','9','10','hook','actionObjectProductAddAfter','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('12','12','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','99','22','hook','actionObjectProductAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('13','13','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','999','22','hook','actionObjectProductAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('14','14','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','9999','22','hook','actionObjectProductAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('15','15','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','99999','22','hook','actionObjectProductAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('16','16','configuration','PS_SHOP_PHONE','!=','0','1','hook','actionAdminStoresControllerUpdate_optionsAfter','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('17','17','sql','SELECT COUNT(*) FROM PREFIX_contact','>','2','2','hook','actionObjectContactAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('18','18','sql','SELECT COUNT(*) FROM PREFIX_contact','>','4','2','hook','actionObjectContactAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('19','19','install',NULL,'>','0','1','time','1','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('20','20','install',NULL,'>=','7','1','time','1','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('21','21','configuration','PS_LOGO','!=','logo.jpg','1','hook','actionAdminThemesControllerUpdate_optionsAfter','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('22','22','sql','SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"','>','0','0','hook','actionObjectShopUpdateAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('23','23','configuration','PS_LOGGED_ON_ADDONS','==','1',NULL,'time','1','0','2019-11-13 20:46:56','2019-11-14 00:01:28'),
+('24','24','configuration','PS_MULTISHOP_FEATURE_ACTIVE','==','1',NULL,'hook','actionAdminPreferencesControllerUpdate_optionsAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('25','25','sql','SELECT COUNT(*) FROM PREFIX_shop','>','1',NULL,'hook','actionObjectShopAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('26','26','sql','SELECT COUNT(*) FROM PREFIX_shop','>','4',NULL,'hook','actionObjectShopAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('27','27','sql','SELECT COUNT(*) FROM PREFIX_shop_group','>','5',NULL,'hook','actionObjectShopGroupAddAfter 	','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('28','28','sql','SELECT COUNT(*) FROM PREFIX_shop_group','>','1',NULL,'hook','actionObjectShopGroupAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('29','29','sql','SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")','>','2','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('30','30','sql','SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")','>','2',NULL,'hook','actionObjectCarrierAddAfter','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('31','31','sql','SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','200',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('32','32','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','2000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('33','33','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','20000','0','time','1','0','2019-11-13 20:46:56','2019-11-14 00:01:28'),
+('34','34','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','200000','0','time','7','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('35','35','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','2000000','0','time','7','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('36','36','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','20000000','0','time','7','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('37','37','install',NULL,'>=','30','1','time','1','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('38','38','install',NULL,'>=','182',NULL,'time','2','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('39','39','install',NULL,'>=','365',NULL,'time','2','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('40','40','install',NULL,'>=','730',NULL,'time','2','0','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('41','41','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','10','10','time','1','1','2019-11-13 20:46:56','2019-11-13 20:46:56'),
+('42','42','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100','35','time','1','0','2019-11-13 20:46:56','2019-11-14 00:01:28'),
+('43','43','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000','35','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('44','44','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','10000','34','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('45','45','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100000','12','time','3','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('46','46','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000000','10','time','4','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('47','47','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','2','2','hook','actionObjectCartAddAfter','1','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('48','48','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','10','10','hook','actionObjectCartAddAfter','1','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('49','49','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','100','11','hook','actionObjectCartAddAfter','0','2019-11-13 20:46:57','2019-11-14 02:07:16'),
+('50','50','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','1000','10','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('51','51','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','10000','10','time','4','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('52','52','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','100000','10','time','8','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('53','53','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','1',NULL,'hook','actionObjectOrderAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('54','54','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','10',NULL,'hook','actionObjectOrderAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('55','55','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','100',NULL,'hook','actionObjectOrderAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('56','56','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','1000','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('57','57','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','10000','0','time','4','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('58','58','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','100000','0','time','8','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('59','59','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','1','2','hook','actionObjectCustomerAddAfter','1','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('60','60','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','10','4','hook','actionObjectCustomerAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('61','61','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','100','4','hook','actionObjectCustomerAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('62','62','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','1000','4','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('63','63','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','10000','4','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('64','64','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','100000','2','time','4','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('65','65','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','1',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('66','66','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','10',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('67','67','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','100',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('68','68','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','1000','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('69','69','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','10000','0','time','4','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('70','70','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','100000','0','time','8','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('71','76','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('72','79','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('73','85','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('74','86','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('75','87','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('76','88','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('77','89','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)','!=','0',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('78','90','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','2',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('79','91','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','3',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('80','92','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','5',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('81','93','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','10',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('82','94','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','20',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('83','95','sql','SELECT COUNT(*) FROM PREFIX_employee','>=','40',NULL,'hook','actionObjectEmployeeAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('84','96','sql','SELECT id_image FROM PREFIX_image WHERE id_image > 26','>','0','27','hook','actionObjectImageAddAfter','1','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('85','97','sql','SELECT COUNT(*) FROM PREFIX_image','>=','50','50','hook','actionObjectImageAddAfter','1','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('86','98','sql','SELECT COUNT(*) FROM PREFIX_image','>=','100','100','hook','actionObjectImageAddAfter','1','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('87','99','sql','SELECT COUNT(*) FROM PREFIX_image','>=','1000','118','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('88','100','sql','SELECT COUNT(*) FROM PREFIX_image','>=','10000','113','time','4','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('89','101','sql','SELECT COUNT(*) FROM PREFIX_image','>=','50000','102','time','8','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('90','102','sql','SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5','>','0','6','hook','actionObjectCMSAddAfter','1','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('91','103','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','1',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('92','104','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','10',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('93','105','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','100',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('94','106','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','1000',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('95','107','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','500',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('96','108','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','5000',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('97','109','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','1',NULL,'hook','newOrder','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('98','110','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','10',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('99','111','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','100',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('100','112','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','10000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('101','113','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','1000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('102','114','sql','SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"','>=','5000',NULL,'hook','actionOrderStatusUpdate','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('103','132','sql','SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('104','136','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('105','140','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('106','142','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('107','158','install',NULL,'>=','90',NULL,'time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('108','159','install',NULL,'<=','90',NULL,'time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('109','165','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','0',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('110','166','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','1',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('111','167','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','4',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('112','168','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','9',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('113','169','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','19',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('114','170','sql','SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')','>','49',NULL,'hook','actionAdminStoresControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('115','171','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','1',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('116','172','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','2',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('117','173','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','3',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('118','174','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','4',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('119','175','sql','SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'','==','0',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('120','209','configuration','EBAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('121','320','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('122','322','configuration','SHOPGATE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('123','323','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('124','324','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ','==','0',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('125','325','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'','>=','1','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('126','326','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))','==','2','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('127','358','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1','>=','1','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('128','359','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('129','375','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('130','376','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('131','377','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('132','394','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('133','399','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','499',NULL,'hook','actionObjectProductAddAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('134','424','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('135','425','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('136','426','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('137','427','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('138','428','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('139','429','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))','==','2',NULL,'time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('140','430','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('141','431','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('142','434','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('143','435','configuration','BLUEPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('144','436','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('145','437','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('146','438','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('147','439','configuration','PAYPLUG_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('148','440','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('149','441','sql','SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','10000','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('150','442','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('151','443','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'','==','1','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('152','446','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('153','447','configuration','DPDPOLAND_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('154','448','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('155','449','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('156','450','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('157','451','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))','==','2','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('158','452','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('159','453','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('160','454','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('161','455','configuration','KLIKANDPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('162','456','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('163','457','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('164','458','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('165','459','configuration','CLICKLINE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('166','460','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('167','461','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('168','462','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('169','463','sql','SELECT 1','!=','1','1','time','100','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('170','464','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('171','465','sql','SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)','>=','500','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('172','467','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('173','468','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))','==','3',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('174','469','sql','SELECT 1','!=','1','1','time','100','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('175','470','sql','SELECT 1','!=','1','1','time','100','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('176','471','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('177','472','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))','==','2','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('178','473','sql','SELECT 1','!=','1','1','time','100','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('179','474','sql','SELECT 1','!=','1','1','time','100','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('180','475','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('181','476','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))','==','2','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('182','477','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('183','478','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('184','479','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('185','480','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))','==','2','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('186','481','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('187','482','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('188','483','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('189','484','configuration','FIRSTDATA_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('190','485','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('191','486','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('192','487','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('193','488','sql','GIVEIT_CONFIGURATION_OK','>=','1','0','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('194','489','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('195','490','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('196','491','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('197','492','configuration','GANALYTICS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('198','493','sql','SELECT 1','!=','1','1','time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('199','494','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('200','496','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:57','2019-11-13 20:46:57');
 INSERT INTO `jms_condition` VALUES
-('201','497','configuration','PAGSEGURO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('202','498','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('203','499','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('204','500','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('205','501','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('206','502','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('207','503','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('208','505','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('209','506','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('210','507','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('211','508','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('212','509','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('213','510','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('214','511','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('215','512','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('216','513','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('217','514','configuration','PRESTASTATS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('218','515','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('219','516','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('220','517','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('221','518','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('222','519','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('223','520','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('224','521','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('225','522','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('226','523','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('227','524','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('228','525','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('229','526','configuration','VTPAYMENT_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:56','2019-11-13 01:45:38'),
-('230','527','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-12 20:45:56','2019-11-12 20:45:56'),
-('231','528','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('232','529','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('233','530','configuration','YOTPO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:57','2019-11-13 01:45:38'),
-('234','531','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('235','532','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('236','533','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('237','534','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-12 20:45:57','2019-11-13 01:45:38'),
-('238','535','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('239','536','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('240','537','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('241','538','configuration','LOYALTYLION_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-12 20:45:57','2019-11-13 01:45:38'),
-('242','539','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('243','540','sql','SELECT 1','!=','1','1','time','365','0','2019-11-12 20:45:57','2019-11-12 20:45:57'),
-('244','542','sql','SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'','==','1',NULL,'time','1','0','2019-11-12 20:45:57','2019-11-12 20:45:57');
+('201','497','configuration','PAGSEGURO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:57','2019-11-14 00:01:28'),
+('202','498','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('203','499','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:57','2019-11-13 20:46:57'),
+('204','500','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('205','501','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('206','502','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('207','503','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('208','505','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('209','506','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('210','507','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('211','508','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('212','509','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('213','510','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('214','511','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('215','512','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('216','513','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('217','514','configuration','PRESTASTATS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('218','515','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('219','516','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('220','517','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('221','518','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('222','519','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('223','520','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('224','521','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('225','522','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('226','523','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('227','524','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('228','525','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('229','526','configuration','VTPAYMENT_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('230','527','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1','>=','1','0','time','2','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('231','528','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('232','529','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('233','530','configuration','YOTPO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('234','531','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('235','532','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('236','533','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('237','534','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('238','535','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('239','536','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('240','537','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('241','538','configuration','LOYALTYLION_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-11-13 20:46:58','2019-11-14 00:01:28'),
+('242','539','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('243','540','sql','SELECT 1','!=','1','1','time','365','0','2019-11-13 20:46:58','2019-11-13 20:46:58'),
+('244','542','sql','SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'','==','1',NULL,'time','1','0','2019-11-13 20:46:58','2019-11-13 20:46:58');
 /* Scheme for table jms_condition_advice */
 DROP TABLE IF EXISTS `jms_condition_advice`;
 CREATE TABLE `jms_condition_advice` (
@@ -4989,6 +5001,10 @@ INSERT INTO `jms_condition_advice` VALUES
 ('19','112','1'),
 ('19','113','1'),
 ('19','114','1'),
+('19','115','1'),
+('19','116','1'),
+('19','117','1'),
+('19','118','1'),
 ('106','2','0'),
 ('106','7','0'),
 ('106','12','0'),
@@ -5294,7 +5310,7 @@ INSERT INTO `jms_configuration` VALUES
 ('26',NULL,NULL,'PS_SHIPPING_METHOD','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('27',NULL,NULL,'PS_TAX','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('28',NULL,NULL,'PS_SHOP_ENABLE','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
-('29',NULL,NULL,'PS_NB_DAYS_NEW_PRODUCT','20','0000-00-00 00:00:00','2019-11-11 01:37:25'),
+('29',NULL,NULL,'PS_NB_DAYS_NEW_PRODUCT','30','0000-00-00 00:00:00','2019-11-13 23:43:01'),
 ('30',NULL,NULL,'PS_SSL_ENABLED',NULL,'0000-00-00 00:00:00','2019-09-27 03:37:16'),
 ('31',NULL,NULL,'PS_WEIGHT_UNIT','kg','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('32',NULL,NULL,'PS_BLOCK_CART_AJAX','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
@@ -5407,8 +5423,8 @@ INSERT INTO `jms_configuration` VALUES
 ('139',NULL,NULL,'PS_SPECIFIC_PRICE_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-10-07 03:50:36'),
 ('140',NULL,NULL,'PS_VIRTUAL_PROD_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-09-27 08:48:14'),
 ('141',NULL,NULL,'PS_CUSTOMIZATION_FEATURE_ACTIVE','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
-('142',NULL,NULL,'PS_CART_RULE_FEATURE_ACTIVE','0','0000-00-00 00:00:00','0000-00-00 00:00:00'),
-('143',NULL,NULL,'PS_PACK_FEATURE_ACTIVE',NULL,'0000-00-00 00:00:00','2019-11-13 04:54:29'),
+('142',NULL,NULL,'PS_CART_RULE_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-11-14 03:52:47'),
+('143',NULL,NULL,'PS_PACK_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-11-13 23:44:46'),
 ('144',NULL,NULL,'PS_ALIAS_FEATURE_ACTIVE','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('145',NULL,NULL,'PS_TAX_ADDRESS_TYPE','id_address_delivery','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('146',NULL,NULL,'PS_SHOP_DEFAULT','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
@@ -5648,7 +5664,7 @@ INSERT INTO `jms_configuration` VALUES
 ('385',NULL,NULL,'JMSMM_LOADBOOTSTRAPCSS','0','2019-09-27 02:55:24','2019-09-27 02:55:24'),
 ('408',NULL,NULL,'PRVD_WIDTH','700','2019-09-27 02:55:25','2019-09-27 02:55:25'),
 ('409',NULL,NULL,'PRVD_HEIGHT','500','2019-09-27 02:55:25','2019-09-27 02:55:25'),
-('410',NULL,NULL,'PRVD_VIDEO_POSITION','displayProductPriceBlock','2019-09-27 02:55:25','2019-11-13 05:11:54'),
+('410',NULL,NULL,'PRVD_VIDEO_POSITION','displayReassurance','2019-09-27 02:55:25','2019-11-13 21:05:54'),
 ('411',NULL,NULL,'PRVD_SHOW','1','2019-09-27 02:55:25','2019-11-13 04:53:03'),
 ('412',NULL,NULL,'PRVD_AUTOPLAY','0','2019-09-27 02:55:25','2019-09-27 02:55:25'),
 ('413',NULL,NULL,'JMSBLOG_INTROTEXT_LIMIT','300','2019-09-27 02:55:26','2019-09-27 02:55:26'),
@@ -5737,13 +5753,13 @@ INSERT INTO `jms_configuration` VALUES
 ('495',NULL,NULL,'JPB_PRODUCTNAMECOLOR',NULL,'2019-09-27 02:55:27','2019-09-27 02:55:27'),
 ('496',NULL,NULL,'JPB_PRICECOLOR',NULL,'2019-09-27 02:55:27','2019-09-27 02:55:27'),
 ('497',NULL,NULL,'JPB_HOMEPAGE','1','2019-09-27 02:55:27','2019-09-27 02:55:27'),
-('498',NULL,NULL,'PS_CCCCSS_VERSION','9','2019-09-27 03:36:56','2019-11-11 01:37:26'),
+('498',NULL,NULL,'PS_CCCCSS_VERSION','13','2019-09-27 03:36:56','2019-11-13 23:43:01'),
 ('499',NULL,NULL,'PS_MEDIA_SERVER_1',NULL,'2019-09-27 03:36:56','2019-09-27 03:36:56'),
 ('500',NULL,NULL,'PS_MEDIA_SERVER_2',NULL,'2019-09-27 03:36:56','2019-09-27 03:36:56'),
 ('501',NULL,NULL,'PS_MEDIA_SERVER_3',NULL,'2019-09-27 03:36:56','2019-09-27 03:36:56'),
 ('502',NULL,NULL,'PS_MEDIA_SERVERS','0','2019-09-27 03:36:56','2019-09-27 03:36:56'),
 ('503',NULL,NULL,'PS_ALLOW_HTML_IFRAME','1','2019-09-27 03:37:16','2019-09-27 03:37:16'),
-('504',NULL,NULL,'PS_CCCJS_VERSION','8','2019-09-27 03:51:34','2019-11-11 01:37:26'),
+('504',NULL,NULL,'PS_CCCJS_VERSION','12','2019-09-27 03:51:34','2019-11-13 23:43:01'),
 ('505',NULL,NULL,'PS_ROUTE_category_rule','{id}-{rewrite}','2019-09-27 03:51:35','2019-09-27 03:51:35'),
 ('506',NULL,NULL,'PS_ROUTE_supplier_rule','supplier/{id}-{rewrite}','2019-09-27 03:51:36','2019-09-27 03:51:36'),
 ('507',NULL,NULL,'PS_ROUTE_manufacturer_rule','brand/{id}-{rewrite}','2019-09-27 03:51:36','2019-09-27 03:51:36'),
@@ -5910,16 +5926,16 @@ INSERT INTO `jms_configuration_lang` VALUES
 ('277','3','We are currently updating our shop and will be back really soon.\r\nThanks for your patience.',NULL),
 ('277','5','We are currently updating our shop and will be back really soon.\r\nThanks for your patience.',NULL),
 ('277','8','We are currently updating our shop and will be back really soon.\r\nThanks for your patience.',NULL),
-('279','1',NULL,'2019-11-11 13:37:26'),
-('279','2',NULL,'2019-11-11 13:37:26'),
-('279','3',NULL,'2019-11-11 13:37:26'),
-('279','5',NULL,'2019-11-11 13:37:26'),
-('279','8',NULL,'2019-11-11 13:37:26'),
-('280','1',NULL,'2019-11-11 13:37:26'),
-('280','2',NULL,'2019-11-11 13:37:26'),
-('280','3',NULL,'2019-11-11 13:37:26'),
-('280','5',NULL,'2019-11-11 13:37:26'),
-('280','8',NULL,'2019-11-11 13:37:26'),
+('279','1',NULL,'2019-11-14 11:43:01'),
+('279','2',NULL,'2019-11-14 11:43:01'),
+('279','3',NULL,'2019-11-14 11:43:01'),
+('279','5',NULL,'2019-11-14 11:43:01'),
+('279','8',NULL,'2019-11-14 11:43:01'),
+('280','1',NULL,'2019-11-14 11:43:01'),
+('280','2',NULL,'2019-11-14 11:43:01'),
+('280','3',NULL,'2019-11-14 11:43:01'),
+('280','5',NULL,'2019-11-14 11:43:01'),
+('280','8',NULL,'2019-11-14 11:43:01'),
 ('281','1','Out of Stock','2019-10-25 10:53:24'),
 ('281','2','Rupture de stock',NULL),
 ('281','3','Nicht auf Lager',NULL),
@@ -5955,16 +5971,16 @@ INSERT INTO `jms_configuration_lang` VALUES
 ('345','3','I agree to the terms and conditions and the privacy policy','2019-09-27 08:47:28'),
 ('345','5','I agree to the terms and conditions and the privacy policy','2019-09-27 08:47:28'),
 ('345','8','I agree to the terms and conditions and the privacy policy','2019-09-27 08:47:28'),
-('549','1',NULL,'2019-11-11 13:37:26'),
-('549','2',NULL,'2019-11-11 13:37:26'),
-('549','3',NULL,'2019-11-11 13:37:26'),
-('549','5',NULL,'2019-11-11 13:37:26'),
-('549','8',NULL,'2019-11-11 13:37:26'),
-('550','1',NULL,'2019-11-11 13:37:26'),
-('550','2',NULL,'2019-11-11 13:37:26'),
-('550','3',NULL,'2019-11-11 13:37:26'),
-('550','5',NULL,'2019-11-11 13:37:26'),
-('550','8',NULL,'2019-11-11 13:37:26');
+('549','1',NULL,'2019-11-14 11:43:01'),
+('549','2',NULL,'2019-11-14 11:43:01'),
+('549','3',NULL,'2019-11-14 11:43:01'),
+('549','5',NULL,'2019-11-14 11:43:01'),
+('549','8',NULL,'2019-11-14 11:43:01'),
+('550','1',NULL,'2019-11-14 11:43:01'),
+('550','2',NULL,'2019-11-14 11:43:01'),
+('550','3',NULL,'2019-11-14 11:43:01'),
+('550','5',NULL,'2019-11-14 11:43:01'),
+('550','8',NULL,'2019-11-14 11:43:01');
 /* Scheme for table jms_connections */
 DROP TABLE IF EXISTS `jms_connections`;
 CREATE TABLE `jms_connections` (
@@ -5980,7 +5996,7 @@ CREATE TABLE `jms_connections` (
   KEY `id_guest` (`id_guest`),
   KEY `date_add` (`date_add`),
   KEY `id_page` (`id_page`)
-) ENGINE=InnoDB AUTO_INCREMENT=182 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=192 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /* Scheme for table jms_connections_page */
 DROP TABLE IF EXISTS `jms_connections_page`;
@@ -8116,7 +8132,7 @@ CREATE TABLE `jms_employee` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_employee` VALUES
-('1','1','1','Huy','Mr','admin@admin.com','$2y$10$55NMnAkWPwOgbLmxuRrLbeJWXIqafbwsEa89GpH2vdfHHyEpeFAh6','2019-09-27 02:45:46','2019-08-27','2019-09-27','0000-00-00','0000-00-00','1',NULL,NULL,'default','theme.css','1','0','1','1','1','5','0','5','2019-11-13',NULL,'0000-00-00 00:00:00');
+('1','1','1','Huy','Mr','admin@admin.com','$2y$10$55NMnAkWPwOgbLmxuRrLbeJWXIqafbwsEa89GpH2vdfHHyEpeFAh6','2019-09-27 02:45:46','2019-08-27','2019-09-27','0000-00-00','0000-00-00','1',NULL,NULL,'default','theme.css','1','0','1','1','1','5','0','5','2019-11-14',NULL,'0000-00-00 00:00:00');
 /* Scheme for table jms_employee_shop */
 DROP TABLE IF EXISTS `jms_employee_shop`;
 CREATE TABLE `jms_employee_shop` (
@@ -8312,7 +8328,7 @@ CREATE TABLE `jms_guest` (
   KEY `id_customer` (`id_customer`),
   KEY `id_operating_system` (`id_operating_system`),
   KEY `id_web_browser` (`id_web_browser`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /* Scheme for table jms_homeslider */
 DROP TABLE IF EXISTS `jms_homeslider`;
@@ -9729,7 +9745,7 @@ CREATE TABLE `jms_image` (
   UNIQUE KEY `id_product_cover` (`id_product`,`cover`),
   UNIQUE KEY `idx_product_image` (`id_image`,`id_product`,`cover`),
   KEY `image_product` (`id_product`)
-) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=144 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_image` VALUES
 ('24','20','1','1'),
@@ -9849,7 +9865,9 @@ INSERT INTO `jms_image` VALUES
 ('138','28','7',NULL),
 ('139','28','8',NULL),
 ('140','29','5',NULL),
-('141','29','6',NULL);
+('141','29','6',NULL),
+('142','22','6',NULL),
+('143','22','7',NULL);
 /* Scheme for table jms_image_lang */
 DROP TABLE IF EXISTS `jms_image_lang`;
 CREATE TABLE `jms_image_lang` (
@@ -10452,7 +10470,17 @@ INSERT INTO `jms_image_lang` VALUES
 ('141','2',NULL),
 ('141','3',NULL),
 ('141','5',NULL),
-('141','8',NULL);
+('141','8',NULL),
+('142','1',NULL),
+('142','2',NULL),
+('142','3',NULL),
+('142','5',NULL),
+('142','8',NULL),
+('143','1',NULL),
+('143','2',NULL),
+('143','3',NULL),
+('143','5',NULL),
+('143','8',NULL);
 /* Scheme for table jms_image_shop */
 DROP TABLE IF EXISTS `jms_image_shop`;
 CREATE TABLE `jms_image_shop` (
@@ -10485,6 +10513,8 @@ INSERT INTO `jms_image_shop` VALUES
 ('22','41','1',NULL),
 ('22','42','1',NULL),
 ('22','43','1',NULL),
+('22','142','1',NULL),
+('22','143','1',NULL),
 ('22','40','1','1'),
 ('23','44','1',NULL),
 ('23','46','1',NULL),
@@ -10728,7 +10758,7 @@ INSERT INTO `jms_jms_product_video` VALUES
 ('8','21','3','',''),
 ('9','21','5','',''),
 ('10','21','8','',''),
-('11','22','1','How to Style: Denim Midi Skirts for Summer','https://www.youtube.com/watch?v=4y8eMULLQM0'),
+('11','22','1','Denim Midi Skirts for Summer','https://www.youtube.com/watch?v=4y8eMULLQM0'),
 ('12','22','2','',''),
 ('13','22','3','',''),
 ('14','22','5','',''),
@@ -11609,12 +11639,12 @@ INSERT INTO `jms_jmsmegamenu` VALUES
 ('472','1','2','link','','','1','_self','{\"title\":\"1\"}','14'),
 ('473','1','2','link','','','1','_self','{\"title\":\"1\"}','15'),
 ('474','1','2','link','','','1','_self','{\"title\":\"1\",\"group\":\"1\"}','16'),
-('475','1','2','link','','','1','_self','{\"title\":\"1\"}','17'),
-('476','1','2','link','','','1','_self','{\"title\":\"1\"}','18'),
-('477','1','2','link','','','1','_self','{\"title\":\"1\"}','19'),
-('478','1','2','link','','','1','_self','{\"title\":\"1\"}','20'),
-('479','1','2','link','','','1','_self','{\"title\":\"1\"}','21'),
-('480','1','2','link','','','1','_self','{\"title\":\"1\"}','22'),
+('475','1','2','product','39','','1','_self','{\"title\":\"1\"}','17'),
+('476','1','2','product','36','','1','_self','{\"title\":\"1\"}','18'),
+('477','1','2','product','30','','1','_self','{\"title\":\"1\"}','19'),
+('478','1','2','product','22','','1','_self','{\"title\":\"1\"}','20'),
+('479','1','2','product','20','','1','_self','{\"title\":\"1\"}','21'),
+('480','1','2','product','33','','1','_self','{\"title\":\"1\"}','22'),
 ('481','1','2','link','','','1','_self','{\"title\":\"1\",\"group\":\"1\"}','23'),
 ('482','1','2','link','','','1','_self','{\"title\":\"1\"}','24'),
 ('483','1','2','link','','','1','_self','{\"title\":\"1\"}','25'),
@@ -12464,12 +12494,12 @@ INSERT INTO `jms_jmsmegamenu_lang` VALUES
 ('475','3','Standard Product',''),
 ('475','5','Standard Product',''),
 ('475','8','Standard Product',''),
-('476','1','Variable Product','#'),
+('476','1','Virtual Product','#'),
 ('476','2','Variable Product',''),
 ('476','3','Variable Product',''),
 ('476','5','Variable Product',''),
 ('476','8','Variable Product',''),
-('477','1','Grouped Product','#'),
+('477','1','Pack Product','#'),
 ('477','2','Grouped Product',''),
 ('477','3','Grouped Product',''),
 ('477','5','Grouped Product',''),
@@ -12494,22 +12524,22 @@ INSERT INTO `jms_jmsmegamenu_lang` VALUES
 ('481','3','Other Pages',''),
 ('481','5','Other Pages',''),
 ('481','8','Other Pages',''),
-('482','1','Cart','#'),
+('482','1','Cart','index.php?controller=cart&action=show'),
 ('482','2','Cart',''),
 ('482','3','Cart',''),
 ('482','5','Cart',''),
 ('482','8','Cart',''),
-('483','1','Wishlist','#'),
+('483','1','Wishlist','index.php?fc=module&module=jmswishlist&controller=mywishlist&id_lang=1'),
 ('483','2','Wishlist',''),
 ('483','3','Wishlist',''),
 ('483','5','Wishlist',''),
 ('483','8','Wishlist',''),
-('484','1','Account','#'),
+('484','1','Account','index.php?controller=my-account'),
 ('484','2','Account',''),
 ('484','3','Account',''),
 ('484','5','Account',''),
 ('484','8','Account',''),
-('485','1','Register','#'),
+('485','1','Register','index.php?controller=authentication&create_account=1'),
 ('485','2','Register',''),
 ('485','3','Register',''),
 ('485','5','Register',''),
@@ -14293,7 +14323,7 @@ CREATE TABLE `jms_log` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL,
   PRIMARY KEY (`id_log`)
-) ENGINE=InnoDB AUTO_INCREMENT=1044 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1057 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_log` VALUES
 ('1','1','0','Exporting mail with theme modern for language English (English)',NULL,'0','0','2019-09-27 08:45:34','2019-09-27 08:45:34'),
@@ -15343,7 +15373,20 @@ INSERT INTO `jms_log` VALUES
 ('1040','1','0','Product modification','Product','41','1','2019-11-13 04:20:28','2019-11-13 04:20:28'),
 ('1041','1','0','Product modification','Product','20','1','2019-11-13 04:51:41','2019-11-13 04:51:41'),
 ('1042','1','0','Product modification','Product','22','1','2019-11-13 04:54:27','2019-11-13 04:54:27'),
-('1043','1','0','Product modification','Product','20','1','2019-11-13 04:54:29','2019-11-13 04:54:29');
+('1043','1','0','Product modification','Product','20','1','2019-11-13 04:54:29','2019-11-13 04:54:29'),
+('1044','1','0','Product modification','Product','22','1','2019-11-13 20:55:09','2019-11-13 20:55:09'),
+('1045','1','0','Product modification','Product','22','1','2019-11-13 20:59:38','2019-11-13 20:59:38'),
+('1046','1','0','Product modification','Product','22','1','2019-11-13 21:00:52','2019-11-13 21:00:52'),
+('1047','1','0','Product modification','Product','22','1','2019-11-13 21:05:13','2019-11-13 21:05:13'),
+('1048','1','0','Product modification','Product','22','1','2019-11-13 21:06:04','2019-11-13 21:06:04'),
+('1049','1','0','Product modification','Product','22','1','2019-11-13 21:47:19','2019-11-13 21:47:19'),
+('1050','1','0','Product modification','Product','22','1','2019-11-13 22:08:22','2019-11-13 22:08:22'),
+('1051','1','0','Product modification','Product','22','1','2019-11-13 22:09:17','2019-11-13 22:09:17'),
+('1052','1','0','Product modification','Product','36','1','2019-11-13 23:13:57','2019-11-13 23:13:57'),
+('1053','1','0','Product modification','Product','30','1','2019-11-13 23:30:07','2019-11-13 23:30:07'),
+('1054','1','0','Product modification','Product','20','1','2019-11-13 23:36:40','2019-11-13 23:36:40'),
+('1055','1','0','Product modification','Product','33','1','2019-11-13 23:44:46','2019-11-13 23:44:46'),
+('1056','1','0','CartRule addition','CartRule','1','1','2019-11-14 03:52:47','2019-11-14 03:52:47');
 /* Scheme for table jms_mail */
 DROP TABLE IF EXISTS `jms_mail`;
 CREATE TABLE `jms_mail` (
@@ -16456,7 +16499,7 @@ INSERT INTO `jms_module_history` VALUES
 ('12','1','82','2019-10-23 22:51:29','2019-11-12 23:55:30'),
 ('13','1','79','2019-10-29 02:57:14','2019-10-29 02:57:14'),
 ('14','1','72','2019-10-30 00:35:08','2019-10-30 00:35:08'),
-('15','1','69','2019-11-13 04:51:57','2019-11-13 05:02:48');
+('15','1','69','2019-11-13 04:51:57','2019-11-13 21:05:36');
 /* Scheme for table jms_module_preference */
 DROP TABLE IF EXISTS `jms_module_preference`;
 CREATE TABLE `jms_module_preference` (
@@ -17123,6 +17166,9 @@ CREATE TABLE `jms_pack` (
   KEY `product_item` (`id_product_item`,`id_product_attribute_item`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+INSERT INTO `jms_pack` VALUES
+('30','37','15','1'),
+('30','40','0','1');
 /* Scheme for table jms_page */
 DROP TABLE IF EXISTS `jms_page`;
 CREATE TABLE `jms_page` (
@@ -17132,7 +17178,7 @@ CREATE TABLE `jms_page` (
   PRIMARY KEY (`id_page`),
   KEY `id_page_type` (`id_page_type`),
   KEY `id_object` (`id_object`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_page` VALUES
 ('1','1',NULL),
@@ -17149,7 +17195,8 @@ INSERT INTO `jms_page` VALUES
 ('12','4','28'),
 ('13','4','40'),
 ('14','4','35'),
-('15','4','29');
+('15','4','29'),
+('16','9',NULL);
 /* Scheme for table jms_page_type */
 DROP TABLE IF EXISTS `jms_page_type`;
 CREATE TABLE `jms_page_type` (
@@ -17157,9 +17204,10 @@ CREATE TABLE `jms_page_type` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_page_type`),
   KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_page_type` VALUES
+('9','cart'),
 ('6','categories'),
 ('3','category'),
 ('7','cms'),
@@ -17258,22 +17306,22 @@ CREATE TABLE `jms_product` (
 ) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_product` VALUES
-('20','0','3','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','112',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','26','2019-10-01 23:00:49','2019-11-13 04:54:29','0','3','1'),
+('20','0','3','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','112',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','1','new','1','1','both','0','0','0','26','2019-10-01 23:00:49','2019-11-13 23:36:40','0','3','1'),
 ('21','0','4','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','243',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','1','2019-10-01 23:44:44','2019-10-28 22:44:53','0','3','1'),
-('22','0','5','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','34.890000','0.000000',NULL,'0.000000','0.00','11',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-01 23:46:36','2019-11-13 04:54:27','0','3','1'),
+('22','0','5','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','34.890000','0.000000',NULL,'0.000000','0.00','11',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-11-13 23:46:36','2019-11-13 22:09:17','0','3','1'),
 ('23','0','6','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','148.890000','0.000000',NULL,'0.000000','0.00','8',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-01 23:48:32','2019-10-29 03:08:21','0','3','1'),
 ('24','0','7','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','531',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:12:26','2019-10-28 22:45:41','0','3','1'),
 ('26','0','8','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','93',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:17:06','2019-10-28 22:45:59','0','3','1'),
 ('27','0','0','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','28.890000','0.000000',NULL,'0.000000','0.00','34',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:18:23','2019-10-28 22:46:32','0','3','1'),
 ('28','0','6','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','332',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:20:31','2019-11-12 02:22:14','0','3','1'),
 ('29','0','6','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','11.890000','0.000000',NULL,'0.000000','0.00','723',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:22:57','2019-11-13 03:39:36','0','3','1'),
-('30','0','0','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','100.000000','0.000000',NULL,'0.000000','0.00','117',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:23:54','2019-10-28 22:47:05','0','3','1'),
+('30','0','0','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','100.000000','0.000000',NULL,'0.000000','0.00','117',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','1','0','0','0','2019-10-02 22:23:54','2019-11-13 23:30:07','0','3','1'),
 ('31','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','8.890000','0.000000',NULL,'0.000000','0.00','763',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:40:22','2019-10-28 22:47:14','0','3','1'),
 ('32','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','539',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:41:42','2019-10-28 22:47:23','0','3','1'),
-('33','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','203',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:46:00','2019-10-28 22:47:47','0','3','1'),
+('33','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','203',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:46:00','2019-11-13 23:44:46','0','3','1'),
 ('34','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','994',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 23:34:46','2019-10-28 22:47:56','0','3','1'),
 ('35','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','110.000000','0.000000',NULL,'0.000000','0.00','885',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','10','2019-10-02 23:39:50','2019-11-12 22:55:46','0','3','1'),
-('36','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','128.889999','0.000000',NULL,'0.000000','0.00','624',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 23:41:07','2019-10-28 22:48:43','0','3','1'),
+('36','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','128.889999','0.000000',NULL,'0.000000','0.00','624',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','1','0','2019-10-02 23:41:07','2019-11-13 23:13:57','0','3','1'),
 ('37','0','0','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','128.889999','0.000000',NULL,'0.000000','0.00','111',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','14','2019-10-02 23:43:32','2019-10-28 22:48:50','0','3','1'),
 ('38','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','330.000000','0.000000',NULL,'0.000000','0.00','20',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','20','2019-10-02 23:44:44','2019-10-28 22:48:56','0','3','1'),
 ('39','0','0','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','222',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 23:46:43','2019-10-28 22:49:22','0','3','1'),
@@ -17906,22 +17954,22 @@ CREATE TABLE `jms_product_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_product_shop` VALUES
-('20','1','11','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','26','0','2019-10-01 23:00:49','2019-11-13 04:54:29','3'),
+('20','1','11','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','1','new','1','1','both','26','0','2019-10-01 23:00:49','2019-11-13 23:36:40','3'),
 ('21','1','11','0','0','0','0.000000','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','1','0','2019-10-01 23:44:44','2019-10-28 22:44:53','3'),
-('22','1','11','0','0','0','0.000000','1',NULL,'0','34.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-01 23:46:36','2019-11-13 04:54:27','3'),
+('22','1','11','0','0','0','0.000000','1',NULL,'0','34.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-01 23:46:36','2019-11-13 22:09:17','3'),
 ('23','1','11','0','0','0','0.000000','1',NULL,'0','148.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-01 23:48:32','2019-10-29 03:08:21','3'),
 ('24','1','12','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:12:26','2019-10-28 22:45:41','3'),
 ('26','1','11','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:17:06','2019-10-28 22:45:59','3'),
 ('27','1','12','0','0','0','0.000000','1',NULL,'0','28.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:18:23','2019-10-28 22:46:32','3'),
 ('28','1','12','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:20:31','2019-11-12 02:22:14','3'),
 ('29','1','11','0','0','0','0.000000','1',NULL,'0','11.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:22:57','2019-11-13 03:39:36','3'),
-('30','1','12','0','0','0','0.000000','1',NULL,'0','100.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:23:54','2019-10-28 22:47:05','3'),
+('30','1','12','0','0','0','0.000000','1',NULL,'0','100.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:23:54','2019-11-13 23:30:07','3'),
 ('31','1','11','0','0','0','0.000000','1',NULL,'0','8.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:40:22','2019-10-28 22:47:14','3'),
 ('32','1','11','0','0','0','0.000000','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:41:42','2019-10-28 22:47:23','3'),
-('33','1','11','0','0','0','0.000000','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:46:00','2019-10-28 22:47:47','3'),
+('33','1','11','0','0','0','0.000000','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:46:00','2019-11-13 23:44:46','3'),
 ('34','1','11','0','0','0','0.000000','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 23:34:46','2019-10-28 22:47:56','3'),
 ('35','1','11','0','0','0','0.000000','1',NULL,'0','110.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','10','0','2019-10-02 23:39:50','2019-11-12 22:55:46','3'),
-('36','1','11','0','0','0','0.000000','1',NULL,'0','128.889999','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 23:41:07','2019-10-28 22:48:43','3'),
+('36','1','11','0','0','0','0.000000','1',NULL,'0','128.889999','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 23:41:07','2019-11-13 23:13:57','3'),
 ('37','1','12','0','0','0','0.000000','1',NULL,'0','128.889999','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','14','0','2019-10-02 23:43:32','2019-10-28 22:48:50','3'),
 ('38','1','11','0','0','0','0.000000','1',NULL,'0','330.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','20','0','2019-10-02 23:44:44','2019-10-28 22:48:56','3'),
 ('39','1','11','0','0','0','0.000000','1',NULL,'0','48.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 23:46:43','2019-10-28 22:49:22','3'),
@@ -17959,9 +18007,9 @@ INSERT INTO `jms_product_tag` VALUES
 ('21','17','1'),
 ('24','19','1'),
 ('23','21','1'),
-('22','24','1'),
-('20','25','1'),
-('20','26','1');
+('22','34','1'),
+('20','35','1'),
+('20','36','1');
 /* Scheme for table jms_profile */
 DROP TABLE IF EXISTS `jms_profile`;
 CREATE TABLE `jms_profile` (
@@ -19919,7 +19967,7 @@ CREATE TABLE `jms_search_word` (
   `word` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_word`),
   UNIQUE KEY `id_lang` (`id_lang`,`id_shop`,`word`)
-) ENGINE=InnoDB AUTO_INCREMENT=7237 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6630 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_search_word` VALUES
 ('5923','1','1','111'),
@@ -20555,7 +20603,7 @@ CREATE TABLE `jms_specific_price_priority` (
   `priority` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_specific_price_priority`,`id_product`),
   UNIQUE KEY `id_product` (`id_product`)
-) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_specific_price_priority` VALUES
 ('1','20','id_shop;id_currency;id_country;id_group'),
@@ -21091,7 +21139,7 @@ INSERT INTO `jms_stock_available` VALUES
 ('89','30','0','1','0','100','100','0','0','2',''),
 ('90','31','0','1','0','100','100','0','0','2',''),
 ('91','32','0','1','0','100','100','0','0','2',''),
-('92','33','0','1','0','100','100','0','0','2',''),
+('92','33','0','1','0','0','100','0','0','2',''),
 ('93','34','0','1','0','100','100','0','0','2',''),
 ('94','35','0','1','0','210','210','0','0','2',''),
 ('95','36','0','1','0','100','100','0','0','2',''),
@@ -21149,7 +21197,7 @@ CREATE TABLE `jms_stock_mvt` (
   PRIMARY KEY (`id_stock_mvt`),
   KEY `id_stock` (`id_stock`),
   KEY `id_stock_mvt_reason` (`id_stock_mvt_reason`)
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_stock_mvt` VALUES
 ('1','70',NULL,NULL,'11','1','Huy','Mr','100','2019-10-01 23:44:24','1','0.000000','0.000000','0.000000',NULL),
@@ -21209,7 +21257,8 @@ INSERT INTO `jms_stock_mvt` VALUES
 ('55','133',NULL,NULL,'11','1','Huy','Mr','50','2019-10-25 00:41:13','1','0.000000','0.000000','0.000000',NULL),
 ('56','130',NULL,NULL,'11','1','Huy','Mr','40','2019-10-25 00:41:13','1','0.000000','0.000000','0.000000',NULL),
 ('57','134',NULL,NULL,'11','1','Huy','Mr','50','2019-10-25 00:41:14','1','0.000000','0.000000','0.000000',NULL),
-('58','127',NULL,NULL,'11','1','Huy','Mr','30','2019-10-25 00:41:14','1','0.000000','0.000000','0.000000',NULL);
+('58','127',NULL,NULL,'11','1','Huy','Mr','30','2019-10-25 00:41:14','1','0.000000','0.000000','0.000000',NULL),
+('59','92',NULL,NULL,'11','1','Huy','Mr','100','2019-11-13 23:44:46','-1','0.000000','0.000000','0.000000',NULL);
 /* Scheme for table jms_stock_mvt_reason */
 DROP TABLE IF EXISTS `jms_stock_mvt_reason`;
 CREATE TABLE `jms_stock_mvt_reason` (
@@ -21856,7 +21905,11 @@ INSERT INTO `jms_tab_advice` VALUES
 ('1','111'),
 ('1','112'),
 ('1','113'),
-('1','114');
+('1','114'),
+('1','115'),
+('1','116'),
+('1','117'),
+('1','118');
 /* Scheme for table jms_tab_lang */
 DROP TABLE IF EXISTS `jms_tab_lang`;
 CREATE TABLE `jms_tab_lang` (
@@ -22632,16 +22685,16 @@ CREATE TABLE `jms_tag` (
   PRIMARY KEY (`id_tag`),
   KEY `tag_name` (`name`),
   KEY `id_lang` (`id_lang`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_tag` VALUES
 ('16','1','Cool'),
 ('17','1','Sunglasses'),
 ('19','1','Winter'),
 ('21','1','Nice'),
-('24','1','Summer'),
-('25','1','Vintage'),
-('26','1','Awesome');
+('34','1','Summer'),
+('35','1','Vintage'),
+('36','1','Awesome');
 /* Scheme for table jms_tag_count */
 DROP TABLE IF EXISTS `jms_tag_count`;
 CREATE TABLE `jms_tag_count` (
@@ -22659,30 +22712,30 @@ INSERT INTO `jms_tag_count` VALUES
 ('0','17','1','1','1'),
 ('0','19','1','1','1'),
 ('0','21','1','1','1'),
-('0','24','1','1','1'),
-('0','25','1','1','1'),
-('0','26','1','1','1'),
+('0','34','1','1','1'),
+('0','35','1','1','1'),
+('0','36','1','1','1'),
 ('1','16','1','1','1'),
 ('1','17','1','1','1'),
 ('1','19','1','1','1'),
 ('1','21','1','1','1'),
-('1','24','1','1','1'),
-('1','25','1','1','1'),
-('1','26','1','1','1'),
+('1','34','1','1','1'),
+('1','35','1','1','1'),
+('1','36','1','1','1'),
 ('2','16','1','1','1'),
 ('2','17','1','1','1'),
 ('2','19','1','1','1'),
 ('2','21','1','1','1'),
-('2','24','1','1','1'),
-('2','25','1','1','1'),
-('2','26','1','1','1'),
+('2','34','1','1','1'),
+('2','35','1','1','1'),
+('2','36','1','1','1'),
 ('3','16','1','1','1'),
 ('3','17','1','1','1'),
 ('3','19','1','1','1'),
 ('3','21','1','1','1'),
-('3','24','1','1','1'),
-('3','25','1','1','1'),
-('3','26','1','1','1');
+('3','34','1','1','1'),
+('3','35','1','1','1'),
+('3','36','1','1','1');
 /* Scheme for table jms_tax */
 DROP TABLE IF EXISTS `jms_tax`;
 CREATE TABLE `jms_tax` (

@@ -23,17 +23,17 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="checkout cart-detailed-actions card-block">
-  {if $cart.minimalPurchaseRequired}
-    <div class="alert alert-warning" role="alert">
-      {$cart.minimalPurchaseRequired}
-    </div>
-    <div class="text-xs-center">
-      <button type="button" class="btn-default disabled btn-checkout" disabled>{l s='Proceed to Checkout' d='Shop.Theme.Actions'}</button>
-    </div>
-  {else}
-    <div class="text-xs-center">
-      <a href="{$urls.pages.order}" class="btn-default active btn-checkout">{l s='Proceed to Checkout' d='Shop.Theme.Actions'}</a>
-      {hook h='displayExpressCheckout'}
-    </div>
-  {/if}
+    {if $cart.minimalPurchaseRequired}
+        <div class="alert alert-warning" role="alert">
+            {$cart.minimalPurchaseRequired}
+        </div>
+        <div class="text-xs-center">
+            <button type="button" class="btn-default disabled btn-checkout" disabled>{l s='Proceed to Checkout' d='Shop.Theme.Actions'}</button>
+        </div>
+    {else}
+        <div class="text-xs-center">
+            <a href="{$urls.pages.order}" class="btn-default btn-checkout">{l s='Proceed to Checkout' d='Shop.Theme.Actions'}</a>
+            {hook h='displayExpressCheckout'}
+        </div>
+    {/if}
 </div>

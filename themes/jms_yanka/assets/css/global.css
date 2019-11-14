@@ -954,6 +954,23 @@
   border: 0;
   background: #f2f2f2; }
 
+.product-detail.default .images-container #jmsproductvideo {
+  margin-bottom: 0;
+  position: static; }
+  .product-detail.default .images-container #jmsproductvideo .addon-title {
+    position: absolute;
+    width: 72px;
+    height: 90px;
+    background: #fff;
+    bottom: 0;
+    left: 0; }
+    .product-detail.default .images-container #jmsproductvideo .addon-title h3 {
+      position: absolute;
+      bottom: 37px;
+      margin: 0;
+      left: 21px;
+      z-index: 99; }
+
 .product-detail.row {
   max-width: 1200px;
   margin: auto; }
@@ -974,6 +991,23 @@
     margin-bottom: 10px; }
     .product-detail.grid .images-container .js-qv-mask .product-cover:nth-child(odd) {
       margin-right: 10px; }
+  .product-detail.grid .images-container .js-qv-mask #jmsproductvideo {
+    float: left;
+    width: 275px;
+    height: 353px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0; }
+    .product-detail.grid .images-container .js-qv-mask #jmsproductvideo svg {
+      width: 50px;
+      height: 50px; }
   .product-detail.grid .images-container .js-qv-mask .layer {
     top: 10px;
     right: 10px;
@@ -1002,9 +1036,9 @@
   margin-right: 0;
   max-height: initial; }
   .product-detail.vertical .images-container .js-qv-mask .product-cover {
-    width: 100%;
-    float: left;
-    margin-bottom: 20px; }
+    width: 100%; }
+    .product-detail.vertical .images-container .js-qv-mask .product-cover:not(:last-child) {
+      margin-bottom: 20px; }
   .product-detail.vertical .images-container .js-qv-mask .layer {
     top: 10px;
     right: 10px;
@@ -1413,6 +1447,33 @@
       margin-bottom: 10px; }
     .product-detail.three-column ~ #more_info_block .product-description .row.pt-col-smallindent > div {
       padding: 0 5px; }
+
+#jmsproductvideo svg {
+  width: 30px;
+  height: 30px;
+  color: #ff0000; }
+
+.btn-continue-shopping:hover span::before {
+  width: 100%; }
+
+.btn-continue-shopping span {
+  position: relative;
+  margin-left: 10px;
+  color: #333; }
+  .btn-continue-shopping span::before {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background-color: #333;
+    height: 2px;
+    -webkit-transition: width 0.25s;
+    -o-transition: width 0.25s;
+    transition: width 0.25s; }
 
 .addthis_inline_share_toolbox_ld1s::after {
   content: "";

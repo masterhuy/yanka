@@ -23,12 +23,12 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-{* <style>
+<style>
 	.jms-popup-wrap {
 		width : {$video_width}px;
 		height : {$video_height}px;				
 	}
-</style> *}
+</style>
 
 {if $product_videos}
 <div class="jms-videos" id="jmsproductvideo">

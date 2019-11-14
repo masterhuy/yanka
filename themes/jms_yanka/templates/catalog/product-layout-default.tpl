@@ -82,13 +82,13 @@
                     {/block}
                 {/block}
 
-                
-
                 {block name='product_prices'}
                     {include file='catalog/_partials/product-prices.tpl'}
                 {/block}
 
-                
+                {block name='product_additional_info'}
+                    {include file='catalog/_partials/product-additional-info.tpl'}
+                {/block}
         
                 <div class="product-information">
                     <ul class="other-info">
@@ -204,7 +204,7 @@
                             </form>
                         {/block}
                     </div>
-                    {hook h='displayReassurance'}
+                    
                 </div>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_ld1s"></div>
