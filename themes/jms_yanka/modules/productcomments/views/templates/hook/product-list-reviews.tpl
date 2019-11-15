@@ -25,42 +25,41 @@
 
 {* Javascript is used to display each product grade, this allows every rating to be udpated as soon as they change *}
 <script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function() {
-    const $ = jQuery;
-    const productId = {$product.id};
-    const productReview = $('#product-list-reviews-{$product.id}');
-    const productCommentGradeUrl = '{$product_comment_grade_url nofilter}';
+    document.addEventListener("DOMContentLoaded", function() {
+        const $ = jQuery;
+        const productId = {$product.id};
+        const productReview = $('#product-list-reviews-{$product.id}');
+        const productCommentGradeUrl = '{$product_comment_grade_url nofilter}';
 
-    $.get(productCommentGradeUrl, { id_product: productId }, function(jsonResponse) {
-      var jsonData = false;
-      try {
-        jsonData = JSON.parse(jsonResponse);
-      } catch (e) {
-      }
-
-      if (jsonData) {
-        if (jsonData.id_product && jsonData.comments_nb) {
-          $('.grade-stars', productReview).rating({ grade: jsonData.average_grade, starWidth: 16 });
-          $('.comments-nb', productReview).html('('+jsonData.comments_nb+')');
-          productReview.closest('.thumbnail-container').addClass('has-reviews');
-          productReview.css('visibility', 'visible');
+        $.get(productCommentGradeUrl, { id_product: productId }, function(jsonResponse) {
+            var jsonData = false;
+            try {
+                jsonData = JSON.parse(jsonResponse);
+            } catch (e) {
         }
-      }
+            if (jsonData) {
+                if (jsonData.id_product && jsonData.comments_nb) {
+                $('.grade-stars', productReview).rating({ grade: jsonData.average_grade, starWidth: 16 });
+                $('.comments-nb', productReview).html('('+jsonData.comments_nb+')');
+                productReview.closest('.thumbnail-container').addClass('has-reviews');
+                productReview.css('visibility', 'visible');
+                }
+            }
+        });
     });
-  });
 </script>
 
 {if $nb_comments != 0}
-<div id="product-list-reviews-{$product.id}" class="product-list-reviews">
-  <div class="grade-stars small-stars"></div>
-  <div class="comments-nb"></div>
-</div>
+    <div id="product-list-reviews-{$product.id}" class="product-list-reviews">
+        <div class="grade-stars small-stars"></div>
+        <div class="comments-nb"></div>
+    </div>
 {/if}
 
 {if $nb_comments != 0}
 {* Rich snippet rating is displayed via php/smarty meaning it will be cached (for example on homepage) *}
 <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
-  <meta itemprop="reviewCount" content="{$nb_comments}" />
-  <meta itemprop="ratingValue" content="{$average_grade}" />
+    <meta itemprop="reviewCount" content="{$nb_comments}" />
+    <meta itemprop="ratingValue" content="{$average_grade}" />
 </div>
 {/if}

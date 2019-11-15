@@ -346,6 +346,7 @@
 }
 .cart-grid-right #block-reassurance {
 	padding: 40px;
+	padding-top: 0;
 	clear: both;
 	background: #f8f8f8;
 }

@@ -25,33 +25,27 @@
 {extends file='page.tpl'}
 
 {block name='page_title'}
-  {l s='Log in to your account' d='Shop.Theme.CustomerAccount'}
+    {l s='Log in to your account' d='Shop.Theme.CustomerAccount'}
 {/block}
 
 {block name='page_content'}
     {block name='login_form_container'}
-      <section class="login-form">
-        <h3 class="text-center">{l s='Login' d='Shop.Theme.CustomerAccount'}</h3>
-        {render file='customer/_partials/login-form.tpl' ui=$login_form}
-      </section>
+        <section class="login-form">
+            <h1 class="text-center">{l s='Already Registered?' d='Shop.Theme.CustomerAccount'}</h1>
+            <h3 class="text-center">{l s='Login' d='Shop.Theme.CustomerAccount'}</h3>
+            {render file='customer/_partials/login-form.tpl' ui=$login_form}
+        </section>
       {block name='display_after_login_form'}
-        {hook h='displayCustomerLoginFormAfter'}
+            {hook h='displayCustomerLoginFormAfter'}
       {/block}
       <div class="no-account">
-          <h2 class="h3 text-center">Sign Up</h2>
-            <div class="mb-35">
-                <p class="mb-15">Enjoy The Benefits Of Registering:</p>
-                <ul class="mb-0">
-                    <li>Order: view Order History, track and manage purchases and returns.</li>
-                    <li>Address Book and Card Wallet: safely store delivery and payment details for faster
-                        checkout
-                    </li>
-                    <li>Saved for later: wish list your preferred items and track their availability</li>
-                </ul>
+            <div class="content">
+                <h3 class="text-center">New Customer</h3>
+                <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more. </p>
             </div>
-          <a class="btn-default w-100 text-center" href="{$urls.pages.register}" data-link-action="display-register-form">
-          {l s='Sign up now!' d='Shop.Theme.CustomerAccount'}
-        </a>
-      </div>
+            <a class="btn-default active w-100 text-center" href="{$urls.pages.register}" data-link-action="display-register-form">
+                {l s='CREATE AN ACCOUNT' d='Shop.Theme.CustomerAccount'}
+            </a>
+        </div>
     {/block}
 {/block}

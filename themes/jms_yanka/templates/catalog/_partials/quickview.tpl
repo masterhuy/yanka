@@ -26,7 +26,11 @@
     <div class="modal-dialog cover_product1 container" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
+                        <polygon fill="currentColor" points="15.6,1.6 14.4,0.4 8,6.9 1.6,0.4 0.4,1.6 6.9,8 0.4,14.4 1.6,15.6 8,9.1 14.4,15.6 15.6,14.4 9.1,8 "></polygon>
+                    </svg>
+                </button>
             </div>
             <div class="modal-body" id="main">
                 <div class="row">
@@ -61,8 +65,51 @@
                         {block name='product_prices'}
                             {include file='catalog/_partials/product-prices.tpl'}
                         {/block}
+
+                        {block name='product_additional_info'}
+                            {include file='catalog/_partials/product-additional-info.tpl'}
+                        {/block}
                 
                         <div class="product-information">
+                            <ul class="other-info">
+                                {if $product.reference}
+                                    <li id="product_reference">
+                                        <label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
+                                        <span class="editable">{$product.reference}</span>
+                                    </li>
+                                {/if}
+                                <li>
+                                    {block name='product_availability'}
+                                        {if $product.show_availability && $product.availability_message}
+                                            <li>
+                                                <label>{l s='Availability:' d='Shop.Theme.Catalog'}</label>
+                                                <span class="editable">
+                                                    {if $product.availability == 'available'}
+                                                        {$product.availability_message}
+                                                    {elseif $product.availability == 'last_remaining_items'}
+                                                        <i class="material-icons product-last-items">&#xE002;</i>
+                                                    {else}
+                                                        {$product.availability_message}
+                                                    {/if}
+                                                </span>
+                                            </li>
+                                        {/if}
+                                    {/block}
+                                </li>
+                                {if $product.id_manufacturer}
+                                    <li id="product_vendor">
+                                        <label>{l s='Vendor:' d='Shop.Theme.Catalog'}</label>
+                                        <span class="editable">{Manufacturer::getnamebyid($product.id_manufacturer)}</span>
+                                    </li>
+                                {/if}
+                                <li>
+                                    <label>{l s='Product Type: '}</label>
+                                    <a class="hover-underline editable" href="{url entity='category' id=$product.id_category_default}">
+                                        {$product.category|escape:'html':'UTF-8'}
+                                    </a
+                                </li>
+                            </ul>
+
                             {block name='product_description_short'}
                                 <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:350:"..." nofilter}</div>
                             {/block}
@@ -122,45 +169,14 @@
                                         {/block}
 
                                     </form>
+
+                                    <a href="{$product.link|escape:'html'}" class="view-full">
+                                        {l s='View full info' d='Shop.Theme.Catalog'}
+                                    </a>
                                 {/block}
                             </div>
-                            
-                            <ul class="other-info">
-                                {if $product.reference}
-                                    <!-- number of item in stock -->
-                                    <li id="product_reference">
-                                        <label>{l s='Product Code:' d='Shop.Theme.Catalog'}</label>
-                                        <span class="editable">{$product.reference}</span>
-                                    </li>
-                                {/if}
-                                <!-- availability or doesntExist -->
-                                <li id="availability_statut">
-                                    <label id="availability_label">
-                                        {l s='Availability:' d='Shop.Theme.Catalog'}
-                                    </label>
-                                    <span id="availability_value" class="label-availability">
-                                        {if $product.quantity|intval <= 0}
-                                            {l s='Out stock' d='Shop.Theme.Catalog'}
-                                        {else}
-                                            {l s='In stock' d='Shop.Theme.Catalog'}
-                                        {/if}
-                                    </span>
-                                </li>
-                                <li>
-                                    {if $product.additional_shipping_cost > 0}
-                                        <label>{l s='Shipping tax: '}</label>
-                                        <span class="shipping_cost">{$product.additional_shipping_cost}</span>
-                                    {else}
-                                        <label>{l s='Shipping tax:'}</label>
-                                        <span class="shipping_cost">{l s=' Free'}</span>
-                                    {/if}
-                                </li>
-                            </ul>
                         </div>
-                        <div class="modal-footer">
-                            <span>Share with:</span>
-                            {hook h='displayProductButtons' product=$product}
-                        </div>
+                       
                     </div>
                 </div>
             </div>

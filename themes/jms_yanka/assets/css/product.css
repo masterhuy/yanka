@@ -539,12 +539,11 @@
 	width:100%;
 }
 #block-reassurance .block-reassurance-item span.h6 {
-    font-size: 13px;
+    font-size: 15px;
     width: calc(100% - 35px);
     padding: 0 10px;
     margin: 0;
     font-weight: 400;
-    color: #858585;
 }
 #block-reassurance .block-reassurance-item .reassurance-img {
 	width:35px;

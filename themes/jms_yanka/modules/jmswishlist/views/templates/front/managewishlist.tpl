@@ -33,12 +33,6 @@
 				<a href="#" id="hideBoughtProducts" class="btn-default"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Hide products' d='Shop.Theme'}">{l s='Hide products' d='Shop.Theme'}</a>
 				<a style="display:none;" href="#" id="showBoughtProducts" class="btn-default"  onclick="WishlistVisibility('wlp_bought', 'BoughtProducts'); return false;" title="{l s='Show products' d='Shop.Theme'}">{l s='Show products' d='Shop.Theme'}</a>
 			</li>
-			{if count($productsBoughts)}
-			<li>
-				<a href="#" id="hideBoughtProductsInfos" class="btn-default" onclick="WishlistVisibility('wlp_bought_infos', 'BoughtProductsInfos'); return false;" title="{l s="Hide products" d='Shop.Theme'}">{l s="Hide bought products' info" d='Shop.Theme'}</a>
-				<a style="display:none;" href="#" id="showBoughtProductsInfos" class="btn-default"  onclick="WishlistVisibility('wlp_bought_infos', 'BoughtProductsInfos'); return false;" title="{l s="Show products" d='Shop.Theme'}">{l s="Show bought products' info" d='Shop.Theme'}</a>
-			</li>
-			{/if}
 		</ul>
 		<p class="wishlisturl">{l s='Permalink' d='Shop.Theme'}: <input type="text" value="{$link->getModuleLink('jmswishlist', 'view', ['token' => $token_wish])|escape:'html':'UTF-8'}" style="width:540px;" readonly="readonly" /></p>
 		<p class="submit">
@@ -58,22 +52,21 @@
 							</a>
 						</div>
 						<div class="product_infos">
-							<p id="s_title" class="product-link" title="{$product.name}">{$product.name|truncate:30:'...'|escape:'html':'UTF-8'}</p>
-							<span class="wishlist_product_detail">
+							<a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" id="s_title" class="product-link hover-underline" title="{$product.name}">{$product.name|truncate:30:'...'|escape:'html':'UTF-8'}</a>
+							<div class="wishlist_product_detail">
 								{if isset($product.attributes_small)}
-								<a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
+									<a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
 								{/if}
-								<br />{l s='Quantity' d='Shop.Theme'}:<input type="text" id="quantity_{$product.id_product}_{$product.id_product_attribute}" value="{$product.quantity|intval}" size="3"  />
-								<br /><br />
-								{l s='Priority' d='Shop.Theme'}:
+								<label>{l s='Quantity' d='Shop.Theme'}:</label>
+								<input type="text" id="quantity_{$product.id_product}_{$product.id_product_attribute}" value="{$product.quantity|intval}" size="3"  />
+								<label>{l s='Priority' d='Shop.Theme'}:</label>
 								<select id="priority_{$product.id_product}_{$product.id_product_attribute}">
 									<option value="0"{if $product.priority eq 0} selected="selected"{/if}>{l s='High' d='Shop.Theme'}</option>
 									<option value="1"{if $product.priority eq 1} selected="selected"{/if}>{l s='Medium' d='Shop.Theme'}</option>
 									<option value="2"{if $product.priority eq 2} selected="selected"{/if}>{l s='Low' d='Shop.Theme'}</option>
 								</select>
 								{if $wishlists|count > 1}
-								<br /><br />
-								{l s='Move'}:
+									{l s='Move'}:
 								<br />
 								{foreach name=wl from=$wishlists item=wishlist}
 								{if $smarty.foreach.wl.first}
@@ -91,13 +84,13 @@
 								{/if}
 								{/foreach}
 								{/if}
-							</span>
+							</div>
 						</div>
 					</div>
 					<br />
 					<div class="group_btn">
-						<a class="btn-default button-small" href="javascript:;" class="exclusive lnksave" onclick="WishlistProductManage('wlp_bought_{$product.id_product_attribute}', 'update', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Save' d='Shop.Theme'}">{l s='Save' d='Shop.Theme'}</a>
-						<a class="btn-default button-small" href="javascript:;" class="lnkdel" onclick="WishlistProductManage('wlp_bought', 'delete', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Delete' d='Shop.Theme'}">{l s='Delete' d='Shop.Theme'}</a>
+						<a class="btn-default" href="javascript:;" class="exclusive lnksave" onclick="WishlistProductManage('wlp_bought_{$product.id_product_attribute}', 'update', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Save' d='Shop.Theme'}">{l s='Save' d='Shop.Theme'}</a>
+						<a class="btn-default" href="javascript:;" class="lnkdel" onclick="WishlistProductManage('wlp_bought', 'delete', '{$id_wishlist}', '{$product.id_product}', '{$product.id_product_attribute}', $('#quantity_{$product.id_product}_{$product.id_product_attribute}').val(), $('#priority_{$product.id_product}_{$product.id_product_attribute}').val());" title="{l s='Delete' d='Shop.Theme'}">{l s='Delete' d='Shop.Theme'}</a>
 					</div>
 				
 				{/foreach}

@@ -1,5 +1,5 @@
 #authentication #wrapper > .container{
-	max-width: 370px;
+	max-width: 400px;
 	padding: 0 15px;
 }
 #authentication .show-pass button {
@@ -8,16 +8,18 @@
 	background: none;
 	padding: 0;
 }
-#authentication .forgot-password a{
-	color: #858585;
-	text-decoration: underline !important;
-}
 #authentication #wrapper{
 	padding-top: 0;
 }
-#authentication .login-form h3{
-	margin-top: 13px;
-	padding-bottom: 34px;
+#authentication .login-form h1,
+#authentication .register-form h1{
+	font-size: 36px;
+	padding-bottom: 37px;
+	margin-top: -9px;
+}
+#authentication .login-form h3,
+#authentication .register-form h3{
+	padding-bottom: 22px;
 }
 #authentication .show-pass button:before {
 	content:"\f06e";
@@ -33,7 +35,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #858585;
 	z-index: 11;
 }
 #authentication .show-pass button:hover{
@@ -44,11 +45,16 @@
 	color: #333;
 }
 #authentication .forgot-password > a {
-	margin-bottom: 10px;
 	display: inline-block;
+	font-size: 14px;
+	font-weight: 800;
+	position: relative;
 }
 #authentication .forgot-password, #authentication .form-footer{
 	text-align:center;
+}
+#authentication .forgot-password{
+	margin-top: 15px;
 }
 #authentication .form-footer {
 	margin-top: 6px;
@@ -57,15 +63,18 @@
 	display:block;
 }
 #authentication .form-group.row label {
-	margin-bottom: 3px;
-	text-transform: uppercase;
 	line-height: 30px;
+	font-size: 16px;
 }
 #authentication .form-group.row label{
-	margin-bottom: -5px;
+	margin-bottom: 1px;
+}
+#authentication .form-group.row label .required{
+	float: right;
+	font-size: 14px;
 }
 #authentication .form-group .form-control{
-	margin-bottom: 13px;
+	margin-bottom: 22px;
 }
 #authentication .form-control-comment {
 	line-height:40px;
@@ -73,7 +82,7 @@
 #authentication .form-control-valign {
 	line-height: 32px;
 }
-#authentication .form-group{
+#authentication #login-form .form-group{
 	margin-bottom: 0;
 }
 #authentication .register-form .custom-radio input {
@@ -87,12 +96,13 @@
 	margin-bottom: 16px;
 }
 #authentication .no-account {
-	margin-top: 26px;
-	border-top: 1px solid #ebebeb;
-	padding-top: 19px;
+	margin-top: 49px;
 }
-#authentication .no-account ul{
-	color: #858585;
+#authentication .no-account h3{
+	padding-bottom: 12px;
+}
+#authentication .no-account .content{
+	margin-bottom: 23px;
 }
 #authentication .no-account ul li{
 	padding-left: 16px;

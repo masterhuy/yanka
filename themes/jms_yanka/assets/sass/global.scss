@@ -2358,6 +2358,12 @@ a.wishlist_top{
 	&.fade.in{
 		background: rgba(20, 20, 20, 0.5);
 	}
+	.close{
+		color: #d0d0d0;
+		&:hover{
+			color: #333;
+		}
+	}
 	.modal-body{
 		padding: 30px;
 	}
@@ -2381,17 +2387,57 @@ a.wishlist_top{
 	.js-qv-product-cover{
 		background: #f1f1f1;
 	}
+	.pd-name{
+		font-size: 24px;
+	}
 	.content_price{
+		margin-left: 0;
 		.price.old{
-			display: block;
+			display: inline-block;
 			margin: 10px 0 0;
 		}
 	}
-	.images-container .product-images > li.thumb-container {
-	    display: block;
+	.product-quickview-review{
+		align-items: center;
+		margin-top: 9px;
+		margin-bottom: 24px;
 	}
-	.images-container .js-qv-mask{
-		
+	.comments-nb {
+		font-size: 12px;
+	}
+	.product-quantity{
+		button.btn-touchspin{
+			width: 44px;
+			height: 44px;
+		}
+		input#quantity_wanted,
+		.product-btn.cart-button{
+			height: 44px;
+		}
+	}
+	.view-full{
+		font-size: 13px;
+		color: $active;
+		position: relative;
+		display: inline-block;
+		font-weight: 800;
+		@include underline(6, $active, 2)
+		&:hover::before{
+			width: 100%;
+		}
+	}
+	.images-container{
+		flex-direction: column;
+		 li.thumb-container .thumb{
+		 	width: 64px;
+		 }
+		.js-qv-mask{
+			width: 100%;
+			white-space: nowrap;
+		}
+		.product-images > li.thumb-container {
+		    display: inline-block;
+		}
 	}
 	.product-variants-item{
 		display: block;
@@ -2407,6 +2453,7 @@ a.wishlist_top{
 		}
 		.content_price .price.new{
 			text-align: center;
+			font-size: 24px;
 		}
 	}
 	.arrows.js-arrows{
@@ -4259,6 +4306,10 @@ a.wishlist_top{
 // wishlist
 #form_wishlist {
   margin-top: 20px;
+  input{
+  	width: auto;
+  	margin-left: 5px;
+  }
   fieldset{
   	padding: 15px 0;
   }
@@ -4272,10 +4323,21 @@ a.wishlist_top{
 }
 #block-order-detail .display_list li{
 	margin-bottom: 10px;
+	display: inline-block;
 	a{
 		margin-right: 6px;
 	}
 }
+//
+
+//authentication
+#authentication .forgot-password > a{
+	@include underline(6, #333, 2)
+	&:hover::before{
+		width: 100%;
+	}
+}
+//
 
 //ajaxsearch
 #jms_ajax_search #ajax_search{

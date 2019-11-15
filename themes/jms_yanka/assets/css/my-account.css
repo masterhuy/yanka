@@ -43,7 +43,8 @@
 	border-left: 1px solid #ebebeb;
 	padding: 7px;
 	text-align: center;
-	text-transform: uppercase;
+	color: #333;
+	font-weight: 800;
 }
 #block-history table.std td, #block-history table.table_block td {
     text-align: center;

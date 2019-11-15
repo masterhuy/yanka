@@ -2500,7 +2500,7 @@
                 (0, a.default)(".js-thumb").on("click", function(t) {
                     (0, a.default)(".js-thumb").hasClass("selected") && (0, a.default)(".js-thumb").removeClass("selected"), (0, a.default)(t.currentTarget).addClass("selected"), (0, a.default)(".js-qv-product-cover").attr("src", (0, a.default)(t.target).data("image-large-src"))
                 }), i.find("li").length <= 4 ? n.hide() : n.on("click", function(t) {
-                    (0, a.default)(t.target).hasClass("arrow-up") && (0, a.default)(".js-qv-product-images").position().top < 0 ? (e("up"), (0, a.default)(".arrow-down").css("opacity", "1")) : (0, a.default)(t.target).hasClass("arrow-down") && i.position().top + i.height() > (0, a.default)(".js-qv-mask").height() && (e("down"), (0, a.default)(".arrow-up").css("opacity", "1"))
+                    (0, a.default)(t.target).hasClass("arrow-up") && (0, a.default)(".js-qv-product-images").position().left < 0 ? (e("up"), (0, a.default)(".arrow-down").css("opacity", "1")) : (0, a.default)(t.target).hasClass("arrow-down") && i.position().left + i.height() > (0, a.default)(".js-qv-mask").height() && (e("down"), (0, a.default)(".arrow-up").css("opacity", "1"))
                 }), t.find("#quantity_wanted").TouchSpin({
                     verticalbuttons: !0,
                     verticalupclass: "material-icons touchspin-up",
@@ -2513,12 +2513,12 @@
             },
             e = function(t) {
                 var e = (0, a.default)(".js-qv-product-images"),
-                    n = (0, a.default)(".js-qv-product-images li img").height() + 20,
-                    i = e.position().top;
+                    n = (0, a.default)(".js-qv-product-images li img").width() + 20,
+                    i = e.position().left;
                 e.velocity({
-                    translateY: "up" === t ? i + n : i - n
+                    translateX: "left" === t ? i + n : i - n
                 }, function() {
-                    e.position().top >= 0 ? (0, a.default)(".arrow-up").css("opacity", ".2") : e.position().top + e.height() <= (0, a.default)(".js-qv-mask").height() && (0, a.default)(".arrow-down").css("opacity", ".2")
+                    e.position().left >= 0 ? (0, a.default)(".arrow-up").css("opacity", ".2") : e.position().left + e.height() <= (0, a.default)(".js-qv-mask").height() && (0, a.default)(".arrow-down").css("opacity", ".2")
                 })
             };
         (0, a.default)("body").on("click", "#search_filter_toggler", function() {

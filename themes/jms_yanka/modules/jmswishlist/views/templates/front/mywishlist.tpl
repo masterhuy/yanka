@@ -92,18 +92,26 @@
 							{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 								<p class="is_wish_list_default">
 									{* <i class="la la-check-square"></i> *}
-									<img src="themes/jms_shella/assets/img/icon/checked.png">
+									<img src="themes/jms_yanka/assets/img/icon/checked.png">
 								</p>
 							{else}
 								<a href="#" onclick="javascript:event.preventDefault();(WishlistDefault('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}'));">
 									{* <i class="la la-square-o"></i> *}
-									<img src="themes/jms_shella/assets/img/icon/uncheck.png">
+									<img src="themes/jms_yanka/assets/img/icon/uncheck.png">
 								</a>
 							{/if}
 						</td>
 						<td class="wishlist_delete">
 							<a class="icon" href="#" onclick="javascript:event.preventDefault();return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' mod='blockwishlist' js=1}'));">
-								<i class="fa fa-remove"></i>
+								<i>
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+										<g>
+											<path fill="currentColor" d="M5,24h14l1-17H4L5,24z M18.3,8.6l-0.8,13.8h-11L5.7,8.6H18.3z"></path>
+											<rect x="2" y="3.2" fill="currentColor" width="20" height="1.6"></rect>
+											<rect x="10" y="0.2" fill="currentColor" width="4" height="1.6"></rect>
+										</g>
+									</svg>
+								</i>
 							</a>
 						</td>
 					</tr>
