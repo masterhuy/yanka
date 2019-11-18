@@ -28,7 +28,7 @@
     <div class="form-group row {if !empty($field.errors)}has-error{/if}">
         <label class="col-lg-12 col-md-12 form-control-label{if $field.required} required{/if}">
             {if $field.type !== 'checkbox'}
-                {$field.label}{if $field.required} <span class="required">* Required Fields</span>{/if}
+                {$field.label}{if $field.required} <span class="required pull-right">* Required Fields</span>{/if}
             {/if}
         </label>
         <div class="col-lg-12 col-md-12{if ($field.type === 'radio-buttons')} form-control-valign{/if}">

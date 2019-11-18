@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-15 05:27:33
+/* Smarty version 3.1.33, created on 2019-11-18 05:28:25
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonhtml.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dce7d95be7ba6_82314948',
+  'unifunc' => 'content_5dd27249352727_18074110',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dce7d95be7ba6_82314948 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd27249352727_18074110 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="addon-title">
 	<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>

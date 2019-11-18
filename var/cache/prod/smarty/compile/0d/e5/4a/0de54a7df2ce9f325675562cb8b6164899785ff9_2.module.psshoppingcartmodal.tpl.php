@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-14 02:07:24
+/* Smarty version 3.1.33, created on 2019-11-18 01:40:22
   from 'module:psshoppingcartmodal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dccfd2c7bbe11_32777776',
+  'unifunc' => 'content_5dd23cd642cfb7_26497101',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0de54a7df2ce9f325675562cb8b6164899785ff9' => 
     array (
       0 => 'module:psshoppingcartmodal.tpl',
-      1 => 1570504965,
+      1 => 1574059198,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dccfd2c7bbe11_32777776 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd23cd642cfb7_26497101 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="blockcart-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -92,7 +92,7 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['totals']['total']['
 								<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Continue shopping','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
 							</button>
-							<a class="view-cart" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart_url']->value, ENT_QUOTES, 'UTF-8');?>
+							<a class="btn-border w-100 mb-10" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart_url']->value, ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'View shopping bag','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 " rel="nofollow">
 								<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'View Cart','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>

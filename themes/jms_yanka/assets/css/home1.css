@@ -9,6 +9,8 @@
     padding: 10px 20px; }
     .jms-row.alert-box .alert p {
       display: inline-block; }
+  .jms-row.alert-box strong {
+    color: #fff; }
   .jms-row.alert-box .more-details {
     position: relative;
     display: inline-block; }

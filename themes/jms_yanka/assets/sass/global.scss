@@ -18,6 +18,7 @@
 
 .main-site{
 	overflow: hidden;
+	position: relative;
 }
 
 //custom padding 20
@@ -2381,8 +2382,7 @@ a.wishlist_top{
 		margin-bottom: 0;
 	}
 	.product-actions .product-variants{
-		justify-content: center;
-		flex-direction: column;
+		
 	}
 	.js-qv-product-cover{
 		background: #f1f1f1;
@@ -2427,16 +2427,14 @@ a.wishlist_top{
 		}
 	}
 	.images-container{
-		flex-direction: column;
-		 li.thumb-container .thumb{
+		li.thumb-container .thumb{
 		 	width: 64px;
 		 }
 		.js-qv-mask{
-			width: 100%;
-			white-space: nowrap;
+			max-height: 530px;
 		}
 		.product-images > li.thumb-container {
-		    display: inline-block;
+		    display: block;
 		}
 	}
 	.product-variants-item{
@@ -4246,6 +4244,7 @@ a.wishlist_top{
 	.cart_block_list {
 		padding-top: 17px;
 		padding-bottom: 3px;
+		max-height: 237px;
 		.property-value{
 			margin: 2px 0 8px;
 			span{
@@ -4330,8 +4329,13 @@ a.wishlist_top{
 }
 //
 
-//authentication
-#authentication .forgot-password > a{
+//
+.forgot-password > a{
+	font-size: 14px;
+	font-weight: 800;
+	position: relative;
+	color: #333 !important;
+	display: inline-block;
 	@include underline(6, #333, 2)
 	&:hover::before{
 		width: 100%;

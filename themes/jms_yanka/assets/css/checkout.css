@@ -67,7 +67,8 @@
 	width:calc(100% - 100px);
 }
 #checkout #checkout-login-form .forgot-password {
-	margin-bottom:15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 #checkout #checkout-personal-information-step, #checkout #checkout-addresses-step, #checkout #checkout-delivery-step, #checkout #checkout-payment-step {
 	border: 1px solid #ebebeb;
@@ -110,17 +111,20 @@
 	margin-bottom:15px;
 }
 #checkout section#content #js-checkout-summary .card-block .label {
-	font-size: 15px;
-	font-weight: 400;
-	padding: 0;
-	text-transform: uppercase;
-	color: #333;
+	font-size: 18px;
+	color: #777;
 }
 #checkout section#content #js-checkout-summary .card-block .label {
-	font-size: 13px;
 	font-weight: 400;
 	padding: 0;
-	color: #858585;
+}
+#checkout #block-reassurance .block-reassurance-item span.h6 {
+	font-size: 18px;
+	width: calc(100% - 35px);
+	padding: 0 10px;
+	margin: 0;
+	font-weight: 400;
+	line-height: 28px;
 }
 .price .product-price {
     display: block;
@@ -190,27 +194,36 @@
 	margin-left:10px;
 }
 #checkout .right-box {
-	background: #f2f2f2;
-	border: 1px solid #ebebeb;
+	background: #f8f8f8;
 }
 #checkout .right-box .card.js-cart, #checkout .right-box #block-reassurance {
-	padding: 20px;
+	padding: 40px;
+}
+#checkout .content ul li a{
+	font-size: 16px;
+	color: #777;
+}
+#checkout .content ul li a:hover{
+	color: #48CAB2;
+}
+#customer-form p,
+#customer-form span{
+	font-size: 16px;
 }
 /* chekout step */
 body#checkout section.checkout-step.-complete .step-title {
 	color: #fff;
 }
 body#checkout section.checkout-step.-complete .step-title {
-	background-color: #333;
+	background-color: #48CAB2;
 	color: #fff;
 	line-height: 1;
 }
 body#checkout section.checkout-step .step-title {
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 18px;
 	margin: 0;
-	padding: 13px 15px;
-	text-transform: uppercase;
+	padding: 20px;
 	line-height: 1;
 }
 body#checkout section.checkout-step .content {

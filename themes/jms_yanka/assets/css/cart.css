@@ -274,6 +274,21 @@
 #promo-code form{
 	margin-top: 10px;
 }
+.no-items svg{
+	width: 119px;
+	height: 119px;
+	color: #ebebeb;
+	margin-bottom: 35px;
+}
+.no-items h3{
+	font-size: 36px;
+	line-height: 43px;
+	padding-bottom: 20px;
+}
+.no-items span{
+	display: block;
+	margin-bottom: 32px;
+}
 .btn-continue-shopping {
 	font-size: 14px;
 	font-weight: 800;

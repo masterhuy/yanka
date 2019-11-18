@@ -1,5 +1,6 @@
 .main-site {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .custom-padding .container {
   padding-left: 20px;
@@ -2028,15 +2029,6 @@ a.wishlist_top {
   border: 0;
   margin-bottom: 0; }
 
-.quickview .product-actions .product-variants {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
 .quickview .js-qv-product-cover {
   background: #f1f1f1; }
 
@@ -2090,18 +2082,14 @@ a.wishlist_top {
   .quickview .view-full:hover::before {
     width: 100%; }
 
-.quickview .images-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  .quickview .images-container li.thumb-container .thumb {
-    width: 64px; }
-  .quickview .images-container .js-qv-mask {
-    width: 100%;
-    white-space: nowrap; }
-  .quickview .images-container .product-images > li.thumb-container {
-    display: inline-block; }
+.quickview .images-container li.thumb-container .thumb {
+  width: 64px; }
+
+.quickview .images-container .js-qv-mask {
+  max-height: 530px; }
+
+.quickview .images-container .product-images > li.thumb-container {
+  display: block; }
 
 .quickview .product-variants-item {
   display: block;
@@ -3816,7 +3804,8 @@ a.wishlist_top {
     right: 0; }
   #cart_block .cart_block_list {
     padding-top: 17px;
-    padding-bottom: 3px; }
+    padding-bottom: 3px;
+    max-height: 237px; }
     #cart_block .cart_block_list .property-value {
       margin: 2px 0 8px; }
       #cart_block .cart_block_list .property-value span {
@@ -3888,23 +3877,28 @@ a.wishlist_top {
   #block-order-detail .display_list li a {
     margin-right: 6px; }
 
-#authentication .forgot-password > a::before {
-  position: absolute;
-  bottom: 6px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '';
-  color: transparent;
-  background-color: #333;
-  height: 2px;
-  -webkit-transition: width 0.25s;
-  -o-transition: width 0.25s;
-  transition: width 0.25s; }
-
-#authentication .forgot-password > a:hover::before {
-  width: 100%; }
+.forgot-password > a {
+  font-size: 14px;
+  font-weight: 800;
+  position: relative;
+  color: #333 !important;
+  display: inline-block; }
+  .forgot-password > a::before {
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background-color: #333;
+    height: 2px;
+    -webkit-transition: width 0.25s;
+    -o-transition: width 0.25s;
+    transition: width 0.25s; }
+  .forgot-password > a:hover::before {
+    width: 100%; }
 
 #jms_ajax_search #ajax_search {
   background: #fff url("../img/icon/search-bg.png") no-repeat right 13px; }

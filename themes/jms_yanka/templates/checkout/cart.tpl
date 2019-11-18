@@ -33,7 +33,7 @@
     <div class="cart-grid">
 		<div class="row first">
       		<!-- Left Block: cart product informations & shipping -->
-      		<div class="cart-grid-body col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      		<div class="cart-grid-body {if $cart.products}col-lg-8{else}col-lg-12{/if} col-md-8 col-sm-12 col-xs-12">
 				<div class="cart-box">
 					<!-- cart products detailed -->
 					<div class="cart cart-container">
@@ -42,7 +42,7 @@
 					  	{/block}
 					</div>
 
-					{block name='continue_shopping'}
+					{block name='continue_shopping'} 
 			  			<a class="btn-continue-shopping" href="{$urls.pages.index}">
 							<i class="d-i-flex">
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
@@ -63,7 +63,7 @@
     		</div>
 
       		<!-- Right Block: cart subtotal & cart total -->
-      		<div class="cart-grid-right pull-right col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      		<div class="cart-grid-right {if $cart.products}{else}hidden{/if} pull-right col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<div class="right-box">
 					{block name='cart_summary'}
 			  		<div class="card cart-summary">

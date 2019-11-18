@@ -1237,7 +1237,6 @@ jQuery(function ($) {
 
 });
 
-
 //sidebar
 jQuery(function ($) {
     "use strict";

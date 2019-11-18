@@ -111,6 +111,7 @@
 }
 #ajax_search {
     background: #fff none repeat scroll 0 0;
+    box-shadow: none;
     border: 0;
     border-bottom: 1px solid #ebebeb;
     font-size: 24px;

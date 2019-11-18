@@ -3,6 +3,10 @@
 
 .page-not-found{
 	padding: 33px 0 82px;
+	.not-found{
+		display: none;
+		text-align: center;
+	}
 	.pt-title-02 {
 		color: #EBEBEB;
 		font-size: 36px;
@@ -33,6 +37,52 @@
 				&:hover::before{
 					width: 0;
 				}
+			}
+		}
+	}
+}
+#search{
+	.category-title{
+		display: none;
+	}
+	.search-not-found{
+		display: block;
+	}
+	.page-not-found{
+		svg{
+			width: 119px;
+			height: 119px;
+			color: #ebebeb;
+			margin-bottom: 35px;
+		}
+		h4{
+			font-size: 36px;
+			line-height: 43px;
+		}
+		.small-text span{
+			color: $active;
+			font-weight: 800;
+		}
+	}
+}
+#category{
+	.category-not-found{
+		display: block;
+		svg{
+			width: 119px;
+			height: 119px;
+			color: #ebebeb;
+			margin-bottom: 35px;
+		}
+		h4{
+			font-size: 36px;
+			line-height: 43px;
+		}
+		.small-text{
+			margin-bottom: 33px;
+			span{
+				color: $active;
+				font-weight: 800;
 			}
 		}
 	}

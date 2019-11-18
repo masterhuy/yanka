@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-14 05:07:28
+/* Smarty version 3.1.33, created on 2019-11-18 02:53:12
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcd276079b074_68163794',
+  'unifunc' => 'content_5dd24de8712a63_36013058',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcd276079b074_68163794 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd24de8712a63_36013058 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="cart-wrap clearfix">
 	<a class="preview-image" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>

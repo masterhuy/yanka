@@ -6,6 +6,22 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Local SEO: Best Practices</title>
+    <link>https://www.prestashop.com/en/blog/local-seo-best-practices</link>
+    <description>SEO is an important factor when it comes to website traffic for e-commerce business. This is the reason why focusing on building your SEO practices is a great step in the right direction.</description>
+     <pubDate>Fri, 15 Nov 2019 14:04:06 +0100</pubDate>
+ <dc:creator>John Ahya</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/local-seo-best-practices</guid>
+  </item>
+  <item>
+    <title>How to calculate your average basket?</title>
+    <link>https://www.prestashop.com/en/blog/how-to-calculate-your-average-basket</link>
+    <description>The ultimate objective of any e-commerce business is to drive revenue, and e-commerce merchants come up with new strategies and ideas every now and then to scale-up their revenue graph.</description>
+     <pubDate>Wed, 13 Nov 2019 12:11:54 +0100</pubDate>
+ <dc:creator>NitinSrivastavaen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/how-to-calculate-your-average-basket</guid>
+  </item>
+  <item>
     <title>How to Improve the UX of Your Shop</title>
     <link>https://www.prestashop.com/en/blog/how-to-improve-UX-shop</link>
     <description>User experience (UX) design has a direct relation to the future of retail.</description>
@@ -18,7 +34,7 @@
     <link>https://www.prestashop.com/en/blog/five-good-reasons-live-chat</link>
     <description>Do you remember the last time you tried to call a company but got a busy signal? Or maybe you were trying to solve your problems via email, but it was taking ages.</description>
      <pubDate>Wed, 06 Nov 2019 14:13:13 +0100</pubDate>
- <dc:creator>Daniel Zieliński</dc:creator>
+ <dc:creator>Daria Zaboj</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-good-reasons-live-chat</guid>
   </item>
   <item>
@@ -68,22 +84,6 @@
      <pubDate>Thu, 17 Oct 2019 18:56:35 +0200</pubDate>
  <dc:creator>rajbarman</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/strategies-boost-e-commerce</guid>
-  </item>
-  <item>
-    <title>Four tips to selling cross-border into Brazil</title>
-    <link>https://www.prestashop.com/en/blog/tips-selling-cross-border-brazil</link>
-    <description>Brazil is the largest ecommerce market in Latin America, with 34% market share according to eMarketer.</description>
-     <pubDate>Wed, 16 Oct 2019 14:13:11 +0200</pubDate>
- <dc:creator>paulamartins</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/tips-selling-cross-border-brazil</guid>
-  </item>
-  <item>
-    <title>Trends that drive conversion rate optimization</title>
-    <link>https://www.prestashop.com/en/blog/trends-conversion-rate-optimization</link>
-    <description>Do you know that most of the companies even with heavy traffic fail to increase their conversion rate &amp;amp; not able to create a ROI to be in the game?</description>
-     <pubDate>Mon, 14 Oct 2019 11:50:12 +0200</pubDate>
- <dc:creator>Webkul</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/trends-conversion-rate-optimization</guid>
   </item>
   </channel>
 </rss>

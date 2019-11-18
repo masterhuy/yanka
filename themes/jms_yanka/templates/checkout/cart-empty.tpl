@@ -29,7 +29,7 @@
 {/block}
 
 {block name='continue_shopping' append}
-  <a class="btn-default" href="{$urls.pages.index}">
+  <a class="btn-default hidden" href="{$urls.pages.index}">
     {l s='Continue shopping' d='Shop.Theme.Actions'}
   </a>
 {/block}
