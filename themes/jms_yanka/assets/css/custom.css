@@ -2215,7 +2215,7 @@ ul.cart_block_list li:not(:last-child){
 .product-preview .product_action .btn-group{
   display: none;
 }
-.product-preview .preview .btn-group {
+.product-preview .btn-group {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -2224,7 +2224,7 @@ ul.cart_block_list li:not(:last-child){
   width: auto;
   transition: opacity 0.2s;
 }
-.product-preview:hover .preview .btn-group{
+.product-preview:hover .btn-group{
   opacity: 1;
   visibility: visible;
 }

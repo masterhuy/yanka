@@ -546,13 +546,13 @@ div.jms-megamenu .dropdown-menu::before{
 .mega-dropdown-inner .dropdown-menu{
     min-width: 228px;
 }
-@media (max-width: 991px) {
-#jms-megamenu-container {
-    display: none;
-}
+@media (max-width: 1199px) {
+    #jms-megamenu-container {
+        display: none;
+    }
 }
 @media (min-width: 992px) {
-.responsive #off-canvas-menu {
-    display: none;
-}
+    .responsive #off-canvas-menu {
+        display: none;
+    }
 }

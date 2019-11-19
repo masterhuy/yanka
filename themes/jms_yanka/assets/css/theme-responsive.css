@@ -84,11 +84,6 @@
 	.include_right_sort {
 		width: 59%;
 	}
-	#open-button {
-		font-size: 25px;
-		display: inline-block;
-		padding-top: 4px;
-	}
 	.flash_countdown {
 		text-align: center;
 		width: 70%;
@@ -333,9 +328,6 @@
 	}
 	.jms-slider-wrapper .fs-pager-wrapper {
 		bottom: 15px;
-	}
-	.logo > span {
-		font-size: 36px;
 	}
 	.pagenotfound input {
 		width: 300px;

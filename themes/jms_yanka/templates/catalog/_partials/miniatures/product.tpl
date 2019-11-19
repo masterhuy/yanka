@@ -52,45 +52,6 @@
 					{/foreach}
 				</ul>
 			{/block}
-			<div class="btn-group">
-				{if isset($jpb_wishlist) && $jpb_wishlist}							
-					<a href="#" class="addToWishlist product-btn p-relative d-block" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
-						<i class="d-flex">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-								<path fill="currentColor" d="M6.9,2.6c1.4,0,2.7,0.6,3.8,1.6l0.2,0.2L12,5.6l1.1-1.1l0.2-0.2c1-1,2.3-1.6,3.8-1.6s2.8,0.6,3.8,1.6
-									c2.1,2.1,2.1,5.6,0,7.7L12,20.7l-8.9-8.9C1,9.7,1,6.2,3.1,4.1C4.2,3.2,5.5,2.6,6.9,2.6z M6.9,1C5.1,1,3.3,1.7,2,3.1
-									c-2.7,2.7-2.7,7.2,0,9.9l10,10l10-9.9c2.7-2.8,2.7-7.3,0-10c-1.4-1.4-3.1-2-4.9-2c-1.8,0-3.6,0.7-4.9,2L12,3.3l-0.2-0.2
-									C10.4,1.7,8.7,1,6.9,1z">
-								</path>
-							</svg>
-						</i>
-						<span class="tooltip-wrap left">
-							<span class="tooltip-text">
-								{l s='Add to Wishlist' d='Shop.Theme.Actions'}
-							</span>
-						</span>
-					</a>
-				{/if}
-				<a href="#" data-link-action="quickview" class="d-flex flex-center p-relative quick-view product-btn hidden-xs">
-					<i class="d-flex">
-						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-							<g>
-								<polygon fill="currentColor" points="11.8,7 10.2,7 10.2,10.2 7,10.2 7,11.8 10.2,11.8 10.2,15 11.8,15 11.8,11.8 15,11.8 15,10.2
-									11.8,10.2">
-								</polygon>
-								<path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
-									l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z">
-								</path>
-							</g>
-						</svg>
-					</i>
-					<span class="tooltip-wrap left">
-						<span class="tooltip-text">
-							{l s='Quick View' d='Shop.Theme.Actions'}
-						</span>
-					</span>
-				</a>
-			</div>
 		{/block}
 	</div>
 						
@@ -107,6 +68,24 @@
 	    {/if}
 		{block name='product_name'}
 			<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link hover-underline" itemprop="name">{$product.name|truncate:50:'...'|escape:'html':'UTF-8'}</a>
+		{/block}
+
+		{block name='product_price_and_shipping'}
+			{if $product.show_price}
+			  <div class="content_price hidden-lg">
+			  	{hook h='displayProductPriceBlock' product=$product type="before_price"}
+				{if $product.has_discount}
+				 	{hook h='displayProductPriceBlock' product=$product type="old_price"}
+				  	<span class="old price">{$product.regular_price}</span>
+				{/if}
+
+				<span class="price new">{$product.price}</span>
+
+				{hook h='displayProductPriceBlock' product=$product type='unit_price'}
+
+				{hook h='displayProductPriceBlock' product=$product type='weight'}
+			  </div>
+			{/if}
 		{/block}
 			  
 		{block name='product_variants'}
@@ -149,7 +128,7 @@
 
 		{block name='product_price_and_shipping'}
 			{if $product.show_price}
-			  <div class="content_price">
+			  <div class="content_price hidden-md hidden-sm hidden-xs">
 			  	{hook h='displayProductPriceBlock' product=$product type="before_price"}
 				{if $product.has_discount}
 				 	{hook h='displayProductPriceBlock' product=$product type="old_price"}
@@ -197,6 +176,46 @@
 			</a>
 		</div>
     </div>
+
+	<div class="btn-group">
+		{if isset($jpb_wishlist) && $jpb_wishlist}							
+			<a href="#" class="addToWishlist product-btn p-relative d-block" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}">
+				<i class="d-flex">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+						<path fill="currentColor" d="M6.9,2.6c1.4,0,2.7,0.6,3.8,1.6l0.2,0.2L12,5.6l1.1-1.1l0.2-0.2c1-1,2.3-1.6,3.8-1.6s2.8,0.6,3.8,1.6
+							c2.1,2.1,2.1,5.6,0,7.7L12,20.7l-8.9-8.9C1,9.7,1,6.2,3.1,4.1C4.2,3.2,5.5,2.6,6.9,2.6z M6.9,1C5.1,1,3.3,1.7,2,3.1
+							c-2.7,2.7-2.7,7.2,0,9.9l10,10l10-9.9c2.7-2.8,2.7-7.3,0-10c-1.4-1.4-3.1-2-4.9-2c-1.8,0-3.6,0.7-4.9,2L12,3.3l-0.2-0.2
+							C10.4,1.7,8.7,1,6.9,1z">
+						</path>
+					</svg>
+				</i>
+				<span class="tooltip-wrap left">
+					<span class="tooltip-text">
+						{l s='Add to Wishlist' d='Shop.Theme.Actions'}
+					</span>
+				</span>
+			</a>
+		{/if}
+		<a href="#" data-link-action="quickview" class="d-flex flex-center p-relative quick-view product-btn">
+			<i class="d-flex">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
+					<g>
+						<polygon fill="currentColor" points="11.8,7 10.2,7 10.2,10.2 7,10.2 7,11.8 10.2,11.8 10.2,15 11.8,15 11.8,11.8 15,11.8 15,10.2
+							11.8,10.2">
+						</polygon>
+						<path fill="currentColor" d="M23.6,22.4l-4.3-4.3C21,16.3,22,13.7,22,11c0-6.1-4.9-11-11-11S0,4.9,0,11s4.9,11,11,11c2.7,0,5.3-1,7.2-2.7
+							l4.3,4.3L23.6,22.4z M1.6,11c0-5.2,4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4c0,5.2-4.2,9.4-9.4,9.4C5.8,20.4,1.6,16.2,1.6,11z">
+						</path>
+					</g>
+				</svg>
+			</i>
+			<span class="tooltip-wrap left">
+				<span class="tooltip-text">
+					{l s='Quick View' d='Shop.Theme.Actions'}
+				</span>
+			</span>
+		</a>
+	</div>
 </div>
 {/block}
 

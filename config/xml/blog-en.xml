@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The Impact of Free Shipping</title>
+    <link>https://www.prestashop.com/en/blog/the-impact-of-free-shipping</link>
+    <description>As consumers gain access to new technologies like click and collect, grocery delivery apps, and Amazon Prime, their perception of retail shifts drastically.</description>
+     <pubDate>Mon, 18 Nov 2019 16:11:29 +0100</pubDate>
+ <dc:creator>James Messer</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/the-impact-of-free-shipping</guid>
+  </item>
+  <item>
     <title>Local SEO: Best Practices</title>
     <link>https://www.prestashop.com/en/blog/local-seo-best-practices</link>
     <description>SEO is an important factor when it comes to website traffic for e-commerce business. This is the reason why focusing on building your SEO practices is a great step in the right direction.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 21 Oct 2019 14:20:40 +0200</pubDate>
  <dc:creator>Klimczak</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/create-welcome-email-series-contacts</guid>
-  </item>
-  <item>
-    <title>Top 3 Strategies to Boost Your E-commerce</title>
-    <link>https://www.prestashop.com/en/blog/strategies-boost-e-commerce</link>
-    <description>Your ecommerce store is critical to broadening your brand and increasing your reach.</description>
-     <pubDate>Thu, 17 Oct 2019 18:56:35 +0200</pubDate>
- <dc:creator>rajbarman</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/strategies-boost-e-commerce</guid>
   </item>
   </channel>
 </rss>

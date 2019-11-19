@@ -44,7 +44,7 @@
     	{/if}
         {hook h='displayAfterBodyOpeningTag'}
     	{if $jpb_mobilemenu}
-    		<div class="menu-wrap hidden-lg hidden-md">
+    		<div class="menu-wrap hidden-lg">
     			<button id="close-button" class="close-button">
                     <i class="d-i-flex">
                         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-164" viewBox="0 0 24 24">

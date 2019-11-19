@@ -7,9 +7,14 @@
 *}
 
 <div class="jms-megamenu-wrap">
-	<a id="open-button" class="open-button hidden-lg hidden-md" href="#">
+	<a id="open-button" class="open-button hidden-lg" href="#">
 		<i class="d-i-flex">
-			<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-191" viewBox="0 0 24 24"><path d="M3.438 5.479h17.375v1.25H3.438zM3.438 11.104h17.375v1.25H3.438zM3.438 16.729h17.375v1.25H3.438z"/>
+			<svg width="24" height="24" viewBox="0 0 24 24">
+				<use xlink:href="#icon-mobile-menu-toggle">
+					<symbol id="icon-mobile-menu-toggle" fill="none" viewBox="0 0 24 24">
+			            <path d="M0 6h24M0 12h16M0 18h24" stroke="currentColor" stroke-widht="1.6"></path>
+			        </symbol>
+				</use>
 			</svg>
 		</i>
 	</a>

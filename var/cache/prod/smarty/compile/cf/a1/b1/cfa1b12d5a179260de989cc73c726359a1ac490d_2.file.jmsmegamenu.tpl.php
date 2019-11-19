@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 05:28:26
+/* Smarty version 3.1.33, created on 2019-11-19 05:18:28
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsmegamenu\views\templates\hook\jmsmegamenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd2724a5daf58_89194924',
+  'unifunc' => 'content_5dd3c174af6b46_48815758',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cfa1b12d5a179260de989cc73c726359a1ac490d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmsmegamenu\\views\\templates\\hook\\jmsmegamenu.tpl',
-      1 => 1569568109,
+      1 => 1574133206,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd2724a5daf58_89194924 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd3c174af6b46_48815758 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="jms-megamenu-wrap">
-	<a id="open-button" class="open-button hidden-lg hidden-md" href="#">
+	<a id="open-button" class="open-button hidden-lg" href="#">
 		<i class="d-i-flex">
-			<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-191" viewBox="0 0 24 24"><path d="M3.438 5.479h17.375v1.25H3.438zM3.438 11.104h17.375v1.25H3.438zM3.438 16.729h17.375v1.25H3.438z"/>
+			<svg width="24" height="24" viewBox="0 0 24 24">
+				<use xlink:href="#icon-mobile-menu-toggle">
+					<symbol id="icon-mobile-menu-toggle" fill="none" viewBox="0 0 24 24">
+			            <path d="M0 6h24M0 12h16M0 18h24" stroke="currentColor" stroke-widht="1.6"></path>
+			        </symbol>
+				</use>
 			</svg>
 		</i>
 	</a>

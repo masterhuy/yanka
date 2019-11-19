@@ -39,8 +39,8 @@
                             {include file='catalog/_partials/product-cover-thumbnails-quickview.tpl'}
                         {/block}
                         <div class="arrows js-arrows">
-                            <i class="material-icons arrow-up js-arrow-up">&#xE316;</i>
-                            <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
+                            <i class="material-icons arrow-up js-arrow-up"></i>
+                            <i class="material-icons arrow-down js-arrow-down"></i>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down right">

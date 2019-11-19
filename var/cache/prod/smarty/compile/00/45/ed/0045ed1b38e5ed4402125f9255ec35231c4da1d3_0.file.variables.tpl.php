@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-03 22:49:25
+/* Smarty version 3.1.33, created on 2019-11-19 04:52:08
   from 'D:\xamppp\htdocs\jms_yanka\modules\jmsslider\views\templates\hook\variables.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d96b3353fb161_06225956',
+  'unifunc' => 'content_5dd3bb48420ba2_75199610',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d96b3353fb161_06225956 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd3bb48420ba2_75199610 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
     var secure_key = '<?php echo $_smarty_tpl->tpl_vars['secure_key']->value;?>

@@ -491,7 +491,7 @@ jQuery(function ($) {
 					items:ct_itemsMobile
 				},
 				0: {
-					items:2
+					items:1
 				}
 			},
 			rtl: rtl,

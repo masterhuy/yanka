@@ -284,3 +284,94 @@
 .page-index #footer{
 	margin-top: 10px;
 }
+
+@media (max-width: 1366px){
+	.banner-type-1 .banner-content .text-2 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 1199px){
+	.top-panel{
+		p{
+			text-align: center;
+		}
+		.social{
+			display: none;
+		}
+	}
+	.header{
+		.logo > span{
+			padding-bottom: 0;
+		}
+		.megamenu{
+			line-height: 54px;
+			.addon-box:first-child{
+				position: absolute;
+				margin: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	.right-module-header{
+		.addon-box{
+			&:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6){
+				display: none;
+			}
+		}
+	}
+	.banner-type-1{
+		.jms-banner:hover{
+			top: 0;
+		}
+		.banner-content{
+			.text-1{
+				font-size: 16px;
+				line-height: 24px;
+			}
+			.text-2 {
+				font-size: 36px;
+			}
+			.button{
+				position: static;
+				transform: unset;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.alert-box{
+		.container{
+			max-width: 100%;
+		}
+	}
+	.banner-type-2{
+		.container-fluid > .row > .layout-column{
+			margin-bottom: 10px;
+		}
+	}
+	.banner-type-3 .banner-content {
+		top: 20px;
+		left: 20px;
+	}
+}
+@media (max-width: 767px){
+	.jms-row.alert-box .alert {
+		font-size: 17px;
+	}
+	.banner-type-2{
+		.row .row .layout-column:first-child{
+			margin-bottom: 10px;
+		}
+	}
+	.banner-type-3{
+		.layout-column:first-child{
+			margin-bottom: 10px;
+		}
+	}
+}
