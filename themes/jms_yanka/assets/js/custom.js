@@ -559,7 +559,8 @@ jQuery(function ($) {
 					items:tab_itemsMobile
 				},
 				0: {
-					items:2
+					items:2,
+					margin: 20
 				}
 			},
 			rtl: rtl,
@@ -793,13 +794,11 @@ jQuery(function ($) {
 					items:h_itemsTablet
 				},
 				481:{
-					items:h_itemsMobile
-				},
-				361:{
-					items:1
+					items:h_itemsMobile,
 				},
 				0:{
-					items:1
+					items:2,
+					margin: 20
 				}
 			},
 			rtl: rtl,

@@ -40,29 +40,30 @@
 }
 #off-canvas-menu .dropdown-menu > li > a {
     font-weight: 400;
-    line-height: 36px;
+    line-height: 48px;
     text-transform: capitalize;
     position: relative;
-    font-size: 13px;
-    color: #858585;
+    font-size: 18px;
 }
 #off-canvas-menu .dropdown-menu > li > a:focus, #off-canvas-menu .dropdown-menu > li > a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     text-decoration: none;
 }
-#off-canvas-menu li a {
+#off-canvas-menu > ul > li > a {
     border-radius: 0;
     display: block;
     text-align: left;
     text-transform: uppercase;
     padding: 0 20px;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    line-height: 36px;
+    letter-spacing: 0.7px;
+    line-height: 48px;
+    font-weight: 800;
 }
 #off-canvas-menu .dropdown-menu > li.group > a {
-    font-size: 15px;
+    font-size: 18px;
     color: #333;
+    margin: 10px 0;
+    font-weight: 500;
     text-transform: uppercase;
 }
 #off-canvas-menu .user-info li a, #off-canvas-menu .languages-info li a,  #off-canvas-menu .currency-info li a{
@@ -132,7 +133,7 @@
     padding-bottom: 25px;
 }
 #off-canvas-menu .btn-group > ul li span, #off-canvas-menu .btn-group > ul li a {
-    font-size: 13px;
+    font-size: 16px;
 }
 #off-canvas-menu .btn-group.open .dropdown-menu::before {
     display: none;
@@ -146,8 +147,10 @@
     right: 21px;
 }
 #off-canvas-menu .nav {
-    padding-bottom: 25px;
+    padding-bottom: 42px;
     background: #fff;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 55px;
 }
 #off-canvas-menu .collection.menu-item.mega > ul > li > a{
     display: none;
@@ -181,13 +184,26 @@
     margin-bottom: 0;
 }
 #off-canvas-menu li > a em {
-    float: right;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: right;
-    font-size: 14px;
-    padding-top: 8px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#off-canvas-menu li > a em.fa-angle-down::before{
+    font-family: 'yanka';
+    font-size: 16px;
+    line-height: 1;
+    content: "\e903";
+    top: 15px;
+    color: #D0D0D0;
+}
+#off-canvas-menu li > a em.fa-angle-up::before{
+    font-family: 'yanka';
+    font-size: 16px;
+    line-height: 1;
+    content: "\e902";
+    top: 15px;
+    color: #D0D0D0;
 }
 #off-canvas-menu .v-hidden{
     display: none;

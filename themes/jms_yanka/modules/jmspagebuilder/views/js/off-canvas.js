@@ -12,11 +12,11 @@
 jQuery(function ($) {
     "use strict";
 	var bodyEl = $("body"),
-		content = $('.bg-overlay'),
+		content = $('.bg-overlay-canvas'),
 		openbtn = $('#open-button'),
 		closebtn = $('#close-button' ),
 		isOpen = false;
-	if ($("body").hasClass("home6")) content = $('#content-wrapper');
+	
 	function init() {
 		initEvents();
 	}

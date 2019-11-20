@@ -351,6 +351,9 @@
 @media (max-width: 767px) {
   .jms-row.alert-box .alert {
     font-size: 17px; }
+  .banner-type-2 .banner-content {
+    top: 15px;
+    left: 20px; }
   .banner-type-2 .row .row .layout-column:first-child {
     margin-bottom: 10px; }
   .banner-type-3 .layout-column:first-child {

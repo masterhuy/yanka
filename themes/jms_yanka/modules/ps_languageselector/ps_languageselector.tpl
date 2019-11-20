@@ -73,11 +73,12 @@
 	</div>
 
 	<div class="btn-group compact-hidden languages-info type-3">
+		<label>{l s='Languages' d='Shop.Theme.Actions'}</label>
 		<ul class="languages-list">
 			{foreach from=$languages key=k item=language name="languages"}
 				<li {if $language.id_lang == $current_language.id_lang} class="current" {/if}>
 					<a href="{url entity='language' id=$language.id_lang}" class="collapse-item">
-						{$language.name_simple}
+						{$language.name_simple|truncate:3:''}
 					</a>
 				</li>
 			{/foreach}		

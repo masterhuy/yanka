@@ -51,7 +51,7 @@
 	</div>
 </div>
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-2">
-	<p class="">{l s='Select Currency' d='Shop.Theme.Actions'}</p>
+	<label>{l s='Select Currency' d='Shop.Theme.Actions'}</label>
    	<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		{$current_currency.iso_code} <i class="fa fa-angle-down" aria-hidden="true"></i>
 	</a>
@@ -68,10 +68,11 @@
 	</div>
 </div>
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type-3">
+	<label>{l s='Currency' d='Shop.Theme.Actions'}</label>
 	<ul>
       	{foreach from=$currencies item=currency}
 	        <li {if $currency.current} class="current" {/if}>
-	          	<a title="{$currency.name}" rel="nofollow" href="{$currency.url}" class="dropdown-item">{$currency.iso_code} {$currency.sign}</a>
+	          	<a title="{$currency.name}" rel="nofollow" href="{$currency.url}" class="dropdown-item">{$currency.sign} {$currency.iso_code}</a>
 	        </li>
       	{/foreach}
 	</ul>

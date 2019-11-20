@@ -543,7 +543,8 @@ template {
 .ws-nowrap{
   white-space: nowrap;
 }
-.bg-overlay{
+.bg-overlay,
+.bg-overlay-canvas{
   opacity: 0;
   visibility: hidden;
   position: fixed;

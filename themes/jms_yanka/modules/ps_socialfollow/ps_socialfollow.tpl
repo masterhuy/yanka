@@ -25,11 +25,30 @@
 *}
 
 {block name='block_social'}
-  <div class="block-social col-lg-4 col-md-12 col-sm-12">
-    <ul>
-      {foreach from=$social_links item='social_link'}
-        <li class="{$social_link.class}"><a href="{$social_link.url}" target="_blank">{$social_link.label}</a></li>
-      {/foreach}
-    </ul>
-  </div>
+    <div class="block-social col-lg-4 col-md-12 col-sm-12">
+        <ul>
+            {foreach from=$social_links item='social_link'}
+                <li class="{$social_link.class}">
+                    <a href="{$social_link.url}" target="_blank">
+                        <span class="hidden">{$social_link.label}</span>
+                        {if $social_link.class == 'facebook'}
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        {elseif $social_link.class == 'twitter'}
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        {elseif $social_link.class == 'youtube'}
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        {elseif $social_link.class == 'googleplus'}
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        {elseif $social_link.class == 'pinterest'}
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        {elseif $social_link.class == 'vimeo'}
+                            <i class="fa fa-vimeo" aria-hidden="true"></i>
+                        {elseif $social_link.class == 'instagram'}
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        {/if}
+                    </a>
+                </li>
+            {/foreach}
+        </ul>
+    </div>
 {/block}

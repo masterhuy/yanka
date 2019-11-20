@@ -97,7 +97,23 @@
 								<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link hover-underline" itemprop="name">{$product.name|truncate:50:'...'|escape:'html':'UTF-8'}</a>
 							{/block}
 								
-							
+							{block name='product_price_and_shipping'}
+								{if $product.show_price}
+								<div class="content_price hidden-lg hidden-md">
+									{hook h='displayProductPriceBlock' product=$product type="before_price"}
+									{if $product.has_discount}
+										{hook h='displayProductPriceBlock' product=$product type="old_price"}
+										<span class="old price">{$product.regular_price}</span>
+									{/if}
+
+									<span class="price new">{$product.price}</span>
+
+									{hook h='displayProductPriceBlock' product=$product type='unit_price'}
+
+									{hook h='displayProductPriceBlock' product=$product type='weight'}
+								</div>
+								{/if}
+							{/block}
 
 							{block name='product_variants'}
 								{if $product.main_variants}
@@ -181,7 +197,7 @@
 
 							{block name='product_price_and_shipping'}
 								{if $product.show_price}
-								<div class="content_price">
+								<div class="content_price hidden-sm hidden-xs">
 									{hook h='displayProductPriceBlock' product=$product type="before_price"}
 									{if $product.has_discount}
 										{hook h='displayProductPriceBlock' product=$product type="old_price"}

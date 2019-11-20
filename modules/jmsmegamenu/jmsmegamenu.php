@@ -464,7 +464,7 @@ class JmsMegaMenu extends Module
                 }
                 $this->mobilemenu .=    $item['name'];
                 if (($item['level'] == 0) && isset($this->children[$itemid])) {
-                    $this->mobilemenu .= '<em class="fa fa-angle-right"></em>';
+                    $this->mobilemenu .= '<em class="fa fa-angle-down"></em>';
                 }
                 $this->mobilemenu .= '</a>';
             }
