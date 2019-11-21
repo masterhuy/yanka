@@ -154,14 +154,8 @@
 	.title_meta{
 		font-size: 16px;
 	}
-	#cart_block #button_order_cart{
-		font-size: 12px;
-	}
 	.cart-wrap .description {
 		padding-left: 10px;
-	}
-	#cart_block .shoppingcart-box{
-		max-width: 290px;
 	}
 	.breadcrumb-box{
 		text-align:center;
@@ -313,18 +307,6 @@
 @media (max-width: 481px){
 	.html_left, .html_left img{
 		width:100%;
-	}
-	.header .right #jms_ajax_search #search_result {
-		right: 15px;
-		width: 290px;
-	}
-	#ajax_search {
-		top: 8px;
-		left: 67px;
-	}
-	div#cart_block .shoppingcart-box {
-		min-width: 290px;
-		padding: 20px;
 	}
 	.jms-slider-wrapper .fs-pager-wrapper {
 		bottom: 15px;

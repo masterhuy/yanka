@@ -365,6 +365,9 @@
 		font-size: 17px;
 	}
 	.banner-type-2{
+		img{
+			width: 100%;
+		}
 		.banner-content{
 			top: 15px;
 			left: 20px;
@@ -376,6 +379,15 @@
 	.banner-type-3{
 		.layout-column:first-child{
 			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 481px){
+	.fraction-slider{
+		.slide-3, .slide-2{
+			.fs_obj{
+				text-align: center;
+			}
 		}
 	}
 }

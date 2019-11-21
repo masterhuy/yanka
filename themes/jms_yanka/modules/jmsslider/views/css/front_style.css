@@ -9,19 +9,18 @@
 	align-items: center;
 }
 .fs-pager-wrapper span {
-	width: 6px;
-	height: 6px;
-	background: #333;
-	border-radius: 50%;
+	width: 10px;
+	height: 4px;
+	background: #fff;
+	border-radius: 0;
 	text-indent: -100px;
 	display: inline-block;
 	overflow: hidden;
-	margin: 0 12px;
+	margin: 0 8px;
 }
 .fs-pager-wrapper .active span {
 	background: #333;
-	width: 10px;
-	height: 10px;
+	width: 30px;
 }
 .fs-pager-wrapper a {
 	display: flex;
@@ -34,7 +33,7 @@
 	margin:0px auto;
 }
 .jms-slider-wrapper .fs-pager-wrapper{
-	bottom: 65px;
+	bottom: 40px;
 }
 .jms-slider-wrapper .slider{
 	position:relative;

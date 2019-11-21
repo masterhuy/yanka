@@ -1156,15 +1156,15 @@ function closeLookbook(){
 var initialLoad = true;
 $(document).ready(function() {
 	var header = $(".jms-row.header");
-	var menu = $(".jms-row.menu");
+	//var menu = $(".jms-row.menu");
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 180){
 			header.addClass("fixed");
-			menu.addClass("fixed");
+			//menu.addClass("fixed");
     	} else {
 			header.removeClass("fixed");
-			menu.removeClass("fixed");
+			//menu.removeClass("fixed");
     	}
     });
 
@@ -1192,48 +1192,6 @@ $(document).ready(function() {
 	closeAlertBox();
 
 	openVideo();
-});
-
-//popup custommer service
-jQuery(function ($) {
-    "use strict";
-	var content_1 = $('.main-site'),
-		openbtn_1 = $('.header__btn-services'),
-		closebtn_1 = $('account__close' ),
-		isOpen_1 = false;
-
-	function init() {
-		initEvents();
-	}
-
-	function initEvents() {
-		openbtn_1.click(function(e) {		
-			toggleMenu();
-			e.stopPropagation();
-		});
-		if( closebtn_1 ) {
-			closebtn_1.click(function() {		
-				toggleMenu();
-			});
-		}
-		content_1.click(function(e) {		
-			var target = e.target;
-			if( isOpen_1 && target !== openbtn_1 ) {
-				toggleMenu();
-			}
-		});		
-	}
-	function toggleMenu() {		
-		if( isOpen_1 ) {
-			content_1.removeClass('open-service');
-		}
-		else {
-			content_1.addClass('open-service');
-		}
-		isOpen_1 = !isOpen_1;
-	}
-	init();
-
 });
 
 //sidebar

@@ -351,6 +351,8 @@
 @media (max-width: 767px) {
   .jms-row.alert-box .alert {
     font-size: 17px; }
+  .banner-type-2 img {
+    width: 100%; }
   .banner-type-2 .banner-content {
     top: 15px;
     left: 20px; }
@@ -358,3 +360,7 @@
     margin-bottom: 10px; }
   .banner-type-3 .layout-column:first-child {
     margin-bottom: 10px; } }
+
+@media (max-width: 481px) {
+  .fraction-slider .slide-3 .fs_obj, .fraction-slider .slide-2 .fs_obj {
+    text-align: center; } }

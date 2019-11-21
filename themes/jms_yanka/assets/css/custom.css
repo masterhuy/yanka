@@ -240,9 +240,6 @@ label {
 button {
   border-radius: 0; }
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color; }
 
 input,
 button,
@@ -5514,6 +5511,7 @@ button,
 .popup-customer-services,
 #jms_ajax_search .btn-search i,
 .right-icon-group .addon-box a svg,
+.fs-pager-wrapper span,
 .images-container .product-images > li.thumb-container > .thumb{
   transition: all 400ms;
   -webkit-transition: all 400ms;

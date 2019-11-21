@@ -16,37 +16,49 @@ jQuery(function ($) {
 		openbtn = $('#open-button'),
 		closebtn = $('#close-button' ),
 		isOpen = false;
-	
-	function init() {
-		initEvents();
-	}
 
-	function initEvents() {
-		openbtn.click(function(e) {		
-			toggleMenu();
-			e.stopPropagation();
-		});
-		if( closebtn ) {
-			closebtn.click(function() {		
-				toggleMenu();
-			});
-		}
-		content.click(function(e) {		
-			var target = e.target;
-			if( isOpen && target !== openbtn ) {
-				toggleMenu();
-			}
-		});		
-	}
-	function toggleMenu() {		
-		if( isOpen ) {
-			bodyEl.removeClass('show-menu');
-		}
-		else {
-			bodyEl.addClass('show-menu');
-		}
-		isOpen = !isOpen;
-	}
-	init();
+	openbtn.click(function(){
+		bodyEl.addClass('show-menu');
+	});
+
+	content.click(function(){
+		bodyEl.removeClass('show-menu');
+	});
+
+	closebtn.click(function(){
+		bodyEl.removeClass('show-menu');
+	});
+	
+	// function init() {
+	// 	initEvents();
+	// }
+
+	// function initEvents() {
+	// 	openbtn.click(function(e) {		
+	// 		toggleMenu();
+	// 		e.stopPropagation();
+	// 	});
+	// 	if( closebtn ) {
+	// 		closebtn.click(function() {		
+	// 			toggleMenu();
+	// 		});
+	// 	}
+	// 	content.click(function(e) {		
+	// 		var target = e.target;
+	// 		if( isOpen && target !== openbtn ) {
+	// 			toggleMenu();
+	// 		}
+	// 	});		
+	// }
+	// function toggleMenu() {		
+	// 	if( isOpen ) {
+	// 		bodyEl.removeClass('show-menu');
+	// 	}
+	// 	else {
+	// 		bodyEl.addClass('show-menu');
+	// 	}
+	// 	isOpen = !isOpen;
+	// }
+	// init();
 
 });

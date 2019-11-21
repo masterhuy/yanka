@@ -25,29 +25,29 @@
 				var subNav = $('.dropdown-menu',this);				
 				$(this).addClass('open');	
 				$('#header').addClass('change-position');
-				$('.bg-overlay').addClass('change-status');			
+				$('.main-site > .bg-overlay').addClass('change-status');			
 			}
 			function megaAction(obj){
 				var subNav = $('.dropdown-menu',obj);
 				$(obj).addClass('open');
 				$('#header').addClass('change-position');
-				$('.bg-overlay').addClass('change-status');
+				$('.main-site > .bg-overlay').addClass('change-status');
 				
 			}
 			function megaOut(){				
 				$(this).removeClass('open');
 				$('#header').removeClass('change-position');
-				$('.bg-overlay').removeClass('change-status');
+				$('.main-site > .bg-overlay').removeClass('change-status');
 			}
 			function megaActionClose(obj){				
 				$(obj).removeClass('open');			
 				$('#header').removeClass('change-position');
-				$('.bg-overlay').removeClass('change-status');	
+				$('.main-site > .bg-overlay').removeClass('change-status');	
 			}
 			function megaReset(){
 				$('li',$MegaMenuObj).removeClass('open');
 				$('#header').removeClass('change-position');
-				$('.bg-overlay').removeClass('change-status');
+				$('.main-site > .bg-overlay').removeClass('change-status');
 			}
 
 			function _Init(){				
