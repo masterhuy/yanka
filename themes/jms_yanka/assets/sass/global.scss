@@ -3,13 +3,34 @@
 
 //header fixed
 @media (min-width: 1200px){
-	.jms-row.header.fixed{
-		.megamenu{
-			.addon-box:first-child{
-				display: none;
+	.home_1{
+		.jms-row.header.fixed{
+			.megamenu{
+				.addon-box:first-child{
+					display: none;
+				}
 			}
 		}
 	}
+	.home_2, .home_3{
+		.jms-row.header.fixed{
+			.megamenu.center .jms-megamenu > ul{
+				text-align: left;
+			}
+			.col-logo{
+				order: 2;
+				opacity: 0;
+				visibility: hidden;
+			}
+			.megamenu{
+				order: 1;
+			}
+			.right-module-header{
+				order: 3;
+			}
+		}
+	}
+
 }
 .jms-row.header.fixed{
 	top: 0;
@@ -573,6 +594,7 @@
 		transform: scale3d(1.1, 1.1, 1);
 	}
 	> a > img{
+		width: 100%;
 		transition: transform 1s, -webkit-transform 1s;
 	}
 	.banner-content{
@@ -5145,6 +5167,9 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 1366px){
+	.feature-box .include_content_s .text-2{
+		position: static;
+	}
 	.fancybox-margin {
 	    margin-right: 0 !important;
 	}
@@ -5158,6 +5183,44 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 1199px){
+	.home_1, .home_2, .home_3{
+		.right-module-header{
+			.addon-box{
+				&:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6){
+					display: none;
+				}
+			}
+		}
+	}
+	.home_2, .home_3{
+		.header{
+			.col-logo{
+				order: 2;
+				line-height: 54px;
+				text-align: center;
+			}
+			.megamenu{
+				order: 1;
+			}
+			.right-module-header{
+				order: 3;
+			}
+			.megamenu{
+				text-align: left;
+			}
+		}
+	}
+	.top-panel{
+		p{
+			text-align: center;
+		}
+		.social{
+			display: none;
+		}
+	}
+	div.quickview .images-container .js-qv-mask {
+		max-height: 370px;
+	}
 	.open-search.modal-open{
 		overflow: visible;
 	}
@@ -5235,8 +5298,11 @@ a.wishlist_top{
 		padding-right: 20px;
 		position: relative;
 	}
-	.tooltip-wrap{
-		display: none;
+	.header .logo > span {
+		padding-bottom: 0;
+	}
+	span.tooltip-wrap{
+		display: none !important;
 	}
 	div.product-preview .btn-group{
 		position: static;
@@ -5346,6 +5412,15 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px){
+	div.service{
+		padding: 20px 0;
+		.layout-column:not(:last-child){
+			margin-bottom: 10px;
+		}
+	}
+	div.feature-box{
+		padding: 10px 0;
+	}
 	div#blockcart-modal .cart-content {
 		padding-left: 0;
 		button, .btn-default {
@@ -5365,11 +5440,6 @@ a.wishlist_top{
 			margin-bottom: 10px;
 		}
 	}
-	.service{
-		.layout-column:not(:last-child){
-			margin-bottom: 10px;
-		}
-	}
 	#commentForm .form-group {
 		margin-bottom: 20px;
 	}
@@ -5380,22 +5450,11 @@ a.wishlist_top{
 		width: 50px;
 	}
 	.quickview{
-		.arrows.js-arrows i{
-			&.js-arrow-up{
-				top: 10px;
-			}
-			&.js-arrow-down{
-				bottom: 0px;
-			}
-		}
 		.images-container{
 			.js-qv-mask{
-				max-height: 295px;
+				max-height: 250px;
 			}
 		}
-	}
-	.jmsflashsales-tab2 .main{
-		padding: 20px 0;
 	}
 	div.modal-dialog.cover_product1 {
 		width: 750px;
@@ -5405,6 +5464,23 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 767px){
+	.back-to-top {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+	div.modal-dialog.cover_product1{
+		max-width: 420px;
+		padding: 0 !important;
+		.left{
+			margin-bottom: 30px;
+		}
+		.close{
+			right: -30px;
+			top: -30px;
+			color: #fff;
+		}
+	}
 	div.jms-slider-wrapper .fs-pager-wrapper{
 		display: none;
 	}
@@ -5524,6 +5600,37 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	div.modal-dialog.cover_product1{
+		max-width: 290px;
+		.close{
+			display: none;
+		}
+		.images-container .js-qv-mask{
+			margin-right: 10px;
+		}
+	}
+	div.quickview .modal-body {
+		padding: 10px;
+		#block-reassurance,
+		.product-comments-additional-info{
+			display: none;
+		}
+		.images-container .js-qv-mask {
+			max-height: 220px;
+		}
+		.product-quantity{
+			.input-group.bootstrap-touchspin{
+				width: 100%;
+			}
+			.qty{
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+			.customs {
+				flex-direction: column;
+			}
+		}
+	}
 	.jms-videos iframe{
 		height: 300px;
 	}
@@ -5645,6 +5752,7 @@ a.wishlist_top{
 		.include_content_s {
 		    margin-left: 0;
 		    margin-top: 10px;
+		    text-align: left;
 		}
 	}
 }

@@ -1,6 +1,17 @@
 @import "mixin";
 @import "varians";
 
+@media (min-width: 1800px){
+	.header{
+		.megamenu{
+			width: 57%;
+		}
+		.right-module-header{
+			width: 18%;
+		}
+	}
+}
+
 .cates{
 	margin-top: 93px;
 	.title{
@@ -34,6 +45,7 @@
 	margin-top: 63px;
 }
 .banner{
+	margin-top: 100px;
 	.container-fluid{
 		padding: 0 10px;
 		> .row{
@@ -59,4 +71,7 @@
 			font-weight: 800;
 		}
 	}
+}
+.page-index #footer{
+	margin-top: 10px;
 }

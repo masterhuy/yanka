@@ -307,12 +307,6 @@
     line-height: 50px; } }
 
 @media (max-width: 1199px) {
-  .top-panel p {
-    text-align: center; }
-  .top-panel .social {
-    display: none; }
-  .header .logo > span {
-    padding-bottom: 0; }
   .header .megamenu {
     line-height: 54px; }
     .header .megamenu .addon-box:first-child {
@@ -322,8 +316,6 @@
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%); }
-  .right-module-header .addon-box:nth-child(2), .right-module-header .addon-box:nth-child(3), .right-module-header .addon-box:nth-child(5), .right-module-header .addon-box:nth-child(6) {
-    display: none; }
   .banner-type-1 .jms-banner:hover {
     top: 0; }
   .banner-type-1 .banner-content .text-1 {
@@ -349,17 +341,25 @@
     left: 20px; } }
 
 @media (max-width: 767px) {
+  .banner-type-1 {
+    margin-bottom: 50px; }
   .jms-row.alert-box .alert {
     font-size: 17px; }
-  .banner-type-2 img {
-    width: 100%; }
-  .banner-type-2 .banner-content {
-    top: 15px;
-    left: 20px; }
-  .banner-type-2 .row .row .layout-column:first-child {
-    margin-bottom: 10px; }
-  .banner-type-3 .layout-column:first-child {
-    margin-bottom: 10px; } }
+  .special-offer {
+    margin-top: 40px; }
+  .banner-type-2 {
+    margin-top: 50px; }
+    .banner-type-2 img {
+      width: 100%; }
+    .banner-type-2 .banner-content {
+      top: 15px;
+      left: 20px; }
+    .banner-type-2 .row .row .layout-column:first-child {
+      margin-bottom: 10px; }
+  .banner-type-3 {
+    margin-top: 50px; }
+    .banner-type-3 .layout-column:first-child {
+      margin-bottom: 10px; } }
 
 @media (max-width: 481px) {
   .fraction-slider .slide-3 .fs_obj, .fraction-slider .slide-2 .fs_obj {

@@ -31,6 +31,7 @@
     <p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
 {/if}
 <div id="social_block">
+
 	<ul class="find-us">
        	{if $facebook_url != ''}
        		<li class="divider">

@@ -1,3 +1,9 @@
+@media (min-width: 1800px) {
+  .header .megamenu {
+    width: 57%; }
+  .header .right-module-header {
+    width: 18%; } }
+
 .cates {
   margin-top: 93px; }
   .cates .title {
@@ -31,24 +37,27 @@
 .special-offer {
   margin-top: 63px; }
 
-.banner .container-fluid {
-  padding: 0 10px; }
-  .banner .container-fluid > .row {
-    margin-left: -5px;
-    margin-right: -5px; }
+.banner {
+  margin-top: 100px; }
+  .banner .container-fluid {
+    padding: 0 10px; }
+    .banner .container-fluid > .row {
+      margin-left: -5px;
+      margin-right: -5px; }
+  .banner .layout-column {
+    padding: 0 5px; }
+  .banner .banner-content {
+    color: #fff;
+    left: 38px;
+    bottom: 32px;
+    top: auto; }
+    .banner .banner-content .text-1 {
+      font-weight: 800;
+      margin-bottom: 7px; }
+    .banner .banner-content .text-2 {
+      font-size: 36px;
+      line-height: 43px;
+      font-weight: 800; }
 
-.banner .layout-column {
-  padding: 0 5px; }
-
-.banner .banner-content {
-  color: #fff;
-  left: 38px;
-  bottom: 32px;
-  top: auto; }
-  .banner .banner-content .text-1 {
-    font-weight: 800;
-    margin-bottom: 7px; }
-  .banner .banner-content .text-2 {
-    font-size: 36px;
-    line-height: 43px;
-    font-weight: 800; }
+.page-index #footer {
+  margin-top: 10px; }

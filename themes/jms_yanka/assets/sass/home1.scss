@@ -293,18 +293,7 @@
 }
 
 @media (max-width: 1199px){
-	.top-panel{
-		p{
-			text-align: center;
-		}
-		.social{
-			display: none;
-		}
-	}
 	.header{
-		.logo > span{
-			padding-bottom: 0;
-		}
 		.megamenu{
 			line-height: 54px;
 			.addon-box:first-child{
@@ -312,13 +301,6 @@
 				margin: 0;
 				left: 50%;
 				transform: translateX(-50%);
-			}
-		}
-	}
-	.right-module-header{
-		.addon-box{
-			&:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6){
-				display: none;
 			}
 		}
 	}
@@ -361,10 +343,17 @@
 	}
 }
 @media (max-width: 767px){
+	.banner-type-1 {
+		margin-bottom: 50px;
+	}
 	.jms-row.alert-box .alert {
 		font-size: 17px;
 	}
+	.special-offer {
+		margin-top: 40px;
+	}
 	.banner-type-2{
+		margin-top: 50px;
 		img{
 			width: 100%;
 		}
@@ -377,6 +366,7 @@
 		}
 	}
 	.banner-type-3{
+		margin-top: 50px;
 		.layout-column:first-child{
 			margin-bottom: 10px;
 		}

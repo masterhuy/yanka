@@ -116,11 +116,7 @@ class JmsAddonSocial extends JmsAddonBase
     public function returnValue($addon)
     {
         $id_lang = $this->context->language->id;
-    		if(isset($addon->fields[8]->name) && $addon->fields[8]->name != 'instagram_url') {
-    			$instagram_url = $addon->fields[8]->value;
-    		} else {
-    			$instagram_url = '#';
-    		}
+    		
         $addon_title = empty($addon->fields[0]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang);
         $addon_desc = empty($addon->fields[1]->value->$id_lang) ? '' : JmsPageBuilderHelper::decodeHTML($addon->fields[1]->value->$id_lang);
         $this->context->smarty->assign(array(
@@ -133,7 +129,7 @@ class JmsAddonSocial extends JmsAddonBase
                 'youtube_url' => $addon->fields[5]->value,
                 'google_plus_url' => $addon->fields[6]->value,
                 'pinterest_url' => $addon->fields[7]->value,
-                'instagram_url' => $instagram_url
+                'instagram_url' => $addon->fields[8]->value
         ));
         $this->overwrite_tpl = $addon->fields[count($addon->fields)-1]->value;
         $template_path = $this->loadTplPath();

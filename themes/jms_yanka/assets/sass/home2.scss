@@ -29,6 +29,7 @@
 			font-size: 16px;
 			line-height: 25px;
 			margin: 1px 0 0 0;
+			color: #777;
 			+ p .btn-border{
 				margin-top: 14px;
 			}
@@ -51,6 +52,40 @@
 .service{
 	padding: 69px 0 85px;
 }
+.page-index #footer{
+	margin-top: 11px;
+}
 #footer .footer-top {
 	padding-bottom: 65px;
+}
+
+@media (max-width: 1199px) and (min-width: 992px){
+	.jms-banner .banner-content .text-2 {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
+@media (max-width: 767px){
+	.popupal-collections {
+		margin-top: 50px;
+		padding-bottom: 0;
+	}
+	.jms-row.best-seller{
+		.addon-title{
+			padding-top: 50px;
+		}
+		.owl-dots {
+			padding-bottom: 50px;
+		}
+	}
+}
+@media (max-width: 481px){
+	.fraction-slider{
+		.slide-1, .slide-3, .slide-2{
+			.fs_obj{
+				text-align: center;
+			}
+		}
+	}
 }
