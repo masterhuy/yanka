@@ -75,3 +75,34 @@
 .page-index #footer{
 	margin-top: 10px;
 }
+
+@media (max-width: 991px) and (min-width: 768px){
+	.banner{
+		.layout-column:not(:last-child){
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.cates{
+		margin-top: 38px;
+		.container > .row{
+			margin: 0 -10px;
+			.jms-banner{
+				margin-bottom: 20px;
+			}
+			.layout-column{
+				padding: 0 10px;
+			}
+		}
+	}
+	.special-offer{
+		margin-top: 18px;
+	}
+	.banner{
+		margin-top: 47px;
+		.layout-column{
+			margin-bottom: 10px;
+		}
+	}
+}

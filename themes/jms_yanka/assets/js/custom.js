@@ -259,7 +259,8 @@ jQuery(function ($) {
 					items:p_itemsMobile
 				},
 				0:{
-					items:2
+					items:2,
+					margin: 20
 				}
 			},
 			rtl: rtl,

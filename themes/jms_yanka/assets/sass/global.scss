@@ -111,6 +111,7 @@
 				background: $active;
 				margin: auto;
 				font-size: 14px;
+				max-width: 100%;
 				&:hover{
 					background: #333;
 				}
@@ -1234,6 +1235,15 @@
 //
 
 //product layout default
+.other-info{
+	.product-category .editable{
+		position: relative;
+		@include underline(-1, #333, 2)
+		&:hover::before{
+			width: 100%;
+		}
+	}
+}
 .product-detail.default{
 	.images-container{
 		#jmsproductvideo {
@@ -5380,7 +5390,12 @@ a.wishlist_top{
 	.footer-top{
 		padding-bottom: 30px;
 		.row .custom-mobile:not(:first-child){
-			margin-bottom: 40px;
+			margin-bottom: 50px;
+		}
+	}
+	.home_3, .home_4{
+		.footer-top #newsletter_block_left .form-group #newsletter-input{
+			width: 197px;
 		}
 	}
 }
@@ -5464,6 +5479,16 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 767px){
+	.home_3, .home_4{
+		.footer-top{
+			.newsletter{
+				margin-bottom: 25px;
+			}
+		}
+	}
+	.container{
+		padding: 0 20px !important;
+	}
 	.back-to-top {
 		width: 40px;
 		height: 40px;
@@ -5588,9 +5613,6 @@ a.wishlist_top{
 	div.jms-tab .nav{
 		overflow: auto;
 	}
-	.container{
-		padding: 0 15px !important;
-	}
 	input#ajax_advsearch{
 		width: 100%;
 	}
@@ -5600,6 +5622,21 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	.testimonial-box{
+		.testimonial-comment .title{
+			h3{
+				float: none;
+				display: inline-block;
+			}
+			.rating{
+				float: left;
+				margin-bottom: 20px;
+			}
+		}
+		.box-content {
+			padding: 20px;
+		}
+	}
 	div.modal-dialog.cover_product1{
 		max-width: 290px;
 		.close{

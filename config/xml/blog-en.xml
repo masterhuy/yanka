@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Five tips to create an optimized product page</title>
+    <link>https://www.prestashop.com/en/blog/five-tips-to-create-an-optimized-product-page</link>
+    <description>To buy or not to buy? That is the question, when it comes to the success of your PrestaShop eCommerce shop!</description>
+     <pubDate>Fri, 22 Nov 2019 11:33:18 +0100</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-tips-to-create-an-optimized-product-page</guid>
+  </item>
+  <item>
     <title>The Impact of Free Shipping</title>
     <link>https://www.prestashop.com/en/blog/the-impact-of-free-shipping</link>
     <description>As consumers gain access to new technologies like click and collect, grocery delivery apps, and Amazon Prime, their perception of retail shifts drastically.</description>
@@ -76,14 +84,6 @@
      <pubDate>Wed, 23 Oct 2019 14:36:33 +0200</pubDate>
  <dc:creator>NitinSrivastavaen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-shipping-trends-future</guid>
-  </item>
-  <item>
-    <title>How to create a welcome email series for new contacts</title>
-    <link>https://www.prestashop.com/en/blog/create-welcome-email-series-contacts</link>
-    <description>When done right, welcome email series can bring impressive results. This article explains why you should create one for your business and shows a few tips and examples on how to do it right.</description>
-     <pubDate>Mon, 21 Oct 2019 14:20:40 +0200</pubDate>
- <dc:creator>Klimczak</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/create-welcome-email-series-contacts</guid>
   </item>
   </channel>
 </rss>

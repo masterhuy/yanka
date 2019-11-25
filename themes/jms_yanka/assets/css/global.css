@@ -75,7 +75,8 @@
     display: block !important;
     background: #48CAB2;
     margin: auto;
-    font-size: 14px; }
+    font-size: 14px;
+    max-width: 100%; }
     .jms-popup #newsletter_block_left button.btn-default:hover {
       background: #333; }
 
@@ -1023,6 +1024,25 @@
 #left-column #search_widget form, #right-column #search_widget form {
   border: 0;
   background: #f2f2f2; }
+
+.other-info .product-category .editable {
+  position: relative; }
+  .other-info .product-category .editable::before {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background-color: #333;
+    height: 2px;
+    -webkit-transition: width 0.25s;
+    -o-transition: width 0.25s;
+    transition: width 0.25s; }
+  .other-info .product-category .editable:hover::before {
+    width: 100%; }
 
 .product-detail.default .images-container #jmsproductvideo {
   margin-bottom: 0;
@@ -4816,7 +4836,9 @@ a.wishlist_top {
   .footer-top {
     padding-bottom: 30px; }
     .footer-top .row .custom-mobile:not(:first-child) {
-      margin-bottom: 40px; } }
+      margin-bottom: 50px; }
+  .home_3 .footer-top #newsletter_block_left .form-group #newsletter-input, .home_4 .footer-top #newsletter_block_left .form-group #newsletter-input {
+    width: 197px; } }
 
 @media (max-width: 1199px) and (min-width: 992px) {
   #left-column #search_widget input {
@@ -4875,6 +4897,10 @@ a.wishlist_top {
     margin-bottom: 15px; } }
 
 @media (max-width: 767px) {
+  .home_3 .footer-top .newsletter, .home_4 .footer-top .newsletter {
+    margin-bottom: 25px; }
+  .container {
+    padding: 0 20px !important; }
   .back-to-top {
     width: 40px;
     height: 40px;
@@ -4962,8 +4988,6 @@ a.wishlist_top {
     padding: 0 !important; }
   div.jms-tab .nav {
     overflow: auto; }
-  .container {
-    padding: 0 15px !important; }
   input#ajax_advsearch {
     width: 100%; }
   #advsearch_result {
@@ -4971,6 +4995,14 @@ a.wishlist_top {
     min-width: auto !important; } }
 
 @media (max-width: 481px) {
+  .testimonial-box .testimonial-comment .title h3 {
+    float: none;
+    display: inline-block; }
+  .testimonial-box .testimonial-comment .title .rating {
+    float: left;
+    margin-bottom: 20px; }
+  .testimonial-box .box-content {
+    padding: 20px; }
   div.modal-dialog.cover_product1 {
     max-width: 290px; }
     div.modal-dialog.cover_product1 .close {

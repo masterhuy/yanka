@@ -118,9 +118,9 @@
                                 <span class="editable">{Manufacturer::getnamebyid($product.id_manufacturer)}</span>
                             </li>
                         {/if}
-                        <li>
+                        <li class="product-category">
                             <label>{l s='Product Type: '}</label>
-                            <a class="hover-underline editable" href="{url entity='category' id=$product.id_category_default}">
+                            <a class="editable" href="{url entity='category' id=$product.id_category_default}">
                                 {$product.category|escape:'html':'UTF-8'}
                             </a>
                         </li>

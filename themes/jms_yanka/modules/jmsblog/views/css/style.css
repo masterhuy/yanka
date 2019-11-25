@@ -85,6 +85,9 @@
     font-size: 11px;
     margin-bottom: 0;
 }
+.blog-widget ~ .contact-rich{
+	display: none;
+}
 .blog-widget.widget-categories {
 	margin-top: -6px;
 }

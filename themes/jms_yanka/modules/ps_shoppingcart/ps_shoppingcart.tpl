@@ -31,31 +31,33 @@
 			<span class="ajax_cart_no_product" {if $cart.products_count != 0}style="display:none"{/if}>{l s='There is no product' d='Shop.Theme.Actions'}</span>
 			{if $cart.products_count > 0}
 				<span class="title">{l s='My Cart' d='Shop.Theme.Actions'}</span>
+				<ul class="list products cart_block_list">
+					{foreach from=$cart.products item=product}
+						<li>{include 'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' product=$product}</li>
+					{/foreach}
+				</ul>
 			{/if}
-			<ul class="list products cart_block_list">
-				{foreach from=$cart.products item=product}
-					<li>{include 'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' product=$product}</li>
-				{/foreach}
-			</ul>
 		</div>
-		<div class="cart-prices">
-			<div class="checkout-info">
-				{foreach from=$cart.subtotals item="subtotal"}
-					<div class="{if $subtotal.type == ''}hidden {else}$subtotal.type {/if} cart-prices-line">
-						<span class="label">{$subtotal.label}:</span>
-						<span class="value">{$subtotal.value}</span>
-					</div>
-				{/foreach}
+		{if $cart.products_count > 0}
+			<div class="cart-prices">
+				<div class="checkout-info">
+					{foreach from=$cart.subtotals item="subtotal"}
+						<div class="{if $subtotal.type == ''}hidden {else}$subtotal.type {/if} cart-prices-line">
+							<span class="label">{$subtotal.label}:</span>
+							<span class="value">{$subtotal.value}</span>
+						</div>
+					{/foreach}
+				</div>
+				<div class="cart-button">
+					<a class="btn-default" href="{$urls.pages.order}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
+						{l s='PROCEED TO CHECKOUT' d='Shop.Theme.Actions'}
+					</a>
+					<a class="view-cart" href="{$cart_url}" title="{l s='View shopping bag' d='Shop.Theme.Actions'}" rel="nofollow">
+						{l s='View cart' d='Shop.Theme.Actions'}
+					</a> 
+				</div>
 			</div>
-			<div class="cart-button">
-				<a class="btn-default" href="{$urls.pages.order}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
-					{l s='PROCEED TO CHECKOUT' d='Shop.Theme.Actions'}
-				</a>
-				<a class="view-cart" href="{$cart_url}" title="{l s='View shopping bag' d='Shop.Theme.Actions'}" rel="nofollow">
-					{l s='View cart' d='Shop.Theme.Actions'}
-				</a> 
-			</div>
-		</div>
+		{/if}
 	</div>
 	<div class="bg-overlay"></div>
 </div>

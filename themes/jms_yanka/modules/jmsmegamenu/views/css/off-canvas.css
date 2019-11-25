@@ -110,11 +110,12 @@
     background: transparent;
     margin-left: auto;
 }
-#off-canvas-menu #search_widget button i{
-    font-size: 18px;
+#off-canvas-menu #search_widget button svg{
+    width: 24px;
+    height: 24px;
 }
 #off-canvas-menu #search_widget input {
-    width: 189px;
+    width: 100%;
     border: 0;
     border-radius: 0;
     height: 37px;
@@ -123,6 +124,9 @@
     font-size: 18px;
     color: #333;
     padding: 0 0 8px;
+}
+#off-canvas-menu #search_widget input:focus{
+    box-shadow: unset;
 }
 #off-canvas-menu #search_widget input::placeholder{
     color: #333;
