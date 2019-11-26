@@ -328,7 +328,8 @@
 .search-no-popup #search-form {
   display: block !important;
   position: static;
-  opacity: 1; }
+  opacity: 1;
+  overflow: visible; }
 
 .search-no-popup .search-box {
   padding: 0 9px 0 18px;
@@ -4901,10 +4902,12 @@ a.wishlist_top {
     margin-bottom: 25px; }
   .container {
     padding: 0 20px !important; }
-  .back-to-top {
+  div.back-to-top {
     width: 40px;
     height: 40px;
     line-height: 40px; }
+  .instagram_block .instagram-block > div {
+    width: 25%; }
   div.modal-dialog.cover_product1 {
     max-width: 420px;
     padding: 0 !important; }
@@ -4952,7 +4955,7 @@ a.wishlist_top {
         transform: rotate(45deg); }
       #footer .custom-mobile .addon-title.mobile h3 i {
         position: absolute;
-        right: 0;
+        right: 4px;
         top: 0;
         -webkit-transform: unset;
         -ms-transform: unset;
@@ -4995,6 +4998,8 @@ a.wishlist_top {
     min-width: auto !important; } }
 
 @media (max-width: 481px) {
+  .instagram_block .instagram-block > div {
+    width: 50%; }
   .testimonial-box .testimonial-comment .title h3 {
     float: none;
     display: inline-block; }

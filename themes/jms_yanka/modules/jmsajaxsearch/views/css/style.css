@@ -127,7 +127,7 @@
     color: #333;
 }
 #search_result {
-
+    background: #fff;
 }
 #search_result .nbcomments {
     display: none;
@@ -147,7 +147,6 @@
     background: none repeat scroll 0 0 #fff;
     position: relative;
     width: 100%;
-    padding: 30px 0;
 }
 #search_result .result_div .item {
     width: 16.666666667%;
@@ -219,5 +218,6 @@
 @media (max-height: 720px){
     #search_result .result_div {
         max-height: 405px;
+        overflow: auto;
     }
 }

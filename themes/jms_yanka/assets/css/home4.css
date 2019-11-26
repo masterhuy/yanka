@@ -1,3 +1,41 @@
+@media (min-width: 1200px) {
+  .jms-row.header.fixed {
+    left: auto;
+    width: auto;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    -webkit-animation-duration: 0;
+    animation-duration: 0;
+    padding: 8.5px 0;
+    z-index: 1000; }
+    .jms-row.header.fixed .search-no-popup {
+      display: none; }
+    .jms-row.header.fixed .right-module-header {
+      width: 100%; }
+      .jms-row.header.fixed .right-module-header .addon-box:nth-child(4) {
+        display: none; }
+  .jms-row.menu.fixed {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-animation-duration: 0;
+    animation-duration: 0;
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    z-index: 999; }
+    .jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+      padding-left: 0; }
+    .jms-row.menu.fixed .jms-megamenu .nav > li > a {
+      line-height: 54px; }
+      .jms-row.menu.fixed .jms-megamenu .nav > li > a::before {
+        bottom: 17px; } }
+
 .header {
   background: #fff;
   padding: 18px 0 0; }
@@ -94,24 +132,16 @@
   padding-bottom: 66px; }
 
 @media (max-width: 1199px) {
-  .jms-row.menu.fixed {
-    position: fixed;
-    top: 12px;
-    bottom: auto;
-    -webkit-animation-duration: 0.8s;
-    animation-duration: 0.8s;
-    -webkit-animation-name: slideDown;
-    animation-name: slideDown;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    z-index: 999; }
   div#jms_ajax_search {
     position: relative; }
   #header {
     position: relative; }
-  .header {
+  .jms-row.header {
     padding: 8.5px 0; }
-    .header .logo {
+    .jms-row.header.fixed {
+      -webkit-animation-duration: 0s;
+      animation-duration: 0s; }
+    .jms-row.header .logo {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -119,49 +149,30 @@
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 9; }
-    .header .search-no-popup .addon-box:nth-child(2) {
+    .jms-row.header .search-no-popup .addon-box:nth-child(2) {
       display: none; }
-    .header .right-module-header .addon-box:nth-child(1), .header .right-module-header .addon-box:nth-child(2), .header .right-module-header .addon-box:nth-child(4), .header .right-module-header .addon-box:nth-child(5) {
+    .jms-row.header .right-module-header .addon-box:nth-child(1), .jms-row.header .right-module-header .addon-box:nth-child(2), .jms-row.header .right-module-header .addon-box:nth-child(4), .jms-row.header .right-module-header .addon-box:nth-child(5) {
       display: none; }
   .jms-row.menu {
     margin: 0;
     position: absolute;
-    bottom: 12px; } }
+    bottom: 12px;
+    z-index: 99; }
+    .jms-row.menu.fixed {
+      position: fixed;
+      top: 12px;
+      bottom: auto;
+      -webkit-animation-duration: 0s;
+      animation-duration: 0s;
+      -webkit-animation-name: slideDown;
+      animation-name: slideDown;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      z-index: 999; }
+      .jms-row.menu.fixed.changed {
+        z-index: 991; } }
 
 @media (max-width: 481px) {
   .jms-row.banner .banner-content {
     top: 20px;
     left: 20px; } }
-
-@media (min-width: 1200px) {
-  .jms-row.header.fixed {
-    left: auto;
-    width: auto;
-    -webkit-box-shadow: unset;
-    box-shadow: unset;
-    -webkit-animation-duration: 0;
-    animation-duration: 0;
-    padding: 5px 0;
-    z-index: 1000; }
-    .jms-row.header.fixed .search-no-popup {
-      opacity: 0;
-      visibility: hidden; }
-    .jms-row.header.fixed .right-module-header .addon-box:nth-child(4) {
-      display: none; }
-  .jms-row.menu.fixed {
-    position: fixed;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    -webkit-animation-duration: 0;
-    animation-duration: 0;
-    -webkit-animation-name: slideDown;
-    animation-name: slideDown;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    z-index: 999; }
-    .jms-row.menu.fixed .jms-megamenu .nav > li > a {
-      line-height: 54px; }
-      .jms-row.menu.fixed .jms-megamenu .nav > li > a::before {
-        bottom: 17px; } }

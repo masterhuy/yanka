@@ -1,11 +1,61 @@
 @import "mixin";
 @import "varians";
 
+@media (min-width: 1200px){
+	.jms-row.header.fixed{
+		left: auto;
+		width: auto;
+		box-shadow: unset;
+		animation-duration: 0;
+		padding: 8.5px 0;
+		z-index: 1000;
+		.left-module-header, .col-logo{
+			display: none;
+		}
+		.right-module-header{
+			width: 100%;
+			.addon-box{
+				&:nth-child(4){
+					
+				}
+			}
+		}
+	}
+	.jms-row.menu.fixed{
+		position: fixed;
+		margin: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+		animation-duration: 0;
+		animation-name: slideDown;
+		animation-timing-function: ease;
+		z-index: 999;
+		.megamenu.center .jms-megamenu > ul {
+			text-align: left;
+		}
+		.jms-megamenu .nav > li{
+			&.sub-home{
+				padding-left: 0;
+			}
+			> a {
+				line-height: 54px;
+				&::before{
+					bottom: 17px;
+				}
+			}
+		}
+	}
+}
 .header{
 	padding: 17px 0 0;
 	.logo > span{
 		padding-bottom: 0;
 	}
+}
+.menu{
+	background: #fff;
 }
 .left-module-header{
 	top: 3px;
@@ -25,6 +75,9 @@
 }
 .jms-megamenu .nav > li > a{
 	line-height: 64px;
+	&::before{
+		bottom: 20px;
+	}
 }
 .banner{
 	margin-top: 10px;
@@ -101,9 +154,83 @@
 		.copyright{
 			margin-bottom: 29px;
 		}
-		ul li{
-			margin: 0;
-			margin: 0 4.75px;
+		ul{
+			justify-content: center;
+			li{
+				margin: 0;
+				margin: 0 4.75px;
+			}
 		}
+	}
+}
+
+@media (max-width: 1199px){
+	#header{
+		position: relative;
+	}
+	.jms-row.header{
+		padding: 8.5px 0;
+		&.fixed{
+			animation-duration: 0s;
+		}
+		.left-module-header{
+			opacity: 0;
+			visibility: hidden;
+			.addon-box{
+				display: none;
+			}
+		}
+		.right-module-header{
+			.addon-box{
+				&:nth-child(2), &:nth-child(3){
+					display: none;
+				}
+			}
+		}
+	}
+	.ajax_cart_quantity{
+		right: -12px;
+	}
+	div#jms_ajax_search #search-form{
+		top: -10px;
+	}
+	.jms-row.menu{
+		margin: 0;
+		position: absolute;
+		bottom: 12px;
+		z-index: 99;
+		&.fixed{
+			position: fixed;
+			top: 12px;
+			bottom: auto;
+			animation-duration: 0s;
+			animation-name: slideDown;
+			animation-timing-function: ease;
+			z-index: 999;
+			&.changed{
+				z-index: 991;
+			}
+		}
+	}
+}
+@media (max-width: 991px){
+	#footer #newsletter_block_left .form-group{
+		width: 100%;
+	}
+}
+@media (max-width: 767px){
+	.banner .jms-banner{
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 481px){
+	.jms-row.top-product {
+		margin-top: 30px;
+	}
+	.brand-carousel{
+		padding: 30px 0;
+	}
+	#footer{
+		padding-top: 50px;
 	}
 }

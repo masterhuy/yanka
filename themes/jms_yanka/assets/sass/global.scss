@@ -392,6 +392,7 @@
 		display: block !important;
 		position: static;
 		opacity: 1;
+		overflow: visible;
 	}
 	.search-box{
 		padding: 0 9px 0 18px;
@@ -5489,10 +5490,13 @@ a.wishlist_top{
 	.container{
 		padding: 0 20px !important;
 	}
-	.back-to-top {
+	div.back-to-top {
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
+	}
+	.instagram_block .instagram-block > div{
+		width: 25%;
 	}
 	div.modal-dialog.cover_product1{
 		max-width: 420px;
@@ -5565,7 +5569,7 @@ a.wishlist_top{
 					h3{
 						i{
 							position: absolute;
-							right: 0;
+							right: 4px;
 							top: 0;
 							transform: unset;
 							transition: .4s all;
@@ -5622,6 +5626,9 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	.instagram_block .instagram-block > div{
+		width: 50%;
+	}
 	.testimonial-box{
 		.testimonial-comment .title{
 			h3{
