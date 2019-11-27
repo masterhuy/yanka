@@ -27,6 +27,28 @@
 .jms-vermegamenu {
     padding: 0;
 }
+.jms-vermegamenu .mega-col-nav .mod-content {
+    position: relative;
+}
+.jms-vermegamenu .sub-home .mega-col-nav .mod-content .image {
+    width: auto;
+    position: absolute;
+    right: -34px;
+    top: -5px;
+    visibility: hidden;
+    z-index: 3;
+    max-width: 141px;
+    -webkit-box-shadow: 0 0 10px rgba(51, 51, 51, 0.06);
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.06);
+    opacity: 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.jms-vermegamenu .sub-home .mega-col-nav li:hover .mod-content .image {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
 .jms-vermegamenu .nav {
 	text-align:right;
 	width:100%;
@@ -40,6 +62,7 @@
     padding: 0;
     vertical-align: top;
     text-align: left;
+    position: static;
 }
 .mega-dropdown-inner .group.more a{
     padding: 0;
@@ -50,6 +73,17 @@
     position: relative;
     top: 2px;
     padding-right: 9px;
+}
+.jms-vermegamenu .nav > .menu-item .mega-nav li > a, 
+.jms-vermegamenu .nav > .menu-item .mega-nav li .mod-content .title {
+    border-bottom: medium none;
+    line-height: 31px;
+    padding: 0;
+    letter-spacing: 0;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    color: #777;
 }
 .jms-vermegamenu .nav > li > a {
     font-size: 13px;
@@ -110,7 +144,7 @@
 	opacity:0;
 	visibility:hidden;
 	transition:all 0.5s;
-	top:0px;
+	top:0;
 	left:100%;
 }
 .open > .dropdown-menu {
@@ -151,7 +185,8 @@
     border-radius: 0;
 	
 }
-.jms-vermegamenu .mega-inner {    
+.jms-vermegamenu .mega-inner {
+
 }
 .jms-vermegamenu .mega-nav, .jms-vermegamenu  .dropdown-menu .mega-nav {
     list-style: outside none none;
@@ -162,7 +197,6 @@
 .jms-vermegamenu .mega-nav li > a, .jms-vermegamenu .mega-nav li > span {
     background: #fff none repeat scroll 0 0;
     border-radius: 0;
-    color: #907459;
     font-size: 15px;
     display: block;
     text-decoration: none;
@@ -171,8 +205,6 @@
 }
 .jms-vermegamenu .mega-nav li {
     line-height: 23px;
-    padding: 3px 0px;
-    padding-bottom: 2px;
 }
 .jms-vermegamenu .mega-nav li:last-child {
 	margin-bottom:0px;
@@ -229,11 +261,13 @@
 .jms-vermegamenu .mega-col-nav.image a{
     padding-left: 0 !important;
 }
-.jms-vermegamenu .mega-nav li.group > a {
+.jms-vermegamenu .nav > .menu-item .mega-nav li.group > a {
     text-transform: capitalize;
-    font-size: 22px;
-    font-weight: 500;
-    color: #603813;
+    font-size: 18px;
+    font-weight: 800;
+    color: #333;
+    padding-bottom: 11px;
+    padding-top: 8px;
 }
 .jms-vermegamenu .mega-nav li.group.all{
     margin-bottom: 0;
@@ -257,8 +291,6 @@
 }
 .jms-vermegamenu .mega-nav > li > ul > li.group,
 .jms-vermegamenu .mega-nav > li.group {
-    margin-bottom: 15px;
-    margin-top: 1px;
 	position:relative;
 }
 

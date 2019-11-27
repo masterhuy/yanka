@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Four tips for better creative content on Facebook ads</title>
+    <link>https://www.prestashop.com/en/blog/four-tips-better-creative-content-facebook-ads</link>
+    <description>Facebook has more than 2.41 billion monthly active users who create, share and like different content each and every day. It’s one of the most used marketing tools for e-commerce industry.</description>
+     <pubDate>Mon, 25 Nov 2019 12:08:22 +0100</pubDate>
+ <dc:creator>Invertus</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/four-tips-better-creative-content-facebook-ads</guid>
+  </item>
+  <item>
     <title>Five tips to create an optimized product page</title>
     <link>https://www.prestashop.com/en/blog/five-tips-to-create-an-optimized-product-page</link>
     <description>To buy or not to buy? That is the question, when it comes to the success of your PrestaShop eCommerce shop!</description>
@@ -76,14 +84,6 @@
      <pubDate>Thu, 24 Oct 2019 18:12:16 +0200</pubDate>
  <dc:creator>Code Sphere Network</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/tips-to-expand-internationally</guid>
-  </item>
-  <item>
-    <title>E-commerce Shipping: Trends and Future</title>
-    <link>https://www.prestashop.com/en/blog/e-commerce-shipping-trends-future</link>
-    <description>Nothing provides more satisfaction to online shoppers than a quick delivery.</description>
-     <pubDate>Wed, 23 Oct 2019 14:36:33 +0200</pubDate>
- <dc:creator>NitinSrivastavaen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-shipping-trends-future</guid>
   </item>
   </channel>
 </rss>

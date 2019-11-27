@@ -43,6 +43,9 @@
 	> a{
 		line-height: 40px;
 		color: #fff;
+		&::before{
+			bottom: 8px;
+		}
 	}
 }
 

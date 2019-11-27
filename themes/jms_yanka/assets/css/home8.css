@@ -49,6 +49,8 @@
 .jms-megamenu .nav > li > a {
   line-height: 40px;
   color: #fff; }
+  .jms-megamenu .nav > li > a::before {
+    bottom: 8px; }
 
 .banner {
   margin-top: 10px; }

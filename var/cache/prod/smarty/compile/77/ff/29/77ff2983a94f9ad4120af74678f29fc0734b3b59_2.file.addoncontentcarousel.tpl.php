@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-26 05:26:39
+/* Smarty version 3.1.33, created on 2019-11-27 05:27:30
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addoncontentcarousel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ddcfddf7b4e83_26199921',
+  'unifunc' => 'content_5dde4f92434b58_17766142',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ddcfddf7b4e83_26199921 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dde4f92434b58_17766142 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var ct_items = <?php if ($_smarty_tpl->tpl_vars['items_show']->value) {

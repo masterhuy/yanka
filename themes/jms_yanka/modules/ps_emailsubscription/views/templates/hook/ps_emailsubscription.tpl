@@ -36,7 +36,7 @@
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg} {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Your email address' d='Shop.Forms.Labels'}" />
+						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" required name="email" size="18" value="{$value}" placeholder="{l s='Your email address' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter">
 							<span class="pt-icon">
 								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">

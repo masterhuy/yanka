@@ -95,7 +95,7 @@ a.collapse-expand:hover {
     margin-right: 20px;	
 }	
 .jms-vermegamenu .nav > li > a  {
-	background-color: #ebebeb;
+	background-color: #e5e5e5;
     color: #555555;
 	border: 1px solid #ccc;
 	font-weight:bold;
@@ -210,7 +210,12 @@ a.collapse-expand:hover {
     right: 100%;
 }
 .jms-vermegamenu .menu-align-center > .dropdown-menu {
-  left: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
 }
 .jms-vermegamenu .mega-nav > .mega.menu-align-left > .dropdown-menu {
 	left: 100%;

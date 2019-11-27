@@ -438,10 +438,6 @@ div.jms-megamenu .dropdown-menu::before{
 #off-canvas-menu .mod-content .banner-content{
     bottom: 23px;
 }
-.mega-col-nav > .mega-inner > ul > li .mod-content .desc,
-#off-canvas-menu .mod-content .desc{
-    color: #858585;
-}
 .mega-col-nav > .mega-inner > ul > li .mod-content a{
     display: block;
     overflow: hidden;
