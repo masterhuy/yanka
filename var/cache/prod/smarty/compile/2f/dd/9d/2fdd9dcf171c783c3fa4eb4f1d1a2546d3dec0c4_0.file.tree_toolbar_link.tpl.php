@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-27 05:13:23
+/* Smarty version 3.1.33, created on 2019-11-28 05:08:31
   from 'D:\xamppp\htdocs\jms_yanka\admin35718dncn\themes\default\template\helpers\tree\tree_toolbar_link.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dde4c430d78b1_87839164',
+  'unifunc' => 'content_5ddf9c9f011e16_11684309',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dde4c430d78b1_87839164 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ddf9c9f011e16_11684309 (Smarty_Internal_Template $_smarty_tpl) {
 ?><a href="<?php echo $_smarty_tpl->tpl_vars['link']->value;?>
 "<?php if (isset($_smarty_tpl->tpl_vars['action']->value)) {?> onclick="<?php echo $_smarty_tpl->tpl_vars['action']->value;?>
 "<?php }

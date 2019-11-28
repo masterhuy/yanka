@@ -85,6 +85,10 @@
     font-size: 16px;
     color: #777;
 }
+.jms-vermegamenu .nav > .menu-item .mega-nav li > a:hover, 
+.jms-vermegamenu .nav > .menu-item .mega-nav li .mod-content .title:hover {
+    color: #48CAB2;
+}
 .jms-vermegamenu .nav > li > a {
     font-size: 13px;
     line-height: 22px;
@@ -203,9 +207,6 @@
     text-transform: capitalize;
     line-height: 25px;
 }
-.jms-vermegamenu .mega-nav li {
-    line-height: 23px;
-}
 .jms-vermegamenu .mega-nav li:last-child {
 	margin-bottom:0px;
 }
@@ -220,7 +221,7 @@
 }
 .jms-vermegamenu .dropdown-menu {
     background: #fff;
-    min-width: 400px;
+    min-width: 309px;
     border: 0;
 }
 .jms-vermegamenu .open > .dropdown-menu{
@@ -306,6 +307,7 @@
 .jms-vermegamenu .dropdown-menu .dropdown-menu {
     margin-left: 0px;
     left: calc(100% + 30px);
+    min-width: 280px;
 }
 .mega-nav > .mega {
 	position:relative;

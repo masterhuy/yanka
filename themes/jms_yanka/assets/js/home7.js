@@ -10,7 +10,6 @@
 */
 $(document).ready(function() {
     var menu = $(".jms-row.menu");
-    var w = $(window).width();
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 180){

@@ -1,19 +1,37 @@
 @import "mixin";
 @import "varians";
 
+@media (min-width: 1200px){
+	.jms-row.header.fixed{
+		.megamenu{
+			.addon-box:first-child{
+				display: none;
+			}
+		}
+	}
+}
 .header{
-	.container > .row{
-		display: flex;
-		align-items: center;
+	.container{
+		position: relative;
+		> .row{
+			display: flex;
+			align-items: center;
+		}
 	}
 	.megamenu{
 		display: flex;
 		align-items: center;
+		position: static;
 		.addon-box{
 			&:first-child{
 				margin-right: 27px;
 			}
 		}
+	}
+	.jms-megamenu .nav > li.item-fullwidth > .dropdown-menu{
+		width: calc(100% - 30px);
+		padding-left: 54px;
+		padding-right: 54px;
 	}
 	.right-module-header .addon-box:last-child{
 		margin-right: 0;
@@ -21,7 +39,7 @@
 	}
 }
 .ajax_cart_quantity{
-	right: 4px;
+	right: -4px;
 }
 .banner{
 	margin-top: 10px;
@@ -61,4 +79,39 @@
 }
 #footer .footer-top{
 	padding-bottom: 65px;
+}
+
+@media (max-width: 1199px){
+	.header{
+		.megamenu{
+			line-height: 54px;
+			.addon-box:first-child{
+				position: absolute;
+				margin: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.right-module-header{
+			.addon-box:nth-child(2){
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.jms-row.banner{
+		.layout-column{
+			margin-bottom: 20px;
+		}
+	}
+	.page-index #footer{
+		margin-top: 0;
+	}
+}
+@media (max-width: 481px){
+	.special-offer{
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
 }

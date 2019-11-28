@@ -181,8 +181,7 @@
     width: 100%;
 }
 #search_result .result_div .price {
-    width: 100%;
-    line-height: 1;
+    display: none;
 }
 #search_result .content_price{
     line-height: 1;
@@ -206,6 +205,10 @@
 	padding:0;
 	margin:0;
 }
+#search_result .result_div .right-info a{
+    font-size: 16px;
+    line-height: 23px;
+}
 #search_result .result_div .right-info.full{
 	width:100%;
 }
@@ -219,5 +222,13 @@
     #search_result .result_div {
         max-height: 405px;
         overflow: auto;
+    }
+}
+@media (min-width: 1200px){
+    #search_result .results {
+        margin: 0 -15px;
+    }
+    #search_result .result_div {
+        margin-top: 30px;
     }
 }

@@ -218,6 +218,10 @@ div.jms-megamenu .dropdown-menu::before{
     left: auto;
     right: 100%;
 }
+.jms-megamenu .mega-nav > .mega > .dropdown-menu .dropdown-menu .dropdown-menu .dropdown-menu .dropdown-menu{
+    left: 100%;
+    right: auto;
+}
 .jms-megamenu .menu-item.item-fullwidth .mega-nav > .mega .mega > .dropdown-menu{
     left: 100%;
     right: auto;

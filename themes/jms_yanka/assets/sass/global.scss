@@ -227,6 +227,11 @@
 			position: static;
 		}
 	}
+	.container > .row{
+		.layout-column{
+			position: static;
+		}
+	}
 }
 //
 
@@ -398,6 +403,7 @@
 		padding: 0 9px 0 18px;
 		border: 1px solid #ebebeb;
 		display: inline-block;
+		position: relative;
 	}
 	#jms_ajax_search{
 		.modal-content{
@@ -434,6 +440,10 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 			.result_div{
 				padding: 20px;
+				margin-top: 0;
+				.results{
+					margin: 0;
+				}
 				.item{
 					padding: 0;
 					width: 100%;
@@ -867,21 +877,23 @@
 		display: none;
 	}
 	.form-group{
-		display: flex;
-		border: 1px solid #ebebeb;
 		margin-bottom: 13px;
 		margin-top: 6px;
+		position: relative;
 		#newsletter-input{
-			height: 42px;
-			border: 0;
+			border: 1px solid #ebebeb;
 			margin: 0;
+			padding-right: 44px;
 		}
 		button{
 			border: 0;
-			background: #fff;
-			height: 42px;
+			background: transparent;
+			height: 44px;
 			min-width: 44px;
 			max-width: 44px;
+			position: absolute;
+			right: 0;
+			top: 0;
 			svg{
 				width: 24px;
 				height: 24px;
@@ -5276,7 +5288,7 @@ a.wishlist_top{
 			i{
 				position: absolute;
 				right: 20px;
-				top: 13px;
+				top: 15px;
 				z-index: 99;
 				svg{
 					width: 24px;
@@ -5289,7 +5301,6 @@ a.wishlist_top{
 			box-shadow: unset;
 			transform: unset;
 			width: 100%;
-			box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.04);
 		}
 		.modal-content{
 			max-width: 100%;
@@ -5305,6 +5316,7 @@ a.wishlist_top{
 			font-size: 16px;
 			color: #777;
 			background: transparent;
+			height: 54px;
 			&::placeholder{
 				color: #777;
 			}
@@ -5314,7 +5326,7 @@ a.wishlist_top{
 			padding: 0 10px;
 			background: #fff;
 			.result_div{
-				padding: 10px 0 30px;
+				padding: 10px 0 0;
 				.item{
 					width: 100%;
 					display: flex;
@@ -5395,7 +5407,7 @@ a.wishlist_top{
 			width: 315px;
 		}
 	}
-	.ajax_cart_quantity{
+	span.ajax_cart_quantity{
 		background: transparent;
 		color: #333;
 		top: -8px;

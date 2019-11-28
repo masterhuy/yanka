@@ -1,6 +1,57 @@
 @import "mixin";
 @import "varians";
 
+
+@media (min-width: 1200px){
+	.jms-row.header.fixed{
+		left: auto;
+		width: auto;
+		box-shadow: unset;
+		animation-duration: 0;
+		padding: 8.5px 0;
+		z-index: 1000;
+		.search-no-popup, .col-logo{
+			display: none;
+		}
+		.right-module-header{
+			width: 100%;
+			.addon-box{
+				&:nth-child(4){
+					display: none;
+				}
+			}
+		}
+	}
+	.jms-row.menu.fixed{
+		background: #fff;
+		position: fixed;
+		margin: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+		animation-duration: 0;
+		animation-name: slideDown;
+		animation-timing-function: ease;
+		z-index: 999;
+		.container-fluid > .row{
+			display: flex;
+			align-items: center;
+		}
+		.jms-megamenu .nav > li{
+			&.sub-home{
+				padding-left: 0;
+			}
+			> a {
+				color: #333;
+				line-height: 54px;
+				&::before{
+					bottom: 17px;
+				}
+			}
+		}
+	}
+}
 .header{
 	padding: 18px 0;
 }
@@ -107,11 +158,75 @@
 	margin-top: 0;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1540px){
 	.vermegamenu{
 		width: 13.1%;
 	}
 	.megamenu{
 		width: 70.2333333%;
+	}
+}
+@media (max-width: 1199px){
+	div#jms_ajax_search{
+		position: relative;
+	}
+	#header{
+		position: relative;
+	}
+	.jms-row.header{
+		padding: 8.5px 0;
+		&.fixed{
+			animation-duration: 0s;
+		}
+		.col-logo{
+			order: 2;
+			text-align: center;
+		}
+		.search-no-popup{
+			order: 1;
+			.addon-box{
+				display: none;
+			}
+		}
+		.right-module-header{
+			order: 3;
+			.addon-box{
+				&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5){
+					display: none;
+				}
+			}
+		}
+	}
+	.jms-row.menu{
+		background: transparent;
+		margin: 0;
+		position: absolute;
+		bottom: 12px;
+		z-index: 99;
+		&.fixed{
+			position: fixed;
+			top: 12px;
+			bottom: auto;
+			animation-duration: 0s;
+			animation-name: slideDown;
+			animation-timing-function: ease;
+			z-index: 999;
+			&.changed{
+				z-index: 991;
+			}
+		}
+	}
+	.jms-row.banner .banner-content {
+		top: 12px;
+		left: 20px;
+	}
+}
+@media (max-width: 481px){
+	.top-product, .special-offer {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	.blog{
+		padding: 40px 33px;
 	}
 }
