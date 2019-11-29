@@ -4684,7 +4684,10 @@ a.wishlist_top {
     #footer .footer-bottom ul {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
       #footer .footer-bottom ul li {
         display: inline-block;
         margin-right: 14.5px; }

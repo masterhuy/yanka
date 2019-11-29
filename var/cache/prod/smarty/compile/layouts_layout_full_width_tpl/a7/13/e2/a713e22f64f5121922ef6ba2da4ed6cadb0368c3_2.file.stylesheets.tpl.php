@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-28 05:29:59
+/* Smarty version 3.1.33, created on 2019-11-29 03:42:47
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ddfa1a730ebb9_34775952',
+  'unifunc' => 'content_5de0da0756a1d9_32950152',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ddfa1a730ebb9_34775952 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de0da0756a1d9_32950152 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
