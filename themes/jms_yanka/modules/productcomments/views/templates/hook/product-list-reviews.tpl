@@ -57,9 +57,9 @@
 {/if}
 
 {if $nb_comments != 0}
-{* Rich snippet rating is displayed via php/smarty meaning it will be cached (for example on homepage) *}
-<div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
-    <meta itemprop="reviewCount" content="{$nb_comments}" />
-    <meta itemprop="ratingValue" content="{$average_grade}" />
-</div>
+    {* Rich snippet rating is displayed via php/smarty meaning it will be cached (for example on homepage) *}
+    <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+        <meta itemprop="reviewCount" content="{$nb_comments}" />
+        <meta itemprop="ratingValue" content="{$average_grade}" />
+    </div>
 {/if}

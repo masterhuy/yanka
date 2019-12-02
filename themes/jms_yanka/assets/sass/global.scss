@@ -619,8 +619,8 @@
 		line-height: 26px;
 		text-align: left;
 	}
-	.content_price .price.new{
-		margin-left: 6px;
+	.content_price .price.old{
+		margin-right: 6px;
 	}
 	.special{
 		.content_price .price.new{
@@ -4459,6 +4459,9 @@ a.wishlist_top{
 			}
 		}
 	}
+	.ajax_cart_no_product {
+		font-size: 16px;
+	}
 }
 .cart-icon{
 	display: inline-flex;
@@ -5193,8 +5196,6 @@ a.wishlist_top{
 			}
 		}
 		ul{
-			display: flex;
-			justify-content: center;
 			li{
 				display: inline-block;
 				margin-right: 14.5px;

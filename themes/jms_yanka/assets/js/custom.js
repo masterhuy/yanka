@@ -393,7 +393,7 @@ jQuery(function ($) {
 					items:p2_itemsMobile
 				},
 				0:{
-					items:2
+					items:1
 				}
 			},
 			rtl: rtl,

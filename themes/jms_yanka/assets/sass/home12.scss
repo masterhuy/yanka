@@ -1,6 +1,25 @@
 @import "mixin";
 @import "varians";
 
+.jms-row.header{
+	position: relative;
+	margin-bottom: -80px;
+	z-index: 999;
+	.logo{
+		color: #fff;
+	}
+	.jms-megamenu .nav > li > a{
+		color: #fff;
+	}
+	.right-module-header{
+		svg{
+			color: #fff;
+		}
+		.dropdown-toggle{
+			color: #fff;
+		}
+	}
+}
 .banner-type-1{
 	margin-top: 10px;
 	.container-fluid{
@@ -68,6 +87,9 @@
 			font-size: 14px;
 		}
 	}
+}
+.page-index #footer{
+	margin-top: 10px;
 }
 #footer{
 	padding: 50px 0;

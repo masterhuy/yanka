@@ -1,3 +1,16 @@
+.jms-row.header {
+  position: relative;
+  margin-bottom: -80px;
+  z-index: 999; }
+  .jms-row.header .logo {
+    color: #fff; }
+  .jms-row.header .jms-megamenu .nav > li > a {
+    color: #fff; }
+  .jms-row.header .right-module-header svg {
+    color: #fff; }
+  .jms-row.header .right-module-header .dropdown-toggle {
+    color: #fff; }
+
 .banner-type-1 {
   margin-top: 10px; }
   .banner-type-1 .container-fluid {
@@ -66,6 +79,9 @@
     .promo-fullwidth .content .btn-shopnow {
       padding: 5px 31px;
       font-size: 14px; }
+
+.page-index #footer {
+  margin-top: 10px; }
 
 #footer {
   padding: 50px 0; }

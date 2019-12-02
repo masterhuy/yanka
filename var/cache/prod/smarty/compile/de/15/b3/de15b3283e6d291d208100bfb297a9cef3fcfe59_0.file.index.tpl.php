@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-18 05:28:09
+/* Smarty version 3.1.33, created on 2019-12-02 00:01:40
   from 'D:\xamppp\htdocs\jms_yanka\modules\ps_themecusto\views\templates\admin\controllers\configuration\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5da985a9021db1_81445479',
+  'unifunc' => 'content_5de49ab44911e2_01361055',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./elem/modal.tpl' => 1,
   ),
 ),false)) {
-function content_5da985a9021db1_81445479 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de49ab44911e2_01361055 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="psthemecusto">
     <?php if ($_smarty_tpl->tpl_vars['is_ps_ready']->value) {?>

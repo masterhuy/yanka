@@ -22,7 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="product-miniature js-product-miniature product-preview product-box flex-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
+<div class="product-miniature js-product-miniature product-preview product-box flex-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
 	<div class="preview flexbox">
 		{block name='product_thumbnail'}
 		  <a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
