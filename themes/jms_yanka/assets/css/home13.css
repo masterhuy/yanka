@@ -19,43 +19,52 @@
 .page-index .menu {
   margin-bottom: 10px; }
 
-.menu {
-  background: #333; }
-  .menu .buy-theme p {
-    line-height: 40px;
-    margin-bottom: 0;
-    text-align: right;
-    height: 40px; }
-    .menu .buy-theme p a {
-      text-transform: uppercase;
-      color: #48CAB2;
-      font-size: 13px;
-      font-weight: 800;
-      position: relative;
-      letter-spacing: 0.7px; }
-      .menu .buy-theme p a::before {
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 0%;
-        content: '';
-        color: transparent;
-        background-color: #48CAB2;
-        height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
-      .menu .buy-theme p a:hover::before {
-        width: 100%; }
+.menu .container {
+  background: #333;
+  max-width: 1170px; }
 
-.jms-megamenu .nav > li.sub-home {
-  padding-left: 0; }
+.menu .megamenu {
+  position: static; }
+
+.menu .buy-theme p {
+  line-height: 40px;
+  margin-bottom: 0;
+  text-align: right;
+  height: 40px; }
+  .menu .buy-theme p a {
+    text-transform: uppercase;
+    color: #48CAB2;
+    font-size: 13px;
+    font-weight: 800;
+    position: relative;
+    letter-spacing: 0.7px; }
+    .menu .buy-theme p a::before {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '';
+      color: transparent;
+      background-color: #48CAB2;
+      height: 2px;
+      -webkit-transition: width 0.25s;
+      -o-transition: width 0.25s;
+      transition: width 0.25s; }
+    .menu .buy-theme p a:hover::before {
+      width: 100%; }
+
+.jms-megamenu .nav > li.open {
+  background-color: #48CAB2; }
+  .jms-megamenu .nav > li.open > a {
+    color: #fff !important; }
 
 .jms-megamenu .nav > li > a {
   line-height: 40px;
   color: #fff; }
+  .jms-megamenu .nav > li > a::before {
+    display: none; }
 
 .banner {
   margin-top: 60px; }
@@ -82,3 +91,137 @@
 
 #footer .footer-top {
   padding-bottom: 65px; }
+
+@media (min-width: 1200px) {
+  .jms-row.header.fixed {
+    left: auto;
+    width: auto;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    -webkit-animation-duration: 0;
+    animation-duration: 0;
+    padding: 6.5px 0;
+    right: calc((100% - 1170px)/2);
+    margin-right: -15px;
+    z-index: 1000; }
+    .jms-row.header.fixed .search-no-popup, .jms-row.header.fixed .col-logo {
+      display: none; }
+    .jms-row.header.fixed .right-module-header {
+      width: 100%; }
+      .jms-row.header.fixed .right-module-header .addon-box:nth-child(4) {
+        display: none; }
+  .jms-row.menu.fixed {
+    background: #fff;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-animation-duration: 0;
+    animation-duration: 0;
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    z-index: 999; }
+    .jms-row.menu.fixed .container {
+      position: relative;
+      background: #fff;
+      max-width: 1200px; }
+      .jms-row.menu.fixed .container > .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    .jms-row.menu.fixed .jms-megamenu .nav > li.item-fullwidth > .dropdown-menu {
+      padding-left: 54px;
+      padding-right: 54px; }
+    .jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+      padding-left: 0; }
+    .jms-row.menu.fixed .jms-megamenu .nav > li.open {
+      background-color: transparent; }
+      .jms-row.menu.fixed .jms-megamenu .nav > li.open > a {
+        color: #48CAB2 !important; }
+    .jms-row.menu.fixed .jms-megamenu .nav > li > a {
+      color: #333;
+      line-height: 54px; }
+      .jms-row.menu.fixed .jms-megamenu .nav > li > a::before {
+        display: block;
+        bottom: 17px; } }
+
+@media (max-width: 1240px) and (min-width: 1200px) {
+  .menu .container {
+    max-width: 960px; } }
+
+@media (max-width: 1199px) {
+  div#jms_ajax_search {
+    position: relative; }
+  #header {
+    position: relative; }
+  .jms-row.header {
+    padding: 8.5px 0;
+    margin-bottom: 10px; }
+    .jms-row.header .container {
+      max-width: 100%;
+      padding: 0 20px; }
+      .jms-row.header .container > .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    .jms-row.header.fixed {
+      -webkit-animation-duration: 0s;
+      animation-duration: 0s; }
+    .jms-row.header .col-logo {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      text-align: center; }
+    .jms-row.header .search-no-popup {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+      .jms-row.header .search-no-popup .addon-box {
+        display: none; }
+    .jms-row.header .right-module-header {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }
+      .jms-row.header .right-module-header .addon-box:nth-child(1), .jms-row.header .right-module-header .addon-box:nth-child(2), .jms-row.header .right-module-header .addon-box:nth-child(4), .jms-row.header .right-module-header .addon-box:nth-child(5) {
+        display: none; }
+  .jms-row.menu {
+    background: transparent;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 12px;
+    z-index: 99; }
+    .jms-row.menu .container {
+      padding: 0;
+      width: auto;
+      background: transparent; }
+    .jms-row.menu.fixed {
+      position: fixed;
+      top: 12px;
+      bottom: auto;
+      -webkit-animation-duration: 0s;
+      animation-duration: 0s;
+      -webkit-animation-name: slideDown;
+      animation-name: slideDown;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      z-index: 999; }
+      .jms-row.menu.fixed.changed {
+        z-index: 991; } }
+
+@media (max-width: 767px) {
+  .banner .layout-column:not(:last-child) {
+    margin-bottom: 60px; }
+  .jms-row.menu .container {
+    padding: 0 !important; } }

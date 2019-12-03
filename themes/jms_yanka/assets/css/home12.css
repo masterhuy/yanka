@@ -1,15 +1,5 @@
-.jms-row.header {
-  position: relative;
-  margin-bottom: -80px;
-  z-index: 999; }
-  .jms-row.header .logo {
-    color: #fff; }
-  .jms-row.header .jms-megamenu .nav > li > a {
-    color: #fff; }
-  .jms-row.header .right-module-header svg {
-    color: #fff; }
-  .jms-row.header .right-module-header .dropdown-toggle {
-    color: #fff; }
+#header {
+  background: transparent; }
 
 .banner-type-1 {
   margin-top: 10px; }
@@ -33,13 +23,13 @@
     transform: translateY(-50%);
     text-align: center; }
     .banner-type-1 .banner-content .text-1 {
-      font-size: 18px;
+      font-size: 1rem;
       font-weight: 800;
-      margin-bottom: 14px; }
+      margin-bottom: 0.7778rem; }
     .banner-type-1 .banner-content .text-2 {
-      font-size: 36px;
+      font-size: 2rem;
       font-weight: 800;
-      margin-bottom: 9px;
+      margin-bottom: 0.5rem;
       position: relative;
       display: inline-block; }
       .banner-type-1 .banner-content .text-2::before {
@@ -57,28 +47,25 @@
         -o-transition: width 0.25s;
         transition: width 0.25s; }
     .banner-type-1 .banner-content .text-3 {
-      font-size: 18px;
-      margin-bottom: 34px; }
+      font-size: 1rem;
+      margin-bottom: 1.889rem; }
 
 .promo-fullwidth {
-  padding: 172px 0 164px;
+  padding: 9.556rem 0 9.111rem;
   margin: 10px; }
   .promo-fullwidth .content {
     text-align: center;
     color: #fff; }
     .promo-fullwidth .content .text-1 {
-      font-size: 18px;
+      font-size: 1rem;
       margin-bottom: 3px; }
     .promo-fullwidth .content .text-2 {
-      font-size: 64px;
+      font-size: 3.556rem;
       font-weight: 800;
-      line-height: 77px;
+      line-height: 4.278rem;
       margin-bottom: 4px; }
     .promo-fullwidth .content .text-3 {
-      margin-bottom: 33px; }
-    .promo-fullwidth .content .btn-shopnow {
-      padding: 5px 31px;
-      font-size: 14px; }
+      margin-bottom: 1.833rem; }
 
 .page-index #footer {
   margin-top: 10px; }
@@ -97,3 +84,60 @@
       #footer .footer-bottom ul li {
         margin-right: 0;
         margin-left: 9.5px; }
+
+@media (min-width: 1200px) {
+  .jms-row.header {
+    position: relative;
+    margin-bottom: -80px;
+    z-index: 999; }
+    .jms-row.header .logo {
+      color: #fff; }
+    .jms-row.header .jms-megamenu .nav > li > a {
+      color: #fff; }
+    .jms-row.header .right-module-header svg {
+      color: #fff; }
+    .jms-row.header .right-module-header .dropdown-toggle {
+      color: #fff; }
+  .jms-row.header.fixed .jms-megamenu .nav > li.open > a {
+    color: #48CAB2; }
+  .jms-row.header.fixed .jms-megamenu .nav > li > a {
+    color: #333; }
+  .jms-row.header.fixed .right-module-header {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3; }
+    .jms-row.header.fixed .right-module-header svg {
+      color: #333; }
+  .jms-row.header.fixed .col-logo {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .jms-row.header.fixed .megamenu {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+    .jms-row.header.fixed .megamenu.right .jms-megamenu > ul {
+      text-align: left; } }
+
+@media (max-width: 1800px) and (min-width: 1200px) {
+  .header .megamenu {
+    width: 58.33333333%; }
+  .header .right-module-header {
+    width: 25%; } }
+
+@media (max-width: 1199px) {
+  #footer .footer-bottom .copyright, #footer .footer-bottom ul {
+    float: none;
+    text-align: center; } }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 13px; } }
+
+@media (max-width: 767px) {
+  .banner-type-1 .layout-column {
+    margin-bottom: 10px; } }
+
+@media (max-width: 481px) {
+  html {
+    font-size: 10px; } }

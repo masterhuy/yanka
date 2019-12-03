@@ -123,6 +123,14 @@
 	.product-flags{
 		display: none;
 	}
+	.product-preview .color_to_pick_list > .variant-links{
+		justify-content: center;
+		a{
+			width: 44px;
+			height: 44px;
+			margin: 0 5px;
+		}
+	}
 	.product-miniature{
 		.categoryname{
 			display: none;
@@ -286,6 +294,19 @@
 		ul li{
 			margin: 0;
 			margin: 0 4.75px;
+		}
+	}
+}
+.page-index #footer{
+	margin-top: 0;
+}
+
+@media (min-width: 1200px){
+	.jms-row.header.fixed{
+		.megamenu{
+			.addon-box:first-child{
+				display: none;
+			}
 		}
 	}
 }

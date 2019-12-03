@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Expand your e-commerce business with local payments</title>
+    <link>https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</link>
+    <description>Have you ever been in Latin America? Asia Pacific? The Middle East? Africa?</description>
+     <pubDate>Mon, 02 Dec 2019 15:00:23 +0100</pubDate>
+ <dc:creator>Sharon Franko</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</guid>
+  </item>
+  <item>
     <title>Online store: How to meet the customer’s expectations?</title>
     <link>https://www.prestashop.com/en/blog/online-store-meet-customer-expectations</link>
     <description>The human mind is filled with ideas and imaginations. While ideas do not cost anything, the implementation demands a lot of time, effort and money.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 04 Nov 2019 10:57:49 +0100</pubDate>
  <dc:creator>JackieLong</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-common-questions-about-ad-fraud</guid>
-  </item>
-  <item>
-    <title>Ten search marketing tips to fully maximise the 2019 festive season</title>
-    <link>https://www.prestashop.com/en/blog/search-marketing-tips-maximise-2019-festiv-season</link>
-    <description>With the festive high-season just around the corner and with some competitors having launched their seasonal campaigns as early as August (yes, really), Booster Box is here to help.</description>
-     <pubDate>Thu, 31 Oct 2019 17:55:57 +0100</pubDate>
- <dc:creator>Kirsty MacDonald</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/search-marketing-tips-maximise-2019-festiv-season</guid>
   </item>
   </channel>
 </rss>

@@ -43,7 +43,7 @@
   	animation-duration: 0.8s;
 	animation-name: slideDown;
 	animation-timing-function: ease;
-	z-index: 999;
+	z-index: 998;
 	.jms-megamenu .nav > li{
 		&.sub-home{
 			padding-left: 0;
@@ -303,6 +303,9 @@
 		.banner-content{
 			top: 18px;
 			left: 25px;
+			position: absolute;
+			text-align: left;
+			margin-top: 0;
 			.text-1{
 			    font-size: 24px;
 			    font-weight: 800;
@@ -5240,7 +5243,7 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 1199px){
-	.home_1, .home_2, .home_3{
+	.home_1, .home_2, .home_3, .home_12{
 		.right-module-header{
 			.addon-box{
 				&:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6){
@@ -5249,7 +5252,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.home_2, .home_3{
+	.home_2, .home_3, .home_12{
 		.header{
 			.col-logo{
 				order: 2;
