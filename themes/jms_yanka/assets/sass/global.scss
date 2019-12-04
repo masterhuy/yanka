@@ -5199,6 +5199,7 @@ a.wishlist_top{
 			}
 		}
 		ul{
+			display: flex;
 			li{
 				display: inline-block;
 				margin-right: 14.5px;
@@ -5243,7 +5244,7 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 1199px){
-	.home_1, .home_2, .home_3, .home_12{
+	.home_1, .home_2, .home_3, .home_12, .home_14{
 		.right-module-header{
 			.addon-box{
 				&:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6){
@@ -5252,7 +5253,7 @@ a.wishlist_top{
 			}
 		}
 	}
-	.home_2, .home_3, .home_12{
+	.home_2, .home_3, .home_12, .home_15{
 		.header{
 			.col-logo{
 				order: 2;
@@ -5540,9 +5541,14 @@ a.wishlist_top{
 		padding: 0 20px !important;
 	}
 	div.back-to-top {
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
+		position: static;
+		width: 100%;
+		height: 73px;
+		span{
+			flex-direction: column;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
 	}
 	.instagram_block .instagram-block > div{
 		width: 25%;
@@ -5591,6 +5597,9 @@ a.wishlist_top{
 	#footer{
 		.footer-top{
 			padding: 38px 0;
+		}
+		.footer-bottom{
+			padding-bottom: 40px;
 		}
 		.custom-mobile{
 			.addon-title{

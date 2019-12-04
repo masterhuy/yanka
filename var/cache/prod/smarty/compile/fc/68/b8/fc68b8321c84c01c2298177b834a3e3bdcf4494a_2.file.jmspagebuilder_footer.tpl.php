@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-03 05:27:52
+/* Smarty version 3.1.33, created on 2019-12-04 05:23:12
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de638a846cad4_26659376',
+  'unifunc' => 'content_5de78910e87a11_32195816',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fc68b8321c84c01c2298177b834a3e3bdcf4494a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1573091756,
+      1 => 1575433709,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de638a846cad4_26659376 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de78910e87a11_32195816 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -84,13 +84,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <div class="back-to-top" id="back-to-top" title="Back to top">
-	<i class="d-flex flex-center">
+	<span class="d-flex flex-center h-100">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
 			<g>
 				<polygon fill="currentColor" points="20.9,17.1 12.5,8.6 4.1,17.1 2.9,15.9 12.5,6.4 22.1,15.9"></polygon>
 			</g>
 		</svg>
-	</i>
+		<span class="hidden-lg hidden-md hidden-sm">Back to top</span>
+	</span>
 </div>
 <?php if ($_smarty_tpl->tpl_vars['settingpanel']->value) {?>
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">

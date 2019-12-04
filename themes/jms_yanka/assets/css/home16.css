@@ -28,9 +28,13 @@
   background: transparent; }
   #footer .footer-bottom {
     padding-bottom: 11px; }
-    #footer .footer-bottom ul li {
-      margin: 0;
-      margin: 0 4.75px; }
+    #footer .footer-bottom ul {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #footer .footer-bottom ul li {
+        margin: 0;
+        margin: 0 4.75px; }
     #footer .footer-bottom .copyright {
       margin-bottom: 29px; }
   #footer #social_block ul li {

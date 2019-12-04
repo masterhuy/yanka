@@ -42,7 +42,7 @@
 <p class="addon-desc">{$addon_desc nofilter}</p>
 {/if}
 <div class="row d-flex justify-content-center">
-	<div class="product_box col-lg-4">
+	<div class="product_box col-lg-4 col-md-4 col-sm-6 col-xs-6">
 		<div class="product-carousel-cs custom_carousel">	
 			{foreach from = $products_slides item = products_slide}
 				<div class="item ajax_block_product">

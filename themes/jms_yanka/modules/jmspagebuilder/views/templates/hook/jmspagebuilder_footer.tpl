@@ -45,13 +45,14 @@
 	</div>
 {/foreach}
 <div class="back-to-top" id="back-to-top" title="Back to top">
-	<i class="d-flex flex-center">
+	<span class="d-flex flex-center h-100">
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
 			<g>
 				<polygon fill="currentColor" points="20.9,17.1 12.5,8.6 4.1,17.1 2.9,15.9 12.5,6.4 22.1,15.9"></polygon>
 			</g>
 		</svg>
-	</i>
+		<span class="hidden-lg hidden-md hidden-sm">Back to top</span>
+	</span>
 </div>
 {if $settingpanel}
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">

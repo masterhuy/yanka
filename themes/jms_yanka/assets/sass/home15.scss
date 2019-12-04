@@ -55,3 +55,79 @@
 .page-index #footer{
 	margin-top: 64px;
 }
+@media (min-width: 1200px){
+	.jms-row.header.fixed{
+		.col-logo{
+			order: 2;
+			opacity: 0;
+			visibility: hidden;
+		}
+		.megamenu{
+			order: 1;
+			&.right .jms-megamenu > ul {
+			    text-align: left;
+			}
+		}
+		.right-module-header{
+			order: 3;
+		}
+	}
+}
+@media (max-width: 1199px){
+	.header{
+		.container{
+			max-width: 100%;
+			padding: 0 20px;
+		}
+		.right-module-header{
+			.addon-box{
+				&:nth-child(2){
+					display: none;
+				}
+			}
+		}
+	}
+	.lookbook-type-2 .banner-content{
+		min-height: 115px;
+	}
+	#footer .newsletter{
+		.addon-title{
+			margin-right: 0;
+		}
+		.news_content{
+			margin-top: 15px;
+		}
+		.block_content{
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+		.social .addon-box{
+			justify-content: center;
+		}
+	}
+}
+@media (max-width: 767px){
+	.lookbook-type-2{
+		margin-top: 40px;
+		.banner-content{
+			min-height: auto;
+		}
+	}
+	.page-index #footer {
+		margin-top: 12px;
+	}
+	#footer{
+		padding-top: 50px;
+		.newsletter{
+			#newsletter_block_left .form-group{
+				max-width: 100%;
+			}
+			.news_content{
+				width: 100%;
+			}
+		}
+		.footer-top{
+			padding-bottom: 10px;
+		}
+	}
+}

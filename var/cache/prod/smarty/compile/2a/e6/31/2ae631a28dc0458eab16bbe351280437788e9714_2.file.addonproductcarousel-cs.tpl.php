@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-03 05:27:50
+/* Smarty version 3.1.33, created on 2019-12-04 02:49:29
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonproductcarousel-cs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de638a6afc5b3_98684055',
+  'unifunc' => 'content_5de765096ef874_33243738',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2ae631a28dc0458eab16bbe351280437788e9714' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmspagebuilder\\views\\templates\\hook\\addonproductcarousel-cs.tpl',
-      1 => 1571630591,
+      1 => 1575427859,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product-custom.tpl' => 1,
   ),
 ),false)) {
-function content_5de638a6afc5b3_98684055 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de765096ef874_33243738 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var pcs_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -55,7 +55,7 @@ if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
 </p>
 <?php }?>
 <div class="row d-flex justify-content-center">
-	<div class="product_box col-lg-4">
+	<div class="product_box col-lg-4 col-md-4 col-sm-6 col-xs-6">
 		<div class="product-carousel-cs custom_carousel">	
 			<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products_slides']->value, 'products_slide');
