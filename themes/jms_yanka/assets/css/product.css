@@ -101,7 +101,7 @@
 /*img left*/
 .images-container .product-images > li.thumb-container {
     display: inline-block;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 }
 .images-container .product-images > a.thumb-container {
     display: inline;
@@ -723,9 +723,6 @@
 .customs-carousel-product .product-image img{
     background: #f1f1f1;
 }
-.customs-carousel-product .owl-controls{
-    display: none;
-}
 .customs-carousel-product .product-link{
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -987,11 +984,20 @@
 	}
 }
 @media(max-width:1199px){
+    #product .breadcrumb{
+        margin-bottom: 70px;
+    }
+    .same-category {
+        margin-top: 58px;
+    }
+    .same-category .container {
+        padding-top: 67px !important;
+    }
     #content-wrapper.col-md-9 .images-container .js-qv-mask {
         max-height: 320px;
     }
     .images-container .js-qv-mask {
-        max-height: 486px;
+        max-height: 400px;
     }
 	div.products-list-in-row .content_price .price.new {
         font-size: 20px;
@@ -1005,7 +1011,7 @@
         max-height: 340px;
     }
     .images-container .js-qv-mask {
-        max-height: 335px;
+        max-height: 300px;
     }
     #product-modal .modal-dialog{
         width: 475px;
@@ -1034,7 +1040,7 @@
         bottom: 0;
     }
     #product #footer {
-        margin-top: 30px;
+        margin-top: 70px;
     }
 }
 @media (max-width: 991px) and (min-width: 768px){

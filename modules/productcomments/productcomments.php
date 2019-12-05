@@ -45,7 +45,7 @@ class ProductComments extends Module
     {
         $this->name = 'productcomments';
         $this->tab = 'front_office_features';
-        $this->version = '4.0.0';
+        $this->version = '4.0.1';
         $this->author = 'PrestaShop';
         $this->need_instance = 0;
         $this->bootstrap = true;
@@ -862,16 +862,6 @@ class ProductComments extends Module
         return $this->renderProductCommentsList($params['product']) . $this->renderProductCommentModal($params['product']);
     }
 
-    public function hookDisplayAdminProductsExtra($params)
-	{	
-		if (Validate::isLoadedObject($product = new Product($params['id_product'])))
-		{
-			$this->prepareNewTab($params);
-			$this->html = $this->display(__FILE__, 'jmsproductvideo.tpl');			
-			return $this->html;
-		}
-	}  	
-
     /**
      * Used to render the product comments list
      *
@@ -916,8 +906,6 @@ class ProductComments extends Module
      */
     private function renderProductCommentModal($product)
     {
-        $image = Product::getCover($product->getId());
-        $cover_image = $this->context->link->getImageLink($product->link_rewrite, $image['id_image'], 'medium_default');
 
         /** @var ProductCommentCriterionRepository $criterionRepository */
         $criterionRepository = $this->context->controller->getContainer()->get('product_comment_criterion_repository');
@@ -927,8 +915,8 @@ class ProductComments extends Module
             'logged' => (bool) $this->context->cookie->id_customer,
             'post_comment_url' => $this->context->link->getModuleLink('productcomments', 'PostComment', ['id_product' => $product->getId()]),
             'moderation_active' => (int) Configuration::get('PRODUCT_COMMENTS_MODERATE'),
-            'cover_image' => $cover_image,
             'criterions' => $criterions,
+            'product' => $product,
         ));
 
         return $this->context->smarty->fetch('module:productcomments/views/templates/hook/post-comment-modal.tpl');

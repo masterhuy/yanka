@@ -39,9 +39,10 @@
                             itemprop="image"
                         />
                 {/foreach}
+                <li>{hook h='displayReassurance'}
             </ul>
         </div>
-        {hook h='displayReassurance'}
+        
     {/block}
     {block name='product_cover'}
         <div class="product-cover">

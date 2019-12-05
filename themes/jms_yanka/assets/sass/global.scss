@@ -1297,14 +1297,11 @@
 		#jmsproductvideo {
 			margin-bottom: 0;
 			position: static;
+			z-index: 99;
 			.addon-title{
-				position: absolute;
 				width: 72px;
 				height: 90px;
-				background:
-				#fff;
-				bottom: 0;
-				left: 0;
+				background: #fff;
 				h3{
 					position: absolute;
 					bottom: 37px;
@@ -2720,6 +2717,7 @@ a.wishlist_top{
 	}
 	.post-product-comment{
 		float: right;
+		white-space: nowrap;
 	}
 }
 #product-comments{
@@ -5376,23 +5374,26 @@ a.wishlist_top{
 			margin-right: 24px;
 		}
 	}
-	div.product-miniature button.cart-button{
-		padding-left: 21px;
-		padding-right: 21px;
-		.text-addcart{
-			width: 100%;
-			font-size: 13px;
-			line-height: normal;
-			margin-left: 11px;
+	div.product-miniature{
+		button.cart-button{
+			padding-left: 21px;
+			padding-right: 21px;
+			.text-addcart{
+				width: 100%;
+				font-size: 13px;
+				line-height: normal;
+				margin-left: 11px;
+			}
+		}
+		div.content_price{
+			display: flex;
+			margin-left: 0;
+			.price{
+				margin-right: 10px;
+			}
 		}
 	}
-	div.content_price{
-		display: flex;
-		margin-left: 0;
-		.price{
-			margin-right: 10px;
-		}
-	}
+	
 	div#cart_block{
 		&.open{
 			.shoppingcart-box{

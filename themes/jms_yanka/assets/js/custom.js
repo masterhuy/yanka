@@ -162,7 +162,7 @@ jQuery(function ($) {
 			},
 			rtl: rtl,
 			margin: 30,
-			nav: false,
+			nav: true,
 			dots: true,
 			autoplay: false,
 			slideSpeed: 200,
@@ -1141,9 +1141,9 @@ function openAjaxSearch(){
 }
 
 function hoverLookbook(){
-	$(".lookbook-type-1 .pt-hotspot").hover(function(){
+	$(".lookbook-type-1 .pt-hotspot .pt-btn").hover(function(){
 		$(".lookbook-type-1 .pt-hotspot").removeClass('active');
-		$(this).addClass("active");
+		$(this).parent().addClass("active");
 		}, function(){
 	});
 }

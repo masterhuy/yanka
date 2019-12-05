@@ -22,6 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
 {if $nb_comments != 0 || $post_allowed}
 <div class="product-comments-additional-info">
   {if $nb_comments == 0}

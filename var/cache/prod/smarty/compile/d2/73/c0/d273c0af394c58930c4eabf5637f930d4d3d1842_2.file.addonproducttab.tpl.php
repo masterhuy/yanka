@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-03 23:35:26
+/* Smarty version 3.1.33, created on 2019-12-05 01:55:57
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonproducttab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de7378e777c09_51336885',
+  'unifunc' => 'content_5de8a9fdc15cb9_16244562',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 5,
   ),
 ),false)) {
-function content_5de7378e777c09_51336885 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de8a9fdc15cb9_16244562 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var tab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
