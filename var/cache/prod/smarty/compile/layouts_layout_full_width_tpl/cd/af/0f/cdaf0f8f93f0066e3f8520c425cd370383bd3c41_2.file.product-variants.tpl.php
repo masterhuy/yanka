@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 03:32:51
+/* Smarty version 3.1.33, created on 2019-12-05 21:58:50
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de8c0b3561137_87129131',
+  'unifunc' => 'content_5de9c3eaf2f5e8_10486642',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdaf0f8f93f0066e3f8520c425cd370383bd3c41' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\product-variants.tpl',
-      1 => 1572337820,
+      1 => 1575598579,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de8c0b3561137_87129131 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de9c3eaf2f5e8_10486642 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_yanka\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
- <div class="product-variants">
+<div class="product-variants">
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['groups']->value, 'group', false, 'id_attribute_group');
 if ($_from !== null) {

@@ -22,7 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div class="product-variants">
+<div class="product-variants">
     {foreach from=$groups key=id_attribute_group item=group}
         <div class="clearfix product-variants-item {$group.name|lower|replace:' ':''}">
             <div class="control-label">

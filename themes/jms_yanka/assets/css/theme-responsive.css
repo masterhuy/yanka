@@ -72,6 +72,9 @@
 	.product_list .item.ajax_block_product{
 		width:50%;
 	}
+	.product_list.products-list-in-column .js-product-miniature{
+		width:50%;
+	}
 	.view-modes {
 		width: 41%;
 	}
@@ -224,9 +227,6 @@
 	}
 	#product.show-right-column .content-aside,  #category.show-right-column  .content-aside{
 		padding-left:15px;
-	}
-	.product_list.products-list-in-column .js-product-miniature{
-		width:50%;
 	}
    .wlp_bought .clearfix{
 	   display:block;

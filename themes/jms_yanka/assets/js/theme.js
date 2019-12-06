@@ -2521,13 +2521,13 @@
                 e.position().top >= 0 ? (0, a.default)(".arrow-up").css("opacity", ".2") : e.position().top + e.height() <= (0, a.default)(".js-qv-mask").height() && (0, a.default)(".arrow-down").css("opacity", ".2")
             })
         };
-        (0, a.default)("body").on("click", "#search_filter_toggler", function() {
-            (0, a.default)("#search_filters_wrapper").removeClass("hidden-sm-down"), (0, a.default)("#content-wrapper").addClass("hidden-sm-down"), (0, a.default)("#footer").addClass("hidden-sm-down")
-        }), (0, a.default)("#search_filter_controls .clear").on("click", function() {
-            (0, a.default)("#search_filters_wrapper").addClass("hidden-sm-down"), (0, a.default)("#content-wrapper").removeClass("hidden-sm-down"), (0, a.default)("#footer").removeClass("hidden-sm-down")
-        }), (0, a.default)("#search_filter_controls .ok").on("click", function() {
-            (0, a.default)("#search_filters_wrapper").addClass("hidden-sm-down"), (0, a.default)("#content-wrapper").removeClass("hidden-sm-down"), (0, a.default)("#footer").removeClass("hidden-sm-down")
-        });
+        // (0, a.default)("body").on("click", "#search_filter_toggler", function() {
+        //     (0, a.default)("#search_filters_wrapper").removeClass("hidden-sm-down"), (0, a.default)("#content-wrapper").addClass("hidden-sm-down"), (0, a.default)("#footer").addClass("hidden-sm-down")
+        // }), (0, a.default)("#search_filter_controls .clear").on("click", function() {
+        //     (0, a.default)("#search_filters_wrapper").addClass("hidden-sm-down"), (0, a.default)("#content-wrapper").removeClass("hidden-sm-down"), (0, a.default)("#footer").removeClass("hidden-sm-down")
+        // }), (0, a.default)("#search_filter_controls .ok").on("click", function() {
+        //     (0, a.default)("#search_filters_wrapper").addClass("hidden-sm-down"), (0, a.default)("#content-wrapper").removeClass("hidden-sm-down"), (0, a.default)("#footer").removeClass("hidden-sm-down")
+        // });
         var n = function(t) {
             if (void 0 !== t.target.dataset.searchUrl) return t.target.dataset.searchUrl;
             if (void 0 === (0, a.default)(t.target).parent()[0].dataset.searchUrl) throw new Error("Can not parse search URL");

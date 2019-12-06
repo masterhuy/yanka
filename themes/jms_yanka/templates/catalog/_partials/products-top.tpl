@@ -24,14 +24,29 @@
  *}
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 left">
+		{if !empty($listing.rendered_facets)}
+			<div class="col-sm-6 col-xs-6 hidden-md-up filter-button">
+				<button id="search_filter_toggler">
+					<svg>
+						<use xlink:href="#icon-filter">
+							<symbol id="icon-filter" fill="none" viewBox="0 0 22 24">
+								<path d="M9 24V12L1 5V0h22v5l-8 7v8l-6 4zM2.6 4.3l8 7V21l2.8-1.9v-7.9l8-7V1.6H2.6v2.7z" fill="currentColor" stroke-widht="1.6">
+								</path>
+							</symbol>
+						</use>
+					</svg>
+					<span>{l s='Filter' d='Shop.Theme.Actions'}</span>
+				</button>	
+			</div>
+		{/if}
+		<div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 left hidden-sm-down">
 			<div class="view-mode ">
 				{block name='sort_by'}
 					{include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
 				{/block}
 			</div>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 view-mode right clearfix">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 view-mode right clearfix">
 			<label class="sort-by">{l s='View as' d='Shop.Theme.Actions'}</label>
 			<div class="button">
 				<a class="view-grid {if $jpb_grid == 1}active{/if}" href="#">

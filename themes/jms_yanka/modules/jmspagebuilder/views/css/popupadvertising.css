@@ -10,6 +10,10 @@
   overflow: hidden;
   background: #fff;
 }
+.jms-popup #newsletter_block_left .addon-title h3{
+  font-size: 36px;
+  text-align: center;
+}
 .jms-popup-content {
   text-align: center;
   margin: 0;

@@ -1154,6 +1154,18 @@ function closeLookbook(){
 	});
 }
 
+function openFilter(){
+	$('body').on('click', '#search_filter_toggler', function () {
+		$('#left-column').addClass('show');
+	});
+}
+
+function closeFilter(){
+	$('body').on('click', '#search_filters_wrapper .btn-close', function () {
+		$('#left-column').removeClass('show');
+	});
+}
+
 var initialLoad = true;
 $(document).ready(function() {
 	var header = $(".jms-row.header");
@@ -1181,7 +1193,6 @@ $(document).ready(function() {
 	}
 
 	hoverLookbook();
-
 	closeLookbook();
 	
 	collapseVermegamenu();
@@ -1193,6 +1204,9 @@ $(document).ready(function() {
 	closeAlertBox();
 
 	openVideo();
+
+	openFilter();
+	closeFilter();
 });
 
 //sidebar

@@ -52,7 +52,7 @@
                 {/foreach}
               </ul>
               <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
-                <button data-search-url="{$clear_all_link}" class="btn-clear js-search-filters-clear-all">
+                <button data-search-url="{$clear_all_link}" class="btn-clear btn-default js-search-filters-clear-all">
                   {l s='Clear all' d='Shop.Theme.Actions'}
                 </button>
               </div>

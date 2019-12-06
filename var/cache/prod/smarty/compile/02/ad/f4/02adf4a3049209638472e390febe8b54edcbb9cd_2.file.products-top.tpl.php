@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-26 04:49:01
+/* Smarty version 3.1.33, created on 2019-12-06 04:23:12
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\products-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ddcf50dabcf06_05072845',
+  'unifunc' => 'content_5dea1e00ee3c62_04826409',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '02adf4a3049209638472e390febe8b54edcbb9cd' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\products-top.tpl',
-      1 => 1571821937,
+      1 => 1575607086,
       2 => 'file',
     ),
   ),
@@ -21,21 +21,37 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/sort-orders.tpl' => 1,
   ),
 ),false)) {
-function content_5ddcf50dabcf06_05072845 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dea1e00ee3c62_04826409 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 left">
+		<?php if (!empty($_smarty_tpl->tpl_vars['listing']->value['rendered_facets'])) {?>
+			<div class="col-sm-6 col-xs-6 hidden-md-up filter-button">
+				<button id="search_filter_toggler">
+					<svg>
+						<use xlink:href="#icon-filter">
+							<symbol id="icon-filter" fill="none" viewBox="0 0 22 24">
+								<path d="M9 24V12L1 5V0h22v5l-8 7v8l-6 4zM2.6 4.3l8 7V21l2.8-1.9v-7.9l8-7V1.6H2.6v2.7z" fill="currentColor" stroke-widht="1.6">
+								</path>
+							</symbol>
+						</use>
+					</svg>
+					<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Filter','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+</span>
+				</button>	
+			</div>
+		<?php }?>
+		<div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 left hidden-sm-down">
 			<div class="view-mode ">
 				<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9102983755ddcf50dabcf06_52466971', 'sort_by');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11485424095dea1e00ed80d2_61713859', 'sort_by');
 ?>
 
 			</div>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 view-mode right clearfix">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 view-mode right clearfix">
 			<label class="sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'View as','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </label>
 			<div class="button">
@@ -54,12 +70,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9102983755ddcf50da
 </div>
 <?php }
 /* {block 'sort_by'} */
-class Block_9102983755ddcf50dabcf06_52466971 extends Smarty_Internal_Block
+class Block_11485424095dea1e00ed80d2_61713859 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'sort_by' => 
   array (
-    0 => 'Block_9102983755ddcf50dabcf06_52466971',
+    0 => 'Block_11485424095dea1e00ed80d2_61713859',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
