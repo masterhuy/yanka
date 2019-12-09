@@ -22,6 +22,12 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+
+<div class="sort-order">
+    {block name='sort_by'}
+        {include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
+    {/block}
+</div>
 {function name="categories" nodes=[] depth=0}
     {strip}
         {if $nodes|count}

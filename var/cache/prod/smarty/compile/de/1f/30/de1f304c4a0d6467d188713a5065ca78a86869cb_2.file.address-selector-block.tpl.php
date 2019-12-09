@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 02:53:12
+/* Smarty version 3.1.33, created on 2019-12-09 05:24:45
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\address-selector-block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd24de88a5048_58870083',
+  'unifunc' => 'content_5dee20ed6967a1_62387818',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de1f304c4a0d6467d188713a5065ca78a86869cb' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\checkout\\_partials\\address-selector-block.tpl',
-      1 => 1569568109,
+      1 => 1575883643,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd24de88a5048_58870083 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dee20ed6967a1_62387818 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['addresses']->value, 'address');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['address']->value) {
@@ -53,7 +53,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['address']->value) {
     <footer class="address-footer">
       <?php if ($_smarty_tpl->tpl_vars['interactive']->value) {?>
         <a
-          class="delete-address text-muted btn-default button-small"
+          class="delete-address text-muted btn-default"
           data-link-action="delete-address"
           href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'order','params'=>array('id_address'=>$_smarty_tpl->tpl_vars['address']->value['id'],'deleteAddress'=>true,'token'=>$_smarty_tpl->tpl_vars['token']->value)),$_smarty_tpl ) );?>
 "
@@ -62,7 +62,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['address']->value) {
 
         </a>
 		<a
-          class="edit-address text-muted btn-default button-small"
+          class="edit-address text-muted btn-default"
           data-link-action="edit-address"
           href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('entity'=>'order','params'=>array('id_address'=>$_smarty_tpl->tpl_vars['address']->value['id'],'editAddress'=>$_smarty_tpl->tpl_vars['type']->value,'token'=>$_smarty_tpl->tpl_vars['token']->value)),$_smarty_tpl ) );?>
 "

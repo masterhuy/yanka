@@ -67,7 +67,7 @@
         </div>
 
         <p class="add-address">
-          <a href="{$new_address_delivery_url}" class="btn-default button-small"><i class="fa fa-plus-circle"></i> {l s='Add New Address' d='Shop.Theme.Actions'}</a>
+          <a href="{$new_address_delivery_url}" class="btn-default"><i class="fa fa-plus-circle"></i> {l s='Add New Address' d='Shop.Theme.Actions'}</a>
         </p>
 
         {if $use_same_address && !$cart.is_virtual}
@@ -113,7 +113,7 @@
 
       {if !$form_has_continue_button}
         <div class="clearfix">
-          <button type="submit" class="btn-default continue pull-xs-right button-small" name="confirm-addresses" value="1">
+          <button type="submit" class="btn-default continue pull-xs-right" name="confirm-addresses" value="1">
               {l s='Continue' d='Shop.Theme.Actions'}
           </button>
         </div>

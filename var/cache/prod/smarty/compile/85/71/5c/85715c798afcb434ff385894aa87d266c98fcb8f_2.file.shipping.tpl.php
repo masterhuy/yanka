@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 02:53:12
+/* Smarty version 3.1.33, created on 2019-12-09 05:06:29
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\steps\shipping.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd24de88df9d1_43664766',
+  'unifunc' => 'content_5dee1ca5a6ea91_30720963',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '85715c798afcb434ff385894aa87d266c98fcb8f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\checkout\\_partials\\steps\\shipping.tpl',
-      1 => 1569568109,
+      1 => 1575885983,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd24de88df9d1_43664766 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dee1ca5a6ea91_30720963 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16670718595dd24de88c05d9_32968882', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15993515815dee1ca5a47991_05494531', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'delivery_options'} */
-class Block_3324818995dd24de88c4459_12066219 extends Smarty_Internal_Block
+class Block_2231685375dee1ca5a47991_99658996 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -44,9 +44,9 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['carrier_id']->value => $_smarty_tpl->tpl_vars['carrier']->value) {
 ?>
-                  <div class="delivery-option d-flex mb-20">
+                  <div class="row delivery-option">
                     <div class="col-sm-1">
-                      <span class="custom-radio pull-xs-left">
+                      <span class="custom-radio float-xs-left">
                         <input type="radio" name="delivery_option[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_address']->value, ENT_QUOTES, 'UTF-8');?>
 ]" id="delivery_option_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier']->value['id'], ENT_QUOTES, 'UTF-8');?>
 " value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier_id']->value, ENT_QUOTES, 'UTF-8');?>
@@ -60,14 +60,14 @@ foreach ($_from as $_smarty_tpl->tpl_vars['carrier_id']->value => $_smarty_tpl->
                         <div class="col-sm-5 col-xs-12">
                           <div class="row">
                             <?php if ($_smarty_tpl->tpl_vars['carrier']->value['logo']) {?>
-                            <div class="col-xs-6">
+                            <div class="col-xs-3">
                                 <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier']->value['logo'], ENT_QUOTES, 'UTF-8');?>
 " alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier']->value['name'], ENT_QUOTES, 'UTF-8');?>
 " />
                             </div>
                             <?php }?>
-                            <div class="<?php if ($_smarty_tpl->tpl_vars['carrier']->value['logo']) {?>col-xs-6<?php } else { ?>col-xs-12<?php }?>">
-                              <span class="carrier-name"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier']->value['name'], ENT_QUOTES, 'UTF-8');?>
+                            <div class="<?php if ($_smarty_tpl->tpl_vars['carrier']->value['logo']) {?>col-xs-9<?php } else { ?>col-xs-12<?php }?>">
+                              <span class="h6 carrier-name"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['carrier']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </span>
                             </div>
                           </div>
@@ -82,12 +82,12 @@ foreach ($_from as $_smarty_tpl->tpl_vars['carrier_id']->value => $_smarty_tpl->
                         </div>
                       </div>
                     </label>
-                    <div class="col-md-12 carrier-extra-content"<?php if ($_smarty_tpl->tpl_vars['delivery_option']->value != $_smarty_tpl->tpl_vars['carrier_id']->value) {?> style="display:none;"<?php }?>>
-                        <?php echo $_smarty_tpl->tpl_vars['carrier']->value['extraContent'];?>
-
-                    </div>
-                    <div class="clearfix"></div>
                   </div>
+                  <div class="row carrier-extra-content"<?php if ($_smarty_tpl->tpl_vars['delivery_option']->value != $_smarty_tpl->tpl_vars['carrier_id']->value) {?> style="display:none;"<?php }?>>
+                    <?php echo $_smarty_tpl->tpl_vars['carrier']->value['extraContent'];?>
+
+                  </div>
+                  <div class="clearfix"></div>
               <?php
 }
 }
@@ -98,16 +98,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'delivery_options'} */
 /* {block 'step_content'} */
-class Block_16670718595dd24de88c05d9_32968882 extends Smarty_Internal_Block
+class Block_15993515815dee1ca5a47991_05494531 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_16670718595dd24de88c05d9_32968882',
+    0 => 'Block_15993515815dee1ca5a47991_05494531',
   ),
   'delivery_options' => 
   array (
-    0 => 'Block_3324818995dd24de88c4459_12066219',
+    0 => 'Block_2231685375dee1ca5a47991_99658996',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -129,28 +129,31 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       >
         <div class="form-fields">
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3324818995dd24de88c4459_12066219', 'delivery_options', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2231685375dee1ca5a47991_99658996', 'delivery_options', $this->tplIndex);
 ?>
 
           <div class="order-options">
+            <div id="delivery">
+              <label for="delivery_message"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'If you would like to add a comment about your order, please write it in the field below.','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</label>
+              <textarea rows="2" cols="120" id="delivery_message" name="delivery_message"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['delivery_message']->value, ENT_QUOTES, 'UTF-8');?>
+</textarea>
+            </div>
+
             <?php if ($_smarty_tpl->tpl_vars['recyclablePackAllowed']->value) {?>
-              <label>
-                <input type="checkbox" name="recyclable" value="1" <?php if ($_smarty_tpl->tpl_vars['recyclable']->value) {?> checked <?php }?>>
-                <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'I would like to receive my order in recycled packaging.','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
-</span>
-              </label>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="input_recyclable" name="recyclable" value="1" <?php if ($_smarty_tpl->tpl_vars['recyclable']->value) {?> checked <?php }?>>
+                <span><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                <label for="input_recyclable"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'I would like to receive my order in recycled packaging.','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+</label>
+              </span>
             <?php }?>
+
             <?php if ($_smarty_tpl->tpl_vars['gift']->value['allowed']) {?>
               <span class="custom-checkbox">
-                <input
-                  class="js-gift-checkbox"
-                  name="gift"
-                  type="checkbox"
-                  value="1"
-                  <?php if ($_smarty_tpl->tpl_vars['gift']->value['isGift']) {?>checked="checked"<?php }?>
-                >
-                <span><i class="material-icons checkbox-checked">&#xE5CA;</i></span>
-                <label><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gift']->value['label'], ENT_QUOTES, 'UTF-8');?>
+                <input class="js-gift-checkbox" id="input_gift" name="gift" type="checkbox" value="1" <?php if ($_smarty_tpl->tpl_vars['gift']->value['isGift']) {?>checked="checked"<?php }?>>
+                <span><i class="material-icons rtl-no-flip checkbox-checked">&#xE5CA;</i></span>
+                <label for="input_gift"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gift']->value['label'], ENT_QUOTES, 'UTF-8');?>
 </label >
               </span>
 
@@ -160,11 +163,11 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3324818995dd24de88
                 <textarea rows="2" cols="120" id="gift_message" name="gift_message"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['gift']->value['message'], ENT_QUOTES, 'UTF-8');?>
 </textarea>
               </div>
-
             <?php }?>
+
           </div>
         </div>
-        <button type="submit" class="btn-default pull-xs-right" name="confirmDeliveryOption" value="1">
+        <button type="submit" class="continue btn-default float-xs-right" name="confirmDeliveryOption" value="1">
           <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Continue','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
         </button>

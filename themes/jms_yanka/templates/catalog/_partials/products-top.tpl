@@ -40,7 +40,7 @@
 			</div>
 		{/if}
 		<div class="col-lg-6 col-md-6 col-sm-3 col-xs-6 left hidden-sm-down">
-			<div class="view-mode ">
+			<div class="view-mode">
 				{block name='sort_by'}
 					{include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
 				{/block}

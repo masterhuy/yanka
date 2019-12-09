@@ -61,7 +61,7 @@
                     </span>
                     </div>
                 </div>
-                <div class="btn_action btn-default button-small">
+                <div class="btn_action btn-default">
                     <a class="button_small clear" href="{$link->getProductLink($product.id_product,  $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='View' d='Shop.Theme'}" rel="nofollow">{l s='View' d='Shop.Theme'}</a>
                     {if (isset($product.attribute_quantity) && $product.attribute_quantity >= 1) || (!isset($product.attribute_quantity) && $product.product_quantity >= 1) || $product.allow_oosp}
                         {if !$ajax}

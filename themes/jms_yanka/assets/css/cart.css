@@ -375,9 +375,6 @@
 	}
 }
 @media (max-width: 767px){
-	#promo-code .promo-input{
-		max-width: 160px;
-	}
 	.cart-items li{
 		margin-bottom: 15px;
 		border-bottom: 0;

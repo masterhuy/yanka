@@ -22,7 +22,7 @@
 
 {block name='form_buttons'}
   {if !$form_has_continue_button}
-    <button type="submit" class="btn btn-primary pull-xs-right button-small">{l s='Save' d='Shop.Theme.Actions'}</button>
+    <button type="submit" class="btn-default pull-xs-right">{l s='Save' d='Shop.Theme.Actions'}</button>
     <a class="js-cancel-address pull-xs-right btn-default" href="?cancelAddress={$type}">{l s='Cancel' d='Shop.Theme.Actions'}</a>
   {else}
     <form>

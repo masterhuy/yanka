@@ -1,5 +1,5 @@
 /* Backup for localhost/jms_yanka/
- *  at 1575627939
+ *  at 1575887253
  */
 
 SET NAMES 'utf8';
@@ -881,7 +881,7 @@ CREATE TABLE `jms_address` (
   KEY `id_manufacturer` (`id_manufacturer`),
   KEY `id_supplier` (`id_supplier`),
   KEY `id_warehouse` (`id_warehouse`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_address` VALUES
 ('1','21','0','1','0','0','0','Anonymous','Anonymous','Anonymous','Anonymous','Anonymous',NULL,'00000','Anonymous',NULL,'0000000000','0000000000','0000','0000','2019-09-27 08:47:29','2019-09-27 08:47:29','1','0'),
@@ -889,7 +889,8 @@ INSERT INTO `jms_address` VALUES
 ('3','21','35','0','0','0','0','supplier','Fashion','supplier','supplier','767 Fifth Ave.',NULL,'10153','New York',NULL,'(212) 336-1440',NULL,NULL,NULL,'2019-09-27 08:48:12','2019-09-27 08:48:12','1','0'),
 ('4','21','35','0','1','0','0','manufacturer','Fashion','manufacturer','manufacturer','767 Fifth Ave.',NULL,'10154','New York',NULL,'(212) 336-1666',NULL,NULL,NULL,'2019-09-27 08:48:12','2019-09-27 08:48:12','1','0'),
 ('5','21','12','2','0','0','0','My address','My Company','DOE','John','16, Main street','2nd floor','33133','Miami',NULL,'0102030405',NULL,NULL,NULL,'2019-09-27 08:48:12','2019-09-27 08:48:12','1','0'),
-('6','21','1','5','0','0','0','My Address','jms','Lance ','Mrs','hn','hn','11311','hn',NULL,'0987654321',NULL,NULL,NULL,'2019-11-18 02:50:33','2019-11-18 02:50:33','1','0');
+('6','21','1','5','0','0','0','My Address','jms','Lance ','Mrs','hn','hn','11311','hn',NULL,'0987654321',NULL,NULL,NULL,'2019-11-18 02:50:33','2019-11-18 02:50:33','1','0'),
+('7','21','19','3','0','0','0','My Address','jms','huy','mr','hn','hn','11311','hn',NULL,'0987654321',NULL,NULL,NULL,'2019-12-09 04:21:23','2019-12-09 04:37:32','1','0');
 /* Scheme for table jms_address_format */
 DROP TABLE IF EXISTS `jms_address_format`;
 CREATE TABLE `jms_address_format` (
@@ -1267,7 +1268,7 @@ CREATE TABLE `jms_attribute` (
   `position` int(11) NOT NULL,
   PRIMARY KEY (`id_attribute`),
   KEY `attribute_group` (`id_attribute_group`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_attribute` VALUES
 ('1','1','','1'),
@@ -1288,7 +1289,10 @@ INSERT INTO `jms_attribute` VALUES
 ('27','1','','5'),
 ('28','1','','6'),
 ('29','2','','14'),
-('30','2','','15');
+('30','2','','15'),
+('31','3','','0'),
+('32','3','','1'),
+('33','3','','2');
 /* Scheme for table jms_attribute_group */
 DROP TABLE IF EXISTS `jms_attribute_group`;
 CREATE TABLE `jms_attribute_group` (
@@ -1297,11 +1301,12 @@ CREATE TABLE `jms_attribute_group` (
   `group_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `position` int(11) NOT NULL,
   PRIMARY KEY (`id_attribute_group`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_attribute_group` VALUES
 ('1','0','radio','0'),
-('2','1','color','1');
+('2','1','color','1'),
+('3','1','color','2');
 /* Scheme for table jms_attribute_group_lang */
 DROP TABLE IF EXISTS `jms_attribute_group_lang`;
 CREATE TABLE `jms_attribute_group_lang` (
@@ -1324,7 +1329,12 @@ INSERT INTO `jms_attribute_group_lang` VALUES
 ('2','2','Couleur','Couleur'),
 ('2','3','Farbe','Farbe'),
 ('2','5','Color','Color'),
-('2','8','Colore','Colore');
+('2','8','Colore','Colore'),
+('3','1','Material','Material'),
+('3','2','Material','Material'),
+('3','3','Material','Material'),
+('3','5','Material','Material'),
+('3','8','Material','Material');
 /* Scheme for table jms_attribute_group_shop */
 DROP TABLE IF EXISTS `jms_attribute_group_shop`;
 CREATE TABLE `jms_attribute_group_shop` (
@@ -1337,7 +1347,8 @@ CREATE TABLE `jms_attribute_group_shop` (
 
 INSERT INTO `jms_attribute_group_shop` VALUES
 ('1','1'),
-('2','1');
+('2','1'),
+('3','1');
 /* Scheme for table jms_attribute_impact */
 DROP TABLE IF EXISTS `jms_attribute_impact`;
 CREATE TABLE `jms_attribute_impact` (
@@ -1447,16 +1458,31 @@ INSERT INTO `jms_attribute_lang` VALUES
 ('28','3','XXXL'),
 ('28','5','XXXL'),
 ('28','8','XXXL'),
-('29','1','Texture White'),
+('29','1','White'),
 ('29','2','Texture White'),
 ('29','3','Texture White'),
 ('29','5','Texture White'),
 ('29','8','Texture White'),
-('30','1','Texture Black'),
+('30','1','Black'),
 ('30','2','Texture Black'),
 ('30','3','Texture Black'),
 ('30','5','Texture Black'),
-('30','8','Texture Black');
+('30','8','Texture Black'),
+('31','1','Cotton'),
+('31','2','Cotton'),
+('31','3','Cotton'),
+('31','5','Cotton'),
+('31','8','Cotton'),
+('32','1','Silk'),
+('32','2','Silk'),
+('32','3','Silk'),
+('32','5','Silk'),
+('32','8','Silk'),
+('33','1','Linen'),
+('33','2','Linen'),
+('33','3','Linen'),
+('33','5','Linen'),
+('33','8','Linen');
 /* Scheme for table jms_attribute_shop */
 DROP TABLE IF EXISTS `jms_attribute_shop`;
 CREATE TABLE `jms_attribute_shop` (
@@ -1486,7 +1512,10 @@ INSERT INTO `jms_attribute_shop` VALUES
 ('27','1'),
 ('28','1'),
 ('29','1'),
-('30','1');
+('30','1'),
+('31','1'),
+('32','1'),
+('33','1');
 /* Scheme for table jms_authorization_role */
 DROP TABLE IF EXISTS `jms_authorization_role`;
 CREATE TABLE `jms_authorization_role` (
@@ -3981,7 +4010,7 @@ CREATE TABLE `jms_cart` (
   KEY `id_shop_group` (`id_shop_group`),
   KEY `id_shop_2` (`id_shop`,`date_upd`),
   KEY `id_shop` (`id_shop`,`date_add`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_cart` VALUES
 ('1','1','1','2','{\"3\":\"2,\"}','1','5','5','1','2','1','b44a6d9efd7a0076a0fbce6b15eaf3b1','0','0',NULL,'0','0','2019-09-27 08:48:13','2019-09-27 08:48:13',NULL),
@@ -4002,7 +4031,8 @@ INSERT INTO `jms_cart` VALUES
 ('16','1','1','0','','1','0','0','1','3','38','e1c92f00daab778eb29fe6679aa10ac2','0','0',NULL,'0','0','2019-11-14 02:07:16','2019-11-14 21:55:00',NULL),
 ('17','1','1','2','{\"6\":\"2,\"}','1','6','6','1','5','39','fed37bd35179d68f5c5edf1434ef86cc','0','0',NULL,'0','0','2019-11-18 01:38:00','2019-11-18 02:51:02','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"250f6657c0770e43e4fccce063d1e7821ea9db39\"}'),
 ('18','1','1','0','','1','6','6','1','5','12','fed37bd35179d68f5c5edf1434ef86cc','0','0',NULL,'0','0','2019-11-20 21:46:20','2019-11-21 05:30:06',NULL),
-('19','1','1','0','','1','0','0','1','0','45','','0','0',NULL,'0','0','2019-12-03 05:26:13','2019-12-03 05:26:28',NULL);
+('19','1','1','0','','1','0','0','1','0','45','','0','0',NULL,'0','0','2019-12-03 05:26:13','2019-12-03 05:26:28',NULL),
+('20','1','1','0','','1','7','7','1','3','67','e1c92f00daab778eb29fe6679aa10ac2','0','0',NULL,'0','0','2019-12-08 23:32:25','2019-12-09 05:25:06','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":false,\"use_same_address\":false},\"checkout-delivery-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checkout-payment-step\":{\"step_is_reachable\":false,\"step_is_complete\":false},\"checksum\":\"af7f92902c2017a720b69aacf48b747af6042d97\"}');
 /* Scheme for table jms_cart_cart_rule */
 DROP TABLE IF EXISTS `jms_cart_cart_rule`;
 CREATE TABLE `jms_cart_cart_rule` (
@@ -4035,8 +4065,6 @@ INSERT INTO `jms_cart_product` VALUES
 ('12','23','0','1','0','0','1','2019-11-08 04:57:23'),
 ('15','20','0','1','26','0','1','2019-11-14 00:00:56'),
 ('16','20','0','1','26','0','1','2019-11-14 02:07:16'),
-('16','21','0','1','1','0','1','2019-11-14 02:07:23'),
-('17','21','6','1','1','0','1','2019-11-18 01:38:15'),
 ('17','24','6','1','0','0','2','2019-11-18 01:38:05'),
 ('17','26','6','1','0','0','1','2019-11-18 01:38:00'),
 ('17','28','6','1','0','0','1','2019-11-18 01:38:10'),
@@ -4534,7 +4562,7 @@ INSERT INTO `jms_cms_lang` VALUES
 ('2','3','1','Legal Notice',NULL,'Legal notice','notice, legal, credits','<h2>Legal</h2><h3>Credits</h3><p>Concept and production:</p><p>This Online store was created using <a href=\"http://www.prestashop.com\">Prestashop Shopping Cart Software</a>,check out PrestaShop\'s <a href=\"http://www.prestashop.com/blog/en/\">ecommerce blog</a> for news and advices about selling online and running your ecommerce website.</p>','legal-notice'),
 ('2','5','1','Legal Notice',NULL,'Legal notice','notice, legal, credits','<h2>Legal</h2><h3>Credits</h3><p>Concept and production:</p><p>This Online store was created using <a href=\"http://www.prestashop.com\">Prestashop Shopping Cart Software</a>,check out PrestaShop\'s <a href=\"http://www.prestashop.com/blog/en/\">ecommerce blog</a> for news and advices about selling online and running your ecommerce website.</p>','legal-notice'),
 ('2','8','1','Legal Notice',NULL,'Legal notice','notice, legal, credits','<h2>Legal</h2><h3>Credits</h3><p>Concept and production:</p><p>This Online store was created using <a href=\"http://www.prestashop.com\">Prestashop Shopping Cart Software</a>,check out PrestaShop\'s <a href=\"http://www.prestashop.com/blog/en/\">ecommerce blog</a> for news and advices about selling online and running your ecommerce website.</p>','legal-notice'),
-('3','1','1','Terms and conditions of use',NULL,'Our terms and conditions of use','conditions, terms, use, sell','<div id=\"terms\">\r\n<div class=\"addon-title\">\r\n<h3>Terms and Conditions</h3>\r\n</div>\r\n<div class=\"pt-layout-content\">\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>\r\n<p>Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>\r\n<ul class=\"pt-list-dot\">\r\n<li>Omnis iste natus error sit voluptatem</li>\r\n<li>Accusantium doloremque</li>\r\n<li><a href=\"#\">Laudantium totam rem aperiam</a></li>\r\n</ul>\r\n<p>Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>\r\n<ol class=\"pt-list-number\">\r\n<li>Omnis iste natus error sit voluptatem</li>\r\n<li>Accusantium doloremque</li>\r\n<li><a href=\"#\">Laudantium, totam rem aperiam</a></li>\r\n</ol></div>\r\n</div>','terms-and-conditions-of-use'),
+('3','1','1','Terms and conditions of use',NULL,'Our terms and conditions of use','conditions, terms, use, sell','<div id=\"terms\">\r\n<div class=\"addon-title\">\r\n<h3>Terms and Conditions</h3>\r\n</div>\r\n<div class=\"pt-layout-content\">\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>\r\n<p>Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>\r\n<ul class=\"pt-list-dot\">\r\n<li>Omnis iste natus error sit voluptatem</li>\r\n<li>Accusantium doloremque</li>\r\n<li><a style=\"font-size: 18px;\">Laudantium totam rem aperiam</a></li>\r\n</ul>\r\n<p>Conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>\r\n<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>\r\n<ol class=\"pt-list-number\">\r\n<li>Omnis iste natus error sit voluptatem</li>\r\n<li>Accusantium doloremque</li>\r\n<li><a href=\"#\">Laudantium, totam rem aperiam</a></li>\r\n</ol></div>\r\n</div>','terms-and-conditions-of-use'),
 ('3','2','1','Terms and conditions of use',NULL,'Our terms and conditions of use','conditions, terms, use, sell','<h1 class=\"page-heading\">Terms and conditions of use</h1>\r\n<h3 class=\"page-subheading\">Rule 1</h3>\r\n<p class=\"bottom-indent\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<h3 class=\"page-subheading\">Rule 2</h3>\r\n<p class=\"bottom-indent\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamю</p>\r\n<h3 class=\"page-subheading\">Rule 3</h3>\r\n<p class=\"bottom-indent\">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamю</p>','terms-and-conditions-of-use'),
 ('3','3','1','Terms and conditions of use',NULL,'Our terms and conditions of use','conditions, terms, use, sell','<h1 class=\"page-heading\">Terms and conditions of use</h1>\r\n<h3 class=\"page-subheading\">Rule 1</h3>\r\n<p class=\"bottom-indent\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<h3 class=\"page-subheading\">Rule 2</h3>\r\n<p class=\"bottom-indent\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamю</p>\r\n<h3 class=\"page-subheading\">Rule 3</h3>\r\n<p class=\"bottom-indent\">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamю</p>','terms-and-conditions-of-use'),
 ('3','5','1','Terms and conditions of use',NULL,'Our terms and conditions of use','conditions, terms, use, sell','<h1 class=\"page-heading\">Terms and conditions of use</h1>\r\n<h3 class=\"page-subheading\">Rule 1</h3>\r\n<p class=\"bottom-indent\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<h3 class=\"page-subheading\">Rule 2</h3>\r\n<p class=\"bottom-indent\">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamю</p>\r\n<h3 class=\"page-subheading\">Rule 3</h3>\r\n<p class=\"bottom-indent\">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamю</p>','terms-and-conditions-of-use'),
@@ -4664,7 +4692,7 @@ INSERT INTO `jms_condition` VALUES
 ('20','20','install',NULL,'>=','7','1','time','1','1','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('21','21','configuration','PS_LOGO','!=','logo.jpg','1','hook','actionAdminThemesControllerUpdate_optionsAfter','1','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('22','22','sql','SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"','>','0','0','hook','actionObjectShopUpdateAfter','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
-('23','23','configuration','PS_LOGGED_ON_ADDONS','==','1',NULL,'time','1','0','2019-12-05 22:15:46','2019-12-06 05:25:15'),
+('23','23','configuration','PS_LOGGED_ON_ADDONS','==','1',NULL,'time','1','0','2019-12-05 22:15:46','2019-12-09 02:18:04'),
 ('24','24','configuration','PS_MULTISHOP_FEATURE_ACTIVE','==','1',NULL,'hook','actionAdminPreferencesControllerUpdate_optionsAfter','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('25','25','sql','SELECT COUNT(*) FROM PREFIX_shop','>','1',NULL,'hook','actionObjectShopAddAfter','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('26','26','sql','SELECT COUNT(*) FROM PREFIX_shop','>','4',NULL,'hook','actionObjectShopAddAfter','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
@@ -4674,43 +4702,43 @@ INSERT INTO `jms_condition` VALUES
 ('30','30','sql','SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")','>','2',NULL,'hook','actionObjectCarrierAddAfter','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('31','31','sql','SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','200','0','hook','actionOrderStatusUpdate','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('32','32','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','2000','0','hook','actionOrderStatusUpdate','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
-('33','33','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','20000','145','time','1','0','2019-12-05 22:15:46','2019-12-06 05:25:15'),
+('33','33','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"','>=','20000','145','time','1','0','2019-12-05 22:15:46','2019-12-09 02:18:04'),
 ('34','34','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','200000','0','time','7','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('35','35','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','2000000','0','time','7','0','2019-12-05 22:15:46','2019-12-05 22:15:46'),
 ('36','36','sql',' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1','>=','20000000','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('37','37','install',NULL,'>=','30','1','time','1','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('38','38','install',NULL,'>=','182',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('39','39','install',NULL,'>=','365',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('40','40','install',NULL,'>=','730',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('38','38','install',NULL,'>=','182',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('39','39','install',NULL,'>=','365',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('40','40','install',NULL,'>=','730',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('41','41','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','10','10','time','1','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('42','42','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100','66','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('43','43','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000','66','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('44','44','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','10000','64','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('45','45','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100000','62','time','3','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('46','46','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000000','64','time','4','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('42','42','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100','67','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('43','43','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000','67','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('44','44','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','10000','66','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('45','45','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','100000','66','time','3','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('46','46','sql','SELECT COUNT(*) FROM PREFIX_guest','>=','1000000','66','time','4','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('47','47','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','2','2','hook','actionObjectCartAddAfter','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('48','48','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','10','10','hook','actionObjectCartAddAfter','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('49','49','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','100','14','hook','actionObjectCartAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('50','50','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','1000','14','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('51','51','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','10000','14','time','4','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('49','49','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','100','15','hook','actionObjectCartAddAfter','0','2019-12-05 22:15:47','2019-12-08 23:32:25'),
+('50','50','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','1000','15','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('51','51','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','10000','14','time','4','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('52','52','sql','SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"','>=','100000','10','time','8','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('53','53','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','1','0','hook','actionObjectOrderAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('54','54','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','10','0','hook','actionObjectOrderAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('55','55','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','100','0','hook','actionObjectOrderAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('56','56','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','1000','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('57','57','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','10000','0','time','4','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('56','56','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','1000','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('57','57','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','10000','0','time','4','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('58','58','sql','SELECT COUNT(*) FROM ps_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")','>=','100000','0','time','8','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('59','59','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','1','2','hook','actionObjectCustomerAddAfter','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('60','60','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','10','4','hook','actionObjectCustomerAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('61','61','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','100','4','hook','actionObjectCustomerAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('62','62','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','1000','4','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('63','63','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','10000','4','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('64','64','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','100000','4','time','4','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('62','62','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','1000','4','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('63','63','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','10000','4','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('64','64','sql','SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"','>=','100000','4','time','4','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('65','65','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','1',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('66','66','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','10',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('67','67','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','100',NULL,'hook','actionObjectCustomerThreadAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('68','68','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','1000','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('69','69','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','10000','0','time','4','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('68','68','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','1000','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('69','69','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','10000','0','time','4','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('70','70','sql','SELECT COUNT(*) FROM PREFIX_customer_thread','>=','100000','0','time','8','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('71','76','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)','!=','0','0','hook','actionOrderStatusUpdate','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('72','79','sql','SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)','!=','0','0','hook','actionOrderStatusUpdate','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
@@ -4728,8 +4756,8 @@ INSERT INTO `jms_condition` VALUES
 ('84','96','sql','SELECT id_image FROM PREFIX_image WHERE id_image > 26','>','0','27','hook','actionObjectImageAddAfter','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('85','97','sql','SELECT COUNT(*) FROM PREFIX_image','>=','50','50','hook','actionObjectImageAddAfter','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('86','98','sql','SELECT COUNT(*) FROM PREFIX_image','>=','100','100','hook','actionObjectImageAddAfter','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('87','99','sql','SELECT COUNT(*) FROM PREFIX_image','>=','1000','120','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('88','100','sql','SELECT COUNT(*) FROM PREFIX_image','>=','10000','120','time','4','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('87','99','sql','SELECT COUNT(*) FROM PREFIX_image','>=','1000','120','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('88','100','sql','SELECT COUNT(*) FROM PREFIX_image','>=','10000','120','time','4','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('89','101','sql','SELECT COUNT(*) FROM PREFIX_image','>=','50000','102','time','8','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('90','102','sql','SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5','>','0','6','hook','actionObjectCMSAddAfter','1','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('91','103','sql','SELECT COUNT(*) FROM PREFIX_cart_rule','>=','1',NULL,'hook','actionObjectCartRuleAddAfter 	','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
@@ -4761,129 +4789,129 @@ INSERT INTO `jms_condition` VALUES
 ('117','173','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','3',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('118','174','sql','SELECT COUNT(*) FROM PREFIX_webservice_account','>=','4',NULL,'hook','actionAdminWebserviceControllerSaveAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('119','175','sql','SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'','==','0',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('120','209','configuration','EBAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
+('120','209','configuration','EBAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('121','320','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('122','322','configuration','SHOPGATE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
+('122','322','configuration','SHOPGATE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('123','323','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('124','324','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ','==','0',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('125','325','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('126','326','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('127','358','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('128','359','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('129','375','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('130','376','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('131','377','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('132','394','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
+('125','325','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('126','326','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('127','358','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('128','359','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('129','375','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('130','376','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('131','377','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('132','394','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('133','399','sql','SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"','>','499',NULL,'hook','actionObjectProductAddAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('134','424','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('135','425','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('136','426','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('135','425','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('136','426','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('137','427','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('138','428','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('139','429','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))','==','2',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('140','430','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('139','429','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))','==','2',NULL,'time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
+('140','430','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('141','431','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('142','434','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('143','435','configuration','BLUEPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('144','436','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('143','435','configuration','BLUEPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('144','436','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('145','437','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('146','438','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('147','439','configuration','PAYPLUG_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('148','440','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('147','439','configuration','PAYPLUG_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('148','440','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('149','441','sql','SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','10000','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('150','442','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('151','443','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'','==','1','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
+('151','443','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'','==','1','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('152','446','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('153','447','configuration','DPDPOLAND_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('154','448','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('153','447','configuration','DPDPOLAND_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('154','448','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('155','449','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('156','450','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('157','451','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('158','452','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('157','451','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('158','452','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('159','453','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('160','454','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('161','455','configuration','KLIKANDPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:15'),
-('162','456','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('161','455','configuration','KLIKANDPAY_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('162','456','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('163','457','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('164','458','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('165','459','configuration','CLICKLINE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('166','460','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('165','459','configuration','CLICKLINE_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('166','460','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('167','461','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','100','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('168','462','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('169','463','sql','SELECT 1','!=','1','1','time','100','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('170','464','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('170','464','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:30'),
 ('171','465','sql','SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)','>=','500','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('172','467','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('173','468','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))','==','3',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('173','468','configuration','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))','==','3',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('174','469','sql','SELECT 1','!=','1','1','time','100','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('175','470','sql','SELECT 1','!=','1','1','time','100','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('176','471','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('177','472','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('177','472','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('178','473','sql','SELECT 1','!=','1','1','time','100','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('179','474','sql','SELECT 1','!=','1','1','time','100','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('180','475','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('181','476','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('182','477','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('181','476','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('182','477','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('183','478','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('184','479','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('185','480','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('186','481','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('185','480','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('186','481','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('187','482','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('188','483','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('189','484','configuration','FIRSTDATA_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('190','485','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('189','484','configuration','FIRSTDATA_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('190','485','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('191','486','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('192','487','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('193','488','sql','GIVEIT_CONFIGURATION_OK','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('193','488','sql','GIVEIT_CONFIGURATION_OK','>=','1','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('194','489','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('195','490','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('196','491','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('197','492','configuration','GANALYTICS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('198','493','sql','SELECT 1','!=','1','1','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('197','492','configuration','GANALYTICS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('198','493','sql','SELECT 1','!=','1','1','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('199','494','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('200','496','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47');
 INSERT INTO `jms_condition` VALUES
-('201','497','configuration','PAGSEGURO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('202','498','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('201','497','configuration','PAGSEGURO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('202','498','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('203','499','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('204','500','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('205','501','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('206','502','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('205','501','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('206','502','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('207','503','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('208','505','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('209','506','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('210','507','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('209','506','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('210','507','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('211','508','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('212','509','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('213','510','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('214','511','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('213','510','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('214','511','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('215','512','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('216','513','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('217','514','configuration','PRESTASTATS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('217','514','configuration','PRESTASTATS_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('218','515','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('219','516','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('220','517','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('221','518','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('222','519','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('221','518','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('222','519','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('223','520','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('224','521','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('225','522','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('226','523','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('225','522','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('226','523','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('227','524','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('228','525','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('229','526','configuration','VTPAYMENT_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
-('230','527','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
+('229','526','configuration','VTPAYMENT_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
+('230','527','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1','>=','1','0','time','2','0','2019-12-05 22:15:47','2019-12-08 20:41:31'),
 ('231','528','sql','SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)','>=','30','0','time','7','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('232','529','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('233','530','configuration','YOTPO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('233','530','configuration','YOTPO_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('234','531','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('235','532','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('236','533','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"','==','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('237','534','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('237','534','sql','SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))','==','2','0','time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('238','535','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('239','536','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('240','537','sql','SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"','>=','1','0','hook','actionModuleInstallAfter','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
-('241','538','configuration','LOYALTYLION_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-06 05:25:16'),
+('241','538','configuration','LOYALTYLION_CONFIGURATION_OK','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-09 02:18:04'),
 ('242','539','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('243','540','sql','SELECT 1','!=','1','1','time','365','0','2019-12-05 22:15:47','2019-12-05 22:15:47'),
 ('244','542','sql','SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'','==','1',NULL,'time','1','0','2019-12-05 22:15:47','2019-12-05 22:15:47');
@@ -5478,7 +5506,7 @@ INSERT INTO `jms_configuration` VALUES
 ('140',NULL,NULL,'PS_VIRTUAL_PROD_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-09-27 08:48:14'),
 ('141',NULL,NULL,'PS_CUSTOMIZATION_FEATURE_ACTIVE','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('142',NULL,NULL,'PS_CART_RULE_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-11-14 03:52:47'),
-('143',NULL,NULL,'PS_PACK_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-12-05 02:33:14'),
+('143',NULL,NULL,'PS_PACK_FEATURE_ACTIVE','1','0000-00-00 00:00:00','2019-12-09 03:29:56'),
 ('144',NULL,NULL,'PS_ALIAS_FEATURE_ACTIVE','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('145',NULL,NULL,'PS_TAX_ADDRESS_TYPE','id_address_delivery','0000-00-00 00:00:00','0000-00-00 00:00:00'),
 ('146',NULL,NULL,'PS_SHOP_DEFAULT','1','0000-00-00 00:00:00','0000-00-00 00:00:00'),
@@ -6058,7 +6086,7 @@ CREATE TABLE `jms_connections` (
   KEY `id_guest` (`id_guest`),
   KEY `date_add` (`date_add`),
   KEY `id_page` (`id_page`)
-) ENGINE=InnoDB AUTO_INCREMENT=328 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=337 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /* Scheme for table jms_connections_page */
 DROP TABLE IF EXISTS `jms_connections_page`;
@@ -8194,7 +8222,7 @@ CREATE TABLE `jms_employee` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_employee` VALUES
-('1','1','1','Huy','Mr','admin@admin.com','$2y$10$55NMnAkWPwOgbLmxuRrLbeJWXIqafbwsEa89GpH2vdfHHyEpeFAh6','2019-09-27 02:45:46','2019-08-27','2019-09-27','0000-00-00','0000-00-00','1',NULL,NULL,'default','theme.css','1','0','1','1','1','6','0','5','2019-12-06',NULL,'0000-00-00 00:00:00');
+('1','1','1','Huy','Mr','admin@admin.com','$2y$10$55NMnAkWPwOgbLmxuRrLbeJWXIqafbwsEa89GpH2vdfHHyEpeFAh6','2019-09-27 02:45:46','2019-08-27','2019-09-27','0000-00-00','0000-00-00','1',NULL,NULL,'default','theme.css','1','0','1','1','1','6','0','5','2019-12-09',NULL,'0000-00-00 00:00:00');
 /* Scheme for table jms_employee_shop */
 DROP TABLE IF EXISTS `jms_employee_shop`;
 CREATE TABLE `jms_employee_shop` (
@@ -8390,7 +8418,7 @@ CREATE TABLE `jms_guest` (
   KEY `id_customer` (`id_customer`),
   KEY `id_operating_system` (`id_operating_system`),
   KEY `id_web_browser` (`id_web_browser`)
-) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /* Scheme for table jms_homeslider */
 DROP TABLE IF EXISTS `jms_homeslider`;
@@ -15153,7 +15181,7 @@ CREATE TABLE `jms_layered_category` (
   PRIMARY KEY (`id_layered_category`),
   KEY `id_category_shop` (`id_category`,`id_shop`,`type`,`id_value`,`position`),
   KEY `id_category` (`id_category`,`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8;
 
 INSERT INTO `jms_layered_category` VALUES
 ('1','1','2',NULL,'category','1','0','0'),
@@ -15164,86 +15192,97 @@ INSERT INTO `jms_layered_category` VALUES
 ('6','1','2',NULL,'manufacturer','6','0','0'),
 ('7','1','2',NULL,'weight','7','0','0'),
 ('8','1','2',NULL,'price','8','0','0'),
-('9','1','10',NULL,'category','1','0','0'),
-('10','1','10','1','id_attribute_group','2','0','0'),
-('11','1','10','2','id_attribute_group','3','0','0'),
-('12','1','10',NULL,'quantity','4','0','0'),
-('13','1','10',NULL,'condition','5','0','0'),
-('14','1','10',NULL,'manufacturer','6','0','0'),
-('15','1','10',NULL,'weight','7','0','0'),
-('16','1','10',NULL,'price','8','0','0'),
-('17','1','11',NULL,'category','1','0','0'),
-('18','1','11','1','id_attribute_group','2','0','0'),
-('19','1','11','2','id_attribute_group','3','0','0'),
-('20','1','11',NULL,'quantity','4','0','0'),
-('21','1','11',NULL,'condition','5','0','0'),
-('22','1','11',NULL,'manufacturer','6','0','0'),
-('23','1','11',NULL,'weight','7','0','0'),
-('24','1','11',NULL,'price','8','0','0'),
-('25','1','13',NULL,'category','1','0','0'),
-('26','1','13','1','id_attribute_group','2','0','0'),
-('27','1','13','2','id_attribute_group','3','0','0'),
-('28','1','13',NULL,'quantity','4','0','0'),
-('29','1','13',NULL,'condition','5','0','0'),
-('30','1','13',NULL,'manufacturer','6','0','0'),
-('31','1','13',NULL,'weight','7','0','0'),
-('32','1','13',NULL,'price','8','0','0'),
-('33','1','14',NULL,'category','1','0','0'),
-('34','1','14','1','id_attribute_group','2','0','0'),
-('35','1','14','2','id_attribute_group','3','0','0'),
-('36','1','14',NULL,'quantity','4','0','0'),
-('37','1','14',NULL,'condition','5','0','0'),
-('38','1','14',NULL,'manufacturer','6','0','0'),
-('39','1','14',NULL,'weight','7','0','0'),
-('40','1','14',NULL,'price','8','0','0'),
-('41','1','15',NULL,'category','1','0','0'),
-('42','1','15','1','id_attribute_group','2','0','0'),
-('43','1','15','2','id_attribute_group','3','0','0'),
-('44','1','15',NULL,'quantity','4','0','0'),
-('45','1','15',NULL,'condition','5','0','0'),
-('46','1','15',NULL,'manufacturer','6','0','0'),
-('47','1','15',NULL,'weight','7','0','0'),
-('48','1','15',NULL,'price','8','0','0'),
-('49','1','12',NULL,'category','1','0','0'),
-('50','1','12','1','id_attribute_group','2','0','0'),
-('51','1','12','2','id_attribute_group','3','0','0'),
-('52','1','12',NULL,'quantity','4','0','0'),
-('53','1','12',NULL,'condition','5','0','0'),
-('54','1','12',NULL,'manufacturer','6','0','0'),
-('55','1','12',NULL,'weight','7','0','0'),
-('56','1','12',NULL,'price','8','0','0'),
-('57','1','16',NULL,'category','1','0','0'),
-('58','1','16','1','id_attribute_group','2','0','0'),
-('59','1','16','2','id_attribute_group','3','0','0'),
-('60','1','16',NULL,'quantity','4','0','0'),
-('61','1','16',NULL,'condition','5','0','0'),
-('62','1','16',NULL,'manufacturer','6','0','0'),
-('63','1','16',NULL,'weight','7','0','0'),
-('64','1','16',NULL,'price','8','0','0'),
-('65','1','17',NULL,'category','1','0','0'),
-('66','1','17','1','id_attribute_group','2','0','0'),
-('67','1','17','2','id_attribute_group','3','0','0'),
-('68','1','17',NULL,'quantity','4','0','0'),
-('69','1','17',NULL,'condition','5','0','0'),
-('70','1','17',NULL,'manufacturer','6','0','0'),
-('71','1','17',NULL,'weight','7','0','0'),
-('72','1','17',NULL,'price','8','0','0'),
-('73','1','18',NULL,'category','1','0','0'),
-('74','1','18','1','id_attribute_group','2','0','0'),
-('75','1','18','2','id_attribute_group','3','0','0'),
-('76','1','18',NULL,'quantity','4','0','0'),
-('77','1','18',NULL,'condition','5','0','0'),
-('78','1','18',NULL,'manufacturer','6','0','0'),
-('79','1','18',NULL,'weight','7','0','0'),
-('80','1','18',NULL,'price','8','0','0'),
-('81','1','19',NULL,'category','1','0','0'),
-('82','1','19','1','id_attribute_group','2','0','0'),
-('83','1','19','2','id_attribute_group','3','0','0'),
-('84','1','19',NULL,'quantity','4','0','0'),
-('85','1','19',NULL,'condition','5','0','0'),
-('86','1','19',NULL,'manufacturer','6','0','0'),
-('87','1','19',NULL,'weight','7','0','0'),
-('88','1','19',NULL,'price','8','0','0');
+('9','1','2','3','id_attribute_group','9','0','0'),
+('10','1','10',NULL,'category','1','0','0'),
+('11','1','10','1','id_attribute_group','2','0','0'),
+('12','1','10','2','id_attribute_group','3','0','0'),
+('13','1','10',NULL,'quantity','4','0','0'),
+('14','1','10',NULL,'condition','5','0','0'),
+('15','1','10',NULL,'manufacturer','6','0','0'),
+('16','1','10',NULL,'weight','7','0','0'),
+('17','1','10',NULL,'price','8','0','0'),
+('18','1','10','3','id_attribute_group','9','0','0'),
+('19','1','11',NULL,'category','1','0','0'),
+('20','1','11','1','id_attribute_group','2','0','0'),
+('21','1','11','2','id_attribute_group','3','0','0'),
+('22','1','11',NULL,'quantity','4','0','0'),
+('23','1','11',NULL,'condition','5','0','0'),
+('24','1','11',NULL,'manufacturer','6','0','0'),
+('25','1','11',NULL,'weight','7','0','0'),
+('26','1','11',NULL,'price','8','0','0'),
+('27','1','11','3','id_attribute_group','9','0','0'),
+('28','1','13',NULL,'category','1','0','0'),
+('29','1','13','1','id_attribute_group','2','0','0'),
+('30','1','13','2','id_attribute_group','3','0','0'),
+('31','1','13',NULL,'quantity','4','0','0'),
+('32','1','13',NULL,'condition','5','0','0'),
+('33','1','13',NULL,'manufacturer','6','0','0'),
+('34','1','13',NULL,'weight','7','0','0'),
+('35','1','13',NULL,'price','8','0','0'),
+('36','1','13','3','id_attribute_group','9','0','0'),
+('37','1','14',NULL,'category','1','0','0'),
+('38','1','14','1','id_attribute_group','2','0','0'),
+('39','1','14','2','id_attribute_group','3','0','0'),
+('40','1','14',NULL,'quantity','4','0','0'),
+('41','1','14',NULL,'condition','5','0','0'),
+('42','1','14',NULL,'manufacturer','6','0','0'),
+('43','1','14',NULL,'weight','7','0','0'),
+('44','1','14',NULL,'price','8','0','0'),
+('45','1','14','3','id_attribute_group','9','0','0'),
+('46','1','15',NULL,'category','1','0','0'),
+('47','1','15','1','id_attribute_group','2','0','0'),
+('48','1','15','2','id_attribute_group','3','0','0'),
+('49','1','15',NULL,'quantity','4','0','0'),
+('50','1','15',NULL,'condition','5','0','0'),
+('51','1','15',NULL,'manufacturer','6','0','0'),
+('52','1','15',NULL,'weight','7','0','0'),
+('53','1','15',NULL,'price','8','0','0'),
+('54','1','15','3','id_attribute_group','9','0','0'),
+('55','1','12',NULL,'category','1','0','0'),
+('56','1','12','1','id_attribute_group','2','0','0'),
+('57','1','12','2','id_attribute_group','3','0','0'),
+('58','1','12',NULL,'quantity','4','0','0'),
+('59','1','12',NULL,'condition','5','0','0'),
+('60','1','12',NULL,'manufacturer','6','0','0'),
+('61','1','12',NULL,'weight','7','0','0'),
+('62','1','12',NULL,'price','8','0','0'),
+('63','1','12','3','id_attribute_group','9','0','0'),
+('64','1','16',NULL,'category','1','0','0'),
+('65','1','16','1','id_attribute_group','2','0','0'),
+('66','1','16','2','id_attribute_group','3','0','0'),
+('67','1','16',NULL,'quantity','4','0','0'),
+('68','1','16',NULL,'condition','5','0','0'),
+('69','1','16',NULL,'manufacturer','6','0','0'),
+('70','1','16',NULL,'weight','7','0','0'),
+('71','1','16',NULL,'price','8','0','0'),
+('72','1','16','3','id_attribute_group','9','0','0'),
+('73','1','17',NULL,'category','1','0','0'),
+('74','1','17','1','id_attribute_group','2','0','0'),
+('75','1','17','2','id_attribute_group','3','0','0'),
+('76','1','17',NULL,'quantity','4','0','0'),
+('77','1','17',NULL,'condition','5','0','0'),
+('78','1','17',NULL,'manufacturer','6','0','0'),
+('79','1','17',NULL,'weight','7','0','0'),
+('80','1','17',NULL,'price','8','0','0'),
+('81','1','17','3','id_attribute_group','9','0','0'),
+('82','1','18',NULL,'category','1','0','0'),
+('83','1','18','1','id_attribute_group','2','0','0'),
+('84','1','18','2','id_attribute_group','3','0','0'),
+('85','1','18',NULL,'quantity','4','0','0'),
+('86','1','18',NULL,'condition','5','0','0'),
+('87','1','18',NULL,'manufacturer','6','0','0'),
+('88','1','18',NULL,'weight','7','0','0'),
+('89','1','18',NULL,'price','8','0','0'),
+('90','1','18','3','id_attribute_group','9','0','0'),
+('91','1','19',NULL,'category','1','0','0'),
+('92','1','19','1','id_attribute_group','2','0','0'),
+('93','1','19','2','id_attribute_group','3','0','0'),
+('94','1','19',NULL,'quantity','4','0','0'),
+('95','1','19',NULL,'condition','5','0','0'),
+('96','1','19',NULL,'manufacturer','6','0','0'),
+('97','1','19',NULL,'weight','7','0','0'),
+('98','1','19',NULL,'price','8','0','0'),
+('99','1','19','3','id_attribute_group','9','0','0');
 /* Scheme for table jms_layered_filter */
 DROP TABLE IF EXISTS `jms_layered_filter`;
 CREATE TABLE `jms_layered_filter` (
@@ -15256,7 +15295,7 @@ CREATE TABLE `jms_layered_filter` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 INSERT INTO `jms_layered_filter` VALUES
-('1','My template 2019-09-27','a:10:{s:10:\"categories\";a:11:{i:0;i:2;i:1;i:10;i:2;i:11;i:3;i:13;i:4;i:14;i:5;i:15;i:6;i:12;i:7;i:16;i:8;i:17;i:9;i:18;i:10;i:19;}s:9:\"shop_list\";a:1:{i:0;i:1;}s:31:\"layered_selection_subcategories\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_1\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_2\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:23:\"layered_selection_stock\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:27:\"layered_selection_condition\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_manufacturer\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:31:\"layered_selection_weight_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_price_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}}','11','2019-10-22 21:59:41');
+('1','My template 2019-09-27','a:11:{s:10:\"categories\";a:11:{i:0;i:2;i:1;i:10;i:2;i:11;i:3;i:13;i:4;i:14;i:5;i:15;i:6;i:12;i:7;i:16;i:8;i:17;i:9;i:18;i:10;i:19;}s:9:\"shop_list\";a:1:{i:0;i:1;}s:31:\"layered_selection_subcategories\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_1\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_2\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:23:\"layered_selection_stock\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:27:\"layered_selection_condition\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_manufacturer\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:31:\"layered_selection_weight_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:30:\"layered_selection_price_slider\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}s:22:\"layered_selection_ag_3\";a:2:{s:11:\"filter_type\";i:0;s:17:\"filter_show_limit\";i:0;}}','11','2019-12-08 23:49:17');
 /* Scheme for table jms_layered_filter_block */
 DROP TABLE IF EXISTS `jms_layered_filter_block`;
 CREATE TABLE `jms_layered_filter_block` (
@@ -15265,11 +15304,6 @@ CREATE TABLE `jms_layered_filter_block` (
   PRIMARY KEY (`hash`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `jms_layered_filter_block` VALUES
-('43b13bb726875d2d28e7d3d64faad1a7','a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:2:{i:11;a:2:{s:4:\"name\";s:5:\"Women\";s:3:\"nbr\";s:2:\"15\";}i:12;a:2:{s:4:\"name\";s:3:\"Men\";s:3:\"nbr\";s:1:\"7\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:5:{i:26;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XS\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:2:\"xs\";s:10:\"meta_title\";s:0:\"\";}i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"S\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"M\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"L\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XL\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:8:{i:5;a:5:{s:5:\"color\";s:7:\"#808080\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:8;a:5:{s:5:\"color\";s:7:\"#ffffff\";s:4:\"name\";s:5:\"White\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:11;a:5:{s:5:\"color\";s:7:\"#000000\";s:4:\"name\";s:5:\"Black\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"black\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ffb84d\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#80c783\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#ffff00\";s:4:\"name\";s:6:\"Yellow\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"yellow\";s:10:\"meta_title\";s:0:\"\";}i:29;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:13:\"Texture White\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:13:\"texture-white\";s:10:\"meta_title\";s:0:\"\";}i:30;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:13:\"Texture Black\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:13:\"texture-black\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:21;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"22\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:6:{i:3;a:2:{s:4:\"name\";s:3:\"Gap\";s:3:\"nbr\";s:1:\"1\";}i:4;a:2:{s:4:\"name\";s:5:\"Guess\";s:3:\"nbr\";s:1:\"1\";}i:5;a:2:{s:4:\"name\";s:7:\"Lacoste\";s:3:\"nbr\";s:1:\"1\";}i:6;a:2:{s:4:\"name\";s:6:\"Levi\'s\";s:3:\"nbr\";s:1:\"3\";}i:7;a:2:{s:4:\"name\";s:4:\"Polo\";s:3:\"nbr\";s:1:\"1\";}i:8;a:2:{s:4:\"name\";s:4:\"Zara\";s:3:\"nbr\";s:1:\"2\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:330;s:3:\"min\";d:8;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:2:\"22\";s:5:\"value\";N;}}}'),
-('6275c67b48755ffc145abcca6dde7f1d','a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:1:{i:11;a:2:{s:4:\"name\";s:5:\"Women\";s:3:\"nbr\";s:1:\"2\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:5:{i:26;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XS\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:2:\"xs\";s:10:\"meta_title\";s:0:\"\";}i:1;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"S\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";N;s:10:\"meta_title\";N;s:7:\"checked\";b:1;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"M\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"L\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XL\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:8:{i:5;a:5:{s:5:\"color\";s:7:\"#808080\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:8;a:5:{s:5:\"color\";s:7:\"#ffffff\";s:4:\"name\";s:5:\"White\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:11;a:5:{s:5:\"color\";s:7:\"#000000\";s:4:\"name\";s:5:\"Black\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"black\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ffb84d\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#80c783\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#ffff00\";s:4:\"name\";s:6:\"Yellow\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"yellow\";s:10:\"meta_title\";s:0:\"\";}i:29;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:13:\"Texture White\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:13:\"texture-white\";s:10:\"meta_title\";s:0:\"\";}i:30;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:13:\"Texture Black\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:13:\"texture-black\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:21;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"22\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:6:{i:3;a:2:{s:4:\"name\";s:3:\"Gap\";s:3:\"nbr\";s:1:\"1\";}i:4;a:2:{s:4:\"name\";s:5:\"Guess\";s:3:\"nbr\";s:1:\"1\";}i:5;a:2:{s:4:\"name\";s:7:\"Lacoste\";s:3:\"nbr\";s:1:\"1\";}i:6;a:2:{s:4:\"name\";s:6:\"Levi\'s\";s:3:\"nbr\";s:1:\"3\";}i:7;a:2:{s:4:\"name\";s:4:\"Polo\";s:3:\"nbr\";s:1:\"1\";}i:8;a:2:{s:4:\"name\";s:4:\"Zara\";s:3:\"nbr\";s:1:\"2\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:330;s:3:\"min\";d:8;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"2\";s:5:\"value\";N;}}}'),
-('b26304109b90af2a9eb0bc222c487938','a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:2:{i:11;a:2:{s:4:\"name\";s:5:\"Women\";s:3:\"nbr\";s:2:\"15\";}i:12;a:3:{s:4:\"name\";s:3:\"Men\";s:3:\"nbr\";s:1:\"7\";s:7:\"checked\";b:1;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:3:{i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"M\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"L\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XL\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:2:{i:5;a:5:{s:5:\"color\";s:7:\"#808080\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:11;a:5:{s:5:\"color\";s:7:\"#000000\";s:4:\"name\";s:5:\"Black\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"black\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:0;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:7;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:1:\"7\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:3:{i:6;a:2:{s:4:\"name\";s:6:\"Levi\'s\";s:3:\"nbr\";s:1:\"1\";}i:7;a:2:{s:4:\"name\";s:4:\"Polo\";s:3:\"nbr\";s:1:\"1\";}i:8;a:2:{s:4:\"name\";s:4:\"Zara\";s:3:\"nbr\";s:1:\"1\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:128;s:3:\"min\";d:18;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"7\";s:5:\"value\";N;}}}'),
-('d3330e8f31470b790550013c9ef26906','a:1:{s:7:\"filters\";a:8:{i:0;a:7:{s:9:\"type_lite\";s:8:\"category\";s:4:\"type\";s:8:\"category\";s:6:\"id_key\";i:0;s:4:\"name\";s:10:\"Categories\";s:6:\"values\";a:1:{i:11;a:2:{s:4:\"name\";s:5:\"Women\";s:3:\"nbr\";s:1:\"2\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:1;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"1\";s:4:\"name\";s:4:\"Size\";s:14:\"is_color_group\";b:0;s:6:\"values\";a:5:{i:26;a:6:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XS\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:2:\"xs\";s:10:\"meta_title\";s:0:\"\";s:7:\"checked\";b:1;}i:1;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"S\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:2;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"M\";s:3:\"nbr\";s:1:\"4\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:3;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:1:\"L\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:4;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:2:\"XL\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:2;a:10:{s:9:\"type_lite\";s:18:\"id_attribute_group\";s:4:\"type\";s:18:\"id_attribute_group\";s:6:\"id_key\";s:1:\"2\";s:4:\"name\";s:5:\"Color\";s:14:\"is_color_group\";b:1;s:6:\"values\";a:8:{i:5;a:5:{s:5:\"color\";s:7:\"#808080\";s:4:\"name\";s:4:\"Grey\";s:3:\"nbr\";s:1:\"3\";s:8:\"url_name\";s:4:\"grey\";s:10:\"meta_title\";s:0:\"\";}i:8;a:5:{s:5:\"color\";s:7:\"#ffffff\";s:4:\"name\";s:5:\"White\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";N;s:10:\"meta_title\";N;}i:11;a:5:{s:5:\"color\";s:7:\"#000000\";s:4:\"name\";s:5:\"Black\";s:3:\"nbr\";s:1:\"2\";s:8:\"url_name\";s:5:\"black\";s:10:\"meta_title\";s:0:\"\";}i:13;a:5:{s:5:\"color\";s:7:\"#ffb84d\";s:4:\"name\";s:6:\"Orange\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"orange\";s:10:\"meta_title\";s:0:\"\";}i:15;a:5:{s:5:\"color\";s:7:\"#80c783\";s:4:\"name\";s:5:\"Green\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:5:\"green\";s:10:\"meta_title\";s:0:\"\";}i:16;a:5:{s:5:\"color\";s:7:\"#ffff00\";s:4:\"name\";s:6:\"Yellow\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:6:\"yellow\";s:10:\"meta_title\";s:0:\"\";}i:29;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:13:\"Texture White\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:13:\"texture-white\";s:10:\"meta_title\";s:0:\"\";}i:30;a:5:{s:5:\"color\";s:0:\"\";s:4:\"name\";s:13:\"Texture Black\";s:3:\"nbr\";s:1:\"1\";s:8:\"url_name\";s:13:\"texture-black\";s:10:\"meta_title\";s:0:\"\";}}s:8:\"url_name\";N;s:10:\"meta_title\";N;s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:3;a:7:{s:9:\"type_lite\";s:8:\"quantity\";s:4:\"type\";s:8:\"quantity\";s:6:\"id_key\";i:0;s:4:\"name\";s:12:\"Availability\";s:6:\"values\";a:2:{i:0;a:2:{s:4:\"name\";s:13:\"Not available\";s:3:\"nbr\";i:1;}i:1;a:2:{s:4:\"name\";s:8:\"In stock\";s:3:\"nbr\";i:21;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:4;a:7:{s:9:\"type_lite\";s:9:\"condition\";s:4:\"type\";s:9:\"condition\";s:6:\"id_key\";i:0;s:4:\"name\";s:9:\"Condition\";s:6:\"values\";a:3:{s:3:\"new\";a:2:{s:4:\"name\";s:3:\"New\";s:3:\"nbr\";s:2:\"22\";}s:4:\"used\";a:2:{s:4:\"name\";s:4:\"Used\";s:3:\"nbr\";i:0;}s:11:\"refurbished\";a:2:{s:4:\"name\";s:11:\"Refurbished\";s:3:\"nbr\";i:0;}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:5;a:7:{s:9:\"type_lite\";s:12:\"manufacturer\";s:4:\"type\";s:12:\"manufacturer\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Brand\";s:6:\"values\";a:6:{i:3;a:2:{s:4:\"name\";s:3:\"Gap\";s:3:\"nbr\";s:1:\"1\";}i:4;a:2:{s:4:\"name\";s:5:\"Guess\";s:3:\"nbr\";s:1:\"1\";}i:5;a:2:{s:4:\"name\";s:7:\"Lacoste\";s:3:\"nbr\";s:1:\"1\";}i:6;a:2:{s:4:\"name\";s:6:\"Levi\'s\";s:3:\"nbr\";s:1:\"3\";}i:7;a:2:{s:4:\"name\";s:4:\"Polo\";s:3:\"nbr\";s:1:\"1\";}i:8;a:2:{s:4:\"name\";s:4:\"Zara\";s:3:\"nbr\";s:1:\"2\";}}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";s:1:\"0\";}i:6;a:0:{}i:7;a:12:{s:9:\"type_lite\";s:5:\"price\";s:4:\"type\";s:5:\"price\";s:6:\"id_key\";i:0;s:4:\"name\";s:5:\"Price\";s:3:\"max\";d:330;s:3:\"min\";d:8;s:4:\"unit\";s:1:\"$\";s:14:\"specifications\";a:10:{s:6:\"symbol\";a:11:{i:0;s:1:\".\";i:1;s:1:\",\";i:2;s:1:\";\";i:3;s:1:\"%\";i:4;s:1:\"-\";i:5;s:1:\"+\";i:6;s:1:\"E\";i:7;s:2:\"×\";i:8;s:3:\"‰\";i:9;s:3:\"∞\";i:10;s:3:\"NaN\";}s:12:\"currencyCode\";s:3:\"USD\";s:14:\"currencySymbol\";s:1:\"$\";s:15:\"positivePattern\";s:10:\"¤#,##0.00\";s:15:\"negativePattern\";s:11:\"-¤#,##0.00\";s:17:\"maxFractionDigits\";i:2;s:17:\"minFractionDigits\";i:2;s:12:\"groupingUsed\";b:1;s:16:\"primaryGroupSize\";i:3;s:18:\"secondaryGroupSize\";i:3;}s:17:\"filter_show_limit\";s:1:\"0\";s:11:\"filter_type\";i:3;s:3:\"nbr\";s:1:\"2\";s:5:\"value\";N;}}}');
 /* Scheme for table jms_layered_filter_shop */
 DROP TABLE IF EXISTS `jms_layered_filter_shop`;
 CREATE TABLE `jms_layered_filter_shop` (
@@ -15373,16 +15407,31 @@ INSERT INTO `jms_layered_indexable_attribute_lang_value` VALUES
 ('28','3',NULL,NULL),
 ('28','5',NULL,NULL),
 ('28','8',NULL,NULL),
-('29','1','texture-white',NULL),
-('29','2',NULL,NULL),
-('29','3',NULL,NULL),
-('29','5',NULL,NULL),
-('29','8',NULL,NULL),
-('30','1','texture-black',NULL),
-('30','2',NULL,NULL),
-('30','3',NULL,NULL),
-('30','5',NULL,NULL),
-('30','8',NULL,NULL);
+('29','1','white',NULL),
+('29','2','texture-white',NULL),
+('29','3','texture-white',NULL),
+('29','5','texture-white',NULL),
+('29','8','texture-white',NULL),
+('30','1','black',NULL),
+('30','2','texture-black',NULL),
+('30','3','texture-black',NULL),
+('30','5','texture-black',NULL),
+('30','8','texture-black',NULL),
+('31','1','cotton',NULL),
+('31','2',NULL,NULL),
+('31','3',NULL,NULL),
+('31','5',NULL,NULL),
+('31','8',NULL,NULL),
+('32','1','silk',NULL),
+('32','2',NULL,NULL),
+('32','3',NULL,NULL),
+('32','5',NULL,NULL),
+('32','8',NULL,NULL),
+('33','1','linen',NULL),
+('33','2',NULL,NULL),
+('33','3',NULL,NULL),
+('33','5',NULL,NULL),
+('33','8',NULL,NULL);
 /* Scheme for table jms_layered_indexable_feature */
 DROP TABLE IF EXISTS `jms_layered_indexable_feature`;
 CREATE TABLE `jms_layered_indexable_feature` (
@@ -15524,7 +15573,6 @@ INSERT INTO `jms_layered_product_attribute` VALUES
 ('4','20','1','1'),
 ('4','37','1','1'),
 ('4','38','1','1'),
-('26','21','1','1'),
 ('26','35','1','1'),
 ('5','37','2','1'),
 ('5','38','2','1'),
@@ -15533,6 +15581,7 @@ INSERT INTO `jms_layered_product_attribute` VALUES
 ('8','9','2','1'),
 ('8','10','2','1'),
 ('8','11','2','1'),
+('8','21','2','1'),
 ('8','35','2','1'),
 ('11','1','2','1'),
 ('11','9','2','1'),
@@ -15540,6 +15589,7 @@ INSERT INTO `jms_layered_product_attribute` VALUES
 ('11','11','2','1'),
 ('11','37','2','1'),
 ('11','42','2','1'),
+('13','21','2','1'),
 ('13','38','2','1'),
 ('15','21','2','1'),
 ('16','35','2','1'),
@@ -15554,6 +15604,9 @@ INSERT INTO `jms_layered_product_attribute` VALUES
 ('21','3','3','1'),
 ('21','4','3','1'),
 ('21','5','3','1'),
+('31','23','3','1'),
+('32','23','3','1'),
+('33','23','3','1'),
 ('22','16','4','1'),
 ('22','17','4','1'),
 ('22','18','4','1'),
@@ -15642,7 +15695,7 @@ CREATE TABLE `jms_log` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL,
   PRIMARY KEY (`id_log`)
-) ENGINE=InnoDB AUTO_INCREMENT=1071 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1081 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_log` VALUES
 ('1','1','0','Exporting mail with theme modern for language English (English)',NULL,'0','0','2019-09-27 08:45:34','2019-09-27 08:45:34'),
@@ -16719,7 +16772,17 @@ INSERT INTO `jms_log` VALUES
 ('1067','1','0','Product modification','Product','22','1','2019-12-05 02:31:58','2019-12-05 02:31:58'),
 ('1068','1','0','Product modification','Product','22','1','2019-12-05 02:32:43','2019-12-05 02:32:43'),
 ('1069','1','0','Product modification','Product','22','1','2019-12-05 02:33:14','2019-12-05 02:33:14'),
-('1070','1','0','Back office connection from 127.0.0.1',NULL,'0','1','2019-12-05 20:38:03','2019-12-05 20:38:03');
+('1070','1','0','Back office connection from 127.0.0.1',NULL,'0','1','2019-12-05 20:38:03','2019-12-05 20:38:03'),
+('1071','1','0','AttributeGroup addition','AttributeGroup','3','1','2019-12-08 23:40:22','2019-12-08 23:40:22'),
+('1072','1','0','Attribute addition','Attribute','31','1','2019-12-08 23:48:07','2019-12-08 23:48:07'),
+('1073','1','0','Attribute addition','Attribute','32','1','2019-12-08 23:48:21','2019-12-08 23:48:21'),
+('1074','1','0','Attribute addition','Attribute','33','1','2019-12-08 23:48:31','2019-12-08 23:48:31'),
+('1075','1','0','Product modification','Product','23','1','2019-12-08 23:51:16','2019-12-08 23:51:16'),
+('1076','1','0','Product modification','Product','23','1','2019-12-08 23:51:25','2019-12-08 23:51:25'),
+('1077','1','0','Attribute modification','Attribute','29','1','2019-12-09 02:18:18','2019-12-09 02:18:18'),
+('1078','1','0','Attribute modification','Attribute','30','1','2019-12-09 02:18:33','2019-12-09 02:18:33'),
+('1079','1','0','Product modification','Product','21','1','2019-12-09 03:29:28','2019-12-09 03:29:28'),
+('1080','1','0','Product modification','Product','21','1','2019-12-09 03:29:56','2019-12-09 03:29:56');
 /* Scheme for table jms_mail */
 DROP TABLE IF EXISTS `jms_mail`;
 CREATE TABLE `jms_mail` (
@@ -17826,7 +17889,7 @@ INSERT INTO `jms_module_history` VALUES
 ('6','1','64','2019-10-10 05:23:27','2019-10-10 21:58:52'),
 ('7','1','65','2019-10-14 00:17:58','2019-10-14 00:17:58'),
 ('8','1','81','2019-10-22 04:46:03','2019-10-22 04:46:03'),
-('9','1','61','2019-10-22 21:57:53','2019-12-05 22:15:43'),
+('9','1','61','2019-10-22 21:57:53','2019-12-08 23:49:06'),
 ('10','1','73','2019-10-22 22:14:49','2019-10-23 04:15:48'),
 ('11','1','83','2019-10-23 03:44:26','2019-10-23 03:44:26'),
 ('12','1','82','2019-10-23 22:51:29','2019-12-05 01:44:46'),
@@ -18661,9 +18724,9 @@ CREATE TABLE `jms_product` (
 
 INSERT INTO `jms_product` VALUES
 ('20','0','3','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','112',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','1','new','1','1','both','0','0','0','26','2019-10-01 23:00:49','2019-11-13 23:36:40','0','3','1'),
-('21','0','4','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','243',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','1','2019-10-01 23:44:44','2019-10-28 22:44:53','0','3','1'),
+('21','0','4','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','243',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','41','2019-10-01 23:44:44','2019-12-09 03:29:56','0','3','1'),
 ('22','0','5','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','34.890000','0.000000',NULL,'0.000000','0.00','11',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-01 23:46:36','2019-12-05 02:33:14','0','3','1'),
-('23','0','6','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','148.890000','0.000000',NULL,'0.000000','0.00','8',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-01 23:48:32','2019-10-29 03:08:21','0','3','1'),
+('23','0','6','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','148.890000','0.000000',NULL,'0.000000','0.00','8',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','36','2019-10-01 23:48:32','2019-12-08 23:51:25','0','3','1'),
 ('24','0','7','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','531',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:12:26','2019-10-28 22:45:41','0','3','1'),
 ('26','0','8','11','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','93',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:17:06','2019-10-28 22:45:59','0','3','1'),
 ('27','0','0','12','1','0','0','0',NULL,NULL,NULL,'0.000000','0','1',NULL,'0','28.890000','0.000000',NULL,'0.000000','0.00','34',NULL,NULL,'0.000000','0.000000','0.000000','0.000000','2','1','0','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','0','0','2019-10-02 22:18:23','2019-10-28 22:46:32','0','3','1'),
@@ -18718,10 +18781,9 @@ CREATE TABLE `jms_product_attribute` (
   KEY `reference` (`reference`),
   KEY `supplier_reference` (`supplier_reference`),
   KEY `id_product_id_product_attribute` (`id_product_attribute`,`id_product`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_product_attribute` VALUES
-('1','21',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
 ('8','35',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('9','35',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('10','35',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
@@ -18749,7 +18811,13 @@ INSERT INTO `jms_product_attribute` VALUES
 ('32','20',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('33','20',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('34','42',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
-('35','42',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00');
+('35','42',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('36','23',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
+('37','23',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('38','23',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('39','21',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('40','21',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('41','21',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','0.000000','0.000000','0','0.000000','0.000000','1','1',NULL,'0','0000-00-00');
 /* Scheme for table jms_product_attribute_combination */
 DROP TABLE IF EXISTS `jms_product_attribute_combination`;
 CREATE TABLE `jms_product_attribute_combination` (
@@ -18794,6 +18862,7 @@ INSERT INTO `jms_product_attribute_combination` VALUES
 ('8','9'),
 ('8','11'),
 ('8','13'),
+('8','40'),
 ('11','14'),
 ('11','15'),
 ('11','16'),
@@ -18801,11 +18870,11 @@ INSERT INTO `jms_product_attribute_combination` VALUES
 ('13','21'),
 ('13','23'),
 ('13','25'),
-('15','1'),
+('13','39'),
+('15','41'),
 ('16','8'),
 ('16','10'),
 ('16','12'),
-('26','1'),
 ('26','8'),
 ('26','9'),
 ('29','26'),
@@ -18815,7 +18884,10 @@ INSERT INTO `jms_product_attribute_combination` VALUES
 ('30','30'),
 ('30','31'),
 ('30','32'),
-('30','33');
+('30','33'),
+('31','36'),
+('32','37'),
+('33','38');
 /* Scheme for table jms_product_attribute_image */
 DROP TABLE IF EXISTS `jms_product_attribute_image`;
 CREATE TABLE `jms_product_attribute_image` (
@@ -18953,7 +19025,6 @@ CREATE TABLE `jms_product_attribute_shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_product_attribute_shop` VALUES
-('21','1','1','0.000000','0.000000','0.000000','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
 ('35','8','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('35','9','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('35','10','1','0.000000','0.000000','0.000000','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
@@ -18981,7 +19052,13 @@ INSERT INTO `jms_product_attribute_shop` VALUES
 ('20','32','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('20','33','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
 ('42','34','1','0.000000','0.000000','0.000000','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
-('42','35','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00');
+('42','35','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('23','36','1','0.000000','0.000000','0.000000','0.000000','0.000000','1','1',NULL,'0','0000-00-00'),
+('23','37','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('23','38','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('21','39','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('21','40','1','0.000000','0.000000','0.000000','0.000000','0.000000',NULL,'1',NULL,'0','0000-00-00'),
+('21','41','1','0.000000','0.000000','0.000000','0.000000','0.000000','1','1',NULL,'0','0000-00-00');
 /* Scheme for table jms_product_carrier */
 DROP TABLE IF EXISTS `jms_product_carrier`;
 CREATE TABLE `jms_product_carrier` (
@@ -19321,9 +19398,9 @@ CREATE TABLE `jms_product_shop` (
 
 INSERT INTO `jms_product_shop` VALUES
 ('20','1','11','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','1','new','1','1','both','26','0','2019-10-01 23:00:49','2019-11-13 23:36:40','3'),
-('21','1','11','0','0','0','0.000000','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','1','0','2019-10-01 23:44:44','2019-10-28 22:44:53','3'),
+('21','1','11','0','0','0','0.000000','1',NULL,'0','78.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','41','0','2019-10-01 23:44:44','2019-12-09 03:29:56','3'),
 ('22','1','11','0','0','0','0.000000','1',NULL,'0','34.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-01 23:46:36','2019-12-05 02:33:14','3'),
-('23','1','11','0','0','0','0.000000','1',NULL,'0','148.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-01 23:48:32','2019-10-29 03:08:21','3'),
+('23','1','11','0','0','0','0.000000','1',NULL,'0','148.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','36','0','2019-10-01 23:48:32','2019-12-08 23:51:25','3'),
 ('24','1','12','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:12:26','2019-10-28 22:45:41','3'),
 ('26','1','11','0','0','0','0.000000','1',NULL,'0','24.000000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:17:06','2019-10-28 22:45:59','3'),
 ('27','1','12','0','0','0','0.000000','1',NULL,'0','28.890000','0.000000',NULL,'0.000000','0.00','0','0','0','1','301-category','0','1','0000-00-00','0','new','1','1','both','0','0','2019-10-02 22:18:23','2019-10-28 22:46:32','3'),
@@ -19369,13 +19446,13 @@ CREATE TABLE `jms_product_tag` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_product_tag` VALUES
-('21','16','1'),
-('21','17','1'),
 ('24','19','1'),
-('23','21','1'),
 ('20','35','1'),
 ('20','36','1'),
-('22','39','1');
+('22','39','1'),
+('23','41','1'),
+('21','44','1'),
+('21','45','1');
 /* Scheme for table jms_profile */
 DROP TABLE IF EXISTS `jms_profile`;
 CREATE TABLE `jms_profile` (
@@ -19882,6 +19959,16 @@ INSERT INTO `jms_search_index` VALUES
 ('21','3651','2'),
 ('21','3655','2'),
 ('21','3659','2'),
+('21','3749','2'),
+('21','3795','2'),
+('21','3802','2'),
+('21','3809','2'),
+('21','3816','2'),
+('21','4166','2'),
+('21','4211','2'),
+('21','4217','2'),
+('21','4223','2'),
+('21','4229','2'),
 ('21','720','3'),
 ('21','725','3'),
 ('21','730','3'),
@@ -19936,7 +20023,8 @@ INSERT INTO `jms_search_index` VALUES
 ('22','688','2'),
 ('22','689','2'),
 ('22','690','2'),
-('22','691','2'),
+('22','691','2');
+INSERT INTO `jms_search_index` VALUES
 ('22','692','2'),
 ('22','693','2'),
 ('22','694','2'),
@@ -19946,8 +20034,7 @@ INSERT INTO `jms_search_index` VALUES
 ('22','698','2'),
 ('22','699','2'),
 ('22','700','2'),
-('22','701','2');
-INSERT INTO `jms_search_index` VALUES
+('22','701','2'),
 ('22','702','2'),
 ('22','720','3'),
 ('22','725','3'),
@@ -20029,6 +20116,21 @@ INSERT INTO `jms_search_index` VALUES
 ('23','700','2'),
 ('23','701','2'),
 ('23','702','2'),
+('23','6416','2'),
+('23','6417','2'),
+('23','6418','2'),
+('23','6464','2'),
+('23','6465','2'),
+('23','6466','2'),
+('23','6473','2'),
+('23','6474','2'),
+('23','6475','2'),
+('23','6482','2'),
+('23','6483','2'),
+('23','6484','2'),
+('23','6491','2'),
+('23','6492','2'),
+('23','6493','2'),
 ('23','720','3'),
 ('23','725','3'),
 ('23','730','3'),
@@ -20122,7 +20224,8 @@ INSERT INTO `jms_search_index` VALUES
 ('24','1538','6'),
 ('24','1540','6'),
 ('24','1541','6'),
-('24','1542','6'),
+('24','1542','6');
+INSERT INTO `jms_search_index` VALUES
 ('24','1543','6'),
 ('24','1545','6'),
 ('24','1546','6'),
@@ -20147,8 +20250,7 @@ INSERT INTO `jms_search_index` VALUES
 ('26','714','1'),
 ('26','715','1'),
 ('26','716','1'),
-('26','717','1');
-INSERT INTO `jms_search_index` VALUES
+('26','717','1'),
 ('26','718','1'),
 ('26','719','1'),
 ('26','681','2'),
@@ -20323,7 +20425,8 @@ INSERT INTO `jms_search_index` VALUES
 ('28','5348','10'),
 ('28','5352','10'),
 ('28','5356','10'),
-('28','5360','10'),
+('28','5360','10');
+INSERT INTO `jms_search_index` VALUES
 ('29','681','1'),
 ('29','686','1'),
 ('29','687','1'),
@@ -20348,8 +20451,7 @@ INSERT INTO `jms_search_index` VALUES
 ('29','6337','1'),
 ('29','6338','1'),
 ('29','6339','1'),
-('29','6340','1');
-INSERT INTO `jms_search_index` VALUES
+('29','6340','1'),
 ('29','6341','1'),
 ('29','6342','1'),
 ('29','6343','1'),
@@ -20524,7 +20626,8 @@ INSERT INTO `jms_search_index` VALUES
 ('31','2386','6'),
 ('31','2388','6'),
 ('31','2389','6'),
-('31','2390','6'),
+('31','2390','6');
+INSERT INTO `jms_search_index` VALUES
 ('31','2393','6'),
 ('31','2394','6'),
 ('31','2395','6'),
@@ -20549,8 +20652,7 @@ INSERT INTO `jms_search_index` VALUES
 ('32','710','1'),
 ('32','711','1'),
 ('32','712','1'),
-('32','713','1');
-INSERT INTO `jms_search_index` VALUES
+('32','713','1'),
 ('32','714','1'),
 ('32','715','1'),
 ('32','716','1'),
@@ -20725,7 +20827,8 @@ INSERT INTO `jms_search_index` VALUES
 ('34','2834','6'),
 ('34','2835','6'),
 ('34','2836','6'),
-('34','2838','6'),
+('34','2838','6');
+INSERT INTO `jms_search_index` VALUES
 ('34','2839','6'),
 ('34','2840','6'),
 ('34','2842','6'),
@@ -20750,8 +20853,7 @@ INSERT INTO `jms_search_index` VALUES
 ('35','698','1'),
 ('35','699','1'),
 ('35','700','1'),
-('35','701','1');
-INSERT INTO `jms_search_index` VALUES
+('35','701','1'),
 ('35','702','1'),
 ('35','703','1'),
 ('35','704','1'),
@@ -20926,7 +21028,8 @@ INSERT INTO `jms_search_index` VALUES
 ('37','688','2'),
 ('37','689','2'),
 ('37','690','2'),
-('37','691','2'),
+('37','691','2');
+INSERT INTO `jms_search_index` VALUES
 ('37','692','2'),
 ('37','693','2'),
 ('37','694','2'),
@@ -20951,8 +21054,7 @@ INSERT INTO `jms_search_index` VALUES
 ('37','1676','3'),
 ('37','1719','3'),
 ('37','1724','3'),
-('37','1729','3');
-INSERT INTO `jms_search_index` VALUES
+('37','1729','3'),
 ('37','1734','3'),
 ('37','1528','6'),
 ('37','1533','6'),
@@ -21127,7 +21229,8 @@ INSERT INTO `jms_search_index` VALUES
 ('40','681','2'),
 ('40','682','2'),
 ('40','683','2'),
-('40','684','2'),
+('40','684','2');
+INSERT INTO `jms_search_index` VALUES
 ('40','685','2'),
 ('40','686','2'),
 ('40','687','2'),
@@ -21152,8 +21255,7 @@ INSERT INTO `jms_search_index` VALUES
 ('40','1729','3'),
 ('40','1734','3'),
 ('40','4656','3'),
-('40','4699','3');
-INSERT INTO `jms_search_index` VALUES
+('40','4699','3'),
 ('40','4703','3'),
 ('40','4707','3'),
 ('40','4711','3'),
@@ -21328,7 +21430,8 @@ INSERT INTO `jms_search_index` VALUES
 ('42','3666','9'),
 ('42','3671','9'),
 ('42','3676','9'),
-('42','3681','9'),
+('42','3681','9');
+INSERT INTO `jms_search_index` VALUES
 ('42','6277','10'),
 ('42','6321','10'),
 ('42','6326','10'),
@@ -21343,7 +21446,7 @@ CREATE TABLE `jms_search_word` (
   `word` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_word`),
   UNIQUE KEY `id_lang` (`id_lang`,`id_shop`,`word`)
-) ENGINE=InnoDB AUTO_INCREMENT=6347 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6652 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_search_word` VALUES
 ('5923','1','1','111'),
@@ -21387,6 +21490,7 @@ INSERT INTO `jms_search_word` VALUES
 ('686','1','1','consectetur'),
 ('4390','1','1','cool'),
 ('1802','1','1','corduroy'),
+('6416','1','1','cotton'),
 ('6341','1','1','ctetur'),
 ('998','1','1','denim'),
 ('683','1','1','dolor'),
@@ -21425,6 +21529,7 @@ INSERT INTO `jms_search_word` VALUES
 ('4455','1','1','lacoste'),
 ('710','1','1','laudantium'),
 ('4528','1','1','levi'),
+('6418','1','1','linen'),
 ('6346','1','1','listdolor'),
 ('6344','1','1','listipsum'),
 ('3532','1','1','long'),
@@ -21459,6 +21564,7 @@ INSERT INTO `jms_search_word` VALUES
 ('6337','1','1','sample'),
 ('689','1','1','sed'),
 ('2247','1','1','shirt'),
+('6417','1','1','silk'),
 ('684','1','1','sit'),
 ('2684','1','1','skinny'),
 ('999','1','1','skirt'),
@@ -21518,6 +21624,7 @@ INSERT INTO `jms_search_word` VALUES
 ('2839','1','2','checked'),
 ('3537','1','2','coat'),
 ('1805','1','2','corduroy'),
+('6464','1','2','cotton'),
 ('1005','1','2','denim'),
 ('1531','1','2','down'),
 ('2838','1','2','drawstring'),
@@ -21538,15 +21645,16 @@ INSERT INTO `jms_search_word` VALUES
 ('1929','1','2','knit'),
 ('4503','1','2','lacoste'),
 ('4573','1','2','levi'),
+('6466','1','2','linen'),
 ('3536','1','2','long'),
 ('662','1','2','low'),
-('1719','1','2','men'),
+('1719','1','2','men');
+INSERT INTO `jms_search_word` VALUES
 ('1003','1','2','midi'),
 ('3796','1','2','noir'),
 ('4211','1','2','orange'),
 ('2250','1','2','oversized'),
-('4637','1','2','polo');
-INSERT INTO `jms_search_word` VALUES
+('4637','1','2','polo'),
 ('2089','1','2','pompom'),
 ('1931','1','2','print'),
 ('876','1','2','printed'),
@@ -21558,6 +21666,7 @@ INSERT INTO `jms_search_word` VALUES
 ('3102','1','2','rolled-up'),
 ('3101','1','2','rolledup'),
 ('2251','1','2','shirt'),
+('6465','1','2','silk'),
 ('2689','1','2','skinny'),
 ('1006','1','2','skirt'),
 ('3100','1','2','sleeves'),
@@ -21604,6 +21713,7 @@ INSERT INTO `jms_search_word` VALUES
 ('2843','1','3','checked'),
 ('3541','1','3','coat'),
 ('1808','1','3','corduroy'),
+('6473','1','3','cotton'),
 ('1012','1','3','denim'),
 ('1536','1','3','down'),
 ('2842','1','3','drawstring'),
@@ -21625,6 +21735,7 @@ INSERT INTO `jms_search_word` VALUES
 ('1934','1','3','knit'),
 ('4511','1','3','lacoste'),
 ('4579','1','3','levi'),
+('6475','1','3','linen'),
 ('3540','1','3','long'),
 ('667','1','3','low'),
 ('1724','1','3','men'),
@@ -21644,6 +21755,7 @@ INSERT INTO `jms_search_word` VALUES
 ('3109','1','3','rolledup'),
 ('3803','1','3','schwarz'),
 ('2255','1','3','shirt'),
+('6474','1','3','silk'),
 ('2694','1','3','skinny'),
 ('1013','1','3','skirt'),
 ('3108','1','3','sleeves'),
@@ -21693,6 +21805,7 @@ INSERT INTO `jms_search_word` VALUES
 ('2847','1','5','checked'),
 ('3545','1','5','coat'),
 ('1811','1','5','corduroy'),
+('6482','1','5','cotton'),
 ('1019','1','5','denim'),
 ('1541','1','5','down'),
 ('2846','1','5','drawstring'),
@@ -21713,6 +21826,7 @@ INSERT INTO `jms_search_word` VALUES
 ('1939','1','5','knit'),
 ('4519','1','5','lacoste'),
 ('4585','1','5','levi'),
+('6484','1','5','linen'),
 ('3544','1','5','long'),
 ('672','1','5','low'),
 ('1729','1','5','men'),
@@ -21732,9 +21846,11 @@ INSERT INTO `jms_search_word` VALUES
 ('3118','1','5','rolled-up'),
 ('3117','1','5','rolledup'),
 ('2259','1','5','shirt'),
+('6483','1','5','silk'),
 ('2699','1','5','skinny'),
 ('1020','1','5','skirt'),
-('3116','1','5','sleeves'),
+('3116','1','5','sleeves');
+INSERT INTO `jms_search_word` VALUES
 ('1304','1','5','slogan'),
 ('3676','1','5','speaker'),
 ('3543','1','5','straight'),
@@ -21746,8 +21862,7 @@ INSERT INTO `jms_search_word` VALUES
 ('4946','1','5','white'),
 ('1302','1','5','with'),
 ('735','1','5','women'),
-('4707','1','5','zara');
-INSERT INTO `jms_search_word` VALUES
+('4707','1','5','zara'),
 ('5986','1','8','111'),
 ('4789','1','8','112'),
 ('5496','1','8','117'),
@@ -21781,6 +21896,7 @@ INSERT INTO `jms_search_word` VALUES
 ('2851','1','8','checked'),
 ('3549','1','8','coat'),
 ('1814','1','8','corduroy'),
+('6491','1','8','cotton'),
 ('1026','1','8','denim'),
 ('1546','1','8','down'),
 ('2850','1','8','drawstring'),
@@ -21802,6 +21918,7 @@ INSERT INTO `jms_search_word` VALUES
 ('1944','1','8','knit'),
 ('4527','1','8','lacoste'),
 ('4591','1','8','levi'),
+('6493','1','8','linen'),
 ('3548','1','8','long'),
 ('677','1','8','low'),
 ('1734','1','8','men'),
@@ -21820,6 +21937,7 @@ INSERT INTO `jms_search_word` VALUES
 ('3126','1','8','rolled-up'),
 ('3125','1','8','rolledup'),
 ('2263','1','8','shirt'),
+('6492','1','8','silk'),
 ('2704','1','8','skinny'),
 ('1027','1','8','skirt'),
 ('3124','1','8','sleeves'),
@@ -21979,7 +22097,7 @@ CREATE TABLE `jms_specific_price_priority` (
   `priority` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id_specific_price_priority`,`id_product`),
   UNIQUE KEY `id_product` (`id_product`)
-) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_specific_price_priority` VALUES
 ('1','20','id_shop;id_currency;id_country;id_group'),
@@ -22489,7 +22607,7 @@ CREATE TABLE `jms_stock_available` (
   KEY `id_shop_group` (`id_shop_group`),
   KEY `id_product` (`id_product`),
   KEY `id_product_attribute` (`id_product_attribute`)
-) ENGINE=InnoDB AUTO_INCREMENT=137 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_stock_available` VALUES
 ('59','18','0','1','0','0','0','0','0','0',''),
@@ -22504,9 +22622,9 @@ INSERT INTO `jms_stock_available` VALUES
 ('68','2','0','1','0','0','0','0','0','0',''),
 ('69','1','0','1','0','0','0','0','0','0',''),
 ('70','20','0','1','0','300','300','0','0','2',''),
-('71','21','0','1','0','99','99','0','0','2',''),
+('71','21','0','1','0','160','99','0','0','2',''),
 ('72','22','0','1','0','100','100','0','0','2',''),
-('73','23','0','1','0','100','100','0','0','2',''),
+('73','23','0','1','0','150','100','0','0','2',''),
 ('83','24','0','1','0','98','100','2','0','2',''),
 ('85','26','0','1','0','99','100','1','0','2',''),
 ('86','27','0','1','0','100','100','0','0','2',''),
@@ -22524,7 +22642,6 @@ INSERT INTO `jms_stock_available` VALUES
 ('98','39','0','1','0','100','100','0','0','2',''),
 ('99','40','0','1','0','100','100','0','0','2',''),
 ('100','41','0','1','0','100','100','0','0','2',''),
-('101','21','1','1','0','99','100','1','0','2',''),
 ('102','42','0','1','0','110','100','0','0','2',''),
 ('109','35','8','1','0','10','10','0','0','2',''),
 ('110','35','9','1','0','60','60','0','0','2',''),
@@ -22553,7 +22670,13 @@ INSERT INTO `jms_stock_available` VALUES
 ('133','20','32','1','0','50','50','0','0','2',''),
 ('134','20','33','1','0','50','50','0','0','2',''),
 ('135','42','34','1','0','50','0','0','0','2',''),
-('136','42','35','1','0','60','0','0','0','2','');
+('136','42','35','1','0','60','0','0','0','2',''),
+('137','23','36','1','0','50','0','0','0','2',''),
+('138','23','37','1','0','40','0','0','0','2',''),
+('139','23','38','1','0','60','0','0','0','2',''),
+('140','21','39','1','0','50','0','0','0','2',''),
+('141','21','40','1','0','40','0','0','0','2',''),
+('142','21','41','1','0','70','0','0','0','2','');
 /* Scheme for table jms_stock_mvt */
 DROP TABLE IF EXISTS `jms_stock_mvt`;
 CREATE TABLE `jms_stock_mvt` (
@@ -22575,7 +22698,7 @@ CREATE TABLE `jms_stock_mvt` (
   PRIMARY KEY (`id_stock_mvt`),
   KEY `id_stock` (`id_stock`),
   KEY `id_stock_mvt_reason` (`id_stock_mvt_reason`)
-) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_stock_mvt` VALUES
 ('1','70',NULL,NULL,'11','1','Huy','Mr','100','2019-10-01 23:44:24','1','0.000000','0.000000','0.000000',NULL),
@@ -22638,7 +22761,13 @@ INSERT INTO `jms_stock_mvt` VALUES
 ('58','127',NULL,NULL,'11','1','Huy','Mr','30','2019-10-25 00:41:14','1','0.000000','0.000000','0.000000',NULL),
 ('59','92',NULL,NULL,'11','1','Huy','Mr','100','2019-11-13 23:44:46','-1','0.000000','0.000000','0.000000',NULL),
 ('60','135',NULL,NULL,'11','1','Huy','Mr','50','2019-12-03 05:00:29','1','0.000000','0.000000','0.000000',NULL),
-('61','136',NULL,NULL,'11','1','Huy','Mr','60','2019-12-03 05:00:29','1','0.000000','0.000000','0.000000',NULL);
+('61','136',NULL,NULL,'11','1','Huy','Mr','60','2019-12-03 05:00:29','1','0.000000','0.000000','0.000000',NULL),
+('62','137',NULL,NULL,'11','1','Huy','Mr','50','2019-12-08 23:51:25','1','0.000000','0.000000','0.000000',NULL),
+('63','138',NULL,NULL,'11','1','Huy','Mr','40','2019-12-08 23:51:26','1','0.000000','0.000000','0.000000',NULL),
+('64','139',NULL,NULL,'11','1','Huy','Mr','60','2019-12-08 23:51:26','1','0.000000','0.000000','0.000000',NULL),
+('65','141',NULL,NULL,'11','1','Huy','Mr','40','2019-12-09 03:29:56','1','0.000000','0.000000','0.000000',NULL),
+('66','140',NULL,NULL,'11','1','Huy','Mr','50','2019-12-09 03:29:56','1','0.000000','0.000000','0.000000',NULL),
+('67','142',NULL,NULL,'11','1','Huy','Mr','70','2019-12-09 03:29:56','1','0.000000','0.000000','0.000000',NULL);
 /* Scheme for table jms_stock_mvt_reason */
 DROP TABLE IF EXISTS `jms_stock_mvt_reason`;
 CREATE TABLE `jms_stock_mvt_reason` (
@@ -24109,16 +24238,16 @@ CREATE TABLE `jms_tag` (
   PRIMARY KEY (`id_tag`),
   KEY `tag_name` (`name`),
   KEY `id_lang` (`id_lang`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_tag` VALUES
-('16','1','Cool'),
-('17','1','Sunglasses'),
 ('19','1','Winter'),
-('21','1','Nice'),
 ('35','1','Vintage'),
 ('36','1','Awesome'),
-('39','1','Summer');
+('39','1','Summer'),
+('41','1','Nice'),
+('44','1','Cool'),
+('45','1','Sunglasses');
 /* Scheme for table jms_tag_count */
 DROP TABLE IF EXISTS `jms_tag_count`;
 CREATE TABLE `jms_tag_count` (
@@ -24132,34 +24261,34 @@ CREATE TABLE `jms_tag_count` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `jms_tag_count` VALUES
-('0','16','1','1','1'),
-('0','17','1','1','1'),
 ('0','19','1','1','1'),
-('0','21','1','1','1'),
 ('0','35','1','1','1'),
 ('0','36','1','1','1'),
 ('0','39','1','1','1'),
-('1','16','1','1','1'),
-('1','17','1','1','1'),
+('0','41','1','1','1'),
+('0','44','1','1','1'),
+('0','45','1','1','1'),
 ('1','19','1','1','1'),
-('1','21','1','1','1'),
 ('1','35','1','1','1'),
 ('1','36','1','1','1'),
 ('1','39','1','1','1'),
-('2','16','1','1','1'),
-('2','17','1','1','1'),
+('1','41','1','1','1'),
+('1','44','1','1','1'),
+('1','45','1','1','1'),
 ('2','19','1','1','1'),
-('2','21','1','1','1'),
 ('2','35','1','1','1'),
 ('2','36','1','1','1'),
 ('2','39','1','1','1'),
-('3','16','1','1','1'),
-('3','17','1','1','1'),
+('2','41','1','1','1'),
+('2','44','1','1','1'),
+('2','45','1','1','1'),
 ('3','19','1','1','1'),
-('3','21','1','1','1'),
 ('3','35','1','1','1'),
 ('3','36','1','1','1'),
-('3','39','1','1','1');
+('3','39','1','1','1'),
+('3','41','1','1','1'),
+('3','44','1','1','1'),
+('3','45','1','1','1');
 /* Scheme for table jms_tax */
 DROP TABLE IF EXISTS `jms_tax`;
 CREATE TABLE `jms_tax` (

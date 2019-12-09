@@ -10,7 +10,15 @@
         {if $variant.texture} style="background-image: url({$variant.texture})" {/if}
         >
             <span class="sr-only">{$variant.name}</span>
+            {if $variant.texture}
+                <span class="tooltip-wrap top">
+                    <span class="tooltip-text">
+                        {$variant.name}
+                    </span>
+                </span>
+            {/if}
         </a>
+        
     {/foreach}
     <span class="js-count count"></span>
 </div>

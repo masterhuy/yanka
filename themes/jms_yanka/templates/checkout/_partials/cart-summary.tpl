@@ -28,10 +28,10 @@
     {block name='cart_summary_products'}
       <div class="cart-summary-products">
 
-        <p>{$cart.summary_string}</p>
+        <b>{$cart.summary_string}</b>
 
         <p>
-          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list">
+          <a id="show-detail" href="#" data-toggle="collapse" data-target="#cart-summary-product-list">
             {l s='show details' d='Shop.Theme.Actions'}
           </a>
         </p>

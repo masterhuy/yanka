@@ -48,9 +48,6 @@
 #checkout #checkout-addresses-step, #checkout #checkout-delivery-step, #checkout #checkout-delivery-step, #checkout #checkout-payment-step{
 	margin-top:30px;
 }
-#checkout #checkout-guest-form{
-	margin-bottom:50px;
-}
 .content .tab-content  #checkout-login-form.tab-pane{
 	opacity: 1;
 	visibility: visible;
@@ -115,11 +112,12 @@
 	color: #777;
 }
 #checkout section#content #js-checkout-summary .card-block .label {
-	font-weight: 400;
+	font-weight: 800;
 	padding: 0;
+	color: #333;
 }
 #checkout #block-reassurance .block-reassurance-item span.h6 {
-	font-size: 18px;
+	font-size: 16px;
 	width: calc(100% - 35px);
 	padding: 0 10px;
 	margin: 0;
@@ -199,6 +197,9 @@
 #checkout .right-box .card.js-cart, #checkout .right-box #block-reassurance {
 	padding: 40px;
 }
+#checkout .right-box #block-reassurance{
+	padding-top: 0;
+}
 #checkout .content ul li a{
 	font-size: 16px;
 	color: #777;
@@ -234,7 +235,7 @@ body#checkout section.checkout-step .step-edit {
     font-weight: normal; 
 }
 body#checkout section.checkout-step .step-edit .edit {
-    font-size: 1.5rem; 
+    font-size: 15px; 
     margin-right: 5px;
 }
 body#checkout section.checkout-step .not-allowed {
@@ -279,17 +280,16 @@ body#checkout section.checkout-step.-reachable.-complete .content {
 }
 .done {
   color: #fff;
-
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 5px;
 } 
 body#checkout section.checkout-step.-current .content .address {
-	font-size: 13px;
 	font-weight: 400;
 	padding: 0 20px;
 }
 body#checkout section.checkout-step.-current .content .address-alias.h4 {
-	font-size: 13px;
+	font-weight: 800;
+	color: #333;
 }
 body#checkout section.checkout-step.-current .content .address-footer {
 	border-bottom: 1px solid #ebebeb;
@@ -313,8 +313,39 @@ body#checkout section.checkout-step.-current .content .form-control-select {
 		margin-top: 0;
 	}
 }
+@media (max-width: 991px){
+	#checkout .right-box{
+		margin-top: 50px;
+	}
+}
+@media (max-width: 767px){
+	#checkout #footer {
+		margin-top: 50px;
+	}
+	#checkout .right-box .card.js-cart, 
+	#checkout .right-box #block-reassurance {
+		padding: 20px;
+	}
+}
 @media (max-width: 481px){
 	body#checkout section.checkout-step .step-title {
 		font-size: 14px;
+	}
+	#checkout #delivery-address .form-footer{
+		display: flex;
+		flex-direction: column;
+	}
+	#checkout #delivery-address .form-footer button{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	#checkout #delivery-address .form-footer .js-cancel-address{
+		text-align: center;
+	}
+	#payment-confirmation button{
+		white-space: nowrap;
+	}
+	#payment-confirmation .ps-shown-by-js{
+		overflow-x: auto;
 	}
 }

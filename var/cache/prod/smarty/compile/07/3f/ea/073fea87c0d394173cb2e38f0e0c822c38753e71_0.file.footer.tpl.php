@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 22:15:54
+/* Smarty version 3.1.33, created on 2019-12-08 23:49:11
   from 'D:\xamppp\htdocs\jms_yanka\modules\ps_facetedsearch\views\templates\admin\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de9c7ea7ade99_86451913',
+  'unifunc' => 'content_5dedd2477f4aa1_35237609',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de9c7ea7ade99_86451913 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dedd2477f4aa1_35237609 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel-footer" id="toolbar-footer">
   <button class="btn btn-default pull-right" id="submit-filter" name="SubmitFilter" type="submit"><i class="process-icon-save"></i> <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save','d'=>'Admin.Actions'),$_smarty_tpl ) );?>
 </span></button>

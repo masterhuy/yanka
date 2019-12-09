@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-14 04:18:14
+/* Smarty version 3.1.33, created on 2019-12-09 05:25:04
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-detailed-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcd1bd6267951_03268753',
+  'unifunc' => 'content_5dee2100896e97_85112731',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f5bbc6d38fde17d87b7ddfbafe0247e2cf8cf262' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\checkout\\_partials\\cart-detailed-product-line.tpl',
-      1 => 1573719780,
+      1 => 1573725917,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcd1bd6267951_03268753 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dee2100896e97_85112731 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-line-grid">
     <!--  products -->
-    <div class="row_cs product-info col-lg-7 col-md-7 col-sm-7 col-xs-12">
+    <div class="row_cs product-info col-lg-6 col-md-7 col-sm-7 col-xs-12">
         <span class="product-image media-middle">
             <div class="cart-line-product-actions ">
                 <a
@@ -140,7 +140,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </span>
     </div>
 
-    <div class="row_cs product-right col-lg-5 col-md-5 col-sm-5 col-xs-12">
+    <div class="row_cs product-right col-lg-6 col-md-5 col-sm-5 col-xs-12">
         <!--  price -->
         <div class="row_cs product-price col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="product-line-info">
