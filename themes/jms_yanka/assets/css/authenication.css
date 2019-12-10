@@ -53,6 +53,9 @@
 #authentication .form-footer {
 	margin-top: 6px;
 }
+#authentication .form-footer button{
+	font-size: 14px;
+}
 #authentication .input-group.js-parent-focus{
 	display:block;
 }
@@ -81,13 +84,6 @@
 }
 #authentication .register-form .custom-radio input {
 	margin-top: 7px;
-}
-#authentication .return-to-store {
-	text-transform: uppercase;
-	text-decoration: underline !important;
-	display: block;
-	line-height: 18px;
-	margin-bottom: 16px;
 }
 #authentication .no-account {
 	margin-top: 49px;

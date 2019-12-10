@@ -342,10 +342,4 @@ body#checkout section.checkout-step.-current .content .form-control-select {
 	#checkout #delivery-address .form-footer .js-cancel-address{
 		text-align: center;
 	}
-	#payment-confirmation button{
-		white-space: nowrap;
-	}
-	#payment-confirmation .ps-shown-by-js{
-		overflow-x: auto;
-	}
 }

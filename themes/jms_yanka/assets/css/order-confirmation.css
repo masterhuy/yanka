@@ -1,6 +1,4 @@
 /**** ORDER CONFIRMATION *****/
-#order-details {
-  padding-left: 1.875rem; }
   #order-details > .card-title {
     margin-bottom: 1.875rem; }
 #order-details ul {
@@ -74,18 +72,15 @@
 	margin-bottom:30px;
 }
 #order-confirmation .action-buttons{
-	margin-bottom:50px;
 	text-align:right;
 }
 #order-confirmation #content-hook_payment_return, #order-confirmation .page-order-confirmation { 
-	padding:30px 15px;
-  color: #858585;
+	padding: 15px;
 }
 #order-confirmation .action-buttons a{
   margin-left: 6px;
 }
 .payment_return a{
-  color: #858585;
   text-decoration: underline !important;
 }
 .payment_return a:hover{
@@ -109,23 +104,41 @@
   flex-wrap: wrap; }
   .definition-list dl dt {
     font-weight: normal; }
-  .definition-list dl dd,
-  .definition-list dl dt {
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
-    box-flex: 0;
-    -webkit-flex: 0 0 45%;
-    -moz-flex: 0 0 45%;
-    -ms-flex: 0 0 45%;
-    flex: 0 0 45%;
-    background: #ebebeb;
-    padding: 0.625rem;
-    margin: 0.125rem; 
-	line-height:28px;
+.definition-list dl dd, .definition-list dl dt {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #ebebeb;
+  line-height: 28px;
+  width: 50%;
+  margin: 0;
+  max-width: 50%;
+  padding: 5px;
+  margin-bottom: 10px;
 }
     .definition-list dl dd:nth-of-type(even),
     .definition-list dl dt:nth-of-type(even) {
       background: #f6f6f6; }
+@media (max-width: 991px){
+  #order-items {
+    border-right: 0;
+  }
+}
+@media (max-width: 767px){
+  #order-confirmation #featured-products {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 481px){
+  #order-confirmation .action-buttons a {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
 @media(max-width:360px){
 	#order-items .order-line {
 		display: block;

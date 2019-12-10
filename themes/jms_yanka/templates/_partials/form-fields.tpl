@@ -26,12 +26,12 @@
     <input type="hidden" name="{$field.name}" value="{$field.value}">
 {else}
     <div class="form-group row {if !empty($field.errors)}has-error{/if}">
-        <label class="col-lg-12 col-md-12 form-control-label{if $field.required} required{/if}">
+        <label class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control-label{if $field.required} required{/if}">
             {if $field.type !== 'checkbox'}
                 {$field.label}{if $field.required} <span class="required pull-right">* Required Fields</span>{/if}
             {/if}
         </label>
-        <div class="col-lg-12 col-md-12{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
             {if $field.type === 'select'}
                 <select class="form-control form-control-select" name="{$field.name}" {if $field.required}required{/if}>
                     <option value disabled selected>{l s='-- please choose --' d='Shop.Forms.Labels'}</option>

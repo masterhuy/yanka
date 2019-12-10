@@ -171,6 +171,11 @@
 		font-size:14px;
 	}
 }
+@media (max-width: 991px){
+	#contact .contact-rich h1{
+		font-size: 30px;
+	}
+}
 @media(max-width:767px) {
 	#contact #left-column {
 		width: 100%;
@@ -179,6 +184,7 @@
 	body#contact #wrapper #content-wrapper{
 		width: 100%;
 		padding-right: 0;
+		margin-top: 0;
 	}
 	#contact #right-column{
 		width: 100%;

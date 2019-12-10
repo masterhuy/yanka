@@ -32,8 +32,8 @@
     {block name='register_form_container'}
         {$hook_create_account_top nofilter}
         <section class="register-form">
-            <h1 class="text-center">{l s='Already have an account?' d='Shop.Theme.CustomerAccount'}</h1>
-            <h3 class="text-center"><a href="{$urls.pages.authentication}">{l s='Log in instead!' d='Shop.Theme.CustomerAccount'}</a></h3>
+            <h1 class="text-center">{l s='Create an Account' d='Shop.Theme.CustomerAccount'}</h1>
+            <h3 class="text-center">{l s='Personal Information' d='Shop.Theme.CustomerAccount'}</h3>
             {render file='customer/_partials/customer-form.tpl' ui=$register_form}
         </section>
     {/block}

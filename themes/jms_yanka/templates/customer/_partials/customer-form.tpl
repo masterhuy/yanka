@@ -37,10 +37,11 @@
 
     <footer class="form-footer clearfix">
         <input type="hidden" name="submitCreate" value="1">
-            {block "form_buttons"}
-                <button class="btn-default active" data-link-action="save-customer" type="submit">
-                    {l s='Save' d='Shop.Theme.Actions'}
-                </button>
-            {/block}
+        {block "form_buttons"}
+            <button class="btn-default w-100" data-link-action="save-customer" type="submit">
+                {l s='Create' d='Shop.Theme.Actions'}
+            </button>
+        {/block}
+        <a class="return-to-store" href="{$urls.base_url}">{l s='or Return to Store' d='Shop.Theme.Global'}</a>
     </footer>
 </form>

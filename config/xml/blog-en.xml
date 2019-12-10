@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The key to choosing the best domain name</title>
+    <link>https://www.prestashop.com/en/blog/choosing-best-domain-name</link>
+    <description>You&#039;ve been busy laying the foundations for your start up business, and it&#039;s time to create a website that will do your vision justice.</description>
+     <pubDate>Mon, 09 Dec 2019 15:00:47 +0100</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/choosing-best-domain-name</guid>
+  </item>
+  <item>
     <title>Expand your e-commerce business with local payments</title>
     <link>https://www.prestashop.com/en/blog/expand-your-e-commerce-business-local-payments</link>
     <description>Have you ever been in Latin America? Asia Pacific? The Middle East? Africa?</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 08 Nov 2019 14:01:52 +0100</pubDate>
  <dc:creator>John Ahya</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/how-to-improve-UX-shop</guid>
-  </item>
-  <item>
-    <title>Five Good Reasons to Set up Live Chat on Your Ecommerce Site</title>
-    <link>https://www.prestashop.com/en/blog/five-good-reasons-live-chat</link>
-    <description>Do you remember the last time you tried to call a company but got a busy signal? Or maybe you were trying to solve your problems via email, but it was taking ages.</description>
-     <pubDate>Wed, 06 Nov 2019 14:13:13 +0100</pubDate>
- <dc:creator>Daria Zaboj</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-good-reasons-live-chat</guid>
   </item>
   </channel>
 </rss>

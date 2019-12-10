@@ -24,8 +24,8 @@
  *}
 <div class="product-line-grid">
     <!--  products -->
-    <div class="row_cs product-info col-lg-6 col-md-7 col-sm-7 col-xs-12">
-        <span class="product-image media-middle">
+    <div class="row_cs product-info col-lg-2 col-md-2 col-sm-6 col-xs-6">
+        <div class="product-image media-middle">
             <div class="cart-line-product-actions ">
                 <a
                     class                     = "remove-from-cart"
@@ -51,59 +51,61 @@
                 {hook h='displayCartExtraProductActions' product=$product}
             </div>
             <div class="info">
-                <img src="{$product.cover.bySize.large_default.url}" alt="{$product.name|escape:'quotes'}">
-                <div class="product-line-info">
-                    <a class="product-link" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
-                    {foreach from=$product.attributes key="attribute" item="value"}
-                        <div class="product-info-value">
-                            <span class="value">{$value}</span>
-                        </div>
-                    {/foreach}
-                </div>
+                <img src="{$product.cover.bySize.home_default.url}" alt="{$product.name|escape:'quotes'}">
             </div>
-            {if $product.customizations|count}
-                {foreach from=$product.customizations item="customization"}
-                    <a href="#" data-toggle="modal" data-target="#product-customizations-modal-{$customization.id_customization}">{l s='Product customization' d='Shop.Theme.Catalog'}</a>
-                    <div class="modal fade customization-modal" id="product-customizations-modal-{$customization.id_customization}" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        
-                                    </button>
-                                    <h4 class="modal-title">{l s='Product customization' d='Shop.Theme.Catalog'}</h4>
-                                </div>
-                                <div class="modal-body">
-                                    {foreach from=$customization.fields item="field"}
-                                        <div class="product-customization-line row">
-                                            <div class="col-sm-3 col-xs-4 label">
-                                                {$field.label}
-                                            </div>
-                                            <div class="col-sm-9 col-xs-8 value">
-                                                {if $field.type == 'text'}
-                                                    {if (int)$field.id_module}
-                                                        {$field.text nofilter}
-                                                    {else}
-                                                        {$field.text}
-                                                    {/if}
-                                                {elseif $field.type == 'image'}
-                                                    <img src="{$field.image.small.url}">
-                                                {/if}
-                                            </div>
+        </div>
+    </div>
+
+    <div class="row_cs product-right col-lg-10 col-md-10 col-sm-6 col-xs-6">
+        <div class="row_cs col-sm-12 col-xs-12 info">
+            <div class="product-line-info">
+                <a class="product-link" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+                {foreach from=$product.attributes key="attribute" item="value"}
+                    <div class="product-info-value">
+                        <span class="value">{$value}</span>
+                    </div>
+                {/foreach}
+            </div>
+        </div>
+        {if $product.customizations|count}
+            {foreach from=$product.customizations item="customization"}
+                <a href="#" data-toggle="modal" data-target="#product-customizations-modal-{$customization.id_customization}">{l s='Product customization' d='Shop.Theme.Catalog'}</a>
+                <div class="modal fade customization-modal" id="product-customizations-modal-{$customization.id_customization}" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    
+                                </button>
+                                <h4 class="modal-title">{l s='Product customization' d='Shop.Theme.Catalog'}</h4>
+                            </div>
+                            <div class="modal-body">
+                                {foreach from=$customization.fields item="field"}
+                                    <div class="product-customization-line row">
+                                        <div class="col-sm-3 col-xs-4 label">
+                                            {$field.label}
                                         </div>
-                                    {/foreach}
-                                </div>
+                                        <div class="col-sm-9 col-xs-8 value">
+                                            {if $field.type == 'text'}
+                                                {if (int)$field.id_module}
+                                                    {$field.text nofilter}
+                                                {else}
+                                                    {$field.text}
+                                                {/if}
+                                            {elseif $field.type == 'image'}
+                                                <img src="{$field.image.small.url}">
+                                            {/if}
+                                        </div>
+                                    </div>
+                                {/foreach}
                             </div>
                         </div>
                     </div>
-                {/foreach}
-            {/if}
-        </span>
-    </div>
-
-    <div class="row_cs product-right col-lg-6 col-md-5 col-sm-5 col-xs-12">
+                </div>
+            {/foreach}
+        {/if}
         <!--  price -->
-        <div class="row_cs product-price col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row_cs product-price col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="product-line-info">
                 <span class="value">{$product.price}</span>
                 {if $product.unit_price_full}
@@ -113,7 +115,7 @@
         </div>
 
         <!--  qty -->
-        <div class="row_cs product-qty product-quantity col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row_cs product-qty product-quantity col-lg-4 col-md-4 col-sm-12 col-xs-12">
             {if isset($product.is_gift) && $product.is_gift}
                 <span class="gift-quantity">{$product.quantity}</span>
             {else}
@@ -132,7 +134,7 @@
         </div>
 
         <!--  total -->
-        <div class="row_cs product-total col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row_cs product-total col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <span class="product-price">
                 <span class="value">
                     {if isset($product.is_gift) && $product.is_gift}

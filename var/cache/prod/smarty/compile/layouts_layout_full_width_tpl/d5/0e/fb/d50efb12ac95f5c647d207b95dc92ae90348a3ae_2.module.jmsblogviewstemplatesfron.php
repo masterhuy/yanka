@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-30 22:47:32
+/* Smarty version 3.1.33, created on 2019-12-10 03:15:20
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dba4b44803e90_00597937',
+  'unifunc' => 'content_5def5418f41315_91406550',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd50efb12ac95f5c647d207b95dc92ae90348a3ae' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1572426733,
+      1 => 1572490136,
       2 => 'module',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dba4b44803e90_00597937 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5def5418f41315_91406550 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11936005785dba4b447b5c95_08223140', 'head_seo_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18868455185def5418f1a211_76294467', 'head_seo_title');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7849319255dba4b447b5c98_27905241', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13516846105def5418f1a216_36359254', "page_content");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'head_seo_title'} */
-class Block_11936005785dba4b447b5c95_08223140 extends Smarty_Internal_Block
+class Block_18868455185def5418f1a211_76294467 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head_seo_title' => 
   array (
-    0 => 'Block_11936005785dba4b447b5c95_08223140',
+    0 => 'Block_18868455185def5418f1a211_76294467',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -50,12 +50,12 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['current_category']->value['title']
 }
 /* {/block 'head_seo_title'} */
 /* {block "page_content"} */
-class Block_7849319255dba4b447b5c98_27905241 extends Smarty_Internal_Block
+class Block_13516846105def5418f1a216_36359254 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_7849319255dba4b447b5c98_27905241',
+    0 => 'Block_13516846105def5418f1a216_36359254',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -80,7 +80,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['post']->value) {
 			<?php $_smarty_tpl->_assignInScope('params', array('post_id'=>$_smarty_tpl->tpl_vars['post']->value['post_id'],'category_slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['alias']));?>
 			<?php $_smarty_tpl->_assignInScope('catparams', array('category_id'=>$_smarty_tpl->tpl_vars['post']->value['category_id'],'slug'=>$_smarty_tpl->tpl_vars['post']->value['category_alias']));?>				
 			
-			<div class="item col-lg-6 col-sm-6 col-cs-12">
+			<div class="item col-lg-6 col-sm-6 col-xs-12">
 				<div class="blog-post">
 					<?php if ($_smarty_tpl->tpl_vars['post']->value['link_video'] && $_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_MEDIA']) {?>
 						<div class="post-thumb">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-09 05:25:04
+/* Smarty version 3.1.33, created on 2019-12-09 21:39:26
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-detailed-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dee2100896e97_85112731',
+  'unifunc' => 'content_5def055e785180_92005084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f5bbc6d38fde17d87b7ddfbafe0247e2cf8cf262' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\checkout\\_partials\\cart-detailed-product-line.tpl',
-      1 => 1573725917,
+      1 => 1575945383,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dee2100896e97_85112731 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5def055e785180_92005084 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-line-grid">
     <!--  products -->
-    <div class="row_cs product-info col-lg-6 col-md-7 col-sm-7 col-xs-12">
-        <span class="product-image media-middle">
+    <div class="row_cs product-info col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <div class="product-image media-middle">
             <div class="cart-line-product-actions ">
                 <a
                     class                     = "remove-from-cart"
@@ -55,94 +55,96 @@ function content_5dee2100896e97_85112731 (Smarty_Internal_Template $_smarty_tpl)
 
             </div>
             <div class="info">
-                <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
+                <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['home_default']['url'], ENT_QUOTES, 'UTF-8');?>
 " alt="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],'quotes' )), ENT_QUOTES, 'UTF-8');?>
 ">
-                <div class="product-line-info">
-                    <a class="product-link" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
+            </div>
+        </div>
+    </div>
+
+    <div class="row_cs product-right col-lg-10 col-md-10 col-sm-6 col-xs-12">
+        <div class="row_cs col-sm-12 col-xs-12 info">
+            <div class="product-line-info">
+                <a class="product-link" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
 " data-id_customization="<?php echo htmlspecialchars(intval($_smarty_tpl->tpl_vars['product']->value['id_customization']), ENT_QUOTES, 'UTF-8');?>
 "><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </a>
-                    <?php
+                <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['attributes'], 'value', false, 'attribute');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['attribute']->value => $_smarty_tpl->tpl_vars['value']->value) {
 ?>
-                        <div class="product-info-value">
-                            <span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value, ENT_QUOTES, 'UTF-8');?>
+                    <div class="product-info-value">
+                        <span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value, ENT_QUOTES, 'UTF-8');?>
 </span>
-                        </div>
-                    <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                </div>
-            </div>
-            <?php if (count($_smarty_tpl->tpl_vars['product']->value['customizations'])) {?>
-                <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['customizations'], 'customization');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['customization']->value) {
-?>
-                    <a href="#" data-toggle="modal" data-target="#product-customizations-modal-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customization']->value['id_customization'], ENT_QUOTES, 'UTF-8');?>
-"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product customization','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
-</a>
-                    <div class="modal fade customization-modal" id="product-customizations-modal-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customization']->value['id_customization'], ENT_QUOTES, 'UTF-8');?>
-" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        
-                                    </button>
-                                    <h4 class="modal-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product customization','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
-</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['customization']->value['fields'], 'field');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['field']->value) {
-?>
-                                        <div class="product-customization-line row">
-                                            <div class="col-sm-3 col-xs-4 label">
-                                                <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['field']->value['label'], ENT_QUOTES, 'UTF-8');?>
-
-                                            </div>
-                                            <div class="col-sm-9 col-xs-8 value">
-                                                <?php if ($_smarty_tpl->tpl_vars['field']->value['type'] == 'text') {?>
-                                                    <?php if ((int)$_smarty_tpl->tpl_vars['field']->value['id_module']) {?>
-                                                        <?php echo $_smarty_tpl->tpl_vars['field']->value['text'];?>
-
-                                                    <?php } else { ?>
-                                                        <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['field']->value['text'], ENT_QUOTES, 'UTF-8');?>
-
-                                                    <?php }?>
-                                                <?php } elseif ($_smarty_tpl->tpl_vars['field']->value['type'] == 'image') {?>
-                                                    <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['field']->value['image']['small']['url'], ENT_QUOTES, 'UTF-8');?>
-">
-                                                <?php }?>
-                                            </div>
-                                        </div>
-                                    <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-            <?php }?>
-        </span>
-    </div>
+            </div>
+        </div>
+        <?php if (count($_smarty_tpl->tpl_vars['product']->value['customizations'])) {?>
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['customizations'], 'customization');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['customization']->value) {
+?>
+                <a href="#" data-toggle="modal" data-target="#product-customizations-modal-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customization']->value['id_customization'], ENT_QUOTES, 'UTF-8');?>
+"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product customization','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+</a>
+                <div class="modal fade customization-modal" id="product-customizations-modal-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customization']->value['id_customization'], ENT_QUOTES, 'UTF-8');?>
+" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    
+                                </button>
+                                <h4 class="modal-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product customization','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+</h4>
+                            </div>
+                            <div class="modal-body">
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['customization']->value['fields'], 'field');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['field']->value) {
+?>
+                                    <div class="product-customization-line row">
+                                        <div class="col-sm-3 col-xs-4 label">
+                                            <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['field']->value['label'], ENT_QUOTES, 'UTF-8');?>
 
-    <div class="row_cs product-right col-lg-6 col-md-5 col-sm-5 col-xs-12">
+                                        </div>
+                                        <div class="col-sm-9 col-xs-8 value">
+                                            <?php if ($_smarty_tpl->tpl_vars['field']->value['type'] == 'text') {?>
+                                                <?php if ((int)$_smarty_tpl->tpl_vars['field']->value['id_module']) {?>
+                                                    <?php echo $_smarty_tpl->tpl_vars['field']->value['text'];?>
+
+                                                <?php } else { ?>
+                                                    <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['field']->value['text'], ENT_QUOTES, 'UTF-8');?>
+
+                                                <?php }?>
+                                            <?php } elseif ($_smarty_tpl->tpl_vars['field']->value['type'] == 'image') {?>
+                                                <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['field']->value['image']['small']['url'], ENT_QUOTES, 'UTF-8');?>
+">
+                                            <?php }?>
+                                        </div>
+                                    </div>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+        <?php }?>
         <!--  price -->
-        <div class="row_cs product-price col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row_cs product-price col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="product-line-info">
                 <span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['price'], ENT_QUOTES, 'UTF-8');?>
 </span>
@@ -154,7 +156,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
 
         <!--  qty -->
-        <div class="row_cs product-qty product-quantity col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row_cs product-qty product-quantity col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <?php if (isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) && $_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>
                 <span class="gift-quantity"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
 </span>
@@ -180,7 +182,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
 
         <!--  total -->
-        <div class="row_cs product-total col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="row_cs product-total col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <span class="product-price">
                 <span class="value">
                     <?php if (isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) && $_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>

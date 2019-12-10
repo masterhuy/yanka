@@ -52,7 +52,7 @@
                                 {elseif $product.availability == 'last_remaining_items'}
                                     <i class="material-icons product-last-items">&#xE002;</i>
                                 {else}
-                                    <span style="color:#fff; background:#858585;">{$product.availability_message}</span>
+                                    <span style="color:#fff; background:#777;">{$product.availability_message}</span>
                                 {/if}
                             </span>
                             {/if}
