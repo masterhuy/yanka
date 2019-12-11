@@ -1157,14 +1157,21 @@ function closeLookbook(){
 function openFilter(){
 	$('body').on('click', '#search_filter_toggler', function () {
 		$('#left-column').addClass('show');
+		$('#right-column').addClass('show');
 	});
 }
 
 function closeFilter(){
 	$('body').on('click', '#search_filters_wrapper .btn-close', function () {
 		$('#left-column').removeClass('show');
+		$('#right-column').removeClass('show');
 	});
 }
+
+$(window).resize(function(){
+	var imgHeight = $(".js-qv-product-cover").outerHeight();
+	$(".product-cover.video").css("height", imgHeight);
+});
 
 var initialLoad = true;
 $(document).ready(function() {
@@ -1179,7 +1186,7 @@ $(document).ready(function() {
 			header.removeClass("fixed");
 			//menu.removeClass("fixed");
     	}
-    });
+	});
 
 	if(initialLoad){
 		setTimeout(function() {
@@ -1191,6 +1198,9 @@ $(document).ready(function() {
 	if ($("#product #content-wrapper").hasClass("col-md-9")){
 		$("#product").addClass("sidebar");
 	}
+
+	var imgHeight = $(".js-qv-product-cover").outerHeight();
+	$(".product-cover.video").css("height", imgHeight);
 
 	hoverLookbook();
 	closeLookbook();

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-10 02:54:51
+/* Smarty version 3.1.33, created on 2019-12-11 02:25:26
   from 'module:psspecialsviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5def4f4b643ad5_01354835',
+  'unifunc' => 'content_5df099e6badd24_14302859',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product2.tpl' => 1,
   ),
 ),false)) {
-function content_5def4f4b643ad5_01354835 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df099e6badd24_14302859 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section id="special-products">
 	<div class="title-block">

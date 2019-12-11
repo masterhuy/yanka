@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-22 02:20:29
+/* Smarty version 3.1.33, created on 2019-12-11 04:21:48
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-customization.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd78c3db4c080_87810319',
+  'unifunc' => 'content_5df0b52c325ca2_68572525',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b5693c2d8f6cdc4634bba93daad48ba3384189f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\product-customization.tpl',
-      1 => 1569568109,
+      1 => 1575883787,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd78c3db4c080_87810319 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df0b52c325ca2_68572525 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="product-customization">
   <?php if (!$_smarty_tpl->tpl_vars['configuration']->value['is_catalog']) {?>
     <div class="card card-block">
@@ -74,7 +74,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['field']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </ul>
         <div class="clearfix">
-          <button class="btn btn-primary pull-xs-right button-small" type="submit" name="submitCustomizedData"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save Customization','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+          <button class="btn-default pull-xs-right" type="submit" name="submitCustomizedData"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Save Customization','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </button>
         </div>
       </form>

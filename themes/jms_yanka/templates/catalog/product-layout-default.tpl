@@ -76,6 +76,18 @@
                     {/if}
                 {/block}
 
+                {block name='product_availability'}
+                    {if $product.show_availability && $product.availability_message}
+                        {if $product.availability == 'unavailable'}
+                            <div class="not-enough-product"> 
+                                <span id="product-availability">
+                                    {$product.availability_message}
+                                </span>
+                            </div>
+                        {/if}
+                    {/if}
+                {/block}
+
                 {block name='page_header_container'}
                     {block name='page_header'}
                         <h2 itemprop="name" class="pd-name">{block name='page_title'}{$product.name}{/block}</h2>

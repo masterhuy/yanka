@@ -75,22 +75,6 @@
             <div class="clearfix"></div>
         {/block}
 
-        {block name='product_availability'}
-            <div class="not-enough-product mt-20">
-                {if $product.show_availability && $product.availability_message}
-                <span id="product-availability">
-                    {if $product.availability == 'available'}
-                        <span class="hidden" style="color:#fff; background:#25A799">{$product.availability_message}</span>
-                    {elseif $product.availability == 'last_remaining_items'}
-                        <i class="hidden material-icons product-last-items">&#xE002;</i>
-                    {else}
-                        <span style="color:#d43f3a;">{$product.availability_message}</span>
-                    {/if}
-                </span>
-                {/if}
-            </div>
-        {/block}
-
         {block name='product_minimal_quantity'}
             <p class="product-minimal-quantity">
                 {if $product.minimal_quantity > 1}

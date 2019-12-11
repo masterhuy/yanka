@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 23:46:45
+/* Smarty version 3.1.33, created on 2019-12-11 02:49:34
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\miniatures\pack-product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dccdc358a0818_34766251',
+  'unifunc' => 'content_5df09f8e9d8800_92152199',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dccdc358a0818_34766251 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df09f8e9d8800_92152199 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <tbody>
     <tr>

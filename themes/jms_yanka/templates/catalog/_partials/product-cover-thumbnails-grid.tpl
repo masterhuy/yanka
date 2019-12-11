@@ -31,7 +31,9 @@
                         <img class="zoom_01 js-qv-product-cover" src="{$image.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
                     </div>
                 {/foreach}
-                {hook h='displayReassurance'}
+                <div class="product-cover video">
+                    {hook h='displayReassurance'}
+                <div>
                 <div class="layer hidden-xs" data-toggle="modal" data-target="#product-modal">
                     <i class="d-i-flex">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">

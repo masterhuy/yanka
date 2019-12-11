@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-12 04:32:24
+/* Smarty version 3.1.33, created on 2019-12-11 05:20:37
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-cover-thumbnails-grid.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dca7c28b9f628_02001925',
+  'unifunc' => 'content_5df0c2f5ba2b08_88430269',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '243f3d67d2644aa102577e5ebb180fb880ad316e' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\product-cover-thumbnails-grid.tpl',
-      1 => 1573549734,
+      1 => 1576057587,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dca7c28b9f628_02001925 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df0c2f5ba2b08_88430269 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4002631395dca7c28b9b7a2_07250733', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11195518165df0c2f5b9ae07_25774524', 'product_images');
 ?>
 
 </div>
@@ -35,12 +35,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4002631395dca7c28b
 
 <?php }
 /* {block 'product_images'} */
-class Block_4002631395dca7c28b9b7a2_07250733 extends Smarty_Internal_Block
+class Block_11195518165df0c2f5b9ae07_25774524 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_4002631395dca7c28b9b7a2_07250733',
+    0 => 'Block_11195518165df0c2f5b9ae07_25774524',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -63,6 +63,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['image']->value) {
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                <div class="product-cover video">
+                    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayReassurance'),$_smarty_tpl ) );?>
+
+                <div>
                 <div class="layer hidden-xs" data-toggle="modal" data-target="#product-modal">
                     <i class="d-i-flex">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">

@@ -363,8 +363,11 @@
 	.tab_vertical .tab-content{
 		width:100%;
 	}
-	.product-pack .pack-product-container .pack-product-name{
-		flex:0 0 36%;
+	.product-pack .card{
+		overflow-x: auto;
+	}
+	.product-pack .pack-product-container{
+		width: 450px;
 	}
 	#blockcart-modal .modal-body {
 	    padding: 10px 15px;

@@ -901,8 +901,8 @@
 			border: 0;
 			background: transparent;
 			height: 44px;
-			min-width: 44px;
-			max-width: 44px;
+			min-width: 47px;
+			max-width: 47px;
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -1350,14 +1350,13 @@
 			&:nth-child(odd){
 				margin-right: 10px;
 			}
+			&.video{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 		#jmsproductvideo{
-			float: left;
-			width: 275px;
-			height: 353px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			margin-bottom: 0;
 			svg{
 				width: 50px;
@@ -2291,6 +2290,23 @@ a.wishlist_top{
 			.text-3{
 				display: block;
 			}
+		}
+	}
+}
+@media (max-width: 481px){
+	#category-description .banner-category .content{
+		left: 20px;
+		.text-1 {
+			font-size: 16px;
+			line-height: 22px;
+		}
+		.text-2{
+			font-size: 25px;
+			line-height: 30px;
+		}
+		.text-3{
+			font-size: 16px;
+			line-height: 22px;
 		}
 	}
 }
@@ -3305,6 +3321,14 @@ a.wishlist_top{
 		}
 	}
 }
+@media (max-width: 991px){
+	.size-guide .tt-table-responsive-md{
+		overflow-x: auto;
+		.pt-table-size{
+			width: 740px;
+		}
+	}
+}
 //
 
 //page faqs
@@ -3850,6 +3874,11 @@ a.wishlist_top{
 .demo-icon {
 	margin-left: -20px;
 	margin-top: -20px;
+	&::after{
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 .demo-icon .item {
 	color: #333333;
@@ -3887,6 +3916,7 @@ a.wishlist_top{
 	margin-top: 11px;
 	position: relative;
 	overflow: hidden;
+	max-width: 370px;
 	&:hover{
 		.image-box img{
 			transform: scale3d(1.1, 1.1, 1);
@@ -3924,6 +3954,15 @@ a.wishlist_top{
 		    transition: color 0.2s;
 		    @include underline(1, #fff, 2)
 		}
+	}
+}
+@media (max-width: 767px){
+	.pt-promo-box .pt-description {
+		top: 20px;
+		left: 20px;
+	}
+	.demo-icon .item svg + svg {
+		margin-left: 0;
 	}
 }
 //
@@ -5399,6 +5438,7 @@ a.wishlist_top{
 			width: 100%;
 			padding: 0 10px;
 			background: #fff;
+			box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.04);
 			.result_div{
 				padding: 10px 0 0;
 				.item{
@@ -5633,7 +5673,8 @@ a.wishlist_top{
 		#footer{
 			margin-top: 40px;
 		}
-		div#left-column.page-column{
+		div#left-column.page-column,
+		div#right-column{
 			position: fixed;
 			width: 315px;
 			max-width: 315px;

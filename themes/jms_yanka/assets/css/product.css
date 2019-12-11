@@ -219,6 +219,21 @@
 .product-additional-info .product-comments-additional-info {
     display: flex;
 }
+.not-enough-product{
+    display: flex;
+    margin-bottom: 22px;
+}
+.not-enough-product #product-availability {
+    background: #333;
+    color: #fff;
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 21px;
+    line-height: 22px;
+}
 .pd-name {
     font-size: 36px;
     line-height: normal;
@@ -1133,7 +1148,7 @@
         margin-bottom: 10px;
     }
     .same-category {
-        margin-top: 0;
+        margin-top: 0 !important;
     }
     .same-category .container {
         padding-top: 40px !important;
