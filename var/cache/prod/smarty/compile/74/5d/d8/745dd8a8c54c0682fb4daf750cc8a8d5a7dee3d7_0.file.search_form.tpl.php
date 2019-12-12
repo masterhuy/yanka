@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-11 05:29:46
+/* Smarty version 3.1.33, created on 2019-12-12 02:51:40
   from 'D:\xamppp\htdocs\jms_yanka\admin35718dncn\themes\default\template\search_form.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df0c51a361c98_07350264',
+  'unifunc' => 'content_5df1f18c31a8a4_48185538',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df0c51a361c98_07350264 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1f18c31a8a4_48185538 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form id="header_search" class="component bo_search_form" method="post" action="<?php echo $_smarty_tpl->tpl_vars['baseAdminUrl']->value;?>
 index.php?controller=AdminSearch&amp;token=<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['getAdminToken'][0], array( array('tab'=>'AdminSearch'),$_smarty_tpl ) );?>
 " role="search">

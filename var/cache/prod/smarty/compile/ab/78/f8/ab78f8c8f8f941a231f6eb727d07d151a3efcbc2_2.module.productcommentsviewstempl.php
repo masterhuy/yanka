@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-11 05:20:37
+/* Smarty version 3.1.33, created on 2019-12-12 05:15:49
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df0c2f5f1d5d2_32148457',
+  'unifunc' => 'content_5df21355b7ab32_56127991',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ab78f8c8f8f941a231f6eb727d07d151a3efcbc2' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1573454985,
+      1 => 1576121758,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:productcomments/views/templates/hook/alert-modal.tpl' => 2,
   ),
 ),false)) {
-function content_5df0c2f5f1d5d2_32148457 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df21355b7ab32_56127991 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -49,23 +49,23 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 <form id="post-product-comment-form" action="<?php echo $_smarty_tpl->tpl_vars['post_comment_url']->value;?>
 " method="POST">
                     <div class="row">
-                        <div class="col-md-3 col-sm-12">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
                             <?php if (isset($_smarty_tpl->tpl_vars['product']->value) && $_smarty_tpl->tpl_vars['product']->value) {?>
                                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15814097365df0c2f5ee6ac9_79584978', 'product_cover');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16102456405df21355b53a31_25783592', 'product_cover');
 ?>
 
                             <?php }?>
                         </div>
-                        <div class="col-md-9 col-sm-12">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </h3>
                             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10098788945df0c2f5eee7c5_88730709', 'product_description_short');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18459459225df21355b53a34_27222134', 'product_description_short');
 ?>
 
                         </div>
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
                             <?php if (count($_smarty_tpl->tpl_vars['criterions']->value) > 0) {?>
                                 <ul id="criterions_list">
                                     <?php
@@ -181,12 +181,12 @@ $_prefixVariable10 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/alert-modal.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('modal_id'=>'product-comment-post-error','modal_title'=>$_prefixVariable10,'icon'=>'error'), 0, true);
 }
 /* {block 'product_cover'} */
-class Block_15814097365df0c2f5ee6ac9_79584978 extends Smarty_Internal_Block
+class Block_16102456405df21355b53a31_25783592 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_cover' => 
   array (
-    0 => 'Block_15814097365df0c2f5ee6ac9_79584978',
+    0 => 'Block_16102456405df21355b53a31_25783592',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -194,7 +194,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
                                     <div class="product-cover">
                                         <?php if ($_smarty_tpl->tpl_vars['product']->value['cover']) {?>
-                                            <img class="js-qv-product-cover" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['medium_default']['url'], ENT_QUOTES, 'UTF-8');?>
+                                            <img class="js-qv-product-cover" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['home_default']['url'], ENT_QUOTES, 'UTF-8');?>
 " alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
 " style="width:100%;" itemprop="image">
@@ -208,12 +208,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_cover'} */
 /* {block 'product_description_short'} */
-class Block_10098788945df0c2f5eee7c5_88730709 extends Smarty_Internal_Block
+class Block_18459459225df21355b53a34_27222134 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_description_short' => 
   array (
-    0 => 'Block_10098788945df0c2f5eee7c5_88730709',
+    0 => 'Block_18459459225df21355b53a34_27222134',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

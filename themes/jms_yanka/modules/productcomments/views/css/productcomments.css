@@ -559,3 +559,12 @@
 #product-comments-list-pagination ul li.active span {
   cursor: not-allowed;
 }
+@media (max-width: 767px){
+  #post-product-comment-modal .modal-dialog{
+    max-width: 400px;
+    margin: auto;
+  }
+  .product-comment-modal .modal-dialog h3{
+    margin-top: 10px;
+  }
+}

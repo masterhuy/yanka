@@ -73,7 +73,7 @@
 
 			{block name='product_price_and_shipping'}
 				{if $product.show_price}
-				<div class="content_price hidden-lg hidden-md">
+				<div class="content_price hidden-lg">
 					{hook h='displayProductPriceBlock' product=$product type="before_price"}
 					{if $product.has_discount}
 						{hook h='displayProductPriceBlock' product=$product type="old_price"}
@@ -149,7 +149,7 @@
 
 			{block name='product_price_and_shipping'}
 				{if $product.show_price}
-				<div class="content_price hidden-sm hidden-xs">
+				<div class="content_price hidden-md hidden-sm hidden-xs">
 					{hook h='displayProductPriceBlock' product=$product type="before_price"}
 					{if $product.has_discount}
 						{hook h='displayProductPriceBlock' product=$product type="old_price"}

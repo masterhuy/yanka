@@ -41,12 +41,12 @@
             <div class="modal-body">
                 <form id="post-product-comment-form" action="{$post_comment_url nofilter}" method="POST">
                     <div class="row">
-                        <div class="col-md-3 col-sm-12">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
                             {if isset($product) && $product}
                                 {block name='product_cover'}
                                     <div class="product-cover">
                                         {if $product.cover}
-                                            <img class="js-qv-product-cover" src="{$product.cover.bySize.medium_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+                                            <img class="js-qv-product-cover" src="{$product.cover.bySize.home_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
                                         {else}
                                             <img src="{$urls.no_picture_image.bySize.large_default.url nofilter}" style="width:100%;">
                                         {/if}
@@ -54,13 +54,13 @@
                                 {/block}
                             {/if}
                         </div>
-                        <div class="col-md-9 col-sm-12">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
                             <h3>{$product.name}</h3>
                             {block name='product_description_short'}
                                 <div itemprop="description">{$product.description_short nofilter}</div>
                             {/block}
                         </div>
-                        <div class="col-md-12 col-sm-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
                             {if $criterions|@count > 0}
                                 <ul id="criterions_list">
                                     {foreach from=$criterions item='criterion'}
