@@ -1,0 +1,8 @@
+.header .megamenu .addon-box:first-child {
+	margin-left: 27px;
+	margin-right: 0;
+}
+.banner-type-2 .banner-content,
+.banner-type-3 .banner-content {
+  text-align: left;
+}

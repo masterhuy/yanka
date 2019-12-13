@@ -1,0 +1,24 @@
+.search-no-popup .addon-box {
+	margin-left: 40px;
+	margin-right: 0;
+}
+.search-no-popup #jms_ajax_search #ajax_search{
+	background-position: left;
+}
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0;
+	padding-left: 12px;
+}
+.banner .banner-content{
+	text-align: left;
+}
+.jms-row.header.fixed{
+	left: 0;
+	right: auto;
+}
+@media (min-width: 1200px){
+	.jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+		padding-right: 0;
+		padding-left: 12px;
+	}
+}

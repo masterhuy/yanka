@@ -194,6 +194,9 @@
   font-weight: 800;
   border: 1px solid #ebebeb;
 }
+.jms-popup-content #newsletter_block_left .form-group #newsletter-input:focus{
+  border-color: transparent;
+}
 .input_popup::-webkit-input-placeholder {
   color: #777 !important;
   font-size: 13px !important;

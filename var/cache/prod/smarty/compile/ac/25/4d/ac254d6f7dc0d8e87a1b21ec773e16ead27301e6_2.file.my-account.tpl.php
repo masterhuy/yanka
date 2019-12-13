@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-12 05:15:49
+/* Smarty version 3.1.33, created on 2019-12-13 05:17:17
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmswishlist\views\templates\hook\my-account.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df2135581f521_22772464',
+  'unifunc' => 'content_5df3652da2d5e6_66978071',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df2135581f521_22772464 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df3652da2d5e6_66978071 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- MODULE WishList -->
 <a class="wishlist_top home_page lnk_wishlist p-relative" href="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['link']->value->getModuleLink('jmswishlist','mywishlist',array(),true),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>

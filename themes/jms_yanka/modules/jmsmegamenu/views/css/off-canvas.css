@@ -37,6 +37,7 @@
     padding: 0 0 0 20px;
     visibility: visible;
     display: block;
+    padding-left: 20px;
 }
 #off-canvas-menu .dropdown-menu > li > a {
     font-weight: 400;

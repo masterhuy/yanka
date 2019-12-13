@@ -4514,7 +4514,7 @@ a.wishlist_top{
 	.cart_block_list {
 		padding-top: 17px;
 		padding-bottom: 3px;
-		max-height: 237px;
+		max-height: 260px;
 		.property-value{
 			margin: 2px 0 8px;
 			span{
@@ -5589,7 +5589,7 @@ a.wishlist_top{
 		right: -12px;
 	}
 	.owl-theme .owl-controls div.owl-prev{
-		right: -12px;
+		left: -12px;
 	}
 	.size-guide .tt-table-responsive-md{
 		overflow-x: auto;
@@ -6148,14 +6148,6 @@ a.wishlist_top{
 	div.fraction-slider{
 		.prev, .next{
 			display: none;
-		}
-	}
-	.product_tab{
-		.owl-theme .owl-controls {
-			top: -15px;
-			left: 50%;
-			right: auto;
-			transform: translateX(-50%);
 		}
 	}
 	div.feature-box{
