@@ -1,0 +1,34 @@
+.search-no-popup #jms_ajax_search #ajax_search {
+	background-position: left 9px;
+}
+
+.menu .buy-theme p {
+	text-align: left;
+	padding-left: 16px;
+	padding-right: 0;
+}
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0;
+	padding-left: 12px;
+}
+.jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+	padding-left: 12px;
+}
+.ver_menu .pt-icon {
+	margin-left: 5px;
+	margin-right: 0;
+}
+@media (min-width: 1200px){
+	.jms-row.header.fixed {
+		left: calc((100% - 1170px)/2);
+		right: auto;
+		margin-left: -15px;
+		margin-right: 0;
+	}
+}
+@media (max-width: 1199px){
+	.jms-row.menu {
+		left: auto;
+		right: 20px;
+	}
+}

@@ -207,9 +207,12 @@
 	}
 	.header{
 		padding: 8.5px 0;
-		.container > .row{
-			display: flex;
-			align-items: center;
+		.container{
+			max-width: 100%;
+			> .row{
+				display: flex;
+				align-items: center;
+			}
 		}
 		.left-module-header{
 			opacity: 0;
@@ -237,7 +240,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		left: calc((100% - 740px)/2);
+		left: 20px;
 		.container{
 			padding: 0 !important;
 		}
@@ -288,9 +291,6 @@
 	}
 }
 @media (max-width: 991px){
-	.menu{
-		left: calc((100% - 516px)/2);
-	}
 	.pt-parallax-01{
 		flex-direction: column;
 		.pt-img{

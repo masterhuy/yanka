@@ -1,0 +1,28 @@
+.pt-box-layout.img-left .text .addon-box {
+	padding-right: 29px;
+	padding-left: 0;
+}
+.custom-pt .product-miniature .cart-button .text-addcart {
+	margin-right: 11px;
+	margin-left: 0;
+}
+.custom-pt .product-miniature .cart-button:hover .icon-cart{
+	display: block;
+}
+.specification .pt-list-dot > li {
+	padding-right: 11px;
+	padding-left: 0;
+}
+.specification .pt-list-dot > li::before {
+	right: 0;
+	left: auto;
+}
+#footer .addon-title h3{
+	text-align: center;
+}
+@media (min-width: 1199px){
+	.header .megamenu .addon-box:first-child {
+		margin-left: 27px;
+		margin-right: 0;
+	}
+}

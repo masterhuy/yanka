@@ -148,9 +148,18 @@
 }
 @media (max-width: 1199px){
 	#footer .footer-bottom{
-		.copyright, ul{
+		.copyright{
 			float: none;
 			text-align: center;
+		}
+		ul{
+			float: none;
+			justify-content: center;
+			padding-top: 20px;
+			li{
+				margin: 0;
+				margin: 0 4.75px;
+			}
 		}
 	}
 }
@@ -164,6 +173,12 @@
 	.banner-type-1{
 		.layout-column{
 			margin-bottom: 10px;
+		}
+	}
+	#footer{
+		padding-bottom: 0;
+		#back-to-top{
+			margin-top: 50px;
 		}
 	}
 }

@@ -1,0 +1,24 @@
+.search-no-popup #jms_ajax_search #ajax_search {
+	background-position: left 9px;
+}
+.menu .buy-theme p {
+	text-align: left;
+}
+@media (min-width: 1200px){
+	.jms-row.header.fixed {
+		right: auto;
+		left: calc((100% - 1170px)/2);
+		margin-left: -15px;
+		margin-right: 0;
+	}
+	.jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+		padding-right: 0;
+		padding-left: 12px;
+	}
+}
+@media (max-width: 1199px){
+	.jms-row.menu {
+		left: auto;
+		right: 20px;
+	}
+}

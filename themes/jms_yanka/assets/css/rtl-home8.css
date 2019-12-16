@@ -1,0 +1,24 @@
+.search-no-popup #jms_ajax_search #ajax_search {
+	background-position: left 9px;
+}
+.jms-row.header.fixed{
+	left: 0;
+	right: auto;
+}
+.menu .buy-theme p {
+	text-align: left;
+}
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0;
+	padding-left: 12px;
+}
+.jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+	padding-left: 12px;
+}
+.ver_menu .pt-icon {
+	margin-left: 5px;
+	margin-right: 0;
+}
+.banner .banner-content{
+	text-align: left;
+}

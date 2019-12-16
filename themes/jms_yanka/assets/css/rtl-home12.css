@@ -1,0 +1,5 @@
+@media (min-width: 1200px){
+	.jms-row.header.fixed .megamenu.right .jms-megamenu > ul {
+		text-align: right;
+	}
+}

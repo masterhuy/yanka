@@ -6,3 +6,8 @@
 .banner-type-3 .banner-content {
   text-align: left;
 }
+@media (max-width: 1199px){
+	.header .megamenu .addon-box:first-child{
+		margin: 0;
+	}
+}

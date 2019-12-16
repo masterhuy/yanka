@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-11 02:25:26
+/* Smarty version 3.1.33, created on 2019-12-16 04:01:21
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\products-bottom.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df099e6df7c29_69504098',
+  'unifunc' => 'content_5df747e11d6180_53684613',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df099e6df7c29_69504098 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df747e11d6180_53684613 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="js-product-list-bottom"></div>
 <?php }
 }

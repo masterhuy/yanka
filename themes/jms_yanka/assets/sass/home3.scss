@@ -1,25 +1,13 @@
 @import "mixin";
 @import "varians";
 
-@media (min-width: 1800px){
-	.header{
-		.megamenu{
-			width: 57%;
-		}
-		.right-module-header{
-			width: 18%;
-		}
-	}
-}
-
 .cates{
 	margin-top: 93px;
 	.title{
 		margin-bottom: 22px;
 	}
 	.jms-banner{
-		margin-bottom: 30px;
-		&:hover .banner-content p{
+		margin-bottom: 30px;		&:hover .banner-content p{
 			color: #fff;
 			background: $active;
 		}
@@ -75,7 +63,16 @@
 .page-index #footer{
 	margin-top: 10px;
 }
-
+@media (min-width: 1800px){
+	.header{
+		.megamenu{
+			width: 57%;
+		}
+		.right-module-header{
+			width: 18%;
+		}
+	}
+}
 @media (max-width: 991px) and (min-width: 768px){
 	.banner{
 		.layout-column:not(:last-child){

@@ -7,6 +7,9 @@
 		padding-bottom: 0;
 	}
 }
+.menu .megamenu{
+	position: static;
+}
 .left-module-header{
 	.addon-box{
 		margin-right: 2px;
@@ -22,10 +25,10 @@
 	right: -4px;
 }
 .jms-megamenu .nav > li > a{
-	line-height: 53px;
-}
-.page-index .menu{
-	margin-bottom: 5px;
+	line-height: 63px;
+	&::before{
+		bottom: 20px;
+	}
 }
 
 .page-index #footer{
@@ -54,23 +57,28 @@
 	}
 }
 @media (min-width: 1200px){
-	.jms-row.header.fixed{
-		left: auto;
-		width: auto;
-		box-shadow: unset;
-		animation-duration: 0;
-		padding: 8.5px 0;
-		right: calc((100% - 1170px)/2);
-		margin-right: -15px;
-		z-index: 1000;
-		.left-module-header, .col-logo{
-			display: none;
-		}
-		.right-module-header{
-			width: 100%;
-			.addon-box{
-				&:nth-child(4){
-					
+	.jms-row.header{
+		margin-bottom: -13px;
+		display: inline-block;
+		width: 100%;
+		&.fixed{
+			left: auto;
+			width: auto;
+			box-shadow: unset;
+			animation-duration: 0;
+			padding: 8.5px 0;
+			right: calc((100% - 1170px)/2);
+			margin-right: -15px;
+			z-index: 1000;
+			.left-module-header, .col-logo{
+				display: none;
+			}
+			.right-module-header{
+				width: 100%;
+				.addon-box{
+					&:nth-child(4){
+						
+					}
 				}
 			}
 		}

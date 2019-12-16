@@ -1,18 +1,16 @@
 @import "mixin";
 @import "varians";
 
-@media (min-width: 1200px){
-	.jms-row.header.fixed{
-		.megamenu{
-			.addon-box:first-child{
-				display: none;
-			}
+.header{
+	&.fixed{
+		.container{
+			position: relative;
+		}
+		.jms-megamenu .nav > li.item-fullwidth > .dropdown-menu{
+			width: calc(100% - 30px);
 		}
 	}
-}
-.header{
 	.container{
-		position: relative;
 		> .row{
 			display: flex;
 			align-items: center;
@@ -29,7 +27,7 @@
 		}
 	}
 	.jms-megamenu .nav > li.item-fullwidth > .dropdown-menu{
-		width: calc(100% - 30px);
+		width: 100%;
 		padding-left: 54px;
 		padding-right: 54px;
 	}
@@ -80,7 +78,15 @@
 #footer .footer-top{
 	padding-bottom: 65px;
 }
-
+@media (min-width: 1200px){
+	.jms-row.header.fixed{
+		.megamenu{
+			.addon-box:first-child{
+				display: none;
+			}
+		}
+	}
+}
 @media (max-width: 1199px){
 	.header{
 		.megamenu{

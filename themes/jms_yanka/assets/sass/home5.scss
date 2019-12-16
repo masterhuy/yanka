@@ -1,26 +1,6 @@
 @import "mixin";
 @import "varians";
 
-@media (min-width: 1200px){
-	.jms-row.header.fixed{
-		.search-no-popup{
-			display: none;
-		}
-		.megamenu.right{
-			width: 75%;
-			.jms-megamenu > ul {
-				text-align: left;
-			}
-		}
-		.right-module-header{
-			width: 25%;
-			.addon-box:nth-child(4){
-				display: none;
-			}
-		}
-	}
-}
-
 .search-no-popup{
 	display: flex;
 	.addon-box{
@@ -253,6 +233,26 @@
 }
 .page-index #footer{
 	margin-top: 10px;
+}
+
+@media (min-width: 1200px){
+	.jms-row.header.fixed{
+		.search-no-popup{
+			display: none;
+		}
+		.megamenu.right{
+			width: 75%;
+			.jms-megamenu > ul {
+				text-align: left;
+			}
+		}
+		.right-module-header{
+			width: 25%;
+			.addon-box:nth-child(4){
+				display: none;
+			}
+		}
+	}
 }
 @media (max-width: 991px){
 	.banner.type-2{

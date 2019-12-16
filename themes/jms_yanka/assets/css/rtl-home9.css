@@ -1,0 +1,8 @@
+.header .megamenu .addon-box:first-child {
+	margin-left: 27px;
+	margin-right: 0;
+}
+.header .right-module-header .addon-box:last-child {
+	margin-left: 0;
+	margin-right: 17px;
+}

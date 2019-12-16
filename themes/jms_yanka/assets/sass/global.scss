@@ -4750,6 +4750,9 @@ a.wishlist_top{
 			}
 		}
 	}
+	.pt-description{
+		padding-right: 20px;
+	}
 	.pt-hotspot {
 	    position: absolute;
 	    color: #ffffff;
@@ -5658,6 +5661,9 @@ a.wishlist_top{
 		.label.label-discount{
 			margin-bottom: 10px;
 		}
+	}
+	.lookbook-type-1 .pt-hotspot .pt-hotspot-content .pt-img {
+		width: 60px;
 	}
 	.wishlisturl input{
 		width: 100% !important;

@@ -1,4 +1,14 @@
-#footer .footer-bottom #social_block.type-2 ul li:last-child {
-	padding-left: 0;
-	padding-right: 9px;
+.menu .buy-theme p {
+	text-align: left;
+}
+.search-no-popup #jms_ajax_search #ajax_search {
+	background-position: left 9px;
+}
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0;
+	padding-left: 12px;
+}
+#footer .footer-top .social .addon-box:nth-child(3) #social_block {
+	margin-right: 18px;
+	margin-left: 0;
 }

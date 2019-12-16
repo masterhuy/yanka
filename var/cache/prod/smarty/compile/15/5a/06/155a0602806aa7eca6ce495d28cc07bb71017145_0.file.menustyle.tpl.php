@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-10 21:40:53
+/* Smarty version 3.1.33, created on 2019-12-15 23:04:16
   from 'D:\xamppp\htdocs\jms_yanka\modules\jmsmegamenu\views\templates\admin\jmsmegamenu_style\menustyle.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df05735eaefa2_35105116',
+  'unifunc' => 'content_5df70240125ab6_90292858',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df05735eaefa2_35105116 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df70240125ab6_90292858 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="info-config jms-config">
 	<h3>Megamenu</h3>
 	This toolbox use for style megamenu.There are 3 objects need style : Menu item, dropdown(submenu), Column.

@@ -1,0 +1,68 @@
+.right-module-header .addon-box:last-child {
+	margin-right: 17px;
+	margin-left: 0;
+}
+.left-module-header .addon-box {
+	margin-left: 5px;
+	margin-right: 0;
+}
+.lookbook-type-1 .pt-hotspot .pt-hotspot-content{
+	right: 35px;
+	left: auto;
+}
+.lookbook-type-1 .pt-hotspot.active .pt-hotspot-content {
+	right: 15px;
+	left: auto;
+}
+.lookbook-type-1 .pt-hotspot .pt-hotspot-content .pt-btn-close {
+	right: auto;
+	left: 20px;
+}
+.lookbook-type-1 .pt-hotspot .pt-hotspot-content .pt-img {
+	margin-left: 13px;
+	margin-right: 0;
+}
+.lookbook-type-1 .feature-box .image{
+	margin: 0;
+}
+.lookbook-type-1 .feature-box.content-left .pt-hotspot .pt-hotspot-content {
+	right: auto;
+	left: 35px;
+}
+.lookbook-type-1 .feature-box.content-left .pt-hotspot.active .pt-hotspot-content {
+	left: 15px;
+	right: auto;
+}
+
+@media (min-width: 1200px){
+	.jms-row.menu.fixed .megamenu.center .jms-megamenu > ul {
+		text-align: right;
+	}
+	.jms-row.header.fixed {
+		left: calc((100% - 1170px)/2);
+		margin-left: -15px;
+		margin-right: 0;
+		right: auto;
+	}
+	.jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+		padding-right: 0;
+		padding-left: 12px;
+	}
+}
+@media (max-width: 1199px){
+	.menu{
+		right: 20px;
+		left: auto;
+	}
+}
+@media (max-width: 991px){
+	.lookbook-type-1 .pt-hotspot .pt-hotspot-content {
+		right: 0 !important;
+		left: auto;
+	}
+}
+@media (max-width: 767px){
+	.lookbook-type-1 .pt-hotspot .pt-hotspot-content{
+		right: auto !important;
+	}
+}
