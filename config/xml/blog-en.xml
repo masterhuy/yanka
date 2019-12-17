@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Online retail: a list of ten mistakes to avoid</title>
+    <link>https://www.prestashop.com/en/blog/online-retail-a-list-of-ten-mistakes-to-avoid</link>
+    <description>To convert a customer and build customer loyalty, your site should provide a flawless experience.</description>
+     <pubDate>Mon, 16 Dec 2019 12:13:47 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/online-retail-a-list-of-ten-mistakes-to-avoid</guid>
+  </item>
+  <item>
     <title>5 trends that will shape e-commerce in 2020</title>
     <link>https://www.prestashop.com/en/blog/trends-e-commerce-2020</link>
     <description>E-commerce is one of the world’s fastest-changing sectors. Every e-commerce business that wants to stay ahead has to know where things are heading. So what’s coming in 2020?</description>
@@ -76,14 +84,6 @@
      <pubDate>Fri, 15 Nov 2019 14:04:06 +0100</pubDate>
  <dc:creator>John Ahya</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/local-seo-best-practices</guid>
-  </item>
-  <item>
-    <title>How to calculate your average basket?</title>
-    <link>https://www.prestashop.com/en/blog/how-to-calculate-your-average-basket</link>
-    <description>The ultimate objective of any e-commerce business is to drive revenue, and e-commerce merchants come up with new strategies and ideas every now and then to scale-up their revenue graph.</description>
-     <pubDate>Wed, 13 Nov 2019 12:11:54 +0100</pubDate>
- <dc:creator>NitinSrivastavaen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/how-to-calculate-your-average-basket</guid>
   </item>
   </channel>
 </rss>

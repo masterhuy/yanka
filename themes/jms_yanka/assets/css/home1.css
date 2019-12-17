@@ -360,7 +360,3 @@
     margin-top: 50px; }
     .banner-type-3 .layout-column:first-child {
       margin-bottom: 10px; } }
-
-@media (max-width: 481px) {
-  .fraction-slider .slide-3 .fs_obj, .fraction-slider .slide-2 .fs_obj {
-    text-align: center; } }

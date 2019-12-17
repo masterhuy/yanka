@@ -246,6 +246,9 @@
 			display: none;
 		}
 		.jms-megamenu .nav > li{
+			&.open > a{
+				color: $active;
+			}
 			&.sub-home{
 				padding-left: 0;
 			}

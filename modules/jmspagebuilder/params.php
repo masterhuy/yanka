@@ -10,6 +10,6 @@
 *  @Website: http://www.joommasters.com
 */
 
-define('_JPB_THEMESKINS_', "color2,color3,color4,color5");
+define('_JPB_THEMESKINS_', "");
 define('_JPB_PRODUCTHOVERS_', "image_blur:Image Blur,image_swap:Image Swap");
 define('_JPB_PRODUCTBOXS_', '');

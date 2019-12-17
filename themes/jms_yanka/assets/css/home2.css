@@ -62,7 +62,3 @@
     padding-top: 50px; }
   .jms-row.best-seller .owl-dots {
     padding-bottom: 50px; } }
-
-@media (max-width: 481px) {
-  .fraction-slider .slide-1 .fs_obj, .fraction-slider .slide-3 .fs_obj, .fraction-slider .slide-2 .fs_obj {
-    text-align: center; } }

@@ -268,6 +268,8 @@
         align-items: center; }
     .jms-row.menu.fixed .buy-theme {
       display: none; }
+    .jms-row.menu.fixed .jms-megamenu .nav > li.open > a {
+      color: #48CAB2; }
     .jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
       padding-left: 0; }
     .jms-row.menu.fixed .jms-megamenu .nav > li > a {

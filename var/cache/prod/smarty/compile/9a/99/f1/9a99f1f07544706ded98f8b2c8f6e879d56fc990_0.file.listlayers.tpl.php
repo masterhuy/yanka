@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-04 05:20:11
+/* Smarty version 3.1.33, created on 2019-12-17 03:18:01
   from 'D:\xamppp\htdocs\jms_yanka\modules\jmsslider\views\templates\hook\listlayers.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de7885bd42044_64766943',
+  'unifunc' => 'content_5df88f39ba2133_58549982',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./layerconfig.tpl' => 1,
   ),
 ),false)) {
-function content_5de7885bd42044_64766943 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df88f39ba2133_58549982 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_yanka\\vendor\\smarty\\smarty\\libs\\plugins\\function.math.php','function'=>'smarty_function_math',),));
 ?>
 
