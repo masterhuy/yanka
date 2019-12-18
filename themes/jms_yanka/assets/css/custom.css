@@ -5487,22 +5487,11 @@ footer .blog-carousel {
 .stButton{
   margin-left: 0 !important;
 }
-#zoom_01{
-  width: 100% !important;
-  height: auto !important;
-  position: static !important;
-}
-.rtl .zoomWindow{
-  right: 100% !important;
-}
 .fancybox-overlay-fixed{
   z-index: 99999;
 }
 .dropdown-toggle::after{
   display: none;
-}
-.js-qv-product-cover{
-  background: #f1f1f1;
 }
 .fancybox-opened {
   z-index: 999999;

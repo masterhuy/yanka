@@ -1552,16 +1552,12 @@ img.attachment-widget.wp-post-image.img-responsive {
   margin-left: 0;
 }
 #woorebought-popup {
-  right: 15px !important;
+  right: 20px !important;
   left: auto !important;
 }
 #woorebought-popup #popup-close {
-  left: 10px;
+  left: 11px;
   right: auto;
-}
-.footer_t ul li a:hover {
-  padding-left: 0;
-  padding-right: 5px;
 }
 .jms-megamenu .mega-nav li > a:hover {
   padding-left: 30px;

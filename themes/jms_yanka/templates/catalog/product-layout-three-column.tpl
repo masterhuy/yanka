@@ -54,7 +54,7 @@
                         <section class="page-content" id="content">
                             {block name='page_content'}
                                 {block name='product_cover_tumbnails'}
-                                    {include file='catalog/_partials/product-cover-thumbnails-horizontal.tpl'}
+                                    {include file='catalog/_partials/product-cover-thumbnails.tpl'}
                                 {/block}
                                 <div class="scroll-box-arrows">
                                     <i class="fa fa-angle-left left"></i>

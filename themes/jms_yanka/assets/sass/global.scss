@@ -1372,16 +1372,22 @@
 	~ .same-category{
 		margin-top: 135px;
 	}
+	.js-qv-product-cover{
+		display: none;
+	}
 	.images-container .js-qv-mask{
 		width: 100%;
 		margin-right: 0;
 		max-height: initial;
-		.product-cover{
+		.thumb-container{
 			width: calc((100% - 10px)/2);
 			float: left;
 			margin-bottom: 10px;
 			&:nth-child(odd){
 				margin-right: 10px;
+			}
+			img{
+				border: 0 !important;
 			}
 			&.video{
 				display: flex;
@@ -1419,6 +1425,12 @@
 .product-detail.vertical{
 	~ .same-category{
 		margin-top: 135px;
+	}
+	.product-images > li.thumb-container .thumb{
+		border: 0 !important;
+	}
+	.js-qv-product-cover{
+		display: none;
 	}
 	.images-container .js-qv-mask{
 		width: 100%;
@@ -1470,10 +1482,14 @@
 	.images-container{
 		flex-direction: column;
 		.js-qv-mask{
+			order: 2;
 			width: 100%;
 			margin-top: 20px;
 			margin-right: 0;
 			white-space: nowrap;
+		}
+		.product-cover{
+			order: 1;
 		}
 		.product-images > li.thumb-container{
 			display: inline;
@@ -2120,16 +2136,27 @@
 
 //product modal
 #product-modal{
+	display: block;
+	opacity: 0;
+	visibility: visible;
+	z-index: -1;
+	&.in{
+		opacity: 1;
+		visibility: visible;
+		z-index: 99999;
+	}
 	.modal-body{
 		padding: 0;
 	}
 	.modal-content{
 		border: 0;
 		box-shadow: unset;
+		background: transparent;
 	}
 	.modal-dialog{
 		margin: 0 auto;
-		width: 572px;
+		width: 100%;
+		max-width: 572px;
 	}
 	&.modal{
 		&.fade .modal-dialog{
@@ -2139,6 +2166,18 @@
 		&.in .modal-dialog{
 			top: 50%;
 			transform: translate(0,-50%);
+		}
+	}
+	.thumb{
+		width: 100%;
+	}
+	.owl-theme .owl-controls div{
+		top: 50%;
+		&.owl-prev{
+			left: 25px;
+		}
+		&.owl-next{
+			right: 25px;
 		}
 	}
 }
@@ -5231,6 +5270,17 @@ a.wishlist_top{
 }
 //
 
+//recent bought popup
+#woorebought-popup p a{
+	&:hover span::before{
+		width: 100%;
+	}
+	span{
+		position: relative;
+		@include underline(1, #333, 1)
+	}
+}
+//
 #new-products{
 	#search_filters_wrapper{
 		border: 0;
@@ -5348,9 +5398,6 @@ a.wishlist_top{
 	}
 	.fancybox-margin {
 	    margin-right: 0 !important;
-	}
-	div#product-modal .modal-dialog {
-		width: 600px;
 	}
 }
 @media (max-width: 1366px) and (min-width: 1200px){
@@ -5805,6 +5852,9 @@ a.wishlist_top{
 				margin-bottom: 25px;
 			}
 		}
+	}
+	div#product-modal .modal-dialog {
+		width: 350px;
 	}
 	div.pd-left-content {
 		margin-right: 0;

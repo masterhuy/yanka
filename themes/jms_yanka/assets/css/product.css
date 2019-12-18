@@ -176,7 +176,7 @@
 #content-wrapper.col-md-9 .images-container .js-qv-mask {
     max-height: 395px;
 }
-.pd-left-content {
+.product-detail.default .pd-left-content {
     margin-right: 10px;
 }
 .images-container .js-qv-mask {

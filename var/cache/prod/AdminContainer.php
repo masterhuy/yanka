@@ -1230,6 +1230,7 @@ class AdminContainer extends Container
                 76 => 'jmsvermegamenu',
                 77 => 'productcomments',
                 78 => 'ps_specials',
+                79 => 'jmsrecentlybought',
             ],
             'ps_cache_dir' => 'D:\\xamppp\\htdocs\\jms_yanka/var/cache/prod\\',
             'mail_themes_uri' => '/mails/themes',

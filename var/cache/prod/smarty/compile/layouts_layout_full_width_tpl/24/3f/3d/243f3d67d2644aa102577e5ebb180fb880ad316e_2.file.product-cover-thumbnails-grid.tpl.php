@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-16 22:02:37
+/* Smarty version 3.1.33, created on 2019-12-17 22:06:31
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-cover-thumbnails-grid.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df8454d73de01_36484673',
+  'unifunc' => 'content_5df997b76f6099_20204791',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df8454d73de01_36484673 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df997b76f6099_20204791 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5711916405df8454d73de01_36250669', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7045038965df997b76ee391_07402621', 'product_images');
 ?>
 
 </div>
@@ -35,12 +35,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5711916405df8454d7
 
 <?php }
 /* {block 'product_images'} */
-class Block_5711916405df8454d73de01_36250669 extends Smarty_Internal_Block
+class Block_7045038965df997b76ee391_07402621 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_5711916405df8454d73de01_36250669',
+    0 => 'Block_7045038965df997b76ee391_07402621',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
