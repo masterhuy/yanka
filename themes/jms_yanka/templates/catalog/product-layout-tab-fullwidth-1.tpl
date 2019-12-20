@@ -358,3 +358,7 @@
         {/block}
     </section>
 {/block}
+
+<div class="tab-fullwidth-1">
+
+</div>

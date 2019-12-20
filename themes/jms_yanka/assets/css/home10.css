@@ -132,8 +132,8 @@
   .jms-row.header.fixed {
     left: auto;
     width: auto;
-    -webkit-box-shadow: unset;
-    box-shadow: unset;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     -webkit-animation-duration: 0;
     animation-duration: 0;
     padding: 8.5px 0;
@@ -225,9 +225,9 @@
       padding-left: 10px; }
     .pt-parallax-02 .pt-description {
       position: static;
-      -webkit-transform: unset;
-      -ms-transform: unset;
-      transform: unset;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
       margin-top: 30px; }
   .jms-row.menu {
     z-index: 99; }
@@ -260,9 +260,9 @@
     .pt-parallax-01 .pt-img-sub {
       top: auto;
       bottom: -30px;
-      -webkit-transform: unset;
-      -ms-transform: unset;
-      transform: unset; }
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
     .pt-parallax-01:nth-child(2) .pt-description {
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;

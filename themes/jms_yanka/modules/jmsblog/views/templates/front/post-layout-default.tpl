@@ -182,16 +182,16 @@
 							recapcha();
 						//{/literal}
 						$("#commentForm").validate({
-						rules: {
-							customer_name: "required",
-							email: {
-							required: true,
-							email: true
-							},
-							capcha: {
-								require: true,
+							rules: {
+								customer_name: "required",
+								email: {
+								required: true,
+								email: true
+								},
+								capcha: {
+									require: true,
+								}
 							}
-						}
 						});
 					</script>
 				</div>

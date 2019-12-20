@@ -98,6 +98,8 @@
                     {include file='catalog/_partials/product-prices.tpl'}
                 {/block}
 
+                {include file='module:productcomments/views/templates/hook/average-grade-stars.tpl' grade=$average_grade}
+
                 {block name='product_additional_info'}
                     {include file='catalog/_partials/product-additional-info.tpl'}
                 {/block}

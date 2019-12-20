@@ -28,11 +28,11 @@
     width: 100%;
 }
 #off-canvas-menu .open > .dropdown-menu .dropdown-menu {
-    transform: unset;
+    transform: none;
     border: 0;
     opacity: 1;
-    position: unset;
-    box-shadow: unset;
+    position: static;
+    box-shadow: none;
     width: 100%;
     padding: 0 0 0 20px;
     visibility: visible;
@@ -127,7 +127,7 @@
     padding: 0 0 8px;
 }
 #off-canvas-menu #search_widget input:focus{
-    box-shadow: unset;
+    box-shadow: none;
 }
 #off-canvas-menu #search_widget input::placeholder{
     color: #333;

@@ -6,7 +6,7 @@
 	position:static;
 }
 .mega-col-nav > .mega-inner > ul > li.sub-brand .mod-content a img {
-    transform: unset !important; 
+    transform: none !important; 
 }
 .image-menu img {
     width: 100%;

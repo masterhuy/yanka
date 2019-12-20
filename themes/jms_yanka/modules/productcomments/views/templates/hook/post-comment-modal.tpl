@@ -39,7 +39,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="post-product-comment-form" action="{$post_comment_url nofilter}" method="POST">
+                <form class="post-product-comment-form" action="{$post_comment_url nofilter}" method="POST">
                     <div class="row">
                         <div class="col-md-3 col-sm-3 col-xs-12">
                             {if isset($product) && $product}

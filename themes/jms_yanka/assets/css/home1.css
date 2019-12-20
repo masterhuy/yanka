@@ -119,9 +119,9 @@
       .banner-type-1 .jms-banner:hover .text-2::before {
         width: 100%; }
       .banner-type-1 .jms-banner:hover img {
-        -webkit-transform: unset;
-        -ms-transform: unset;
-        transform: unset; }
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
       .banner-type-1 .jms-banner:hover .banner-content .button {
         opacity: 1;
         visibility: visible; }
@@ -325,9 +325,9 @@
     font-size: 36px; }
   .banner-type-1 .banner-content .button {
     position: static;
-    -webkit-transform: unset;
-    -ms-transform: unset;
-    transform: unset;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
     opacity: 1;
     visibility: visible; } }
 

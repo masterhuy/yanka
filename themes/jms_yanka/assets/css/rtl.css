@@ -385,9 +385,6 @@ button.close-button::after {
 /*====================================
 =            Product List            =
 ====================================*/
-.block-categories li a {
-  padding: 0 0 0 30px; }
-
 #categories_block_left li span.grower {
   left: 0;
   right: auto; }
@@ -403,6 +400,15 @@ button.close-button::after {
 #categories_block_left li li li a {
   margin-right: 30px;
   margin-left: 0; }
+
+  .block-categories > .category-sub-menu > .cat-item .navbar-toggler{
+    margin-right: 10px;
+    margin-left: 0;
+  }
+  .block-categories .cat-item .sub-list {
+  padding-right: 23px;
+  padding-left: 0;
+}
 
 .tags_block .block_content a {
   float: right;
@@ -1076,9 +1082,6 @@ footer .post-created {
 .product-variants-item ul li {
   float: right;
 }
-.block-categories > .category-sub-menu > .cat-item .navbar-toggler {
-  float: left;
-}
 .facet-label .magnitude {
   float: left;
 }
@@ -1736,10 +1739,10 @@ div.top_menu_second .jms-megamenu .item-fullwidth > .dropdown-menu {
   margin-left: 10px;
 }
 .jms-megamenu .nav > li.menu-align-center.open > .dropdown-menu {
-  transform: unset;
+  transform: none;
 }
 .jms-megamenu .menu-align-center > .dropdown-menu {
-  transform: unset;
+  transform: none;
 }
 .jms-megamenu .nav li.hot > a > span::after, 
 #off-canvas-menu ul li.hot a::after,

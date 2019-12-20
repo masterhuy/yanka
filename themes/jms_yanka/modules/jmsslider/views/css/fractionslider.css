@@ -10,6 +10,9 @@
 	position:absolute;
 	z-index:500;
 }
+.fraction-slider .btn-default{
+	width: auto !important;
+}
 
 .fraction-slider .active-slide {
 	z-index:991;

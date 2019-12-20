@@ -48,8 +48,8 @@
 							<a class="btn-border w-100 mb-10" href="{$cart_url}" title="{l s='View shopping bag' d='Shop.Theme.Actions'}" rel="nofollow">
 								{l s='View Cart' d='Shop.Theme.Actions'}
 							</a> 
-							<a href="{$cart_url}" class="btn-default">
-								{l s='proceed to checkout' d='Shop.Theme.Actions'}
+							<a href="{{$urls.pages.order}}" class="btn-default">
+								{l s='Proceed to checkout' d='Shop.Theme.Actions'}
 							</a>
 						</div>
 					</div>

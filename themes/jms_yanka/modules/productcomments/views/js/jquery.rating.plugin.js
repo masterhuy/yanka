@@ -64,7 +64,7 @@ jQuery.fn.rating = function(generalOptions) {
 
     var ratingInput;
     if (componentOptions.input) {
-      ratingInput = $('<input type="number" name="'+componentOptions.input+'" id="'+componentOptions.input+'" />');
+      ratingInput = $('<input type="number" name="'+componentOptions.input+'" class="'+componentOptions.input+'" />');
       ratingInput.val(ratingValue);
       ratingInput.css('display', 'none');
       ratingInput.change(displayInteractiveGrade);

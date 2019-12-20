@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-18 04:56:19
+/* Smarty version 3.1.33, created on 2019-12-20 02:09:11
   from 'module:productcommentsviewstempl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df9f7c3d00774_61501105',
+  'unifunc' => 'content_5dfc73975e55a0_44326770',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ab78f8c8f8f941a231f6eb727d07d151a3efcbc2' => 
     array (
       0 => 'module:productcommentsviewstempl',
-      1 => 1576121758,
+      1 => 1576812695,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:productcomments/views/templates/hook/alert-modal.tpl' => 2,
   ),
 ),false)) {
-function content_5df9f7c3d00774_61501105 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dfc73975e55a0_44326770 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -46,13 +46,13 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 </button>
             </div>
             <div class="modal-body">
-                <form id="post-product-comment-form" action="<?php echo $_smarty_tpl->tpl_vars['post_comment_url']->value;?>
+                <form class="post-product-comment-form" action="<?php echo $_smarty_tpl->tpl_vars['post_comment_url']->value;?>
 " method="POST">
                     <div class="row">
                         <div class="col-md-3 col-sm-3 col-xs-12">
                             <?php if (isset($_smarty_tpl->tpl_vars['product']->value) && $_smarty_tpl->tpl_vars['product']->value) {?>
                                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6330088095df9f7c3ce51e2_12049236', 'product_cover');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11011086675dfc73975c61a6_31036559', 'product_cover');
 ?>
 
                             <?php }?>
@@ -61,7 +61,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6330088095df9f7c3c
                             <h3><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </h3>
                             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1447209015df9f7c3cecee6_78010576', 'product_description_short');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16211166255dfc73975d1d23_72242324', 'product_description_short');
 ?>
 
                         </div>
@@ -181,12 +181,12 @@ $_prefixVariable10 = ob_get_clean();
 $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/alert-modal.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('modal_id'=>'product-comment-post-error','modal_title'=>$_prefixVariable10,'icon'=>'error'), 0, true);
 }
 /* {block 'product_cover'} */
-class Block_6330088095df9f7c3ce51e2_12049236 extends Smarty_Internal_Block
+class Block_11011086675dfc73975c61a6_31036559 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_cover' => 
   array (
-    0 => 'Block_6330088095df9f7c3ce51e2_12049236',
+    0 => 'Block_11011086675dfc73975c61a6_31036559',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -208,12 +208,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_cover'} */
 /* {block 'product_description_short'} */
-class Block_1447209015df9f7c3cecee6_78010576 extends Smarty_Internal_Block
+class Block_16211166255dfc73975d1d23_72242324 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_description_short' => 
   array (
-    0 => 'Block_1447209015df9f7c3cecee6_78010576',
+    0 => 'Block_16211166255dfc73975d1d23_72242324',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -24,7 +24,7 @@
  *}
 {block name='product_miniature_item'}
 <div class="product-miniature js-product-miniature product-preview item-gutter-{$jpb_gutterwidth}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
-	<div class="preview">
+	<div class="preview">	
 		{block name='product_thumbnail'}
 		  	<a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
 				<img class="img-responsive product-img1"
@@ -68,7 +68,7 @@
 				</div>
 			{/if}
 			{block name='product_name'}
-				<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link hover-underline" itemprop="name">{$product.name|truncate:50:'...'|escape:'html':'UTF-8'}</a>
+				<a href="{$product.canonical_url}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link hover-underline" itemprop="name">{$product.name|truncate:50:'...'|escape:'html':'UTF-8'}</a>
 			{/block}
 
 			{block name='product_price_and_shipping'}

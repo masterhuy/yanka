@@ -1,5 +1,6 @@
-.open-search .modal-backdrop.in{
+.open-search.modal-open .modal-backdrop.in{
     opacity: 0;
+    z-index: 997;
 }
 #jms_ajax_search .btn-xs.search-icon {
     color: #000000;
@@ -92,7 +93,7 @@
     z-index: 999;
 }
 #jms_ajax_search .modal-content {
-    box-shadow: unset;
+    box-shadow: none;
     border: 0;
     padding: 28px 15px 30px;
 }

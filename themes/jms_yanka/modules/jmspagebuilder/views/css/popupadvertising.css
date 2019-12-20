@@ -152,6 +152,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
+  max-width: 16px;
   display: none;
 }
 .dontshow input:checked ~ .checkmark::after {
@@ -185,7 +186,7 @@
 .jms-popup-content  .block_c_right .newsletter-input , .jms-popup-content .newsletter-btn.buttonh1{
     width: 100%;
 }
-.jms-popup-content #newsletter_block_left .form-group #newsletter-input {
+.jms-popup-content #newsletter_block_left .form-group .newsletter-input {
   font-size: 14px;
   height: 44px;
   width: 100%;
@@ -194,7 +195,7 @@
   font-weight: 800;
   border: 1px solid #ebebeb;
 }
-.jms-popup-content #newsletter_block_left .form-group #newsletter-input:focus{
+.jms-popup-content #newsletter_block_left .form-group .newsletter-input:focus{
   border-color: transparent;
 }
 .input_popup::-webkit-input-placeholder {

@@ -23,7 +23,7 @@
 @media (max-width: 767px){
 	#sitemap #wrapper > .container {
 		border: 0;
-		box-shadow: unset;
+		box-shadow: none;
 		padding: 0 !important;
 	}
 	#sitemap .sitemap{

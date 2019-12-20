@@ -65,6 +65,7 @@ select#jmsskin {
 #jmstools-content select {
 	border: 1px solid #e2e2e2;
 	font-weight: 400;
+	padding-right: 0;
 }
 #jmstools label {
 	display: block;

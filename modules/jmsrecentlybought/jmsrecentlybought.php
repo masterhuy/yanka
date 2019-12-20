@@ -49,7 +49,7 @@ class JmsRecentlyBought extends Module
         foreach ($languages as $lang) {
             $res &= Configuration::updateValue(
                 "JRB_POPUP_CONTENT_{$lang['id_lang']}",
-                'Someone in {address} purchased a {product_link} {time_ago}'
+                'Someone purchased a {product_link} {time_ago} {address}'
             );
             $res &= Configuration::updateValue(
                 "JRB_ADDRESS_LIST_{$lang['id_lang']}",

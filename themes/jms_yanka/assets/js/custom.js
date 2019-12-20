@@ -1165,9 +1165,18 @@ function collapseVermegamenu(){
 	$(".home_11 #jms-vermegamenu-container").addClass('collapse');
 }
 
-function openAjaxSearch(){
+function changeOpacity1(){
 	$("#jms_ajax_search .btn-search").click(function(event) {
 		$("body").addClass("open-search");
+	});
+}
+
+function changeOpacity2(e){
+	$("#product #search-form .label-form i").click(function(event) {
+		$("body").removeClass("open-search");
+	});
+	$(".product-cover .layer").click(function(event) {
+		$("body").removeClass("open-search");
 	});
 }
 
@@ -1202,10 +1211,31 @@ function closeFilter(){
 function calcOwnControlProductModal(){
 	var bodyWidth = $("body").innerWidth();
 	var thumbWidth = $('#product-modal .thumb').innerWidth();
-	var space = -((bodyWidth - thumbWidth)/2 - 15);
+	var space = -((bodyWidth - thumbWidth)/2 - 20);
 
 	$("#product-modal .owl-theme .owl-controls div.owl-prev").css("left", space);
 	$("#product-modal .owl-theme .owl-controls div.owl-next").css("right", space);
+}
+
+function calcOwnControlCarousel(){
+	// producttab
+	var imgHeight = $('.producttab-carousel .product-image img').outerHeight();
+	var btnControlHeight = $('.producttab-carousel .owl-controls div').outerHeight();
+	var space = (imgHeight/2) - (btnControlHeight/2);
+	$(".producttab-carousel .owl-controls div").css({top: space, transform: 'none'});
+
+	// banner
+	var imgHeight2 = $('.banner-carousel .jms-banner > a > img').outerHeight();
+	var btnControlHeight2 = $('.banner-carousel .owl-controls div').outerHeight();
+	var space2 = (imgHeight2/2) - (btnControlHeight2/2);
+	$(".banner-carousel .owl-controls div").css({top: space2, transform: 'none'});
+
+	// hotdealcarousel
+	var imgHeight3 = $('.hotdeal-carousel .product-image img').outerHeight();
+	console.log(imgHeight3);
+	var btnControlHeight3 = $('.hotdeal-carousel .owl-controls div').outerHeight();
+	var space3 = (imgHeight3/2) - (btnControlHeight3/2);
+	$(".hotdeal-carousel .owl-controls div").css({top: space3, transform: 'none'});
 }
 
 function calcHeightVideo(){
@@ -1233,7 +1263,7 @@ function stickySidebar(){
 			if ((galHeight - 500) < windowTop) {
 				$sticky.css({ position: 'relative', top: '0' });
 			} else if (stickyTop < windowTop + stickOffset) {
-				$sticky.css({ position: 'fixed', top: stickOffset });
+				$sticky.css({ position: 'fixed', top: stickOffset, 'max-width': 550 });
 			} else {
 				$sticky.css({position: 'relative', top: 'initial'});
 			}
@@ -1248,7 +1278,7 @@ $(window).resize(function(){
 });
 
 var initialLoad = true;
-$(document).ready(function() {
+$(document).ready(function() {	
 	var header = $(".jms-row.header");
 
 	$(window).scroll(function () {
@@ -1279,7 +1309,8 @@ $(document).ready(function() {
 	
 	collapseVermegamenu();
 
-	openAjaxSearch();
+	changeOpacity1();
+	changeOpacity2();
 	
 	toggleVermegamenu();
 
@@ -1293,5 +1324,7 @@ $(document).ready(function() {
 	stickySidebar();
 	
 	calcOwnControlProductModal();
+
+	calcOwnControlCarousel();
 });
 

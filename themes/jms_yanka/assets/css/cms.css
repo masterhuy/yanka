@@ -29,6 +29,8 @@
     content: "";
     left: 50%;
     position: absolute;
+    -ms-transform: translateX(-50%);
+  	-webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 30px;
 }

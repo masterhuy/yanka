@@ -610,7 +610,7 @@ h4.heading {
 	#module-jmsblog-category #content-wrapper.left-column .addon-title, 
 	#module-jmsblog-category #content-wrapper.right-column .addon-title{
 		position: static;
-		transform: unset;
+		transform: none;
 	}
 	#module-jmsblog-category #wrapper > .container > .row{
 		display: flex;

@@ -76,12 +76,14 @@
 }
 #search_filters .facet .facet-title > i,
 .block-categories .title-block h3 > i{
+	-ms-transform: rotate(180deg); 
+  	-webkit-transform: rotate(180deg); 
 	transform: rotate(180deg);
 	margin-left: 10px;
 }
 #search_filters .facet .facet-title.collapsed > i,
 .block-categories .title-block h3.collapsed i{
-	transform: unset;
+	transform: none;
 }
 #search_filters .facet li {
 	position: relative;

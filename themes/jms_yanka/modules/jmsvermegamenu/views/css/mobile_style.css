@@ -46,10 +46,10 @@
 	opacity: 1;
 	visibility: visible;
 	display: block;
-	box-shadow: unset;
+	box-shadow: none;
 	padding-top: 0;
 	padding-bottom: 0;
-	transform: unset;
+	transform: none;
 	width: 100%;
 }
 #mobile-vermegamenu .dropdown-menu{

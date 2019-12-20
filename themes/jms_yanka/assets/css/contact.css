@@ -145,13 +145,11 @@
 #contact .form-control.form-control-select {
 	padding-left: 12px;
 	width: 100%;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 2.25rem 2.25rem !important;
 	line-height: 1;
 	font-size: 16px;
 	font-weight: 800;
 	color: #777;
+	padding-right: 0;
 }
 #contact .form-control.form-control-select:focus{
 	border-color: transparent;

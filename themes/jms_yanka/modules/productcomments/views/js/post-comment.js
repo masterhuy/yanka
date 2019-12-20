@@ -61,11 +61,11 @@ jQuery(document).ready(function () {
   }
 
   function clearPostCommentForm() {
-    $('#post-product-comment-form input[type="text"]').val('');
-    $('#post-product-comment-form input[type="text"]').removeClass('valid error');
-    $('#post-product-comment-form textarea').val('');
-    $('#post-product-comment-form textarea').removeClass('valid error');
-    $('#post-product-comment-form .criterion-rating input').val(3).change();
+    $('.post-product-comment-form input[type="text"]').val('');
+    $('.post-product-comment-form input[type="text"]').removeClass('valid error');
+    $('.post-product-comment-form textarea').val('');
+    $('.post-product-comment-form textarea').removeClass('valid error');
+    $('.post-product-comment-form .criterion-rating input').val(3).change();
   }
 
   function initCommentModal() {
@@ -118,7 +118,7 @@ jQuery(document).ready(function () {
   function validateFormData(formData) {
     var isValid = true;
     formData.forEach(function(formField) {
-      const fieldSelector = '#post-product-comment-form [name="'+formField.name+'"]';
+      const fieldSelector = '.post-product-comment-form [name="'+formField.name+'"]';
       if (!formField.value) {
         $(fieldSelector).addClass('error');
         $(fieldSelector).removeClass('valid');

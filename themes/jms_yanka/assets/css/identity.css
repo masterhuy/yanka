@@ -2,6 +2,10 @@
   border-radius: 0;
   height: 40px;
 }
-#customer-form .form-footer {
+#identity #customer-form{
+	max-width: 370px;
+	margin: auto;
+}
+#identity #customer-form .form-footer {
 	margin-top: 20px;
 }

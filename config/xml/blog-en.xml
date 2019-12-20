@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Five steps to create your customer persona</title>
+    <link>https://www.prestashop.com/en/blog/five-steps-create-customer-persona</link>
+    <description>When we create a customer persona, we create a vivid impression of an imaginary member of our target demographic.</description>
+     <pubDate>Wed, 18 Dec 2019 14:42:55 +0100</pubDate>
+ <dc:creator>Teapot</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-steps-create-customer-persona</guid>
+  </item>
+  <item>
     <title>Online retail: a list of ten mistakes to avoid</title>
     <link>https://www.prestashop.com/en/blog/online-retail-a-list-of-ten-mistakes-to-avoid</link>
     <description>To convert a customer and build customer loyalty, your site should provide a flawless experience.</description>
@@ -76,14 +84,6 @@
      <pubDate>Mon, 18 Nov 2019 16:11:29 +0100</pubDate>
  <dc:creator>James Messer</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/the-impact-of-free-shipping</guid>
-  </item>
-  <item>
-    <title>Local SEO: Best Practices</title>
-    <link>https://www.prestashop.com/en/blog/local-seo-best-practices</link>
-    <description>SEO is an important factor when it comes to website traffic for e-commerce business. This is the reason why focusing on building your SEO practices is a great step in the right direction.</description>
-     <pubDate>Fri, 15 Nov 2019 14:04:06 +0100</pubDate>
- <dc:creator>John Ahya</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/local-seo-best-practices</guid>
   </item>
   </channel>
 </rss>

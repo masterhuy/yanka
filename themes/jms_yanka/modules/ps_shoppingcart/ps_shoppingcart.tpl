@@ -50,7 +50,7 @@
 				</div>
 				<div class="cart-button">
 					<a class="btn-default" href="{$urls.pages.order}" title="{l s='Proceed to checkout' d='Shop.Theme.Actions'}" rel="nofollow">
-						{l s='PROCEED TO CHECKOUT' d='Shop.Theme.Actions'}
+						{l s='Proceed to checkout' d='Shop.Theme.Actions'}
 					</a>
 					<a class="view-cart" href="{$cart_url}" title="{l s='View shopping bag' d='Shop.Theme.Actions'}" rel="nofollow">
 						{l s='View cart' d='Shop.Theme.Actions'}

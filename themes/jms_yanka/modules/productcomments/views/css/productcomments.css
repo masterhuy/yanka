@@ -158,7 +158,7 @@
 .product-comment-modal .btn-comment,
 .product-comment-modal .btn-comment-inverse {
   border-radius: 0;
-  box-shadow: unset;
+  box-shadow: none;
 }
 
 .product-comment-modal .required {
@@ -283,32 +283,32 @@
   margin-bottom: 0;
   margin-right: 6px;
 }
-#post-product-comment-form #criterions_list {
+.post-product-comment-form #criterions_list {
   margin-bottom: 15px;
 }
-#post-product-comment-form input,
-#post-product-comment-form textarea{
+.post-product-comment-form input,
+.post-product-comment-form textarea{
   font-size: 16px;
   font-weight: 800;
   padding-left: 18px;
   padding-right: 18px;
   margin-bottom: 22px;
 }
-#post-product-comment-form input:focus,
-#post-product-comment-form textarea:focus{
+.post-product-comment-form input:focus,
+.post-product-comment-form textarea:focus{
   border-color: transparent;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 12px rgba(51, 51, 51, 0.08);
   box-shadow: 0px 2px 12px rgba(51, 51, 51, 0.08);
 }
-#post-product-comment-form input.error,
-#post-product-comment-form textarea.error {
+.post-product-comment-form input.error,
+.post-product-comment-form textarea.error {
   background-color: #f2dede;
   border: solid 1px #ebcccc;
 }
 
-#post-product-comment-form input.valid,
-#post-product-comment-form textarea.valid {
+.post-product-comment-form input.valid,
+.post-product-comment-form textarea.valid {
   border: solid 1px #d0e9c6;
 }
 

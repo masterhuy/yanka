@@ -53,19 +53,18 @@
                             </div>
                         {/if}
                     {else}
-                        <a class="category-sub-link" href="{$node.link}">{$node.name}
-                            {if $node.children}
-                                <span class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
-                                    <i class="d-i-flex">
-                                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 0.992188L6 5.98947L11 0.992187" stroke="#D0D0D0" stroke-width="1.1"></path>
-                                        </svg>
-                                    </i>
-                                </span>
-                            {/if}
-                        </a>	
+                        <a class="category-sub-link" href="{$node.link}">{$node.name}</a>
                         {if $node.children}
-                            <div class="collapse" id="exCollapsingNavbar{$node.id}">
+                            <span class="navbar-toggler collapse-icons collapsed" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
+                                <i class="d-i-flex">
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0.992188L6 5.98947L11 0.992187" stroke="#D0D0D0" stroke-width="1.1"></path>
+                                    </svg>
+                                </i>
+                            </span>
+                        {/if}
+                        {if $node.children}
+                            <div class="sub-list collapse" id="exCollapsingNavbar{$node.id}">
                             {categories nodes=$node.children depth=$depth+1}
                             </div>
                         {/if}

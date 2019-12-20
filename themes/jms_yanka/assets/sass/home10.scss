@@ -155,7 +155,7 @@
 	.jms-row.header.fixed{
 		left: auto;
 		width: auto;
-		box-shadow: unset;
+		box-shadow: none;
 		animation-duration: 0;
 		padding: 8.5px 0;
 		right: calc((100% - 1170px)/2);
@@ -270,7 +270,7 @@
 		}
 		.pt-description{
 			position: static;
-			transform: unset;
+			transform: none;
 			margin-top: 30px;
 		}
 	}
@@ -304,7 +304,7 @@
 		.pt-img-sub{
 			top: auto;
 			bottom: -30px;
-			transform: unset;
+			transform: none;
 		}
 		&:nth-child(2){
 			.pt-description{

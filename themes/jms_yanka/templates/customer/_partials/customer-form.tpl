@@ -42,6 +42,5 @@
                 {l s='Create' d='Shop.Theme.Actions'}
             </button>
         {/block}
-        <a class="return-to-store" href="{$urls.base_url}">{l s='or Return to Store' d='Shop.Theme.Global'}</a>
     </footer>
 </form>
