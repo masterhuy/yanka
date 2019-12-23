@@ -30,7 +30,7 @@
         {/block}
     </head>
 
-    <body id="{$page.page_name}" class="{$page.body_classes|classnames} {if isset($jpb_homeclass) && $jpb_homeclass}{$jpb_homeclass}{/if} {if $jpb_rtl} rtl{/if}">
+    <body id="{$page.page_name}" class="{$page.body_classes|classnames} {$page.page_name} {if isset($jpb_homeclass) && $jpb_homeclass}{$jpb_homeclass}{/if} {if $jpb_rtl} rtl{/if}">
     	{if $jpb_loadingstyle}
     		<div class="preloader">
     			<div class="spinner{$jpb_loadingstyle}">
@@ -57,7 +57,6 @@
     		</div>
     	{/if}
         <div class="bg-overlay-canvas"></div>
-
         <div class="main-site">
             <div class="bg-overlay"></div>
             {block name='product_activation'}

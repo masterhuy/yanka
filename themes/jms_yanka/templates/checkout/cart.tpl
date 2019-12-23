@@ -33,7 +33,7 @@
     <div class="cart-grid">
 		<div class="row first">
       		<!-- Left Block: cart product informations & shipping -->
-      		<div class="cart-grid-body {if $cart.products}col-lg-8{else}col-lg-12{/if} col-md-12 col-sm-12 col-xs-12">
+      		<div class="cart-grid-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="cart-box">
 					<!-- cart products detailed -->
 					<div class="cart cart-container">
@@ -63,7 +63,7 @@
     		</div>
 
       		<!-- Right Block: cart subtotal & cart total -->
-      		<div class="cart-grid-right {if $cart.products}{else}hidden{/if} pull-right col-lg-4 col-md-12 col-sm-12 col-xs-12">
+      		<div class="cart-grid-right pull-right col-lg-4 col-md-12 col-sm-12 col-xs-12">
 				<div class="right-box">
 					{block name='cart_summary'}
 			  		<div class="card cart-summary">

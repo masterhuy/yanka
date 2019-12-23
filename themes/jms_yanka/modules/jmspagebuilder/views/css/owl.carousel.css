@@ -212,7 +212,7 @@
 .tab-content > .tab-pane {
   width:100%; 
   height:0px;
-  /*display: block;*/
+  display: block;
 }
 .tab-content > .tab-pane.active {
   height:auto;

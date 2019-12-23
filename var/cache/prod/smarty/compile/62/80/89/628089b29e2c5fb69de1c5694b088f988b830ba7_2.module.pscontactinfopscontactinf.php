@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-20 03:54:14
+/* Smarty version 3.1.33, created on 2019-12-23 04:37:46
   from 'module:pscontactinfopscontactinf' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dfc8c3684d487_13113539',
+  'unifunc' => 'content_5e008aea0cac78_74614423',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dfc8c3684d487_13113539 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e008aea0cac78_74614423 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="contact-rich">
     <h1><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Contact Us','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>

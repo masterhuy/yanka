@@ -36,9 +36,9 @@
       justify-content: center; }
       #footer .footer-bottom ul li {
         margin: 0;
-        margin: 0 4.75px; }
+        margin: 0 6.75px; }
     #footer .footer-bottom .copyright {
-      margin-bottom: 29px; }
+      margin-bottom: 32px; }
   #footer #social_block ul li {
     margin: 0;
     margin: 0 10px; }
@@ -183,7 +183,8 @@
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
   #footer {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-top: 40px; }
     #footer #back-to-top {
       margin-top: 50px; } }
 

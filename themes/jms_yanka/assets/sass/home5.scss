@@ -90,8 +90,8 @@
 }
 .women, .men{
 	margin-top: 93px;
-	.owl-dots{
-		margin-top: -6px;
+	.product-carousel{
+		margin-top: 32px;
 	}
 }
 .jms-row.instagram{
@@ -126,6 +126,10 @@
 		padding: 54px 0 65px;
 	}
 	.newsletter{
+		.container > .row{
+			display: flex;
+			align-items: center;
+		}
 		.addon-title{
 			margin-right: 44px;
 			h3{
@@ -133,6 +137,7 @@
 			}
 		}
 		#newsletter_block_left{
+			margin-top: 0;
 			p{
 				display: none;
 			}
@@ -216,6 +221,9 @@
 		padding: 15px; 
 	}
 	#footer .newsletter{
+		.container > .row{
+			display: block;
+		}
 		.addon-title{
 			margin-right: 0;
 		}

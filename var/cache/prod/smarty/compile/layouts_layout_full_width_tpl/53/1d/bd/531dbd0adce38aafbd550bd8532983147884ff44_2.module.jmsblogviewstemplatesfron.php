@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-19 22:19:00
+/* Smarty version 3.1.33, created on 2019-12-23 04:16:53
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dfc3da45416e2_13985218',
+  'unifunc' => 'content_5e008605b5d9b8_91874880',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '531dbd0adce38aafbd550bd8532983147884ff44' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1576811714,
+      1 => 1576812507,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dfc3da45416e2_13985218 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e008605b5d9b8_91874880 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
@@ -32,7 +32,7 @@ if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?>
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16168254125dfc3da44dbdc7_45227204', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20890961395e008605affda6_05647322', "page_content");
 ?>
 
 
@@ -40,12 +40,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16168254125dfc3da4
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_16168254125dfc3da44dbdc7_45227204 extends Smarty_Internal_Block
+class Block_20890961395e008605affda6_05647322 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_16168254125dfc3da44dbdc7_45227204',
+    0 => 'Block_20890961395e008605affda6_05647322',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -253,7 +253,18 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['customer']->value['lastname'], ENT
 							}
 							recapcha();
 						//
-						
+						$("#commentForm").validate({
+							rules: {
+								customer_name: "required",
+								email: {
+								required: true,
+								email: true
+								},
+								capcha: {
+									require: true,
+								}
+							}
+						});
 					<?php echo '</script'; ?>
 >
 				</div>

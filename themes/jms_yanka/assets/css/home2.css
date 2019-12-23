@@ -34,6 +34,9 @@
   border-top: 1px solid #ebebeb;
   padding-top: 93px; }
 
+.jms-row.best-seller .product-carousel {
+  margin-top: 32px; }
+
 .jms-row.best-seller .owl-dots {
   padding-bottom: 100px;
   border-bottom: 1px solid #ebebeb; }

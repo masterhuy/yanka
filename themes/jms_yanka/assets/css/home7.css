@@ -20,7 +20,7 @@
   .menu .megamenu {
     position: static; }
   .menu .buy-theme p {
-    line-height: 40px;
+    line-height: 39px;
     margin-bottom: 0;
     text-align: right; }
     .menu .buy-theme p a {
@@ -110,10 +110,10 @@
   margin-top: -10px; }
 
 .brand-carousel {
-  padding: 100px 0; }
+  padding: 90px 0; }
 
 .page-index #footer {
-  margin-top: 8px; }
+  margin-top: 18px; }
 
 #footer .footer-top {
   padding-bottom: 81px; }
@@ -144,7 +144,7 @@
   padding-top: 4px; }
   #footer .footer-bottom ul li {
     margin-right: 0;
-    margin-left: 9.5px; }
+    margin-left: 14.5px; }
 
 @media (max-width: 1199px) {
   div#jms_ajax_search {

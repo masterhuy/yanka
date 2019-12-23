@@ -30,6 +30,8 @@
 
 .special-offer {
   margin-top: 63px; }
+  .special-offer .hotdeal-carousel {
+    margin-top: 32px; }
 
 .banner {
   margin-top: 100px; }
@@ -40,6 +42,8 @@
       margin-right: -5px; }
   .banner .layout-column {
     padding: 0 5px; }
+  .banner .jms-banner:hover .banner-content .text-2::before {
+    width: 100%; }
   .banner .banner-content {
     color: #fff;
     left: 38px;
@@ -52,15 +56,29 @@
       font-size: 36px;
       line-height: 43px;
       font-weight: 800; }
+      .banner .banner-content .text-2::before {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background-color: #fff;
+        height: 2px;
+        -webkit-transition: width 0.25s;
+        -o-transition: width 0.25s;
+        transition: width 0.25s; }
 
 .page-index #footer {
   margin-top: 10px; }
 
-@media (min-width: 1800px) {
+@media (min-width: 1875px) {
   .header .megamenu {
-    width: 57%; }
+    width: 59%; }
   .header .right-module-header {
-    width: 18%; } }
+    width: 16%; } }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .banner .layout-column:not(:last-child) {

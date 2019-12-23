@@ -1,9 +1,9 @@
 .header {
   padding: 18px 0; }
-  .header .col-logo {
+  .header .container > .row .layout-column.col-logo {
     position: relative;
     top: 3px; }
-  .header .right-module-header {
+  .header .container > .row .layout-column.right-module-header {
     position: relative;
     top: 4px; }
 
@@ -172,9 +172,9 @@
 
 .top-product {
   margin-top: 93px;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .top-product .product-carousel {
-    padding-top: 32px; }
+    margin-top: 32px; }
 
 .banner-text-center .row {
   margin-left: -5px;
@@ -218,6 +218,9 @@
 .jms-row.service {
   margin-top: 69px;
   margin-bottom: 95px; }
+
+.page-index #footer {
+  margin-top: 0; }
 
 @media (max-width: 1240px) and (min-width: 1200px) {
   .menu .container {

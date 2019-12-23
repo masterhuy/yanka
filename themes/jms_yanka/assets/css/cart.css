@@ -147,8 +147,8 @@
 }
 .cart-grid .product-image.media-middle img {
 	margin-right: 0;
-	width: 100px;
-	min-width: 100px;
+	width: 200px;
+	min-width: 200px;
 }
 .js-cart-line-product-quantity.form-control {
 	padding: 0 40px;
@@ -178,7 +178,7 @@
 	margin-right:0;
 }
 .product-line-grid .product-right .info{
-	padding-left: 20px;
+	padding-left: 30px;
 }
 .cart-line-product-actions .remove-from-cart svg{
 	width: 24px;
@@ -380,10 +380,10 @@
 }
 @media (min-width: 1200px){
 	.product-line-grid .product-info{
-		width: 20%;
+		width: 21%;
 	}
 	.product-line-grid .product-right{
-		width: 80%;
+		width: 79%;
 	}
 }
 @media (max-width: 1199px) and (min-width: 992px){

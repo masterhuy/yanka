@@ -68,7 +68,12 @@
 .top-product{
 	margin-top: 83px;
 	.product-carousel{
-		padding-top: 32px;
+		margin-top: 32px;
+	}
+	.addon-box:not(:first-child){
+		.product-carousel{
+			margin-top: 0;
+		}
 	}
 }
 .jms-row.blog{

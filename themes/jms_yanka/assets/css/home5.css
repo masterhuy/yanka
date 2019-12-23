@@ -93,8 +93,8 @@
 
 .women, .men {
   margin-top: 93px; }
-  .women .owl-dots, .men .owl-dots {
-    margin-top: -6px; }
+  .women .product-carousel, .men .product-carousel {
+    margin-top: 32px; }
 
 .jms-row.instagram {
   margin-top: 93px; }
@@ -132,15 +132,24 @@
   padding-top: 100px; }
   #footer .footer-top {
     padding: 54px 0 65px; }
+  #footer .newsletter .container > .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   #footer .newsletter .addon-title {
     margin-right: 44px; }
     #footer .newsletter .addon-title h3 {
       padding-bottom: 0; }
-  #footer .newsletter #newsletter_block_left p {
-    display: none; }
-  #footer .newsletter #newsletter_block_left .form-group {
-    margin: 0;
-    width: 469px; }
+  #footer .newsletter #newsletter_block_left {
+    margin-top: 0; }
+    #footer .newsletter #newsletter_block_left p {
+      display: none; }
+    #footer .newsletter #newsletter_block_left .form-group {
+      margin: 0;
+      width: 469px; }
   #footer .newsletter .block_content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -199,6 +208,8 @@
     margin-bottom: 10px; }
   .banner.type-2 .banner-content .pt-description-wrapper {
     padding: 15px; }
+  #footer .newsletter .container > .row {
+    display: block; }
   #footer .newsletter .addon-title {
     margin-right: 0; }
   #footer .newsletter .news_content {

@@ -3,6 +3,11 @@
 
 .header{
 	padding: 17px 0 0;
+	.container-fluid > .row .layout-column{
+		&.right-module-header, &.left-module-header{
+			position: relative;
+		}
+	}
 	.logo > span{
 		padding-bottom: 0;
 	}
@@ -70,17 +75,23 @@
 .top-product{
 	margin-top: 93px;
 	.product-carousel{
-		padding-top: 32px;
+		margin-top: 32px;
+	}
+	.addon-box:not(:first-child){
+		.product-carousel{
+			margin-top: 0;
+		}
 	}
 }
 .brand-carousel{
+	padding-top: 36px;
 	padding-bottom: 108px;
 }
 .page-index #footer{
 	margin-top: 0;
 }
 #footer{
-	padding-top: 97px;
+	padding-top: 103px;
 	text-align: center;
 	.addon-title h3{
 		text-align: center;
@@ -105,13 +116,13 @@
 	.footer-bottom{
 		margin-top: 44px;
 		.copyright{
-			margin-bottom: 29px;
+			margin-bottom: 32px;
 		}
 		ul{
 			justify-content: center;
 			li{
 				margin: 0;
-				margin: 0 4.75px;
+				margin: 0 7px;
 			}
 		}
 	}

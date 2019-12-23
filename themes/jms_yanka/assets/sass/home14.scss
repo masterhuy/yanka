@@ -145,6 +145,7 @@
 		.product-info{
 			text-align: center;
 			margin-top: 16px;
+			min-height: auto;
 		}
 		.product-link{
 			padding-bottom: 6px;
@@ -155,7 +156,17 @@
 		.cart-button{
 			padding-left: 21px;
 			padding-right: 21px;
-			.text-addcart{
+			&.checking, &.checked{
+				&:hover .icon-cart{
+					display: none;
+				}
+			}
+			&:hover{
+				.icon-cart{
+					display: block;
+				}
+			}
+			.text-addcart, .text-outofstock, .text-added{
 				width: 100%;
 				font-size: 13px;
 				line-height: normal;

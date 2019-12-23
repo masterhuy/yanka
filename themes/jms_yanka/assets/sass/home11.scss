@@ -3,13 +3,15 @@
 
 .header{
 	padding: 18px 0;
-	.col-logo{
-		position: relative;
-		top: 3px;
-	}
-	.right-module-header{
-		position: relative;
-		top: 4px;
+	.container > .row .layout-column{
+		&.col-logo{
+			position: relative;
+			top: 3px;
+		}
+		&.right-module-header{
+			position: relative;
+			top: 4px;
+		}
 	}
 }
 .search-no-popup #jms_ajax_search{
@@ -150,9 +152,9 @@
 }
 .top-product{
 	margin-top: 93px;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 	.product-carousel{
-		padding-top: 32px;
+		margin-top: 32px;
 	}
 }
 .banner-text-center{
@@ -194,6 +196,9 @@
 .jms-row.service{
 	margin-top: 69px;
 	margin-bottom: 95px;
+}
+.page-index #footer{
+	margin-top: 0;
 }
 
 @media (max-width: 1240px) and (min-width: 1200px){

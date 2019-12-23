@@ -70,7 +70,12 @@
 
 .special-offer {
   margin-top: 93px;
-  margin-bottom: 60px; }
+  margin-bottom: 35px; }
+  .special-offer .product-carousel {
+    margin-top: 32px; }
+
+.page-index #footer {
+  margin-top: 10px; }
 
 #footer .footer-top {
   padding-bottom: 65px; }

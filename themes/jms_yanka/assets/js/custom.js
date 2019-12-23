@@ -1217,25 +1217,19 @@ function calcOwnControlProductModal(){
 	$("#product-modal .owl-theme .owl-controls div.owl-next").css("right", space);
 }
 
-function calcOwnControlCarousel(){
-	// producttab
-	var imgHeight = $('.producttab-carousel .product-image img').outerHeight();
-	var btnControlHeight = $('.producttab-carousel .owl-controls div').outerHeight();
+function calcOwnControlCarousel(x){
+	var carouselType = x;
+	var imgHeight = $('.' + carouselType + '-carousel .product-image img').outerHeight();
+	var btnControlHeight = $('.' + carouselType + '-carousel .owl-controls div').outerHeight();
 	var space = (imgHeight/2) - (btnControlHeight/2);
-	$(".producttab-carousel .owl-controls div").css({top: space, transform: 'none'});
+	$('.' + carouselType + '-carousel .owl-controls div').css({top: space, transform: 'none'});
+}
 
-	// banner
-	var imgHeight2 = $('.banner-carousel .jms-banner > a > img').outerHeight();
-	var btnControlHeight2 = $('.banner-carousel .owl-controls div').outerHeight();
-	var space2 = (imgHeight2/2) - (btnControlHeight2/2);
-	$(".banner-carousel .owl-controls div").css({top: space2, transform: 'none'});
-
-	// hotdealcarousel
-	var imgHeight3 = $('.hotdeal-carousel .product-image img').outerHeight();
-	console.log(imgHeight3);
-	var btnControlHeight3 = $('.hotdeal-carousel .owl-controls div').outerHeight();
-	var space3 = (imgHeight3/2) - (btnControlHeight3/2);
-	$(".hotdeal-carousel .owl-controls div").css({top: space3, transform: 'none'});
+function calcOwnControlBanner(){
+	var imgHeightB = $('.banner-carousel .jms-banner > a > img').outerHeight();
+	var btnControlHeightB = $('.banner-carousel .owl-controls div').outerHeight();
+	var spaceB = (imgHeightB/2) - (btnControlHeightB/2);
+	$(".banner-carousel .owl-controls div").css({top: spaceB, transform: 'none'});
 }
 
 function calcHeightVideo(){
@@ -1273,6 +1267,12 @@ function stickySidebar(){
 
 $(window).resize(function(){
 	calcOwnControlProductModal();
+
+	calcOwnControlCarousel("producttab");
+	calcOwnControlCarousel("hotdeal");
+	calcOwnControlCarousel("product");
+	
+	calcOwnControlBanner();
 
 	calcHeightVideo();
 });
@@ -1325,6 +1325,12 @@ $(document).ready(function() {
 	
 	calcOwnControlProductModal();
 
-	calcOwnControlCarousel();
+	calcOwnControlCarousel("producttab");
+	calcOwnControlCarousel("hotdeal");
+	calcOwnControlCarousel("product");
+	
+	calcOwnControlBanner();
 });
+
+
 

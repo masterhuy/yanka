@@ -78,7 +78,9 @@
 .top-product {
   margin-top: 83px; }
   .top-product .product-carousel {
-    padding-top: 32px; }
+    margin-top: 32px; }
+  .top-product .addon-box:not(:first-child) .product-carousel {
+    margin-top: 0; }
 
 .jms-row.blog {
   margin-top: 54px; }

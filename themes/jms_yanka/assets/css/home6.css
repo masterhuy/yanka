@@ -1,5 +1,7 @@
 .header {
   padding: 17px 0 0; }
+  .header .container-fluid > .row .layout-column.right-module-header, .header .container-fluid > .row .layout-column.left-module-header {
+    position: relative; }
   .header .logo > span {
     padding-bottom: 0; }
 
@@ -63,16 +65,19 @@
 .top-product {
   margin-top: 93px; }
   .top-product .product-carousel {
-    padding-top: 32px; }
+    margin-top: 32px; }
+  .top-product .addon-box:not(:first-child) .product-carousel {
+    margin-top: 0; }
 
 .brand-carousel {
+  padding-top: 36px;
   padding-bottom: 108px; }
 
 .page-index #footer {
   margin-top: 0; }
 
 #footer {
-  padding-top: 97px;
+  padding-top: 103px;
   text-align: center; }
   #footer .addon-title h3 {
     text-align: center; }
@@ -91,14 +96,14 @@
   #footer .footer-bottom {
     margin-top: 44px; }
     #footer .footer-bottom .copyright {
-      margin-bottom: 29px; }
+      margin-bottom: 32px; }
     #footer .footer-bottom ul {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
       #footer .footer-bottom ul li {
         margin: 0;
-        margin: 0 4.75px; }
+        margin: 0 7px; }
 
 @media (max-width: 1199px) {
   #header {

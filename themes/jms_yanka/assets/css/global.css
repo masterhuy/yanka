@@ -188,6 +188,48 @@
   opacity: 1;
   visibility: visible; }
 
+#index .jms-megamenu .nav > li.sub-home > a,
+#category.category-shop .jms-megamenu .nav > li.sub-shop > a,
+#cms.page-cms .jms-megamenu .nav > li.sub-page > a,
+#module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a,
+#category.category-women .jms-megamenu .nav > li.sub-women > a,
+#category.category-men .jms-megamenu .nav > li.sub-men > a,
+#contact.page-contact .jms-megamenu .nav > li.sub-contact > a {
+  color: #48CAB2; }
+  #index .jms-megamenu .nav > li.sub-home > a::before,
+  #category.category-shop .jms-megamenu .nav > li.sub-shop > a::before,
+  #cms.page-cms .jms-megamenu .nav > li.sub-page > a::before,
+  #module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a::before,
+  #category.category-women .jms-megamenu .nav > li.sub-women > a::before,
+  #category.category-men .jms-megamenu .nav > li.sub-men > a::before,
+  #contact.page-contact .jms-megamenu .nav > li.sub-contact > a::before {
+    width: 100%; }
+
+.home_13#index .jms-megamenu .nav > li.sub-home,
+.home_13#category.category-shop .jms-megamenu .nav > li.sub-shop,
+.home_13#cms.page-cms .jms-megamenu .nav > li.sub-page,
+.home_13#module-jmsblog-category .jms-megamenu .nav > li.sub-blog,
+.home_13#category.category-women .jms-megamenu .nav > li.sub-women,
+.home_13#category.category-men .jms-megamenu .nav > li.sub-men,
+.home_13#contact.page-contact .jms-megamenu .nav > li.sub-contact {
+  background-color: #48CAB2; }
+  .home_13#index .jms-megamenu .nav > li.sub-home > a,
+  .home_13#category.category-shop .jms-megamenu .nav > li.sub-shop > a,
+  .home_13#cms.page-cms .jms-megamenu .nav > li.sub-page > a,
+  .home_13#module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a,
+  .home_13#category.category-women .jms-megamenu .nav > li.sub-women > a,
+  .home_13#category.category-men .jms-megamenu .nav > li.sub-men > a,
+  .home_13#contact.page-contact .jms-megamenu .nav > li.sub-contact > a {
+    color: #fff; }
+    .home_13#index .jms-megamenu .nav > li.sub-home > a::before,
+    .home_13#category.category-shop .jms-megamenu .nav > li.sub-shop > a::before,
+    .home_13#cms.page-cms .jms-megamenu .nav > li.sub-page > a::before,
+    .home_13#module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a::before,
+    .home_13#category.category-women .jms-megamenu .nav > li.sub-women > a::before,
+    .home_13#category.category-men .jms-megamenu .nav > li.sub-men > a::before,
+    .home_13#contact.page-contact .jms-megamenu .nav > li.sub-contact > a::before {
+      display: none; }
+
 .sub-women .sub-product-carousel .owl-theme .owl-controls {
   position: absolute;
   top: -41px;
@@ -298,7 +340,7 @@
       color: #333;
       line-height: 19px; }
 
-.jms-megamenu .nav > .menu-item.mega.open > a {
+.jms-megamenu .nav > .menu-item.mega.open > a, .jms-megamenu .nav li.active > a {
   color: #48CAB2; }
 
 .jms-megamenu .nav > li > a::before {
@@ -316,7 +358,7 @@
   -o-transition: width 0.25s;
   transition: width 0.25s; }
 
-.jms-megamenu .nav > li.open > a::before {
+.jms-megamenu .nav > li.open > a::before, .jms-megamenu .nav > li.active > a::before {
   width: 100%; }
 
 .megamenu.center .jms-megamenu > ul {
@@ -2337,6 +2379,9 @@ a.wishlist_top {
   .quickview .close:hover {
     color: #333; }
 
+.quickview .modal-dialog.cover_product1 {
+  max-width: 950px; }
+
 .quickview .modal-body {
   padding: 40px; }
 
@@ -3975,8 +4020,8 @@ a.wishlist_top {
       .jmsflashsales-tab ul li a.active::after {
         opacity: 1; }
 
-.addthis_inline_share_toolbox_ld1s {
-  display: none; }
+.addthis_inline_share_toolbox_lvar {
+  margin-top: 28px; }
 
 .guaranteed {
   margin-top: 48px;
@@ -4590,8 +4635,11 @@ a.wishlist_top {
   .instagram_block .info-block .number-comments {
     float: right; }
 
-.product_tab .tab-content > .tab-pane {
-  display: block; }
+.product_tab .jms-tab {
+  margin-bottom: 32px; }
+
+.product_tab .producttab-carousel {
+  margin-top: 0; }
 
 .testimonial_box .owl-dots {
   margin-top: 37px; }
@@ -5404,7 +5452,7 @@ a.wishlist_top {
       font-size: 10px; }
   #footer {
     margin-top: 50px; }
-    #footer .footer-top {
+    #footer div.footer-top {
       padding: 38px 0; }
     #footer .footer-bottom {
       padding-bottom: 40px; }

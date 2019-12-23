@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-02 00:01:29
+/* Smarty version 3.1.33, created on 2019-12-22 23:40:27
   from 'D:\xamppp\htdocs\jms_yanka\modules\ps_mbo\views\templates\admin\admin-end-content-theme.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de49aa9762036_18271927',
+  'unifunc' => 'content_5e00453b025649_39737947',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de49aa9762036_18271927 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e00453b025649_39737947 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <div class="panel clearfix" id="prestastore-content"></div>
 <?php echo '<script'; ?>

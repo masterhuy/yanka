@@ -254,6 +254,38 @@
 //
 
 //megamenu
+#index .jms-megamenu .nav > li.sub-home,
+#category.category-shop .jms-megamenu .nav > li.sub-shop,
+#cms.page-cms .jms-megamenu .nav > li.sub-page,
+#module-jmsblog-category .jms-megamenu .nav > li.sub-blog,
+#category.category-women .jms-megamenu .nav > li.sub-women,
+#category.category-men .jms-megamenu .nav > li.sub-men,
+#contact.page-contact .jms-megamenu .nav > li.sub-contact{
+	> a{
+		color: $active;
+		&::before{
+			width: 100%;
+		}
+	}
+}
+.home_13{
+	&#index .jms-megamenu .nav > li.sub-home,
+	&#category.category-shop .jms-megamenu .nav > li.sub-shop,
+	&#cms.page-cms .jms-megamenu .nav > li.sub-page,
+	&#module-jmsblog-category .jms-megamenu .nav > li.sub-blog,
+	&#category.category-women .jms-megamenu .nav > li.sub-women,
+	&#category.category-men .jms-megamenu .nav > li.sub-men,
+	&#contact.page-contact .jms-megamenu .nav > li.sub-contact{
+		background-color: $active;
+		> a{
+			color: #fff;
+			&::before{
+				display: none;
+			}
+		}
+	}
+}
+
 .sub-women{
 	.sub-product-carousel{
 		.owl-theme .owl-controls{
@@ -361,16 +393,22 @@
 		}
 	}
 }
-.jms-megamenu .nav{
-	> .menu-item.mega.open > a{
-		color: $active;
-	}
-	> li{
-		> a{
-			@include underline(28, $active, 2);
+.jms-megamenu{
+	.nav{
+		> .menu-item.mega.open, li.active{
+			> a{
+				color: $active;
+			}
 		}
-		&.open > a::before{
-			width: 100%;
+		> li{
+			> a{
+				@include underline(28, $active, 2);
+			}
+			&.open, &.active{
+				> a::before{
+					width: 100%;
+				}
+			}
 		}
 	}
 }
@@ -2725,6 +2763,9 @@ a.wishlist_top{
 			color: #333;
 		}
 	}
+	.modal-dialog.cover_product1{
+		max-width: 950px;
+	}
 	.modal-body{
 		padding: 40px;
 	}
@@ -4418,8 +4459,8 @@ a.wishlist_top{
 }
 
 //share btn
-.addthis_inline_share_toolbox_ld1s {
-	display: none;
+.addthis_inline_share_toolbox_lvar {
+	margin-top: 28px;
 }
 //
 
@@ -5123,8 +5164,11 @@ a.wishlist_top{
 
 //product_tab
 .product_tab{
-	.tab-content > .tab-pane{
-		display: block;
+	.jms-tab{
+		margin-bottom: 32px;
+	}
+	.producttab-carousel{
+		margin-top: 0;
 	}
 }
 //
@@ -6088,7 +6132,7 @@ a.wishlist_top{
 	}
 	#footer{
 		margin-top: 50px;
-		.footer-top{
+		div.footer-top{
 			padding: 38px 0;
 		}
 		.footer-bottom{

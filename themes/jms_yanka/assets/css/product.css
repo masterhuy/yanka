@@ -946,6 +946,7 @@
     text-align: left;
     margin-top: -5px;
     padding-bottom: 0;
+    min-height: auto;
 }
 .product-preview .flexbox + .product-info .label.label-discount {
     display: inline-block;
