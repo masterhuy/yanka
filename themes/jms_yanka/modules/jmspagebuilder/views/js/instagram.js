@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 /* Apply fancybox to multiple items */
     let blockInstaSettings = window.blockInstaSettings;

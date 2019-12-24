@@ -12,6 +12,11 @@
 		padding-bottom: 0;
 	}
 }
+.btn-group.languages-info .dropdown-menu, 
+.btn-group.currency-info .dropdown-menu{
+	left: 0;
+	right: auto;
+}
 .menu{
 	background: #fff;
 }

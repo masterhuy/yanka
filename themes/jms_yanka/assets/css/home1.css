@@ -116,6 +116,8 @@
   .banner-type-1 .jms-banner {
     top: 0;
     overflow: visible; }
+    .banner-type-1 .jms-banner img {
+      width: 100%; }
     .banner-type-1 .jms-banner:hover {
       top: -70px; }
       .banner-type-1 .jms-banner:hover .text-2::before {

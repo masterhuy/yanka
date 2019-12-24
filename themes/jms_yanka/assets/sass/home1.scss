@@ -134,6 +134,9 @@
 	.jms-banner{
 		top: 0;
 		overflow: visible;
+		img{
+			width: 100%;
+		}
 		&:hover{
 			top: -70px;
 			.text-2::before{

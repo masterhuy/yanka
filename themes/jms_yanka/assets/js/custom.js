@@ -118,8 +118,8 @@ jQuery(function ($) {
 		});
 	}
 
-    if($(".customs-carousel-product").length) {
-		var customsCarouselProduct = $(".customs-carousel-product");
+    if($(".customs-product-carousel").length) {
+		var customsCarouselProduct = $(".customs-product-carousel");
 		var rtl = false;
 		if ($("body").hasClass("rtl")) rtl = true;
 		customsCarouselProduct.owlCarousel({
@@ -1154,15 +1154,20 @@ function closeAlertBox(){
 }
 
 function toggleVermegamenu(){
-	$(".ver_menu").click(function(){
+	$(".home_8 .ver_menu").click(function(){
 		$(this).toggleClass("collapsed");
-		$("#jms-vermegamenu-container").toggleClass("in");
+		$(".home_8 #jms-vermegamenu-container").toggleClass("in");
+	});
+	$(".home_11 .ver_menu").click(function(){
+		$(this).toggleClass("collapsed");
+		$(".home_11 #jms-vermegamenu-container").toggleClass("in");
 	});
 }
 
 function collapseVermegamenu(){
 	$(".home_8 #jms-vermegamenu-container").addClass('collapse');
 	$(".home_11 #jms-vermegamenu-container").addClass('collapse');
+	$(".home_17 #jms-vermegamenu-container").addClass('collapse');
 }
 
 function changeOpacity1(){
@@ -1219,7 +1224,7 @@ function calcOwnControlProductModal(){
 
 function calcOwnControlCarousel(x){
 	var carouselType = x;
-	var imgHeight = $('.' + carouselType + '-carousel .product-image img').outerHeight();
+	var imgHeight = $('.' + carouselType + '-carousel .preview').outerHeight();
 	var btnControlHeight = $('.' + carouselType + '-carousel .owl-controls div').outerHeight();
 	var space = (imgHeight/2) - (btnControlHeight/2);
 	$('.' + carouselType + '-carousel .owl-controls div').css({top: space, transform: 'none'});
@@ -1237,7 +1242,7 @@ function calcHeightVideo(){
 	$(".product-detail.grid .product-cover.video").css("height", imgHeight);
 }
 
-function stickySidebar(){
+function stickySidebarProductDetails(){
 	var $sticky = $('.product-detail.vertical .pb-right-column .main-content');
 	var $stickyrStopper = $('#footer');
 	var galHeight = $('#gal1').innerHeight();
@@ -1254,7 +1259,7 @@ function stickySidebar(){
 		$(window).scroll(function(){ // scroll event
 			var windowTop = $(window).scrollTop(); // returns number
 
-			if ((galHeight - 500) < windowTop) {
+			if ((galHeight - 600) < windowTop) {
 				$sticky.css({ position: 'relative', top: '0' });
 			} else if (stickyTop < windowTop + stickOffset) {
 				$sticky.css({ position: 'fixed', top: stickOffset, 'max-width': 550 });
@@ -1276,6 +1281,8 @@ $(window).resize(function(){
 
 	calcHeightVideo();
 });
+
+onload
 
 var initialLoad = true;
 $(document).ready(function() {	
@@ -1321,7 +1328,7 @@ $(document).ready(function() {
 	openFilter();
 	closeFilter();
 
-	stickySidebar();
+	stickySidebarProductDetails();
 	
 	calcOwnControlProductModal();
 

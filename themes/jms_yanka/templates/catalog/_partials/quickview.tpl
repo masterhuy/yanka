@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left">
                         {block name='product_cover_tumbnails'}
-                            {include file='catalog/_partials/product-cover-thumbnails-quickview.tpl'}
+                            {include file='catalog/_partials/product-cover-thumbnails.tpl'}
                         {/block}
                         <div class="arrows js-arrows">
                             <i class="material-icons arrow-up js-arrow-up"></i>

@@ -78,8 +78,13 @@
 		margin-top: 32px;
 	}
 }
-.page-index #footer{
-	margin-top: 10px;
+.page-index{
+	#footer{
+		margin-top: 10px;
+	}
+	.product-preview .product-info{
+		min-height: 167px;
+	}
 }
 #footer .footer-top{
 	padding-bottom: 65px;

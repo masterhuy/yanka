@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-23 05:21:25
+/* Smarty version 3.1.33, created on 2019-12-24 03:13:18
   from 'module:pscategoryproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0095250a6ac2_15638177',
+  'unifunc' => 'content_5e01c89e2c7fb9_22741047',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39d31a599d73c039735add7bd5dc7a2a3a72c0ba' => 
     array (
       0 => 'module:pscategoryproductsviewste',
-      1 => 1575528777,
+      1 => 1577172421,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5e0095250a6ac2_15638177 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e01c89e2c7fb9_22741047 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="same-category">
     <div class="container">
         <div class="addon-title">
@@ -31,7 +31,7 @@ function content_5e0095250a6ac2_15638177 (Smarty_Internal_Template $_smarty_tpl)
             </h3>
         </div>
         <div class="product_box">
-            <div class="products customs-carousel-product"> 
+            <div class="products customs-product-carousel"> 
                 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'product');
 if ($_from !== null) {

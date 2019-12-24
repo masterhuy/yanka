@@ -151,3 +151,19 @@
 	top:0;
 	background:#fff
 }
+@media (max-width: 991px){
+	.owl-theme .owl-controls div.owl-prev, 
+	.owl-theme .owl-controls div.owl-next{
+		background: #fff;
+	}
+	.owl-theme .owl-controls div.owl-prev:hover, 
+	.owl-theme .owl-controls div.owl-next:hover{
+		background: #333;
+	}
+	.owl-theme .owl-controls div.owl-next{
+		right: -7px;
+	}
+	.owl-theme .owl-controls div.owl-prev{
+		left: -7px;
+	}
+}

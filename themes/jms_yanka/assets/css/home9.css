@@ -77,6 +77,9 @@
 .page-index #footer {
   margin-top: 10px; }
 
+.page-index .product-preview .product-info {
+  min-height: 167px; }
+
 #footer .footer-top {
   padding-bottom: 65px; }
 
