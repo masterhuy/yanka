@@ -24,29 +24,28 @@
 	}
 }
 .page-index .menu{
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
+
 .menu{
 	.container{
 		width: 1170px;
 		padding: 0;
 		background: #333;
 	}
-	.vermegamenu{
-		width: 20%;
+	#jms-vermegamenu-container{
+		max-width: 270px;
 	}
 	.megamenu{
-		width: 60%;
 		position: static;
 	}
 	.buy-theme{
-		width: 20%;
 		p{
 			line-height: 40px;
 			margin-bottom: 0;
 			text-align: right;
 			height: 40px;
-			padding-right: 16px;
+			padding-right: 23px;
 			a{
 				text-transform: uppercase;
 				color: $active;
@@ -74,6 +73,13 @@
 		}
 	}
 }
+.jms-vermegamenu .only-h17{
+    display: block;
+}
+.jms-vermegamenu .nav > li > a{
+	padding: 3px 14px;
+	line-height: 23.5px;
+}
 .banner-right{
 	.jms-banner:hover .banner-content .text-1::before{
 		width: 100%;
@@ -98,17 +104,81 @@
 		}
 	}
 }
+.category-link{
+	margin-top: 70px;
+	.jms-banner{
+		> a{
+			display: block;
+			overflow: hidden;
+		}
+		&:hover .banner-content p::before{
+			width: 100%;
+		}
+	}
+	.banner-content{
+		margin-top: 16px;
+		position: static;
+		text-align: center;
+		p{
+			color: #333;
+			font-size: 24px;
+			font-weight: 800;
+			position: relative;
+			display: inline-block;
+			@include underline(1 , #333, 2)
+		}
+	}
+}
 
 .top-product{
 	margin-top: 93px;
-	margin-bottom: 100px;
+	margin-bottom: 77px;
+	.addon-box:not(:first-child){
+		.product-carousel{
+			margin-top: 0;
+		}
+	}
 	.product-carousel{
 		margin-top: 32px;
 	}
 }
-.page-index #footer{
-	margin-top: 0;
+.popupal-collections{
+	margin-bottom: 83px;
+	.title{
+		margin-bottom: 32px;
+	}
+	.container > .row{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.layout-column{
+		padding: 0 5px;
+	}
+	.jms-banner{
+		margin-bottom: 10px;
+		&:hover .banner-content p::before{
+			width: 100%;
+		}
+	}
+	.banner-content {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		p{
+			font-size: 24px;
+			font-weight: 800;
+			position: relative;
+			@include underline(1 , #fff, 2)
+		}
+	}
 }
+
 
 @media (max-width: 1240px) and (min-width: 1200px){
 	.menu .container{
@@ -242,11 +312,7 @@
 	}
 }
 @media (max-width: 991px){
-	.banner-cates{
-		.layout-column{
-			margin-bottom: 10px;
-		}
-	}
+	
 }
 @media (max-width: 767px){
 	.jms-row.menu{
@@ -256,16 +322,5 @@
 	}
 	.top-product{
 		margin-top: 30px;
-	}
-	.product-layout-vertical {
-		margin-top: 40px;
-		margin-bottom: 20px;
-	}
-	.jms-row.service {
-		margin-top: 13px;
-		margin-bottom: 0;
-	}
-	.page-index #footer{
-		margin-top: 10px;
 	}
 }

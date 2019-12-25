@@ -5576,6 +5576,7 @@ button,
 #jms_ajax_search .btn-search i,
 .right-icon-group .addon-box a svg,
 .fs-pager-wrapper span,
+#jms-vermegamenu-container,
 .images-container .product-images > li.thumb-container > .thumb{
   transition: all 400ms;
   -webkit-transition: all 400ms;

@@ -5258,6 +5258,35 @@ a.wishlist_top{
 //
 
 //testimonial
+.testimonial{
+	&.type-2{
+		.testimonial-box{
+			.testimonial-comment .title{
+				.rating{
+					display: none;
+					&.type-2{
+						display: flex;
+					}
+				}
+				h3{
+					color: #fff;
+					&::before{
+						background-color: #fff;
+					}
+				}
+			}
+			.desc{
+				color: #fff;
+			}
+			.box-content {
+				background: $active;
+				&::after{
+					border-top-color: $active;
+				}
+			}
+		}
+	}
+}
 .testimonial_box{
 	.owl-dots{
 		margin-top: 37px;
@@ -5307,6 +5336,9 @@ a.wishlist_top{
 				float: right;
 				img{
 					margin-left: 6px;
+				}
+				&.type-2{
+					display: none;
 				}
 			}
 		}

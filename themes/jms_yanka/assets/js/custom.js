@@ -1121,22 +1121,6 @@ $(window).load(function () {
 });
 
 // add fn
-function zoomProductImage(){
-	//initiate the plugin and pass the id of the div containing gallery images
-	
-	// $(".zoom_01").elevateZoom({
-	// 	gallery: 'gal1',
-	// 	zoomType: "inner",
-	// 	cursor: "crosshair"
-	// });
-	
-	//pass the images to Fancybox
-    $(".zoom_01").bind("click", function (e) { 
-		var ez = $('.zoom_01').data('elevateZoom'); 
-		$.fancybox(ez.getGalleryList()); 
-		return false; 
-	});
-}
 function openVideo(){
 	$('.jms-addon.jms-video').click(function() {
 		$('.jms-row.video').addClass('show-video');

@@ -11,10 +11,15 @@
 $(document).ready(function() {
 	var menu = $(".jms-row.menu");
 
+	$(".ver_menu").click(function(){
+		$(this).toggleClass("collapsed");
+		$("#jms-vermegamenu-container").toggleClass("collapse");
+	});
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 180){
 			menu.addClass("fixed");
+			$("#jms-vermegamenu-container").addClass("collapse");
 
 			$(".header.fixed .cart-icon").click(function(){
 				$(".menu.fixed").addClass('changed');
@@ -29,6 +34,7 @@ $(document).ready(function() {
 			});
     	} else {
 			menu.removeClass("fixed");
+			$("#jms-vermegamenu-container").removeClass("collapse");
     	}
     });
 })
