@@ -1151,7 +1151,6 @@ function toggleVermegamenu(){
 function collapseVermegamenu(){
 	$(".home_8 #jms-vermegamenu-container").addClass('collapse');
 	$(".home_11 #jms-vermegamenu-container").addClass('collapse');
-	$(".home_17 #jms-vermegamenu-container").addClass('collapse');
 }
 
 function changeOpacity1(){
@@ -1292,8 +1291,6 @@ $(document).ready(function() {
 	}
 
 	calcHeightVideo();
-
-	zoomProductImage();
 
 	hoverLookbook();
 	closeLookbook();

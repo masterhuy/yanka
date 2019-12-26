@@ -450,6 +450,10 @@
 .product-quantity .add .row > div{
     padding: 0 5px;
 }
+#product-availability {
+    display: block;
+    margin-top: 20px;
+}
 .product-layout-3columns .product-quantity .add .row > div{
     padding: 0;
 }

@@ -40,10 +40,12 @@
 	cursor:default;	
 }
 .owl-theme .owl-controls div.owl-prev, .owl-theme .owl-controls div.owl-next {
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	height: 25px;
-	text-align: center;
 	width: 25px;
+	text-align: center;
 	cursor: pointer;
 	z-index: 2;
 }

@@ -1,0 +1,380 @@
+@import "mixin";
+@import "varians";
+
+.jms-row.alert-box{
+	color: #fff;
+	background: #FF7451;
+	&.closed{
+		margin-top: -1px;
+	}
+	.alert{
+		font-size: 20px;
+		margin: 0;
+		padding: 10px 20px;
+		p{
+			display: inline-block;
+		}
+	}
+	strong{
+		color: #fff;
+	}
+	.more-details{
+		position: relative;
+		display: inline-block;
+		&:hover{
+			cursor: help;
+			&::before{
+				width: 0;
+			}
+			.details-content{
+				opacity: 1;
+				visibility: visible;
+				margin-top: 0;
+			}
+		}
+		&::before{
+			position: absolute;
+			z-index: 2;
+			bottom: 4px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 100%;
+			content: '';
+			color: transparent;
+			background: #ffffff;
+			height: 2px;
+			pointer-events: none;
+			transition: width 0.2s;
+		}
+		.details-content {
+			opacity: 0;
+			visibility: hidden;
+			margin-top: 16px;
+			position: absolute;
+			background: #333;
+			width: 320px;
+			font-size: 14px;
+			padding: 20px;
+			top: calc(100% + 4px);
+			left: 50%;
+			font-weight: 400;
+			line-height: 1.42;
+			transform: translateX(-50%);
+			transition: all 0.2s;
+			z-index: 992;
+			&::after{
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: -8px;
+				border: 4px solid transparent;
+				border-bottom-color: transparent;
+				border-bottom-color: #333333;
+				pointer-events: none;
+				z-index: 11;
+			}
+			a{
+				font-weight: 800;
+				color: #fff;
+				text-decoration: underline;
+				&:hover{
+					color: $active;
+				}
+			}
+		}
+	}
+	.close{
+		color: #fff;
+		padding: 5px;
+		opacity: 1;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		&:hover{
+			color: #333;
+		}
+	}
+}
+
+.header{
+	.megamenu{
+		display: flex;
+		align-items: center;
+		.addon-box{
+			&:first-child{
+				margin-right: 27px;
+			}
+		}
+	}
+}
+
+.banner-type-1{
+	margin-top: 10px;
+	margin-bottom: 93px;
+	.owl-dots{
+		margin-top: 33px;
+	}
+	.owl-theme .owl-controls div{
+		background: #fff;
+		opacity: 1;
+		visibility: visible;
+		&:hover{
+			background: #333;
+			color: #fff;
+		}
+		&.owl-prev{
+			left: 23px !important;
+		}
+		&.owl-next{
+			right: 23px !important;
+		}
+	}
+	.jms-banner{
+		top: 0;
+		overflow: visible;
+		img{
+			width: 100%;
+		}
+		&:hover{
+			top: -70px;
+			.text-2::before{
+				width: 100%;
+			}
+			img{
+				transform: none;
+			}
+			.banner-content .button{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	.container-fluid{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.banner-content{
+		position: relative;
+		left: 0;
+		top: 0;
+		text-align: center;
+		margin-top: 35px;
+		.text-1{
+			font-size: 18px;
+			line-height: 26px;
+			color: #333;
+			font-weight: 800;
+			display: block;
+		}
+		.text-2{
+			font-size: 48px;
+			line-height: 58px;
+			color: #333;
+			font-weight: 800;
+			display: inline-block;
+			position: relative;
+			@include underline(4, #333, 3)
+		}
+		.text-3{
+			font-size: 18px;
+			line-height: 28px;
+			margin-top: 9px;
+		}
+		.button{
+			width: 100%;
+			position: absolute;
+			left: 50%;
+			top: 100%;
+			transform: translateX(-50%);
+			opacity: 0;
+			visibility: hidden;
+		}
+		.btn-default{
+			margin-top: 24px;
+			padding: 0 20px;
+		}
+	}
+}
+
+.banner-type-2{
+	margin-top: 93px;
+	.addon-desc{
+		margin-bottom: 22px;
+	}
+	.container-fluid{
+		padding: 0 10px;
+	}
+	.row{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.layout-column{
+		padding: 0 5px;
+	}
+	.jms-banner:hover .banner-content .text-1::before{
+		width: 100%;
+	}
+	.banner-content{
+		top: 32px;
+		left: 38px;
+		.text-1{
+			font-size: 24px;
+			line-height: 35px;
+			font-weight: 800;
+			color: #333;
+			position: relative;
+			display: inline-block;
+			&.color-white{
+				@include underline(5, #fff, 2)
+			}
+			@include underline(5, #333, 2)
+		}
+		.text-2{
+			font-size: 18px;
+			line-height: 28px;
+			color: #777;
+		}
+	}
+}
+
+.special-offer{
+	margin-top: 93px;
+}
+
+.banner-type-3{
+	margin-top: 100px;
+	.container-fluid{
+		padding: 0 10px;
+	}
+	.row{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.layout-column{
+		padding: 0 5px;
+	}
+	.jms-banner:hover .banner-content .text-2::before{
+		width: 100%;
+	}
+	.banner-content{
+		top: 33px;
+		left: 38px;
+		.text-1{
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 800;
+			color: #333;
+		}
+		.text-2{
+			color: #333;
+			font-size: 36px;
+			line-height: 43px;
+			font-weight: 800;
+			margin: 8px 0 0 0;
+			padding: 0;
+			position: relative;
+			display: inline-block;
+			&.color-white{
+				@include underline(5, #fff, 2)
+			}
+			@include underline(5, #333, 2)
+		}
+		.text-3{
+			margin-bottom: 36px;
+			color: #777;
+		}
+	}
+}
+.page-index #footer{
+	margin-top: 10px;
+}
+
+@media (max-width: 1366px){
+	.banner-type-1 .banner-content .text-2 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 1199px){
+	.header{
+		.megamenu{
+			line-height: 54px;
+			.addon-box:first-child{
+				position: absolute;
+				margin: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	.banner-type-1{
+		.jms-banner:hover{
+			top: 0;
+		}
+		.banner-content{
+			.text-1{
+				font-size: 16px;
+				line-height: 24px;
+			}
+			.text-2 {
+				font-size: 36px;
+			}
+			.button{
+				position: static;
+				transform: none;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.alert-box{
+		.container{
+			max-width: 100%;
+		}
+	}
+	.banner-type-2{
+		.container-fluid > .row > .layout-column{
+			margin-bottom: 10px;
+		}
+	}
+	.banner-type-3 .banner-content {
+		top: 20px;
+		left: 20px;
+	}
+}
+@media (max-width: 767px){
+	.banner-type-1 {
+		margin-bottom: 50px;
+	}
+	.jms-row.alert-box .alert {
+		font-size: 17px;
+	}
+	.special-offer {
+		margin-top: 40px;
+	}
+	.banner-type-2{
+		margin-top: 50px;
+		img{
+			width: 100%;
+		}
+		.banner-content{
+			top: 15px;
+			left: 20px;
+		}
+		.row .row .layout-column:first-child{
+			margin-bottom: 10px;
+		}
+	}
+	.banner-type-3{
+		margin-top: 50px;
+		.layout-column:first-child{
+			margin-bottom: 10px;
+		}
+	}
+}

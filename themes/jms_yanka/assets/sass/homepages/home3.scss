@@ -1,0 +1,113 @@
+@import "mixin";
+@import "varians";
+
+.cates{
+	margin-top: 93px;
+	.title{
+		margin-bottom: 22px;
+	}
+	.jms-banner{
+		margin-bottom: 30px;		
+		&:hover .banner-content p{
+			color: #fff;
+			background: $active;
+		}
+		.banner-content {
+			width: 100%;
+			left: 0;
+			top: auto;
+			bottom: 20px;
+			display: flex;
+			justify-content: center;
+			p{
+				background: #fff;
+				padding: 8px 33px;
+				font-weight: 800;
+				color: #333;
+				display: inline-block;
+				transition: all .2s;
+			}
+		}
+	}
+}
+.special-offer{
+	margin-top: 63px;
+	.hotdeal-carousel{
+		margin-top: 32px;
+	}
+}
+.banner{
+	margin-top: 100px;
+	.container-fluid{
+		padding: 0 10px;
+		> .row{
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+	}
+	.layout-column{
+		padding: 0 5px;
+	}
+	.jms-banner:hover .banner-content .text-2::before{
+		width: 100%;
+	}
+	.banner-content{
+		color: #fff;
+		left: 38px;
+		bottom: 32px;
+		top: auto;
+		.text-1{
+			font-weight: 800;
+			margin-bottom: 7px;
+		}
+		.text-2{
+			font-size: 36px;
+			line-height: 43px;
+			font-weight: 800;
+			@include underline(0, #fff, 2)
+		}
+	}
+}
+.page-index #footer{
+	margin-top: 10px;
+}
+@media (min-width: 1875px){
+	.header{
+		.megamenu{
+			width: 59%;
+		}
+		.right-module-header{
+			width: 16%;
+		}
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.banner{
+		.layout-column:not(:last-child){
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.cates{
+		margin-top: 38px;
+		.container > .row{
+			margin: 0 -10px;
+			.jms-banner{
+				margin-bottom: 20px;
+			}
+			.layout-column{
+				padding: 0 10px;
+			}
+		}
+	}
+	.special-offer{
+		margin-top: 18px;
+	}
+	.banner{
+		margin-top: 47px;
+		.layout-column{
+			margin-bottom: 10px;
+		}
+	}
+}

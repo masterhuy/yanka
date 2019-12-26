@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-17 21:50:47
+/* Smarty version 3.1.33, created on 2019-12-25 22:28:17
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\errors\not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd207075bac22_13725081',
+  'unifunc' => 'content_5e0428d17ce279_24200625',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63022f477abd73f618c091bb516031d7410e34df' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\errors\\not-found.tpl',
-      1 => 1574045392,
+      1 => 1574046091,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd207075bac22_13725081 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0428d17ce279_24200625 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -49,27 +49,29 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 </symbol>
             </use>
         </svg>
-        <h4><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your Search Returns no Results','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+        <h4><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Empty Category','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </h4>
-        <p class="small-text"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search results for','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
- <span>"<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_string']->value, ENT_QUOTES, 'UTF-8');?>
-"</span></p>
+        <p class="small-text"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'There are no products matching the selection.','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</p>
+        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+" class="btn-border"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Continue shopping','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</a>
     </div>
 	<div class="search-box">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2236834095dd207075bac26_64932498', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18193320105e0428d17ca3f1_70456199', 'hook_not_found');
 ?>
 
 	</div>
 </section>
 <?php }
 /* {block 'hook_not_found'} */
-class Block_2236834095dd207075bac26_64932498 extends Smarty_Internal_Block
+class Block_18193320105e0428d17ca3f1_70456199 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_2236834095dd207075bac26_64932498',
+    0 => 'Block_18193320105e0428d17ca3f1_70456199',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

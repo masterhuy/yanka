@@ -16,6 +16,9 @@ $(document).ready(function() {
 		$("#jms-vermegamenu-container").toggleClass("collapse");
 	});
 
+	$(".home_17 #jms-vermegamenu-container").addClass('collapse');
+	$(".home_17.page-index #jms-vermegamenu-container").removeClass('collapse');
+
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 180){
 			menu.addClass("fixed");
@@ -34,7 +37,7 @@ $(document).ready(function() {
 			});
     	} else {
 			menu.removeClass("fixed");
-			$("#jms-vermegamenu-container").removeClass("collapse");
+			$(".page-index #jms-vermegamenu-container").removeClass("collapse");
     	}
     });
 })

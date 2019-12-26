@@ -1,0 +1,85 @@
+@import "mixin";
+@import "varians";
+
+.popupal-collections{
+	margin-top: 93px;
+	padding-bottom: 40px;
+}
+.jms-banner{
+	margin-bottom: 60px;
+	> a{
+		display: block;
+		overflow: hidden;
+	}
+	.banner-content{
+		position: static;
+		text-align: center;
+		margin-top: 12px;
+		.text-1{
+			color: #333;
+			font-size: 24px;
+			line-height: 35px;
+			font-weight: 800;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			display: inline-block;
+		}
+		.text-2{
+			font-size: 16px;
+			line-height: 25px;
+			margin: 1px 0 0 0;
+			color: #777;
+			+ p .btn-border{
+				margin-top: 14px;
+			}
+		}
+		.btn-border{
+			margin-top: 10px;
+		}
+	}
+}
+.jms-row.best-seller{
+	.addon-title{
+		border-top: 1px solid #ebebeb;
+		padding-top: 93px;
+	}
+	.product-carousel{
+		margin-top: 32px;
+	}
+	.owl-dots{
+		padding-bottom: 100px;
+		border-bottom: 1px solid #ebebeb;
+	}
+}
+.service{
+	padding: 69px 0 85px;
+}
+.page-index #footer{
+	margin-top: 11px;
+}
+#footer .footer-top {
+	padding-bottom: 65px;
+}
+
+@media (max-width: 1199px) and (min-width: 992px){
+	.jms-banner .banner-content .text-2 {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
+@media (max-width: 767px){
+	.popupal-collections {
+		margin-top: 50px;
+		padding-bottom: 0;
+	}
+	.jms-row.best-seller{
+		.addon-title{
+			padding-top: 50px;
+		}
+		.owl-dots {
+			padding-bottom: 50px;
+		}
+	}
+}

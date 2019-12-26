@@ -104,6 +104,9 @@
     font-weight: 800;
     overflow: hidden;
 }
+.jms-vermegamenu .nav > li > a > i{
+    display: none;
+}
 .jms-vermegamenu .nav > li.no-icon > a {
     font-size: 17px;
     font-weight: 700;

@@ -5,6 +5,9 @@
 #cart #content-wrapper{
 	margin-bottom: 10px;
 }
+#cart #jmsproductvideo{
+	display: none;
+}
 .cart-block h1 {
 	font-size: 36px;
 	text-align: center;
@@ -218,6 +221,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0 20px;
 }
 .block-promo {
 	margin-top: 5px;

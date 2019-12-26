@@ -12,7 +12,9 @@
 				{l s='Cart' d='Shop.Theme.Actions'}
 			</span>
 		</span>
-		<span class="ajax_cart_quantity">{$cart.products_count}</span>
+		{if $cart.products_count > 0}
+			<span class="ajax_cart_quantity">{$cart.products_count}</span>
+		{/if}
 	</a>
 	<div class="text-custom">
 		<span class="cart_block_total ajax_block_cart_total">{$cart.totals.total.value}</span>
