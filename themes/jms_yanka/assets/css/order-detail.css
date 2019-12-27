@@ -5,7 +5,6 @@
 }
 #order-history, #order-infos, #order-detail .addresses .box, .box.hidden-sm-down, .order-items.hidden-md-up.box, #order-detail .box-last, .order-totals.box, #order-detail .order-message-form.box {
 	padding: 25px 15px;
-	margin-bottom: 30px;
 	border: 1px solid #ebebeb;
 }
 #order-detail .addresses .box {
@@ -23,25 +22,8 @@
 #order-detail .box ul li{
 	line-height: 30px;
 }
-.table > thead > tr > th.order-title {
-	padding:10px 8px;
-	text-transform:uppercase;
-	font-weight:500;
-	font-size:15px;
-}
 #order-detail .order-message-form .form-control-select {
-	-moz-appearance:none;
-	-webkit-appearance:none;
 	width:100%;
-}
-#order-detail .order-message-form .select-box:after {
-	content:"\f0d7";
-	font-family: "FontAwesome";
-	font-size: 16px;
-	line-height: 16px;
-	position: absolute;
-	right: 25px;
-	top: 10px;
 }
 #order-detail .order-message-form .form-footer.text-xs-center {
 	text-align:right;

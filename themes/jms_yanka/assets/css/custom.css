@@ -784,7 +784,7 @@ address {
   display: block;
   margin-bottom: 20px;
   font-style: normal;
-  line-height: 20px;
+  line-height: 28px;
   color: #777;
 }
 
@@ -1337,6 +1337,7 @@ table.std td, table.table_block td {
     vertical-align: top;
     border-bottom: none; }
   .table tfoot > tr > th, .table tfoot > tr > td {
+    border-top: 0;
     line-height: 1.42857;
     vertical-align: top;
     border-bottom: none; }
@@ -1401,7 +1402,6 @@ table.std td, table.table_block td {
     vertical-align: bottom;
     border-bottom: 2px solid #d6d4d4;
     border-bottom-width: 1px;
-    color: #333;
     vertical-align: middle; }
   .table thead > tr.danger > th, .table thead > tr.danger > td {
     background-color: #f3515c;
@@ -1432,7 +1432,7 @@ table.std td, table.table_block td {
   border: 1px solid #ddd;
   font-weight: 400; }
   .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
-    border: 1px solid #ddd;
+    border: 0;
     padding: 9px 10px;
     text-align: center; }
   .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td {
@@ -5574,6 +5574,7 @@ button,
 .arrows.js-arrows i,
 .scroll-box-arrows i,
 .popup-customer-services,
+#search-form,
 #jms_ajax_search .btn-search i,
 .right-icon-group .addon-box a svg,
 .fs-pager-wrapper span,

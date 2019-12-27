@@ -29,10 +29,10 @@
 {/block}
 
 {block name='page_content'}
-  <h6>{l s='Here are the orders you\'ve placed since your account was created.' d='Shop.Theme.CustomerAccount'}</h6>
+  <h5>{l s='Here are the orders you\'ve placed since your account was created.' d='Shop.Theme.CustomerAccount'}</h5>
 
   {if $orders}
-    <table class="table table-striped table-bordered table-labeled hidden-sm-down">
+    <table class="table pt-table-04 table-striped table-labeled hidden-sm-down mt-20">
       <thead class="thead-default">
         <tr>
           <th class="history-title">{l s='Order reference' d='Shop.Theme.Checkout'}</th>

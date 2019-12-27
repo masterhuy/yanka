@@ -1153,21 +1153,6 @@ function collapseVermegamenu(){
 	$(".home_11 #jms-vermegamenu-container").addClass('collapse');
 }
 
-function changeOpacity1(){
-	$("#jms_ajax_search .btn-search").click(function(event) {
-		$("body").addClass("open-search");
-	});
-}
-
-function changeOpacity2(e){
-	$("#product #search-form .label-form i").click(function(event) {
-		$("body").removeClass("open-search");
-	});
-	$(".product-cover .layer").click(function(event) {
-		$("body").removeClass("open-search");
-	});
-}
-
 function hoverLookbook(){
 	$(".lookbook-type-1 .pt-hotspot .pt-btn").hover(function(){
 		$(".lookbook-type-1 .pt-hotspot").removeClass('active');
@@ -1253,6 +1238,51 @@ function stickySidebarProductDetails(){
 	}
 }
 
+function openAjaxSearch(){
+	$('#jms_ajax_search .btn-search').click(function(e){
+		e.preventDefault();
+		$('body').addClass('open-ajax-search');
+	});
+}
+
+function closeAjaxSearch(){
+	$('#search-form .label-form i').click(function(){
+		$('body').removeClass('open-ajax-search');
+	});
+	$('#jms_ajax_search .overlay-transparent').click(function(){
+		$('body').removeClass('open-ajax-search');
+	});
+}
+
+function addProductSidebar(){
+	if ($("#product #content-wrapper").hasClass("col-md-9")){
+		$("#product").addClass("sidebar");
+	}
+}
+
+function setTimeoutPreloader(){
+	var initialLoad = true;
+	if(initialLoad){
+		setTimeout(function() {
+			jQuery('.preloader').fadeOut();
+		}, 3000);		
+		initialLoad = false;
+	}
+}
+
+function toggleScrollTop(){
+	var header = $(".jms-row.header");
+
+	$(window).scroll(function () {
+    	if ($(window).scrollTop() > 180){
+			header.addClass("fixed");
+    	} else {
+			header.removeClass("fixed");
+		}
+	});
+}
+
+
 $(window).resize(function(){
 	calcOwnControlProductModal();
 
@@ -1265,30 +1295,17 @@ $(window).resize(function(){
 	calcHeightVideo();
 });
 
-onload
 
-var initialLoad = true;
+
 $(document).ready(function() {	
-	var header = $(".jms-row.header");
+	setTimeoutPreloader();
 
-	$(window).scroll(function () {
-    	if ($(window).scrollTop() > 180){
-			header.addClass("fixed");
-    	} else {
-			header.removeClass("fixed");
-    	}
-	});
+	toggleScrollTop()
 
-	if(initialLoad){
-		setTimeout(function() {
-			jQuery('.preloader').fadeOut();
-		}, 3000);		
-		initialLoad = false;
-	}
+	addProductSidebar();
 
-	if ($("#product #content-wrapper").hasClass("col-md-9")){
-		$("#product").addClass("sidebar");
-	}
+	openAjaxSearch();
+	closeAjaxSearch();
 
 	calcHeightVideo();
 
@@ -1296,9 +1313,6 @@ $(document).ready(function() {
 	closeLookbook();
 	
 	collapseVermegamenu();
-
-	changeOpacity1();
-	changeOpacity2();
 	
 	toggleVermegamenu();
 

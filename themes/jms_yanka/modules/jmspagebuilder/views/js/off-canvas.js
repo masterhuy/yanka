@@ -17,7 +17,8 @@ jQuery(function ($) {
 		closebtn = $('#close-button' ),
 		isOpen = false;
 
-	openbtn.click(function(){
+	openbtn.click(function(e){
+		e.preventDefault();
 		bodyEl.addClass('show-menu');
 	});
 

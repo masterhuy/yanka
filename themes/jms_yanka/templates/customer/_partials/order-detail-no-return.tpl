@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="box hidden-sm-down">
-  <table id="order-products" class="table table-bordered">
+  <table id="order-products" class="table pt-table-04">
     <thead class="thead-default">
       <tr>
 		<th class="order-title">{l s='Product image' d='Shop.Theme.Catalog'}</th>

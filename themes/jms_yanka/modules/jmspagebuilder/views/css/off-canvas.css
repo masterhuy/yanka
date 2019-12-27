@@ -82,4 +82,5 @@
 .show-menu .menu-wrap + .bg-overlay-canvas{
 	opacity: 1;
 	visibility: visible;
+	z-index: 9999;
 }

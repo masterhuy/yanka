@@ -2825,9 +2825,6 @@ a.wishlist_top{
 
 //quick view
 .quickview{
-	&.fade.in{
-		background: rgba(20, 20, 20, 0.5);
-	}
 	.close{
 		color: #d0d0d0;
 		&:hover{
@@ -4779,7 +4776,7 @@ a.wishlist_top{
 	.cart_block_list {
 		padding-top: 17px;
 		padding-bottom: 3px;
-		max-height: 260px;
+		max-height: 265px;
 		.property-value{
 			margin: 2px 0 8px;
 			span{
@@ -5732,6 +5729,7 @@ a.wishlist_top{
 		#search-form{
 			position: absolute;
 			overflow: visible;
+			top: 0;
 		}
 		#ajax_search{
 			border: 0;

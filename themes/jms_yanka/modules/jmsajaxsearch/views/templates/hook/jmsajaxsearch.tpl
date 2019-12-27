@@ -6,7 +6,7 @@
  * @Website: http://www.joommasters.com
 *}
 <div class="btn-group menu-collapse compact-hidden jms_ajax_search" id="jms_ajax_search">
-	<a href="#" class="btn-search" data-toggle="modal" data-target="#search-form">
+	<a href="#" class="btn-search">
 		<span>{l s='Search' d='Modules.JmsAjaxsearch'}</span>
 		<i class="d-flex">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
@@ -18,7 +18,7 @@
 			<span class="tooltip-text">{l s='Search' d='Modules.JmsAjaxsearch'}</span> 
 		</span>
 	</a>
-	<div id="search-form" class="modal fade" role="dialog">
+	<div id="search-form">
 		<div class="modal-dialog">
 			<div class="modal-content container">
 				<div class="search-box">
@@ -41,5 +41,6 @@
 			</div>
 		</div>
 	</div>
+	<div class="overlay-transparent"></div>
 </div>
 

@@ -1,7 +1,27 @@
-.open-search.modal-open .modal-backdrop.in{
-    opacity: 0;
-    z-index: 997;
+.open-ajax-search #jms_ajax_search #search-form {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
 }
+.open-ajax-search #jms_ajax_search .overlay-transparent{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 998;
+}
+#jms_ajax_search #search-form {
+    position: fixed;
+    top: -146px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
 #jms_ajax_search .btn-xs.search-icon {
     color: #000000;
     display: inline-block;
@@ -114,6 +134,7 @@
     position: relative;
 }
 #ajax_search {
+    color: #333;
     background: #fff none repeat scroll 0 0;
     box-shadow: none;
     border: 0;

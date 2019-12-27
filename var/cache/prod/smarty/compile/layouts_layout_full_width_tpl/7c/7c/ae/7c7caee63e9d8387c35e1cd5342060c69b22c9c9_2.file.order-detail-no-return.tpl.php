@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 04:03:56
+/* Smarty version 3.1.33, created on 2019-12-27 03:17:49
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\order-detail-no-return.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd25e7c788d60_75145621',
+  'unifunc' => 'content_5e05be2d309872_25132924',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7c7caee63e9d8387c35e1cd5342060c69b22c9c9' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\customer\\_partials\\order-detail-no-return.tpl',
-      1 => 1569568109,
+      1 => 1577433863,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd25e7c788d60_75145621 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e05be2d309872_25132924 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="box hidden-sm-down">
-  <table id="order-products" class="table table-bordered">
+  <table id="order-products" class="table pt-table-04">
     <thead class="thead-default">
       <tr>
 		<th class="order-title"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Product image','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>

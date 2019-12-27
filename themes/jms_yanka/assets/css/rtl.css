@@ -1692,10 +1692,6 @@ div.top_menu_second .jms-megamenu .item-fullwidth > .dropdown-menu {
 #addresses .address .address-footer {
   text-align: right;
 }
-#addresses .address .address-footer a{
-  margin-left: 5px;
-  margin-right: 0;
-}
 #history .text-xs-right div {
   text-align: left;
 }
@@ -2212,6 +2208,23 @@ div.feature-box .include_content_s {
 #product.sidebar #wrapper #right-column {
   padding-right: 30px;
   padding-left: 15px;
+}
+.address-top .btn-link svg{
+  transform: rotate(180deg);
+  margin-right: -7px;
+  margin-left: 10px;
+}
+#addresses .address-body .pt-table-shop-02 tbody td {
+  padding-left: 10px;
+  padding-right: 0;
+}
+#addresses .address-footer svg {
+  margin-right: 0;
+  margin-left: 10px;
+}
+#addresses .address .address-footer a {
+  margin-left: 26px;
+  margin-right: 0;
 }
 
 

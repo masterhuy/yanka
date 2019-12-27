@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 04:03:55
+/* Smarty version 3.1.33, created on 2019-12-27 03:17:47
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\order-detail.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd25e7b5620c6_95390798',
+  'unifunc' => 'content_5e05be2bb66247_38531699',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9c92fcf53f0ad04af5a79a28afb6083fc8424a17' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\customer\\order-detail.tpl',
-      1 => 1569568109,
+      1 => 1577434664,
       2 => 'file',
     ),
   ),
@@ -23,30 +23,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:customer/_partials/order-messages.tpl' => 1,
   ),
 ),false)) {
-function content_5dd25e7b5620c6_95390798 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e05be2bb66247_38531699 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4726935555dd25e7b513ec2_27679675', 'page_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1804462175e05be2bb18030_35321024', 'page_title');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3735648505dd25e7b513ec2_32124160', 'page_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2897107265e05be2bb18032_32578762', 'page_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'customer/page.tpl');
 }
 /* {block 'page_title'} */
-class Block_4726935555dd25e7b513ec2_27679675 extends Smarty_Internal_Block
+class Block_1804462175e05be2bb18030_35321024 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_title' => 
   array (
-    0 => 'Block_4726935555dd25e7b513ec2_27679675',
+    0 => 'Block_1804462175e05be2bb18030_35321024',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -59,7 +59,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_title'} */
 /* {block 'order_infos'} */
-class Block_16042747315dd25e7b513ec9_43395618 extends Smarty_Internal_Block
+class Block_9633716345e05be2bb18032_23978247 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -125,15 +125,15 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_infos'} */
 /* {block 'order_history'} */
-class Block_11371482205dd25e7b53afc5_31495259 extends Smarty_Internal_Block
+class Block_14512245725e05be2bb3f136_40248710 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
     <section id="order-history" class="box">
-      <h5 class="text-uppercase"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow your order\'s status step-by-step','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
+      <h5><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow your order\'s status step-by-step','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
 </h5>
-      <table class="table table-striped table-bordered table-labeled hidden-xs-down">
+      <table class="table pt-table-04 table-striped table-labeled hidden-xs-down">
         <thead class="thead-default">
           <tr>
             <th><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Date','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
@@ -195,7 +195,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'order_history'} */
 /* {block 'addresses'} */
-class Block_12899874145dd25e7b53afc9_70907740 extends Smarty_Internal_Block
+class Block_13695048925e05be2bb3f133_16547674 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -227,7 +227,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'addresses'} */
 /* {block 'order_detail'} */
-class Block_13029740055dd25e7b53afc4_48750632 extends Smarty_Internal_Block
+class Block_3506483745e05be2bb66241_75791993 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -244,14 +244,14 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_detail'} */
 /* {block 'order_carriers'} */
-class Block_3236390665dd25e7b5620c1_31021912 extends Smarty_Internal_Block
+class Block_2910695335e05be2bb66244_73063225 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
     <?php if ($_smarty_tpl->tpl_vars['order']->value['shipping']) {?>
       <div class="box-last">
-        <table class="table table-striped table-bordered hidden-sm-down">
+        <table class="table table-striped pt-table-04 hidden-sm-down">
           <thead class="thead-default">
             <tr>
               <th><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Date','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
@@ -337,7 +337,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'order_carriers'} */
 /* {block 'order_messages'} */
-class Block_19728364455dd25e7b5620c7_60236594 extends Smarty_Internal_Block
+class Block_7340589545e05be2bb66245_77175471 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -349,48 +349,48 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'order_messages'} */
 /* {block 'page_content'} */
-class Block_3735648505dd25e7b513ec2_32124160 extends Smarty_Internal_Block
+class Block_2897107265e05be2bb18032_32578762 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_3735648505dd25e7b513ec2_32124160',
+    0 => 'Block_2897107265e05be2bb18032_32578762',
   ),
   'order_infos' => 
   array (
-    0 => 'Block_16042747315dd25e7b513ec9_43395618',
+    0 => 'Block_9633716345e05be2bb18032_23978247',
   ),
   'order_history' => 
   array (
-    0 => 'Block_11371482205dd25e7b53afc5_31495259',
+    0 => 'Block_14512245725e05be2bb3f136_40248710',
   ),
   'addresses' => 
   array (
-    0 => 'Block_12899874145dd25e7b53afc9_70907740',
+    0 => 'Block_13695048925e05be2bb3f133_16547674',
   ),
   'order_detail' => 
   array (
-    0 => 'Block_13029740055dd25e7b53afc4_48750632',
+    0 => 'Block_3506483745e05be2bb66241_75791993',
   ),
   'order_carriers' => 
   array (
-    0 => 'Block_3236390665dd25e7b5620c1_31021912',
+    0 => 'Block_2910695335e05be2bb66244_73063225',
   ),
   'order_messages' => 
   array (
-    0 => 'Block_19728364455dd25e7b5620c7_60236594',
+    0 => 'Block_7340589545e05be2bb66245_77175471',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16042747315dd25e7b513ec9_43395618', 'order_infos', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9633716345e05be2bb18032_23978247', 'order_infos', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11371482205dd25e7b53afc5_31495259', 'order_history', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14512245725e05be2bb3f136_40248710', 'order_history', $this->tplIndex);
 ?>
 
 
@@ -405,7 +405,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11371482205dd25e7b
   <?php }?>
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12899874145dd25e7b53afc9_70907740', 'addresses', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13695048925e05be2bb3f133_16547674', 'addresses', $this->tplIndex);
 ?>
 
 
@@ -413,17 +413,17 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12899874145dd25e7b
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13029740055dd25e7b53afc4_48750632', 'order_detail', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3506483745e05be2bb66241_75791993', 'order_detail', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3236390665dd25e7b5620c1_31021912', 'order_carriers', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2910695335e05be2bb66244_73063225', 'order_carriers', $this->tplIndex);
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19728364455dd25e7b5620c7_60236594', 'order_messages', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7340589545e05be2bb66245_77175471', 'order_messages', $this->tplIndex);
 ?>
 
 <?php

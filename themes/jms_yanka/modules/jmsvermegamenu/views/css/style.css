@@ -158,7 +158,7 @@
 	visibility:visible;
 }
 .jms-vermegamenu .dropdown-menu {
-    padding: 30px !important;
+    padding: 30px 40px !important;
 }
 .jms-vermegamenu .nav > li.fruits .image {
     padding-top: 7px;
@@ -244,15 +244,13 @@
 .mega-col-nav.selected > .mega-inner {
 	border:1px solid #07b!important;
 }	
-
 .jms-vermegamenu .mega-nav .mega > a::after {
     content: "\f105";
     display: block;
     float: right;
-    height: 0;
-    margin-top: 0;
-    width: 0;
     font-family: FontAwesome;
+    color: #d0d0d0;
+    font-size: 20px;
 }
 .jms-vermegamenu .image li > a,
 .jms-vermegamenu .mega-col-nav.image a::before{
@@ -308,7 +306,7 @@
 }
 .jms-vermegamenu .dropdown-menu .dropdown-menu {
     margin-left: 0px;
-    left: calc(100% + 30px);
+    left: calc(100% + 20px);
     min-width: 280px;
 }
 .mega-nav > .mega {

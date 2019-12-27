@@ -81,8 +81,8 @@
 
   {block name='order_history'}
     <section id="order-history" class="box">
-      <h5 class="text-uppercase">{l s='Follow your order\'s status step-by-step' d='Shop.Theme.CustomerAccount'}</h5>
-      <table class="table table-striped table-bordered table-labeled hidden-xs-down">
+      <h5>{l s='Follow your order\'s status step-by-step' d='Shop.Theme.CustomerAccount'}</h5>
+      <table class="table pt-table-04 table-striped table-labeled hidden-xs-down">
         <thead class="thead-default">
           <tr>
             <th>{l s='Date' d='Shop.Theme'}</th>
@@ -158,7 +158,7 @@
   {block name='order_carriers'}
     {if $order.shipping}
       <div class="box-last">
-        <table class="table table-striped table-bordered hidden-sm-down">
+        <table class="table table-striped pt-table-04 hidden-sm-down">
           <thead class="thead-default">
             <tr>
               <th>{l s='Date' d='Shop.Theme'}</th>

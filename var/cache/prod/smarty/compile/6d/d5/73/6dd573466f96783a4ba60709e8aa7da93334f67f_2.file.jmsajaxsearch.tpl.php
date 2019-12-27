@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-26 05:21:02
+/* Smarty version 3.1.33, created on 2019-12-27 05:18:14
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e04898e4089b3_72212941',
+  'unifunc' => 'content_5e05da66098356_45580307',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6dd573466f96783a4ba60709e8aa7da93334f67f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1570768073,
+      1 => 1577440104,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e04898e4089b3_72212941 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e05da66098356_45580307 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group menu-collapse compact-hidden jms_ajax_search" id="jms_ajax_search">
-	<a href="#" class="btn-search" data-toggle="modal" data-target="#search-form">
+	<a href="#" class="btn-search">
 		<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
 </span>
 		<i class="d-flex">
@@ -36,7 +36,7 @@ function content_5e04898e4089b3_72212941 (Smarty_Internal_Template $_smarty_tpl)
 </span> 
 		</span>
 	</a>
-	<div id="search-form" class="modal fade" role="dialog">
+	<div id="search-form">
 		<div class="modal-dialog">
 			<div class="modal-content container">
 				<div class="search-box">
@@ -62,6 +62,7 @@ function content_5e04898e4089b3_72212941 (Smarty_Internal_Template $_smarty_tpl)
 			</div>
 		</div>
 	</div>
+	<div class="overlay-transparent"></div>
 </div>
 
 <?php }
