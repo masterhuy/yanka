@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsflashsales\views\templates\hook\jmsflashsales-tab.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="bd5a621d6f59f5eda17eb5428a49ea94">
+        <source>HOT SELLING</source>
+        <target>HOT SELLING</target>
+        <note>Line: 29</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsflashsales\views\templates\hook\jmsflashsales-tab2.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="4f3a68b0e6adbabd7f548062c36ba1a4">
+        <source>WEEK DEALS LIMITED</source>
+        <target>WEEK DEALS LIMITED</target>
+        <note>Line: 29</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsflashsales\views\templates\hook\jmsflashsales2.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="c992f6f9e116c413163207f9d237d587">
+        <source>week deals limited</source>
+        <target>week deals limited</target>
+        <note>Line: 30</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_categoryproducts\views\templates\hook\ps_categoryproducts.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="347da0da598694c57fff1cbaa197d615">
+        <source>Related Products</source>
+        <target>Related Products</target>
+        <note>Line: 29</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_featuredproducts\views\templates\hook\ps_featuredproducts.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="f473acb18ebcd825235ca5624203f31a">
+        <source>Popular Products</source>
+        <target></target>
+        <note>Line: 4</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_searchbar\ps_searchbar.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="13348442cc6a27032d2b4aa28b75a5d3">
+        <source>Search</source>
+        <target></target>
+        <note>Line: 27</note>
+      </trans-unit>
+      <trans-unit id="a39b87c76293c385e7c38d4e5f6038fe">
+        <source>Search Products...</source>
+        <target>Search Products...</target>
+        <note>Line: 30</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\_partials\pagination.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="b4e6101378d2a08d80df7e5da0625128">
+        <source>Showing</source>
+        <target>Showing</target>
+        <note>Line: 29</note>
+      </trans-unit>
+      <trans-unit id="9cab4f828eb5ab983c83f37f0c566b3a">
+        <source>%total%</source>
+        <target>%total%</target>
+        <note>Line: 30</note>
+      </trans-unit>
+      <trans-unit id="53e61336bb49ec978968786b07dea50b">
+        <source>results</source>
+        <target>results</target>
+        <note>Line: 31</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\active_filters.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="2143f8cb66482342b35208bdc3fd949c">
+        <source>Active filters</source>
+        <target>Active filters</target>
+        <note>Line: 27</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\facets.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="cfff8593a3adedd98a18631f85152d23">
+        <source>%1$s: </source>
+        <target></target>
+        <note>Line: 42</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-details.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="0f68b904e33d9ac04605aecc958bcf52">
+        <source>Additional information</source>
+        <target>Additional information</target>
+        <note>Line: 3</note>
+      </trans-unit>
+      <trans-unit id="1be6f9eb563f3bf85c78b4219bf09de9">
+        <source>Brand</source>
+        <target></target>
+        <note>Line: 12</note>
+      </trans-unit>
+      <trans-unit id="fcebe56087b9373f15514831184fa572">
+        <source>In stock</source>
+        <target></target>
+        <note>Line: 30</note>
+      </trans-unit>
+      <trans-unit id="2438bf77baed0680f816ca0f4a7d0321">
+        <source>Availability date</source>
+        <target>Availability date</target>
+        <note>Line: 39</note>
+      </trans-unit>
+      <trans-unit id="7dcd185f890fd28f69d1ed210292d77f">
+        <source>Data sheet</source>
+        <target></target>
+        <note>Line: 54</note>
+      </trans-unit>
+      <trans-unit id="4594f39c6dac58760daeb19d79389576">
+        <source>Specific References</source>
+        <target></target>
+        <note>Line: 69</note>
+      </trans-unit>
+      <trans-unit id="9e2941b3c81256fac10392aaca4ccfde">
+        <source>Condition</source>
+        <target></target>
+        <note>Line: 83</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-discounts.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="fc21aa6a8b0bceb8570c8c81b6b38307">
+        <source>Volume discounts</source>
+        <target></target>
+        <note>Line: 27</note>
+      </trans-unit>
+      <trans-unit id="861c0c6ef832cd96c5fe152f9d610973">
+        <source>You Save</source>
+        <target></target>
+        <note>Line: 33</note>
+      </trans-unit>
+      <trans-unit id="64c22a1426c5b8fce46c6314d73dc99e">
+        <source>Up to %discount%</source>
+        <target></target>
+        <note>Line: 41</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-prices.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="efeb369cccbd560588a756610865664c">
+        <source>In</source>
+        <target>In</target>
+        <note>Line: 29</note>
+      </trans-unit>
+      <trans-unit id="48fa315ec57b5fea80176d1c5f9f6bbf">
+        <source>(%unit_price%)</source>
+        <target></target>
+        <note>Line: 56</note>
+      </trans-unit>
+      <trans-unit id="e532954941a2469e3b3ae35ce44885d6">
+        <source>%price% tax excl.</source>
+        <target></target>
+        <note>Line: 64</note>
+      </trans-unit>
+      <trans-unit id="a72a454b308052ed277f7b69ab307caa">
+        <source>Instead of %price%</source>
+        <target></target>
+        <note>Line: 70</note>
+      </trans-unit>
+      <trans-unit id="98508b5a9b590896cc627beb46d86b96">
+        <source>Including %amount% for ecotax</source>
+        <target></target>
+        <note>Line: 76</note>
+      </trans-unit>
+      <trans-unit id="a134618182b99ff9151d7e0b6b92410a">
+        <source>(not impacted by the discount)</source>
+        <target></target>
+        <note>Line: 78</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\quickview.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="b2dc3c8f71278ea45867c11867529d31">
+        <source>Product Code:</source>
+        <target>Product Code:</target>
+        <note>Line: 87</note>
+      </trans-unit>
+      <trans-unit id="8c751c4aab0db0b811cdfbddf0b4ea56">
+        <source>Availability:</source>
+        <target>Availability:</target>
+        <note>Line: 95</note>
+      </trans-unit>
+      <trans-unit id="6e848e0444ce3aae21a37e95d2906af7">
+        <source>Vendor:</source>
+        <target>Vendor:</target>
+        <note>Line: 111</note>
+      </trans-unit>
+      <trans-unit id="56e11b516943cb38a57c9a53219a8370">
+        <source>This pack contains</source>
+        <target></target>
+        <note>Line: 144</note>
+      </trans-unit>
+      <trans-unit id="581dcc8b7b5b855fb058392418385da0">
+        <source>View full info</source>
+        <target>View full info</target>
+        <note>Line: 184</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\listing\manufacturer.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="241cfa06413caa8aecd12ed99744bdc7">
+        <source>List of products by brand %s</source>
+        <target>List of products by brand %s</target>
+        <note>Line: 28</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\listing\supplier.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="4c5c40c99a89125e22218cb62335c60a">
+        <source>List of products by supplier %s</source>
+        <target></target>
+        <note>Line: 28</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\product-layout-vertical.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="3ce4ab4dd18bb2c8b3239fc4d4c1bb23">
+        <source>Guaranteed safe checkout</source>
+        <target>Guaranteed safe checkout</target>
+        <note>Line: 208</note>
+      </trans-unit>
+      <trans-unit id="b5a7adde1af5c87d7fd797b6245c2a39">
+        <source>Description</source>
+        <target></target>
+        <note>Line: 220</note>
+      </trans-unit>
+      <trans-unit id="7e2708aeb65763c54052f57ed1a1ec1d">
+        <source>Attachments</source>
+        <target></target>
+        <note>Line: 264</note>
+      </trans-unit>
+      <trans-unit id="34e80a799d144cfe4af46815e103f017">
+        <source>Reviews</source>
+        <target>Reviews</target>
+        <note>Line: 326</note>
+      </trans-unit>
+      <trans-unit id="98edb85b00d9527ad5acebe451b3fae6">
+        <source>Accessories</source>
+        <target></target>
+        <note>Line: 357</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\suppliers.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="1814d65a76028fdfbadab64a5a8076df">
+        <source>Suppliers</source>
+        <target></target>
+        <note>Line: 28</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\order-detail-no-return.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="a3b9d2cd764b05f4be59cba8f03c01e4">
+        <source>Product image</source>
+        <target>Product image</target>
+        <note>Line: 29</note>
+      </trans-unit>
+      <trans-unit id="756ef09c244b599288b6b725d1c840b0">
+        <source>Product info</source>
+        <target>Product info</target>
+        <note>Line: 30</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\order-detail-return.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="54c02ba7929b1fda4847991a45b58a48">
+        <source>Product customization</source>
+        <target></target>
+        <note>Line: 179</note>
+      </trans-unit>
+      <trans-unit id="63d5049791d9d79d86e9a108b0a999ca">
+        <source>Reference</source>
+        <target></target>
+        <note>Line: 174</note>
+      </trans-unit>
+      <trans-unit id="694e8d1f2ee056f98ee488bdc4982d73">
+        <source>Quantity</source>
+        <target></target>
+        <note>Line: 198</note>
+      </trans-unit>
+      <trans-unit id="deb10517653c255364175796ace3553f">
+        <source>Product</source>
+        <target></target>
+        <note>Line: 32</note>
+      </trans-unit>
+      <trans-unit id="6c957f72dc8cdacc75762f2cbdcdfaf2">
+        <source>Unit price</source>
+        <target></target>
+        <note>Line: 35</note>
+      </trans-unit>
+      <trans-unit id="0eede552438475bdfe820c13f24c9399">
+        <source>Total price</source>
+        <target></target>
+        <note>Line: 36</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

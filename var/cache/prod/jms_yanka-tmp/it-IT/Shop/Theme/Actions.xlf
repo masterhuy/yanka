@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\contactform\views\templates\widget\contactform.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="a4d3b161ce1309df1c4e25df28694b7b">
+        <source>Submit</source>
+        <target>Submit</target>
+        <note>Line: 82</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonhotdeal.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="06022676c670b4260de806d71059e803">
+        <source>Offer will end through</source>
+        <target>Offer will end through</target>
+        <note>Line: 81</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmswishlist\views\templates\hook\my-account.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="7ec9cceb94985909c6994e95c31c1aa8">
+        <source>My wishlists</source>
+        <target>My wishlists</target>
+        <note>Line: 44</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_currencyselector\ps_currencyselector.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="386c339d37e737a436499d423a77df0c">
+        <source>Currency</source>
+        <target>Currency</target>
+        <note>Line: 71</note>
+      </trans-unit>
+      <trans-unit id="e8586011952b0d098b0e568f20ca2b1f">
+        <source>Select Currency</source>
+        <target>Select Currency</target>
+        <note>Line: 54</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_customersignin\ps_customersignin.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="08bd40c7543007ad06e4fce31618f6ec">
+        <source>Account</source>
+        <target>Account</target>
+        <note>Line: 39</note>
+      </trans-unit>
+      <trans-unit id="4394c8d8e63c470de62ced3ae85de5ae">
+        <source>Log out</source>
+        <target>Log out</target>
+        <note>Line: 87</note>
+      </trans-unit>
+      <trans-unit id="bea8d9e6a0d57c4a264756b4f9822ed9">
+        <source>My Account</source>
+        <target>My Account</target>
+        <note>Line: 62</note>
+      </trans-unit>
+      <trans-unit id="f2fdea440d768b85591e936a803c3631">
+        <source>Sign In</source>
+        <target>Sign In</target>
+        <note>Line: 68</note>
+      </trans-unit>
+      <trans-unit id="d95cf4ab2cbf1dfb63f066b50558b07d">
+        <source>My account</source>
+        <target>My account</target>
+        <note>Line: 93</note>
+      </trans-unit>
+      <trans-unit id="3bbbad631029e3575da7a151bba4f37c">
+        <source>Log In</source>
+        <target>Log In</target>
+        <note>Line: 98</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_facetedsearch\ps_facetedsearch.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="d3d2e617335f08df83599665eef8a418">
+        <source>Close</source>
+        <target>Close</target>
+        <note>Line: 33</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_languageselector\ps_languageselector.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174">
+        <source>Language</source>
+        <target>Language</target>
+        <note>Line: 39</note>
+      </trans-unit>
+      <trans-unit id="83dad8107f9459efe2b4fabcf5b63108">
+        <source>Select Language</source>
+        <target>Select Language</target>
+        <note>Line: 57</note>
+      </trans-unit>
+      <trans-unit id="3a08e2e340ab29fd9263af48193cbf8e">
+        <source>Languages</source>
+        <target>Languages</target>
+        <note>Line: 76</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_sharebuttons\views\templates\hook\ps_sharebuttons.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="5a95a425f74314a96f13a2f136992178">
+        <source>Share</source>
+        <target></target>
+        <note>Line: 30</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_shoppingcart\modal.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="59fc69e031ecb0f82efe467fd6692383">
+        <source>View Cart</source>
+        <target>View Cart</target>
+        <note>Line: 49</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_shoppingcart\ps_shoppingcart-product-line.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="2e65a5e30c454ceb77be9bb48e8343f1">
+        <source>Remove from cart</source>
+        <target>Remove from cart</target>
+        <note>Line: 28</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_shoppingcart\ps_shoppingcart.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="c892e105f418d318b3f82d022f68df76">
+        <source>View shopping bag</source>
+        <target>View shopping bag</target>
+        <note>Line: 57</note>
+      </trans-unit>
+      <trans-unit id="7e0bf6d67701868aac3116ade8fea957">
+        <source>Proceed to checkout</source>
+        <target></target>
+        <note>Line: 55</note>
+      </trans-unit>
+      <trans-unit id="a85eba4c6c699122b2bb1387ea4813ad">
+        <source>Cart</source>
+        <target></target>
+        <note>Line: 12</note>
+      </trans-unit>
+      <trans-unit id="763dab47c9a9febb38cd90224d9f138a">
+        <source>There is no product</source>
+        <target>There is no product</target>
+        <note>Line: 33</note>
+      </trans-unit>
+      <trans-unit id="76b133716b02dfc40f097e722075ddbd">
+        <source>My Cart</source>
+        <target>My Cart</target>
+        <note>Line: 35</note>
+      </trans-unit>
+      <trans-unit id="57c1fee9db05c07a96c99d9260d38d6d">
+        <source>View cart</source>
+        <target>View cart</target>
+        <note>Line: 58</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\_partials\form-fields.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="498f79c4c5bbde77f1bceb6c86fd0f6d">
+        <source>Show</source>
+        <target></target>
+        <note>Line: 114</note>
+      </trans-unit>
+      <trans-unit id="62a5e490880a92eef74f167d9dc6dca0">
+        <source>Hide</source>
+        <target></target>
+        <note>Line: 112</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\facets.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="5015f5f6af450ad9492bc74f1059244b">
+        <source>Filter By</source>
+        <target></target>
+        <note>Line: 29</note>
+      </trans-unit>
+      <trans-unit id="81aa2078d1eceede831b2976dbf32e62">
+        <source>Clear all</source>
+        <target></target>
+        <note>Line: 52</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\miniatures\brand.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="c61ab4204f572e9b3aa84a040e0dab31">
+        <source>View products</source>
+        <target></target>
+        <note>Line: 34</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\miniatures\product-custom.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="641254d77e7a473aa5910574f3f9453c">
+        <source>Wishlist</source>
+        <target>Wishlist</target>
+        <note>Line: 140</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\miniatures\product.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="f2cd171bd42220283b7a595c3ff2aaaf">
+        <source>Sale</source>
+        <target>Sale</target>
+        <note>Line: 49</note>
+      </trans-unit>
+      <trans-unit id="6a5373df703ab2827a4ba7facdfcf779">
+        <source>Add to Wishlist</source>
+        <target>Add to Wishlist</target>
+        <note>Line: 216</note>
+      </trans-unit>
+      <trans-unit id="70f23ff594252e51839210b6cc9641fc">
+        <source>Quick View</source>
+        <target>Quick View</target>
+        <note>Line: 236</note>
+      </trans-unit>
+      <trans-unit id="4252b72e6ebcd4d4b4c2e46a786f03d2">
+        <source>Zoom</source>
+        <target>Zoom</target>
+        <note>Line: 196</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-add-to-cart.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="826eadae3870bf9e64c7a7ff9b1cb181">
+        <source>Sold Out</source>
+        <target>Sold Out</target>
+        <note>Line: 37</note>
+      </trans-unit>
+      <trans-unit id="638f592f71fc3fac3351534e69f9d29f">
+        <source>Add to Cart</source>
+        <target>Add to Cart</target>
+        <note>Line: 37</note>
+      </trans-unit>
+      <trans-unit id="2d0f6b8300be19cf35e89e66f0677f95">
+        <source>Add to cart</source>
+        <target></target>
+        <note>Line: 49</note>
+      </trans-unit>
+      <trans-unit id="f29ddbfb905eb2593fdcdfb243f9af85">
+        <source>Added</source>
+        <target>Added</target>
+        <note>Line: 52</note>
+      </trans-unit>
+      <trans-unit id="7ff59d92dcabc91060c7b7f0f38bedff">
+        <source>SOLD OUT</source>
+        <target>SOLD OUT</target>
+        <note>Line: 55</note>
+      </trans-unit>
+      <trans-unit id="2d96bb66d8541a89620d3c158ceef42b">
+        <source>Add to wishlist</source>
+        <target>Add to wishlist</target>
+        <note>Line: 71</note>
+      </trans-unit>
+      <trans-unit id="694e8d1f2ee056f98ee488bdc4982d73">
+        <source>Quantity</source>
+        <target></target>
+        <note>Line: 29</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-customization.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="cbe55e77ffa67d13322eb1ce7d22f1ba">
+        <source>Choose file</source>
+        <target></target>
+        <note>Line: 48</note>
+      </trans-unit>
+      <trans-unit id="fc35ec973f5b3a16f0d4b009834f39a6">
+        <source>Remove Image</source>
+        <target></target>
+        <note>Line: 43</note>
+      </trans-unit>
+      <trans-unit id="f346acd7aed7508df8fec4da8353c81e">
+        <source>Save Customization</source>
+        <target></target>
+        <note>Line: 56</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\products-top.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="d7778d0c64b6ba21494c97f77a66885a">
+        <source>Filter</source>
+        <target></target>
+        <note>Line: 38</note>
+      </trans-unit>
+      <trans-unit id="23e6bcd09b259e6de4cd972516cb4214">
+        <source>View as</source>
+        <target>View as</target>
+        <note>Line: 50</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\sort-orders.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="6b46ae48421828d9973deec5fa9aa0c3">
+        <source>Sort</source>
+        <target>Sort</target>
+        <note>Line: 26</note>
+      </trans-unit>
+      <trans-unit id="e0626222614bdee31951d84c64e5e9ff">
+        <source>Select</source>
+        <target></target>
+        <note>Line: 29</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\product-layout-three-column.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="34e80a799d144cfe4af46815e103f017">
+        <source>Reviews</source>
+        <target>Reviews</target>
+        <note>Line: 313</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\product-layout-vertical.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="63a6a88c066880c5ac42394a22803ca6">
+        <source>Refresh</source>
+        <target></target>
+        <note>Line: 199</note>
+      </trans-unit>
+      <trans-unit id="801ab24683a4a8c433c6eb40c48bcd9d">
+        <source>Download</source>
+        <target></target>
+        <note>Line: 285</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\address-form.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="ea4788705e6873b424c65e91c2846b19">
+        <source>Cancel</source>
+        <target></target>
+        <note>Line: 33</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-detailed-actions.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="a499a495da5ef80e907a6690a93be3b6">
+        <source>Proceed to Checkout</source>
+        <target>Proceed to Checkout</target>
+        <note>Line: 35</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-detailed.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="300225ee958b6350abc51805dab83c24">
+        <source>Continue shopping</source>
+        <target></target>
+        <note>Line: 56</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-summary.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="acb0f29bb6d39aaabc7d2d62aaa4a57d">
+        <source>show details</source>
+        <target></target>
+        <note>Line: 35</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-voucher.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="ec211f7c20af43e742bf2570c3cb84f9">
+        <source>Add</source>
+        <target></target>
+        <note>Line: 58</note>
+      </trans-unit>
+      <trans-unit id="12a7a93d72ded50311b52c7d0a853e3c">
+        <source>Take advantage of our exclusive offers:</source>
+        <target></target>
+        <note>Line: 69</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\steps\addresses.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="0229555220567b35d8c36d9d926e6d65">
+        <source>Add New Address</source>
+        <target>Add New Address</target>
+        <note>Line: 108</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\steps\payment.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="961f2247a2070bedff9f9cd8d64e2650">
+        <source>Choose</source>
+        <target></target>
+        <note>Line: 31</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\steps\personal-information.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="b6d4223e60986fa4c9af77ee5f7149c5">
+        <source>Sign in</source>
+        <target></target>
+        <note>Line: 52</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\steps\shipping.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="a0bfb8e59e6c13fc8d990781f77694fe">
+        <source>Continue</source>
+        <target></target>
+        <note>Line: 111</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\cart-empty.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="6ff063fbc860a79759a7369ac32cee22">
+        <source>Checkout</source>
+        <target></target>
+        <note>Line: 39</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\order-confirmation.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="8cf04a9734132302f96da8e113e80ce5">
+        <source>Home</source>
+        <target>Home</target>
+        <note>Line: 80</note>
+      </trans-unit>
+      <trans-unit id="992e5ea5a58a03dc41f90cf3ff42a3d4">
+        <source>Account Page</source>
+        <target>Account Page</target>
+        <note>Line: 83</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\address-form.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target></target>
+        <note>Line: 64</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\block-address.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="f2a6c498fb90ee345d997f888fce3b18">
+        <source>Delete</source>
+        <target></target>
+        <note>Line: 98</note>
+      </trans-unit>
+      <trans-unit id="7dce122004969d56ae2e0245cb754d35">
+        <source>Edit</source>
+        <target></target>
+        <note>Line: 87</note>
+      </trans-unit>
+      <trans-unit id="a017664f322518a89feb406b74d7982f">
+        <source>Your Addresses</source>
+        <target>Your Addresses</target>
+        <note>Line: 28</note>
+      </trans-unit>
+      <trans-unit id="b15e1100a6196acba01ef7aaa5b2a9e5">
+        <source>Add a new address</source>
+        <target></target>
+        <note>Line: 31</note>
+      </trans-unit>
+      <trans-unit id="b78a3223503896721cca1303f776159b">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Line: 44</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\customer-form.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="686e697538050e4664636337cc3b834f">
+        <source>Create</source>
+        <target>Create</target>
+        <note>Line: 42</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\login-form.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="99dea78007133396a7b8ed70578ac6ae">
+        <source>Login</source>
+        <target>Login</target>
+        <note>Line: 20</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\order-messages.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="94966d90747b97d1f0f206c98a8b1ac3">
+        <source>Send</source>
+        <target></target>
+        <note>Line: 76</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\my-account.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="c87aacf5673fada1108c9f809d354311">
+        <source>Sign out</source>
+        <target></target>
+        <note>Line: 107</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\order-detail.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="332c80b1838dc515f5031e09da3b7f3f">
+        <source>Reorder</source>
+        <target></target>
+        <note>Line: 47</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\order-follow.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="daf51d7d9e10e6a469434ae548d9a173">
+        <source>Print out</source>
+        <target></target>
+        <note>Line: 88</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\password-email.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="733ae3eecadd5777cea5ce9a32379d7a">
+        <source>Send reset link</source>
+        <target></target>
+        <note>Line: 54</note>
+      </trans-unit>
+      <trans-unit id="463e58c1d35fb5a4a8d717c99a60d257">
+        <source>Back to login</source>
+        <target></target>
+        <note>Line: 64</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\password-new.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="95e6faaba5e8b016e5f9bcf5ea6c8270">
+        <source>Back to Login</source>
+        <target></target>
+        <note>Line: 66</note>
+      </trans-unit>
+      <trans-unit id="8f1e77e0d2be21da93cd4d9a939148f7">
+        <source>Change Password</source>
+        <target></target>
+        <note>Line: 57</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

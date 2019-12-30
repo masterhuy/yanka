@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonblog.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="efeb369cccbd560588a756610865664c">
+        <source>In</source>
+        <target>In</target>
+        <note>Line: 73</note>
+      </trans-unit>
+      <trans-unit id="ed4832a84ee072b00a6740f657183598">
+        <source>Views</source>
+        <target>Views</target>
+        <note>Line: 91</note>
+      </trans-unit>
+      <trans-unit id="4351cfebe4b61d8aa5efa1d020710005">
+        <source>View</source>
+        <target>View</target>
+        <note>Line: 93</note>
+      </trans-unit>
+      <trans-unit id="8413c683b4b27cc3f4dbd4c90329d8ba">
+        <source>Comments</source>
+        <target>Comments</target>
+        <note>Line: 103</note>
+      </trans-unit>
+      <trans-unit id="0be8406951cdfda82f00f79328cf4efc">
+        <source>Comment</source>
+        <target>Comment</target>
+        <note>Line: 105</note>
+      </trans-unit>
+      <trans-unit id="43340e6cc4e88197d57f8d6d5ea50a46">
+        <source>Read more</source>
+        <target>Read more</target>
+        <note>Line: 115</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addoncategoryshow2.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="87bdf2b1731f2c475caf4afc3eae14d0">
+        <source>No categories</source>
+        <target>No categories</target>
+        <note>Line: 75</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonhotdeal.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="d9aaf75f685857135f722f31e321ac92">
+        <source>View All Product</source>
+        <target>View All Product</target>
+        <note>Line: 284</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonmaplocation.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="be9256c578fa1d4e043b8de00a808317">
+        <source>Find our stores</source>
+        <target>Find our stores</target>
+        <note>Line: 92</note>
+      </trans-unit>
+      <trans-unit id="c46def90c17d00226139900cdf9abf14">
+        <source>Choose Store Location</source>
+        <target>Choose Store Location</target>
+        <note>Line: 94</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

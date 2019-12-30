@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\admin35718dncn" source-language="de-DE" target-language="de-DE" datatype="plaintext">
+    <body>
+      <trans-unit id="93fe797e558e92fd1793e4a296f18711">
+        <source>Drop Us a Line</source>
+        <target>Drop Us a Line</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c6be2b6191e6660291b6b0c92bd2f0df">
+        <source>Select Option</source>
+        <target>Select Option</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b357b524e740bc85b9790a0712d84a30">
+        <source>Email address</source>
+        <target>Email address</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e635032a5f71d809146d3872389f5b0c">
+        <source>Choose File</source>
+        <target>Choose File</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cfe1b4b75fb8dc152b124f9305835a11">
+        <source>Your message</source>
+        <target>Your message</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dd7bf230fde8d4836917806aff6a6b27">
+        <source>Address</source>
+        <target>Address</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8e4ce991c38fbb44cd2db0bd0434cef1">
+        <source>Opening: </source>
+        <target>Opening: </target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2c8b20382e83ab7df9468bda94637344">
+        <source>I accept teh</source>
+        <target>I accept teh</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="01fb07fd60130ca55b50e1d0c989bcb8">
+        <source>Privacy policy.</source>
+        <target>Privacy policy.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="15422d54ec0d47000dc86a9820a5237e">
+        <source>Featured</source>
+        <target>Featured</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="06935560825762bbb2d20a4a3ed69e4f">
+        <source>New Arrival</source>
+        <target>New Arrival</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="22c6735b370cecf293e32dca6c678185">
+        <source>Best Seller</source>
+        <target>Best Seller</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b4c2b550635fe54fd29f2b64dfaca55d">
+        <source>Special</source>
+        <target>Special</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b57a43365a05fba262ddc6240d2f733b">
+        <source>Sale Off</source>
+        <target>Sale Off</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1300caaefd15b839f37952dc7cc75d82">
+        <source>Call us:</source>
+        <target></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9cfc9b74983d504ec71db33967591249">
+        <source>Contact Us</source>
+        <target>Contact Us</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fdb0c388de01d545017cdf9ccf00eb72">
+        <source>Store</source>
+        <target>Store</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0e2fb5b02182fd28b9b96e86ed27838f">
+        <source>Fax:</source>
+        <target></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ed6697531780f4e8c7cab2c8d95d57a6">
+        <source>Headquarter</source>
+        <target>Headquarter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c7a7395519f0547b6676cf02431dcbd0">
+        <source>[1]%phone%[/1]</source>
+        <target>[1]%phone%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bcb2603bd53059cc5b6aaee6f625c77a">
+        <source>[1]%fax%[/1]</source>
+        <target>[1]%fax%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ae0bae303e24e9b202cdc9c95baf980c">
+        <source>[1]%email%[/1]</source>
+        <target>[1]%email%[/1]</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5fbd3cedc2ee250ee73079dbaa893628">
+        <source>Subscribe to Our Newsletter!</source>
+        <target>Subscribe to Our Newsletter!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b05f4d1ea3375653d88d667564b4a1f8">
+        <source>Sign Up for Our Newsletter</source>
+        <target>Sign Up for Our Newsletter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3749cec380773f0c97196947b948d101">
+        <source>Be the first to learn about our latest trends and get exclusive offers.</source>
+        <target>Be the first to learn about our latest trends and get exclusive offers.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="96c251b872fec44198073ed10c5a36c1">
+        <source>Subscribe!</source>
+        <target>Subscribe!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="75289f8e123b2e0e5dd1677b0daa64d9">
+        <source>By entering your email, you agree to our Terms of Service and Privacy Policy.</source>
+        <target>By entering your email, you agree to our Terms of Service and Privacy Policy.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2143f8cb66482342b35208bdc3fd949c">
+        <source>Active filters</source>
+        <target></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7a1c5301da6b1ce9e4345bd501397045">
+        <source>(no filter)</source>
+        <target></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d3d2e617335f08df83599665eef8a418">
+        <source>Close</source>
+        <target></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5813ce0ec7196c492c97596718f71969">
+        <source>Sitemap</source>
+        <target></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="231a7c39094240ba9df92ca487c356d1">
+        <source>Your Search Returns no Results</source>
+        <target>Your Search Returns no Results</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d374d94e355f88964f4b40916bfe9bb6">
+        <source>Search results for</source>
+        <target>Search results for</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="70f776102f0eff48fe29edc38affbf04">
+        <source>Empty Category</source>
+        <target>Empty Category</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="06cc56c6726cbe5b1856f29725edbaf5">
+        <source>There are no products matching the selection.</source>
+        <target>There are no products matching the selection.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="300225ee958b6350abc51805dab83c24">
+        <source>Continue shopping</source>
+        <target>Continue shopping</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bfd56f3cafc12f6317ae3351ad712eff">
+        <source>Error 404</source>
+        <target>Error 404</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3218cbbd69118d6976e91ebb8693de5f">
+        <source>Page Not Found</source>
+        <target>Page Not Found</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -43,9 +43,9 @@
         color: transparent;
         background-color: #fff;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
     .banner-type-1 .banner-content .text-3 {
       font-size: 1rem;
       margin-bottom: 1.889rem; }

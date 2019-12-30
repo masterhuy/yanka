@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\archive.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="e727b00944f81e1d0a95c12886ac4641">
+        <source>Archive</source>
+        <target>Archive</target>
+        <note>Line: 28</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\categories-layout-default.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="1bd6219fd227e3d67f6d07d06c11b5ac">
+        <source>Sorry, dont have any category in this section</source>
+        <target>Sorry, dont have any category in this section</target>
+        <note>Line: 55</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\category-layout-2columns.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="9c0fe7eb33e5c0aaf4619a7725d5467c">
+        <source>Two Colums</source>
+        <target>Two Colums</target>
+        <note>Line: 32</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\category-layout-3columns.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="9508c5b98b4159faec89bab38022f484">
+        <source>Three Colums</source>
+        <target>Three Colums</target>
+        <note>Line: 32</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\category-layout-4columns.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="ed2b5c0139cec8ad2873829dc1117d50">
+        <source>on</source>
+        <target>on</target>
+        <note>Line: 65</note>
+      </trans-unit>
+      <trans-unit id="a0bfb8e59e6c13fc8d990781f77694fe">
+        <source>Continue</source>
+        <target>Continue</target>
+        <note>Line: 83</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\category-layout-default.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="12d0a49580e2aae93bf1e3c50ac75dda">
+        <source>Sorry, dont have any post in this category</source>
+        <target>Sorry, dont have any post in this category</target>
+        <note>Line: 101</note>
+      </trans-unit>
+      <trans-unit id="d6ddcc854167904241f842216a959e17">
+        <source>Standard without Sidebar</source>
+        <target>Standard without Sidebar</target>
+        <note>Line: 32</note>
+      </trans-unit>
+      <trans-unit id="02634346c7c46ce58e11c288af5e3f2b">
+        <source>Standard with Left Sidebar</source>
+        <target>Standard with Left Sidebar</target>
+        <note>Line: 35</note>
+      </trans-unit>
+      <trans-unit id="06ceeba32ba95b7d305c449ca0ac4479">
+        <source>Standard with Right Sidebar</source>
+        <target>Standard with Right Sidebar</target>
+        <note>Line: 38</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\comment_default.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="8413c683b4b27cc3f4dbd4c90329d8ba">
+        <source>Comments</source>
+        <target>Comments</target>
+        <note>Line: 36</note>
+      </trans-unit>
+      <trans-unit id="b41b1fd32fe378e592693128eed809c2">
+        <source>Your email address will not be published</source>
+        <target>Your email address will not be published</target>
+        <note>Line: 61</note>
+      </trans-unit>
+      <trans-unit id="614cffa523202658a898e34a5d94d05e">
+        <source>Your Name</source>
+        <target>Your Name</target>
+        <note>Line: 67</note>
+      </trans-unit>
+      <trans-unit id="01557660faa28f8ec65992d1ddbb7b79">
+        <source>Your Email</source>
+        <target>Your Email</target>
+        <note>Line: 73</note>
+      </trans-unit>
+      <trans-unit id="7a8dbd683001159655afc3f4935b3fd4">
+        <source>Submit Comment</source>
+        <target>Submit Comment</target>
+        <note>Line: 99</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\post-layout-default.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="1768a313b237a2edc2c4c0fbee60edcb">
+        <source>Your comment submited</source>
+        <target>Your comment submited</target>
+        <note>Line: 101</note>
+      </trans-unit>
+      <trans-unit id="9031a28ed1c50f2485bb0fa4b299ffab">
+        <source>Please waiting approve from Admin</source>
+        <target>Please waiting approve from Admin</target>
+        <note>Line: 103</note>
+      </trans-unit>
+      <trans-unit id="76f62afe72f88cdeb5b4a0291501da15">
+        <source>Your Website</source>
+        <target>Your Website</target>
+        <note>Line: 154</note>
+      </trans-unit>
+      <trans-unit id="e868dd111353d296c2a78c9808c21337">
+        <source>Your Comment</source>
+        <target>Your Comment</target>
+        <note>Line: 158</note>
+      </trans-unit>
+      <trans-unit id="45d048c35e3cfd449dc0a1b503cd103a">
+        <source>Captcha</source>
+        <target>Captcha</target>
+        <note>Line: 171</note>
+      </trans-unit>
+      <trans-unit id="5f632aa17759e66788e5eddffc496db7">
+        <source>Please Login to comment</source>
+        <target>Please Login to comment</target>
+        <note>Line: 200</note>
+      </trans-unit>
+      <trans-unit id="e1cbdfece10fcbff6510aaa59f2647a0">
+        <source>Image Blog</source>
+        <target>Image Blog</target>
+        <note>Line: 60</note>
+      </trans-unit>
+      <trans-unit id="53e5aa2c97fef1555d2511de8218c544">
+        <source>By</source>
+        <target>By</target>
+        <note>Line: 126</note>
+      </trans-unit>
+      <trans-unit id="49ee3087348e8d44e1feda1917443987">
+        <source>Name</source>
+        <target>Name</target>
+        <note>Line: 146</note>
+      </trans-unit>
+      <trans-unit id="b357b524e740bc85b9790a0712d84a30">
+        <source>Email address</source>
+        <target>Email address</target>
+        <note>Line: 150</note>
+      </trans-unit>
+      <trans-unit id="55db28530640e9fb41ebf71ea8afce72">
+        <source>Post Comment</source>
+        <target>Post Comment</target>
+        <note>Line: 174</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\tag.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="1b32dbc17528e74a357035f2efe71662">
+        <source>Blog Images</source>
+        <target>Blog Images</target>
+        <note>Line: 49</note>
+      </trans-unit>
+      <trans-unit id="4993157f98dbc7b35bd826822908b58a">
+        <source>view(s)</source>
+        <target>view(s)</target>
+        <note>Line: 67</note>
+      </trans-unit>
+      <trans-unit id="c9b2de7df8ef586db345e49ddb1eea26">
+        <source> Comment(s)</source>
+        <target> Comment(s)</target>
+        <note>Line: 72</note>
+      </trans-unit>
+      <trans-unit id="d59048f21fd887ad520398ce677be586">
+        <source>Learn more</source>
+        <target>Learn more</target>
+        <note>Line: 79</note>
+      </trans-unit>
+      <trans-unit id="c101058e7ea21bbbf2a5ac893088e90b">
+        <source>Tag</source>
+        <target>Tag</target>
+        <note>Line: 28</note>
+      </trans-unit>
+      <trans-unit id="970650dd625bb891d7209fbcfce254cf">
+        <source>Sorry, dont have any post in this tag</source>
+        <target>Sorry, dont have any post in this tag</target>
+        <note>Line: 86</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="efeb369cccbd560588a756610865664c">
+        <source>In</source>
+        <target>In</target>
+        <note>Line: 86</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -59,9 +59,9 @@
         color: transparent;
         background-color: #48CAB2;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
       .menu .buy-theme p a:hover::before {
         width: 100%; }
 
@@ -115,9 +115,9 @@
         color: transparent;
         background-color: #fff;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
       .banner-cates .banner-content .title:hover::before {
         width: 100%; }
     .banner-cates .banner-content ul + p {
@@ -139,9 +139,9 @@
           color: transparent;
           background-color: #777;
           height: 1px;
-          -webkit-transition: width 0.25s;
-          -o-transition: width 0.25s;
-          transition: width 0.25s; }
+          -webkit-transition: width 0.25s linear;
+          -o-transition: width 0.25s linear;
+          transition: width 0.25s linear; }
         .banner-cates .banner-content ul li a:hover::before {
           width: 100%; }
     .banner-cates .banner-content p {
@@ -164,9 +164,9 @@
         color: transparent;
         background-color: #48CAB2;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
       .banner-cates .banner-content .see-all:hover::before {
         width: 100%; }
 

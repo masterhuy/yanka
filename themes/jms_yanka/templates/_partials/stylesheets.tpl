@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/neueeinstellung/neueeinstellung.css" />
+
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/global.css" />
 {foreach $stylesheets.external as $stylesheet}
 <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">

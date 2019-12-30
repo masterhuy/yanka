@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_specials\views\templates\hook\ps_specials.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="1276c482cb32edf4fce51761a9792716">
+        <source>Special Products</source>
+        <target>Special Products</target>
+        <note>Line: 28</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

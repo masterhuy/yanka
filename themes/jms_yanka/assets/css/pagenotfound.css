@@ -36,9 +36,9 @@
           color: transparent;
           background-color: #48CAB2;
           height: 1px;
-          -webkit-transition: width 0.25s;
-          -o-transition: width 0.25s;
-          transition: width 0.25s; }
+          -webkit-transition: width 0.25s linear;
+          -o-transition: width 0.25s linear;
+          transition: width 0.25s linear; }
         .page-not-found .pt-title.pt-size-large + p .pt-link::before {
           width: 100%; }
         .page-not-found .pt-title.pt-size-large + p .pt-link:hover::before {

@@ -19,7 +19,6 @@
 }
 .image-menu .flex-wrapper {
     align-items: center;
-    color: #111111;
     display: flex;
     font-size: 16px;
     height: 100%;
@@ -458,7 +457,7 @@ div.jms-megamenu .dropdown-menu::before{
 	z-index: 1;
 }
 .mega-col-nav.img-first.wrapper-banner .box-content span {
-    color: #111;
+    color: #333;
     font-size: 16px;
     position: relative;
     text-transform: capitalize;

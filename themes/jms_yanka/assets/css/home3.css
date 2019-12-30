@@ -67,16 +67,17 @@
         color: transparent;
         background-color: #fff;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
 
 .page-index #footer {
   margin-top: 10px; }
 
 @media (min-width: 1875px) {
   .header .megamenu {
-    width: 59%; }
+    width: 59%;
+    padding-right: 6px; }
   .header .right-module-header {
     width: 16%; } }
 

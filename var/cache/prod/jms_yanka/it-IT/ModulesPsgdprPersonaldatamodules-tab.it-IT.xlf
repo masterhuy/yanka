@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\psgdpr\views\templates\front\pdf\personalData.modules-tab.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="e55f75a29310d7b60f7ac1d390c8ae42">
+        <source>Module</source>
+        <target>Module</target>
+        <note>Line: 27</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

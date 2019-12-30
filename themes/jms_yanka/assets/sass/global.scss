@@ -158,7 +158,7 @@
 .top-panel{
 	font-size: 14px;
 	border-bottom: 1px solid #ebebeb;
-	padding: 6px 0;
+	padding: 7px 0 5px;
 
 	p{
 		margin-bottom: 0;
@@ -186,7 +186,7 @@
 				}
 				&::before{
 					position: absolute;
-					bottom: 1px;
+					bottom: 0;
 					left: 0;
 					right: 0;
 					margin: auto;
@@ -209,9 +209,14 @@
 				padding-left: 12px;
 				a{
 					color: #777;
+					position: relative;
 					&:hover{
 						color: #333;
+						&::before{
+							width: 100%;
+						}
 					}
+					@include underline(0, #333, 1)
 				}
 			}
 		}
@@ -509,18 +514,6 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 	}
 }
 .search-no-popup{
-	#search-form{
-		display: block !important;
-		position: static;
-		opacity: 1;
-		overflow: visible;
-	}
-	.search-box{
-		padding: 0 9px 0 18px;
-		border: 1px solid #ebebeb;
-		display: inline-block;
-		position: relative;
-	}
 	#jms_ajax_search{
 		.modal-content{
 			padding: 0;
@@ -535,6 +528,18 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 		}
 		.btn-search{
 			display: none;
+		}
+		#search-form{
+			display: block !important;
+			position: static;
+			opacity: 1;
+			visibility: visible;
+		}
+		.search-box{
+			padding: 0 9px 0 18px;
+			border: 1px solid #ebebeb;
+			display: inline-block;
+			position: relative;
 		}
 		#ajax_search{
 			font-size: 16px;
@@ -642,12 +647,21 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 	ul > li{
 		&.current > a{
 			color: $active;
+			b{
+				color: $active;
+			}
 		}
 		> a{
 			text-transform: capitalize;
 			color: #777;
+			b{
+				transition: all .4s;
+			}
 			&:hover{
 				color: $active;
+				b{
+					color: $active;
+				}
 			}
 		}
 	}
@@ -1158,7 +1172,6 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 				color: #8f8f8f;
 				font-weight: 500;
 				.fa{
-					color: #000;
 					margin-right: 4px;
 				}
 				&:hover{
@@ -1473,7 +1486,6 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 		}
 		button{
 			font-size: 20px;
-			color: #000;
 			padding-left: 0;
 		}
 		form{
@@ -4704,7 +4716,6 @@ a.wishlist_top{
 	display: none;
 	font-size: 16px;
 	font-weight: 700;
-	color: #000;
 	padding-top: 10px;
 	padding-left: 6px;
 }
@@ -4850,7 +4861,10 @@ a.wishlist_top{
 }
 .wishlist_top.home_page{
 	display: inline-block;
-	color: #000;
+	svg{
+		width: 23px;
+		padding-top: 1px;
+	}
 	&:hover{
 		color: $active;
 	}
@@ -5532,7 +5546,7 @@ a.wishlist_top{
 #footer{
 	background: #f8f8f8;
 	.footer-top{
-		padding: 97px 0 70px;
+		padding: 97px 0 73px;
 		.newsletter #newsletter_block_left{
 			margin-top: 0;
 			p{
@@ -6343,8 +6357,7 @@ a.wishlist_top{
 	.testimonial-box{
 		.testimonial-comment .title{
 			h3{
-				float: none;
-				display: inline-block;
+				width: 100%;
 			}
 			.rating{
 				float: left;

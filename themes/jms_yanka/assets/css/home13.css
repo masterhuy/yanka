@@ -50,9 +50,9 @@
       color: transparent;
       background-color: #48CAB2;
       height: 2px;
-      -webkit-transition: width 0.25s;
-      -o-transition: width 0.25s;
-      transition: width 0.25s; }
+      -webkit-transition: width 0.25s linear;
+      -o-transition: width 0.25s linear;
+      transition: width 0.25s linear; }
     .menu .buy-theme p a:hover::before {
       width: 100%; }
 

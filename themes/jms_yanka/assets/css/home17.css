@@ -63,9 +63,9 @@
       color: transparent;
       background-color: #48CAB2;
       height: 2px;
-      -webkit-transition: width 0.25s;
-      -o-transition: width 0.25s;
-      transition: width 0.25s; }
+      -webkit-transition: width 0.25s linear;
+      -o-transition: width 0.25s linear;
+      transition: width 0.25s linear; }
     .menu .buy-theme p a:hover::before {
       width: 100%; }
 
@@ -120,9 +120,9 @@
       color: transparent;
       background-color: #fff;
       height: 2px;
-      -webkit-transition: width 0.25s;
-      -o-transition: width 0.25s;
-      transition: width 0.25s; }
+      -webkit-transition: width 0.25s linear;
+      -o-transition: width 0.25s linear;
+      transition: width 0.25s linear; }
   .banner-right .banner-content .text-2 {
     font-size: 24px;
     line-height: 1.45;
@@ -157,9 +157,9 @@
         color: transparent;
         background-color: #333;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
 
 .top-product {
   margin-top: 93px;
@@ -214,9 +214,9 @@
         color: transparent;
         background-color: #fff;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
 
 @media (max-width: 1240px) and (min-width: 1200px) {
   .menu .container {

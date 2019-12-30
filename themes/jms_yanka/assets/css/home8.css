@@ -39,9 +39,9 @@
         color: transparent;
         background-color: #48CAB2;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
       .menu .buy-theme p a:hover::before {
         width: 100%; }
 
@@ -88,9 +88,9 @@
         color: transparent;
         background-color: #fff;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
       .banner .banner-content .text-1::before {
         position: absolute;
         bottom: 5px;
@@ -102,9 +102,9 @@
         color: transparent;
         background-color: #333;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
     .banner .banner-content .text-2 {
       font-size: 18px;
       line-height: 28px;

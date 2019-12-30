@@ -26,13 +26,6 @@
 <div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">
 		<div class="content">
-			{if $popup_title}
-				<div class="addon-title">
-					<h3>
-						{$popup_title|escape:'htmlall':'UTF-8'}
-					</h3>
-				</div>
-			{/if}
 			<a class="popup-close">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
 					<polygon fill="currentColor" points="15.6,1.6 14.4,0.4 8,6.9 1.6,0.4 0.4,1.6 6.9,8 0.4,14.4 1.6,15.6 8,9.1 14.4,15.6 15.6,14.4 9.1,8 "></polygon>
@@ -40,6 +33,13 @@
 			</a>
 			<div class="row d-flex">
 				<div class="jms-popup-content col-lg-6 ml-auto">
+					{if $popup_title}
+						<div class="addon-title">
+							<h3>
+								{$popup_title|escape:'htmlall':'UTF-8'}
+							</h3>
+						</div>
+					{/if}
 					{$popup_content nofilter}
 
 					<div class="dontshow">

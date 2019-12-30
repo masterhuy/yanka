@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsadvsearch\views\templates\hook\jmsadvsearch.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="a6a2a55bea8760389dfca77132905b7c">
+        <source>All Categories</source>
+        <target>All Categories</target>
+        <note>Line: 17</note>
+      </trans-unit>
+      <trans-unit id="4e28ef62889dd30e1858ba640039c97e">
+        <source>Search for shopping...</source>
+        <target>Search for shopping...</target>
+        <note>Line: 27</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

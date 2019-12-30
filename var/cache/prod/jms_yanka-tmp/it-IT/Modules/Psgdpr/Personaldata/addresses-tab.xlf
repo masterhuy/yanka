@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\psgdpr\views\templates\front\pdf\personalData.addresses-tab.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="284b47b0bb63ae2df3b29f0e691d6fcf">
+        <source>Addresses</source>
+        <target>Addresses</target>
+        <note>Line: 26</note>
+      </trans-unit>
+      <trans-unit id="effdb9ce6c5d44df31b89d7069c8e0fb">
+        <source>Alias</source>
+        <target>Alias</target>
+        <note>Line: 30</note>
+      </trans-unit>
+      <trans-unit id="1c76cbfe21c6f44c1d1e59d54f3e4420">
+        <source>Company</source>
+        <target>Company</target>
+        <note>Line: 31</note>
+      </trans-unit>
+      <trans-unit id="49ee3087348e8d44e1feda1917443987">
+        <source>Name</source>
+        <target>Name</target>
+        <note>Line: 32</note>
+      </trans-unit>
+      <trans-unit id="dd7bf230fde8d4836917806aff6a6b27">
+        <source>Address</source>
+        <target>Address</target>
+        <note>Line: 33</note>
+      </trans-unit>
+      <trans-unit id="fac322c3b42d04806299ae195f8a9238">
+        <source>Phone(s)</source>
+        <target>Phone(s)</target>
+        <note>Line: 34</note>
+      </trans-unit>
+      <trans-unit id="59716c97497eb9694541f7c3d37b1a4d">
+        <source>Country</source>
+        <target>Country</target>
+        <note>Line: 35</note>
+      </trans-unit>
+      <trans-unit id="44749712dbec183e983dcd78a7736c41">
+        <source>Date</source>
+        <target>Date</target>
+        <note>Line: 36</note>
+      </trans-unit>
+      <trans-unit id="587bb937485e3dbe02ea0d281600bb52">
+        <source>No addresses</source>
+        <target>No addresses</target>
+        <note>Line: 53</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

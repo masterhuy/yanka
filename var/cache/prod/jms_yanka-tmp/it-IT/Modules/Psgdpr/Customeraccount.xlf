@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\psgdpr\views\templates\front\customerAccount.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="5868129c4526891dddb05b8e59c33572">
+        <source>GDPR - Personal data</source>
+        <target>GDPR - Personal data</target>
+        <note>Line: 18</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

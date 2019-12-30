@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmswishlist\views\templates\front\mywishlist.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="d025259319054206be54336a00defe89">
+        <source>Do you really want to delete this wishlist ?</source>
+        <target>Do you really want to delete this wishlist ?</target>
+        <note>Line: 105</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

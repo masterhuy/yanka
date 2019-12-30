@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-27 04:17:50
+/* Smarty version 3.1.33, created on 2019-12-30 05:21:57
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-detailed-actions.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e05cc3ecbe255_53074622',
+  'unifunc' => 'content_5e09cfc5459367_38561472',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e05cc3ecbe255_53074622 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e09cfc5459367_38561472 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="checkout cart-detailed-actions card-block">
     <?php if ($_smarty_tpl->tpl_vars['cart']->value['minimalPurchaseRequired']) {?>
         <div class="alert alert-warning" role="alert">

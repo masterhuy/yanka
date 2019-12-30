@@ -1,5 +1,5 @@
-@import "mixin";
-@import "varians";
+@import "../mixin";
+@import "../varians";
 
 .cates{
 	margin-top: 93px;
@@ -75,6 +75,7 @@
 	.header{
 		.megamenu{
 			width: 59%;
+			padding-right: 6px;
 		}
 		.right-module-header{
 			width: 16%;

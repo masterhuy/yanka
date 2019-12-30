@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-26 01:50:34
+/* Smarty version 3.1.33, created on 2019-12-30 05:21:27
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\steps\checkout-step.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e04583a250401_24939623',
+  'unifunc' => 'content_5e09cfa77a61f3_61417943',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e04583a250401_24939623 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e09cfa77a61f3_61417943 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		</h1>
 		<div class="content">
 			<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8448905205e04583a250407_52136107', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3957740385e09cfa77a61f6_67380559', 'step_content');
 ?>
 
 		</div>
@@ -49,12 +49,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8448905205e04583a2
 </section>
 <?php }
 /* {block 'step_content'} */
-class Block_8448905205e04583a250407_52136107 extends Smarty_Internal_Block
+class Block_3957740385e09cfa77a61f6_67380559 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_8448905205e04583a250407_52136107',
+    0 => 'Block_3957740385e09cfa77a61f6_67380559',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

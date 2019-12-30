@@ -1282,14 +1282,12 @@ function toggleScrollTop(){
 	});
 }
 
-
 $(window).resize(function(){
 	calcOwnControlProductModal();
 
 	calcOwnControlCarousel("producttab");
 	calcOwnControlCarousel("hotdeal");
 	calcOwnControlCarousel("product");
-	
 	calcOwnControlBanner();
 
 	calcHeightVideo();

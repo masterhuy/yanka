@@ -1,5 +1,5 @@
-@import "mixin";
-@import "varians";
+@import "../mixin";
+@import "../varians";
 
 .jms-row.alert-box{
 	color: #fff;
@@ -35,7 +35,7 @@
 		&::before{
 			position: absolute;
 			z-index: 2;
-			bottom: 4px;
+			bottom: 3px;
 			left: 0;
 			right: 0;
 			margin: auto;
@@ -134,6 +134,7 @@
 	.jms-banner{
 		top: 0;
 		overflow: visible;
+		transition: 0.25s top;
 		img{
 			width: 100%;
 		}
@@ -176,6 +177,9 @@
 			display: inline-block;
 			position: relative;
 			@include underline(4, #333, 3)
+			&::before{
+				transition-delay: 0.25s;
+			}
 		}
 		.text-3{
 			font-size: 18px;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\ps_shoppingcart\ps_shoppingcart.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="fad2ec8773367adebc45c6aa93e852e8">
+        <source>item(s) in your cart</source>
+        <target>item(s) in your cart</target>
+        <note>Line: 23</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

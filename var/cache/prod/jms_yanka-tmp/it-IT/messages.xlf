@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblog\views\templates\front\categories-layout-default.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="af1b98adf7f686b84cd0b443e022b7a0">
+        <source>Categories</source>
+        <target></target>
+        <note>Line: 35</note>
+      </trans-unit>
+      <trans-unit id="a4806f5d6786661dae21b8e241270433">
+        <source>Categories dewffaul</source>
+        <target>Categories dewffaul</target>
+        <note>Line: 36</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsblogwidget\views\templates\hook\home-widget.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="d959bbe25cc020e2db5276cb42927c7c">
+        <source>read more</source>
+        <target>read more</target>
+        <note>Line: 101</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsvermegamenu\views\templates\admin\jmsvermegamenuform\helpers\form\form1.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="2efd89b3ccc76b0b03a34196fc6d1c8b">
+        <source>Add tag</source>
+        <target></target>
+        <note>Line: 165</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmswishlist\views\templates\front\managewishlist.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="6bc362dbf494c61ea117fe3c71ca48a5">
+        <source>Move</source>
+        <target>Move</target>
+        <note>Line: 68</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-add-to-cart.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="6a5373df703ab2827a4ba7facdfcf779">
+        <source>Add to Wishlist</source>
+        <target>Add to Wishlist</target>
+        <note>Line: 63</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\quickview.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="44ed4d3fe168d094af3568f03fbeee33">
+        <source>Product Type: </source>
+        <target>Product Type: </target>
+        <note>Line: 116</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\checkout.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="3ed53fbeb1eab0443561b68ca0c0b5cf">
+        <source>MENU</source>
+        <target>MENU</target>
+        <note>Line: 39</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

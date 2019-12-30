@@ -61,8 +61,11 @@
   letter-spacing: 0.1px;
   padding-bottom: 16px;
 }
-.jms-popup #newsletter_block_left {
-  padding: 89px 0 0;
+.jms-popup .jms-popup-content{
+  padding-top: 89px;
+}
+.jms-popup .jms-popup-content .addon-title{
+  padding-bottom: 16px;
 }
 .jms-popup #newsletter_block_left.have-alert{
   padding-top: 20px;
@@ -125,7 +128,7 @@
   display: inline-flex;
   justify-content: center;
   position: absolute;
-  top: 338px;
+  top: 344px;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);

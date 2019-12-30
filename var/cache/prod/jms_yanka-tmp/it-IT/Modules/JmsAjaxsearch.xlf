@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl" source-language="it-IT" target-language="it-IT" datatype="plaintext">
+    <body>
+      <trans-unit id="13348442cc6a27032d2b4aa28b75a5d3">
+        <source>Search</source>
+        <target>Search</target>
+        <note>Line: 18</note>
+      </trans-unit>
+      <trans-unit id="c9ac32d203ef56b98fe53876a6db6191">
+        <source>What are you Looking for?</source>
+        <target>What are you Looking for?</target>
+        <note>Line: 26</note>
+      </trans-unit>
+      <trans-unit id="5efad24ea067fd81e800d89ba7b7203c">
+        <source>Search products...</source>
+        <target>Search products...</target>
+        <note>Line: 37</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

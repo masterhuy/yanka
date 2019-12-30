@@ -183,9 +183,9 @@
           color: transparent;
           background-color: #333;
           height: 2px;
-          -webkit-transition: width 0.25s;
-          -o-transition: width 0.25s;
-          transition: width 0.25s; }
+          -webkit-transition: width 0.25s linear;
+          -o-transition: width 0.25s linear;
+          transition: width 0.25s linear; }
   .specification .pt-list-dot > li {
     font-size: 18px;
     line-height: 28px;
@@ -235,9 +235,9 @@
         color: transparent;
         background-color: #48CAB2;
         height: 2px;
-        -webkit-transition: width 0.25s;
-        -o-transition: width 0.25s;
-        transition: width 0.25s; }
+        -webkit-transition: width 0.25s linear;
+        -o-transition: width 0.25s linear;
+        transition: width 0.25s linear; }
       .jms-row.instagram .addon-title a::before {
         width: 100%; }
       .jms-row.instagram .addon-title a:hover::before {
