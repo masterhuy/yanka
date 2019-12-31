@@ -12,7 +12,7 @@
     margin-bottom: 0px;
     background: #fff;
     border-radius: 0;
-    padding: 11px 0;
+    padding: 9px 0;
     border: 1px solid #ebebeb;
     z-index: 9991;
 }
@@ -113,11 +113,15 @@
     letter-spacing: 0.1px;
 }
 .jms-vermegamenu .nav > li > a > .caret::after {
-    content: "\f105";
-    font-family: 'Line Awesome Free';
-    float: right;
-    font-size: 15px;
+    pointer-events: none;
+    position: absolute;
+    right: 4px;
+    font-family: yanka;
+    font-size: 14px;
+    content: "\e905";
     color: #d0d0d0;
+    -webkit-transition: color .2s;
+    transition: color .2s;
 }
 .jms-vermegamenu .nav > li.open > a > .caret::after{
     color: #48cab2;

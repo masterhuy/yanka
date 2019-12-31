@@ -3536,7 +3536,10 @@ ul.footer_links {
   font-weight: 800;
   display: block;
   padding-bottom: 10px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
+}
+#footer .logo > span{
+  letter-spacing: 0;
 }
 
 .btn-group.module-group-box .icongroup::before {

@@ -14,18 +14,6 @@ $(document).ready(function() {
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 180){
 			menu.addClass("fixed");
-
-			$(".header.fixed .cart-icon").click(function(){
-				$(".menu.fixed").addClass('changed');
-			});
-			  
-			$(".header.fixed #cart_block .bg-overlay").click(function(){
-				$(".menu.fixed").removeClass('changed');
-			});
-
-			$(".header.fixed #cart_block #close-button").click(function(){
-				$(".menu.fixed").removeClass('changed');
-			});
     	} else {
 			menu.removeClass("fixed");
     	}

@@ -4487,9 +4487,10 @@ a.wishlist_top {
       .ver_menu .pt-icon i.close-icon {
         display: inline-block; }
         .ver_menu .pt-icon i.close-icon svg {
-          width: 24px;
+          width: 16px;
           position: relative;
-          top: 3px; }
+          top: 3px;
+          margin-right: 8px; }
   .ver_menu.collapsed i {
     display: inline-block; }
     .ver_menu.collapsed i.close-icon {

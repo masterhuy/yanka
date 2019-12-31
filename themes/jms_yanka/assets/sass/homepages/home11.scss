@@ -192,6 +192,10 @@
 .product-layout-vertical{
 	margin-top: 90px;
 	margin-bottom: 71px;
+	.product-link:hover{
+		text-decoration: none;
+		color: $active;
+	}
 }
 .jms-row.service{
 	margin-top: 69px;

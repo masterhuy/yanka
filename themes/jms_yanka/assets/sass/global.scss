@@ -4964,9 +4964,10 @@ a.wishlist_top{
 			&.close-icon{
 				display: inline-block;
 				svg{
-					width: 24px;
+					width: 16px;
 					position: relative;
 					top: 3px;
+					margin-right: 8px;
 				}
 			}
 		}

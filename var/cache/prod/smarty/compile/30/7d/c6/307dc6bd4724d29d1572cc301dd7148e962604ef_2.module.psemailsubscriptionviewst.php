@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-30 05:34:22
+/* Smarty version 3.1.33, created on 2019-12-30 23:53:36
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e09d2ae9457c1_37927839',
+  'unifunc' => 'content_5e0ad4500dd995_50167177',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e09d2ae9457c1_37927839 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0ad4500dd995_50167177 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block <?php if ($_smarty_tpl->tpl_vars['msg']->value) {?>have-alert<?php }?>">	
 	<div class="block_content">
