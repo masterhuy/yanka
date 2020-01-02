@@ -27,7 +27,8 @@
     {block name='pagination_summary'}
     <span>
       {l s='Showing' d='Shop.Theme.Catalog'}
-      {l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}</span>
+      {l s='%total%' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}
+      </span>
       {l s='results' d='Shop.Theme.Catalog'}
     {/block}
   </div>

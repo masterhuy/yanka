@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-30 23:53:38
+/* Smarty version 3.1.33, created on 2020-01-02 05:02:14
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsrecentlybought\views\templates\hook\jrb-popup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0ad4520edab7_40793898',
+  'unifunc' => 'content_5e0dbfa62aab91_21638518',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0ad4520edab7_40793898 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0dbfa62aab91_21638518 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_yanka\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <style type="text/css">

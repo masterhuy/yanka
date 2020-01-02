@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-30 03:23:58
+/* Smarty version 3.1.33, created on 2020-01-02 03:23:24
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsproductvideo\views\templates\hook\videocontent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e09b41e3e46d0_27945484',
+  'unifunc' => 'content_5e0da87ca62fb0_00292508',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aed4b016b4c14f17673673228f240c39db5846df' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\modules\\jmsproductvideo\\views\\templates\\hook\\videocontent.tpl',
-      1 => 1573697227,
+      1 => 1577952238,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e09b41e3e46d0_27945484 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0da87ca62fb0_00292508 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <style>
 	.jms-popup-wrap {
@@ -55,7 +55,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['video']->value) {
 			<?php if ($_smarty_tpl->tpl_vars['video_show']->value == '1') {?>
 				<div class="jms-popup-box">				
 					<div class="jms-popup-wrap">						
-						<a class="popup_close"><i class="fa fa-close"></i></a>
+						<a class="popup_close">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
+								<polygon fill="currentColor" points="15.6,1.6 14.4,0.4 8,6.9 1.6,0.4 0.4,1.6 6.9,8 0.4,14.4 1.6,15.6 8,9.1 14.4,15.6 15.6,14.4 9.1,8 "></polygon>
+							</svg>
+						</a>
 						<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['video']->value['links'], 'video_link');
 if ($_from !== null) {

@@ -119,17 +119,12 @@
                                     </a
                                 </li>
                             </ul>
-
-                            {block name='product_description_short'}
-                                <div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:350:"..." nofilter}</div>
-                            {/block}
                         
                             {if $product.is_customizable && count($product.customizations.fields)}
                                 {block name='product_customization'}
                                     {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
                                 {/block}
                             {/if}
-                            
                         
                             <div class="product-actions">
                                 {block name='product_buy'}

@@ -161,7 +161,6 @@
                             {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
                         {/block}
                     {/if}
-                    
                 
                     <div class="product-actions">
                         {block name='product_buy'}
@@ -204,6 +203,10 @@
                                 
                                 {block name='product_variants'}
                                     {include file='catalog/_partials/product-variants.tpl'}
+                                {/block}
+
+                                {block name='hook_display_reassurance'}
+                                    {hook h='displayReassurance'}
                                 {/block}
 
                                 {block name='product_add_to_cart'}

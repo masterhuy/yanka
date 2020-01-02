@@ -28,7 +28,9 @@
         <section id="products">
             <div class="category-title">
                 <div class="addon-title">
-                    <h3>{$page.meta.title}</h3>
+                    <h3>
+                        {$page.meta.title} ({$listing.products|count})
+                    </h3>
                 </div>
             </div>
             {if $listing.products|count}

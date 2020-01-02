@@ -262,14 +262,11 @@
 	margin-left:15px;
 }
 .product-information .product-desc {
-    padding-top: 20px;
+    padding-top: 0;
     width: 100%;
-    margin-bottom: 28px;
-    line-height: 1.74;
-    color: #858585;
-    border-bottom: 1px dashed #ebebeb;
-    padding-bottom: 10px;
-    display: none;
+    margin-bottom: 21px;
+    line-height: 1.55;
+    padding-bottom: 0;
 }
 .product-variants .control-label{
     margin-bottom: 10px;
@@ -452,6 +449,7 @@
     padding: 0 5px;
 }
 #product-availability {
+    font-size: 16px;
     display: block;
     margin-top: 20px;
 }
@@ -553,8 +551,8 @@
     display: none;
 }
 #block-reassurance {
-	width:100%;
-	clear:both;
+    width: 100%;
+    margin-top: 35px;
 }
 #block-reassurance .block-reassurance-item {
 	display:flex;
@@ -562,22 +560,17 @@
 	width:100%;
 }
 #block-reassurance .block-reassurance-item span.h6 {
-    font-size: 15px;
-    width: calc(100% - 35px);
-    padding: 0 10px;
+    font-size: 14px;
     margin: 0;
-    font-weight: 400;
+    font-weight: 800;
+    color: #333;
+    margin-left: 5px;
 }
-#block-reassurance .block-reassurance-item .reassurance-img {
-	width:35px;
+#block-reassurance ul li {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 24px;
 }
-#block-reassurance  ul li {
-	margin-bottom:15px;
-}
-#block-reassurance  ul li:last-child {
-	margin-bottom:0;
-}
-
 .pb-right-column .block-social ul li a {
 	font-size:0;
 }
@@ -634,9 +627,6 @@
 	margin-bottom:30px;
 	display:none;
 }
-#product #block-reassurance{
-	display:none;
-}
 .pb-right-column .block-social ul {
 	margin:0;
 }
@@ -677,7 +667,13 @@
     letter-spacing: 0;
     line-height: 30px;
     text-transform: capitalize;
-} 
+}
+.thumb-container #block-reassurance{
+    display: none;
+}
+.product-information #jmsproductvideo{
+    display: none;
+}
 /*=======================================
 =            More info block            =
 =======================================*/
@@ -960,6 +956,7 @@
     float: left;
     width: 100%;
     position: relative;
+    background-color: #fff;
 }
 .same-category::before{
     content: "";

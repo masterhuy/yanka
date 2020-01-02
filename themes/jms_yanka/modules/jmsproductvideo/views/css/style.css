@@ -1,5 +1,6 @@
 .jms-videos iframe {
 	max-width:100%;
+    border: 40px solid #fff;
 }
 .jms-popup-box {
     display: none;

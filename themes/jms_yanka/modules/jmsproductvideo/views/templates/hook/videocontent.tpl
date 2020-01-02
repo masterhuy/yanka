@@ -51,7 +51,11 @@
 			{if $video_show == '1'}
 				<div class="jms-popup-box">				
 					<div class="jms-popup-wrap">						
-						<a class="popup_close"><i class="fa fa-close"></i></a>
+						<a class="popup_close">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
+								<polygon fill="currentColor" points="15.6,1.6 14.4,0.4 8,6.9 1.6,0.4 0.4,1.6 6.9,8 0.4,14.4 1.6,15.6 8,9.1 14.4,15.6 15.6,14.4 9.1,8 "></polygon>
+							</svg>
+						</a>
 						{foreach $video.links as $video_link}
 							{if $video_link|strpos:'youtube' !== false}
 							<iframe width="{$video_width}" height="{$video_height}" src="https://www.youtube-nocookie.com/embed/{$video_link|substr:($video_link|strpos:'?v='+3)}?rel=0&amp;controls=0&amp;showinfo=0{if $video_autoplay}&amp;autoplay=1{/if}" frameborder="0" allowfullscreen></iframe>

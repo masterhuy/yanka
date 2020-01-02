@@ -49,7 +49,11 @@
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 view-mode right clearfix">
 			<label class="sort-by">{l s='View as' d='Shop.Theme.Actions'}</label>
 			<div class="button">
-				<a class="view-grid {if $jpb_grid == 1}active{/if}" href="#">
+				<a class="view-grid two-column" href="#">
+					<span></span>
+					<span></span>
+				</a>
+				<a class="view-grid three-column {if $jpb_grid == 1}active{/if}" href="#">
 					<span></span>
 					<span></span>
 					<span></span>

@@ -47,6 +47,7 @@
 	color: #333;
 	text-transform: capitalize;
 	position: relative;
+	letter-spacing: 0;
 }
 #search_filters .facet.filter-by .filter-block .js-search-link::before{
 	content: "\e908";
@@ -54,10 +55,6 @@
 	font-size: 11px;
 	width: 16px;
 	height: 16px;
-	-moz-transition: color 0.2s linear;
-	-o-transition: color 0.2s linear;
-	-webkit-transition: color 0.2s linear;
-	transition: color 0.2s linear;
 }
 #search_filters .facet.Color .facet-title.collapsed + .flex-box{
 	margin-bottom: 0;
@@ -250,15 +247,22 @@
 	line-height: 31px;
 	font-size: 16px;
 }
+#search_filters_wrapper #search_filters ul li:hover{
+	color: #48CAB2;
+	cursor: pointer;
+}
+#search_filters_wrapper #search_filters ul li:hover a{
+	color: #48CAB2;
+}
 #search_filters_wrapper #search_filters ul li a {
 	color: #777;
 	font-size: 16px;
 }
-#search_filters_wrapper #search_filters ul li a:hover{
-	color: #48CAB2;
-}
 #search_filters_wrapper #search_filters ul li .facet-label.active a{
 	color: #48CAB2;
+}
+#_desktop_search_filters_clear_all {
+    margin-top: 4px;
 }
 #left-column .sort-order{
 	display: none;

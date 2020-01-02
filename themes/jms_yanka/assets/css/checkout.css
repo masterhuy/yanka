@@ -115,7 +115,6 @@
 }
 #checkout #block-reassurance .block-reassurance-item span.h6 {
 	font-size: 16px;
-	width: calc(100% - 35px);
 	padding: 0 10px;
 	margin: 0;
 	font-weight: 400;
@@ -196,6 +195,11 @@
 }
 #checkout .right-box #block-reassurance{
 	padding-top: 0;
+	margin-top: 0;
+}
+#checkout .cart-summary-products .product-link {
+	color: #333;
+	font-size: 16px;
 }
 #checkout .content ul li a{
 	font-size: 16px;

@@ -189,6 +189,10 @@
                                         {include file='catalog/_partials/product-variants.tpl'}
                                     {/block}
 
+                                    {block name='hook_display_reassurance'}
+                                        {hook h='displayReassurance'}
+                                    {/block}
+
                                     {block name='product_add_to_cart'}
                                         {include file='catalog/_partials/product-add-to-cart.tpl'}
                                     {/block}

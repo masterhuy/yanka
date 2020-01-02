@@ -146,8 +146,7 @@
                         {block name='product_customization'}
                             {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
                         {/block}
-                    {/if}
-                    
+                    {/if}                    
                 
                     <div class="product-actions">
                         {block name='product_buy'}
@@ -192,6 +191,10 @@
                                     {include file='catalog/_partials/product-variants.tpl'}
                                 {/block}
 
+                                {block name='hook_display_reassurance'}
+                                    {hook h='displayReassurance'}
+                                {/block}
+
                                 {block name='product_add_to_cart'}
                                     {include file='catalog/_partials/product-add-to-cart.tpl'}
                                 {/block}
@@ -204,7 +207,6 @@
                             </form>
                         {/block}
                     </div>
-                    {hook h='displayReassurance'}
                 </div>
 
                 <div class="guaranteed text-center p-relative">

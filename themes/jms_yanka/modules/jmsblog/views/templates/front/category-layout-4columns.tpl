@@ -72,7 +72,7 @@
 							{/if}
 							{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
 								<li>
-									<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
+									<span>{$post.comment_count nofilter}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
 								</li>
 							{/if}
 						</ul>

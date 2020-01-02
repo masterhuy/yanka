@@ -1927,6 +1927,7 @@ ul.cart_block_list li:not(:last-child){
 #cart_block .cart-prices {
   margin-top: 2px;
   padding-top: 22px;
+  border-top: 1px solid #ebebeb;
 }
 .cart-prices .value {
   font-size: 18px;
@@ -5581,6 +5582,7 @@ button,
 .right-icon-group .addon-box a svg,
 .fs-pager-wrapper span,
 #jms-vermegamenu-container,
+#search_filters_wrapper #search_filters ul li,
 .images-container .product-images > li.thumb-container > .thumb{
   transition: all 400ms;
   -webkit-transition: all 400ms;

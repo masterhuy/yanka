@@ -75,7 +75,7 @@
   margin-top: 10px; }
 
 #footer {
-  padding: 50px 0; }
+  padding: 53px 0 47px; }
   #footer .footer-bottom {
     padding-bottom: 0; }
     #footer .footer-bottom .copyright {
@@ -84,7 +84,7 @@
     #footer .footer-bottom ul {
       float: right;
       margin-bottom: 0;
-      padding-top: 6px; }
+      padding-top: 7px; }
       #footer .footer-bottom ul li {
         margin-right: 0;
         margin-left: 14.5px; }

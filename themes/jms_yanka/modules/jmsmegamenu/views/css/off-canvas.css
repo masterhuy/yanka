@@ -136,6 +136,7 @@
     padding: 0 20px;
     background: #fff;
     padding-bottom: 25px;
+    display: none;
 }
 #off-canvas-menu .btn-group > ul li span, #off-canvas-menu .btn-group > ul li a {
     font-size: 16px;

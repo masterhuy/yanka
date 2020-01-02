@@ -50,14 +50,14 @@
                 {foreach from=$field.availableValues item="label" key="value"}
                     <label class="radio-inline">
                         <span class="custom-radio">
-                        <input
-                            name="{$field.name}"
-                            type="radio"
-                            value="{$value}"
-                            {if $field.required}required{/if}
-                            {if $value eq $field.value} checked {/if}
-                        >
-                        <span></span>
+                            <input
+                                name="{$field.name}"
+                                type="radio"
+                                value="{$value}"
+                                {if $field.required}required{/if}
+                                {if $value eq $field.value} checked {/if}
+                            >
+                            <span></span>
                         </span>
                         {$label}
                     </label>
@@ -65,7 +65,11 @@
             {elseif $field.type === 'checkbox'}
                 <div class="custom-checkbox">
                     <input name="{$field.name}" type="checkbox" value="1" {if $field.value}checked="checked"{/if} {if $field.required}required{/if}>
-                    <label>{$field.label nofilter}</label >
+                    <label>
+                        <span class="check"></span>
+                        <span class="box"></span>
+                        {$field.label nofilter}
+                    </label >
                 </div>
             {elseif $field.type === 'date'}
                 <input class="form-control" type="date" value="{$field.value}" placeholder="{if isset($field.availableValues.placeholder)}{$field.availableValues.placeholder}{/if}">

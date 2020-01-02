@@ -58,14 +58,31 @@ $('body').on('click', '[data-button-action="add-to-cart"]', function (event) {
 function view_as() { 
     var viewGrid = $(".view-grid"),
         viewList = $(".view-list"),
-        productList = $(".product_list");
-		viewGrid.click(function (e) {       
-        productList.removeClass("products-list-in-row");
-        productList.addClass("products-list-in-column");
-        $(this).addClass('active');
-        viewList.removeClass("active");
-        e.preventDefault()
-    });
+		productList = $(".product_list");
+
+	$(".view-mode .two-column").click(function(e){
+		productList.removeClass("products-list-3");
+		productList.addClass("products-list-2");
+		$(this).addClass('active');
+		viewGrid.removeClass("active");
+		e.preventDefault();
+	});
+
+	$(".view-mode .three-column").click(function(e){
+		productList.removeClass("products-list-2");
+		productList.addClass("products-list-3");
+		$(this).addClass('active');
+		viewGrid.removeClass("active");
+		e.preventDefault();
+	});
+		
+	viewGrid.click(function (e) {       
+		productList.removeClass("products-list-in-row");
+		productList.addClass("products-list-in-column");
+		$(this).addClass('active');
+		viewList.removeClass("active");
+		e.preventDefault()
+	});
     viewList.click(function (e) {       
         productList.removeClass("products-list-in-column");
         productList.addClass("products-list-in-row");
@@ -1211,28 +1228,29 @@ function calcHeightVideo(){
 }
 
 function stickySidebarProductDetails(){
-	var $sticky = $('.product-detail.vertical .pb-right-column .main-content');
-	var $stickyrStopper = $('#footer');
+	var sticky = $('.product-detail.vertical .pb-right-column .main-content');
+	var stickyrStopper = $('#footer');
 	var galHeight = $('#gal1').innerHeight();
+	var mainContentHeight = sticky.innerHeight();
 
-	if (!!$sticky.offset()) { // make sure ".sticky" element exists
+	if (!!sticky.offset()) { // make sure ".sticky" element exists
 
-		var generalSidebarHeight = $sticky.innerHeight();
-		var stickyTop = $sticky.offset().top;
+		var generalSidebarHeight = sticky.innerHeight();
+		var stickyTop = sticky.offset().top;
 		var stickOffset = 75;
-		var stickyStopperPosition = $stickyrStopper.offset().top;
+		var stickyStopperPosition = stickyrStopper.offset().top;
 		var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
 		var diff = stopPoint + stickOffset;
 
 		$(window).scroll(function(){ // scroll event
 			var windowTop = $(window).scrollTop(); // returns number
 
-			if ((galHeight - 600) < windowTop) {
-				$sticky.css({ position: 'relative', top: '0' });
+			if ((galHeight - 700) < windowTop) {
+				sticky.css({ position: 'absolute', top: (galHeight - (mainContentHeight + 100)), 'max-height': (mainContentHeight + 60), overflow: 'hidden auto' });
 			} else if (stickyTop < windowTop + stickOffset) {
-				$sticky.css({ position: 'fixed', top: stickOffset, 'max-width': 550 });
+				sticky.css({ position: 'fixed', top: stickOffset, 'max-width': 550, 'max-height': '100%', overflow: 'hidden auto' });
 			} else {
-				$sticky.css({position: 'relative', top: 'initial'});
+				sticky.css({position: 'relative', top: 'initial', 'max-height': '100%', overflow: 'hidden auto'});
 			}
 		});
 	}
@@ -1296,6 +1314,10 @@ $(window).resize(function(){
 
 
 $(document).ready(function() {	
+	var sticky = $('.product-detail.vertical .pb-right-column .main-content');
+	var galHeight = $('#gal1').innerHeight();
+	var mainContentHeight = sticky.innerHeight();
+
 	setTimeoutPreloader();
 
 	toggleScrollTop()
