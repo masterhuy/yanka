@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-02 03:57:40
+/* Smarty version 3.1.33, created on 2020-01-03 05:24:27
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0db08425c4a0_69385076',
+  'unifunc' => 'content_5e0f165bad2f73_18771039',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0db08425c4a0_69385076 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0f165bad2f73_18771039 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['sliders']->value, 'slider');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['slider']->value) {

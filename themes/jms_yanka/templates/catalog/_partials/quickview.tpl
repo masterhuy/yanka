@@ -35,7 +35,7 @@
             <div class="modal-body" id="main">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left">
-                        {block name='product_cover_tumbnails'}
+                        {block name='product_cover_thumbnails'}
                             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
                         {/block}
                         <div class="arrows js-arrows">
@@ -132,34 +132,6 @@
                                         <input type="hidden" name="token" value="{$static_token}">
                                         <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                                         <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
-
-                                        {block name='product_pack'}
-                                            {if $packItems}
-                                                <section class="product-pack">
-                                                    <h3 class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</h3>
-                                                    <article>
-                                                        <div class="card">
-                                                            <div class="pack-product-container">
-                                                                <table class="table">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Products</th>
-                                                                            <th>Price</th>
-                                                                            <th>Quantity</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    {foreach from=$packItems item="product_pack"}
-                                                                        {block name='product_miniature'}
-                                                                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack}
-                                                                        {/block}
-                                                                    {/foreach}
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </section>
-                                            {/if}
-                                        {/block}
                                         
                                         {block name='product_discounts'}
                                             {include file='catalog/_partials/product-discounts.tpl'}

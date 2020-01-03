@@ -109,6 +109,7 @@
                             {/if}
                         </div>
                     {/block}
+                    <div class="bg-overlay-filter"></div>
             
                 {if $page.page_name != 'index'}
                         </div>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-30 20:47:43
+/* Smarty version 3.1.33, created on 2020-01-02 22:26:27
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\customer\_partials\block-address.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0aa8bfb07a99_12327037',
+  'unifunc' => 'content_5e0eb463659b94_52441918',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0aa8bfb07a99_12327037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0eb463659b94_52441918 (Smarty_Internal_Template $_smarty_tpl) {
 ?><article id="address-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['address']->value['id'], ENT_QUOTES, 'UTF-8');?>
 " class="address" data-id-address="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['address']->value['id'], ENT_QUOTES, 'UTF-8');?>
 ">

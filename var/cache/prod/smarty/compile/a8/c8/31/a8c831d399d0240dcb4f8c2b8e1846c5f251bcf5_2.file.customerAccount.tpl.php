@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-30 20:56:43
+/* Smarty version 3.1.33, created on 2020-01-02 22:26:06
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\psgdpr\views\templates\front\customerAccount.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0aaadbf02ca2_53785816',
+  'unifunc' => 'content_5e0eb44ed561a1_82472299',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0aaadbf02ca2_53785816 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0eb44ed561a1_82472299 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="identity-link" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getModuleLink('psgdpr','gdpr'), ENT_QUOTES, 'UTF-8');?>
 ">

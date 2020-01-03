@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-02 05:00:16
+/* Smarty version 3.1.33, created on 2020-01-03 02:02:33
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\steps\payment.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0dbf301bcc44_44614502',
+  'unifunc' => 'content_5e0ee709d86e06_53379642',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '261fc957748fef52534694e06f47b02a841cf1a6' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\checkout\\_partials\\steps\\payment.tpl',
-      1 => 1569568109,
+      1 => 1578018548,
       2 => 'file',
     ),
   ),
@@ -21,25 +21,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:checkout/_partials/order-final-summary.tpl' => 1,
   ),
 ),false)) {
-function content_5e0dbf301bcc44_44614502 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0ee709d86e06_53379642 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16280895205e0dbf30195b47_16065511', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7680847405e0ee709d502f9_72810844', 'step_content');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'checkout/_partials/steps/checkout-step.tpl');
 }
 /* {block 'step_content'} */
-class Block_16280895205e0dbf30195b47_16065511 extends Smarty_Internal_Block
+class Block_7680847405e0ee709d502f9_72810844 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_16280895205e0dbf30195b47_16065511',
+    0 => 'Block_7680847405e0ee709d502f9_72810844',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -49,199 +49,202 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
   <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayPaymentTop'),$_smarty_tpl ) );?>
 
 
-  <div class="payment-options">
-    <?php
+    <div class="payment-options">
+        <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['payment_options']->value, 'module_options');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['module_options']->value) {
 ?>
-      <?php
+            <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['module_options']->value, 'option');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['option']->value) {
 ?>
-        <div>
-          <div id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
+                <div>
+                    <div id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
 -container" class="payment-option clearfix">
-                        <span class="custom-radio pull-xs-left">
-              <input
-                class="ps-shown-by-js <?php if ($_smarty_tpl->tpl_vars['option']->value['binary']) {?> binary <?php }?>"
-                id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
+                                                <div class="custom-radio radio pull-xs-left">
+                            <input
+                                class="ps-shown-by-js <?php if ($_smarty_tpl->tpl_vars['option']->value['binary']) {?> binary <?php }?>"
+                                id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
 "
-                data-module-name="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['module_name'], ENT_QUOTES, 'UTF-8');?>
+                                data-module-name="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['module_name'], ENT_QUOTES, 'UTF-8');?>
 "
-                name="payment-option"
-                type="radio"
-                required
-                <?php if ($_smarty_tpl->tpl_vars['selected_payment_option']->value == $_smarty_tpl->tpl_vars['option']->value['id']) {?> checked <?php }?>
-              >
-              <span></span>
-            </span>
-                        <form method="GET" class="ps-hidden-by-js">
-              <?php if ($_smarty_tpl->tpl_vars['option']->value['id'] === $_smarty_tpl->tpl_vars['selected_payment_option']->value) {?>
-                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Selected','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+                                name="payment-option"
+                                type="radio"
+                                required
+                                <?php if ($_smarty_tpl->tpl_vars['selected_payment_option']->value == $_smarty_tpl->tpl_vars['option']->value['id']) {?> checked <?php }?>
+                            >
+                            <span class="outer">
+                                <span class="inner"></span>
+                            </span>
+                        </div>
+                                                <form method="GET" class="ps-hidden-by-js">
+                            <?php if ($_smarty_tpl->tpl_vars['option']->value['id'] === $_smarty_tpl->tpl_vars['selected_payment_option']->value) {?>
+                                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Selected','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 
-              <?php } else { ?>
-                <button class="ps-hidden-by-js" type="submit" name="select_payment_option" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
+                            <?php } else { ?>
+                                <button class="ps-hidden-by-js" type="submit" name="select_payment_option" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
 ">
-                  <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Choose','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+                                    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Choose','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
-                </button>
-              <?php }?>
-            </form>
+                                </button>
+                            <?php }?>
+                        </form>
 
-            <label for="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
+                        <label for="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
 ">
-              <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['call_to_action_text'], ENT_QUOTES, 'UTF-8');?>
+                            <span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['call_to_action_text'], ENT_QUOTES, 'UTF-8');?>
 </span>
-              <?php if ($_smarty_tpl->tpl_vars['option']->value['logo']) {?>
-                <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['logo'], ENT_QUOTES, 'UTF-8');?>
+                            <?php if ($_smarty_tpl->tpl_vars['option']->value['logo']) {?>
+                                <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['logo'], ENT_QUOTES, 'UTF-8');?>
 ">
-              <?php }?>
-            </label>
+                            <?php }?>
+                        </label>
+                    </div>
+                </div>
 
-          </div>
-        </div>
-
-        <?php if ($_smarty_tpl->tpl_vars['option']->value['additionalInformation']) {?>
-          <div
-            id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
+                <?php if ($_smarty_tpl->tpl_vars['option']->value['additionalInformation']) {?>
+                    <div
+                        id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
 -additional-information"
-            class="js-additional-information definition-list additional-information<?php if ($_smarty_tpl->tpl_vars['option']->value['id'] != $_smarty_tpl->tpl_vars['selected_payment_option']->value) {?> ps-hidden <?php }?>"
-          >
-            <?php echo $_smarty_tpl->tpl_vars['option']->value['additionalInformation'];?>
+                        class="js-additional-information definition-list additional-information<?php if ($_smarty_tpl->tpl_vars['option']->value['id'] != $_smarty_tpl->tpl_vars['selected_payment_option']->value) {?> ps-hidden <?php }?>"
+                    >
+                        <?php echo $_smarty_tpl->tpl_vars['option']->value['additionalInformation'];?>
 
-          </div>
-        <?php }?>
+                    </div>
+                <?php }?>
 
-        <div
-          id="pay-with-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
+                <div
+                    id="pay-with-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
 -form"
-          class="js-payment-option-form <?php if ($_smarty_tpl->tpl_vars['option']->value['id'] != $_smarty_tpl->tpl_vars['selected_payment_option']->value) {?> ps-hidden <?php }?>"
-        >
-          <?php if ($_smarty_tpl->tpl_vars['option']->value['form']) {?>
-            <?php echo $_smarty_tpl->tpl_vars['option']->value['form'];?>
+                    class="js-payment-option-form <?php if ($_smarty_tpl->tpl_vars['option']->value['id'] != $_smarty_tpl->tpl_vars['selected_payment_option']->value) {?> ps-hidden <?php }?>"
+                >
+                    <?php if ($_smarty_tpl->tpl_vars['option']->value['form']) {?>
+                        <?php echo $_smarty_tpl->tpl_vars['option']->value['form'];?>
 
-          <?php } else { ?>
-            <form id="payment-form" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['option']->value['action'];?>
+                    <?php } else { ?>
+                        <form id="payment-form" method="POST" action="<?php echo $_smarty_tpl->tpl_vars['option']->value['action'];?>
 ">
-              <?php
+                            <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['option']->value['inputs'], 'input');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['input']->value) {
 ?>
-                <input type="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['input']->value['type'], ENT_QUOTES, 'UTF-8');?>
+                                <input type="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['input']->value['type'], ENT_QUOTES, 'UTF-8');?>
 " name="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['input']->value['name'], ENT_QUOTES, 'UTF-8');?>
 " value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['input']->value['value'], ENT_QUOTES, 'UTF-8');?>
 ">
-              <?php
+                            <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-              <button style="display:none" id="pay-with-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
+                            <button style="display:none" id="pay-with-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['option']->value['id'], ENT_QUOTES, 'UTF-8');?>
 " type="submit"></button>
-            </form>
-          <?php }?>
-        </div>
-      <?php
+                        </form>
+                    <?php }?>
+                </div>
+            <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-    <?php
+        <?php
 }
 } else {
 ?>
-      <p class="alert alert-danger"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Unfortunately, there are no payment method available.','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+            <p class="alert alert-danger"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Unfortunately, there are no payment method available.','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 </p>
-    <?php
+        <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-  </div>
+    </div>
 
-  <?php if (count($_smarty_tpl->tpl_vars['conditions_to_approve']->value)) {?>
-    <p class="ps-hidden-by-js">
-            <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'By confirming the order, you certify that you have read and agree with all of the conditions below:','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+    <?php if (count($_smarty_tpl->tpl_vars['conditions_to_approve']->value)) {?>
+        <p class="ps-hidden-by-js">
+                        <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'By confirming the order, you certify that you have read and agree with all of the conditions below:','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 
-    </p>
+        </p>
 
-    <form id="conditions-to-approve" method="GET">
-      <ul>
-        <?php
+        <form id="conditions-to-approve" method="GET">
+            <ul>
+                <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['conditions_to_approve']->value, 'condition', false, 'condition_name');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['condition_name']->value => $_smarty_tpl->tpl_vars['condition']->value) {
 ?>
-          <li>
-            <div class="pull-xs-left">
-              <span class="custom-checkbox">
-                <input  id    = "conditions_to_approve[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['condition_name']->value, ENT_QUOTES, 'UTF-8');?>
+                    <li>
+                        <div class="checkbox-group pull-xs-left">
+                            <div class="custom-checkbox">
+                                <input  id    = "conditions_to_approve[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['condition_name']->value, ENT_QUOTES, 'UTF-8');?>
 ]"
-                        name  = "conditions_to_approve[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['condition_name']->value, ENT_QUOTES, 'UTF-8');?>
+                                        name  = "conditions_to_approve[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['condition_name']->value, ENT_QUOTES, 'UTF-8');?>
 ]"
-                        required
-                        type  = "checkbox"
-                        value = "1"
-                        class = "ps-shown-by-js"
-                >
-              </span>
-            </div>
-            <div class="condition-label">
-              <label class="js-terms" for="conditions_to_approve[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['condition_name']->value, ENT_QUOTES, 'UTF-8');?>
+                                        required
+                                        type  = "checkbox"
+                                        value = "1"
+                                        class = "ps-shown-by-js"
+                                >
+                                <label>
+                                    <span class="check"></span>
+                                    <span class="box"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="condition-label">
+                            <label class="js-terms" for="conditions_to_approve[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['condition_name']->value, ENT_QUOTES, 'UTF-8');?>
 ]">
-                <?php echo $_smarty_tpl->tpl_vars['condition']->value;?>
+                                <?php echo $_smarty_tpl->tpl_vars['condition']->value;?>
 
-              </label>
-            </div>
-          </li>
-        <?php
+                            </label>
+                        </div>
+                    </li>
+                <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-      </ul>
-    </form>
-  <?php }?>
+            </ul>
+        </form>
+    <?php }?>
 
-  <?php if ($_smarty_tpl->tpl_vars['show_final_summary']->value) {?>
-    <?php $_smarty_tpl->_subTemplateRender('file:checkout/_partials/order-final-summary.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+    <?php if ($_smarty_tpl->tpl_vars['show_final_summary']->value) {?>
+        <?php $_smarty_tpl->_subTemplateRender('file:checkout/_partials/order-final-summary.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-  <?php }?>
+    <?php }?>
 
-  <div id="payment-confirmation">
-    <div class="ps-shown-by-js">
-      <button type="submit" <?php if (!$_smarty_tpl->tpl_vars['selected_payment_option']->value) {?> disabled <?php }?> class="btn-default active center-block">
-        <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Order with an obligation to pay','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+    <div id="payment-confirmation">
+        <div class="ps-shown-by-js">
+            <button type="submit" <?php if (!$_smarty_tpl->tpl_vars['selected_payment_option']->value) {?> disabled <?php }?> class="btn-default active center-block">
+                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Order with an obligation to pay','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 
-      </button>
-      <?php if ($_smarty_tpl->tpl_vars['show_final_summary']->value) {?>
-        <article class="alert alert-danger m-t-2 js-alert-payment-conditions" role="alert" data-alert="danger">
-          <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Please make sure you\'ve chosen a [1]payment method[/1] and accepted the [2]terms and conditions[/2].','sprintf'=>array('[1]'=>'<a href="#checkout-payment-step">','[/1]'=>'</a>','[2]'=>'<a href="#conditions-to-approve">','[/2]'=>'</a>'),'d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
+            </button>
+            <?php if ($_smarty_tpl->tpl_vars['show_final_summary']->value) {?>
+                <article class="alert alert-danger m-t-2 js-alert-payment-conditions" role="alert" data-alert="danger">
+                <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Please make sure you\'ve chosen a [1]payment method[/1] and accepted the [2]terms and conditions[/2].','sprintf'=>array('[1]'=>'<a href="#checkout-payment-step">','[/1]'=>'</a>','[2]'=>'<a href="#conditions-to-approve">','[/2]'=>'</a>'),'d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 
-        </article>
-      <?php }?>
-    </div>
-    <div class="ps-hidden-by-js">
-      <?php if ($_smarty_tpl->tpl_vars['selected_payment_option']->value && $_smarty_tpl->tpl_vars['all_conditions_approved']->value) {?>
-        <label for="pay-with-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['selected_payment_option']->value, ENT_QUOTES, 'UTF-8');?>
+                </article>
+            <?php }?>
+        </div>
+        <div class="ps-hidden-by-js">
+            <?php if ($_smarty_tpl->tpl_vars['selected_payment_option']->value && $_smarty_tpl->tpl_vars['all_conditions_approved']->value) {?>
+                <label for="pay-with-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['selected_payment_option']->value, ENT_QUOTES, 'UTF-8');?>
 "><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Order with an obligation to pay','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 </label>
-      <?php }?>
+            <?php }?>
+        </div>
     </div>
-  </div>
 
-  <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayPaymentByBinaries'),$_smarty_tpl ) );?>
+    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayPaymentByBinaries'),$_smarty_tpl ) );?>
 
 
-  <div class="modal fade" id="modal">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Close','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
-">
-          
-        </button>
-        <div class="js-modal-content"></div>
-      </div>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Close','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+"></button>
+                <div class="js-modal-content"></div>
+            </div>
+        </div>
     </div>
-  </div>
 <?php
 }
 }

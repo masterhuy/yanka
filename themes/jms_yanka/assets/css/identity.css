@@ -6,6 +6,9 @@
 	max-width: 370px;
 	margin: auto;
 }
+#identity #customer-form .radio-inline{
+	padding-left: 0;
+}
 #identity #customer-form .form-footer {
 	margin-top: 20px;
 }

@@ -202,11 +202,8 @@
                                 {/block}
                             </form>
                         {/block}
-                    </div>
-                    
+                    </div> 
                 </div>
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox_ld1s"></div>
 
                 <div class="guaranteed text-center p-relative">
                     <span>{l s='Guaranteed safe checkout' d='Shop.Theme.Catalog'}</span>
@@ -348,6 +345,8 @@
                     {/block}
                 </div>
 
+                <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+                <div class="addthis_inline_share_toolbox_lvar"></div>
                 
             </div>
         </div>

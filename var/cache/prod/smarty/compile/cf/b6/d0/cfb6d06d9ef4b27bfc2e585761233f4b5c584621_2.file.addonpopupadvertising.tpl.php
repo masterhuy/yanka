@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-02 03:57:40
+/* Smarty version 3.1.33, created on 2020-01-03 05:24:27
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0db084073fb4_89868861',
+  'unifunc' => 'content_5e0f165b921591_22596203',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0db084073fb4_89868861 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0f165b921591_22596203 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">
 		<div class="content">

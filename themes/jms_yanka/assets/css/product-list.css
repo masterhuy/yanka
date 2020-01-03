@@ -243,6 +243,25 @@
 #search_filters .custom-checkbox > input{
 	opacity: 0;	
 }
+#search_filters_wrapper .btn-close{
+	position: absolute;
+	top: 30px;
+	background: transparent;
+	border: 0;
+	font-size: 14px;
+	font-weight: 800;
+	color: #777;
+	display: flex;
+	align-items: center;
+}
+#search_filters_wrapper .btn-close svg{
+	color: #d0d0d0;
+	margin-right: 8px;
+}
+#search_filters_wrapper .btn-close:hover svg{
+	color: #48cab2;
+}
+
 #search_filters_wrapper #search_filters ul li{
 	line-height: 31px;
 	font-size: 16px;

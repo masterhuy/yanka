@@ -49,7 +49,7 @@
             {elseif $field.type === 'radio-buttons'}
                 {foreach from=$field.availableValues item="label" key="value"}
                     <label class="radio-inline">
-                        <span class="custom-radio">
+                        <div class="custom-radio radio">
                             <input
                                 name="{$field.name}"
                                 type="radio"
@@ -57,8 +57,10 @@
                                 {if $field.required}required{/if}
                                 {if $value eq $field.value} checked {/if}
                             >
-                            <span></span>
-                        </span>
+                            <span class="outer">
+                                <span class="inner"></span>
+                            </span>
+                        </div>
                         {$label}
                     </label>
                 {/foreach}

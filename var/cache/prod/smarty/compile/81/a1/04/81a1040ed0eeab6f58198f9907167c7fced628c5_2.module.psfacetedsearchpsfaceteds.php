@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-02 03:36:24
+/* Smarty version 3.1.33, created on 2020-01-03 05:22:55
   from 'module:psfacetedsearchpsfaceteds' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0dab882b0af9_45007758',
+  'unifunc' => 'content_5e0f15ff928232_90591907',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0dab882b0af9_45007758 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e0f15ff928232_90591907 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['listing']->value['rendered_facets'])) {?>
     <div id="search_filters_wrapper">
         <div id="search_filter_controls" class="hidden-md-up">

@@ -2499,7 +2499,7 @@
                 i = t.find(".js-qv-product-images");
             (0, a.default)(".js-thumb").on("click", function(t) {
                 (0, a.default)(".js-thumb").hasClass("selected") && (0, a.default)(".js-thumb").removeClass("selected"), (0, a.default)(t.currentTarget).addClass("selected"), (0, a.default)(".js-qv-product-cover").attr("src", (0, a.default)(t.target).data("image-large-src"))
-            }), i.find("li").length <= 4 ? n.hide() : n.on("click", function(t) {
+            }), i.find(".thumb-container.img").length <= 4 ? n.hide() : n.on("click", function(t) {
                 (0, a.default)(t.target).hasClass("arrow-up") && (0, a.default)(".js-qv-product-images").position().top < 0 ? (e("up"), (0, a.default)(".arrow-down").css("opacity", "1")) : (0, a.default)(t.target).hasClass("arrow-down") && i.position().top + i.height() > (0, a.default)(".js-qv-mask").height() && (e("down"), (0, a.default)(".arrow-up").css("opacity", "1"))
             }), t.find("#quantity_wanted").TouchSpin({
                 verticalbuttons: !0,
@@ -2566,7 +2566,7 @@
         }
 
         function e() {
-            (0, o.default)("#main .js-qv-product-images li").length > 2 ? ((0, o.default)("#main .js-qv-mask").addClass("scroll"), (0, o.default)(".scroll-box-arrows").addClass("scroll"), (0, o.default)("#main .js-qv-mask").scrollbox({
+            (0, o.default)("#main .pd-left-content .js-qv-product-images .thumb-container.img").length >= 6 ? ((0, o.default)("#main .js-qv-mask").addClass("scroll"), (0, o.default)(".scroll-box-arrows").addClass("scroll"), (0, o.default)("#main .js-qv-mask").scrollbox({
                 direction: "vertical",
                 distance: 100,
                 autoPlay: !1
@@ -2576,7 +2576,7 @@
                 (0, o.default)("#main .js-qv-mask").trigger("forward")
             })) : ((0, o.default)("#main .js-qv-mask").removeClass("scroll"), (0, o.default)(".scroll-box-arrows").removeClass("scroll")),
 
-            (0, o.default)("#main .thumb-horizontal .js-qv-product-images li").length > 2 ? ((0, o.default)("#main .thumb-horizontal .js-qv-mask").addClass("scroll"), (0, o.default)(".thumb-horizontal .scroll-box-arrows").addClass("scroll"), (0, o.default)("#main .thumb-horizontal .js-qv-mask").scrollbox({
+            (0, o.default)("#main .thumb-horizontal .pd-left-content .js-qv-product-images li").length > 6 ? ((0, o.default)("#main .thumb-horizontal .js-qv-mask").addClass("scroll"), (0, o.default)(".thumb-horizontal .scroll-box-arrows").addClass("scroll"), (0, o.default)("#main .thumb-horizontal .js-qv-mask").scrollbox({
                 direction: "h",
                 distance: 85,
                 autoPlay: !1

@@ -1186,6 +1186,7 @@ function closeLookbook(){
 
 function openFilter(){
 	$('body').on('click', '#search_filter_toggler', function () {
+		$("body").addClass("open-filter");
 		$('#left-column').addClass('show');
 		$('#right-column').addClass('show');
 	});
@@ -1193,6 +1194,12 @@ function openFilter(){
 
 function closeFilter(){
 	$('body').on('click', '#search_filters_wrapper .btn-close', function () {
+		$("body").removeClass("open-filter");
+		$('#left-column').removeClass('show');
+		$('#right-column').removeClass('show');
+	});
+	$(".main-site > .bg-overlay").click(function(){
+		$("body").removeClass("open-filter");
 		$('#left-column').removeClass('show');
 		$('#right-column').removeClass('show');
 	});
@@ -1300,6 +1307,12 @@ function toggleScrollTop(){
 	});
 }
 
+function categoryNoSidebar(){
+	if ($("#category #products").hasClass("listing-not-sidebar")){
+		$("body").addClass('category-no-sidebar')
+	}
+}
+
 $(window).resize(function(){
 	calcOwnControlProductModal();
 
@@ -1314,10 +1327,7 @@ $(window).resize(function(){
 
 
 $(document).ready(function() {	
-	var sticky = $('.product-detail.vertical .pb-right-column .main-content');
-	var galHeight = $('#gal1').innerHeight();
-	var mainContentHeight = sticky.innerHeight();
-
+	categoryNoSidebar();
 	setTimeoutPreloader();
 
 	toggleScrollTop()

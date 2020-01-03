@@ -2764,10 +2764,6 @@ ul.cart_block_list li:not(:last-child){
 .product-price {
   display: none;
 }
-.jms-videos {
-  z-index: 99999;
-  position: relative;}
-
 .popup{
   margin-top: -1px;
 }
