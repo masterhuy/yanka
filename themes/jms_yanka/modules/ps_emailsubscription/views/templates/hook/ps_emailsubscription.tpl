@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <!-- Block Newsletter module-->
-<div id="newsletter_block_left" class="block {if $msg}have-alert{/if}">	
+<div id="newsletter_block_left" class="block">	
 	<div class="block_content">
 		<div class="addon-title">
 			<h3>{l s='Subscribe to Our Newsletter!' d='Shop.Theme.Global'}</h3>

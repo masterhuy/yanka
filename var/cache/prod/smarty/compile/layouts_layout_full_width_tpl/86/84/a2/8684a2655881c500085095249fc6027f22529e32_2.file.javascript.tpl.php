@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-03 05:26:51
+/* Smarty version 3.1.33, created on 2020-01-06 04:22:32
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\_partials\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0f16eb194914_37446513',
+  'unifunc' => 'content_5e12fc58bfaea7_18658717',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8684a2655881c500085095249fc6027f22529e32' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\_partials\\javascript.tpl',
-      1 => 1577095891,
+      1 => 1578300250,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0f16eb194914_37446513 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e12fc58bfaea7_18658717 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['javascript']->value['external'], 'js');

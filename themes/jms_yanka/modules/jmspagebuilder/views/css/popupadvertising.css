@@ -21,10 +21,15 @@
   padding-right: 40px;
 }
 .jms-popup-content #newsletter_block_left .block_c_right .alert {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
+  border-radius: 0;
+  z-index: 9;
 }
 .jms-popup-content h2 {
   font-size: 24px;
@@ -62,13 +67,13 @@
   padding-bottom: 16px;
 }
 .jms-popup .jms-popup-content{
-  padding-top: 89px;
+  padding-top: 83px;
 }
 .jms-popup .jms-popup-content .addon-title{
-  padding-bottom: 16px;
+  padding-bottom: 6px;
 }
-.jms-popup #newsletter_block_left.have-alert{
-  padding-top: 20px;
+.jms-popup .jms-popup-content .news_content{
+  position: relative;
 }
 .jms-popup .addon-title span {
   font-size: 18px;
@@ -128,18 +133,16 @@
   display: inline-flex;
   justify-content: center;
   position: absolute;
-  top: 344px;
+  top: 338px;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
   white-space: nowrap;
 }
-.jms-popup-content #newsletter_block_left.have-alert ~ .dontshow{
-  top: 278px;
-}
 #dontshowagain {
   width: 20px;
   height: 20px;
+  min-width: 20px;
   position: relative;
   top: 7px;
   left: 0px;
@@ -191,7 +194,7 @@
   border-radius: 0;
   padding: 0;
   margin-bottom: 13px;
-  margin-top: 32px;
+  margin-top: 26px;
 }
 .jms-popup-content  .block_c_right .newsletter-input , .jms-popup-content .newsletter-btn.buttonh1{
     width: 100%;

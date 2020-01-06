@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-03 05:26:52
+/* Smarty version 3.1.33, created on 2020-01-06 04:25:00
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0f16ec99b985_62673189',
+  'unifunc' => 'content_5e12fcec0f0716_99751803',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1577701916,
+      1 => 1578276215,
       2 => 'module',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0f16ec99b985_62673189 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e12fcec0f0716_99751803 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
-<div id="newsletter_block_left" class="block <?php if ($_smarty_tpl->tpl_vars['msg']->value) {?>have-alert<?php }?>">	
+<div id="newsletter_block_left" class="block">	
 	<div class="block_content">
 		<div class="addon-title">
 			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe to Our Newsletter!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>

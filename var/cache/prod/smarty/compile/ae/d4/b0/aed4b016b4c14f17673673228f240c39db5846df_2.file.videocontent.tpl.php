@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-03 05:18:49
+/* Smarty version 3.1.33, created on 2020-01-06 04:03:05
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\modules\jmsproductvideo\views\templates\hook\videocontent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0f1509cc99a0_25575631',
+  'unifunc' => 'content_5e12f7c9267a61_25384443',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0f1509cc99a0_25575631 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e12f7c9267a61_25384443 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <style>
 	.jms-popup-wrap {

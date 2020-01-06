@@ -17,5 +17,5 @@ $(document).ready(function() {
     	} else {
 			menu.removeClass("fixed");
     	}
-    });
+	});
 })

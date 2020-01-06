@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-03 05:22:54
+/* Smarty version 3.1.33, created on 2020-01-06 04:24:58
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\_partials\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0f15fedb40b0_89714086',
+  'unifunc' => 'content_5e12fcea71e1e1_71148125',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0f15fedb40b0_89714086 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e12fcea71e1e1_71148125 (Smarty_Internal_Template $_smarty_tpl) {
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayTop'),$_smarty_tpl ) );?>
 
 <?php }
