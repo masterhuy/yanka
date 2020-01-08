@@ -189,6 +189,7 @@
 	}
 	.pt-item {
 		display: flex;
+		cursor: pointer;
 		svg path{
 			transition: .2s all;
 		}
@@ -276,10 +277,10 @@
 	}
 }
 .service{
-	padding: 69px 0 95px;
+	padding: 100px 0 90px;
 }
 #footer{
-	padding-top: 97px;
+	padding-top: 103px;
 	text-align: center;
 	.addon-title h3{
 		text-align: center;

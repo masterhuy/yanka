@@ -1052,6 +1052,10 @@ footer .post-created {
   margin-left: 15px;
   margin-right: 0;
 }
+.ver_menu .pt-icon {
+  margin-left: 5px;
+  margin-right: 0;
+}
 .preview.flexbox + .product-info .content_price {
   text-align: right;
   margin-right: 0;
@@ -1060,10 +1064,10 @@ footer .post-created {
   margin-left: 0.5px;
 }
 .jms-vermegamenu .nav > li > a {
-  display: flex;
+  text-align: right;
 }
-.jms-vermegamenu .nav > li a i{
-  padding-left: 15px;
+.jms-vermegamenu .nav > li a i {
+  padding-left: 9px;
   padding-right: 0;
 }
 .jms-vermegamenu .nav .fa {
@@ -1077,7 +1081,7 @@ footer .post-created {
   left: 20px;
 }
 .jms-vermegamenu .nav > li > a > .caret::after {
-  content: "\f111";
+  content: "\e904";
 }
 .jms-vermegamenu .dropdown-menu{
   right: calc(100% + 20px);
@@ -1863,6 +1867,9 @@ div.top_menu_second .jms-megamenu .item-fullwidth > .dropdown-menu {
 }
 #jms_ajax_search #ajax_search {
   background: #fff url("../img/icon/search-bg.png") no-repeat left;
+}
+.search-no-popup #jms_ajax_search #ajax_search{
+  background-position: left 9px;
 }
 .service i {
   margin-left: 15px;

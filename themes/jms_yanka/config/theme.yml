@@ -33,10 +33,6 @@ assets:
        path: assets/js/bootstrap.min.js
        priority: 2
        position: bottom
-     - id: elevatezoom
-       path: assets/js/jquery.elevatezoom.js
-       priority: 4
-       position: bottom
       
   # If you're using this theme as child and you want to load
   # the parent theme assets, uncomment this line.

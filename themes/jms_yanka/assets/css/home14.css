@@ -147,7 +147,8 @@
   .specification .pt-item {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    cursor: pointer; }
     .specification .pt-item svg path {
       -webkit-transition: .2s all;
       -o-transition: .2s all;
@@ -244,10 +245,10 @@
         width: 0; }
 
 .service {
-  padding: 69px 0 95px; }
+  padding: 100px 0 90px; }
 
 #footer {
-  padding-top: 97px;
+  padding-top: 103px;
   text-align: center; }
   #footer .addon-title h3 {
     text-align: center; }

@@ -1,5 +1,5 @@
 .header {
-  padding: 17px 0 0; }
+  padding: 22px 0 0; }
   .header .logo > span {
     padding-bottom: 0; }
 
@@ -45,7 +45,7 @@
 
 @media (min-width: 1200px) {
   .jms-row.header {
-    margin-bottom: -13px;
+    margin-bottom: -14px;
     display: inline-block;
     width: 100%; }
     .jms-row.header.fixed {

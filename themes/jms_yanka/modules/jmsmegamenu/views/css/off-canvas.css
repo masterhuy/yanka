@@ -60,6 +60,9 @@
     line-height: 48px;
     font-weight: 800;
 }
+#off-canvas-menu > ul > li > a:hover em{
+    color: #333;
+}
 #off-canvas-menu .dropdown-menu > li.group > a {
     font-size: 18px;
     color: #333;
@@ -191,17 +194,18 @@
 }
 #off-canvas-menu li > a em {
     position: absolute;
-    right: 20px;
+    right: 16px;
     top: 50%;
     transform: translateY(-50%);
+    font-weight: 800;
+    color: #D0D0D0;
 }
 #off-canvas-menu li > a em.fa-angle-down::before{
     font-family: 'yanka';
     font-size: 16px;
     line-height: 1;
-    content: "\e903";
+    content: "\e905";
     top: 15px;
-    color: #D0D0D0;
 }
 #off-canvas-menu li > a em.fa-angle-up::before{
     font-family: 'yanka';
@@ -209,7 +213,6 @@
     line-height: 1;
     content: "\e902";
     top: 15px;
-    color: #D0D0D0;
 }
 #off-canvas-menu .v-hidden{
     display: none;

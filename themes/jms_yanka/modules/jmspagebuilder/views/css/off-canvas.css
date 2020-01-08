@@ -72,12 +72,12 @@
     transition: all .4s;
     width: 315px;
     height: 100%;
-    box-shadow: 0 2px 11px rgba(0, 0, 0, 0.5);
     z-index: 999999;
 }
 /* Shown menu */
 .show-menu .menu-wrap {
 	transform: translate3d(0, 0, 0);
+	box-shadow: 0 2px 11px rgba(0, 0, 0, 0.5);
 }
 .show-menu .menu-wrap + .bg-overlay-canvas{
 	opacity: 1;

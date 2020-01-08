@@ -1313,6 +1313,22 @@ function categoryNoSidebar(){
 	}
 }
 
+function imageParallaxAboutus(){
+	let imageUp = document.getElementsByClassName('js-up');
+	new simpleParallax(imageUp, {
+		orientation: 'up',
+		overflow: 'true',
+		transition: 'cubic-bezier(0,0,0,1)'
+	});
+
+	let imageDown = document.getElementsByClassName('js-down');
+	new simpleParallax(imageDown, {
+		orientation: 'down',
+		overflow: 'true',
+		transition: 'cubic-bezier(0,0,0,1)'
+	});
+}
+
 $(window).resize(function(){
 	calcOwnControlProductModal();
 
@@ -1324,9 +1340,10 @@ $(window).resize(function(){
 	calcHeightVideo();
 });
 
-
-
 $(document).ready(function() {	
+	
+	imageParallaxAboutus()
+
 	categoryNoSidebar();
 	setTimeoutPreloader();
 

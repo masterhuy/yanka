@@ -18,6 +18,9 @@
 	overflow: hidden;
 	margin: 0 8px;
 }
+.fs-pager-wrapper span:hover{
+	background: #333;
+}
 .fs-pager-wrapper .active span {
 	background: #333;
 	width: 30px;

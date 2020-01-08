@@ -356,8 +356,15 @@
 	.banner-type-1 {
 		margin-bottom: 50px;
 	}
-	.jms-row.alert-box .alert {
-		font-size: 17px;
+	.jms-row.alert-box{
+		.alert {
+			font-size: 17px;
+			padding: 12px 25px;
+			line-height: 23px;
+		}
+		.more-details::before{
+			bottom: 2px;
+		}
 	}
 	.special-offer {
 		margin-top: 40px;

@@ -71,11 +71,14 @@
 	right: -35px;
 }
 .owl-dot > span {
-	background: #e0e0e0;
+	background-color: #e0e0e0;
 	display: inline-block;
 	height: 4px;
 	cursor: pointer;
 	width: 16px;
+}
+.owl-dot > span:hover{
+	background-color: #333;
 }
 .owl-dots {
 	width: 100%;

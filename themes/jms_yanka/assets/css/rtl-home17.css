@@ -1,0 +1,33 @@
+.menu .buy-theme p {
+	text-align: left;
+	padding-left: 23px;
+	padding-right: 0;
+}
+.jms-megamenu .nav > li.sub-home {
+	padding-right: 0;
+	padding-left: 12px;
+}
+body#index.rtl .jms-megamenu .nav > li.sub-home > a {
+	color: #fff;
+}
+body#index.rtl .jms-row.menu.fixed .jms-megamenu .nav > li.sub-home > a {
+	color: #333;
+}
+@media (min-width: 1200px){
+	.jms-row.header.fixed {
+		right: auto;
+		left: calc((100% - 1170px)/2);
+		margin-left: -15px;
+		margin-right: 0;
+	}
+	.jms-row.menu.fixed .jms-megamenu .nav > li.sub-home {
+		padding-right: 0;
+		padding-left: 12px;
+	}
+}
+@media (max-width: 1199px){
+	.jms-row.menu {
+		left: auto;
+		right: 20px;;
+	}
+}

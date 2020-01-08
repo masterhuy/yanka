@@ -82,11 +82,21 @@
   .pt-parallax-02 .pt-img {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%; }
     .pt-parallax-02 .pt-img .pt-item {
       width: 50%; }
       .pt-parallax-02 .pt-img .pt-item img {
-        width: 100%; }
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1; }
       .pt-parallax-02 .pt-img .pt-item:first-child {
         padding-right: 15px; }
       .pt-parallax-02 .pt-img .pt-item:last-child {
@@ -98,7 +108,8 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    z-index: 2; }
     .pt-parallax-02 .pt-description .pt-title-01 {
       color: #333;
       font-size: 18px;

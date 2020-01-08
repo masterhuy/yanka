@@ -43,7 +43,7 @@
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>
 					<a title="{$currency.name}" rel="nofollow" href="{$currency.url}" class="collapse-item">
-						<b>{$currency.sign}</b> {$currency.iso_code}
+						{$currency.sign} {$currency.iso_code}
 					</a>
 				</li>
 			{/foreach}
@@ -60,7 +60,7 @@
 			{foreach from=$currencies item=currency}
 				<li {if $currency.current} class="current" {/if}>
 					<a title="{$currency.name}" rel="nofollow" href="{$currency.url}" class="collapse-item">
-						<b>{$currency.sign}</b> {$currency.iso_code}
+						{$currency.sign} {$currency.iso_code}
 					</a>
 				</li>
 			{/foreach}

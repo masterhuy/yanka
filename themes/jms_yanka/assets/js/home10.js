@@ -10,6 +10,8 @@
 */
 $(document).ready(function() {
 	var menu = $(".jms-row.menu");
+	var imageUp = document.getElementsByClassName('js-init-parallax-up');
+	var imageDown = document.getElementsByClassName('js-init-parallax-down');
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 180){
@@ -18,4 +20,22 @@ $(document).ready(function() {
 			menu.removeClass("fixed");
     	}
 	});
-})
+
+	if (imageUp.length && imageDown.length){
+		initParallax();
+	};
+
+	function initParallax(){
+		new simpleParallax(imageUp, {
+			orientation: 'up',
+			overflow: 'true'
+		});
+	
+		new simpleParallax(imageDown, {
+			orientation: 'down',
+			overflow: 'true'
+		});
+	};
+
+});
+

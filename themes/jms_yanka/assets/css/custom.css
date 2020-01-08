@@ -1687,11 +1687,6 @@ table td[class*="col-"], table table th[class*="col-"] {
   line-height: 44px;
   background: #48CAB2;
   font-weight: 800;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
 }
 .btn-default.disabled,
 .btn-default[disabled] {
@@ -5562,12 +5557,14 @@ footer .blog-carousel {
 
 a,
 button,
+.btn-default,
 .top_menu_second,
 .main-site,
 .back-to-top,
 .button-search,
 .wishlist_top i,
 .cart-icon i,
+.owl-dot > span,
 .jms-banner,
 .promobox__border,
 .arrows.js-arrows i,
@@ -5577,12 +5574,13 @@ button,
 #jms_ajax_search .btn-search i,
 .right-icon-group .addon-box a svg,
 .fs-pager-wrapper span,
+#off-canvas-menu > ul > li > a em,
 #jms-vermegamenu-container,
 #search_filters_wrapper #search_filters ul li,
 .images-container .product-images > li.thumb-container > .thumb{
-  transition: all 400ms;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -ms-transition: all 400ms;
-  -o-transition: all 400ms;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
 }

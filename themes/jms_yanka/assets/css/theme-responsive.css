@@ -25,6 +25,9 @@
 }
 }
 @media (max-width: 1199px){
+	.hidden-md-down {
+		display: none !important;
+	}
 	#jms-vermegamenu-container{
 		max-width: 220px;
 	}
