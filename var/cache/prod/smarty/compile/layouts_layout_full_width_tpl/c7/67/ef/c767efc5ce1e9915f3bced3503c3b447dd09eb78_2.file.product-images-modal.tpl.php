@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-08 04:05:34
+/* Smarty version 3.1.33, created on 2020-01-09 01:36:27
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-images-modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e159b5e437d48_78643954',
+  'unifunc' => 'content_5e16c9eb2c1e46_70282672',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e159b5e437d48_78643954 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e16c9eb2c1e46_70282672 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal fade js-product-images-modal" id="product-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

@@ -95,7 +95,7 @@
   -ms-flex-align: center;
   align-items: center; }
   .header .megamenu .addon-box:first-child {
-    margin-right: 27px; }
+    margin-right: 28px; }
 
 .banner-type-1 {
   margin-top: 10px;
@@ -188,7 +188,8 @@
       visibility: hidden; }
     .banner-type-1 .banner-content .btn-default {
       margin-top: 24px;
-      padding: 0 20px; }
+      padding-left: 20px;
+      padding-right: 20px; }
 
 .banner-type-2 {
   margin-top: 93px; }

@@ -29,6 +29,15 @@
 	padding-top:10px;
 	margin-right:30px !important;
 	padding-left: 0;
+	display: inline-flex;
+	align-items: center;
+}
+.tab-content .form-control-valign .radio-inline .custom-radio{
+	margin-right: 10px !important;
+}
+.tab-content .form-control-valign .radio-inline .custom-radio .outer{
+	margin-top: 0;
+	top: 4px;
 }
 footer.form-footer.clearfix {
     margin-top: 20px;

@@ -93,6 +93,9 @@
 //
 
 //popup adv
+.jms-row.popup-adv{
+	margin-top: -1px;
+}
 .jms-popup{
 	.row{
 		margin: 0;
@@ -926,6 +929,10 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 	        width: 30px;
 	        height: 30px;
 	        color: #ff0000;
+	        transition: .2s all;
+	        &:hover{
+	        	color: #333;
+	        }
 	    }
 		span{
 			display: block;
@@ -1418,6 +1425,9 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 	.select-title{
 		display: inline-flex;
 		align-items: center;
+		&:hover span{
+			color: $active;
+		}
 		span {
 			cursor: pointer;
 			line-height: 25px;
@@ -2514,6 +2524,9 @@ body.open-filter{
 			&.active span{
 				border-color: #333;
 			}
+			&:hover span{
+				border-color: #333;
+			}
 			&.two-column{
 				margin-right: 4px;
 				span{
@@ -2533,6 +2546,9 @@ body.open-filter{
 		.view-list{
 			margin-left: 4px;
 			&.active span{
+				background-color: #333;
+			}
+			&:hover span{
 				background-color: #333;
 			}
 			span{
@@ -3352,9 +3368,10 @@ body.open-filter{
 				    align-items: center;
 				    justify-content: center;
 				    border: 1px solid #ebebeb;
+				    transition: .2s all;
 				    z-index: 0;
 				}
-				&:checked + span{
+				&:checked + span, &:hover + span{
 				    position: relative;
 				    border: 2px solid #333;
 				}
@@ -6213,7 +6230,7 @@ body.open-filter{
 		width: 350px;
 	}
 	div.pd-left-content {
-		margin-right: 0;
+		margin-right: 0 !important;
 	}
 	#product.sidebar #wrapper #right-column {
 		padding-left: 20px;

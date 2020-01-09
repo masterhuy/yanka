@@ -71,6 +71,9 @@
 	font-weight: 800;
 	color: #333;
 }
+#search_filters .facet-title:hover{
+	color: #48CAB2;
+}
 #search_filters .facet .facet-title > i,
 .block-categories .title-block h3 > i{
 	-ms-transform: rotate(180deg); 
@@ -106,6 +109,7 @@
 }
 .filters-panel .right {
 	text-align:right;
+	padding-top: 2px;
 }
 .filters-panel .product-sort .dropdown-menu {
 	border-radius:0;
@@ -342,11 +346,13 @@
 	width: 100%;
 	left: 0;
 	padding: 0;
-}
-#category #content-wrapper, 
+} 
 #category #left-column, 
 #category #right-column {
 	padding-top: 85px;
+}
+#category #content-wrapper{
+	padding-top: 80px;
 }
 #category #wrapper > .container{
 	padding: 0 20px;
@@ -383,7 +389,8 @@
 #search_filters .facet.Size ul li {
 	display: inline-block;
 }
-#search_filters .facet.Size .facet-label.active a{
+#search_filters .facet.Size .facet-label.active a,
+#search_filters .facet.Size .facet-label a:hover{
 	border: 2px solid #333;
 	color: #333 !important;
 }
@@ -426,26 +433,32 @@
 	align-items: center;
 	border: 0;
 }
-#category .facet.Color ul li .custom-checkbox input:checked ~ .color::after {
+#category .facet.Color ul li .custom-checkbox input ~ .color::after{
 	content: "";
 	display: block;
 	position: absolute;
+	opacity: 0;
 	top: -2px;
 	left: -2px;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
 	outline: none;
 	border-radius: 50%;
-	-webkit-transition: all 0.12s linear;
-	transition: all 0.12s linear;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	border: 3px solid #ffffff;
+	-webkit-transition: all 0.12s linear;
+	transition: all 0.12s linear;
 }
-#category .facet.Color ul li .custom-checkbox input:checked ~ .color::before{
+#category .facet.Color ul li .custom-checkbox input:checked ~ .color::after,
+#category .facet.Color ul li .custom-checkbox:hover input ~ .color::after {
+	opacity: 1;
+}
+#category .facet.Color ul li .custom-checkbox input ~ .color::before{
 	content: "";
 	display: block;
 	position: absolute;
+	opacity: 0;
 	top: -4px;
 	left: -4px;
 	width: calc(100% + 8px);
@@ -454,9 +467,13 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	border-radius: 50%;
+	border: 2px solid #333333;
 	-webkit-transition: all 0.12s linear;
 	transition: all 0.12s linear;
-	border: 2px solid #333333;
+}
+#category .facet.Color ul li .custom-checkbox input:checked ~ .color::before,
+#category .facet.Color ul li .custom-checkbox:hover input ~ .color::before{
+	opacity: 1;
 }
 #category .facet >.flex-box {
 	width: 100%;

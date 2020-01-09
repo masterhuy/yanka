@@ -1111,6 +1111,39 @@ jQuery(function ($) {
 			loop: true
 		});
 	}
+
+	if($(".image-mobile-carousel").length) {
+		var imageMobileCarousel = $(".image-mobile-carousel");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;		
+		imageMobileCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:1
+					},
+				991:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				481:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: true,
+			dots: false,
+			autoplay: false,
+			slideSpeed: 200,
+			loop: true
+		});
+	}
 	
 });
 

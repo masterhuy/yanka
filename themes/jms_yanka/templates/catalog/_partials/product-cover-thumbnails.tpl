@@ -64,4 +64,20 @@
         </div>
     {/block}
 </div>
+<div class="images-mobile">
+    <div class="image-mobile-carousel">	
+		{foreach from=$product.images item=image}
+            <img
+                class="thumb js-thumb w-100{if $image.id_image == $product.cover.id_image} selected {/if}"
+                data-image-medium-src="{$image.bySize.medium_default.url}"
+                data-image-large-src="{$image.bySize.large_default.url}"
+                src="{$image.bySize.large_default.url}"
+                alt="{$image.legend}"
+                title="{$image.legend}"
+                width="100"
+                itemprop="image"
+            />
+        {/foreach}
+	</div>
+</div>
 {hook h='displayAfterProductThumbs'}

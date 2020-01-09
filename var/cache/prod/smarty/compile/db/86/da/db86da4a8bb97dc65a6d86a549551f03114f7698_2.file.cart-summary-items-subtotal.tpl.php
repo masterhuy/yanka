@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-30 20:50:19
+/* Smarty version 3.1.33, created on 2020-01-08 22:49:18
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-summary-items-subtotal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e0aa95b36def4_67257397',
+  'unifunc' => 'content_5e16a2beb13220_46048800',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e0aa95b36def4_67257397 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e16a2beb13220_46048800 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="card-block cart-summary-line cart-summary-items-subtotal clearfix" id="items-subtotal">
   <span class="label"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['summary_string'], ENT_QUOTES, 'UTF-8');?>
 </span>

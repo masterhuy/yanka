@@ -1682,9 +1682,10 @@ table td[class*="col-"], table table th[class*="col-"] {
   border: 0;
   letter-spacing: 0.5px;
   padding: 0px 28px;
+  padding-top: 1px;
   text-transform: uppercase;
   justify-content: center;
-  line-height: 44px;
+  line-height: 43px;
   background: #48CAB2;
   font-weight: 800;
 }
@@ -5563,14 +5564,17 @@ button,
 .back-to-top,
 .button-search,
 .wishlist_top i,
+.title-block h3,
 .cart-icon i,
 .owl-dot > span,
 .jms-banner,
+.products-sort-order .select-title span,
 .promobox__border,
 .arrows.js-arrows i,
 .scroll-box-arrows i,
 .popup-customer-services,
 #search-form,
+#search_filters .facet-title,
 #jms_ajax_search .btn-search i,
 .right-icon-group .addon-box a svg,
 .fs-pager-wrapper span,

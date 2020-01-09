@@ -6,6 +6,23 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Security announcement: your store may be vulnerable to malware. Here is what you need to do</title>
+    <link>https://www.prestashop.com/en/security-announcement-your-store-vulnerable-malware</link>
+    <description>Dear PrestaShop user,
+On January 2nd, a malware named XsamXadoo Bot was discovered.This malware can be used to have access to an online store and take control of it.</description>
+     <pubDate>Tue, 07 Jan 2020 18:36:49 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/security-announcement-your-store-vulnerable-malware</guid>
+  </item>
+  <item>
+    <title>The PrestaShop year 2019 in numbers</title>
+    <link>https://www.prestashop.com/en/blog/prestashop-year-2019-in-numbers</link>
+    <description>2020 has just begun and this is a very special year to come for PrestaShop.</description>
+     <pubDate>Tue, 07 Jan 2020 16:32:09 +0100</pubDate>
+ <dc:creator>PrestaShop Team</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prestashop-year-2019-in-numbers</guid>
+  </item>
+  <item>
     <title>Five steps to create your customer persona</title>
     <link>https://www.prestashop.com/en/blog/five-steps-create-customer-persona</link>
     <description>When we create a customer persona, we create a vivid impression of an imaginary member of our target demographic.</description>
@@ -68,22 +85,6 @@
      <pubDate>Mon, 25 Nov 2019 12:08:22 +0100</pubDate>
  <dc:creator>Invertus</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/four-tips-better-creative-content-facebook-ads</guid>
-  </item>
-  <item>
-    <title>Five tips to create an optimized product page</title>
-    <link>https://www.prestashop.com/en/blog/five-tips-to-create-an-optimized-product-page</link>
-    <description>To buy or not to buy? That is the question, when it comes to the success of your PrestaShop eCommerce shop!</description>
-     <pubDate>Fri, 22 Nov 2019 11:33:18 +0100</pubDate>
- <dc:creator>Teapot</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/five-tips-to-create-an-optimized-product-page</guid>
-  </item>
-  <item>
-    <title>The Impact of Free Shipping</title>
-    <link>https://www.prestashop.com/en/blog/the-impact-of-free-shipping</link>
-    <description>As consumers gain access to new technologies like click and collect, grocery delivery apps, and Amazon Prime, their perception of retail shifts drastically.</description>
-     <pubDate>Mon, 18 Nov 2019 16:11:29 +0100</pubDate>
- <dc:creator>James Messer</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/the-impact-of-free-shipping</guid>
   </item>
   </channel>
 </rss>
