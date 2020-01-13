@@ -38,7 +38,7 @@
 	}
 	#jms-vermegamenu-container{
 		max-width: 100%;
-		padding: 7px 0 17px;
+		padding: 6px 0 18px;
 	}
 	.vermegamenu .addon-box{
 		position: relative;
@@ -114,7 +114,7 @@
 			line-height: 1.2;
 			position: relative;
 			display: inline-block;
-			@include underline(1, #fff, 2)
+			@include underline(-1, #fff, 2)
 		}
 		.text-2{
 			font-size: 24px;
@@ -226,6 +226,9 @@
 					display: none;
 				}
 			}
+		}
+		.container > .row .layout-column.right-module-header {
+		    top: 0;
 		}
 	}
 	.jms-row.menu.fixed{

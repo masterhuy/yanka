@@ -270,26 +270,11 @@
 #cms.page-cms .jms-megamenu .nav > li.sub-page,
 #module-jmsblog-category .jms-megamenu .nav > li.sub-blog,
 #category.category-women .jms-megamenu .nav > li.sub-women,
-#category.category-men .jms-megamenu .nav > li.sub-men,
-body.rtl .jms-megamenu .nav > li.sub-rtl{
+#category.category-men .jms-megamenu .nav > li.sub-men{
 	> a{
 		color: $active;
 		&::before{
 			width: 100%;
-		}
-	}
-}
-body#index.rtl .jms-megamenu .nav > li.sub-home{
-	> a{
-		color: #333;
-		&:hover{
-			color: $active;
-			&::before{
-				width: 100%;
-			}
-		}
-		&::before{
-			width: 0;
 		}
 	}
 }
@@ -299,8 +284,7 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 	&#cms.page-cms .jms-megamenu .nav > li.sub-page,
 	&#module-jmsblog-category .jms-megamenu .nav > li.sub-blog,
 	&#category.category-women .jms-megamenu .nav > li.sub-women,
-	&#category.category-men .jms-megamenu .nav > li.sub-men,
-	&.rtl .jms-megamenu .nav > li.sub-rtl{
+	&#category.category-men .jms-megamenu .nav > li.sub-men{
 		background-color: $active;
 		> a{
 			color: #fff;
@@ -316,8 +300,7 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 	&#cms.page-cms .menu.fixed .jms-megamenu .nav > li.sub-page,
 	&#module-jmsblog-category .menu.fixed .jms-megamenu .nav > li.sub-blog,
 	&#category.category-women .menu.fixed .jms-megamenu .nav > li.sub-women,
-	&#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men,
-	&.rtl .menu.fixed .jms-megamenu .nav > li.sub-rtl{
+	&#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men{
 		background-color: transparent;
 		> a{
 			color: $active;
@@ -327,35 +310,6 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 		}
 	}
 }
-.home_13#index.rtl{
-	.menu.fixed{
-		.jms-megamenu .nav > li.sub-home{
-			&.open{
-				background-color: transparent;
-			}
-			> a{
-				color: #333;
-				&:hover{
-					color: $active;
-				}
-			}
-		}
-	}
-	.jms-megamenu .nav > li.sub-home{
-		background-color: transparent;
-		&.open{
-			background-color: $active;
-		}
-		> a{
-			color: #fff;
-			&:hover{
-				color: $active;
-			}
-		}
-	}
-}
-
-
 
 .sub-women{
 	.sub-product-carousel{
@@ -2002,18 +1956,33 @@ body#index.rtl .jms-megamenu .nav > li.sub-home{
 		padding: 0 15px;
 	}
 	#main{
+		padding-right: 30px;
 		&::after{
 			content: "";
 			position: absolute;
 			top: 0;
-			right: -15px;
+			right: 0;
 			width: 1px;
 			height: 100%;
 			background: #ebebeb;
 		}
 	}
 	#right-column{
-		padding-left: 30px;
+		#special-products{
+			margin-top: 36px;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+	#left-column{
+		+ #content-wrapper #main{
+			padding-left: 30px;
+			&::after{
+				left: 0;
+				right: auto;
+			}
+		}
 		#special-products{
 			margin-top: 36px;
 			margin-bottom: 0;
@@ -3093,6 +3062,7 @@ body.open-filter{
 	}
 	.content_price{
 		margin-left: 0;
+		margin-bottom: 6px;
 		.price.old{
 			font-size: 24px;
 			display: inline-block;
@@ -5037,9 +5007,9 @@ body.open-filter{
 .ver_menu {
 	background: $active;
 	color: #fff;
-	line-height: 40px;
+	line-height: 39px;
 	margin-bottom: 0;
-	padding: 0 15px;
+	padding: 1px 15px 0;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 800;
@@ -5608,6 +5578,22 @@ body.open-filter{
 		.bottom-text {
 			font-size: 16px;
 			color: #333;
+		}
+	}
+}
+//
+
+//block reassurance
+#block-reassurance{
+	.block-reassurance-item{
+		cursor: pointer;
+		&:hover span.h6{
+			&::before{
+				width: 100%;
+			}
+		}
+		span.h6{
+			@include underline(-2, #333, 2)
 		}
 	}
 }

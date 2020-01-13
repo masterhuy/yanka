@@ -1362,6 +1362,13 @@ function imageParallaxAboutus(){
 	});
 }
 
+function fixLinkComment(){
+	$(".additional-links .link-comment").click(function(){
+		$("#review").addClass("in");
+		$(".reviews .panel-title a").removeClass("collapsed")
+	});
+}
+
 $(window).resize(function(){
 	calcOwnControlProductModal();
 
@@ -1375,7 +1382,9 @@ $(window).resize(function(){
 
 $(document).ready(function() {	
 	
-	imageParallaxAboutus()
+	fixLinkComment();
+	
+	imageParallaxAboutus();
 
 	categoryNoSidebar();
 	setTimeoutPreloader();

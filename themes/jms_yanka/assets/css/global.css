@@ -215,50 +215,36 @@
 #cms.page-cms .jms-megamenu .nav > li.sub-page > a,
 #module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a,
 #category.category-women .jms-megamenu .nav > li.sub-women > a,
-#category.category-men .jms-megamenu .nav > li.sub-men > a,
-body.rtl .jms-megamenu .nav > li.sub-rtl > a {
+#category.category-men .jms-megamenu .nav > li.sub-men > a {
   color: #48CAB2; }
   #index .jms-megamenu .nav > li.sub-home > a::before,
   #category.category-shop .jms-megamenu .nav > li.sub-shop > a::before,
   #cms.page-cms .jms-megamenu .nav > li.sub-page > a::before,
   #module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a::before,
   #category.category-women .jms-megamenu .nav > li.sub-women > a::before,
-  #category.category-men .jms-megamenu .nav > li.sub-men > a::before,
-  body.rtl .jms-megamenu .nav > li.sub-rtl > a::before {
+  #category.category-men .jms-megamenu .nav > li.sub-men > a::before {
     width: 100%; }
-
-body#index.rtl .jms-megamenu .nav > li.sub-home > a {
-  color: #333; }
-  body#index.rtl .jms-megamenu .nav > li.sub-home > a:hover {
-    color: #48CAB2; }
-    body#index.rtl .jms-megamenu .nav > li.sub-home > a:hover::before {
-      width: 100%; }
-  body#index.rtl .jms-megamenu .nav > li.sub-home > a::before {
-    width: 0; }
 
 .home_13#index .jms-megamenu .nav > li.sub-home,
 .home_13#category.category-shop .jms-megamenu .nav > li.sub-shop,
 .home_13#cms.page-cms .jms-megamenu .nav > li.sub-page,
 .home_13#module-jmsblog-category .jms-megamenu .nav > li.sub-blog,
 .home_13#category.category-women .jms-megamenu .nav > li.sub-women,
-.home_13#category.category-men .jms-megamenu .nav > li.sub-men,
-.home_13.rtl .jms-megamenu .nav > li.sub-rtl {
+.home_13#category.category-men .jms-megamenu .nav > li.sub-men {
   background-color: #48CAB2; }
   .home_13#index .jms-megamenu .nav > li.sub-home > a,
   .home_13#category.category-shop .jms-megamenu .nav > li.sub-shop > a,
   .home_13#cms.page-cms .jms-megamenu .nav > li.sub-page > a,
   .home_13#module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a,
   .home_13#category.category-women .jms-megamenu .nav > li.sub-women > a,
-  .home_13#category.category-men .jms-megamenu .nav > li.sub-men > a,
-  .home_13.rtl .jms-megamenu .nav > li.sub-rtl > a {
+  .home_13#category.category-men .jms-megamenu .nav > li.sub-men > a {
     color: #fff; }
     .home_13#index .jms-megamenu .nav > li.sub-home > a::before,
     .home_13#category.category-shop .jms-megamenu .nav > li.sub-shop > a::before,
     .home_13#cms.page-cms .jms-megamenu .nav > li.sub-page > a::before,
     .home_13#module-jmsblog-category .jms-megamenu .nav > li.sub-blog > a::before,
     .home_13#category.category-women .jms-megamenu .nav > li.sub-women > a::before,
-    .home_13#category.category-men .jms-megamenu .nav > li.sub-men > a::before,
-    .home_13.rtl .jms-megamenu .nav > li.sub-rtl > a::before {
+    .home_13#category.category-men .jms-megamenu .nav > li.sub-men > a::before {
       opacity: 0; }
 
 .home_13#index .menu.fixed .jms-megamenu .nav > li.sub-home,
@@ -266,42 +252,22 @@ body#index.rtl .jms-megamenu .nav > li.sub-home > a {
 .home_13#cms.page-cms .menu.fixed .jms-megamenu .nav > li.sub-page,
 .home_13#module-jmsblog-category .menu.fixed .jms-megamenu .nav > li.sub-blog,
 .home_13#category.category-women .menu.fixed .jms-megamenu .nav > li.sub-women,
-.home_13#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men,
-.home_13.rtl .menu.fixed .jms-megamenu .nav > li.sub-rtl {
+.home_13#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men {
   background-color: transparent; }
   .home_13#index .menu.fixed .jms-megamenu .nav > li.sub-home > a,
   .home_13#category.category-shop .menu.fixed .jms-megamenu .nav > li.sub-shop > a,
   .home_13#cms.page-cms .menu.fixed .jms-megamenu .nav > li.sub-page > a,
   .home_13#module-jmsblog-category .menu.fixed .jms-megamenu .nav > li.sub-blog > a,
   .home_13#category.category-women .menu.fixed .jms-megamenu .nav > li.sub-women > a,
-  .home_13#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men > a,
-  .home_13.rtl .menu.fixed .jms-megamenu .nav > li.sub-rtl > a {
+  .home_13#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men > a {
     color: #48CAB2; }
     .home_13#index .menu.fixed .jms-megamenu .nav > li.sub-home > a::before,
     .home_13#category.category-shop .menu.fixed .jms-megamenu .nav > li.sub-shop > a::before,
     .home_13#cms.page-cms .menu.fixed .jms-megamenu .nav > li.sub-page > a::before,
     .home_13#module-jmsblog-category .menu.fixed .jms-megamenu .nav > li.sub-blog > a::before,
     .home_13#category.category-women .menu.fixed .jms-megamenu .nav > li.sub-women > a::before,
-    .home_13#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men > a::before,
-    .home_13.rtl .menu.fixed .jms-megamenu .nav > li.sub-rtl > a::before {
+    .home_13#category.category-men .menu.fixed .jms-megamenu .nav > li.sub-men > a::before {
       opacity: 1; }
-
-.home_13#index.rtl .menu.fixed .jms-megamenu .nav > li.sub-home.open {
-  background-color: transparent; }
-
-.home_13#index.rtl .menu.fixed .jms-megamenu .nav > li.sub-home > a {
-  color: #333; }
-  .home_13#index.rtl .menu.fixed .jms-megamenu .nav > li.sub-home > a:hover {
-    color: #48CAB2; }
-
-.home_13#index.rtl .jms-megamenu .nav > li.sub-home {
-  background-color: transparent; }
-  .home_13#index.rtl .jms-megamenu .nav > li.sub-home.open {
-    background-color: #48CAB2; }
-  .home_13#index.rtl .jms-megamenu .nav > li.sub-home > a {
-    color: #fff; }
-    .home_13#index.rtl .jms-megamenu .nav > li.sub-home > a:hover {
-      color: #48CAB2; }
 
 .sub-women .sub-product-carousel .owl-theme .owl-controls {
   position: absolute;
@@ -1716,22 +1682,34 @@ body#index.rtl .jms-megamenu .nav > li.sub-home > a {
   max-width: 1200px;
   padding: 0 15px; }
 
-#product.sidebar #wrapper #main::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -15px;
-  width: 1px;
-  height: 100%;
-  background: #ebebeb; }
+#product.sidebar #wrapper #main {
+  padding-right: 30px; }
+  #product.sidebar #wrapper #main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #ebebeb; }
 
-#product.sidebar #wrapper #right-column {
+#product.sidebar #wrapper #right-column #special-products {
+  margin-top: 36px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0; }
+
+#product.sidebar #wrapper #left-column + #content-wrapper #main {
   padding-left: 30px; }
-  #product.sidebar #wrapper #right-column #special-products {
-    margin-top: 36px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: 0; }
+  #product.sidebar #wrapper #left-column + #content-wrapper #main::after {
+    left: 0;
+    right: auto; }
+
+#product.sidebar #wrapper #left-column #special-products {
+  margin-top: 36px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0; }
 
 .product-detail.three-column {
   margin-left: -15px;
@@ -2714,7 +2692,8 @@ body.open-filter {
     display: inline-block; }
 
 .product-detail .content_price {
-  margin-left: 0; }
+  margin-left: 0;
+  margin-bottom: 6px; }
   .product-detail .content_price .price.old {
     font-size: 24px;
     display: inline-block;
@@ -4556,9 +4535,9 @@ body.open-filter {
 .ver_menu {
   background: #48CAB2;
   color: #fff;
-  line-height: 40px;
+  line-height: 39px;
   margin-bottom: 0;
-  padding: 0 15px;
+  padding: 1px 15px 0;
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 800;
@@ -5088,6 +5067,25 @@ body.open-filter {
     .customs-html-left .banner-text .bottom-text {
       font-size: 16px;
       color: #333; }
+
+#block-reassurance .block-reassurance-item {
+  cursor: pointer; }
+  #block-reassurance .block-reassurance-item:hover span.h6::before {
+    width: 100%; }
+  #block-reassurance .block-reassurance-item span.h6::before {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background-color: #333;
+    height: 2px;
+    -webkit-transition: width 0.25s linear;
+    -o-transition: width 0.25s linear;
+    transition: width 0.25s linear; }
 
 #woorebought-popup p a:hover span::before {
   width: 100%; }

@@ -71,7 +71,6 @@
                                 <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 right">
                                     <div class="right-box">
                                         {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
-                                        {hook h='displayReassurance'}
                                     </div>
                                 </div>
                             </div>

@@ -24,19 +24,19 @@ jQuery(function ($) {
 		if($('#jmstools').hasClass('jmsclose')) {
 			$("#jmstools").removeClass('jmsclose');
 			$("#jmstools").addClass('jmsopen');		
-			$('#jmstools').animate({left:'0px'}, 500);
+			$('#jmstools').animate({left:'0px'}, 200);
 			$('#setting-overlay').addClass('overlay-animate');
 		} else {
 			$("#jmstools").removeClass('jmsopen');
 			$("#jmstools").addClass('jmsclose');		
-			$('#jmstools').animate({left:'-270px'}, 500);
+			$('#jmstools').animate({left:'-270px'}, 200);
 			$('#setting-overlay').removeClass('overlay-animate');
 		}
 	});
 	$("#setting-overlay").click(function() {
 		$("#jmstools").removeClass('jmsopen');
 		$("#jmstools").addClass('jmsclose');		
-		$('#jmstools').animate({left:'-270px'}, 500);
+		$('#jmstools').animate({left:'-270px'}, 200);
 		$('#setting-overlay').removeClass('overlay-animate');
 	});
 

@@ -31,7 +31,7 @@
 
 .menu #jms-vermegamenu-container {
   max-width: 100%;
-  padding: 7px 0 17px; }
+  padding: 6px 0 18px; }
 
 .menu .vermegamenu .addon-box {
   position: relative; }
@@ -111,7 +111,7 @@
     display: inline-block; }
     .banner-right .banner-content .text-1::before {
       position: absolute;
-      bottom: 1px;
+      bottom: -1px;
       left: 0;
       right: 0;
       margin: auto;
@@ -240,6 +240,8 @@
       width: 100%; }
       .jms-row.header.fixed .right-module-header .addon-box:nth-child(4) {
         display: none; }
+    .jms-row.header.fixed .container > .row .layout-column.right-module-header {
+      top: 0; }
   .jms-row.menu.fixed {
     background: #fff;
     position: fixed;

@@ -339,7 +339,7 @@
                                 </div>
                             </div>
                         {/foreach}
-                        <div class="panel panel-default">
+                        <div class="panel panel-default reviews">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#review">
