@@ -92,10 +92,10 @@ function view_as() {
     })
 }
 $(document).ready(function () {
- 	view_as();
- 	prestashop.on('updateProductList', function (event) {
-  	view_as();
- 	});
+	view_as();
+	prestashop.on('updateProductList', function (event) {
+	view_as();
+	});
 });
 
 
@@ -1342,7 +1342,17 @@ function toggleScrollTop(){
 
 function categoryNoSidebar(){
 	if ($("#category #products").hasClass("listing-not-sidebar")){
-		$("body").addClass('category-no-sidebar')
+		$("body").addClass('category-no-sidebar');
+		$("#product_list").removeClass("products-list-3");
+		$("#product_list").addClass("products-list-4");
+	}
+}
+
+function categoryNoSidebarFullwidth(){
+	if ($("#category #products").hasClass("listing-not-sidebar-fullwidth")){
+		$("body").addClass('category-no-sidebar-fullwidth');
+		$("#product_list").removeClass("products-list-3");
+		$("#product_list").addClass("products-list-6");
 	}
 }
 
@@ -1363,9 +1373,25 @@ function imageParallaxAboutus(){
 }
 
 function fixLinkComment(){
+	let tabContentChild = $(".tab-fullwidth-1 ~ #more_info_block #tab-content > div");
+	let tabContentReview = $(".tab-fullwidth-1 ~ #more_info_block #tab-content > div#product-reviews");
+	let navLink = $(".tab-fullwidth-1 ~ #more_info_block ul li a");
+	let navLinkReviews = $(".tab-fullwidth-1 ~ #more_info_block ul li a.reviews");
+
 	$(".additional-links .link-comment").click(function(){
-		$("#review").addClass("in");
-		$(".reviews .panel-title a").removeClass("collapsed")
+		$("#more_info_block .panel-collapse").removeClass("in");
+		$("#more_info_block #review").addClass("in");
+		$("#more_info_block #review").css("height", "100%");
+		$("#more_info_block .panel-title a").addClass("collapsed");
+		$("#more_info_block .reviews .panel-title a").removeClass("collapsed");
+
+		tabContentChild.removeClass("active");
+		tabContentChild.removeClass("in");
+		tabContentReview.addClass("active");
+		tabContentReview.addClass("in");
+
+		navLink.removeClass("active");
+		navLinkReviews.addClass("active");
 	});
 }
 
@@ -1387,6 +1413,8 @@ $(document).ready(function() {
 	imageParallaxAboutus();
 
 	categoryNoSidebar();
+	categoryNoSidebarFullwidth();
+
 	setTimeoutPreloader();
 
 	toggleScrollTop()
@@ -1421,6 +1449,11 @@ $(document).ready(function() {
 	calcOwnControlCarousel("product");
 	
 	calcOwnControlBanner();
+
+	view_as();
+ 	prestashop.on('updateProductList', function (event) {
+  	view_as();
+ 	});
 });
 
 

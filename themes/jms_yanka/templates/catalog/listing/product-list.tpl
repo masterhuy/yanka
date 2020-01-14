@@ -29,7 +29,10 @@
             <div class="category-title">
                 <div class="addon-title">
                     <h3>
-                        {$page.meta.title} ({$listing.products|count})
+                        {$page.meta.title}
+                        {if $listing.pagination.total_items > 1}
+                            ({$listing.pagination.total_items})
+                        {/if}
                     </h3>
                 </div>
             </div>

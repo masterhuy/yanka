@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-13 05:25:38
+/* Smarty version 3.1.33, created on 2020-01-14 02:58:54
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\checkout\_partials\cart-detailed-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e1c45a26dc386_33331449',
+  'unifunc' => 'content_5e1d74be054c43_02279075',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f5bbc6d38fde17d87b7ddfbafe0247e2cf8cf262' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\checkout\\_partials\\cart-detailed-product-line.tpl',
-      1 => 1578911133,
+      1 => 1578974304,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1c45a26dc386_33331449 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1d74be054c43_02279075 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-line-grid">
     <!--  products -->
     <div class="row_cs product-info col-lg-2 col-md-2 col-sm-6 col-xs-6">
@@ -63,23 +63,20 @@ function content_5e1c45a26dc386_33331449 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 
     <div class="row_cs product-right col-lg-10 col-md-10 col-sm-6 col-xs-6">
-        <div class="row_cs col-sm-12 col-xs-12 info">
+        <div class="row_cs info col-lg-5 col-sm-12 col-xs-12">
             <div class="product-line-info">
-                <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['attributes'], ENT_QUOTES, 'UTF-8');?>
-
                 <a class="product-link" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['url'], ENT_QUOTES, 'UTF-8');?>
 " data-id_customization="<?php echo htmlspecialchars(intval($_smarty_tpl->tpl_vars['product']->value['id_customization']), ENT_QUOTES, 'UTF-8');?>
 "><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </a>
                 <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['attributes'], 'value', false, 'attribute');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['attributes'], 'property_value', false, 'property');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['attribute']->value => $_smarty_tpl->tpl_vars['value']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['property']->value => $_smarty_tpl->tpl_vars['property_value']->value) {
 ?>
-                    <div class="product-info-value">
-                        <span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value, ENT_QUOTES, 'UTF-8');?>
-</span>
-                    </div>
+                    <span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'%label%:','sprintf'=>array('%label%'=>$_smarty_tpl->tpl_vars['property']->value),'d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+<strong> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['property_value']->value, ENT_QUOTES, 'UTF-8');?>
+</strong></span>
                 <?php
 }
 }
@@ -146,7 +143,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <?php }?>
         <!--  price -->
-        <div class="row_cs product-price col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="row_cs product-price col-lg-3 col-md-4 col-sm-12 col-xs-12">
             <div class="product-line-info">
                 <span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['price'], ENT_QUOTES, 'UTF-8');?>
 </span>
@@ -158,7 +155,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
 
         <!--  qty -->
-        <div class="row_cs product-qty product-quantity col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="row_cs product-qty product-quantity col-lg-2 col-md-4 col-sm-12 col-xs-12">
             <?php if (isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) && $_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>
                 <span class="gift-quantity"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
 </span>
@@ -184,8 +181,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
 
         <!--  total -->
-        <div class="row_cs product-total col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <span class="product-price">
+        <div class="row_cs product-total col-lg-2 col-md-4 col-sm-12 col-xs-12">
+            <span class="price">
                 <span class="value">
                     <?php if (isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) && $_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>
                     <span class="gift"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Gift','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>

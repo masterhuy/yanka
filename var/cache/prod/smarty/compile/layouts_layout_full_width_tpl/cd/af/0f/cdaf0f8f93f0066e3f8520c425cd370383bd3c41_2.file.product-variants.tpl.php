@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-01-13 05:21:54
+/* Smarty version 3.1.33, created on 2020-01-14 05:35:29
   from 'D:\xamppp\htdocs\jms_yanka\themes\jms_yanka\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e1c44c27ee687_85070262',
+  'unifunc' => 'content_5e1d9971d2d835_51678979',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdaf0f8f93f0066e3f8520c425cd370383bd3c41' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_yanka\\themes\\jms_yanka\\templates\\catalog\\_partials\\product-variants.tpl',
-      1 => 1575598579,
+      1 => 1578911000,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1c44c27ee687_85070262 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1d9971d2d835_51678979 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_yanka\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <div class="product-variants">

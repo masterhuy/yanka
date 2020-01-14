@@ -50,6 +50,10 @@ text-align:left;
 }
     #stores .page-stores .store-item-container .store-description {
       font-size: 1.3rem; }
+
+       #stores .page-stores .store-item-container .store-description address{
+        font-size: 16px;
+       }
   #stores .page-stores .store-item-footer {
     margin-top: 0.5rem;
     padding-top: 0.5rem;

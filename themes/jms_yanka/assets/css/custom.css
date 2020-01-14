@@ -2964,7 +2964,6 @@ ul.cart_block_list li:not(:last-child){
 .products-list-6 .product-preview button.cart-button {
   padding: 0 15px;
   letter-spacing: 0;
-  min-width: 130px;
 }
 /*Grid Layout*/
 /*Right column*/

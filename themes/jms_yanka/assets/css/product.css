@@ -665,7 +665,7 @@
     margin-bottom: 22px;
 }
 .other-info {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     line-height: 25px;
 }
 .other-info > li label,
@@ -914,14 +914,18 @@
     border: 1px solid #ebebeb;
     cursor: pointer;
     display: block;
-    font-size: 14px;
-    height: 36px;
-    min-width: 136px;
-    padding: 0 20px;
+    font-size: 16px;
+    height: 44px;
+    margin-bottom: 0;
+    padding: 0 18px;
     -moz-appearance: none;
     -webkit-appearance: none;
-    border-radius: 30px;
-    background: url("../img/icon/icon-size.png") no-repeat 115px;
+    border-radius: 0;
+    background: url("../img/icon/icon-dropdown.png") no-repeat 240px;
+    max-width: 270px;
+    width: 100%;
+    color: #333;
+    font-weight: 800;
 }
 
 /*Active fiter*/

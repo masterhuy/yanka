@@ -245,7 +245,7 @@
                         </li>
                         <li class="nav-item">
                             <a
-                                class="nav-link"
+                                class="nav-link reviews"
                                 data-toggle="tab"
                                 href="#product-reviews"
                                 role="tab"

@@ -57,13 +57,11 @@
     </div>
 
     <div class="row_cs product-right col-lg-10 col-md-10 col-sm-6 col-xs-6">
-        <div class="row_cs col-sm-12 col-xs-12 info">
+        <div class="row_cs info col-lg-5 col-sm-12 col-xs-12">
             <div class="product-line-info">
                 <a class="product-link" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
-                {foreach from=$product.attributes key="attribute" item="value"}
-                    <div class="product-info-value">
-                        <span class="value">{$value}</span>
-                    </div>
+                {foreach from=$product.attributes item="property_value" key="property"}
+                    <span>{l s='%label%:' sprintf=['%label%' => $property] d='Shop.Theme.Global'}<strong> {$property_value}</strong></span>
                 {/foreach}
             </div>
         </div>
@@ -105,7 +103,7 @@
             {/foreach}
         {/if}
         <!--  price -->
-        <div class="row_cs product-price col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="row_cs product-price col-lg-3 col-md-4 col-sm-12 col-xs-12">
             <div class="product-line-info">
                 <span class="value">{$product.price}</span>
                 {if $product.unit_price_full}
@@ -115,7 +113,7 @@
         </div>
 
         <!--  qty -->
-        <div class="row_cs product-qty product-quantity col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="row_cs product-qty product-quantity col-lg-2 col-md-4 col-sm-12 col-xs-12">
             {if isset($product.is_gift) && $product.is_gift}
                 <span class="gift-quantity">{$product.quantity}</span>
             {else}
@@ -134,8 +132,8 @@
         </div>
 
         <!--  total -->
-        <div class="row_cs product-total col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <span class="product-price">
+        <div class="row_cs product-total col-lg-2 col-md-4 col-sm-12 col-xs-12">
+            <span class="price">
                 <span class="value">
                     {if isset($product.is_gift) && $product.is_gift}
                     <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>

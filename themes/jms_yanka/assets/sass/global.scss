@@ -1628,6 +1628,9 @@
 
 //product thumb horizontal
 .product-detail.thumb-horizontal{
+	.product-information .product-desc{
+		margin-bottom: 21px;
+	}
 	#gal1{
 		display: flex;
 	}
@@ -2445,51 +2448,58 @@ body.open-filter{
 		z-index: 1000;
 	}
 }
-#category.category-no-sidebar{
-	div#left-column.page-column {
-		position: fixed;
-		width: 315px;
-		max-width: 315px;
-		height: 100%;
-		background: #fff;
-		top: 0;
-		left: -315px;
-		transition: left .3s;
-		padding: 77px 30px 50px;
-		overflow-y: auto;
-		z-index: 9999;
-		&.show{
-			left: 0;
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+#category{
+	&.category-no-sidebar-fullwidth{
+		.container{
+			max-width: 100%;
 		}
 	}
-	.sort-order{
-		display: block;
-		margin-bottom: 46px;
-	}
-	#search_filter_controls{
-		display: block !important;
-	}
-	#js-product-list-top > .row {
-		float: none;
-		display: flex;
-		.filter-button{
-			display: block !important;
-		}
-		.left{
-			margin-left: auto;
-		}
-		.right{
-			text-align: right;
-			width: auto;
-			.view-mode{
-				display: inline-block;
-				margin-left: 22px;
+	&.category-no-sidebar, &.category-no-sidebar-fullwidth{
+		div#left-column.page-column {
+			position: fixed;
+			width: 315px;
+			max-width: 315px;
+			height: 100%;
+			background: #fff;
+			top: 0;
+			left: -315px;
+			transition: left .3s;
+			padding: 77px 30px 50px;
+			overflow-y: auto;
+			z-index: 9999;
+			&.show{
+				left: 0;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 			}
 		}
-	}
-	#content-wrapper{
-		width: 100%;
+		.sort-order{
+			display: block;
+			margin-bottom: 46px;
+		}
+		#search_filter_controls{
+			display: block !important;
+		}
+		#js-product-list-top > .row {
+			float: none;
+			display: flex;
+			.filter-button{
+				display: block !important;
+			}
+			.left{
+				margin-left: auto;
+			}
+			.right{
+				text-align: right;
+				width: auto;
+				.view-mode{
+					display: inline-block;
+					margin-left: 22px;
+				}
+			}
+		}
+		#content-wrapper{
+			width: 100%;
+		}
 	}
 }
 //
@@ -3290,8 +3300,12 @@ body.open-filter{
 			font-weight: 800;
 			position: relative;
 			display: block;
-			&.collapsed i{
-				transform: rotate(0);
+			color: $active;
+			&.collapsed{
+				color: #333;
+				i{
+					transform: rotate(0);
+				}
 			}
 			i{
 				position: absolute;
@@ -4988,6 +5002,10 @@ body.open-filter{
 		margin-top: 29px;
 	}
 	.post-created{
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+	.post-meta li{
 		font-size: 13px;
 		text-transform: uppercase;
 	}

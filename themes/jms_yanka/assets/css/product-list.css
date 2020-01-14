@@ -354,6 +354,12 @@
 #category #content-wrapper{
 	padding-top: 80px;
 }
+#category #content-wrapper.col-lg-12 #js-product-list-top > .row{
+	float: none;
+}
+#category #content-wrapper.col-lg-12 #js-product-list-top > .row .right{
+	float: right;
+}
 #category #wrapper > .container{
 	padding: 0 20px;
 	position: relative;
