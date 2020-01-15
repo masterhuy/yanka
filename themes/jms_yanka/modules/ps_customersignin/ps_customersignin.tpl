@@ -25,7 +25,7 @@
 <div id="_desktop_user_info">
 	<div class="user-info menu-collapse btn-group compact-hidden type-1">
 		{if $logged} 
-			<a href="#" class="account dropdown-toggle p-relative" data-toggle="dropdown">      
+			<a href="#" class="account p-relative" data-toggle="collapse" data-target="#user-info-1">      
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
 					<g>
 						<path fill="currentColor" d="M12,13C6.4,13,2,17.8,2,24h20C22,17.8,17.6,13,12,13z M12,14.6c4.2,0,7.6,3.3,8.3,7.8H3.7
@@ -40,7 +40,7 @@
 			   		</span>
 		       </span>
 		  	</a>
-			<div class="dropdown-menu">
+			<div id="user-info-1" class="collapse">
 				<ul>
 					<li><a href="{$link->getPageLink('my-account', true)}">{$customerName}</a></li>		
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
@@ -48,7 +48,7 @@
 				</ul>
 			</div>
 		{else}   
-			<a href="#" class="account dropdown-toggle p-relative" data-toggle="dropdown">
+			<a href="#" class="account p-relative" data-toggle="collapse" data-target="#user-info-1">
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
 					<g>
 						<path fill="currentColor" d="M12,13C6.4,13,2,17.8,2,24h20C22,17.8,17.6,13,12,13z M12,14.6c4.2,0,7.6,3.3,8.3,7.8H3.7
@@ -63,7 +63,7 @@
 			   		</span>
 		       </span>
 			</a>
-			<div class="dropdown-menu">
+			<div id="user-info-1" class="collapse">
 				<ul>	
 					<li><a class="login" href="{$my_account_url}" title="{l s='Sign In' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Sign In' d='Shop.Theme.Actions'}</a></li>
 					<li><a href="{$urls.pages.register}" title="{l s='Register' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Register' d='Shop.Theme.CustomerAccount'} </a></li>
@@ -76,11 +76,11 @@
 <div id="_desktop_user_info">
 	<div class="user-info menu-collapse btn-group compact-hidden type-2">
 		{if $logged} 
-			<a href="#" class="account dropdown-toggle" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="dropdown">      
+			<a href="#" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse" data-target="#user-info-2">      
 				<i class="fa fa-user"></i>
 				{$customerName}
 		  	</a>
-			<div id="login-2" class="collapse dropdown-menu">
+			<div id="user-info-2" class="collapse">
 				<ul>
 					<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
@@ -88,11 +88,11 @@
 				</ul>
 			</div>
 		{else}   
-			<a href="#" class="account dropdown-toggle" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="dropdown">
+			<a href="#" class="account" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" data-toggle="collapse" data-target="#user-info-2">
 				<i class="fa fa-user"></i>
 				{l s='My account' d='Shop.Theme.Actions'}
 			</a>
-			<div id="login-2" class="collapse dropdown-menu">
+			<div id="user-info-2" class="collapse">
 				<ul>		
 					<li><a href="{$link->getPageLink('order', true)}" title="{l s='Checkout' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
 					<li><a class="logout" href="{$link->getPageLink('my-account', true)}" title="{l s='Login' d='Shop.Theme.CustomerAccount'}" rel="nofollow" >{l s='Log In' d='Shop.Theme.Actions'}</a></li>

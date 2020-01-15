@@ -58,6 +58,20 @@
 					<span></span>
 					<span></span>
 				</a> 
+				<a class="view-grid four-column" href="#">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<a class="view-grid six-column" href="#">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</a> 
 				<a class="view-list {if $jpb_grid == 0}active{/if}" href="#">
 					<span></span>
 					<span></span>

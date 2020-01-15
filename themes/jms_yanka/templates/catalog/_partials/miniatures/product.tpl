@@ -106,8 +106,6 @@
         <div class="product_action d-flex align-items-center">
 			{if !$configuration.is_catalog}
 				<button class="btn-default ajax-add-to-cart product-btn {if $product.quantity < 1}disabled{/if} cart-button" {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Sold Out' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" {if $product.quantity < 1}disabled{/if} data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-					<span class="fa fa-spin fa-spinner"></span>
-					<span class="fa fa-check"></span>
 					<i class="icon-cart">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
 							<path fill="currentColor" d="M22,8c0-1.1-0.9-2-2-2h-2.7c-0.9-3.4-2.9-5.8-5.3-5.8C9.6,0.2,7.6,2.6,6.7,6H4C2.9,6,2,6.9,2,8L0,22l0,0.1
@@ -139,9 +137,6 @@
 					</i>
 					<span class="text-addcart">
 						{l s='Add to cart' d='Shop.Theme.Actions'}
-					</span>
-					<span class="text-added">
-						{l s='Added' d='Shop.Theme.Actions'}
 					</span>
 					<span class="text-outofstock">
 						{l s='SOLD OUT' d='Shop.Theme.Actions'}

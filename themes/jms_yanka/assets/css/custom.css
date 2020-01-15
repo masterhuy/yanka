@@ -1575,6 +1575,13 @@ table td[class*="col-"], table table th[class*="col-"] {
 .nav-tabs li:first-child a::before {
   display: none; }
 
+.collapse{
+  -webkit-box-shadow: 0 4px 6px rgba(51,51,51,.08);
+  -o-box-shadow: 0 4px 6px rgba(51,51,51,.08);
+  -ms-box-shadow: 0 4px 6px rgba(51,51,51,.08);
+  box-shadow: 0 4px 6px rgba(51,51,51,.08);
+}
+
 /* Dropdown Menu */
 .dropdown-menu {
   display: block;
@@ -1893,7 +1900,6 @@ ul#order_step li {
   overflow: auto;
   background: #fff none repeat scroll 0 0;
   border-radius: 0;
-  padding: 33px 40px 29px;
   width: 360px;
 }
 
@@ -2213,9 +2219,7 @@ ul.cart_block_list li:not(:last-child){
 }
 .product-preview button.cart-button.disabled .icon-cart,
 .product-preview button.cart-button.disabled:hover .icon-cart-hover,
-.product-preview button.cart-button:hover .icon-cart,
-.product-preview button.cart-button.checking:hover .icon-cart-hover,
-.product-preview button.cart-button.checked:hover .icon-cart-hover{
+.product-preview button.cart-button:hover .icon-cart{
   display: none;
 }
 .text-addcart, .text-outofstock, .text-added {

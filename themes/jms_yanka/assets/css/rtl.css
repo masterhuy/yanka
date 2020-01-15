@@ -150,7 +150,6 @@ table#cart_summary .cart_quantity_button a.button-plus {
 	clear:both;
 }
 #blockcart-modal .divide-right {
-	border-left: 1px solid #acaaa6;
 	border-right:none;
 }
 #blockcart-modal .cart-content strong, #blockcart-modal .divide-right strong{
@@ -555,8 +554,9 @@ body#checkout section.checkout-step.-reachable.-complete h1 .step-edit{
 	margin-right: 30px;
 	margin-left:0;
 }
-.filters-panel .view-mode .view-grid {
-  margin: 0 5px;
+.view-mode .button a {
+  margin: 0 !important;
+  margin-right: 4px !important;
 }
 .filters-panel .right {
   text-align: left;
@@ -1599,7 +1599,7 @@ img.attachment-widget.wp-post-image.img-responsive {
   margin-left: 0;
 }
 #woorebought-popup {
-  right: 20px !important;
+  right: 0 !important;
   left: auto !important;
 }
 #woorebought-popup #popup-close {
@@ -2290,6 +2290,14 @@ div.feature-box .include_content_s {
 }
 #addresses .address .address-footer a {
   margin-left: 26px;
+  margin-right: 0;
+}
+.fixed-right-column .pb-right-column .container-flex .product-information {
+  margin-left: 0;
+  margin-right: auto;
+}
+.fixed-right-column .pb-right-column .container-flex .product-cover {
+  margin-left: 20px;
   margin-right: 0;
 }
 
